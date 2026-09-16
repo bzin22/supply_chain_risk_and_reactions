@@ -1,4 +1,13 @@
-"""Collect Alpha Vantage earnings-call transcripts and speaker metadata."""
+"""Collect Alpha Vantage earnings-call transcripts and speaker metadata.
+
+``--input`` is required and has no default. The firm universe is a study
+design choice, not a convenience: the repository ships only a provisional
+convenience sample at
+``data/provisional/convenience_sample_450_companies_9_sectors.csv``, which is
+not the historical US-company universe used by Theile et al. (2026). Pass it
+explicitly if that is what you want, so the sample can never be mistaken for
+the paper's.
+"""
 
 from __future__ import annotations
 
@@ -18,7 +27,6 @@ import requests
 
 URL = "https://www.alphavantage.co/query"
 STUDY_DIR = Path(__file__).resolve().parent
-DEFAULT_INPUT = STUDY_DIR / "diversified_450_companies_9_sectors.csv"
 DEFAULT_RAW_DIR = STUDY_DIR / "artifacts" / "earnings_call_responses"
 QUARTER_PATTERN = re.compile(r"^(20\d{2})Q([1-4])$")
 
@@ -309,7 +317,12 @@ def build_rows(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
+    parser.add_argument(
+        "--input", type=Path, required=True,
+        help="CSV of symbol,name,sector,industry defining the firm universe. No default: "
+             "the only universe in this repository is the provisional convenience sample at "
+             "data/provisional/convenience_sample_450_companies_9_sectors.csv, which is not "
+             "the paper's universe.")
     parser.add_argument("--output-dir", type=Path, default=STUDY_DIR)
     parser.add_argument("--raw-dir", type=Path, default=DEFAULT_RAW_DIR)
     parser.add_argument("--start-quarter", default="2010Q1")

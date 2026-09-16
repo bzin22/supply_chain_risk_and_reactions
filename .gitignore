@@ -11,9 +11,19 @@ venv/
 # Node
 node_modules
 
+# Locally generated analysis outputs. Nothing here is committed: no result in
+# this repository has passed the paper-alignment checks in README.md, so a
+# committed chart or table would read as a replication result that does not
+# exist. Regenerate with the scripts under analysis/provisional_diagnostics/.
+outputs/**
+!outputs/README.md
+
 # Bulk source data (940MB / 746MB, regenerate with extract_earnings_call_transcript_data.py)
 earnings_call_transcript_segments.csv
 earnings_call_transcripts.csv
+
+# The paper being recreated. Local reference copy, not ours to redistribute.
+source_research_paper/
 
 # LLM scoring artifacts (31GB of per-call JSON responses)
 artifacts/
