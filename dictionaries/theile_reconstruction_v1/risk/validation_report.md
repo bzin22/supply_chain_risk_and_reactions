@@ -2,7 +2,9 @@
 
 ## Recommendation
 
-Use `risk_terms_observed_baseline.txt` as the conservative replication dictionary. It contains only the 144 exact forms printed in Table 3. `risk_terms_reconstructed_full.txt` adds 17 high-confidence upstream candidates, but no author-provided Theile dictionary was available.
+Use `risk_terms_reconstructed_full.txt` as the recreation's single primary risk dictionary. It contains the 144 exact forms printed in Table 3 plus 17 high-confidence reconstructed terms corresponding to the paper's stated non-occurring terms. Restricting scoring to the 144 observed forms could omit terms that were absent from the authors' transcript sample but occur in this recreation's different transcript corpus.
+
+This is a high-confidence 161-term reconstruction, not the unpublished author-original dictionary. `risk_terms_observed_baseline.txt` remains provenance for the directly printed subset and is not a competing scoring specification.
 
 No CAR values, regression coefficients, return quintiles, or outcome-based term-selection evidence were inspected or used.
 
@@ -59,9 +61,9 @@ This difference is exactly 17, matching Theile's statement that 17 library terms
 
 This is strong set-reconciliation evidence, but not direct proof from Theile's unpublished file. Wu's official replication archive is behind a form with restrictive terms and an email requirement. Those terms were not accepted, and the archive was not inspected. The irreducible uncertainty is whether Theile's unpublished 17-term set differs despite the exact count match. All 17 candidates are therefore marked **high confidence**, not direct.
 
-## Starter dictionary comparison
+## Superseded starter dictionary comparison
 
-The current starter contains 95 entries and 94 unique forms. It was read without modification. 19 unique starter forms are independently supported by the reconstructed full set: `bottleneck`, `bottlenecks`, `danger`, `disruption`, `disruptions`, `hazard`, `jeopardy`, `peril`, `risk`, `risks`, `risky`, `shortage`, `shortages`, `threat`, `uncertain`, `uncertainties`, `uncertainty`, `volatile`, `volatility`.
+The provisional starter present when this reconstruction was performed contained 95 entries and 94 unique forms. It was read without modification during source reconstruction and is no longer used by the primary scoring path. 19 unique starter forms are independently supported by the reconstructed full set: `bottleneck`, `bottlenecks`, `danger`, `disruption`, `disruptions`, `hazard`, `jeopardy`, `peril`, `risk`, `risks`, `risky`, `shortage`, `shortages`, `threat`, `uncertain`, `uncertainties`, `uncertainty`, `volatile`, `volatility`.
 
 ### Paper-observed terms missing from the starter (125)
 
@@ -296,12 +298,12 @@ These subset counts validate exact token reachability only. They are not intende
 
 ## Sensitivity inflections
 
-`risk_terms_sensitivity_inflections.txt` was not created. The authoritative materials already list separate forms, and automatic expansion would reduce source fidelity. Any future generated variants should remain outside both baseline files.
+`risk_terms_sensitivity_inflections.txt` was not created. The authoritative materials already list separate forms, and automatic expansion would reduce source fidelity. The primary scorer loads all 161 forms exactly as written without stemming, lemmatization, or automatic inflection expansion.
 
 ## Files
 
-- `risk_terms_observed_baseline.txt`: conservative 144-term Table 3 dictionary
-- `risk_terms_reconstructed_full.txt`: baseline plus 17 high-confidence candidates
+- `risk_terms_observed_baseline.txt`: provenance-only 144-term Table 3 subset
+- `risk_terms_reconstructed_full.txt`: primary 161-term recreation dictionary
 - `risk_terms.csv`: term-level provenance and inclusion decisions
 - `table_3_extraction.csv`: direct extraction, raw fields, and correction log
 - `source_manifest.json`: URLs, retrieval status, hashes, filenames, and license notes
