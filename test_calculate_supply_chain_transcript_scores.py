@@ -1,25 +1,22 @@
 #!/usr/bin/env python3
 """Tests for calculate_supply_chain_transcript_scores.py.
 
-Covers vocabulary assembly, weight resolution, the two pairing properties the
-zero-score audit flagged, the transcript-integrity classifier, and the CLI.
+Covers the primary risk reconstruction, vocabulary assembly, weight resolution,
+the two pairing properties the zero-score audit flagged, the transcript-integrity
+classifier, and the CLI.
 The window, the tokenizer, the pairing rule and the resolution dictionary are
 unchanged, so they are covered here only by the assertions that prove they did
 not move.
 
-Expected values come from the module's own dictionaries and from the term
-library itself, never from intuition and never from a generated result. Two
-tests need local artifacts that are not committed (the term library and a
-500-row scored sample); both skip when the artifact is absent.
-
-Provisional: the risk and resolution dictionaries under test are this
-repository's starter lists, not the paper's. These tests pin the code's
-current behaviour; they do not establish paper equivalence.
+Expected values come from committed reconstruction provenance and from the term
+library itself, never from intuition or generated empirical results. Tests that
+need the local supply-chain library skip when that artifact is absent.
 """
 
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import subprocess
 import sys
@@ -33,24 +30,13 @@ sys.path.insert(0, str(ROOT))
 import calculate_supply_chain_transcript_scores as S  # noqa: E402
 
 LIBRARY = ROOT / "artifacts/sec_10k_supply_chain/experiments/ppmi_svd_full_20260910/terms.jsonl"
-SMOKE_500 = (
-    ROOT
-    / "artifacts/earnings_call_supply_chain/ppmi_svd_full_20260910"
-    / "earnings_call_transcripts_scored_smoke_500.csv"
-)
+RISK_DIRECTORY = ROOT / "dictionaries/theile_reconstruction_v1/risk"
+PRIMARY_RISK_DICTIONARY = RISK_DIRECTORY / "risk_terms_reconstructed_full.txt"
+OBSERVED_RISK_DICTIONARY = RISK_DIRECTORY / "risk_terms_observed_baseline.txt"
+TABLE_3_EXTRACTION = RISK_DIRECTORY / "table_3_extraction.csv"
+RISK_SOURCE_MANIFEST = RISK_DIRECTORY / "source_manifest.json"
 requires_library = pytest.mark.skipif(
     not LIBRARY.exists(), reason=f"term library is not present: {LIBRARY}"
-)
-requires_smoke_500 = pytest.mark.skipif(
-    not SMOKE_500.exists(), reason=f"local scored sample is not present: {SMOKE_500}"
-)
-
-# The 14 score columns the original pipeline wrote, in the original format.
-V1_SCORE_COLUMNS = (
-    "SCRisk_weight_sum", "SCRisk_raw", "SCRisk_sd", "SCRisk",
-    "Resolution_weight_sum", "Resolution_raw", "Resolution_sd", "Resolution",
-    "score_word_count", "supply_chain_occurrences", "risk_occurrences",
-    "resolution_occurrences", "supply_chain_risk_pairs", "supply_chain_resolution_pairs",
 )
 
 
@@ -88,11 +74,11 @@ def distinct_filler(count: int) -> str:
     )
 
 
-def score(text: str, vocabulary: dict[str, float], risk_version: str, **kwargs) -> S.ScoreResult:
+def score(text: str, vocabulary: dict[str, float], **kwargs) -> S.ScoreResult:
     return S.calculate_raw_scores(
         text,
         vocabulary,
-        S.build_risk_vocabulary(S.STARTER_RISK_WORDS, risk_version),
+        S.build_risk_vocabulary(S.load_primary_risk_dictionary()),
         S.STARTER_RESOLUTION_WORDS,
         **kwargs,
     )
@@ -150,10 +136,66 @@ def test_v2_keeps_every_v1_term_and_only_grows(v1, v2):
     assert len(v2) > len(v1)
 
 
-def test_risk_vocabulary_sizes_are_fixed_by_the_starter_dictionary():
-    # Derived from STARTER_RISK_WORDS in the module under test, not from a run.
-    assert len(S.build_risk_vocabulary(S.STARTER_RISK_WORDS, "v1_library_only")) == 94
-    assert len(S.build_risk_vocabulary(S.STARTER_RISK_WORDS, "v2_seeds_inflections")) == 147
+def test_primary_risk_file_has_161_unique_lowercase_nonempty_terms():
+    lines = PRIMARY_RISK_DICTIONARY.read_text(encoding="utf-8").splitlines()
+    assert len(lines) == 161
+    assert len(set(lines)) == 161
+    assert all(term and term == term.lower() and term == term.strip() for term in lines)
+
+
+def test_primary_risk_set_is_table_3_plus_documented_17():
+    with TABLE_3_EXTRACTION.open(newline="", encoding="utf-8") as handle:
+        observed = {row["term"] for row in csv.DictReader(handle)}
+    provenance = json.loads(RISK_SOURCE_MANIFEST.read_text(encoding="utf-8"))
+    reconstructed = set(provenance["reconstructed_nonoccurring_terms"])
+    primary = set(S.load_primary_risk_dictionary())
+
+    assert len(observed) == 144
+    assert len(reconstructed) == 17
+    assert set(OBSERVED_RISK_DICTIONARY.read_text(encoding="utf-8").splitlines()) == observed
+    assert primary >= observed
+    assert primary - observed == reconstructed
+
+
+def test_primary_risk_vocabulary_is_loaded_without_generated_variants():
+    loaded = S.load_primary_risk_dictionary()
+    scored = S.build_risk_vocabulary(loaded)
+    assert scored == loaded
+    assert len(scored) == 161
+    assert set(scored) == set(loaded)
+
+
+def test_missing_primary_risk_dictionary_fails_clearly(tmp_path, monkeypatch):
+    missing = tmp_path / "missing-risk-terms.txt"
+    monkeypatch.setattr(S, "PRIMARY_RISK_DICTIONARY_PATH", missing)
+    with pytest.raises(ValueError, match="Primary risk dictionary is missing"):
+        S.select_risk_dictionary(None)
+
+
+def test_duplicate_primary_risk_term_fails_clearly(tmp_path, monkeypatch):
+    duplicate = tmp_path / "duplicate-risk-terms.txt"
+    terms = PRIMARY_RISK_DICTIONARY.read_text(encoding="utf-8")
+    duplicate.write_text(terms + "issues\n", encoding="utf-8")
+    monkeypatch.setattr(S, "PRIMARY_RISK_DICTIONARY_PATH", duplicate)
+    with pytest.raises(ValueError, match="duplicate terms.*issues"):
+        S.select_risk_dictionary(None)
+
+
+@pytest.mark.parametrize(
+    "contents,message",
+    [
+        ("", "exactly 161 non-empty lines"),
+        ("Risk\n", "malformed terms"),
+        ("risk\n", "exactly 161 unique terms"),
+    ],
+)
+def test_empty_malformed_or_wrong_size_primary_fails_clearly(
+    tmp_path, contents, message
+):
+    invalid = tmp_path / "invalid-risk-terms.txt"
+    invalid.write_text(contents, encoding="utf-8")
+    with pytest.raises(ValueError, match=message):
+        S.load_primary_risk_dictionary(invalid)
 
 
 def test_v2_resolves_a_shared_form_to_the_larger_weight(library, v2):
@@ -179,15 +221,15 @@ def test_cirrus_logic_sentence_flips_from_zero_to_positive(v1, v2):
         "the once the supply chain disruption created opportunistic situations "
         "where that could occur"
     )
-    assert score(text, v1, "v1_library_only").scrisk_raw == 0.0
-    assert score(text, v2, "v2_seeds_inflections").scrisk_raw > 0.0
+    assert score(text, v1).scrisk_raw == 0.0
+    assert score(text, v2).scrisk_raw > 0.0
 
 
 def test_schlumberger_sentence_flips_from_zero_to_positive(v1, v2):
     # SLB 2021Q3.  "logistics" to "disruptions" is one token apart.
     text = "results were affected by temporary supply and logistics disruptions"
-    assert score(text, v1, "v1_library_only").scrisk_raw == 0.0
-    assert score(text, v2, "v2_seeds_inflections").scrisk_raw > 0.0
+    assert score(text, v1).scrisk_raw == 0.0
+    assert score(text, v2).scrisk_raw > 0.0
 
 
 @pytest.mark.parametrize("gap,expected_pairs", [(9, 1), (10, 0)])
@@ -195,32 +237,31 @@ def test_the_window_is_still_ten_tokens(v2, gap, expected_pairs):
     # Nine filler tokens leaves the two spans exactly 10 apart, which pairs.
     # Ten leaves them 11 apart, which does not.  The fix must not widen this.
     text = "inventory " + " ".join(["quarter"] * gap) + " uncertainty"
-    assert score(text, v2, "v2_seeds_inflections").risk_pairs == expected_pairs
+    assert score(text, v2).risk_pairs == expected_pairs
 
 
 # --- the two properties left in place on purpose ----------------------------
 
 def test_shortages_pairs_with_itself_in_both_versions(v1, v2):
     text = "we saw shortages " + " ".join(["quarter"] * 60)
-    v1_result = score(text, v1, "v1_library_only")
-    v2_result = score(text, v2, "v2_seeds_inflections")
+    v1_result = score(text, v1)
+    v2_result = score(text, v2)
     # One word, no second word anywhere nearby, yet a non-zero score.
     assert v1_result.risk_pairs == 1
     assert v1_result.identical_span_pairs == 1
     assert v1_result.identical_span_weight_sum == pytest.approx(0.69290245)
     assert v1_result.scrisk_weight_sum == pytest.approx(v1_result.identical_span_weight_sum)
-    # v2 inflection completion extends the same behaviour to the singular.
+    # The risk dictionary explicitly contains the singular; v2 supply-chain
+    # inflection completion extends the same self-pair behaviour to it.
     singular = "we saw a shortage " + " ".join(["quarter"] * 60)
-    assert score(singular, v1, "v1_library_only").risk_pairs == 0
-    assert score(singular, v2, "v2_seeds_inflections").identical_span_pairs == 1
+    assert score(singular, v1).risk_pairs == 0
+    assert score(singular, v2).identical_span_pairs == 1
     assert v2_result.identical_span_pairs == 1
 
 
 def test_forbidding_identical_span_pairs_removes_the_self_pair(v2):
     text = "we saw shortages " + " ".join(["quarter"] * 60)
-    result = score(
-        text, v2, "v2_seeds_inflections", forbid_identical_span_pairs=True
-    )
+    result = score(text, v2, forbid_identical_span_pairs=True)
     assert result.scrisk_raw == 0.0
     assert result.identical_span_pairs == 0
 
@@ -233,8 +274,8 @@ def test_excluding_the_customer_family_removes_the_customer_flip(library):
     dropped = S.build_supply_chain_vocabulary(
         library, "v2_seeds_inflections", excluded_terms=("customers", "customer")
     )
-    assert score(text, kept, "v2_seeds_inflections").scrisk_raw > 0.0
-    assert score(text, dropped, "v2_seeds_inflections").scrisk_raw == 0.0
+    assert score(text, kept).scrisk_raw > 0.0
+    assert score(text, dropped).scrisk_raw == 0.0
     assert "customers" not in dropped and "customer" not in dropped
 
 
@@ -292,6 +333,69 @@ def test_normalization_without_a_mask_is_unchanged():
 
 # --- end to end through the CLI ---------------------------------------------
 
+def score_with_tiny_library(tmp_path: Path, risk_path: Path | None = None) -> dict:
+    library_path = tmp_path / "terms.jsonl"
+    library_path.write_text(
+        json.dumps({"term": "supply", "max_cosine": 0.9}) + "\n",
+        encoding="utf-8",
+    )
+    input_path = tmp_path / "input.csv"
+    with input_path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=["ticker", "transcript_text"])
+        writer.writeheader()
+        writer.writerow(
+            {
+                "ticker": "AAA",
+                "transcript_text": distinct_filler(1001) + " supply risk",
+            }
+        )
+    return S.score_csv(
+        input_path=input_path,
+        output_path=tmp_path / "scored.csv",
+        library_path=library_path,
+        risk_path=risk_path,
+        resolution_path=None,
+        text_column="transcript_text",
+        window=10,
+        vocabulary_version="v1_library_only",
+    )
+
+
+def test_scoring_manifest_records_primary_risk_identity_and_hash(tmp_path):
+    manifest = score_with_tiny_library(tmp_path)
+    expected_hash = hashlib.sha256(PRIMARY_RISK_DICTIONARY.read_bytes()).hexdigest()
+
+    assert manifest["risk_dictionary_identifier"] == "theile_reconstruction_v1_risk_full"
+    assert manifest["risk_dictionary_path"] == (
+        "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt"
+    )
+    assert manifest["risk_dictionary_sha256"] == expected_hash
+    assert manifest["risk_dictionary_total_terms"] == 161
+    assert manifest["risk_dictionary_direct_table_3_terms"] == 144
+    assert manifest["risk_dictionary_reconstructed_nonoccurring_terms"] == 17
+    assert manifest["risk_dictionary_usage"] == "primary"
+    assert manifest["risk_dictionary_is_primary"] is True
+    assert manifest["risk_dictionary_selected_path"] == manifest["risk_dictionary_path"]
+    assert manifest["risk_dictionary_selected_sha256"] == expected_hash
+    assert manifest["risk_dictionary_selected_total_terms"] == 161
+
+
+def test_risk_override_is_explicitly_marked_non_primary(tmp_path):
+    override = tmp_path / "override-risk.txt"
+    override.write_text("risk\nuncertainty\n", encoding="utf-8")
+    manifest = score_with_tiny_library(tmp_path, override)
+
+    assert manifest["risk_dictionary_usage"] == "override_non_primary"
+    assert manifest["risk_dictionary_is_primary"] is False
+    assert manifest["risk_dictionary_total_terms"] == 161
+    assert manifest["risk_dictionary_direct_table_3_terms"] == 144
+    assert manifest["risk_dictionary_reconstructed_nonoccurring_terms"] == 17
+    assert manifest["risk_dictionary_selected_path"] == str(override.resolve())
+    assert manifest["risk_dictionary_selected_sha256"] == hashlib.sha256(
+        override.read_bytes()
+    ).hexdigest()
+    assert manifest["risk_dictionary_selected_total_terms"] == 2
+
 def run_cli(tmp_path: Path, rows: list[dict[str, str]], *extra: str) -> list[dict[str, str]]:
     source = tmp_path / "input.csv"
     with source.open("w", newline="", encoding="utf-8") as handle:
@@ -344,7 +448,13 @@ def test_cli_scores_happy_path_empty_and_junk_rows(tmp_path):
     assert manifest["rows_content_absent"] == 1
     assert manifest["rows_in_standardization_population"] == 3
     assert manifest["window"] == 10
-    assert manifest["terms_in_both_supply_chain_and_risk"] == ["shortage", "shortages"]
+    expected_supply = S.build_supply_chain_vocabulary(
+        S.load_supply_chain_library(LIBRARY), "v2_seeds_inflections"
+    )
+    expected_shared = sorted(
+        set(expected_supply) & set(S.load_primary_risk_dictionary())
+    )
+    assert manifest["terms_in_both_supply_chain_and_risk"] == expected_shared
 
 
 @requires_library
@@ -359,39 +469,3 @@ def test_cli_without_the_integrity_filter_standardizes_every_row(tmp_path):
     assert flagged["transcript_integrity_status"] == "content_absent"
     assert flagged["SCRisk"] != ""
     assert flagged["in_standardization_population"] == "1"
-
-
-@requires_smoke_500
-def test_v1_reproduces_the_original_scores_on_the_local_smoke_run(tmp_path):
-    """The regression guard: v1 plus no integrity filter must be bit-identical.
-
-    Reads a 500-row scored sample under artifacts/, which is local and not
-    committed, so this skips when the sample is absent.
-    """
-    csv.field_size_limit(sys.maxsize)
-    with SMOKE_500.open(newline="", encoding="utf-8") as handle:
-        reader = csv.DictReader(handle)
-        source_fields = [f for f in reader.fieldnames if f not in V1_SCORE_COLUMNS]
-        original = list(reader)
-    assert len(original) == 500
-
-    source = tmp_path / "unscored.csv"
-    with source.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=source_fields, extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(original)
-    output = tmp_path / "rescored.csv"
-    subprocess.run(
-        [sys.executable, str(ROOT / "calculate_supply_chain_transcript_scores.py"),
-         "--input", str(source), "--output", str(output), "--library", str(LIBRARY),
-         "--vocabulary-version", "v1_library_only", "--no-transcript-integrity-filter"],
-        check=True, capture_output=True, text=True, cwd=ROOT,
-    )
-    with output.open(newline="", encoding="utf-8") as handle:
-        rescored = list(csv.DictReader(handle))
-
-    assert len(rescored) == 500
-    for before, after in zip(original, rescored):
-        assert (before["ticker"], before["quarter_label"]) == (after["ticker"], after["quarter_label"])
-        for column in V1_SCORE_COLUMNS:
-            assert before[column] == after[column], (before["ticker"], column)

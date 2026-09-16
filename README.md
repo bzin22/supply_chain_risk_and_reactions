@@ -32,7 +32,7 @@ place. All of them take explicit paths.
 | --- | --- | --- |
 | 1 | `build_supply_chain_library.py` | Builds a supply-chain term library from SEC 10-K filings. Writes `terms.jsonl`. |
 | 2 | `extract_earnings_call_transcript_data.py` | Fetches Alpha Vantage earnings call transcripts and speaker metadata for an explicit firm universe. `--input` is required. |
-| 3 | `calculate_supply_chain_transcript_scores.py` | Scores each call for SCRisk and Resolution against the library plus a starter risk dictionary. |
+| 3 | `calculate_supply_chain_transcript_scores.py` | Scores each call for SCRisk and Resolution using the high-confidence 161-term risk reconstruction by default. |
 | 4 | `collect_earnings_event_inputs.py` | Collects event dates, adjusted closes, and Fama-French / momentum factors, with raw provider payloads and a provenance manifest. |
 | 5 | `join_earnings_event_dates.py` | Attaches the collected event date to each call. |
 | 6 | `join_supply_chain_scores_to_segments.py` | Attaches call-level scores to every transcript segment of that call. |
@@ -55,7 +55,8 @@ be described as a replication result.
 
 | Gap | Current state | Paper-equivalent target |
 | --- | --- | --- |
-| Risk and resolution dictionaries | Provisional starter lists defined in `calculate_supply_chain_transcript_scores.py` | The paper's dictionaries |
+| Risk dictionary | High-confidence 161-term reconstruction: 144 Table 3 terms plus 17 reconstructed non-occurring terms | The unpublished author-original dictionary |
+| Resolution dictionary | Provisional starter list defined in `calculate_supply_chain_transcript_scores.py` | The paper's resolution dictionary |
 | Supply chain vocabulary | Generated from 10-K text by `build_supply_chain_library.py`, a different vocabulary | The paper's supply chain word list |
 | Event dates | Proxy dates from the Alpha Vantage `EARNINGS` `reportedDate` | The paper's call dates |
 | Firm universe | Provisional 450-company convenience sample, 9 sectors (`data/provisional/`) | The paper's historical US-company universe |
@@ -90,6 +91,15 @@ checks that passed.
 
 Provisional inputs that are not the paper's are quarantined in
 `data/provisional/` with their provenance written down.
+
+The primary risk dictionary is
+`dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt`.
+It is a source-based reconstruction, not the unpublished author-original file.
+The scorer requires exactly 161 unique lowercase terms and records the selected
+file, SHA-256, term counts, and primary/override status in every scoring manifest.
+`--risk-words` remains available only as an explicit non-primary development
+override. The 144-term observed file is retained as provenance and is not used
+by the primary scoring path.
 
 ## The rule about charts and findings
 

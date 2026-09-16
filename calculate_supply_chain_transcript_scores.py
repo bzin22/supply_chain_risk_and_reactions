@@ -19,12 +19,10 @@ Scoring definition
    the library's ``inventories`` and ``suppliers`` reaches its ``supplier``.
    A form reachable from more than one term takes the largest weight, which is
    the rule ``load_supply_chain_library`` already applies to repeated rows.
-2. A *risk occurrence* is a term from the risk dictionary, inflected the same
-   way under ``v2_seeds_inflections``.  For the starter
-   dictionary below, the base vocabulary is a manually curated expansion of
-   "risk" and "uncertainty" and the additional vocabulary is drawn from
-   official supply-chain-risk sources.  The dictionary is an input, so the
-   researcher can replace or revise it without changing scoring code.
+2. A *risk occurrence* is an exact term from the 161-term Theile risk-library
+   reconstruction. Risk terms are never stemmed, lemmatized, or expanded with
+   generated inflections. ``--risk-words`` can explicitly override the file
+   for development, and such runs are marked non-primary in their manifests.
 3. Every supply-chain/risk occurrence pair whose token spans are no more than
    ``WINDOW`` tokens apart contributes the supply-chain cosine weight to the
    raw SCRisk score.  Thus, one supply-chain occurrence can contribute more
@@ -56,10 +54,11 @@ compared against the default.
 *Terms in both vocabularies.*  ``shortages`` is a supply-chain library term
 (weight 0.693) and also a risk term.  A span is zero tokens from itself, so
 one occurrence of ``shortages`` forms a valid pair with itself and contributes
-0.693 to the score with no second word anywhere nearby.  Under
-``v2_seeds_inflections`` the inflection completion puts ``shortage`` in both
-vocabularies too, so the same applies to the singular.  Every such pair is
-counted in ``scrisk_identical_span_pairs`` and
+0.693 to the score with no second word anywhere nearby. The primary risk
+dictionary explicitly contains both ``shortage`` and ``shortages``. Under
+``v2_seeds_inflections``, supply-chain inflection completion also puts the
+singular in the supply-chain vocabulary, so the same applies to it. Every such
+pair is counted in ``scrisk_identical_span_pairs`` and
 ``scrisk_identical_span_weight_sum`` on each output row, and the full list of
 shared terms is written to the run manifest.  ``--forbid-identical-span-pairs``
 drops them.
@@ -95,12 +94,12 @@ Reproduce the original ppmi_svd_full_20260910 scores exactly::
         --no-transcript-integrity-filter \
         --output earnings_call_transcripts_scored_v1.csv
 
-Use reviewed dictionaries instead of the starter dictionaries::
+Use a development-only risk override or a reviewed resolution dictionary::
 
     python calculate_supply_chain_transcript_scores.py \
         --input earnings_call_transcripts.csv \
         --library artifacts/sec_10k_supply_chain_pilot_concurrent/terms.jsonl \
-        --risk-words risk_words.txt \
+        --risk-words development_risk_words.txt \
         --resolution-words resolution_words.txt \
         --output earnings_call_transcripts_scored.csv
 
@@ -113,6 +112,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
 import re
@@ -124,6 +124,15 @@ from typing import Any, Iterable, Sequence
 
 
 WINDOW = 10
+REPOSITORY_ROOT = Path(__file__).resolve().parent
+PRIMARY_RISK_DICTIONARY_IDENTIFIER = "theile_reconstruction_v1_risk_full"
+PRIMARY_RISK_DICTIONARY_RELATIVE_PATH = Path(
+    "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt"
+)
+PRIMARY_RISK_DICTIONARY_PATH = REPOSITORY_ROOT / PRIMARY_RISK_DICTIONARY_RELATIVE_PATH
+PRIMARY_RISK_TERM_COUNT = 161
+PRIMARY_RISK_TABLE_3_TERM_COUNT = 144
+PRIMARY_RISK_RECONSTRUCTED_TERM_COUNT = 17
 
 # These are the 16 seed phrases used by build_supply_chain_library.py.  They
 # are the intended semantic center of the generated library, so under
@@ -149,40 +158,6 @@ SUPPLY_CHAIN_SEEDS = (
     "warehousing",
 )
 
-# Starter risk vocabulary.  These terms are intentionally visible for review
-# and are not presented as a final research dictionary.  The closest synonym
-# set is followed by supply-chain-specific exposures, disruptions, and threat
-# terms used in official NIST, CISA, and GAO supply-chain-risk material.
-STARTER_RISK_WORDS = (
-    # Direct/near synonyms and common inflections for risk and uncertainty.
-    "risk", "risks", "risky", "uncertain", "uncertainty", "uncertainties",
-    "exposure", "exposures", "vulnerability", "vulnerabilities", "threat",
-    "threats", "hazard", "hazards", "danger", "dangers", "jeopardy",
-    "peril", "perils", "contingency", "contingencies", "volatility",
-    "volatile", "downside", "concern", "concerns", "susceptible",
-    # Supply-chain disruption, dependency, availability, and concentration.
-    "supply disruption", "supply chain disruption", "business disruption",
-    "disruption", "disruptions", "shortage", "shortages", "stockout",
-    "stockouts", "bottleneck", "bottlenecks", "capacity constraint",
-    "capacity constraints", "supplier failure", "supplier dependency",
-    "supplier concentration", "single source", "single sourcing",
-    "geographic concentration", "foreign dependency", "external dependency",
-    "raw material availability", "component availability", "material shortage",
-    "labor shortage", "delivery delay", "delivery delays", "shipping delay",
-    "transportation delay", "lead time", "lead times", "port congestion",
-    # Events and integrity threats identified in supply-chain-risk guidance.
-    "counterfeit", "counterfeits", "counterfeiting", "unauthorized production",
-    "tampering", "theft", "malicious software", "malicious hardware",
-    "poor manufacturing", "manufacturing defect", "manufacturing defects",
-    "quality failure", "quality failures", "supplier failure", "cyberattack",
-    "cyberattacks", "cyber threat", "ransomware", "natural disaster",
-    "natural disasters", "extreme weather", "geopolitical conflict",
-    "trade dispute", "trade disputes", "trade restriction", "trade restrictions",
-    "tariff", "tariffs", "sanction", "sanctions", "regulatory violation",
-    "regulatory violations", "supplier insolvency", "supplier bankruptcy",
-    "demand shock", "forecast error",
-)
-
 # The starter Resolution dictionary is deliberately narrower than a generic
 # positive-language dictionary.  It focuses on actions that can describe
 # addressing a risk: mitigation, containment, recovery, and resolution.
@@ -200,17 +175,6 @@ STARTER_RESOLUTION_WORDS = (
     "dual source", "dual sourcing", "buffer stock", "safety stock",
 )
 
-# Source notes for the starter supply-chain-specific additions.  They are
-# comments/data provenance only; the script never downloads or depends on the
-# internet at scoring time.  Reviewers can replace STARTER_RISK_WORDS with a
-# versioned dictionary and retain these URLs in that file's metadata.
-RISK_TERM_SOURCES = (
-    "https://csrc.nist.gov/Projects/cyber-supply-chain-risk-management",
-    "https://csrc.nist.gov/glossary/term/supply_chain_risk",
-    "https://www.cisa.gov/sites/default/files/2024-08/Critical_Manufacturing_Sector_Supply_Chain_Security_and_the_Gray_Market_508c.pdf",
-    "https://www.gao.gov/products/gao-22-105923",
-)
-
 WORD_RE = re.compile(r"[A-Za-z]+(?:['’.-][A-Za-z]+)*")
 
 # A seed is by construction the centre of its own neighbourhood, so its
@@ -219,11 +183,8 @@ WORD_RE = re.compile(r"[A-Za-z]+(?:['’.-][A-Za-z]+)*")
 # 0.916 in the study library.
 SEED_WEIGHT = 1.0
 
-# ``v1_library_only`` scores exactly the terms in terms.jsonl and exactly the
-# risk dictionary as written.  ``v2_seeds_inflections`` adds the 16 seeds at
-# SEED_WEIGHT and completes the regular singular/plural inflections of both
-# vocabularies.  Neither version changes WINDOW, tokenization, the pairing
-# rule, or the resolution dictionary.
+# These versions govern only the supply-chain vocabulary. Risk matching always
+# uses the selected risk dictionary exactly as written.
 VOCABULARY_VERSIONS = ("v1_library_only", "v2_seeds_inflections")
 DEFAULT_VOCABULARY_VERSION = "v2_seeds_inflections"
 
@@ -290,10 +251,22 @@ class ScoreResult:
     resolution_raw: float
     # A term that sits in both the supply-chain and the risk vocabulary pairs
     # with its own occurrence at distance 0.  ``shortages`` is the only such
-    # term in v1.  These two fields report exactly how much of the score comes
+    # example in v1. These two fields report exactly how much of the score comes
     # from that, so it can be measured instead of argued about.
     identical_span_pairs: int = 0
     identical_span_weight_sum: float = 0.0
+
+
+@dataclass(frozen=True)
+class RiskDictionarySelection:
+    """Terms and provenance for the risk dictionary selected for one run."""
+
+    terms: list[str]
+    path: Path
+    repository_relative_path: str
+    sha256: str
+    usage: str
+    is_primary: bool
 
 
 def normalize_term(term: str) -> tuple[str, ...]:
@@ -426,6 +399,94 @@ def load_dictionary(path: Path) -> list[str]:
     return terms
 
 
+def sha256_file(path: Path) -> str:
+    """Return the SHA-256 digest of a file's exact bytes."""
+
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def repository_relative_path(path: Path) -> str:
+    """Render repository files relative to the repository root when possible."""
+
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(REPOSITORY_ROOT.resolve()).as_posix()
+    except ValueError:
+        return str(resolved)
+
+
+def load_primary_risk_dictionary(
+    path: Path = PRIMARY_RISK_DICTIONARY_PATH,
+) -> list[str]:
+    """Load and strictly validate the 161-term primary reconstruction."""
+
+    try:
+        raw_lines = path.read_text(encoding="utf-8").splitlines()
+    except FileNotFoundError as exc:
+        raise ValueError(f"Primary risk dictionary is missing: {path}") from exc
+    except (OSError, UnicodeError) as exc:
+        raise ValueError(f"Primary risk dictionary cannot be read as UTF-8: {path}") from exc
+
+    if not raw_lines or any(not line.strip() for line in raw_lines):
+        raise ValueError(
+            f"Primary risk dictionary must contain exactly {PRIMARY_RISK_TERM_COUNT} "
+            f"non-empty lines: {path}"
+        )
+
+    terms = [line.strip() for line in raw_lines]
+    malformed = [
+        term
+        for raw, term in zip(raw_lines, terms)
+        if raw != term or term != term.lower() or " ".join(normalize_term(term)) != term
+    ]
+    if malformed:
+        raise ValueError(
+            "Primary risk dictionary contains malformed terms; expected exact lowercase "
+            f"word forms without surrounding whitespace: {malformed[:3]}"
+        )
+
+    duplicates = sorted({term for term in terms if terms.count(term) > 1})
+    if duplicates:
+        raise ValueError(f"Primary risk dictionary contains duplicate terms: {duplicates}")
+    if len(terms) != PRIMARY_RISK_TERM_COUNT:
+        raise ValueError(
+            f"Primary risk dictionary must contain exactly {PRIMARY_RISK_TERM_COUNT} unique "
+            f"terms; found {len(terms)} in {path}"
+        )
+    return terms
+
+
+def select_risk_dictionary(risk_path: Path | None) -> RiskDictionarySelection:
+    """Select the strict primary dictionary or an explicit non-primary override."""
+
+    primary_terms = load_primary_risk_dictionary(PRIMARY_RISK_DICTIONARY_PATH)
+    if risk_path is None:
+        path = PRIMARY_RISK_DICTIONARY_PATH
+        terms = primary_terms
+        usage = "primary"
+        is_primary = True
+    else:
+        path = risk_path
+        try:
+            terms = load_dictionary(path)
+        except FileNotFoundError as exc:
+            raise ValueError(f"Risk dictionary override is missing: {path}") from exc
+        usage = "override_non_primary"
+        is_primary = False
+    return RiskDictionarySelection(
+        terms=terms,
+        path=path,
+        repository_relative_path=repository_relative_path(path),
+        sha256=sha256_file(path),
+        usage=usage,
+        is_primary=is_primary,
+    )
+
+
 def regular_inflections(word: str) -> set[str]:
     """Return a word's regular singular and plural forms, never truncating a stem.
 
@@ -462,15 +523,6 @@ def phrase_inflections(term: str) -> set[str]:
     head = words[-1]
     prefix = words[:-1]
     return {" ".join(prefix + [variant]) for variant in regular_inflections(head)}
-
-
-def expand_term_inflections(terms: Iterable[str]) -> list[str]:
-    """Complete the regular inflections of an unweighted dictionary."""
-
-    expanded: set[str] = set()
-    for term in terms:
-        expanded.update(phrase_inflections(term))
-    return sorted(expanded)
 
 
 def expand_weighted_inflections(weights: dict[str, float]) -> dict[str, float]:
@@ -523,16 +575,11 @@ def build_supply_chain_vocabulary(
 
 def build_risk_vocabulary(
     risk_words: Iterable[str],
-    version: str = DEFAULT_VOCABULARY_VERSION,
 ) -> list[str]:
-    """Assemble the risk vocabulary for one version, inflecting only in v2."""
+    """Use exact risk forms without stemming, lemmatization, or expansion."""
 
-    if version not in VOCABULARY_VERSIONS:
-        raise ValueError(f"Unknown vocabulary version {version!r}; expected one of {VOCABULARY_VERSIONS}")
     terms = [" ".join(normalize_term(term)) for term in risk_words]
     terms = [term for term in terms if term]
-    if version == "v2_seeds_inflections":
-        return expand_term_inflections(terms)
     ordered: list[str] = []
     seen: set[str] = set()
     for term in terms:
@@ -670,7 +717,7 @@ def normalize_raw_scores(
     ], standard_deviation
 
 
-def _starter_dictionary(path: Path | None, fallback: Sequence[str]) -> list[str]:
+def _resolution_dictionary(path: Path | None, fallback: Sequence[str]) -> list[str]:
     return list(fallback) if path is None else load_dictionary(path)
 
 
@@ -713,12 +760,12 @@ def score_csv(
         raise ValueError("limit must be positive")
 
     library_weights = load_supply_chain_library(library_path)
-    risk_dictionary = _starter_dictionary(risk_path, STARTER_RISK_WORDS)
-    resolution_words = _starter_dictionary(resolution_path, STARTER_RESOLUTION_WORDS)
+    risk_selection = select_risk_dictionary(risk_path)
+    resolution_words = _resolution_dictionary(resolution_path, STARTER_RESOLUTION_WORDS)
     supply_chain_weights = build_supply_chain_vocabulary(
         library_weights, vocabulary_version, seed_weight, excluded_supply_chain_terms
     )
-    risk_words = build_risk_vocabulary(risk_dictionary, vocabulary_version)
+    risk_words = build_risk_vocabulary(risk_selection.terms)
     supply_chain_index = build_phrase_index(supply_chain_weights)
     risk_index = build_phrase_index(risk_words)
     resolution_index = build_phrase_index(resolution_words)
@@ -815,6 +862,19 @@ def score_csv(
         "library_term_count": len(library_weights),
         "supply_chain_term_count": len(supply_chain_weights),
         "risk_term_count": len(risk_words),
+        "risk_dictionary_identifier": PRIMARY_RISK_DICTIONARY_IDENTIFIER,
+        "risk_dictionary_path": PRIMARY_RISK_DICTIONARY_RELATIVE_PATH.as_posix(),
+        "risk_dictionary_sha256": sha256_file(PRIMARY_RISK_DICTIONARY_PATH),
+        "risk_dictionary_total_terms": PRIMARY_RISK_TERM_COUNT,
+        "risk_dictionary_direct_table_3_terms": PRIMARY_RISK_TABLE_3_TERM_COUNT,
+        "risk_dictionary_reconstructed_nonoccurring_terms": (
+            PRIMARY_RISK_RECONSTRUCTED_TERM_COUNT
+        ),
+        "risk_dictionary_usage": risk_selection.usage,
+        "risk_dictionary_is_primary": risk_selection.is_primary,
+        "risk_dictionary_selected_path": risk_selection.repository_relative_path,
+        "risk_dictionary_selected_sha256": risk_selection.sha256,
+        "risk_dictionary_selected_total_terms": len(risk_words),
         "resolution_term_count": len(set(" ".join(normalize_term(t)) for t in resolution_words)),
         "excluded_supply_chain_terms": [
             " ".join(normalize_term(term)) for term in excluded_supply_chain_terms
@@ -856,7 +916,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--input", type=Path, required=True, help="CSV containing transcript_text")
     parser.add_argument("--output", type=Path, required=True, help="new CSV to write")
     parser.add_argument("--library", type=Path, required=True, help="supply-chain terms.jsonl")
-    parser.add_argument("--risk-words", type=Path, help="reviewed risk dictionary; defaults to starter terms")
+    parser.add_argument(
+        "--risk-words",
+        type=Path,
+        help=(
+            "development-only risk dictionary override; omitted runs use the primary "
+            "161-term Theile reconstruction and overrides are marked non-primary"
+        ),
+    )
     parser.add_argument(
         "--resolution-words",
         type=Path,
@@ -876,8 +943,8 @@ def parse_args() -> argparse.Namespace:
         help=(
             "v1_library_only reproduces the original run: terms.jsonl alone, no seeds, "
             "no inflections. v2_seeds_inflections adds the 16 supply-chain seeds at "
-            "--seed-weight and completes the regular inflections of the supply-chain and "
-            "risk vocabularies. Default: v2_seeds_inflections"
+            "--seed-weight and completes regular supply-chain inflections. Risk terms "
+            "always match the selected dictionary exactly. Default: v2_seeds_inflections"
         ),
     )
     parser.add_argument(

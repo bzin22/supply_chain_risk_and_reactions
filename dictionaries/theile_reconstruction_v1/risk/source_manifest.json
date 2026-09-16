@@ -1,0 +1,121 @@
+{
+  "reconstruction": "theile_reconstruction_v1/risk",
+  "created_date": "2026-09-16",
+  "source_only_selection": true,
+  "outcome_data_examined": false,
+  "table_3_observed_terms": 144,
+  "table_3_hw_y_terms": 110,
+  "table_3_supply_chain_n_terms": 34,
+  "hassan_appendix_table_iii_terms": 123,
+  "wu_attributable_observed_hw_terms": [
+    "issue",
+    "issues",
+    "problem",
+    "problems"
+  ],
+  "reconstructed_nonoccurring_terms": [
+    "chancy",
+    "defenseless",
+    "diffidence",
+    "doubtfulness",
+    "fitful",
+    "fluctuant",
+    "incalculable",
+    "incertitude",
+    "indecisive",
+    "misgiving",
+    "niggle",
+    "parlous",
+    "precariousness",
+    "unconfident",
+    "undependable",
+    "unsureness",
+    "untrustworthy"
+  ],
+  "reconstructed_full_terms": 161,
+  "sensitivity_inflections_file_created": false,
+  "sensitivity_inflections_reason": "No automatic inflection expansion is justified for the source-faithful reconstruction.",
+  "sources": [
+    {
+      "id": "theile_2026_source_paper",
+      "citation": "Theile, Hofer, Singhal, and Hoberg (2026), Supply Chain Risk and Resolution",
+      "url": "https://journals.sagepub.com/doi/10.1177/10591478261420550",
+      "retrieval_date": "2026-09-16",
+      "exact_filename": "theile-et-al-2026-supply-chain-risk-and-resolution-an-empirical-study-of-stock-market-reactions.pdf",
+      "sha256": "db1d0411addfc32b22c70b062c3b53be67b12441bfb11d936568455f43051390",
+      "license": "No open license identified in the supplied PDF; publisher copyright terms apply.",
+      "retrieval_status": "Supplied local source; inspected directly.",
+      "source_location": "journal p. 2987, Table 3 (PDF p. 7)"
+    },
+    {
+      "id": "hassan_2019_online_appendix",
+      "citation": "Hassan, Hollander, van Lent, and Tahoun (2019), Online Appendix",
+      "url": "https://lbsresearch.london.edu/id/eprint/1190/7/qjz021_online_appendix.pdf",
+      "retrieval_date": "2026-09-16",
+      "exact_filename": "qjz021_online_appendix.pdf",
+      "sha256": "484d0f4dc23446dd800dce429b9382b4d63799efa2b62a6ec480c283dc15fc1e",
+      "license": "No explicit reuse license identified in the PDF or repository record; copyright applies.",
+      "retrieval_status": "Downloaded from London Business School Research Online.",
+      "source_location": "Appendix Table III, PDF p. 16"
+    },
+    {
+      "id": "hassan_riskwords_synonyms",
+      "citation": "Schwedeler firmlevelrisk example implementation for the Hassan methodology",
+      "url": "https://raw.githubusercontent.com/mschwedeler/firmlevelrisk/master/input/riskwords/synonyms.txt",
+      "retrieval_date": "2026-09-16",
+      "exact_filename": "synonyms.txt",
+      "sha256": "a2a44a4de444521887f2ff22f7eb64bbaa735d19bed18535ae8027d64b501afa",
+      "license": "No LICENSE file was present in the repository; no reuse license is asserted.",
+      "retrieval_status": "Downloaded from the public repository linked by Hassan's author website.",
+      "source_location": "input/riskwords/synonyms.txt",
+      "notes": "Raw Oxford transcription contains 138 unique forms before study exclusions and occurrence filtering."
+    },
+    {
+      "id": "hassan_riskwords_readme",
+      "citation": "Schwedeler firmlevelrisk risk-word source note",
+      "url": "https://raw.githubusercontent.com/mschwedeler/firmlevelrisk/master/input/riskwords/README.md",
+      "retrieval_date": "2026-09-16",
+      "exact_filename": "README.md",
+      "sha256": "a96c99d3157a3b5d454b7faed478a993218700cbd88e7b927e296c456957cd9c",
+      "license": "No LICENSE file was present in the repository; no reuse license is asserted.",
+      "retrieval_status": "Downloaded.",
+      "source_location": "input/riskwords/README.md",
+      "notes": "States that the list was transcribed from the Oxford Dictionary in 2016."
+    },
+    {
+      "id": "wu_2024_article",
+      "citation": "Wu (2024), Text-Based Measure of Supply Chain Risk Exposure",
+      "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.2023.4927",
+      "retrieval_date": "2026-09-16",
+      "exact_filename": null,
+      "sha256": null,
+      "license": "INFORMS publisher copyright terms apply.",
+      "retrieval_status": "Official article page inspected; no local article file retained.",
+      "source_location": "Article and supplemental-material links"
+    },
+    {
+      "id": "wu_2024_online_appendix",
+      "citation": "Wu (2024), official online appendix",
+      "url": "https://pubsonline.informs.org/doi/suppl/10.1287/mnsc.2023.4927/suppl_file/mnsc.2023.4927.sm1.pdf",
+      "retrieval_date": "2026-09-16",
+      "exact_filename": "mnsc.2023.4927.sm1.pdf",
+      "sha256": null,
+      "license": "INFORMS publisher copyright terms apply.",
+      "retrieval_status": "Inspected through the official publisher viewer; direct byte download returned HTTP 403, so no hash is claimed.",
+      "source_location": "Online Appendix, 7 pages",
+      "notes": "The appendix describes preprocessing but does not print the complete risk dictionary."
+    },
+    {
+      "id": "wu_2024_replication_package",
+      "citation": "Wu (2024), official Management Science replication files",
+      "url": "https://services.informs.org/dataset/download.php?doi=mnsc.2023.4927",
+      "retrieval_date": "2026-09-16",
+      "exact_filename": null,
+      "sha256": null,
+      "license": "Restricted Management Science replication-use terms: agreement and an email address are required; the page limits use to verification of the paper's main results unless all authors grant permission.",
+      "retrieval_status": "Landing page inspected; terms were not accepted and the archive was not downloaded.",
+      "source_location": "Official replication download form",
+      "notes": "No identity was supplied and this dictionary-reconstruction use is not clearly authorized by the posted terms."
+    }
+  ]
+}
