@@ -1,0 +1,724 @@
+{
+  "seeds": {
+    "calls_flipped": 0,
+    "top_supply_chain_terms": [],
+    "top_risk_terms": [],
+    "top_pairs": []
+  },
+  "hyphen": {
+    "calls_flipped": 222,
+    "top_supply_chain_terms": [
+      [
+        "inventory",
+        17
+      ],
+      [
+        "customers",
+        15
+      ],
+      [
+        "order",
+        15
+      ],
+      [
+        "supply",
+        14
+      ],
+      [
+        "pipeline",
+        14
+      ],
+      [
+        "retail",
+        13
+      ],
+      [
+        "deliver",
+        11
+      ],
+      [
+        "production",
+        9
+      ],
+      [
+        "delivering",
+        8
+      ],
+      [
+        "source",
+        8
+      ],
+      [
+        "client",
+        7
+      ],
+      [
+        "clients",
+        7
+      ],
+      [
+        "customer",
+        6
+      ],
+      [
+        "shipments",
+        5
+      ],
+      [
+        "backlog",
+        5
+      ]
+    ],
+    "top_risk_terms": [
+      [
+        "risk",
+        152
+      ],
+      [
+        "volatile",
+        14
+      ],
+      [
+        "lead time",
+        10
+      ],
+      [
+        "exposure",
+        8
+      ],
+      [
+        "volatility",
+        6
+      ],
+      [
+        "single source",
+        6
+      ],
+      [
+        "concerns",
+        5
+      ],
+      [
+        "risks",
+        4
+      ],
+      [
+        "lead times",
+        3
+      ],
+      [
+        "concern",
+        3
+      ],
+      [
+        "tariff",
+        1
+      ],
+      [
+        "vulnerabilities",
+        1
+      ],
+      [
+        "uncertain",
+        1
+      ],
+      [
+        "risky",
+        1
+      ],
+      [
+        "disruptions",
+        1
+      ]
+    ],
+    "top_pairs": [
+      [
+        "inventory + risk",
+        14
+      ],
+      [
+        "customers + risk",
+        12
+      ],
+      [
+        "order + risk",
+        12
+      ],
+      [
+        "pipeline + risk",
+        11
+      ],
+      [
+        "deliver + risk",
+        11
+      ],
+      [
+        "retail + risk",
+        10
+      ],
+      [
+        "clients + risk",
+        7
+      ],
+      [
+        "delivering + risk",
+        7
+      ],
+      [
+        "production + risk",
+        7
+      ],
+      [
+        "source + single source",
+        6
+      ],
+      [
+        "shipments + volatile",
+        5
+      ],
+      [
+        "client + risk",
+        4
+      ],
+      [
+        "buying + risk",
+        4
+      ],
+      [
+        "supply + risk",
+        4
+      ],
+      [
+        "backlog + risk",
+        3
+      ]
+    ]
+  },
+  "stem": {
+    "calls_flipped": 890,
+    "top_supply_chain_terms": [
+      [
+        "forecast",
+        194
+      ],
+      [
+        "stock",
+        115
+      ],
+      [
+        "customer",
+        73
+      ],
+      [
+        "track",
+        61
+      ],
+      [
+        "deliver",
+        55
+      ],
+      [
+        "buy",
+        50
+      ],
+      [
+        "plann",
+        32
+      ],
+      [
+        "supply",
+        31
+      ],
+      [
+        "purchase",
+        30
+      ],
+      [
+        "inventory",
+        25
+      ],
+      [
+        "material",
+        19
+      ],
+      [
+        "production",
+        17
+      ],
+      [
+        "shipment",
+        14
+      ],
+      [
+        "order",
+        12
+      ],
+      [
+        "pipeline",
+        12
+      ]
+    ],
+    "top_risk_terms": [
+      [
+        "concern",
+        397
+      ],
+      [
+        "risk",
+        167
+      ],
+      [
+        "volatility",
+        71
+      ],
+      [
+        "uncertainty",
+        55
+      ],
+      [
+        "volatile",
+        39
+      ],
+      [
+        "exposure",
+        35
+      ],
+      [
+        "disruption",
+        22
+      ],
+      [
+        "uncertain",
+        16
+      ],
+      [
+        "sanction",
+        15
+      ],
+      [
+        "downside",
+        14
+      ],
+      [
+        "susceptible",
+        13
+      ],
+      [
+        "contingency",
+        11
+      ],
+      [
+        "tariff",
+        7
+      ],
+      [
+        "lead time",
+        6
+      ],
+      [
+        "threat",
+        4
+      ]
+    ],
+    "top_pairs": [
+      [
+        "forecast + risk",
+        84
+      ],
+      [
+        "customer + concern",
+        70
+      ],
+      [
+        "stock + volatility",
+        38
+      ],
+      [
+        "forecast + uncertainty",
+        31
+      ],
+      [
+        "supply + concern",
+        31
+      ],
+      [
+        "stock + concern",
+        29
+      ],
+      [
+        "inventory + concern",
+        23
+      ],
+      [
+        "track + risk",
+        20
+      ],
+      [
+        "material + concern",
+        19
+      ],
+      [
+        "buy + risk",
+        18
+      ],
+      [
+        "forecast + concern",
+        15
+      ],
+      [
+        "shipment + concern",
+        14
+      ],
+      [
+        "stock + volatile",
+        14
+      ],
+      [
+        "track + concern",
+        13
+      ],
+      [
+        "production + concern",
+        12
+      ]
+    ]
+  },
+  "window25": {
+    "calls_flipped": 2668,
+    "top_supply_chain_terms": [
+      [
+        "customers",
+        348
+      ],
+      [
+        "customer",
+        136
+      ],
+      [
+        "production",
+        132
+      ],
+      [
+        "pipeline",
+        132
+      ],
+      [
+        "supply",
+        122
+      ],
+      [
+        "retail",
+        101
+      ],
+      [
+        "order",
+        81
+      ],
+      [
+        "deliver",
+        74
+      ],
+      [
+        "material",
+        74
+      ],
+      [
+        "inventory",
+        72
+      ],
+      [
+        "planning",
+        64
+      ],
+      [
+        "clients",
+        64
+      ],
+      [
+        "distribution",
+        63
+      ],
+      [
+        "materials",
+        62
+      ],
+      [
+        "manufacturing",
+        47
+      ]
+    ],
+    "top_risk_terms": [
+      [
+        "risk",
+        604
+      ],
+      [
+        "exposure",
+        268
+      ],
+      [
+        "volatility",
+        238
+      ],
+      [
+        "uncertainty",
+        216
+      ],
+      [
+        "concerns",
+        167
+      ],
+      [
+        "concern",
+        167
+      ],
+      [
+        "risks",
+        144
+      ],
+      [
+        "uncertain",
+        114
+      ],
+      [
+        "volatile",
+        107
+      ],
+      [
+        "disruption",
+        105
+      ],
+      [
+        "uncertainties",
+        64
+      ],
+      [
+        "disruptions",
+        58
+      ],
+      [
+        "tariffs",
+        44
+      ],
+      [
+        "downside",
+        43
+      ],
+      [
+        "lead times",
+        41
+      ]
+    ],
+    "top_pairs": [
+      [
+        "customers + risk",
+        54
+      ],
+      [
+        "pipeline + risk",
+        45
+      ],
+      [
+        "customers + uncertainty",
+        44
+      ],
+      [
+        "production + risk",
+        39
+      ],
+      [
+        "customer + risk",
+        35
+      ],
+      [
+        "customers + concerns",
+        30
+      ],
+      [
+        "customers + concern",
+        25
+      ],
+      [
+        "distribution + risk",
+        24
+      ],
+      [
+        "customers + volatility",
+        23
+      ],
+      [
+        "retail + risk",
+        23
+      ],
+      [
+        "materials + risk",
+        23
+      ],
+      [
+        "customers + exposure",
+        22
+      ],
+      [
+        "material + risk",
+        22
+      ],
+      [
+        "order + risk",
+        20
+      ],
+      [
+        "customers + uncertain",
+        19
+      ]
+    ]
+  },
+  "stemmer_broadened_library_terms": {
+    "customers": "customer",
+    "buying": "buy",
+    "buyings": "buying",
+    "suppliers": "supplier",
+    "manufacturers": "manufacturer",
+    "warehous": "warehou",
+    "warehouses": "warehouse",
+    "inventories": "inventory",
+    "supplieds": "supplied",
+    "supplied": "suppli",
+    "vendors": "vendor",
+    "assemblys": "assembly",
+    "assemblies": "assembly",
+    "manufactured": "manufactur",
+    "manufactureds": "manufactured",
+    "manufactures": "manufacture",
+    "clients": "client",
+    "supplyings": "supplying",
+    "supplying": "supply",
+    "outsourced": "outsourc",
+    "outsourceds": "outsourced",
+    "ordering": "order",
+    "orderings": "ordering",
+    "procures": "procure",
+    "factories": "factory",
+    "transportings": "transporting",
+    "transporting": "transport",
+    "delivers": "deliver",
+    "supplies": "supply",
+    "distributors": "distributor",
+    "plannings": "planning",
+    "planning": "plann",
+    "buyers": "buyer",
+    "sourced": "sourc",
+    "sourceds": "sourced",
+    "trucking": "truck",
+    "truckings": "trucking",
+    "sources": "source",
+    "freights": "freight",
+    "replenishments": "replenishment",
+    "rails": "rail",
+    "inbounds": "inbound",
+    "forecastings": "forecasting",
+    "forecasting": "forecast",
+    "purchases": "purchase",
+    "purchas": "purcha",
+    "logisticals": "logistical",
+    "transported": "transport",
+    "transporteds": "transported",
+    "turnkeys": "turnkey",
+    "shippers": "shipper",
+    "transports": "transport",
+    "trackings": "tracking",
+    "tracking": "track",
+    "distributing": "distribut",
+    "distributings": "distributing",
+    "distributes": "distribute",
+    "stocking": "stock",
+    "stockings": "stocking",
+    "channels": "channel",
+    "raws": "raw",
+    "fabrications": "fabrication",
+    "resellers": "reseller",
+    "distributeds": "distributed",
+    "distributed": "distribut",
+    "delivering": "deliver",
+    "deliverings": "delivering",
+    "finisheds": "finished",
+    "finished": "finish",
+    "fulfills": "fulfill",
+    "deliveries": "delivery",
+    "procured": "procur",
+    "procureds": "procured",
+    "pipelines": "pipeline",
+    "deliverys": "delivery",
+    "components": "component",
+    "merchandising": "merchandi",
+    "merchandisings": "merchandising",
+    "overseas": "oversea",
+    "shippings": "shipping",
+    "shipping": "shipp",
+    "materials": "material",
+    "packaging": "packag",
+    "packagings": "packaging",
+    "retailers": "retailer",
+    "networks": "network",
+    "assembles": "assemble",
+    "railroads": "railroad",
+    "wholesales": "wholesale",
+    "oems": "oem",
+    "outbounds": "outbound",
+    "ships": "ship",
+    "productions": "production",
+    "subcontractors": "subcontractor",
+    "shipments": "shipment",
+    "trucks": "truck",
+    "factorys": "factory",
+    "intermodals": "intermodal",
+    "truckloads": "truckload",
+    "retails": "retail",
+    "merchandises": "merchandise",
+    "shipped": "shipp",
+    "shippeds": "shipped",
+    "packages": "package",
+    "purchased": "purcha",
+    "purchaseds": "purchased",
+    "shortages": "shortage",
+    "fulfillings": "fulfilling",
+    "fulfilling": "fulfill",
+    "assembled": "assembl",
+    "assembleds": "assembled",
+    "orders": "order",
+    "assemblings": "assembling",
+    "assembling": "assembl",
+    "plants": "plant",
+    "storages": "storage",
+    "wholesalers": "wholesaler",
+    "contractors": "contractor",
+    "fabricateds": "fabricated",
+    "fabricated": "fabricat",
+    "showrooms": "showroom",
+    "fabricates": "fabricate",
+    "routes": "route",
+    "trailers": "trailer",
+    "fleets": "fleet",
+    "backlogs": "backlog",
+    "channel partners": "channel partner",
+    "demand managements": "demand management",
+    "distributions": "distribution",
+    "fulfillments": "fulfillment",
+    "inventorys": "inventory",
+    "logistics": "logistic",
+    "manufacturings": "manufacturing",
+    "manufacturing": "manufactur",
+    "procurements": "procurement",
+    "purchasings": "purchasing",
+    "purchasing": "purcha",
+    "sourcing": "sourc",
+    "sourcings": "sourcing",
+    "supplys": "supply",
+    "supply chains": "supply chain",
+    "transportations": "transportation",
+    "warehousing": "warehou",
+    "warehousings": "warehousing"
+  },
+  "nonascii_letter_calls": 948,
+  "nonascii_letter_total": 2079,
+  "calls_containing_digits": 7379
+}

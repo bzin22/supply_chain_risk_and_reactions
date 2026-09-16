@@ -1,0 +1,79 @@
+industry,Q1_percent,Q2_percent,Q3_percent,Q4_percent,Q5_percent,max_minus_min_percent
+Aerospace & Defense,3.515,3.523,3.562,3.523,3.577,0.062
+Airlines,0.495,0.503,0.502,0.503,0.46,0.043
+Apparel Manufacturing,0.792,0.805,0.803,0.805,0.818,0.026
+Apparel Retail,1.188,1.208,1.204,1.208,1.226,0.038
+Asset Management,1.436,1.459,1.455,1.459,1.431,0.028
+Auto Manufacturers,0.495,0.503,0.502,0.503,0.511,0.016
+Auto Parts,0.941,0.956,0.953,0.956,0.92,0.036
+Banks - Diversified,2.079,2.063,2.057,2.063,2.095,0.038
+Banks - Regional,1.535,1.51,1.555,1.51,1.533,0.045
+Beverages - Non-Alcoholic,0.743,0.755,0.753,0.755,0.715,0.04
+Building Products & Equipment,1.188,1.158,1.204,1.158,1.175,0.046
+Business Equipment & Supplies,0.297,0.252,0.301,0.252,0.255,0.049
+Capital Markets,0.297,0.252,0.301,0.252,0.255,0.049
+Communication Equipment,1.584,1.56,1.555,1.56,1.584,0.029
+Computer Hardware,1.337,1.309,1.305,1.309,1.329,0.032
+Confectioners,0.297,0.252,0.301,0.252,0.255,0.049
+Conglomerates,0.743,0.755,0.753,0.755,0.766,0.023
+Consumer Electronics,0.644,0.604,0.602,0.604,0.613,0.042
+Credit Services,0.446,0.453,0.401,0.453,0.409,0.052
+Diagnostics & Research,0.99,1.007,1.004,1.007,1.022,0.032
+Discount Stores,0.891,0.856,0.903,0.856,0.869,0.047
+Drug Manufacturers - General,1.683,1.661,1.706,1.661,1.686,0.045
+Drug Manufacturers - Specialty & Generic,0.297,0.302,0.251,0.302,0.255,0.051
+Electronic Components,3.069,3.12,3.111,3.12,3.168,0.099
+Electronics & Computer Distribution,0.941,0.956,0.953,0.956,0.92,0.036
+Farm & Heavy Construction Machinery,1.238,1.258,1.254,1.258,1.277,0.039
+Farm Products,0.792,0.755,0.753,0.755,0.766,0.039
+Food Distribution,0.297,0.252,0.301,0.252,0.255,0.049
+Footwear & Accessories,0.891,0.856,0.853,0.856,0.869,0.038
+"Furnishings, Fixtures & Appliances",0.446,0.453,0.401,0.453,0.409,0.052
+Grocery Stores,0.248,0.252,0.251,0.252,0.255,0.007
+Healthcare Plans,0.891,0.906,0.903,0.906,0.869,0.037
+Home Improvement Retail,0.545,0.554,0.552,0.554,0.562,0.017
+Household & Personal Products,2.426,2.416,2.408,2.416,2.453,0.045
+Industrial Distribution,0.495,0.503,0.452,0.503,0.46,0.051
+Information Technology Services,1.089,1.107,1.104,1.107,1.073,0.034
+Insurance - Diversified,0.545,0.503,0.502,0.503,0.511,0.043
+Insurance - Life,0.891,0.906,0.853,0.906,0.869,0.053
+Insurance - Property & Casualty,2.178,2.164,2.208,2.164,2.197,0.044
+Insurance Brokers,1.386,1.409,1.405,1.409,1.38,0.029
+Integrated Freight & Logistics,0.644,0.604,0.602,0.604,0.613,0.042
+Leisure,0.743,0.755,0.753,0.755,0.715,0.04
+Marine Shipping,0.347,0.352,0.301,0.352,0.307,0.051
+Medical Care Facilities,0.743,0.755,0.753,0.755,0.715,0.04
+Medical Devices,1.733,1.761,1.756,1.761,1.737,0.028
+Medical Distribution,0.594,0.604,0.602,0.604,0.562,0.042
+Medical Instruments & Supplies,2.475,2.516,2.459,2.516,2.504,0.057
+Oil & Gas Drilling,1.287,1.309,1.305,1.309,1.329,0.042
+Oil & Gas E&P,2.723,2.718,2.76,2.718,2.759,0.042
+Oil & Gas Equipment & Services,1.881,1.862,1.856,1.862,1.891,0.035
+Oil & Gas Integrated,1.436,1.459,1.455,1.459,1.482,0.046
+Oil & Gas Midstream,1.386,1.359,1.405,1.359,1.38,0.046
+Oil & Gas Refining & Marketing,1.139,1.107,1.104,1.107,1.124,0.035
+Packaged Foods,2.574,2.567,2.609,2.567,2.606,0.042
+Packaging & Containers,1.733,1.761,1.706,1.761,1.737,0.055
+Personal Services,0.446,0.403,0.401,0.403,0.409,0.045
+REIT - Healthcare Facilities,0.446,0.403,0.452,0.403,0.409,0.049
+REIT - Industrial,0.693,0.654,0.702,0.654,0.664,0.048
+REIT - Mortgage,0.495,0.453,0.452,0.453,0.46,0.043
+REIT - Office,0.891,0.906,0.903,0.906,0.869,0.037
+REIT - Residential,1.733,1.761,1.756,1.761,1.737,0.028
+REIT - Retail,1.881,1.912,1.907,1.912,1.942,0.061
+REIT - Specialty,0.644,0.654,0.602,0.654,0.613,0.052
+Railroads,1.188,1.208,1.204,1.208,1.175,0.033
+Recreational Vehicles,1.386,1.359,1.355,1.359,1.38,0.031
+Rental & Leasing Services,0.545,0.554,0.552,0.554,0.511,0.043
+Residential Construction,1.337,1.359,1.355,1.359,1.329,0.03
+Restaurants,0.446,0.453,0.452,0.453,0.46,0.014
+Scientific & Technical Instruments,0.941,0.956,0.953,0.956,0.971,0.03
+Semiconductor Equipment & Materials,6.634,6.744,6.724,6.744,6.796,0.162
+Semiconductors,9.604,9.713,9.734,9.713,9.862,0.258
+Software - Application,1.931,1.912,1.957,1.912,1.942,0.045
+Software - Infrastructure,0.693,0.705,0.652,0.705,0.664,0.053
+Specialty Business Services,0.545,0.554,0.502,0.554,0.511,0.052
+Specialty Industrial Machinery,2.327,2.365,2.358,2.365,2.402,0.075
+Specialty Retail,0.693,0.654,0.652,0.654,0.664,0.041
+Textile Manufacturing,0.347,0.352,0.351,0.352,0.307,0.045
+Tobacco,0.446,0.403,0.401,0.403,0.409,0.045

@@ -1,0 +1,4 @@
+vocabulary_version,supply_chain_term,risk_term,identical_span_pairs,weight_each,weight_contributed
+v1_library_only,shortages,shortages,3305,0.69290245,2290.042597
+v2_seeds_inflections,shortages,shortages,3305,0.69290245,2290.042597
+v2_seeds_inflections,shortage,shortage,2048,0.69290245,1419.064218

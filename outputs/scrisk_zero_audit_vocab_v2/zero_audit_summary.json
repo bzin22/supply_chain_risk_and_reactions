@@ -1,0 +1,1020 @@
+{
+  "population": {
+    "all_scored_transcript_rows": 27000,
+    "analysable_events_event_status_ok": 17833,
+    "scrisk_zero_analysable": 7379,
+    "scrisk_positive_analysable": 10454,
+    "zero_share_of_analysable": 0.4138,
+    "note": "Every audited call has status=success and non-empty transcript text; empty-transcript rows (no_transcript / information / api_error) are already excluded from the analysable event set."
+  },
+  "pipeline_reproduction_check": {
+    "word_count_mismatches": 0,
+    "supply_chain_occurrence_mismatches": 0,
+    "risk_occurrence_mismatches": 0,
+    "csv_rows_with_nonzero_pairs_or_weight_sum": 0
+  },
+  "mechanism_buckets": {
+    "both vocabularies present, never within +/-10 tokens": {
+      "calls": 7112,
+      "percent_of_zeros": 96.38
+    },
+    "supply-chain vocabulary but no risk vocabulary": {
+      "calls": 265,
+      "percent_of_zeros": 3.59
+    },
+    "no supply-chain vocabulary": {
+      "calls": 2,
+      "percent_of_zeros": 0.03
+    }
+  },
+  "nearest_pair_distance_among_both_present": {
+    "calls": 7112,
+    "min": 11,
+    "p10": 13.0,
+    "median": 37.0,
+    "p90": 204.90000000000055,
+    "max": 3198,
+    "mean": 84.27,
+    "distance_11_to_15": 1309,
+    "distance_16_to_25": 1359,
+    "distance_26_to_50": 1551,
+    "distance_over_50": 2893
+  },
+  "false_zero_probes": {
+    "seed_phrases_added_to_library": {
+      "calls_that_become_nonzero": 0,
+      "percent_of_zeros": 0.0
+    },
+    "hyphen_apostrophe_period_splitting": {
+      "calls_that_become_nonzero": 222,
+      "percent_of_zeros": 3.01,
+      "calls_whose_tokens_changed": 7379
+    },
+    "suffix_stemming_of_both_dictionaries": {
+      "calls_that_become_nonzero": 890,
+      "percent_of_zeros": 12.06
+    },
+    "window_widened_to_25": {
+      "calls_that_become_nonzero": 2668,
+      "percent_of_zeros": 36.16
+    },
+    "window_widened_to_50": {
+      "calls_that_become_nonzero": 4219,
+      "percent_of_zeros": 57.18
+    },
+    "all_three_vocabulary_fixes_combined": {
+      "calls_that_become_nonzero": 1114,
+      "percent_of_zeros": 15.1
+    }
+  },
+  "text_integrity": {
+    "blank_text": 0,
+    "under_500_tokens": 0,
+    "under_1000_tokens": 0,
+    "no_terminal_punctuation_possible_truncation": 0,
+    "duplicate_transcript_text_across_calls": 0,
+    "duplicate_text_groups": 0,
+    "non_ascii_characters_present": 6720,
+    "segment_word_count_differs_from_scored_by_over_5pct": 175,
+    "segment_vs_scored_word_ratio_median": 1.0225,
+    "distinct_token_ratio_median": 0.203
+  },
+  "zero_vs_positive": {
+    "score_word_count": {
+      "zero": {
+        "n": 7379,
+        "mean": 6368.63,
+        "median": 6476.0,
+        "p10": 3377.0,
+        "p90": 9076.4
+      },
+      "positive": {
+        "n": 10454,
+        "mean": 6989.73,
+        "median": 7133.5,
+        "p10": 4311.0,
+        "p90": 9316.7
+      }
+    },
+    "supply_chain_occurrences": {
+      "zero": {
+        "n": 7379,
+        "mean": 50.86,
+        "median": 46.0,
+        "p10": 14.0,
+        "p90": 93.0
+      },
+      "positive": {
+        "n": 10454,
+        "mean": 79.58,
+        "median": 72.0,
+        "p10": 30.0,
+        "p90": 139.0
+      }
+    },
+    "risk_occurrences": {
+      "zero": {
+        "n": 7379,
+        "mean": 5.78,
+        "median": 5.0,
+        "p10": 1.0,
+        "p90": 11.0
+      },
+      "positive": {
+        "n": 10454,
+        "mean": 11.41,
+        "median": 9.0,
+        "p10": 4.0,
+        "p90": 21.0
+      }
+    },
+    "resolution_occurrences": {
+      "zero": {
+        "n": 7379,
+        "mean": 7.21,
+        "median": 6.0,
+        "p10": 2.0,
+        "p90": 14.0
+      },
+      "positive": {
+        "n": 10454,
+        "mean": 9.5,
+        "median": 8.0,
+        "p10": 3.0,
+        "p90": 18.0
+      }
+    },
+    "supply_chain_occurrences_per_1000_tokens": {
+      "zero": {
+        "n": 7379,
+        "mean": 8.08,
+        "median": 7.41962077493817,
+        "p10": 2.8869551657755412,
+        "p90": 14.003424868967892
+      },
+      "positive": {
+        "n": 10454,
+        "mean": 11.64,
+        "median": 10.78922480043248,
+        "p10": 4.775148247162305,
+        "p90": 19.706982536357312
+      }
+    },
+    "risk_occurrences_per_1000_tokens": {
+      "zero": {
+        "n": 7379,
+        "mean": 0.96,
+        "median": 0.7777561734396267,
+        "p10": 0.2482067560554113,
+        "p90": 1.820735588260787
+      },
+      "positive": {
+        "n": 10454,
+        "mean": 1.7,
+        "median": 1.414316029789205,
+        "p10": 0.6331197694618544,
+        "p90": 3.0708494399187964
+      }
+    }
+  },
+  "zero_rate_by_length_decile": [
+    {
+      "length_decile": 1,
+      "calls": 1785,
+      "zero_calls": 1096,
+      "min_word_count": 1015,
+      "max_word_count": 3889,
+      "zero_rate_percent": 61.4
+    },
+    {
+      "length_decile": 2,
+      "calls": 1782,
+      "zero_calls": 827,
+      "min_word_count": 3891,
+      "max_word_count": 4861,
+      "zero_rate_percent": 46.41
+    },
+    {
+      "length_decile": 3,
+      "calls": 1783,
+      "zero_calls": 792,
+      "min_word_count": 4863,
+      "max_word_count": 5594,
+      "zero_rate_percent": 44.42
+    },
+    {
+      "length_decile": 4,
+      "calls": 1786,
+      "zero_calls": 755,
+      "min_word_count": 5595,
+      "max_word_count": 6276,
+      "zero_rate_percent": 42.27
+    },
+    {
+      "length_decile": 5,
+      "calls": 1781,
+      "zero_calls": 717,
+      "min_word_count": 6277,
+      "max_word_count": 6892,
+      "zero_rate_percent": 40.26
+    },
+    {
+      "length_decile": 6,
+      "calls": 1784,
+      "zero_calls": 649,
+      "min_word_count": 6893,
+      "max_word_count": 7454,
+      "zero_rate_percent": 36.38
+    },
+    {
+      "length_decile": 7,
+      "calls": 1782,
+      "zero_calls": 633,
+      "min_word_count": 7455,
+      "max_word_count": 7989,
+      "zero_rate_percent": 35.52
+    },
+    {
+      "length_decile": 8,
+      "calls": 1784,
+      "zero_calls": 646,
+      "min_word_count": 7990,
+      "max_word_count": 8522,
+      "zero_rate_percent": 36.21
+    },
+    {
+      "length_decile": 9,
+      "calls": 1783,
+      "zero_calls": 632,
+      "min_word_count": 8523,
+      "max_word_count": 9219,
+      "zero_rate_percent": 35.45
+    },
+    {
+      "length_decile": 10,
+      "calls": 1783,
+      "zero_calls": 632,
+      "min_word_count": 9220,
+      "max_word_count": 27868,
+      "zero_rate_percent": 35.45
+    }
+  ],
+  "zero_rate_by_year": [
+    {
+      "value": 2010,
+      "calls": 734,
+      "zero_calls": 359,
+      "zero_rate_percent": 48.91
+    },
+    {
+      "value": 2011,
+      "calls": 822,
+      "zero_calls": 339,
+      "zero_rate_percent": 41.24
+    },
+    {
+      "value": 2012,
+      "calls": 1139,
+      "zero_calls": 524,
+      "zero_rate_percent": 46.01
+    },
+    {
+      "value": 2013,
+      "calls": 1210,
+      "zero_calls": 611,
+      "zero_rate_percent": 50.5
+    },
+    {
+      "value": 2014,
+      "calls": 1230,
+      "zero_calls": 623,
+      "zero_rate_percent": 50.65
+    },
+    {
+      "value": 2015,
+      "calls": 1221,
+      "zero_calls": 640,
+      "zero_rate_percent": 52.42
+    },
+    {
+      "value": 2016,
+      "calls": 1220,
+      "zero_calls": 637,
+      "zero_rate_percent": 52.21
+    },
+    {
+      "value": 2017,
+      "calls": 1226,
+      "zero_calls": 622,
+      "zero_rate_percent": 50.73
+    },
+    {
+      "value": 2018,
+      "calls": 1283,
+      "zero_calls": 542,
+      "zero_rate_percent": 42.24
+    },
+    {
+      "value": 2019,
+      "calls": 1279,
+      "zero_calls": 548,
+      "zero_rate_percent": 42.85
+    },
+    {
+      "value": 2020,
+      "calls": 1273,
+      "zero_calls": 355,
+      "zero_rate_percent": 27.89
+    },
+    {
+      "value": 2021,
+      "calls": 1270,
+      "zero_calls": 335,
+      "zero_rate_percent": 26.38
+    },
+    {
+      "value": 2022,
+      "calls": 1317,
+      "zero_calls": 296,
+      "zero_rate_percent": 22.48
+    },
+    {
+      "value": 2023,
+      "calls": 1313,
+      "zero_calls": 442,
+      "zero_rate_percent": 33.66
+    },
+    {
+      "value": 2024,
+      "calls": 1296,
+      "zero_calls": 506,
+      "zero_rate_percent": 39.04
+    }
+  ],
+  "zero_rate_by_sector": [
+    {
+      "value": "Healthcare",
+      "calls": 2291,
+      "zero_calls": 1297,
+      "zero_rate_percent": 56.61
+    },
+    {
+      "value": "Real Estate",
+      "calls": 1656,
+      "zero_calls": 884,
+      "zero_rate_percent": 53.38
+    },
+    {
+      "value": "Consumer Goods",
+      "calls": 1640,
+      "zero_calls": 716,
+      "zero_rate_percent": 43.66
+    },
+    {
+      "value": "Financial Services",
+      "calls": 1917,
+      "zero_calls": 796,
+      "zero_rate_percent": 41.52
+    },
+    {
+      "value": "Energy",
+      "calls": 1755,
+      "zero_calls": 713,
+      "zero_rate_percent": 40.63
+    },
+    {
+      "value": "Technology",
+      "calls": 2066,
+      "zero_calls": 823,
+      "zero_rate_percent": 39.84
+    },
+    {
+      "value": "Retail",
+      "calls": 2052,
+      "zero_calls": 789,
+      "zero_rate_percent": 38.45
+    },
+    {
+      "value": "Industrials",
+      "calls": 2085,
+      "zero_calls": 657,
+      "zero_rate_percent": 31.51
+    },
+    {
+      "value": "Semiconductors",
+      "calls": 2371,
+      "zero_calls": 704,
+      "zero_rate_percent": 29.69
+    }
+  ],
+  "companies_with_all_calls_zero": 4,
+  "companies_total": 399,
+  "company_zero_rate_percentiles": {
+    "10": 15.38,
+    "25": 27.72,
+    "50": 40.0,
+    "75": 56.535,
+    "90": 71.05
+  },
+  "most_common_supply_chain_terms_in_zero_calls": [
+    [
+      "customers",
+      4048
+    ],
+    [
+      "customer",
+      2979
+    ],
+    [
+      "pipeline",
+      1900
+    ],
+    [
+      "inventory",
+      1859
+    ],
+    [
+      "deliver",
+      1728
+    ],
+    [
+      "production",
+      1370
+    ],
+    [
+      "distribution",
+      1234
+    ],
+    [
+      "retail",
+      1220
+    ],
+    [
+      "supply",
+      1107
+    ],
+    [
+      "order",
+      973
+    ],
+    [
+      "manufacturing",
+      915
+    ],
+    [
+      "channel",
+      858
+    ],
+    [
+      "backlog",
+      844
+    ],
+    [
+      "delivering",
+      717
+    ],
+    [
+      "clients",
+      701
+    ],
+    [
+      "buying",
+      697
+    ],
+    [
+      "material",
+      679
+    ],
+    [
+      "component",
+      608
+    ],
+    [
+      "orders",
+      579
+    ],
+    [
+      "components",
+      519
+    ]
+  ],
+  "most_common_risk_terms_in_zero_calls": [
+    [
+      "risks",
+      4576
+    ],
+    [
+      "risk",
+      4126
+    ],
+    [
+      "uncertainties",
+      3677
+    ],
+    [
+      "exposure",
+      1746
+    ],
+    [
+      "volatility",
+      1351
+    ],
+    [
+      "uncertainty",
+      1316
+    ],
+    [
+      "concerns",
+      1239
+    ],
+    [
+      "concern",
+      1214
+    ],
+    [
+      "uncertain",
+      858
+    ],
+    [
+      "volatile",
+      646
+    ],
+    [
+      "disruption",
+      600
+    ],
+    [
+      "downside",
+      390
+    ],
+    [
+      "disruptions",
+      273
+    ],
+    [
+      "exposures",
+      253
+    ],
+    [
+      "threat",
+      171
+    ],
+    [
+      "tariffs",
+      145
+    ],
+    [
+      "lead time",
+      128
+    ],
+    [
+      "lead times",
+      119
+    ],
+    [
+      "contingency",
+      106
+    ],
+    [
+      "threats",
+      99
+    ]
+  ],
+  "dictionary_checks": {
+    "library_path": "/Users/bzin/stock_market_reactions_recreation_study/artifacts/sec_10k_supply_chain/experiments/ppmi_svd_full_20260910/terms.jsonl",
+    "library_terms": 118,
+    "audited_vocabulary_version": "v2_seeds_inflections",
+    "resolution_terms": 55,
+    "v1_library_only": {
+      "vocabulary_version": "v1_library_only",
+      "supply_chain_terms": 118,
+      "risk_terms": 94,
+      "seeds_scored": [],
+      "seeds_not_scored": [
+        "channel partners",
+        "customers",
+        "demand management",
+        "distribution",
+        "fulfillment",
+        "inventory",
+        "logistics",
+        "manufacturing",
+        "procurement",
+        "purchasing",
+        "sourcing",
+        "suppliers",
+        "supply",
+        "supply chain",
+        "transportation",
+        "warehousing"
+      ],
+      "weight_min": 0.58499056,
+      "weight_max": 0.91550493,
+      "non_positive_weights": 0,
+      "terms_in_both_supply_chain_and_risk": [
+        "shortages"
+      ],
+      "weight_of_terms_in_both": {
+        "shortages": 0.69290245
+      },
+      "supply_chain_resolution_overlap": [],
+      "multiword_supply_chain_terms": [],
+      "multiword_risk_terms": [
+        "business disruption",
+        "capacity constraint",
+        "capacity constraints",
+        "component availability",
+        "cyber threat",
+        "delivery delay",
+        "delivery delays",
+        "demand shock",
+        "external dependency",
+        "extreme weather",
+        "forecast error",
+        "foreign dependency",
+        "geographic concentration",
+        "geopolitical conflict",
+        "labor shortage",
+        "lead time",
+        "lead times",
+        "malicious hardware",
+        "malicious software",
+        "manufacturing defect",
+        "manufacturing defects",
+        "material shortage",
+        "natural disaster",
+        "natural disasters",
+        "poor manufacturing",
+        "port congestion",
+        "quality failure",
+        "quality failures",
+        "raw material availability",
+        "regulatory violation",
+        "regulatory violations",
+        "shipping delay",
+        "single source",
+        "single sourcing",
+        "supplier bankruptcy",
+        "supplier concentration",
+        "supplier dependency",
+        "supplier failure",
+        "supplier insolvency",
+        "supply chain disruption",
+        "supply disruption",
+        "trade dispute",
+        "trade disputes",
+        "trade restriction",
+        "trade restrictions",
+        "transportation delay",
+        "unauthorized production"
+      ],
+      "supply_chain_terms_unreachable_by_tokenizer": [],
+      "risk_terms_unreachable_by_tokenizer": []
+    },
+    "v2_seeds_inflections": {
+      "vocabulary_version": "v2_seeds_inflections",
+      "supply_chain_terms": 216,
+      "risk_terms": 147,
+      "seeds_scored": [
+        "channel partners",
+        "customers",
+        "demand management",
+        "distribution",
+        "fulfillment",
+        "inventory",
+        "logistics",
+        "manufacturing",
+        "procurement",
+        "purchasing",
+        "sourcing",
+        "suppliers",
+        "supply",
+        "supply chain",
+        "transportation",
+        "warehousing"
+      ],
+      "seeds_not_scored": [],
+      "weight_min": 0.60378575,
+      "weight_max": 1.0,
+      "non_positive_weights": 0,
+      "terms_in_both_supply_chain_and_risk": [
+        "shortage",
+        "shortages"
+      ],
+      "weight_of_terms_in_both": {
+        "shortage": 0.69290245,
+        "shortages": 0.69290245
+      },
+      "supply_chain_resolution_overlap": [],
+      "multiword_supply_chain_terms": [
+        "channel partner",
+        "channel partners",
+        "demand management",
+        "demand managements",
+        "supply chain",
+        "supply chains"
+      ],
+      "multiword_risk_terms": [
+        "business disruption",
+        "business disruptions",
+        "capacity constraint",
+        "capacity constraints",
+        "component availabilities",
+        "component availability",
+        "component availabilitys",
+        "cyber threat",
+        "cyber threats",
+        "delivery delay",
+        "delivery delays",
+        "demand shock",
+        "demand shocks",
+        "external dependencies",
+        "external dependency",
+        "external dependencys",
+        "extreme weather",
+        "extreme weathers",
+        "forecast error",
+        "forecast errors",
+        "foreign dependencies",
+        "foreign dependency",
+        "foreign dependencys",
+        "geographic concentration",
+        "geographic concentrations",
+        "geopolitical conflict",
+        "geopolitical conflicts",
+        "labor shortage",
+        "labor shortages",
+        "lead time",
+        "lead times",
+        "malicious hardware",
+        "malicious hardwares",
+        "malicious software",
+        "malicious softwares",
+        "manufacturing defect",
+        "manufacturing defects",
+        "material shortage",
+        "material shortages",
+        "natural disaster",
+        "natural disasters",
+        "poor manufacturing",
+        "poor manufacturings",
+        "port congestion",
+        "port congestions",
+        "quality failure",
+        "quality failures",
+        "raw material availabilities",
+        "raw material availability",
+        "raw material availabilitys",
+        "regulatory violation",
+        "regulatory violations",
+        "shipping delay",
+        "shipping delays",
+        "single source",
+        "single sources",
+        "single sourcing",
+        "single sourcings",
+        "supplier bankruptcies",
+        "supplier bankruptcy",
+        "supplier bankruptcys",
+        "supplier concentration",
+        "supplier concentrations",
+        "supplier dependencies",
+        "supplier dependency",
+        "supplier dependencys",
+        "supplier failure",
+        "supplier failures",
+        "supplier insolvencies",
+        "supplier insolvency",
+        "supplier insolvencys",
+        "supply chain disruption",
+        "supply chain disruptions",
+        "supply disruption",
+        "supply disruptions",
+        "trade dispute",
+        "trade disputes",
+        "trade restriction",
+        "trade restrictions",
+        "transportation delay",
+        "transportation delays",
+        "unauthorized production",
+        "unauthorized productions"
+      ],
+      "supply_chain_terms_unreachable_by_tokenizer": [],
+      "risk_terms_unreachable_by_tokenizer": []
+    },
+    "terms_added_by_v2": [
+      "assembleds",
+      "assemblings",
+      "assemblys",
+      "backlogs",
+      "buyer",
+      "buyings",
+      "channel",
+      "channel partner",
+      "channel partners",
+      "customers",
+      "deliverings",
+      "delivers",
+      "deliverys",
+      "demand management",
+      "demand managements",
+      "distributeds",
+      "distributings",
+      "distribution",
+      "distributions",
+      "fabricateds",
+      "fabricates",
+      "fabrications",
+      "factorys",
+      "finisheds",
+      "fleets",
+      "forecastings",
+      "freights",
+      "fulfillings",
+      "fulfillment",
+      "fulfillments",
+      "fulfills",
+      "inbounds",
+      "intermodals",
+      "inventory",
+      "inventorys",
+      "logistic",
+      "logisticals",
+      "logistics",
+      "manufactureds",
+      "manufacturing",
+      "manufacturings",
+      "material",
+      "merchandises",
+      "merchandisings",
+      "order",
+      "orderings",
+      "outbounds",
+      "outsourceds",
+      "oversea",
+      "packages",
+      "packagings",
+      "plannings",
+      "plant",
+      "procureds",
+      "procurement",
+      "procurements",
+      "procures",
+      "productions",
+      "purchas",
+      "purchaseds",
+      "purchasing",
+      "purchasings",
+      "railroads",
+      "rails",
+      "raws",
+      "replenishments",
+      "reseller",
+      "retails",
+      "shippeds",
+      "shippings",
+      "shortage",
+      "showrooms",
+      "sourceds",
+      "sourcing",
+      "sourcings",
+      "stockings",
+      "storages",
+      "subcontractor",
+      "supplieds",
+      "suppliers",
+      "supply",
+      "supply chain",
+      "supply chains",
+      "supplyings",
+      "supplys",
+      "trackings",
+      "trailers",
+      "transportation",
+      "transportations",
+      "transporteds",
+      "transportings",
+      "truckings",
+      "truckloads",
+      "turnkeys",
+      "warehous",
+      "warehousing",
+      "warehousings",
+      "wholesales"
+    ],
+    "terms_reweighted_by_v2": {
+      "assembles": {
+        "v1": 0.68078339,
+        "v2": 0.7357223
+      },
+      "assemblies": {
+        "v1": 0.63631654,
+        "v2": 0.82944793
+      },
+      "client": {
+        "v1": 0.77920783,
+        "v2": 0.81168294
+      },
+      "component": {
+        "v1": 0.72481078,
+        "v2": 0.72560936
+      },
+      "contractor": {
+        "v1": 0.60238308,
+        "v2": 0.66892046
+      },
+      "customer": {
+        "v1": 0.91550493,
+        "v2": 1.0
+      },
+      "delivery": {
+        "v1": 0.72922772,
+        "v2": 0.76584291
+      },
+      "distributes": {
+        "v1": 0.75842828,
+        "v2": 0.80308342
+      },
+      "distributors": {
+        "v1": 0.77228141,
+        "v2": 0.78755701
+      },
+      "factory": {
+        "v1": 0.68431443,
+        "v2": 0.79402161
+      },
+      "inventories": {
+        "v1": 0.90605408,
+        "v2": 1.0
+      },
+      "manufacturer": {
+        "v1": 0.79128164,
+        "v2": 0.88486177
+      },
+      "manufactures": {
+        "v1": 0.75225872,
+        "v2": 0.81723899
+      },
+      "networks": {
+        "v1": 0.67416263,
+        "v2": 0.73707032
+      },
+      "oem": {
+        "v1": 0.74360836,
+        "v2": 0.75249052
+      },
+      "pipeline": {
+        "v1": 0.74871618,
+        "v2": 0.78788537
+      },
+      "retailer": {
+        "v1": 0.63394272,
+        "v2": 0.71357483
+      },
+      "route": {
+        "v1": 0.58499056,
+        "v2": 0.62702453
+      },
+      "shipment": {
+        "v1": 0.68918389,
+        "v2": 0.69396067
+      },
+      "shipper": {
+        "v1": 0.78264827,
+        "v2": 0.81350273
+      },
+      "ships": {
+        "v1": 0.66921264,
+        "v2": 0.69798869
+      },
+      "sources": {
+        "v1": 0.78115672,
+        "v2": 0.78222466
+      },
+      "supplier": {
+        "v1": 0.89688557,
+        "v2": 1.0
+      },
+      "supplies": {
+        "v1": 0.78790635,
+        "v2": 1.0
+      },
+      "transport": {
+        "v1": 0.77667558,
+        "v2": 0.81082273
+      },
+      "trucks": {
+        "v1": 0.67468184,
+        "v2": 0.71098411
+      },
+      "vendor": {
+        "v1": 0.77631819,
+        "v2": 0.84938669
+      },
+      "wholesaler": {
+        "v1": 0.64631194,
+        "v2": 0.67786872
+      }
+    }
+  }
+}

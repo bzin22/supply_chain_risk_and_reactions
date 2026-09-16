@@ -1,0 +1,2388 @@
+symbol,name,exchange,assetType,ipoDate,delistingDate,status
+BA,Boeing Company,NYSE,Stock,1962-01-02,,Active
+DIS,Walt Disney Co (The),NYSE,Stock,1962-01-02,,Active
+DD,DuPont de Nemours Inc,NYSE,Stock,1962-01-02,,Active
+KO,Coca-Cola Company,NYSE,Stock,1962-01-02,,Active
+HPQ,HP Inc,NYSE,Stock,1962-01-02,,Active
+IBM,International Business Machines Corp,NYSE,Stock,1962-01-02,,Active
+CAT,Caterpillar Inc,NYSE,Stock,1962-01-02,,Active
+GE,General Electric Company,NYSE,Stock,1962-01-02,,Active
+HWM,Howmet Aerospace Inc,NYSE,Stock,1962-01-02,,Active
+JNJ,Johnson & Johnson,NYSE,Stock,1970-01-02,,Active
+GT,Goodyear Tire & Rubber Company,NASDAQ,Stock,1970-01-02,,Active
+PG,Procter & Gamble Company,NYSE,Stock,1970-01-02,,Active
+CNP,Centerpoint Energy Inc,NYSE,Stock,1970-01-02,,Active
+MO,Altria Group Inc,NYSE,Stock,1970-01-02,,Active
+ED,Consolidated Edison Inc,NYSE,Stock,1970-01-02,,Active
+HON,Honeywell International Inc,NASDAQ,Stock,1970-01-02,,Active
+CVX,Chevron Corp,NYSE,Stock,1970-01-02,,Active
+DTE,DTE Energy Company,NYSE,Stock,1970-01-02,,Active
+MRK,Merck & Co Inc,NYSE,Stock,1970-01-02,,Active
+MMM,3M Company,NYSE,Stock,1970-01-02,,Active
+IP,International Paper Company,NYSE,Stock,1970-01-02,,Active
+RTX,RTX Corp,NYSE,Stock,1970-01-02,,Active
+AEP,American Electric Power Company Inc,NASDAQ,Stock,1970-01-02,,Active
+XOM,Exxon Mobil Corp,NYSE,Stock,1970-01-02,,Active
+MCD,McDonald`s Corp,NYSE,Stock,1970-01-02,,Active
+LLY,Lilly(Eli) & Company,NYSE,Stock,1972-06-01,,Active
+DE,Deere & Company,NYSE,Stock,1972-06-01,,Active
+HAL,Halliburton Company,NYSE,Stock,1972-06-01,,Active
+F,Ford Motor Company,NYSE,Stock,1972-06-01,,Active
+AXP,American Express Company,NYSE,Stock,1972-06-01,,Active
+ETR,Entergy Corp,NYSE,Stock,1972-06-01,,Active
+ETN,Eaton Corporation plc,NYSE,Stock,1972-06-01,,Active
+UIS,Unisys Corp,NYSE,Stock,1972-06-01,,Active
+PCG,PG&E Corp,NYSE,Stock,1972-06-01,,Active
+BMY,Bristol-Myers Squibb Company,NYSE,Stock,1972-06-01,,Active
+WFC,Wells Fargo & Company,NYSE,Stock,1972-06-01,,Active
+HTO,H2O America,NASDAQ,Stock,1972-06-01,,Active
+PFE,Pfizer Inc,NYSE,Stock,1972-06-01,,Active
+TXN,Texas Instruments Inc,NASDAQ,Stock,1972-06-01,,Active
+PEP,PepsiCo Inc,NASDAQ,Stock,1972-06-01,,Active
+EMR,Emerson Electric Company,NYSE,Stock,1972-06-01,,Active
+PBI,Pitney Bowes Inc,NYSE,Stock,1972-06-01,,Active
+WMT,Walmart Inc,NASDAQ,Stock,1972-08-25,,Active
+CHE,Chemed Corp,NYSE,Stock,1973-05-03,,Active
+GTY,Getty Realty Corp,NYSE,Stock,1973-05-03,,Active
+AXR,AMREP Corp,NYSE,Stock,1973-05-03,,Active
+DCO,Ducommun Inc,NYSE,Stock,1973-05-03,,Active
+APOG,Apogee Enterprises Inc,NASDAQ,Stock,1973-05-03,,Active
+BNY,Bank Of New York Mellon Corp,NYSE,Stock,1973-05-03,,Active
+BF-A,Brown-Forman Corp - Class A,NYSE,Stock,1973-05-03,,Active
+SVT,Servotronics Inc,NYSE MKT,Stock,1973-05-03,,Active
+AVT,Avnet Inc,NASDAQ,Stock,1973-05-03,,Active
+ALCO,Alico Inc,NASDAQ,Stock,1973-05-03,,Active
+PHI,PLDT Inc,NYSE,Stock,1973-05-03,,Active
+BRT,BRT Apartments Corp,NYSE,Stock,1973-05-03,,Active
+MATX,Matson Inc,NYSE,Stock,1973-05-03,,Active
+PNR,Pentair plc,NYSE,Stock,1973-05-03,,Active
+TPC,Tutor Perini Corp,NYSE,Stock,1973-05-03,,Active
+NYT,New York Times Co. - Class A,NYSE,Stock,1973-05-03,,Active
+FRT,Federal Realty Investment Trust.,NYSE,Stock,1973-05-03,,Active
+WY,Weyerhaeuser Company,NYSE,Stock,1973-05-03,,Active
+GFF,Griffon Corp,NYSE,Stock,1973-05-03,,Active
+SYY,Sysco Corp,NYSE,Stock,1973-05-08,,Active
+SONY,Sony Group Corporation,NYSE,Stock,1974-07-26,,Active
+TM,Toyota Motor Corporation,NYSE,Stock,1976-08-18,,Active
+KR,Kroger Company,NYSE,Stock,1977-01-03,,Active
+BP,BP plc,NYSE,Stock,1977-01-03,,Active
+XRX,Xerox Holdings Corp,NASDAQ,Stock,1977-01-03,,Active
+C,Citigroup Inc,NYSE,Stock,1977-01-03,,Active
+GD,General Dynamics Corp,NYSE,Stock,1977-01-03,,Active
+LMT,Lockheed Martin Corp,NYSE,Stock,1977-01-03,,Active
+CL,Colgate-Palmolive Company,NYSE,Stock,1977-01-03,,Active
+MSI,Motorola Solutions Inc,NYSE,Stock,1977-01-03,,Active
+NC,Nacco Industries Inc - Class A,NYSE,Stock,1977-06-17,,Active
+FDX,Fedex Corp,NYSE,Stock,1978-04-12,,Active
+APA,APA Corporation,NASDAQ,Stock,1979-05-15,,Active
+PEG,Public Service Enterprise Group Inc,NYSE,Stock,1980-01-02,,Active
+EIX,Edison International,NYSE,Stock,1980-01-02,,Active
+LXU,LSB Industries Inc,NYSE,Stock,1980-01-02,,Active
+EXC,Exelon Corp,NASDAQ,Stock,1980-01-02,,Active
+R,Ryder System Inc,NYSE,Stock,1980-01-02,,Active
+UNP,Union Pacific Corp,NYSE,Stock,1980-01-02,,Active
+LUV,Southwest Airlines Company,NYSE,Stock,1980-01-02,,Active
+BIO,Bio-Rad Laboratories Inc - Class A,NYSE,Stock,1980-02-27,,Active
+ROG,Rogers Corp,NYSE,Stock,1980-03-17,,Active
+INTC,Intel Corp,NASDAQ,Stock,1980-03-17,,Active
+SIF,SIFCO Industries Inc,AMEX,Stock,1980-03-17,,Active
+BRK-A,Berkshire Hathaway Inc - Class A,NYSE,Stock,1980-03-17,,Active
+PW,Power REIT,NYSE MKT,Stock,1980-03-17,,Active
+SEB,Seaboard Corp,AMEX,Stock,1980-03-17,,Active
+HMC,Honda Motor,NYSE,Stock,1980-03-17,,Active
+SIEB,Siebert Financial Corp,NASDAQ,Stock,1980-03-18,,Active
+BTI,British American Tobacco Plc,NYSE,Stock,1980-04-14,,Active
+MUX,McEwen Mining Inc,NYSE,Stock,1980-05-07,,Active
+ABEO,Abeona Therapeutics Inc,NASDAQ,Stock,1980-09-19,,Active
+HP,Helmerich & Payne Inc,NYSE,Stock,1980-10-15,,Active
+CSX,CSX Corp,NASDAQ,Stock,1980-11-03,,Active
+CBT,Cabot Corp,NYSE,Stock,1980-11-05,,Active
+PSA,Public Storage.,NYSE,Stock,1980-11-18,,Active
+NKE,Nike Inc - Class B,NYSE,Stock,1980-12-02,,Active
+AAPL,Apple Inc,NASDAQ,Stock,1980-12-12,,Active
+HD,Home Depot Inc,NYSE,Stock,1981-09-22,,Active
+BAX,Baxter International Inc,NYSE,Stock,1981-10-27,,Active
+HUM,Humana Inc,NYSE,Stock,1981-12-31,,Active
+GLW,Corning Inc,NYSE,Stock,1981-12-31,,Active
+COP,Conoco Phillips,NYSE,Stock,1981-12-31,,Active
+SLB,SLB,NYSE,Stock,1981-12-31,,Active
+BC,Brunswick Corp,NYSE,Stock,1981-12-31,,Active
+NOC,Northrop Grumman Corp,NYSE,Stock,1981-12-31,,Active
+IFF,International Flavors & Fragrances Inc,NYSE,Stock,1981-12-31,,Active
+SO,Southern Company,NYSE,Stock,1981-12-31,,Active
+SKY,Skyline Champion Corp,NYSE,Stock,1981-12-31,,Active
+OXY,Occidental Petroleum Corp,NYSE,Stock,1981-12-31,,Active
+ROK,Rockwell Automation Inc,NYSE,Stock,1981-12-31,,Active
+MDT,Medtronic Plc,NYSE,Stock,1981-12-31,,Active
+LHX,L3Harris Technologies Inc,NYSE,Stock,1981-12-31,,Active
+WMB,Williams Cos Inc,NYSE,Stock,1981-12-31,,Active
+NVO,Novo Nordisk,NYSE,Stock,1982-01-04,,Active
+VLO,Valero Energy Corp,NYSE,Stock,1982-01-04,,Active
+THC,Tenet Healthcare Corp,NYSE,Stock,1982-01-04,,Active
+MAT,Mattel Inc,NASDAQ,Stock,1982-01-04,,Active
+LPX,Louisiana-Pacific Corp,NYSE,Stock,1982-01-04,,Active
+FSS,Federal Signal Corp,NYSE,Stock,1982-03-01,,Active
+CI,Cigna Group (The),NYSE,Stock,1982-03-31,,Active
+SSL,Sasol Ltd,NYSE,Stock,1982-04-26,,Active
+NSC,Norfolk Southern Corp,NYSE,Stock,1982-06-02,,Active
+BCE,BCE Inc,NYSE,Stock,1982-11-15,,Active
+ALK,Alaska Air Group Inc,NYSE,Stock,1983-01-03,,Active
+AMD,Advanced Micro Devices Inc,NASDAQ,Stock,1983-03-21,,Active
+CLX,Clorox Company,NYSE,Stock,1983-03-21,,Active
+ADM,Archer Daniels Midland Company,NYSE,Stock,1983-04-05,,Active
+BDX,Becton Dickinson & Company,NYSE,Stock,1983-04-06,,Active
+ABT,Abbott Laboratories,NYSE,Stock,1983-04-06,,Active
+MUR,Murphy Oil Corp,NYSE,Stock,1983-04-06,,Active
+RVTY,Revvity Inc,NYSE,Stock,1983-04-06,,Active
+ASH,Ashland Inc,NYSE,Stock,1983-04-06,,Active
+APD,Air Products & Chemicals Inc,NYSE,Stock,1983-04-06,,Active
+NEM,Newmont Corp,NYSE,Stock,1983-04-06,,Active
+DUK,Duke Energy Corp,NYSE,Stock,1983-04-06,,Active
+AFG,American Financial Group Inc,NYSE,Stock,1983-04-06,,Active
+NL,NL Industries Inc,NYSE,Stock,1983-04-06,,Active
+TGT,Target Corp,NYSE,Stock,1983-04-06,,Active
+PPG,PPG Industries Inc,NYSE,Stock,1983-04-06,,Active
+GPC,Genuine Parts Company,NYSE,Stock,1983-04-06,,Active
+HST,Host Hotels & Resorts Inc,NASDAQ,Stock,1983-04-06,,Active
+ADP,Automatic Data Processing Inc,NASDAQ,Stock,1983-04-06,,Active
+HES,Hess Corporation,NYSE,Stock,1983-04-06,,Active
+GIS,General Mills Inc,NYSE,Stock,1983-06-10,,Active
+WHR,Whirlpool Corp,NYSE,Stock,1983-06-10,,Active
+MAS,Masco Corp,NYSE,Stock,1983-06-10,,Active
+NEE,NextEra Energy Inc,NYSE,Stock,1983-06-10,,Active
+SF,Stifel Financial Corp,NYSE,Stock,1983-07-19,,Active
+FEIM,Frequency Electronics Inc,NASDAQ,Stock,1983-09-01,,Active
+NUE,Nucor Corp,NYSE,Stock,1983-09-01,,Active
+CASY,Casey`s General Stores Inc,NASDAQ,Stock,1983-10-20,,Active
+VZ,Verizon Communications Inc,NYSE,Stock,1983-11-21,,Active
+RRX,Regal Rexnord Corp,NYSE,Stock,1983-12-01,,Active
+ATO,Atmos Energy Corp,NYSE,Stock,1983-12-28,,Active
+AVY,Avery Dennison Corp,NYSE,Stock,1983-12-29,,Active
+COO,Cooper Companies Inc,NASDAQ,Stock,1983-12-30,,Active
+CP,Canadian Pacific Kansas City Ltd,NYSE,Stock,1983-12-30,,Active
+BN,Brookfield Corporation - Class A,NYSE,Stock,1983-12-30,,Active
+JPM,JPMorgan Chase & Company,NYSE,Stock,1983-12-30,,Active
+AIRT,Air T Inc,NASDAQ,Stock,1984-04-24,,Active
+MAGN,Magnera Corp,NYSE,Stock,1984-05-16,,Active
+WSO,Watsco Inc - Class A,NYSE,Stock,1984-06-07,,Active
+ADI,Analog Devices Inc,NASDAQ,Stock,1984-07-19,,Active
+AFL,Aflac Inc,NYSE,Stock,1984-07-19,,Active
+ABM,ABM Industries Inc,NYSE,Stock,1984-07-19,,Active
+AP,Ampco-Pittsburgh Corp,NYSE,Stock,1984-07-19,,Active
+T,AT&T Inc,NYSE,Stock,1984-07-19,,Active
+AME,Ametek Inc,NYSE,Stock,1984-07-19,,Active
+ARW,Arrow Electronics Inc,NYSE,Stock,1984-07-19,,Active
+PNW,Pinnacle West Capital Corp,NYSE,Stock,1984-07-19,,Active
+ALX,Alexander`s Inc,NYSE,Stock,1984-07-19,,Active
+NWL,Newell Brands Inc,NASDAQ,Stock,1984-07-19,,Active
+AIR,AAR Corp,NYSE,Stock,1984-07-19,,Active
+TXNM,PNM Resources Inc,NYSE,Stock,1984-08-10,,Active
+ES,Eversource Energy,NYSE,Stock,1984-08-29,,Active
+BDL,Flanigan`s Enterprises Inc,AMEX,Stock,1984-09-07,,Active
+WRB,W.R. Berkley Corp,NYSE,Stock,1984-09-07,,Active
+ATRO,Astronics Corp,NASDAQ,Stock,1984-09-07,,Active
+BOH,Bank of Hawaii Corp,NYSE,Stock,1984-09-07,,Active
+DOMH,Dominari Holdings Inc,NASDAQ,Stock,1984-09-07,,Active
+BELFA,Bel Fuse Inc - Class A,NASDAQ,Stock,1984-09-07,,Active
+AEM,Agnico Eagle Mines Ltd,NYSE,Stock,1984-09-07,,Active
+BF-B,Brown-Forman Corp - Class B,NYSE,Stock,1984-09-07,,Active
+AJG,Arthur J. Gallagher & Company,NYSE,Stock,1984-09-07,,Active
+BMI,Badger Meter Inc,NYSE,Stock,1984-09-07,,Active
+BKH,Black Hills Corporation,NYSE,Stock,1984-09-07,,Active
+AZZ,AZZ Inc,NYSE,Stock,1984-09-07,,Active
+AIG,American International Group Inc,NYSE,Stock,1984-09-07,,Active
+AIT,Applied Industrial Technologies Inc,NYSE,Stock,1984-09-07,,Active
+BEN,Franklin Templeton Inc,NYSE,Stock,1984-09-07,,Active
+AAME,Atlantic American Corp,NASDAQ,Stock,1984-09-07,,Active
+AON,Aon plc. - Class A,NYSE,Stock,1984-09-07,,Active
+BRC,Brady Corp - Class A,NYSE,Stock,1984-09-07,,Active
+AOS,A.O. Smith Corp,NYSE,Stock,1984-09-07,,Active
+AMS,American Shared Hospital Services,AMEX,Stock,1984-09-07,,Active
+BALL,Ball Corp,NYSE,Stock,1984-09-07,,Active
+ACU,Acme United Corp,AMEX,Stock,1984-09-07,,Active
+AMGN,AMGEN Inc,NASDAQ,Stock,1984-09-07,,Active
+CBSH,Commerce Bancshares Inc,NASDAQ,Stock,1984-09-07,,Active
+CBRL,Cracker Barrel Old Country Store Inc,NASDAQ,Stock,1984-09-07,,Active
+CB,Chubb Ltd,NYSE,Stock,1984-09-07,,Active
+PRG,PROG Holdings Inc,NYSE,Stock,1984-09-07,,Active
+AROW,Arrow Financial Corp,NASDAQ,Stock,1984-09-07,,Active
+AMAT,Applied Materials Inc,NASDAQ,Stock,1984-09-07,,Active
+CAL,Caleres Inc,NYSE,Stock,1984-09-07,,Active
+ARTW,Art`s-way Manufacturing Co. Inc,NASDAQ,Stock,1984-09-07,,Active
+CAG,Conagra Brands Inc,NYSE,Stock,1984-09-07,,Active
+ARL,American Realty Investors Inc,NYSE,Stock,1984-09-07,,Active
+CACI,Caci International Inc,NYSE,Stock,1984-09-07,,Active
+BRID,Bridgford Foods Corp,NASDAQ,Stock,1984-09-07,,Active
+BRN,Barnwell Industries Inc,AMEX,Stock,1984-09-07,,Active
+ASYS,Amtech Systems Inc,NASDAQ,Stock,1984-09-07,,Active
+ASB,Associated Banc-Corp,NYSE,Stock,1984-09-07,,Active
+BSET,Bassett Furniture Industries Inc,NASDAQ,Stock,1984-09-07,,Active
+SWKS,Skyworks Solutions Inc,NASDAQ,Stock,1984-09-07,,Active
+MTRN,Materion Corp,NYSE,Stock,1984-09-07,,Active
+ALOT,AstroNova Inc,NASDAQ,Stock,1984-09-07,,Active
+TAP,Molson Coors Beverage Company - Class B,NYSE,Stock,1984-09-07,,Active
+D,Dominion Energy Inc,NYSE,Stock,1984-10-03,,Active
+LNC,Lincoln National Corp,NYSE,Stock,1984-10-05,,Active
+NI,NiSource Inc,NYSE,Stock,1984-10-19,,Active
+TXT,Textron Inc,NYSE,Stock,1984-10-24,,Active
+WEC,WEC Energy Group Inc,NYSE,Stock,1984-10-26,,Active
+WGO,Winnebago Industries Inc,NYSE,Stock,1984-11-01,,Active
+CXT,Crane NXT Company,NYSE,Stock,1984-11-01,,Active
+GWW,W.W. Grainger Inc,NYSE,Stock,1984-12-17,,Active
+KMB,Kimberly-Clark Corp,NASDAQ,Stock,1984-12-17,,Active
+CVS,CVS Health Corp,NYSE,Stock,1984-12-17,,Active
+CMI,Cummins Inc,NYSE,Stock,1984-12-18,,Active
+WWW,Wolverine World Wide Inc,NYSE,Stock,1984-12-18,,Active
+CCK,Crown Holdings Inc,NYSE,Stock,1984-12-18,,Active
+HAS,Hasbro Inc,NASDAQ,Stock,1984-12-18,,Active
+CMS,CMS Energy Corporation,NYSE,Stock,1984-12-31,,Active
+B,Barrick Gold Corp,NYSE,Stock,1985-02-04,,Active
+HL,Hecla Mining Company,NYSE,Stock,1985-02-14,,Active
+JCI,Johnson Controls International plc,NYSE,Stock,1985-03-27,,Active
+PPL,PPL Corp,NYSE,Stock,1985-04-08,,Active
+BBY,Best Buy Co. Inc,NYSE,Stock,1985-04-19,,Active
+SON,Sonoco Products Company,NYSE,Stock,1985-06-11,,Active
+TKR,Timken Company,NYSE,Stock,1985-07-01,,Active
+PH,Parker-Hannifin Corp,NYSE,Stock,1985-07-01,,Active
+ADSK,Autodesk Inc,NASDAQ,Stock,1985-07-01,,Active
+DOV,Dover Corp,NYSE,Stock,1985-07-01,,Active
+AEG,Aegon Ltd,NYSE,Stock,1985-07-01,,Active
+OKE,Oneok Inc,NYSE,Stock,1985-07-01,,Active
+VFC,VF Corp,NYSE,Stock,1985-07-01,,Active
+SPXC,SPX Technologies Inc,NYSE,Stock,1985-07-01,,Active
+BBWI,Bath & Body Works Inc,NYSE,Stock,1985-07-01,,Active
+CPB,Campbell Soup Company,NASDAQ,Stock,1985-07-01,,Active
+HSY,Hershey Company,NYSE,Stock,1985-07-01,,Active
+FMC,FMC Corp,NYSE,Stock,1985-07-01,,Active
+PHM,PulteGroup Inc,NYSE,Stock,1985-07-01,,Active
+GCO,Genesco Inc,NYSE,Stock,1985-07-01,,Active
+SWK,Stanley Black & Decker Inc,NYSE,Stock,1985-07-01,,Active
+SHW,Sherwin-Williams Company,NYSE,Stock,1985-07-01,,Active
+LOW,Lowe`s Cos. Inc,NYSE,Stock,1985-07-01,,Active
+SNA,Snap-on Inc,NYSE,Stock,1985-07-01,,Active
+TT,Trane Technologies plc - Class A,NYSE,Stock,1985-07-01,,Active
+CNA,CNA Financial Corp,NYSE,Stock,1985-07-11,,Active
+NVR,NVR Inc,NYSE,Stock,1985-07-22,,Active
+NEU,NewMarket Corp,NYSE,Stock,1985-08-06,,Active
+XEL,Xcel Energy Inc,NASDAQ,Stock,1985-09-24,,Active
+CBU,Community Bank System Inc,NYSE,Stock,1985-11-27,,Active
+ARKR,Ark Restaurants Corp,NASDAQ,Stock,1985-12-13,,Active
+WTS,Watts Water Technologies Inc - Class A,NYSE,Stock,1986-01-02,,Active
+CHD,Church & Dwight Co. Inc,NYSE,Stock,1986-03-06,,Active
+ORCL,Oracle Corp,NYSE,Stock,1986-03-12,,Active
+RNTX,Rein Therapeutics Inc,NASDAQ,Stock,1986-03-12,,Active
+MSFT,Microsoft Corporation,NASDAQ,Stock,1986-03-13,,Active
+EFX,Equifax Inc,NYSE,Stock,1986-03-27,,Active
+GHI,Greystone Housing Impact Investors LP,NYSE,Stock,1986-04-02,,Active
+WTM,White Mountains Insurance Group Ltd,NYSE,Stock,1986-05-09,,Active
+BAC,Bank Of America Corp,NYSE,Stock,1986-05-29,,Active
+BCPC,Balchem Corp,NASDAQ,Stock,1986-06-03,,Active
+VHI,Valhi Inc,NYSE,Stock,1986-06-04,,Active
+ASTE,Astec Industries Inc,NASDAQ,Stock,1986-06-19,,Active
+GSK,GSK Plc,NYSE,Stock,1986-07-09,,Active
+ROST,Ross Stores Inc,NASDAQ,Stock,1986-07-09,,Active
+PCAR,Paccar Inc,NASDAQ,Stock,1986-07-09,,Active
+COST,Costco Wholesale Corp,NASDAQ,Stock,1986-07-09,,Active
+TSN,Tyson Foods Inc - Class A,NYSE,Stock,1986-07-09,,Active
+GGG,Graco Inc,NYSE,Stock,1986-07-09,,Active
+STT,State Street Corp,NYSE,Stock,1986-07-09,,Active
+PGR,Progressive Corp,NYSE,Stock,1986-07-09,,Active
+TRV,Travelers Companies Inc,NYSE,Stock,1986-07-09,,Active
+IMO,Imperial Oil Ltd,AMEX,Stock,1986-07-16,,Active
+BDN,Brandywine Realty Trust,NYSE,Stock,1986-07-24,,Active
+CLFD,Clearfield Inc,NASDAQ,Stock,1986-08-07,,Active
+ADBE,Adobe Inc,NASDAQ,Stock,1986-08-14,,Active
+BCS,Barclays plc,NYSE,Stock,1986-09-10,,Active
+IDA,Idacorp Inc,NYSE,Stock,1986-10-17,,Active
+UNM,Unum Group,NYSE,Stock,1986-11-06,,Active
+HRB,H&R Block Inc,NYSE,Stock,1986-11-12,,Active
+COHU,Cohu Inc,NASDAQ,Stock,1986-11-12,,Active
+CCEP,Coca-Cola Europacific Partners Plc,NASDAQ,Stock,1986-11-24,,Active
+WDC,Western Digital Corp,NASDAQ,Stock,1987-01-02,,Active
+NHC,National Healthcare Corp,AMEX,Stock,1987-01-20,,Active
+TER,Teradyne Inc,NASDAQ,Stock,1987-03-11,,Active
+CATO,Cato Corp - Class A,NYSE,Stock,1987-04-23,,Active
+FUN,Six Flags Entertainment Corp,NYSE,Stock,1987-04-23,,Active
+BHP,BHP Group Ltd,NYSE,Stock,1987-05-29,,Active
+DCI,Donaldson Co. Inc,NYSE,Stock,1987-06-18,,Active
+MBI,MBIA Inc,NYSE,Stock,1987-07-02,,Active
+PVH,PVH Corp,NYSE,Stock,1987-07-10,,Active
+L,Loews Corp,NYSE,Stock,1987-07-10,,Active
+SCI,Service Corp International,NYSE,Stock,1987-07-23,,Active
+DLX,Deluxe Corp,NYSE,Stock,1987-07-23,,Active
+GAP,Gap Inc,NYSE,Stock,1987-07-23,,Active
+IEP,Icahn Enterprises L P,NASDAQ,Stock,1987-07-24,,Active
+NBN,Northeast Bank,NASDAQ,Stock,1987-08-20,,Active
+WR,Westar Energy Inc,NYSE,Stock,1987-08-25,,Active
+HRTX,Heron Therapeutics Inc,NASDAQ,Stock,1987-08-27,,Active
+TMO,Thermo Fisher Scientific Inc,NYSE,Stock,1987-09-01,,Active
+NFG,National Fuel Gas Company,NYSE,Stock,1987-09-01,,Active
+MYE,Myers Industries Inc,NYSE,Stock,1987-09-08,,Active
+PII,Polaris Inc,NYSE,Stock,1987-09-16,,Active
+EBF,Ennis Inc,NYSE,Stock,1987-09-24,,Active
+AIN,Albany International Corp - Class A,NYSE,Stock,1987-09-30,,Active
+SJT,San Juan Basin Royalty Trust,NYSE,Stock,1987-10-29,,Active
+DHR,Danaher Corp,NYSE,Stock,1987-11-05,,Active
+SR,Spire Inc,NYSE,Stock,1987-11-05,,Active
+CMC,Commercial Metals Company,NYSE,Stock,1987-11-05,,Active
+KBH,KB Home,NYSE,Stock,1987-11-05,,Active
+MDU,MDU Resources Group Inc,NYSE,Stock,1987-11-05,,Active
+KMT,Kennametal Inc,NYSE,Stock,1987-11-05,,Active
+BXMT,Blackstone Mortgage Trust Inc - Class A,NYSE,Stock,1987-11-05,,Active
+DOC,Healthpeak OP LLC,NYSE,Stock,1987-11-05,,Active
+KEY,Keycorp,NYSE,Stock,1987-11-05,,Active
+REX,REX American Resources Corp,NYSE,Stock,1987-11-05,,Active
+CW,Curtiss-Wright Corp,NYSE,Stock,1987-11-05,,Active
+TCI,Transcontinental Realty Investors Inc,NYSE,Stock,1987-11-05,,Active
+FLO,Flowers Foods Inc,NYSE,Stock,1987-11-05,,Active
+EQT,EQT Corp,NYSE,Stock,1987-11-05,,Active
+HOG,Harley-Davidson Inc,NYSE,Stock,1987-11-05,,Active
+CTS,CTS Corp,NYSE,Stock,1987-11-05,,Active
+UHT,Universal Health Realty Income Trust,NYSE,Stock,1987-11-05,,Active
+LEN,Lennar Corp - Class A,NYSE,Stock,1987-11-05,,Active
+LUMN,Lumen Technologies Inc,NYSE,Stock,1987-11-05,,Active
+USB,U.S. Bancorp.,NYSE,Stock,1987-11-05,,Active
+LEE,Lee Enterprises Inc,NASDAQ,Stock,1987-11-05,,Active
+HE,Hawaiian Electric Industries Inc,NYSE,Stock,1987-11-05,,Active
+CSL,Carlisle Companies Inc,NYSE,Stock,1987-11-05,,Active
+HXL,Hexcel Corp,NYSE,Stock,1987-11-05,,Active
+CRS,Carpenter Technology Corp,NYSE,Stock,1987-11-05,,Active
+GATX,GATX Corp,NYSE,Stock,1987-11-05,,Active
+JEF,Jefferies Financial Group Inc,NYSE,Stock,1987-11-05,,Active
+CLF,Cleveland-Cliffs Inc,NYSE,Stock,1987-11-05,,Active
+ITW,Illinois Tool Works Inc,NYSE,Stock,1987-11-05,,Active
+AVA,Avista Corp,NYSE,Stock,1987-11-16,,Active
+PBT,Permian Basin Royalty Trust,NYSE,Stock,1987-12-30,,Active
+MSB,Mesabi Trust,NYSE,Stock,1987-12-30,,Active
+NRT,North European Oil Royalty Trust,NYSE,Stock,1987-12-30,,Active
+PKE,Park Aerospace Corp,NYSE,Stock,1987-12-30,,Active
+SXI,Standex International Corp,NYSE,Stock,1987-12-30,,Active
+PHG,Koninklijke Philips N.V.,NYSE,Stock,1987-12-30,,Active
+TTC,Toro Company,NYSE,Stock,1987-12-30,,Active
+NPK,National Presto Industries Inc,NYSE,Stock,1987-12-30,,Active
+TOL,Toll Brothers Inc,NYSE,Stock,1987-12-30,,Active
+IHT,Innsuites Hospitality Trust,AMEX,Stock,1987-12-30,,Active
+OXM,Oxford Industries Inc,NYSE,Stock,1987-12-30,,Active
+RES,RPC Inc,NYSE,Stock,1987-12-30,,Active
+TRP,TC Energy Corporation,NYSE,Stock,1987-12-30,,Active
+MRSH,Marsh & McLennan Cos. Inc,NYSE,Stock,1987-12-30,,Active
+TR,Tootsie Roll Industries Inc,NYSE,Stock,1987-12-30,,Active
+TRN,Trinity Industries Inc,NYSE,Stock,1987-12-30,,Active
+TDW,Tidewater Inc - New,NYSE,Stock,1987-12-30,,Active
+ROL,Rollins Inc,NYSE,Stock,1987-12-30,,Active
+NJR,New Jersey Resources Corporation,NYSE,Stock,1987-12-30,,Active
+OLN,Olin Corp,NYSE,Stock,1987-12-30,,Active
+MTR,Mesa Royalty Trust,NYSE,Stock,1987-12-30,,Active
+SMP,Standard Motor Products Inc,NYSE,Stock,1987-12-30,,Active
+TYL,Tyler Technologies Inc,NYSE,Stock,1987-12-30,,Active
+RLI,RLI Corp,NYSE,Stock,1987-12-30,,Active
+SHEL,Shell Plc ADR (Representing - ),NYSE,Stock,1987-12-30,,Active
+PPC,Pilgrim`s Pride Corp,NASDAQ,Stock,1987-12-30,,Active
+SWX,Southwest Gas Holdings Inc,NYSE,Stock,1987-12-30,,Active
+WTRG,Essential Utilities Inc,NYSE,Stock,1987-12-30,,Active
+NX,Quanex Building Products Corp,NYSE,Stock,1987-12-30,,Active
+SBR,Sabine Royalty Trust,NYSE,Stock,1987-12-30,,Active
+RJF,Raymond James Financial Inc,NYSE,Stock,1987-12-30,,Active
+THO,Thor Industries Inc,NYSE,Stock,1987-12-30,,Active
+OGE,Oge Energy Corp,NYSE,Stock,1987-12-30,,Active
+GL,Globe Life Inc,NYSE,Stock,1987-12-30,,Active
+TWIN,Twin Disc Incorporated,NASDAQ,Stock,1987-12-31,,Active
+CAH,Cardinal Health Inc,NYSE,Stock,1987-12-31,,Active
+TPL,Texas Pacific Land Corporation,NYSE,Stock,1987-12-31,,Active
+UL,Unilever plc,NYSE,Stock,1988-01-04,,Active
+VSH,Vishay Intertechnology Inc,NYSE,Stock,1988-01-04,,Active
+TJX,TJX Companies Inc,NYSE,Stock,1988-01-05,,Active
+SAN,Banco Santander S.A.,NYSE,Stock,1988-01-05,,Active
+UNF,Unifirst Corp,NYSE,Stock,1988-01-05,,Active
+SXT,Sensient Technologies Corp,NYSE,Stock,1988-01-05,,Active
+LZB,La-Z-Boy Inc,NYSE,Stock,1988-01-05,,Active
+LNT,Alliant Energy Corp,NASDAQ,Stock,1988-01-05,,Active
+UGI,UGI Corp,NYSE,Stock,1988-01-05,,Active
+WMK,Weis Markets Inc,NYSE,Stock,1988-01-05,,Active
+UVV,Universal Corp,NYSE,Stock,1988-01-05,,Active
+WST,West Pharmaceutical Services Inc,NYSE,Stock,1988-01-05,,Active
+VMC,Vulcan Materials Company,NYSE,Stock,1988-01-05,,Active
+SLM,SLM Corp,NASDAQ,Stock,1988-01-05,,Active
+VNO,Vornado Realty Trust,NYSE,Stock,1988-01-05,,Active
+ECL,Ecolab Inc,NYSE,Stock,1988-01-05,,Active
+MOS,Mosaic Company,NYSE,Stock,1988-01-26,,Active
+SYK,Stryker Corp,NYSE,Stock,1988-02-01,,Active
+TFX,Teleflex Incorporated,NYSE,Stock,1988-02-18,,Active
+AB,AllianceBernstein Holding Lp,NYSE,Stock,1988-04-15,,Active
+AVD,American Vanguard Corp,NYSE,Stock,1988-06-22,,Active
+CMCSA,Comcast Corp - Class A,NASDAQ,Stock,1988-07-07,,Active
+PNC,PNC Financial Services Group Inc,NYSE,Stock,1988-09-07,,Active
+CMT,Core Molding Technologies,AMEX,Stock,1988-09-16,,Active
+MAN,ManpowerGroup,NYSE,Stock,1988-10-05,,Active
+CIA,Citizens Inc - Class A,NYSE,Stock,1988-12-05,,Active
+BBVA,Banco Bilbao Vizcaya Argentaria.,NYSE,Stock,1988-12-15,,Active
+ACH,Accendra Health Inc,NYSE,Stock,1988-12-16,,Active
+MTH,Meritage Homes Corp,NYSE,Stock,1988-12-16,,Active
+VOD,Vodafone Group plc,NASDAQ,Stock,1988-12-16,,Active
+PAR,Par Technology Corp,NYSE,Stock,1988-12-16,,Active
+CCL,Carnival Corporation Ltd (Paired Stock),NYSE,Stock,1989-01-05,,Active
+BOOM,DMC Global Inc,NASDAQ,Stock,1989-01-05,,Active
+LCII,LCI Industries,NYSE,Stock,1989-05-03,,Active
+MU,Micron Technology Inc,NASDAQ,Stock,1989-05-16,,Active
+DX,Dynex Capital Inc,NYSE,Stock,1989-06-30,,Active
+IEX,Idex Corporation,NYSE,Stock,1989-06-30,,Active
+DDS,Dillard`s Inc - Class A,NYSE,Stock,1989-06-30,,Active
+SCHW,Charles Schwab Corp,NYSE,Stock,1989-06-30,,Active
+EAT,Brinker International Inc,NYSE,Stock,1989-07-28,,Active
+HURC,Hurco Companies Inc,NASDAQ,Stock,1989-09-05,,Active
+TROW,T. Rowe Price Group Inc,NASDAQ,Stock,1989-09-13,,Active
+ERIC,Telefonaktiebolaget L M Ericsson,NASDAQ,Stock,1989-09-28,,Active
+EOG,EOG Resources Inc,NYSE,Stock,1989-10-04,,Active
+CGNX,Cognex Corp,NASDAQ,Stock,1989-10-09,,Active
+HRL,Hormel Foods Corp,NYSE,Stock,1990-01-02,,Active
+MKL,Markel Group Inc,NYSE,Stock,1990-01-02,,Active
+NHP,NATIONWIDE HEALTH PROPERTIES INC,NASDAQ,Stock,1990-01-02,,Active
+CRD-B,Crawford & Co. - Class B,NYSE,Stock,1990-01-12,,Active
+J,Jacobs Solutions Inc,NYSE,Stock,1990-01-12,,Active
+TG,Tredegar Corp,NYSE,Stock,1990-01-12,,Active
+CAR,Avis Budget Group Inc,NASDAQ,Stock,1990-01-12,,Active
+MGM,MGM Resorts International,NYSE,Stock,1990-01-12,,Active
+GHC,Graham Holdings Co. - Class B,NYSE,Stock,1990-01-24,,Active
+UDR,UDR Inc,NYSE,Stock,1990-03-07,,Active
+MEI,Methode Electronics Inc,NYSE,Stock,1990-03-23,,Active
+VLY,Valley National Bancorp,NASDAQ,Stock,1990-03-23,,Active
+HTLD,Heartland Express Inc,NASDAQ,Stock,1990-03-26,,Active
+MOD,Modine Manufacturing Company,NYSE,Stock,1990-03-26,,Active
+WERN,Werner Enterprises Inc,NASDAQ,Stock,1990-03-26,,Active
+BANF,Bancfirst Corp,NASDAQ,Stock,1990-03-26,,Active
+POWL,Powell Industries Inc,NASDAQ,Stock,1990-03-26,,Active
+CRK,Comstock Resources Inc,NYSE,Stock,1990-03-26,,Active
+CPF,Central Pacific Financial Corp,NYSE,Stock,1990-03-26,,Active
+MLKN,MillerKnoll Inc,NASDAQ,Stock,1990-03-26,,Active
+CPK,Chesapeake Utilities Corp,NYSE,Stock,1990-03-26,,Active
+COKE,Coca-Cola Consolidated Inc,NASDAQ,Stock,1990-03-26,,Active
+WLY,John Wiley & Sons Inc - Class A,NYSE,Stock,1990-03-26,,Active
+WEYS,Weyco Group Inc,NASDAQ,Stock,1990-03-26,,Active
+CSCO,Cisco Systems Inc,NASDAQ,Stock,1990-03-26,,Active
+GIII,G-III Apparel Group Ltd,NASDAQ,Stock,1990-03-26,,Active
+GEN,Gen Digital Inc,NASDAQ,Stock,1990-03-26,,Active
+SKYW,Skywest Inc,NASDAQ,Stock,1990-03-26,,Active
+MTW,Manitowoc Co. Inc,NYSE,Stock,1990-03-26,,Active
+RPM,RPM International Inc,NYSE,Stock,1990-03-26,,Active
+SIGI,Selective Insurance Group Inc,NASDAQ,Stock,1990-03-26,,Active
+FULT,Fulton Financial Corp,NASDAQ,Stock,1990-03-26,,Active
+FUL,H.B. Fuller Company,NYSE,Stock,1990-03-26,,Active
+MTZ,Mastec Inc,NYSE,Stock,1990-03-26,,Active
+FSTR,L.B. Foster Co. - Class A,NASDAQ,Stock,1990-03-26,,Active
+NDSN,Nordson Corp,NASDAQ,Stock,1990-03-26,,Active
+FRPH,FRP Holdings Inc,NASDAQ,Stock,1990-03-26,,Active
+SHYF,Shyft Group Inc (The),NASDAQ,Stock,1990-03-26,,Active
+SBCF,Seacoast Banking Corp Of Florida,NASDAQ,Stock,1990-03-26,,Active
+MZTI,The Marzetti Company,NASDAQ,Stock,1990-03-26,,Active
+FLS,Flowserve Corp,NYSE,Stock,1990-03-26,,Active
+EXPD,Expeditors International Of Washington Inc,NYSE,Stock,1990-03-26,,Active
+SENEB,Seneca Foods Corp - Class B,NASDAQ,Stock,1990-03-26,,Active
+FAST,Fastenal Company,NASDAQ,Stock,1990-03-26,,Active
+FITB,Fifth Third Bancorp,NASDAQ,Stock,1990-03-26,,Active
+FISV,Fiserv Inc,NASDAQ,Stock,1990-03-26,,Active
+FHN,First Horizon Corporation,NYSE,Stock,1990-03-26,,Active
+SEIC,SEI Investments Company,NASDAQ,Stock,1990-03-26,,Active
+FFBC,First Financial Bancorp,NASDAQ,Stock,1990-03-26,,Active
+ZION,Zions Bancorporation N.A,NASDAQ,Stock,1990-03-26,,Active
+DWSN,Dawson Geophysical Company,NASDAQ,Stock,1990-03-26,,Active
+DSGR,Distribution Solutions Group Inc,NASDAQ,Stock,1990-03-26,,Active
+RGR,Sturm Ruger & Co. Inc,NYSE,Stock,1990-03-26,,Active
+RGLD,Royal Gold Inc,NASDAQ,Stock,1990-03-26,,Active
+CTAS,Cintas Corporation,NASDAQ,Stock,1990-03-26,,Active
+SUNE,SUNation Energy Inc,NASDAQ,Stock,1990-03-26,,Active
+CULP,Culp Inc,NASDAQ,Stock,1990-03-26,,Active
+CUZ,Cousins Properties Inc,NYSE,Stock,1990-03-26,,Active
+HNI,HNI Corp,NYSE,Stock,1990-03-26,,Active
+CWT,California Water Service Group,NYSE,Stock,1990-03-26,,Active
+PTC,PTC Inc,NASDAQ,Stock,1990-03-26,,Active
+WOR,Worthington Enterprises Inc,NYSE,Stock,1990-03-26,,Active
+HELE,Helen of Troy Ltd,NASDAQ,Stock,1990-03-26,,Active
+AGYS,Agilysys Inc,NASDAQ,Stock,1990-03-26,,Active
+HCSG,Healthcare Services Group Inc,NASDAQ,Stock,1990-03-26,,Active
+DAIO,Data io Corp,NASDAQ,Stock,1990-03-26,,Active
+CRUS,Cirrus Logic Inc,NASDAQ,Stock,1990-03-26,,Active
+WPP,WPP Plc.,NYSE,Stock,1990-03-26,,Active
+SSP,E.W. Scripps Co. - Class A,NASDAQ,Stock,1990-03-26,,Active
+MSA,MSA Safety Inc,NYSE,Stock,1990-03-26,,Active
+WSFS,WSFS Financial Corp,NASDAQ,Stock,1990-03-26,,Active
+WSM,Williams-Sonoma Inc,NYSE,Stock,1990-03-26,,Active
+DGICB,Donegal Group Inc - Class B,NASDAQ,Stock,1990-03-26,,Active
+DGII,Digi International Inc,NASDAQ,Stock,1990-03-26,,Active
+GSBC,Great Southern Bancorp Inc,NASDAQ,Stock,1990-03-26,,Active
+COHR,Coherent Corp,NYSE,Stock,1990-03-26,,Active
+GNTX,Gentex Corp,NASDAQ,Stock,1990-03-26,,Active
+RELL,Richardson Electronics Ltd,NASDAQ,Stock,1990-03-26,,Active
+RF,Regions Financial Corp,NYSE,Stock,1990-03-26,,Active
+RGEN,Repligen Corp,NASDAQ,Stock,1990-03-26,,Active
+HBAN,Huntington Bancshares Inc,NASDAQ,Stock,1990-03-26,,Active
+MSEX,Middlesex Water Company,NASDAQ,Stock,1990-03-26,,Active
+FELE,Franklin Electric Co. Inc,NASDAQ,Stock,1990-03-26,,Active
+LSCC,Lattice Semiconductor Corp,NASDAQ,Stock,1990-03-26,,Active
+MERC,Mercer International Inc,NASDAQ,Stock,1990-03-26,,Active
+PAYX,Paychex Inc,NASDAQ,Stock,1990-03-26,,Active
+TRST,Trustco Bank Corp,NASDAQ,Stock,1990-03-26,,Active
+CDNS,Cadence Design Systems Inc,NASDAQ,Stock,1990-03-26,,Active
+CDZI,Cadiz Inc,NASDAQ,Stock,1990-03-26,,Active
+BRSL,International Game Technology PLC,NYSE,Stock,1990-03-26,,Active
+JBHT,J.B. Hunt Transport Services Inc,NASDAQ,Stock,1990-03-26,,Active
+UFCS,United Fire Group Inc,NASDAQ,Stock,1990-03-26,,Active
+ORI,Old Republic International Corp,NYSE,Stock,1990-03-26,,Active
+MGA,Magna International Inc,NYSE,Stock,1990-03-26,,Active
+MGEE,MGE Energy Inc,NASDAQ,Stock,1990-03-26,,Active
+ODP,ODP Corporation (The),NASDAQ,Stock,1990-03-26,,Active
+LRCX,Lam Research Corp,NASDAQ,Stock,1990-03-26,,Active
+KTCC,Key Tronic Corp,NASDAQ,Stock,1990-03-26,,Active
+UBSI,United Bankshares Inc,NASDAQ,Stock,1990-03-26,,Active
+WAFD,WaFd Inc,NASDAQ,Stock,1990-03-26,,Active
+CFR,Cullen Frost Bankers Inc,NYSE,Stock,1990-03-26,,Active
+AWR,American States Water Company,NYSE,Stock,1990-03-26,,Active
+JJSF,J&J Snack Foods Corp,NASDAQ,Stock,1990-03-26,,Active
+UNH,Unitedhealth Group Inc,NYSE,Stock,1990-03-26,,Active
+KLAC,KLA Corp,NASDAQ,Stock,1990-03-26,,Active
+OSK,Oshkosh Corp,NYSE,Stock,1990-03-26,,Active
+OTTR,Otter Tail Corporation,NASDAQ,Stock,1990-03-26,,Active
+KELYA,Kelly Services Inc - Class A,NASDAQ,Stock,1990-03-26,,Active
+MCY,Mercury General Corp,NYSE,Stock,1990-03-26,,Active
+LYTS,LSI Industries Inc,NASDAQ,Stock,1990-03-26,,Active
+VMI,Valmont Industries Inc,NYSE,Stock,1990-03-26,,Active
+UNAMQ,Unico American Corp,NASDAQ,Stock,1990-03-26,,Active
+OII,Oceaneering International Inc,NYSE,Stock,1990-03-26,,Active
+UHS,Universal Health Services Inc - Class B,NYSE,Stock,1990-03-26,,Active
+NSSC,NAPCO Security Technologies Inc,NASDAQ,Stock,1990-03-26,,Active
+JOUT,Johnson Outdoors Inc - Class A,NASDAQ,Stock,1990-03-26,,Active
+PAMT,P.A.M. Transportation Services Inc,NASDAQ,Stock,1990-03-26,,Active
+BSIN,U.S. Energy Corp,NASDAQ,Stock,1990-03-26,,Active
+OMC,Omnicom Group Inc,NYSE,Stock,1990-03-26,,Active
+VOLT,TEMA ELECTRIFICATION ETF ,NASDAQ,Stock,1990-03-26,,Active
+JKHY,Jack Henry & Associates Inc,NASDAQ,Stock,1990-03-26,,Active
+MGPI,MGP Ingredients Inc,NASDAQ,Stock,1990-03-26,,Active
+BPOP,Popular Inc,NASDAQ,Stock,1990-03-26,,Active
+KLIC,Kulicke & Soffa Industries Inc,NASDAQ,Stock,1990-03-26,,Active
+MGRC,McGrath Rentcorp,NASDAQ,Stock,1990-03-26,,Active
+KWR,Quaker Houghton,NYSE,Stock,1990-03-26,,Active
+LNN,Lindsay Corporation,NYSE,Stock,1990-03-26,,Active
+PKOH,Park-Ohio Holdings Corp,NASDAQ,Stock,1990-03-26,,Active
+LAKE,Lakeland Industries Inc,NASDAQ,Stock,1990-03-26,,Active
+CINF,Cincinnati Financial Corp,NASDAQ,Stock,1990-03-26,,Active
+UFI,UNIFI Inc,NYSE,Stock,1990-03-26,,Active
+ODC,Oil-Dri Corp Of America,NYSE,Stock,1990-03-26,,Active
+TILE,Interface Inc,NASDAQ,Stock,1990-03-26,,Active
+CNMD,Conmed Corp,NYSE,Stock,1990-03-26,,Active
+USLM,United States Lime & Minerals Inc,NASDAQ,Stock,1990-03-26,,Active
+TFC,Truist Financial Corporation,NYSE,Stock,1990-03-26,,Active
+NWN,Northwest Natural Holding Company,NYSE,Stock,1990-03-26,,Active
+MKC,McCormick & Co. Inc (Non Voting),NYSE,Stock,1990-03-26,,Active
+TEVA,Teva- Pharmaceutical Industries Ltd,NYSE,Stock,1990-03-26,,Active
+IDCC,Interdigital Inc,NASDAQ,Stock,1990-03-26,,Active
+PLXS,Plexus Corp,NASDAQ,Stock,1990-03-26,,Active
+NNN,NNN REIT Inc,NYSE,Stock,1990-03-26,,Active
+CLDX,Celldex Therapeutics Inc,NASDAQ,Stock,1990-03-26,,Active
+CLH,Clean Harbors Inc,NYSE,Stock,1990-03-26,,Active
+IMKTA,Ingles Markets Inc - Class A,NASDAQ,Stock,1990-03-26,,Active
+ONB,Old National Bancorp,NASDAQ,Stock,1990-03-26,,Active
+TEX,Terex Corp,NYSE,Stock,1990-03-26,,Active
+PLAB,Photronics Inc,NASDAQ,Stock,1990-03-26,,Active
+WDFC,WD-40 Company,NASDAQ,Stock,1990-03-26,,Active
+NTRS,Northern Trust Corp,NASDAQ,Stock,1990-03-26,,Active
+VLGEA,Village Super Market Inc - Class A,NASDAQ,Stock,1990-03-27,,Active
+UMBF,UMB Financial Corp,NASDAQ,Stock,1990-03-27,,Active
+CSWC,Capital Southwest Corp,NASDAQ,Stock,1990-03-27,,Active
+ENB,Enbridge Inc,NYSE,Stock,1990-03-27,,Active
+ITIC,Investors Title Company,NASDAQ,Stock,1990-03-27,,Active
+PATK,Patrick Industries Inc,NASDAQ,Stock,1990-03-27,,Active
+ASRV,Ameriserv Financial Inc,NASDAQ,Stock,1990-03-27,,Active
+INDB,Independent Bank Corp,NASDAQ,Stock,1990-03-27,,Active
+TRNS,Transcat Inc,NASDAQ,Stock,1990-03-27,,Active
+EVI,EVI Industries Inc,AMEX,Stock,1990-03-27,,Active
+CSPI,CSP Inc,NASDAQ,Stock,1990-03-27,,Active
+AXGN,Axogen Inc,NASDAQ,Stock,1990-03-27,,Active
+OFG,OFG Bancorp,NYSE,Stock,1990-03-28,,Active
+STC,Stewart Information Services Corp,NYSE,Stock,1990-03-28,,Active
+TMP,Tompkins Financial Corp,AMEX,Stock,1990-03-28,,Active
+LH,Laboratory Corp Of America Holdings,NYSE,Stock,1990-03-29,,Active
+MCS,Marcus Corp,NYSE,Stock,1990-03-29,,Active
+TTI,Tetra Technologies Inc,NYSE,Stock,1990-04-03,,Active
+CDE,Coeur Mining Inc,NYSE,Stock,1990-04-12,,Active
+VGZ,Vista Gold Corp,AMEX,Stock,1990-04-30,,Active
+BKTI,BK Technologies Corp,AMEX,Stock,1990-06-25,,Active
+RIO,Rio Tinto plc,NYSE,Stock,1990-06-28,,Active
+BHE,Benchmark Electronics Inc,NYSE,Stock,1990-06-28,,Active
+WKC,World Kinect Corp,NYSE,Stock,1990-07-30,,Active
+EXPO,Exponent Inc,NASDAQ,Stock,1990-08-17,,Active
+DY,Dycom Industries Inc,NYSE,Stock,1990-09-24,,Active
+ESE,Esco Technologies Inc,NYSE,Stock,1990-10-01,,Active
+DDD,3D Systems Corp,NYSE,Stock,1990-11-05,,Active
+CATY,Cathay General Bancorp,NASDAQ,Stock,1990-12-17,,Active
+AVNW,Aviat Networks Inc,NASDAQ,Stock,1991-02-07,,Active
+MLI,Mueller Industries Inc,NYSE,Stock,1991-02-25,,Active
+NBR,Nabors Industries Ltd,NYSE,Stock,1991-02-28,,Active
+DORM,Dorman Products Inc,NASDAQ,Stock,1991-03-12,,Active
+REGN,Regeneron Pharmaceuticals Inc,NASDAQ,Stock,1991-04-02,,Active
+AZO,Autozone Inc,NYSE,Stock,1991-04-02,,Active
+XRAY,DENTSPLY Sirona Inc,NASDAQ,Stock,1991-04-25,,Active
+GFI,Gold Fields Ltd,NYSE,Stock,1991-05-01,,Active
+PRK,Park National Corp,AMEX,Stock,1991-05-08,,Active
+HAE,Haemonetics Corp,NYSE,Stock,1991-05-10,,Active
+IONS,Ionis Pharmaceuticals Inc,NASDAQ,Stock,1991-05-17,,Active
+LCUT,Lifetime Brands Inc,NASDAQ,Stock,1991-06-05,,Active
+IDXX,Idexx Laboratories Inc,NASDAQ,Stock,1991-06-24,,Active
+AES,AES Corp,NYSE,Stock,1991-06-26,,Active
+CRVL,Corvel Corp,NASDAQ,Stock,1991-06-28,,Active
+CVSA,Adtalem Global Education Inc,NYSE,Stock,1991-06-28,,Active
+DIN,Dine Brands Global Inc,NYSE,Stock,1991-07-12,,Active
+ALKS,Alkermes plc,NASDAQ,Stock,1991-07-16,,Active
+VRTX,Vertex Pharmaceuticals Inc,NASDAQ,Stock,1991-07-24,,Active
+MNRO,Monro Inc,NASDAQ,Stock,1991-07-30,,Active
+PRGS,Progress Software Corp,NASDAQ,Stock,1991-08-05,,Active
+MTG,MGIC Investment Corp,NYSE,Stock,1991-08-07,,Active
+ZBRA,Zebra Technologies Corp - Class A,NASDAQ,Stock,1991-08-15,,Active
+IPAR,Inter Parfums Inc,NASDAQ,Stock,1991-08-20,,Active
+KEX,Kirby Corp,NYSE,Stock,1991-08-21,,Active
+EZPW,EZCorp Inc - Class A,NASDAQ,Stock,1991-08-27,,Active
+BOKF,BOK Financial Corp,NASDAQ,Stock,1991-09-05,,Active
+FIZZ,National Beverage Corp,NASDAQ,Stock,1991-09-16,,Active
+BIIB,Biogen Inc,NASDAQ,Stock,1991-09-17,,Active
+TDS,Telephone And Data Systems Inc,NYSE,Stock,1991-09-18,,Active
+KMPR,Kemper Corporation,NYSE,Stock,1991-09-18,,Active
+NPKI,Newpark Resources Inc,NYSE,Stock,1991-09-26,,Active
+WM,Waste Management Inc,NYSE,Stock,1991-09-30,,Active
+MTB,M & T Bank Corp,NYSE,Stock,1991-10-04,,Active
+NHI,National Health Investors Inc,NYSE,Stock,1991-10-09,,Active
+CVM,Cel-Sci Corp,AMEX,Stock,1991-10-10,,Active
+ODFL,Old Dominion Freight Line Inc,NASDAQ,Stock,1991-10-24,,Active
+RHP,Ryman Hospitality Properties Inc,NYSE,Stock,1991-10-24,,Active
+WNC,Wabash National Corp,NYSE,Stock,1991-11-08,,Active
+APH,Amphenol Corp - Class A,NYSE,Stock,1991-11-08,,Active
+ATNI,ATN International Inc,NASDAQ,Stock,1991-11-14,,Active
+HMN,Horace Mann Educators Corp,NYSE,Stock,1991-11-15,,Active
+KIM,Kimco Realty Corporation,NYSE,Stock,1991-11-22,,Active
+VICR,Vicor Corp,NASDAQ,Stock,1991-11-27,,Active
+WRLD,World Acceptance Corp,NASDAQ,Stock,1991-12-02,,Active
+ACNT,Ascent Industries Company,NASDAQ,Stock,1991-12-03,,Active
+JBSS,Sanfilippo (John B.) & Son Inc,NASDAQ,Stock,1991-12-04,,Active
+OI,O-I Glass Inc,NYSE,Stock,1991-12-11,,Active
+AMSC,American Superconductor Corp,NASDAQ,Stock,1991-12-12,,Active
+QCOM,Qualcomm Inc,NASDAQ,Stock,1991-12-16,,Active
+PRGO,Perrigo Company plc,NYSE,Stock,1991-12-17,,Active
+TTEK,Tetra Tech Inc,NASDAQ,Stock,1991-12-17,,Active
+CDP,COPT Defense Properties,NYSE,Stock,1991-12-31,,Active
+GILD,Gilead Sciences Inc,NASDAQ,Stock,1992-01-22,,Active
+GBCI,Glacier Bancorp Inc,NYSE,Stock,1992-01-27,,Active
+SMG,Scotts Miracle-Gro Company - Class A,NYSE,Stock,1992-01-31,,Active
+M,Macy`s Inc,NYSE,Stock,1992-02-05,,Active
+ROP,Roper Technologies Inc,NASDAQ,Stock,1992-02-13,,Active
+CMTL,Comtech Telecommunications Corp,NASDAQ,Stock,1992-02-18,,Active
+MOG-A,Moog Inc - Class A,NYSE,Stock,1992-02-21,,Active
+KOSS,Koss Corp,NASDAQ,Stock,1992-02-25,,Active
+DXLG,Destination XL Group Inc,NASDAQ,Stock,1992-02-25,,Active
+FUND,Sprott Focus Trust Inc,NASDAQ,Stock,1992-02-25,,Active
+KEQU,Kewaunee Scientific Corporation,NASDAQ,Stock,1992-02-25,,Active
+BH,Biglari Holdings Inc - Class B,NYSE,Stock,1992-02-25,,Active
+GVA,Granite Construction Inc,NYSE,Stock,1992-02-25,,Active
+FBP,First Bancorp PR,NYSE,Stock,1992-02-25,,Active
+FICO,Fair Isaac Corp,NYSE,Stock,1992-02-25,,Active
+SCHL,Scholastic Corp,NASDAQ,Stock,1992-02-25,,Active
+ALNT,Allient Inc,NASDAQ,Stock,1992-02-25,,Active
+HIFS,Hingham Institution For Savings,NASDAQ,Stock,1992-02-25,,Active
+FRME,First Merchants Corp,NASDAQ,Stock,1992-02-25,,Active
+ESCA,Escalade Inc,NASDAQ,Stock,1992-02-25,,Active
+HVT,Haverty Furniture Cos. Inc,NYSE,Stock,1992-02-25,,Active
+DJCO,Daily Journal Corporation,NASDAQ,Stock,1992-02-25,,Active
+HVT-A,Haverty Furniture Cos. Inc - Class A,NYSE,Stock,1992-02-25,,Active
+FCNCA,First Citizens Bancshares Inc (NC) - Class A,NASDAQ,Stock,1992-02-25,,Active
+FLXS,Flexsteel Industries Inc,NASDAQ,Stock,1992-02-25,,Active
+MTRX,Matrix Service Company,NASDAQ,Stock,1992-02-26,,Active
+MMSI,Merit Medical Systems Inc,NASDAQ,Stock,1992-02-26,,Active
+MAYS,J.W. Mays Inc,NASDAQ,Stock,1992-02-26,,Active
+SNPS,Synopsys Inc,NASDAQ,Stock,1992-02-26,,Active
+ONTO,Onto Innovation Inc,NYSE,Stock,1992-02-26,,Active
+MRTN,Marten Transport Ltd,NASDAQ,Stock,1992-02-26,,Active
+CRT,Cross Timbers Royalty Trust,NYSE,Stock,1992-02-28,,Active
+CALY,Callaway Golf Company,NYSE,Stock,1992-02-28,,Active
+CVR,Chicago Rivet & Machine Company,AMEX,Stock,1992-02-28,,Active
+STAA,Staar Surgical Company,NASDAQ,Stock,1992-03-02,,Active
+AN,Autonation Inc,NYSE,Stock,1992-03-03,,Active
+THFF,First Financial Corp - Indiana,NASDAQ,Stock,1992-03-03,,Active
+TRMK,Trustmark Corp,NASDAQ,Stock,1992-03-03,,Active
+NEON,Neonode Inc,NASDAQ,Stock,1992-03-03,,Active
+TRMB,Trimble Inc,NASDAQ,Stock,1992-03-03,,Active
+QDEL,QuidelOrtho Corporation,NASDAQ,Stock,1992-03-03,,Active
+BRO,Brown & Brown Inc,NYSE,Stock,1992-03-03,,Active
+TNC,Tennant Company,NYSE,Stock,1992-03-03,,Active
+JACK,Jack In The Box Inc,NASDAQ,Stock,1992-03-05,,Active
+LCTX,Lineage Cell Therapeutics Inc,AMEX,Stock,1992-03-06,,Active
+JOE,St. Joe Company,NYSE,Stock,1992-03-10,,Active
+RHI,Robert Half Inc,NYSE,Stock,1992-03-10,,Active
+SCL,Stepan Company,NYSE,Stock,1992-03-17,,Active
+ELME,Elme Communities,NYSE,Stock,1992-03-17,,Active
+NBTB,NBT Bancorp. Inc,NASDAQ,Stock,1992-03-17,,Active
+UTL,Unitil Corp,NYSE,Stock,1992-03-17,,Active
+EML,Eastern Company,NASDAQ,Stock,1992-03-17,,Active
+USAU,U.S. Gold Corp,NASDAQ,Stock,1992-03-17,,Active
+LGL,LGL Group Inc,AMEX,Stock,1992-03-17,,Active
+OLP,One Liberty Properties Inc,NYSE,Stock,1992-03-17,,Active
+VAL,Valaris Ltd,NYSE,Stock,1992-03-17,,Active
+UG,United-Guardian Inc,NASDAQ,Stock,1992-03-17,,Active
+FRD,Friedman Industries Inc,NASDAQ,Stock,1992-03-17,,Active
+SGC,Superior Group of Companies Inc.,NASDAQ,Stock,1992-03-17,,Active
+ESP,Espey Manufacturing & Electronics Corp,AMEX,Stock,1992-03-17,,Active
+WEN,Wendy`s Co - Class A,NASDAQ,Stock,1992-03-17,,Active
+JOB,GEE Group Inc,AMEX,Stock,1992-03-17,,Active
+HOV,Hovnanian Enterprises Inc - Class A,NYSE,Stock,1992-03-17,,Active
+CVBF,CVB Financial Corp,NASDAQ,Stock,1992-03-17,,Active
+GV,Goldfield Corp,NYSE MKT,Stock,1992-03-17,,Active
+STZ,Constellation Brands Inc - Class A,NYSE,Stock,1992-03-17,,Active
+DVN,Devon Energy Corp,NYSE,Stock,1992-03-17,,Active
+VIRC,Virco Manufacturing Corp,NASDAQ,Stock,1992-03-17,,Active
+WABC,Westamerica Bancorporation,NASDAQ,Stock,1992-03-17,,Active
+DXR,Daxor Corp,NASDAQ,Stock,1992-03-17,,Active
+TRC,Tejon Ranch Company,NYSE,Stock,1992-03-17,,Active
+HEI,Heico Corp,NYSE,Stock,1992-03-17,,Active
+IOR,Income Opportunity Realty Investors Inc,AMEX,Stock,1992-03-17,,Active
+SMTC,Semtech Corp,NASDAQ,Stock,1992-03-17,,Active
+GHM,Graham Corp,NYSE,Stock,1992-03-17,,Active
+WSO-B,Watsco Inc - Class B,NYSE,Stock,1992-03-17,,Active
+TISI,Team Inc,NYSE,Stock,1992-03-17,,Active
+DIOD,Diodes Inc,NASDAQ,Stock,1992-03-17,,Active
+AD,Array Digital Infrastructure Inc,NYSE,Stock,1992-03-17,,Active
+DINO,HF Sinclair Corp,NYSE,Stock,1992-03-17,,Active
+MIDD,Middleby Corp,NASDAQ,Stock,1992-03-17,,Active
+EGP,Eastgroup Properties Inc,NYSE,Stock,1992-03-17,,Active
+RDI,Reading International Inc - Class A,NASDAQ,Stock,1992-03-17,,Active
+GRC,Gorman-Rupp Company,NYSE,Stock,1992-03-17,,Active
+IIIN,Insteel Industries Inc,NYSE,Stock,1992-03-17,,Active
+OSUR,Orasure Technologies Inc,NASDAQ,Stock,1992-03-17,,Active
+ELA,Envela Corp,AMEX,Stock,1992-03-19,,Active
+CRD-A,Crawford & Co. - Class A,NYSE,Stock,1992-03-19,,Active
+MBOT,Microbot Medical Inc,NASDAQ,Stock,1992-03-25,,Active
+ICUI,ICU Medical Inc,NASDAQ,Stock,1992-03-31,,Active
+MHK,Mohawk Industries Inc,NYSE,Stock,1992-04-01,,Active
+ASUR,Asure Software Inc,NASDAQ,Stock,1992-04-07,,Active
+KOPN,Kopin Corp,NASDAQ,Stock,1992-04-15,,Active
+AGCO,AGCO Corp,NYSE,Stock,1992-04-20,,Active
+STBA,S & T Bancorp Inc,NASDAQ,Stock,1992-04-21,,Active
+OFIX,Orthofix Medical Inc,NASDAQ,Stock,1992-04-24,,Active
+RNST,Renasant Corp,NYSE,Stock,1992-04-24,,Active
+BKE,Buckle Inc,NYSE,Stock,1992-05-11,,Active
+ARCB,ArcBest Corp,NASDAQ,Stock,1992-05-13,,Active
+BSX,Boston Scientific Corp,NYSE,Stock,1992-05-19,,Active
+MEOH,Methanex Corp,NASDAQ,Stock,1992-05-19,,Active
+KSS,Kohl`s Corp,NYSE,Stock,1992-05-19,,Active
+BLFS,Biolife Solutions Inc,NASDAQ,Stock,1992-05-26,,Active
+USPH,U.S. Physical Therapy Inc,NYSE,Stock,1992-05-29,,Active
+STE,Steris Plc,NYSE,Stock,1992-06-01,,Active
+FC,Franklin Covey Company,NYSE,Stock,1992-06-03,,Active
+DHI,D.R. Horton Inc,NYSE,Stock,1992-06-05,,Active
+CACC,Credit Acceptance Corp,NASDAQ,Stock,1992-06-05,,Active
+FCF,First Commonwealth Financial Corp,NYSE,Stock,1992-06-10,,Active
+COLB,Columbia Banking System Inc,NASDAQ,Stock,1992-06-16,,Active
+DDC,Dominion Diamond Corp,AMEX,Stock,1992-06-22,,Active
+SBUX,Starbucks Corp,NASDAQ,Stock,1992-06-26,,Active
+OHI,Omega Healthcare Investors Inc,NYSE,Stock,1992-08-07,,Active
+FCFS,FirstCash Holdings Inc,NASDAQ,Stock,1992-08-17,,Active
+LTC,LTC Properties Inc,NYSE,Stock,1992-08-25,,Active
+CTO,CTO Realty Growth Inc - New - New,NYSE,Stock,1992-09-08,,Active
+FUNC,First United Corporation,NASDAQ,Stock,1992-09-08,,Active
+EQS,Equus Total Return Inc,NYSE,Stock,1992-09-11,,Active
+CAKE,Cheesecake Factory Inc,NASDAQ,Stock,1992-09-18,,Active
+LFUS,Littelfuse Inc,NASDAQ,Stock,1992-09-23,,Active
+EFOR,ASGN Inc,NYSE,Stock,1992-09-23,,Active
+BLX,Banco Latinoamericano De Comercio Exterior SA - Class E,NYSE,Stock,1992-09-24,,Active
+CECO,Ceco Environmental Corp,NASDAQ,Stock,1992-09-29,,Active
+ERNA,Ernexa Therapeutics Inc,NASDAQ,Stock,1992-10-19,,Active
+MTX,Minerals Technologies Inc,NYSE,Stock,1992-10-26,,Active
+RDN,Radian Group Inc,NYSE,Stock,1992-10-30,,Active
+SFNC,Simmons First National Corp - Class A,NASDAQ,Stock,1992-11-02,,Active
+KAI,Kadant Inc,NYSE,Stock,1992-11-03,,Active
+LGND,Ligand Pharmaceuticals Inc - Class B,NASDAQ,Stock,1992-11-18,,Active
+FBNC,First Bancorp,NASDAQ,Stock,1992-12-09,,Active
+TECH,Bio-Techne Corp,NASDAQ,Stock,1992-12-09,,Active
+GPK,Graphic Packaging Holding Company,NYSE,Stock,1992-12-10,,Active
+AAON,AAON Inc,NASDAQ,Stock,1992-12-16,,Active
+SM,SM Energy Company,NYSE,Stock,1992-12-21,,Active
+ULBI,Ultralife Corp,NASDAQ,Stock,1992-12-23,,Active
+RRC,Range Resources Corp,NYSE,Stock,1992-12-28,,Active
+PPLI,People Inc - New,NASDAQ,Stock,1993-01-19,,Active
+EGY,VAALCO Energy Inc,NYSE,Stock,1993-01-29,,Active
+RCKY,Rocky Brands Inc,NASDAQ,Stock,1993-02-03,,Active
+PEBO,Peoples Bancorp Inc (Marietta OH),NASDAQ,Stock,1993-02-11,,Active
+AORT,Artivion Inc,NYSE,Stock,1993-02-12,,Active
+UEIC,Universal Electronics Inc,NASDAQ,Stock,1993-02-12,,Active
+CHCO,City Holding Company,NASDAQ,Stock,1993-02-19,,Active
+CVU,CPI Aerostructures Inc,AMEX,Stock,1993-02-19,,Active
+CRH,CRH Plc,NYSE,Stock,1993-02-19,,Active
+CPSS,Consumer Portfolio Service Inc,NASDAQ,Stock,1993-02-22,,Active
+MS,Morgan Stanley,NYSE,Stock,1993-02-23,,Active
+ELS,Equity Lifestyle Properties Inc,NYSE,Stock,1993-02-25,,Active
+NATH,Nathan`s Famous Inc,NASDAQ,Stock,1993-02-26,,Active
+FNB,F.N.B. Corp,NYSE,Stock,1993-03-04,,Active
+EDUC,Educational Development Corp,NASDAQ,Stock,1993-03-04,,Active
+WT,WisdomTree Inc,NYSE,Stock,1993-03-04,,Active
+LSTR,Landstar System Inc,NASDAQ,Stock,1993-03-05,,Active
+TATT,TAT Technologies Ltd,NASDAQ,Stock,1993-03-11,,Active
+SHOE,Shoe Carnival Inc,NASDAQ,Stock,1993-03-16,,Active
+ETD,Ethan Allen Interiors Inc,NYSE,Stock,1993-03-16,,Active
+GTN-A,Gray Television Inc - Class A,NYSE,Stock,1993-03-17,,Active
+TULP,Bloomia Holdings Inc,NASDAQ,Stock,1993-03-18,,Active
+MCHP,Microchip Technology Inc,NASDAQ,Stock,1993-03-19,,Active
+ALG,Alamo Group Inc,NYSE,Stock,1993-03-19,,Active
+INTU,Intuit Inc,NASDAQ,Stock,1993-03-22,,Active
+SNT,Senstar Technologies Corp,NASDAQ,Stock,1993-03-23,,Active
+GILT,Gilat Satellite Networks,NASDAQ,Stock,1993-03-26,,Active
+SYBT,Stock Yards Bancorp Inc,NASDAQ,Stock,1993-03-26,,Active
+GBR,New Concept Energy Inc,AMEX,Stock,1993-03-26,,Active
+CHDN,Churchill Downs Inc,NASDAQ,Stock,1993-03-29,,Active
+AMRN,Amarin Corp,NASDAQ,Stock,1993-04-05,,Active
+FOSL,Fossil Group Inc,NASDAQ,Stock,1993-04-08,,Active
+TCBK,Trico Bancshares,NASDAQ,Stock,1993-04-20,,Active
+ATR,Aptargroup Inc,NYSE,Stock,1993-04-23,,Active
+ORLY,O`Reilly Automotive Inc,NASDAQ,Stock,1993-04-23,,Active
+RCL,Royal Caribbean Group,NYSE,Stock,1993-04-28,,Active
+JBL,Jabil Inc,NYSE,Stock,1993-05-03,,Active
+ANIK,Anika Therapeutics Inc,NASDAQ,Stock,1993-05-04,,Active
+CTBI,Community Trust Bancorp Inc,NASDAQ,Stock,1993-05-17,,Active
+AZN,Astrazeneca plc,NYSE,Stock,1993-05-17,,Active
+TWI,Titan International Inc,NYSE,Stock,1993-05-20,,Active
+GABC,German American Bancorp Inc,NASDAQ,Stock,1993-05-21,,Active
+HR,Healthcare Realty Trust Inc,NYSE,Stock,1993-05-27,,Active
+AKR,Acadia Realty Trust,NYSE,Stock,1993-05-27,,Active
+RIG,Transocean Ltd,NYSE,Stock,1993-05-28,,Active
+SKT,Tanger Factory Outlet Centers Inc,NYSE,Stock,1993-05-28,,Active
+ALL,Allstate Corp (The),NYSE,Stock,1993-06-03,,Active
+PZZA,Papa John`s International Inc,NASDAQ,Stock,1993-06-08,,Active
+THRM,Gentherm Inc - Class A,NASDAQ,Stock,1993-06-10,,Active
+BBSI,Barrett Business Services Inc,NASDAQ,Stock,1993-06-14,,Active
+SANM,Sanmina Corp,NASDAQ,Stock,1993-06-22,,Active
+NSYS,Nortech Systems Inc,NASDAQ,Stock,1993-06-24,,Active
+YPF,YPF,NYSE,Stock,1993-06-29,,Active
+CENT,Central Garden & Pet Company,NASDAQ,Stock,1993-07-15,,Active
+CPT,Camden Property Trust,NYSE,Stock,1993-07-22,,Active
+MCRI,Monarch Casino & Resort Inc,NASDAQ,Stock,1993-08-10,,Active
+INOD,Innodata Inc,NASDAQ,Stock,1993-08-11,,Active
+VMRK,Vivmark Residential,NYSE,Stock,1993-08-12,,Active
+BWA,BorgWarner Inc,NYSE,Stock,1993-08-13,,Active
+OPY,Oppenheimer Holdings Inc - Class A,NYSE,Stock,1993-08-16,,Active
+FLL,Full House Resorts Inc,NASDAQ,Stock,1993-08-17,,Active
+BFS,Saul Centers Inc,NYSE,Stock,1993-08-19,,Active
+WINA,Winmark Corporation,NASDAQ,Stock,1993-08-25,,Active
+RAVE,Rave Restaurant Group Inc,NASDAQ,Stock,1993-09-01,,Active
+FTEK,Fuel Tech Inc,NASDAQ,Stock,1993-09-07,,Active
+NTIC,Northern Technologies International Corp,NASDAQ,Stock,1993-09-13,,Active
+KOF,Coca-Cola Femsa S.A.B. DE C.V.,NYSE,Stock,1993-09-14,,Active
+SQM,Sociedad Quimica Y Minera de Chile S.A.,NYSE,Stock,1993-09-21,,Active
+CASH,Pathward Financial Inc,NASDAQ,Stock,1993-09-21,,Active
+TLF,Tandy Leather Factory Inc,NASDAQ,Stock,1993-09-27,,Active
+MOV,Movado Group Inc,NYSE,Stock,1993-09-30,,Active
+IT,Gartner Inc,NYSE,Stock,1993-10-05,,Active
+QCRH,QCR Holding Inc,NASDAQ,Stock,1993-10-06,,Active
+SGA,Saga Communications Inc - Class A,NASDAQ,Stock,1993-10-12,,Active
+MAR,Marriott International Inc - Class A,NASDAQ,Stock,1993-10-13,,Active
+DECK,Deckers Outdoor Corp,NYSE,Stock,1993-10-15,,Active
+BYD,Boyd Gaming Corp,NYSE,Stock,1993-10-18,,Active
+LXP,LXP Industrial Trust,NYSE,Stock,1993-10-22,,Active
+RVSB,Riverview Bancorp Inc,NASDAQ,Stock,1993-10-25,,Active
+NRIM,Northrim Bancorp Inc,NASDAQ,Stock,1993-10-25,,Active
+HWKN,Hawkins Inc,NASDAQ,Stock,1993-10-27,,Active
+NAII,Natural Alternatives International Inc,NASDAQ,Stock,1993-10-28,,Active
+REG,Regency Centers Corporation,NASDAQ,Stock,1993-10-29,,Active
+FFIN,First Financial Bankshares Inc,NASDAQ,Stock,1993-11-01,,Active
+PTEN,Patterson-UTI Energy Inc,NASDAQ,Stock,1993-11-02,,Active
+MHO,MI Homes Inc,NYSE,Stock,1993-11-03,,Active
+INCY,Incyte Corp,NASDAQ,Stock,1993-11-04,,Active
+HHS,Harte-Hanks Inc,NASDAQ,Stock,1993-11-04,,Active
+ROCK,Gibraltar Industries Inc,NASDAQ,Stock,1993-11-05,,Active
+NYNY,Empire Resorts Inc,NASDAQ,Stock,1993-11-05,,Active
+ITRI,Itron Inc,NASDAQ,Stock,1993-11-05,,Active
+URBN,Urban Outfitters Inc,NASDAQ,Stock,1993-11-09,,Active
+RMCF,Rocky Mountain Chocolate Factory Inc,NASDAQ,Stock,1993-11-09,,Active
+CRMT,Americas Car Mart Inc,NASDAQ,Stock,1993-11-09,,Active
+UFPI,UFP Industries Inc,NASDAQ,Stock,1993-11-10,,Active
+CNTY,Century Casinos Inc,NASDAQ,Stock,1993-11-10,,Active
+AEC,Associated Estates Realty Corp,NASDAQ,Stock,1993-11-11,,Active
+FWRD,Forward Air Corp,NASDAQ,Stock,1993-11-16,,Active
+FLG,New York Community Bancorp Inc,NYSE,Stock,1993-11-23,,Active
+BDC,Belden Inc,NYSE,Stock,1993-11-24,,Active
+BBAR,BBVA Argentina,NYSE,Stock,1993-11-24,,Active
+SU,Suncor Energy Inc,NYSE,Stock,1993-12-01,,Active
+UMH,UMH Properties Inc,NYSE,Stock,1993-12-06,,Active
+SUI,Sun Communities Inc,NYSE,Stock,1993-12-09,,Active
+SHOO,Steven Madden Ltd,NASDAQ,Stock,1993-12-13,,Active
+SPG,Simon Property Group Inc,NYSE,Stock,1993-12-14,,Active
+TV,Grupo Televisa SAB,NYSE,Stock,1993-12-14,,Active
+EMN,Eastman Chemical Company,NYSE,Stock,1993-12-14,,Active
+UFPT,UFP Technologies Inc,NASDAQ,Stock,1993-12-17,,Active
+REFR,Research Frontiers Inc,NASDAQ,Stock,1993-12-20,,Active
+MED,Medifast Inc,NYSE,Stock,1993-12-31,,Active
+NOK,Nokia Corp,NYSE,Stock,1994-01-03,,Active
+ITI,Iteris Inc,NASDAQ,Stock,1994-01-04,,Active
+HAIN,Hain Celestial Group Inc,NASDAQ,Stock,1994-01-20,,Active
+MAA,Mid-America Apartment Communities Inc,NYSE,Stock,1994-01-28,,Active
+RGCO,RGC Resources Inc,NASDAQ,Stock,1994-02-01,,Active
+DAKT,Daktronics Inc,NASDAQ,Stock,1994-02-10,,Active
+NEOG,Neogen Corp,NASDAQ,Stock,1994-02-10,,Active
+RYN,Rayonier Inc,NYSE,Stock,1994-02-17,,Active
+MLM,Martin Marietta Materials Inc,NYSE,Stock,1994-02-17,,Active
+TSCO,Tractor Supply Company,NASDAQ,Stock,1994-02-18,,Active
+SILC,Silicom Ltd,NASDAQ,Stock,1994-02-18,,Active
+ALB,Albemarle Corp,NYSE,Stock,1994-02-22,,Active
+BZH,Beazer Homes USA Inc,NYSE,Stock,1994-02-23,,Active
+BCRX,Biocryst Pharmaceuticals Inc,NASDAQ,Stock,1994-03-04,,Active
+ACHC,Acadia Healthcare Company Inc,NASDAQ,Stock,1994-03-04,,Active
+MAC,Macerich Company,NYSE,Stock,1994-03-10,,Active
+NNBR,NN Inc,NASDAQ,Stock,1994-03-15,,Active
+CPRT,Copart Inc,NASDAQ,Stock,1994-03-17,,Active
+FLEX,Flex Ltd,NASDAQ,Stock,1994-03-18,,Active
+SCSC,Scansource Inc,NASDAQ,Stock,1994-03-18,,Active
+MPAA,Motorcar Parts of America Inc,NASDAQ,Stock,1994-03-23,,Active
+LARK,Landmark Bancorp Inc,NASDAQ,Stock,1994-03-28,,Active
+LNG,Cheniere Energy Inc,NYSE,Stock,1994-04-04,,Active
+SMBC,Southern Missouri Bancorp Inc,NASDAQ,Stock,1994-04-12,,Active
+EXP,Eagle Materials Inc,NYSE,Stock,1994-04-12,,Active
+AEO,American Eagle Outfitters Inc,NYSE,Stock,1994-04-14,,Active
+ADC,Agree Realty Corp,NYSE,Stock,1994-04-15,,Active
+NKTR,Nektar Therapeutics,NASDAQ,Stock,1994-05-03,,Active
+ABCB,Ameris Bancorp,NYSE,Stock,1994-05-19,,Active
+SYPR,Sypris Solutions Inc,NASDAQ,Stock,1994-05-19,,Active
+PENN,PENN Entertainment Inc,NASDAQ,Stock,1994-05-26,,Active
+SSD,Simpson Manufacturing Co. Inc,NYSE,Stock,1994-05-26,,Active
+TGB,Taseko Mines Ltd,AMEX,Stock,1994-06-02,,Active
+ESS,Essex Property Trust Inc,NYSE,Stock,1994-06-07,,Active
+HIW,Highwoods Properties Inc,NYSE,Stock,1994-06-08,,Active
+IMAX,Imax Corp,NYSE,Stock,1994-06-10,,Active
+FR,First Industrial Realty Trust Inc,NYSE,Stock,1994-06-24,,Active
+AKO-A,Embotelladora Andina S.A.,NYSE,Stock,1994-07-07,,Active
+GBX,Greenbrier Cos. Inc,NYSE,Stock,1994-07-14,,Active
+AIV,Apartment Investment & Management Co. - Class A,NYSE,Stock,1994-07-22,,Active
+GEO,Geo Group Inc,NYSE,Stock,1994-07-28,,Active
+MLR,Miller Industries Inc,NYSE,Stock,1994-08-02,,Active
+MATW,Matthews International Corp - Class A,NASDAQ,Stock,1994-08-10,,Active
+ADTN,ADTRAN Holdings Inc,NASDAQ,Stock,1994-08-10,,Active
+PNBK,Patriot National Bancorp Inc,NASDAQ,Stock,1994-09-01,,Active
+DAR,Darling Ingredients Inc,NYSE,Stock,1994-09-09,,Active
+SIRI,Sirius XM Holdings Inc,NASDAQ,Stock,1994-09-13,,Active
+WVVI,Willamette Valley Vineyard Inc,NASDAQ,Stock,1994-09-15,,Active
+RS,Reliance Steel & Aluminum Company,NYSE,Stock,1994-09-16,,Active
+RELX,RELX Plc,NYSE,Stock,1994-10-07,,Active
+PKX,POSCO Holdings Inc,NYSE,Stock,1994-10-14,,Active
+O,Realty Income Corp,NYSE,Stock,1994-10-18,,Active
+KGC,Kinross Gold Corp,NYSE,Stock,1994-10-19,,Active
+SSYS,Stratasys Ltd,NASDAQ,Stock,1994-10-21,,Active
+KNX,Knight-Swift Transportation Holdings Inc - Class A,NYSE,Stock,1994-10-25,,Active
+TSEM,Tower Semiconductor Ltd,NASDAQ,Stock,1994-10-26,,Active
+BMO,Bank of Montreal,NYSE,Stock,1994-10-27,,Active
+KEP,Korea Electric Power,NYSE,Stock,1994-10-27,,Active
+CVLG,Covenant Logistics Group Inc - Class A,NYSE,Stock,1994-10-28,,Active
+SJM,J.M. Smucker Company,NYSE,Stock,1994-10-31,,Active
+SIG,Signet Jewelers Ltd,NYSE,Stock,1994-10-31,,Active
+MCO,Moody`s Corp,NYSE,Stock,1994-10-31,,Active
+BSAC,Banco Santander Chile SA,NYSE,Stock,1994-10-31,,Active
+HDSN,Hudson Technologies Inc,NASDAQ,Stock,1994-11-02,,Active
+UHAL,U-Haul Holding Company,NYSE,Stock,1994-11-04,,Active
+NWBI,Northwest Bancshares Inc,NASDAQ,Stock,1994-11-08,,Active
+MCK,Mckesson Corporation,NYSE,Stock,1994-11-15,,Active
+COF,Capital One Financial Corp,NYSE,Stock,1994-11-16,,Active
+TGS,Transportadora de Gas del Sur,NYSE,Stock,1994-11-17,,Active
+VECO,Veeco Instruments Inc,NASDAQ,Stock,1994-11-29,,Active
+STM,ST Microelectronics,NYSE,Stock,1994-12-08,,Active
+TEO,Telecom Argentina S.A.,NYSE,Stock,1994-12-09,,Active
+CYD,China Yuchai International,NYSE,Stock,1994-12-19,,Active
+IRS,Irsa Inversiones Y Representaciones S.A.,NYSE,Stock,1994-12-20,,Active
+MIND,MIND Technology Inc,NASDAQ,Stock,1994-12-28,,Active
+MSN,Emerson Radio Corp,AMEX,Stock,1994-12-28,,Active
+CIGI,Colliers International Group Inc,NASDAQ,Stock,1995-01-20,,Active
+UPBD,Upbound Group Inc,NASDAQ,Stock,1995-01-25,,Active
+MLAB,Mesa Laboratories Inc,NASDAQ,Stock,1995-01-25,,Active
+NSIT,Insight Enterprises Inc,NASDAQ,Stock,1995-01-25,,Active
+USNA,Usana Health Sciences Inc,NYSE,Stock,1995-02-01,,Active
+TBI,TrueBlue Inc,NYSE,Stock,1995-02-01,,Active
+AZTA,Azenta Inc,NASDAQ,Stock,1995-02-02,,Active
+QUAD,Quad/Graphics Inc - Class A,NYSE,Stock,1995-02-09,,Active
+STRT,Strattec Security Corp,NASDAQ,Stock,1995-02-24,,Active
+ACIW,ACI Worldwide Inc,NASDAQ,Stock,1995-02-27,,Active
+DLTR,Dollar Tree Inc,NASDAQ,Stock,1995-03-09,,Active
+ASML,ASML Holding NV,NASDAQ,Stock,1995-03-16,,Active
+AMPG,Amplitech Group Inc,NASDAQ,Stock,1995-03-20,,Active
+COR,Cencora Inc,NYSE,Stock,1995-04-04,,Active
+TRT,Trio-Tech International,AMEX,Stock,1995-04-24,,Active
+CBZ,Cbiz Inc,NYSE,Stock,1995-04-27,,Active
+DRI,Darden Restaurants Inc,NYSE,Stock,1995-05-09,,Active
+NMR,Nomura Holdings Inc,NYSE,Stock,1995-05-16,,Active
+HLIT,Harmonic Inc,NASDAQ,Stock,1995-05-24,,Active
+MITK,Mitek Systems Inc,NASDAQ,Stock,1995-05-26,,Active
+CWCO,Consolidated Water Co. Ltd,NASDAQ,Stock,1995-06-01,,Active
+RMD,Resmed Inc,NYSE,Stock,1995-06-02,,Active
+SCKT,Socket Mobile Inc,NASDAQ,Stock,1995-06-07,,Active
+SBGI,Sinclair Inc - Class A,NASDAQ,Stock,1995-06-07,,Active
+PAAS,Pan American Silver Corp,NYSE,Stock,1995-06-12,,Active
+LECO,Lincoln Electric Holdings Inc,NASDAQ,Stock,1995-06-13,,Active
+FWDI,Forward Industries Inc,NASDAQ,Stock,1995-06-15,,Active
+WAB,Westinghouse Air Brake Technologies Corp,NYSE,Stock,1995-06-16,,Active
+TWAV,Oblong Inc,NASDAQ,Stock,1995-06-19,,Active
+NHTC,Natural Health Trends Corp,NASDAQ,Stock,1995-06-22,,Active
+GIC,Global Industrial Company,NYSE,Stock,1995-06-27,,Active
+FCX,Freeport-McMoRan Inc,NYSE,Stock,1995-07-10,,Active
+ICCC,Immucell Corp,NASDAQ,Stock,1995-07-10,,Active
+CLMB,Climb Global Solutions Inc,NASDAQ,Stock,1995-07-18,,Active
+DSWL,Deswell Industries Inc,NASDAQ,Stock,1995-07-19,,Active
+TK,Teekay Corp,NYSE,Stock,1995-07-20,,Active
+CIB,Bancolombia S.A.,NYSE,Stock,1995-07-26,,Active
+RNR,RenaissanceRe Holdings Ltd,NYSE,Stock,1995-07-27,,Active
+DIT,Amcon Distributing Company,AMEX,Stock,1995-08-04,,Active
+RWT,Redwood Trust Inc,NYSE,Stock,1995-08-04,,Active
+CHNR,China Natural Resources Inc,NASDAQ,Stock,1995-08-07,,Active
+KFRC,Kforce Inc,NYSE,Stock,1995-08-15,,Active
+IART,Integra Lifesciences Holdings Corp,NASDAQ,Stock,1995-08-16,,Active
+SVC,Service Properties Trust,NASDAQ,Stock,1995-08-17,,Active
+UBCP,United Bancorp Inc (Martins Ferry OH),NASDAQ,Stock,1995-08-18,,Active
+CMCT,Creative Media & Community Trust,NASDAQ,Stock,1995-08-18,,Active
+UUU,Universal Security Instruments Inc,AMEX,Stock,1995-08-18,,Active
+VALU,Value Line Inc,NASDAQ,Stock,1995-08-18,,Active
+NEN,New England Realty Associates LP,AMEX,Stock,1995-08-18,,Active
+VSEC,VSE Corp,NASDAQ,Stock,1995-08-18,,Active
+AGX,Argan Inc,NYSE,Stock,1995-08-18,,Active
+POCI,Precision Optics Corp Inc,NASDAQ,Stock,1995-08-18,,Active
+TAYD,Taylor Devices Inc,NASDAQ,Stock,1995-08-18,,Active
+WASH,Washington Trust Bancorp Inc,NASDAQ,Stock,1995-08-18,,Active
+AGM,Federal Agricultural Mortgage Corp - Class C,NYSE,Stock,1995-08-18,,Active
+WSBC,Wesbanco Inc,NASDAQ,Stock,1995-08-18,,Active
+LWAY,Lifeway Foods Inc,NASDAQ,Stock,1995-08-18,,Active
+PHX,PHX Minerals Inc - Class A,NYSE,Stock,1995-08-18,,Active
+GYRO,Gyrodyne LLC,NASDAQ,Stock,1995-08-18,,Active
+STRL,Sterling Infrastructure Inc,NASDAQ,Stock,1995-08-18,,Active
+PEBK,Peoples Bancorp Of North Carolina Inc,NASDAQ,Stock,1995-08-18,,Active
+PNRG,PrimeEnergy Resources Corp,NASDAQ,Stock,1995-08-18,,Active
+GTIM,Good Times Restaurants Inc,NASDAQ,Stock,1995-08-18,,Active
+MARPS,Marine Petroleum Trust,NASDAQ,Stock,1995-08-18,,Active
+RAND,Rand Capital Corp,NASDAQ,Stock,1995-08-18,,Active
+PESI,Perma-Fix Environmental Services Inc,NASDAQ,Stock,1995-08-18,,Active
+TRIB,Trinity Biotech Plc,NASDAQ,Stock,1995-08-18,,Active
+MNST,Monster Beverage Corp,NASDAQ,Stock,1995-08-18,,Active
+BREW,Craft Brew Alliance Inc,NASDAQ,Stock,1995-08-18,,Active
+RCMT,RCM Technologies Inc,NASDAQ,Stock,1995-08-18,,Active
+INTG,Intergroup Corp,NASDAQ,Stock,1995-08-18,,Active
+AUB,Atlantic Union Bankshares Corp,NYSE,Stock,1995-08-18,,Active
+DLHC,DLH Holdings Corp,NASDAQ,Stock,1995-08-18,,Active
+SIM,Grupo Simec S.A.B. de C.V.,AMEX,Stock,1995-08-18,,Active
+KELYB,Kelly Services Inc - Class B,NASDAQ,Stock,1995-08-18,,Active
+CLRO,ClearOne Inc,NASDAQ,Stock,1995-08-18,,Active
+MOG-B,Moog Inc - Class B,NYSE,Stock,1995-08-18,,Active
+PDEX,Pro-Dex Inc (co),NASDAQ,Stock,1995-08-18,,Active
+OSBC,Old Second Bancorporation Inc,NASDAQ,Stock,1995-08-18,,Active
+IVZ,Invesco Ltd,NYSE,Stock,1995-08-25,,Active
+AUBN,Auburn National Bancorp Inc,NASDAQ,Stock,1995-09-11,,Active
+ACGL,Arch Capital Group Ltd,NASDAQ,Stock,1995-09-14,,Active
+SAP,Sap SE,NYSE,Stock,1995-09-18,,Active
+SMSI,Smith Micro Software Inc,NASDAQ,Stock,1995-09-19,,Active
+MD,Pediatrix Medical Group Inc,NYSE,Stock,1995-09-20,,Active
+CLB,Core Laboratories Inc,NYSE,Stock,1995-09-21,,Active
+ERIE,Erie Indemnity Co. - Class A,NASDAQ,Stock,1995-10-02,,Active
+EG,Everest Group Ltd,NYSE,Stock,1995-10-03,,Active
+MYGN,Myriad Genetics Inc,NASDAQ,Stock,1995-10-06,,Active
+ELLO,Ellomay Capital Ltd,AMEX,Stock,1995-10-09,,Active
+THG,Hanover Insurance Group Inc,NYSE,Stock,1995-10-11,,Active
+ACHV,Achieve Life Sciences Inc,NASDAQ,Stock,1995-10-13,,Active
+POOL,Pool Corporation,NASDAQ,Stock,1995-10-13,,Active
+RICK,RCI Hospitality Holdings Inc,NASDAQ,Stock,1995-10-13,,Active
+RY,Royal Bank Of Canada,NYSE,Stock,1995-10-16,,Active
+WLYB,John Wiley & Sons Inc - Class B,NYSE,Stock,1995-10-19,,Active
+CCF,Chase Corp,NYSE MKT,Stock,1995-10-25,,Active
+BAP,Credicorp Ltd,NYSE,Stock,1995-10-25,,Active
+DVA,DaVita Inc,NYSE,Stock,1995-10-31,,Active
+BANR,Banner Corp,NASDAQ,Stock,1995-11-01,,Active
+OPK,Opko Health Inc,NASDAQ,Stock,1995-11-02,,Active
+MLSS,Milestone Scientific Inc,AMEX,Stock,1995-11-03,,Active
+HSIC,Henry Schein Inc,NASDAQ,Stock,1995-11-03,,Active
+BLDP,Ballard Power Systems Inc,NASDAQ,Stock,1995-11-08,,Active
+MATV,Mativ Holdings Inc,NYSE,Stock,1995-11-09,,Active
+EL,Estee Lauder Cos. Inc - Class A,NYSE,Stock,1995-11-17,,Active
+WAT,Waters Corp,NYSE,Stock,1995-11-17,,Active
+AEIS,Advanced Energy Industries Inc,NASDAQ,Stock,1995-11-17,,Active
+NTAP,Netapp Inc,NASDAQ,Stock,1995-11-21,,Active
+SAM,Boston Beer Co. Inc - Class A,NYSE,Stock,1995-11-21,,Active
+E,Eni Spa,NYSE,Stock,1995-11-28,,Active
+NWPX,Northwest Pipe Company,NASDAQ,Stock,1995-11-30,,Active
+NVAX,Novavax Inc,NASDAQ,Stock,1995-12-13,,Active
+HIG,Hartford Financial Services Group Inc,NYSE,Stock,1995-12-15,,Active
+MSM,MSC Industrial Direct Co. Inc - Class A,NYSE,Stock,1995-12-15,,Active
+SGU,Star Group L.P.,NYSE,Stock,1995-12-15,,Active
+ITT,ITT Inc,NYSE,Stock,1995-12-18,,Active
+ASTC,Astrotech Corp,NASDAQ,Stock,1995-12-21,,Active
+EME,Emcor Group Inc,NYSE,Stock,1995-12-28,,Active
+ACNB,ACNB Corp,NASDAQ,Stock,1996-01-02,,Active
+CASS,Cass Information Systems Inc,NASDAQ,Stock,1996-01-02,,Active
+MLP,Maui Land & Pineapple Co. Inc,NYSE,Stock,1996-01-02,,Active
+BCO,Brink`s Company,NYSE,Stock,1996-01-03,,Active
+SCCO,Southern Copper Corporation,NYSE,Stock,1996-01-05,,Active
+BYFC,Broadway Financial Corp,NASDAQ,Stock,1996-01-09,,Active
+RCI,Rogers Communications Inc - Class B,NYSE,Stock,1996-01-11,,Active
+OTEX,Open Text Corp,NASDAQ,Stock,1996-01-24,,Active
+NICE,NICE Ltd,NASDAQ,Stock,1996-01-25,,Active
+IRM,Iron Mountain Inc,NYSE,Stock,1996-02-01,,Active
+ARTC,ArthroCare Corp,NASDAQ,Stock,1996-02-05,,Active
+OVBC,Ohio Valley Banc Corp,NASDAQ,Stock,1996-02-09,,Active
+LFCR,Lifecore Biomedical Inc,NASDAQ,Stock,1996-02-15,,Active
+IRIX,IRIDEX Corp,NASDAQ,Stock,1996-02-16,,Active
+ANDE,Andersons Inc,NASDAQ,Stock,1996-02-20,,Active
+CMCO,Columbus Mckinnon Corp,NASDAQ,Stock,1996-02-28,,Active
+GEF,Greif Inc - Class A,NYSE,Stock,1996-02-28,,Active
+LPTH,Lightpath Technologies Inc - Class A,NASDAQ,Stock,1996-02-28,,Active
+SPH,Suburban Propane Partners LP,NYSE,Stock,1996-02-29,,Active
+HUBG,Hub Group Inc - Class A,NASDAQ,Stock,1996-03-13,,Active
+CCJ,Cameco Corp,NYSE,Stock,1996-03-14,,Active
+KRMD,KORU Medical Systems Inc,NASDAQ,Stock,1996-03-20,,Active
+CENX,Century Aluminum Company,NASDAQ,Stock,1996-03-29,,Active
+OCC,Optical Cable Corp,NASDAQ,Stock,1996-04-02,,Active
+KVHI,KVH Industries Inc,NASDAQ,Stock,1996-04-02,,Active
+BOSC,B.O.S. Better Online Solutions,NASDAQ,Stock,1996-04-02,,Active
+JCTC,Jewett-Cameron Trading Co. Ltd,NASDAQ,Stock,1996-04-12,,Active
+OLED,Universal Display Corp,NASDAQ,Stock,1996-04-12,,Active
+TCX,Tucows Inc - Class A,NASDAQ,Stock,1996-04-30,,Active
+JAKK,Jakks Pacific Inc,NASDAQ,Stock,1996-05-02,,Active
+FCN,FTI Consulting Inc,NYSE,Stock,1996-05-09,,Active
+BRK-B,Berkshire Hathaway Inc - Class B,NYSE,Stock,1996-05-09,,Active
+DEO,Diageo plc,NYSE,Stock,1996-05-13,,Active
+BVN,Compania de Minas Buenaventura S.A.,NYSE,Stock,1996-05-15,,Active
+MFIN,Medallion Financial Corp,NASDAQ,Stock,1996-05-23,,Active
+NBIX,Neurocrine Biosciences Inc,NASDAQ,Stock,1996-05-23,,Active
+ARTNA,Artesian Resources Corp - Class A,NASDAQ,Stock,1996-05-24,,Active
+AGM-A,Federal Agricultural Mortgage Corp - Class A,NYSE,Stock,1996-05-30,,Active
+CCNE,CNB Financial Corp (PA),NASDAQ,Stock,1996-05-30,,Active
+WWD,Woodward Inc,NASDAQ,Stock,1996-05-30,,Active
+BSRR,Sierra Bancorp,NASDAQ,Stock,1996-05-30,,Active
+PBHC,Pathfinder Bancorp Inc,NASDAQ,Stock,1996-05-30,,Active
+CNOB,ConnectOne Bancorp Inc,NASDAQ,Stock,1996-05-30,,Active
+CZNC,Citizens & Northern Corp,NASDAQ,Stock,1996-05-30,,Active
+WULF,TeraWulf Inc,NASDAQ,Stock,1996-05-30,,Active
+IBOC,International Bancshares Corp,NASDAQ,Stock,1996-05-30,,Active
+GROW,U.S. Global Investors Inc - Class A,NASDAQ,Stock,1996-06-03,,Active
+AVDL,Avadel Pharmaceuticals plc,NASDAQ,Stock,1996-06-07,,Active
+RUSHB,Rush Enterprises Inc - Class B,NASDAQ,Stock,1996-06-10,,Active
+TU,Telus Corp,NYSE,Stock,1996-06-11,,Active
+ANSS,Ansys Inc,NASDAQ,Stock,1996-06-21,,Active
+SKM,SK Telecom Co Ltd,NYSE,Stock,1996-06-27,,Active
+QGEN,Qiagen NV,NYSE,Stock,1996-06-28,,Active
+PROV,Provident Financial Holdings Inc,NASDAQ,Stock,1996-06-28,,Active
+CHKP,Check Point Software Technologies Ltd,NASDAQ,Stock,1996-06-28,,Active
+FDS,Factset Research Systems Inc,NYSE,Stock,1996-06-28,,Active
+OCFC,OceanFirst Financial Corp,NASDAQ,Stock,1996-07-03,,Active
+PEGA,Pegasystems Inc,NASDAQ,Stock,1996-07-19,,Active
+STRA,Strategic Education Inc,NASDAQ,Stock,1996-07-26,,Active
+GERN,Geron Corp,NASDAQ,Stock,1996-07-31,,Active
+TTEC,TTEC Holdings Inc,NASDAQ,Stock,1996-08-01,,Active
+SSRM,SSR Mining Inc,NASDAQ,Stock,1996-08-01,,Active
+LAMR,Lamar Advertising Co - Class A,NASDAQ,Stock,1996-08-02,,Active
+CSV,Carriage Services Inc,NYSE,Stock,1996-08-09,,Active
+OPCH,Option Care Health Inc,NASDAQ,Stock,1996-08-15,,Active
+TACT,Transact Technologies Inc,NASDAQ,Stock,1996-08-22,,Active
+MVIS,Microvision Inc,NASDAQ,Stock,1996-08-27,,Active
+TD,Toronto Dominion Bank,NYSE,Stock,1996-08-30,,Active
+SRCE,1st Source Corp,NASDAQ,Stock,1996-09-03,,Active
+NVEC,NVE Corp,NASDAQ,Stock,1996-09-11,,Active
+FMS,Fresenius Medical Care AG & Co. KGaA,NYSE,Stock,1996-09-17,,Active
+ONIT,Ocwen Financial Corp,NYSE,Stock,1996-09-25,,Active
+ANF,Abercrombie & Fitch Co. - Class A,NYSE,Stock,1996-09-26,,Active
+SPPI,Spectrum Pharmaceuticals Inc,NASDAQ,Stock,1996-09-27,,Active
+HMY,Harmony Gold Mining Co Ltd,NYSE,Stock,1996-09-30,,Active
+DRD,DRDGold Ltd,NYSE,Stock,1996-09-30,,Active
+BJRI,BJ`s Restaurant Inc,NASDAQ,Stock,1996-10-10,,Active
+CHH,Choice Hotels International Inc,NYSE,Stock,1996-10-16,,Active
+PAG,Penske Automotive Group Inc,NYSE,Stock,1996-10-23,,Active
+TGI,Triumph Group Inc,NYSE,Stock,1996-10-25,,Active
+NOV,NOV Inc,NYSE,Stock,1996-10-29,,Active
+UNFI,United Natural Foods Inc,NYSE,Stock,1996-11-01,,Active
+NVS,Novartis AG,NYSE,Stock,1996-11-07,,Active
+SNEX,StoneX Group Inc,NASDAQ,Stock,1996-11-15,,Active
+PDS,Precision Drilling Corp,NYSE,Stock,1996-11-15,,Active
+VEON,VEON Ltd,NASDAQ,Stock,1996-11-15,,Active
+PLUS,ePlus Inc,NASDAQ,Stock,1996-11-15,,Active
+WLFC,Willis Lease Finance Corp,NASDAQ,Stock,1996-11-15,,Active
+CIG,Cia Energetica DE Minas Gerais - Cemig,NYSE,Stock,1996-11-18,,Active
+PSO,Pearson plc,NYSE,Stock,1996-11-18,,Active
+DB,Deutsche Bank AG,NYSE,Stock,1996-11-18,,Active
+ING,ING Groep N.V.,NYSE,Stock,1996-11-18,,Active
+SID,Companhia Siderurgica Nacional,NYSE,Stock,1996-11-18,,Active
+AWRE,Aware Inc,NASDAQ,Stock,1996-11-19,,Active
+NUS,Nu Skin Enterprises Inc - Class A,NYSE,Stock,1996-11-22,,Active
+STLD,Steel Dynamics Inc,NASDAQ,Stock,1996-11-22,,Active
+CNI,Canadian National Railway Company,NYSE,Stock,1996-11-26,,Active
+ESLT,Elbit Systems Ltd,NASDAQ,Stock,1996-11-27,,Active
+FORR,Forrester Research Inc,NASDAQ,Stock,1996-11-27,,Active
+GEL,Genesis Energy L.P.,NYSE,Stock,1996-11-27,,Active
+VSAT,Viasat Inc,NASDAQ,Stock,1996-12-03,,Active
+VYX,NCR Voyix Corp,NYSE,Stock,1996-12-11,,Active
+HIHO,Highway Holdings Ltd,NASDAQ,Stock,1996-12-11,,Active
+CALM,Cal-Maine Foods Inc,NASDAQ,Stock,1996-12-12,,Active
+LAD,Lithia Motors Inc - Class A,NYSE,Stock,1996-12-18,,Active
+DGX,Quest Diagnostics Inc,NYSE,Stock,1996-12-26,,Active
+TENX,Tenax Therapeutics Inc,NASDAQ,Stock,1997-01-02,,Active
+PCYO,Pure Cycle Corp,NASDAQ,Stock,1997-01-02,,Active
+RDNT,Radnet Inc,NASDAQ,Stock,1997-01-03,,Active
+DSS,DSS Inc,AMEX,Stock,1997-01-03,,Active
+ARWR,Arrowhead Pharmaceuticals Inc,NASDAQ,Stock,1997-01-06,,Active
+HLIO,Helios Technologies Inc,NYSE,Stock,1997-01-09,,Active
+EPM,Evolution Petroleum Corporation,AMEX,Stock,1997-01-13,,Active
+UNTY,Unity Bancorp Inc,NASDAQ,Stock,1997-01-14,,Active
+HNRG,Hallador Energy Company,NASDAQ,Stock,1997-01-20,,Active
+ELTK,Eltek Ltd,NASDAQ,Stock,1997-01-23,,Active
+SSB,SouthState Corporation,NYSE,Stock,1997-01-28,,Active
+NSP,Insperity Inc,NYSE,Stock,1997-01-29,,Active
+KRC,Kilroy Realty Corp,NYSE,Stock,1997-01-30,,Active
+CERS,Cerus Corp,NASDAQ,Stock,1997-01-31,,Active
+CCBG,Capital City Bank Group Inc,NASDAQ,Stock,1997-02-03,,Active
+KMX,Carmax Inc,NYSE,Stock,1997-02-04,,Active
+MTN,Vail Resorts Inc,NYSE,Stock,1997-02-04,,Active
+VCEL,Vericel Corp,NASDAQ,Stock,1997-02-04,,Active
+CIEN,CIENA Corp,NYSE,Stock,1997-02-07,,Active
+SLGN,Silgan Holdings Inc,NYSE,Stock,1997-02-14,,Active
+FCEL,Fuelcell Energy Inc,NASDAQ,Stock,1997-02-27,,Active
+MXC,Mexco Energy Corp,AMEX,Stock,1997-03-05,,Active
+ABEV,Ambev S.A.,NYSE,Stock,1997-03-05,,Active
+EEFT,Euronet Worldwide Inc,NASDAQ,Stock,1997-03-07,,Active
+CLWT,Euro Tech Holdings Co. Ltd,NASDAQ,Stock,1997-03-14,,Active
+CRESY,Cresud,NASDAQ,Stock,1997-03-19,,Active
+LOGI,Logitech International S.A.,NASDAQ,Stock,1997-03-31,,Active
+GIFI,Gulf Island Fabrication Inc,NASDAQ,Stock,1997-04-04,,Active
+AKO-B,Embotelladora Andina S.A.,NYSE,Stock,1997-04-07,,Active
+TTWO,Take-Two Interactive Software Inc,NASDAQ,Stock,1997-04-15,,Active
+ALV,Autoliv Inc,NYSE,Stock,1997-04-28,,Active
+AULT,Hyperscale Data Inc - Class A,NYSE MKT,Stock,1997-05-05,,Active
+VTR,Ventas Inc,NYSE,Stock,1997-05-05,,Active
+HAFC,Hanmi Financial Corp,NASDAQ,Stock,1997-05-09,,Active
+ESGR,Enstar Group Ltd,NASDAQ,Stock,1997-05-09,,Active
+CPSH,CPS Technologies Corporation,NASDAQ,Stock,1997-05-09,,Active
+FCBC,First Community Bankshares Inc,NASDAQ,Stock,1997-05-09,,Active
+GNSS,Genasys Inc,NASDAQ,Stock,1997-05-09,,Active
+RMBS,Rambus Inc,NASDAQ,Stock,1997-05-14,,Active
+AMZN,Amazon.com Inc,NASDAQ,Stock,1997-05-15,,Active
+RFIL,RF Industries Ltd,NASDAQ,Stock,1997-05-28,,Active
+ARE,Alexandria Real Estate Equities Inc,NYSE,Stock,1997-05-28,,Active
+RYAAY,Ryanair Holdings Plc,NASDAQ,Stock,1997-06-02,,Active
+SRPT,Sarepta Therapeutics Inc,NASDAQ,Stock,1997-06-04,,Active
+RL,Ralph Lauren Corp - Class A,NYSE,Stock,1997-06-12,,Active
+MMS,Maximus Inc,NYSE,Stock,1997-06-13,,Active
+INTT,Intest Corp,AMEX,Stock,1997-06-17,,Active
+BXP,Boston Properties Inc,NYSE,Stock,1997-06-18,,Active
+SLP,Simulations Plus Inc,NASDAQ,Stock,1997-06-19,,Active
+FIX,Comfort Systems USA Inc,NYSE,Stock,1997-06-27,,Active
+EGHT,8X8 Inc,NASDAQ,Stock,1997-07-02,,Active
+CXW,CoreCivic Inc,NYSE,Stock,1997-07-15,,Active
+JLL,Jones Lang Lasalle Inc,NYSE,Stock,1997-07-17,,Active
+FOCL,FocalTherics,NASDAQ,Stock,1997-08-01,,Active
+MT,ArcelorMittal,NYSE,Stock,1997-08-07,,Active
+ORKA,ARCA biopharma Inc,NASDAQ,Stock,1997-08-08,,Active
+LKFN,Lakeland Financial Corp,NASDAQ,Stock,1997-08-14,,Active
+SLG,SL Green Realty Corp,NYSE,Stock,1997-08-15,,Active
+AEHR,Aehr Test Systems,NASDAQ,Stock,1997-08-15,,Active
+PSMT,Pricesmart Inc,NASDAQ,Stock,1997-09-02,,Active
+SIGA,SIGA Technologies Inc,NASDAQ,Stock,1997-09-10,,Active
+YUM,Yum Brands Inc,NYSE,Stock,1997-09-17,,Active
+FARO,Faro Technologies Inc,NASDAQ,Stock,1997-09-18,,Active
+PLCE,Childrens Place Inc,NASDAQ,Stock,1997-09-19,,Active
+BHB,Bar Harbor Bankshares Inc,AMEX,Stock,1997-09-23,,Active
+RDCM,Radcom,NASDAQ,Stock,1997-09-25,,Active
+NAT,Nordic American Tankers Ltd,NYSE,Stock,1997-09-30,,Active
+OSIS,OSI Systems Inc,NASDAQ,Stock,1997-10-02,,Active
+INVE,Identiv Inc,NASDAQ,Stock,1997-10-07,,Active
+NLY,Annaly Capital Management Inc,NYSE,Stock,1997-10-08,,Active
+CAC,Camden National Corp,NASDAQ,Stock,1997-10-08,,Active
+TSM,Taiwan Semiconductor Manufacturing,NYSE,Stock,1997-10-09,,Active
+SRI,Stoneridge Inc,NYSE,Stock,1997-10-10,,Active
+CHRW,C.H. Robinson Worldwide Inc,NASDAQ,Stock,1997-10-16,,Active
+CSR,Centerspace,NYSE,Stock,1997-10-17,,Active
+FORTY,Formula Systems (1985) Ltd,NASDAQ,Stock,1997-10-20,,Active
+INVX,Innovex International Inc,NYSE,Stock,1997-10-23,,Active
+DMC,Del Monte Corp,NYSE,Stock,1997-10-24,,Active
+CWST,Casella Waste Systems Inc - Class A,NASDAQ,Stock,1997-10-29,,Active
+GPI,Group 1 Automotive Inc,NYSE,Stock,1997-10-30,,Active
+SNDA,Sonida Senior Living Inc,NYSE,Stock,1997-10-31,,Active
+LTM,LATAM Airlines Group SA,NYSE,Stock,1997-11-07,,Active
+FE,Firstenergy Corp,NYSE,Stock,1997-11-10,,Active
+SAH,Sonic Automotive Inc - Class A,NYSE,Stock,1997-11-12,,Active
+CM,Canadian Imperial Bank Of Commerce,NYSE,Stock,1997-11-13,,Active
+MTD,Mettler-Toledo International Inc,NYSE,Stock,1997-11-14,,Active
+EPR,EPR Properties,NYSE,Stock,1997-11-18,,Active
+AMG,Affiliated Managers Group Inc,NYSE,Stock,1997-11-21,,Active
+PLD,Prologis Inc,NYSE,Stock,1997-11-21,,Active
+GEOS,Geospace Technologies Corp,NASDAQ,Stock,1997-11-21,,Active
+RNWK,Realnetworks Inc,NASDAQ,Stock,1997-11-21,,Active
+MPB,Mid Penn Bancorp Inc,NASDAQ,Stock,1997-12-04,,Active
+INGR,Ingredion Inc,NYSE,Stock,1997-12-11,,Active
+POWI,Power Integrations Inc,NASDAQ,Stock,1997-12-12,,Active
+FLXI,Flexiinternational Software Inc,BATS,Stock,1997-12-12,,Active
+URI,United Rentals Inc,NYSE,Stock,1997-12-18,,Active
+WFC-P-Y,Wells Fargo & Company,NYSE,Stock,1998-01-02,,Active
+CTA-P-B,EIDP Inc,NYSE,Stock,1998-01-02,,Active
+AEE,Ameren Corp,NYSE,Stock,1998-01-02,,Active
+DENN,Denny`s Corp,NASDAQ,Stock,1998-01-08,,Active
+TSBK,Timberland Bancorp Inc,NASDAQ,Stock,1998-01-13,,Active
+WPC,W. P. Carey Inc,NYSE,Stock,1998-01-21,,Active
+RMTI,Rockwell Medical Inc,NASDAQ,Stock,1998-01-27,,Active
+IESC,IES Holdings Inc,NASDAQ,Stock,1998-01-28,,Active
+PRDO,Perdoceo Education Corporation,NASDAQ,Stock,1998-01-29,,Active
+HOPE,Hope Bancorp Inc,NASDAQ,Stock,1998-01-29,,Active
+VRSN,Verisign Inc,NASDAQ,Stock,1998-01-30,,Active
+MRCY,Mercury Systems Inc,NASDAQ,Stock,1998-01-30,,Active
+PWR,Quanta Services Inc,NYSE,Stock,1998-02-12,,Active
+AMT,American Tower Corp,NYSE,Stock,1998-02-27,,Active
+CNXN,PC Connection Inc,NASDAQ,Stock,1998-03-03,,Active
+NWFL,Norwood Financial Corp,NASDAQ,Stock,1998-03-04,,Active
+CIX,Compx International Inc - Class A,AMEX,Stock,1998-03-06,,Active
+RBA,RB Global Inc,NYSE,Stock,1998-03-10,,Active
+FNWD,Finward Bancorp,NASDAQ,Stock,1998-03-17,,Active
+COLM,Columbia Sportswear Company,NASDAQ,Stock,1998-03-27,,Active
+CBAN,Colony Bankcorp Inc,NYSE,Stock,1998-04-02,,Active
+MFA,MFA Financial Inc,NYSE,Stock,1998-04-13,,Active
+UVSP,Univest Financial Corp,NASDAQ,Stock,1998-04-16,,Active
+WTFC,Wintrust Financial Corp,NASDAQ,Stock,1998-04-16,,Active
+MANH,Manhattan Associates Inc,NASDAQ,Stock,1998-04-23,,Active
+CRAI,CRA International Inc,NASDAQ,Stock,1998-04-24,,Active
+AMKR,AMKOR Technology Inc,NASDAQ,Stock,1998-05-01,,Active
+KWY,Kingsway Corp,NYSE,Stock,1998-05-06,,Active
+HFWA,Heritage Financial Corp,NASDAQ,Stock,1998-05-07,,Active
+CFFI,C & F Financial Corp,NASDAQ,Stock,1998-05-07,,Active
+DXPE,DXP Enterprises Inc,NASDAQ,Stock,1998-05-07,,Active
+FMX,Fomento Economico Mexicano S.A.B. de C.V.,NYSE,Stock,1998-05-11,,Active
+IOSP,Innospec Inc,NASDAQ,Stock,1998-05-13,,Active
+SBSI,Southside Bancshares Inc,NYSE,Stock,1998-05-13,,Active
+FHI,Federated Hermes Inc - Class B,NYSE,Stock,1998-05-14,,Active
+ICLR,Icon Plc,NASDAQ,Stock,1998-05-15,,Active
+PLX,Protalix BioTherapeutics Inc,AMEX,Stock,1998-05-15,,Active
+WYY,Widepoint Corp,AMEX,Stock,1998-05-19,,Active
+AXTI,AXT Inc,NASDAQ,Stock,1998-05-21,,Active
+WCN,Waste Connections Inc,NYSE,Stock,1998-05-22,,Active
+CLAR,Clarus Corp,NASDAQ,Stock,1998-05-27,,Active
+HCKT,Hackett Group Inc (The),NASDAQ,Stock,1998-05-28,,Active
+HZO,Marinemax Inc,NYSE,Stock,1998-06-03,,Active
+SENEA,Seneca Foods Corp - Class A,NASDAQ,Stock,1998-06-03,,Active
+MSTR,Strategy Inc - Class A,NASDAQ,Stock,1998-06-11,,Active
+DOX,Amdocs Ltd,NASDAQ,Stock,1998-06-19,,Active
+CTSH,Cognizant Technology Solutions Corp - Class A,NASDAQ,Stock,1998-06-19,,Active
+GIL,Gildan Activewear Inc,NYSE,Stock,1998-06-19,,Active
+AWX,Avalon Holdings Corp - Class A,AMEX,Stock,1998-06-23,,Active
+SRE,Sempra,NYSE,Stock,1998-06-29,,Active
+CLS,Celestica Inc,NYSE,Stock,1998-06-30,,Active
+CSGP,Costar Group Inc,NASDAQ,Stock,1998-07-01,,Active
+RSG,Republic Services Inc,NYSE,Stock,1998-07-01,,Active
+BELFB,Bel Fuse Inc - Class B,NASDAQ,Stock,1998-07-10,,Active
+RBCAA,Republic Bancorp Inc (KY) - Class A,NASDAQ,Stock,1998-07-22,,Active
+LEU,Centrus Energy Corp - Class A,NYSE,Stock,1998-07-23,,Active
+EPD,Enterprise Products Partners L P,NYSE,Stock,1998-07-28,,Active
+INUV,Inuvo Inc,AMEX,Stock,1998-08-04,,Active
+AU,AngloGold Ashanti Plc.,NYSE,Stock,1998-08-05,,Active
+CCI,Crown Castle Inc,NYSE,Stock,1998-08-18,,Active
+IX,Orix Corporation,NYSE,Stock,1998-09-16,,Active
+EBAY,EBay Inc,NASDAQ,Stock,1998-09-24,,Active
+NTWK,Netsol Technologies Inc,NASDAQ,Stock,1998-09-25,,Active
+BUSE,First Busey Corp,NASDAQ,Stock,1998-10-06,,Active
+GIB,CGI Inc - Class A,NYSE,Stock,1998-10-07,,Active
+DDT,Dillards Capital Trust I,NYSE,Stock,1998-10-14,,Active
+TVC,Tennessee Valley Authority,NYSE,Stock,1998-10-14,,Active
+PB,Prosperity Bancshares Inc,NYSE,Stock,1998-11-12,,Active
+VIV,Telefonica Brasil S.A.,NYSE,Stock,1998-11-16,,Active
+PAA,Plains All American Pipeline LP,NASDAQ,Stock,1998-11-18,,Active
+INO,Inovio Pharmaceuticals Inc,NASDAQ,Stock,1998-12-08,,Active
+REPX,Riley Exploration Permian Inc,AMEX,Stock,1998-12-28,,Active
+CFBK,CF Bankshares Inc,NASDAQ,Stock,1998-12-30,,Active
+FMNB,Farmers National Banc Corp,NASDAQ,Stock,1999-01-04,,Active
+SBFG,SB Financial Group Inc,NASDAQ,Stock,1999-01-04,,Active
+CHMG,Chemung Financial Corp,NASDAQ,Stock,1999-01-04,,Active
+FCAP,First Capital Inc,NASDAQ,Stock,1999-01-04,,Active
+FUSB,First US Bancshares Inc,NASDAQ,Stock,1999-01-11,,Active
+DCOM,Dime Community Bancshares Inc,NYSE,Stock,1999-01-12,,Active
+BAK,Braskem S.A.,NYSE,Stock,1999-01-13,,Active
+HT,Hersha Hospitality Trust - Class A,NYSE,Stock,1999-01-21,,Active
+NVDA,NVIDIA Corp,NASDAQ,Stock,1999-01-22,,Active
+DSGX,Descartes Systems Group Inc,NASDAQ,Stock,1999-01-27,,Active
+DCH,Dauch Corp,NYSE,Stock,1999-01-29,,Active
+EWBC,East West Bancorp Inc,NASDAQ,Stock,1999-02-03,,Active
+BB,BlackBerry Ltd,NYSE,Stock,1999-02-04,,Active
+VERU,Veru Inc,NASDAQ,Stock,1999-02-11,,Active
+KFY,Korn Ferry,NYSE,Stock,1999-02-11,,Active
+MTEX,Mannatech Inc,NASDAQ,Stock,1999-02-16,,Active
+APT,Alpha Pro Tech Ltd,AMEX,Stock,1999-02-16,,Active
+IMNN,Imunon Inc,NASDAQ,Stock,1999-03-01,,Active
+CVV,CVD Equipment Corp,NASDAQ,Stock,1999-03-01,,Active
+LSTA,Lisata Therapeutics Inc,NASDAQ,Stock,1999-03-01,,Active
+UBFO,United Security Bancshares (CA),NASDAQ,Stock,1999-03-03,,Active
+UTMD,Utah Medical Products Inc,NASDAQ,Stock,1999-03-08,,Active
+CWBC,Community West Bancshares.,NASDAQ,Stock,1999-03-08,,Active
+FCCO,First Community Corp,NASDAQ,Stock,1999-03-09,,Active
+GGB,Gerdau S.A.,NYSE,Stock,1999-03-10,,Active
+INFY,Infosys Ltd,NYSE,Stock,1999-03-11,,Active
+FMBH,First Mid Bancshares Inc,NASDAQ,Stock,1999-03-16,,Active
+MKSI,MKS Instruments Inc,NASDAQ,Stock,1999-03-30,,Active
+BKNG,Booking Holdings Inc,NASDAQ,Stock,1999-03-31,,Active
+PCLN,Priceline.com Inc,NYSE,Stock,1999-03-31,,Active
+CFFN,Capitol Federal Financial,NASDAQ,Stock,1999-04-01,,Active
+TREX,TREX Co. Inc,NYSE,Stock,1999-04-08,,Active
+EXTR,Extreme Networks Inc,NASDAQ,Stock,1999-04-09,,Active
+LSAK,Lesaka Technologies Inc,NASDAQ,Stock,1999-04-19,,Active
+ATLC,Atlanticus Holdings Corp,NASDAQ,Stock,1999-04-23,,Active
+PETS,Petmed Express Inc,NASDAQ,Stock,1999-04-26,,Active
+SHEN,Shenandoah Telecommunications Company,NASDAQ,Stock,1999-04-26,,Active
+PGC,Peapack-Gladstone Financial Corp,NASDAQ,Stock,1999-04-27,,Active
+PLPC,Preformed Line Products Company,NASDAQ,Stock,1999-04-28,,Active
+CNX,CNX Resources Corp,NYSE,Stock,1999-04-30,,Active
+WTBA,West Bancorporation,NASDAQ,Stock,1999-05-03,,Active
+YORW,York Water Company,NASDAQ,Stock,1999-05-03,,Active
+GS,Goldman Sachs Group Inc,NYSE,Stock,1999-05-04,,Active
+TOWN,Townebank Portsmouth VA,NASDAQ,Stock,1999-05-05,,Active
+UONE,Urban One Inc - Class A,NASDAQ,Stock,1999-05-06,,Active
+WCC,Wesco International Inc,NYSE,Stock,1999-05-12,,Active
+ORRF,Orrstown Financial Services Inc,NASDAQ,Stock,1999-05-13,,Active
+LOAN,Manhattan Bridge Capital Inc,NASDAQ,Stock,1999-05-13,,Active
+TVE,Tennessee Valley Authority,NYSE,Stock,1999-05-19,,Active
+KT,KT Corporation,NYSE,Stock,1999-05-26,,Active
+AUDC,Audiocodes,NASDAQ,Stock,1999-05-28,,Active
+FFIV,F5 Inc,NASDAQ,Stock,1999-06-04,,Active
+SBAC,SBA Communications Corp - Class A,NASDAQ,Stock,1999-06-16,,Active
+UTHR,United Therapeutics Corp,NASDAQ,Stock,1999-06-17,,Active
+FISI,Financial Institutions Inc,NASDAQ,Stock,1999-06-25,,Active
+JNPR,Juniper Networks Inc,NYSE,Stock,1999-06-25,,Active
+AIOT,PowerFleet Inc,NASDAQ,Stock,1999-06-30,,Active
+GCBC,Greene County Bancorp Inc,NASDAQ,Stock,1999-06-30,,Active
+ECPG,Encore Capital Group Inc,NASDAQ,Stock,1999-07-09,,Active
+CKX,CKX Lands Inc,AMEX,Stock,1999-07-13,,Active
+FNLC,First Bancorp Inc (ME),NASDAQ,Stock,1999-07-14,,Active
+EGBN,Eagle Bancorp Inc (MD),NASDAQ,Stock,1999-07-14,,Active
+HSBC,HSBC Holdings plc,NYSE,Stock,1999-07-16,,Active
+MBWM,Mercantile Bank Corp,NASDAQ,Stock,1999-07-20,,Active
+HWBK,Hawthorn Bancshares Inc,NASDAQ,Stock,1999-07-20,,Active
+PTNT,Internet Patents Corp,BATS,Stock,1999-07-23,,Active
+ZD,Ziff Davis Inc,NASDAQ,Stock,1999-07-23,,Active
+BMRN,Biomarin Pharmaceutical Inc,NASDAQ,Stock,1999-07-26,,Active
+LII,Lennox International Inc,NYSE,Stock,1999-07-29,,Active
+VHC,Virnetx Holding Corp,NASDAQ,Stock,1999-07-30,,Active
+QMCO,Quantum Corp,NASDAQ,Stock,1999-08-02,,Active
+FLWS,1-800 Flowers.com Inc - Class A,NASDAQ,Stock,1999-08-03,,Active
+UNB,Union Bankshares Inc,NASDAQ,Stock,1999-08-09,,Active
+NTCT,Netscout Systems Inc,NASDAQ,Stock,1999-08-12,,Active
+SWBI,Smith & Wesson Brands Inc,NASDAQ,Stock,1999-08-17,,Active
+ARLP,Alliance Resource Partners LP,NASDAQ,Stock,1999-08-17,,Active
+PFBC,Preferred Bank,NASDAQ,Stock,1999-08-19,,Active
+AVNT,Avient Corp,NYSE,Stock,1999-09-13,,Active
+BNS,Bank Of Nova Scotia,NYSE,Stock,1999-09-13,,Active
+CX,Cemex S.A.B. De C.V.,NYSE,Stock,1999-09-15,,Active
+BIO-B,Bio-Rad Laboratories Inc - Class B,NYSE,Stock,1999-09-21,,Active
+EGAN,eGain Corp,NASDAQ,Stock,1999-09-23,,Active
+MFC,Manulife Financial Corp,NYSE,Stock,1999-09-24,,Active
+RDWR,Radware,NASDAQ,Stock,1999-09-30,,Active
+BLK,BlackRock Finance Inc,NYSE,Stock,1999-10-01,,Active
+UGP,Ultrapar Participacoes S.A.,NYSE,Stock,1999-10-07,,Active
+FSI,Flexible Solutions International Inc,AMEX,Stock,1999-10-12,,Active
+QUIK,Quicklogic Corp,NASDAQ,Stock,1999-10-18,,Active
+SIFY,Sify Technologies Ltd,NASDAQ,Stock,1999-10-19,,Active
+LCNB,LCNB Corp,NASDAQ,Stock,1999-10-26,,Active
+KINS,Kingstone Cos. Inc,NASDAQ,Stock,1999-10-26,,Active
+OMEX,Odyssey Marine Exploration Inc,NASDAQ,Stock,1999-10-26,,Active
+SFST,Southern First Bancshares Inc,NASDAQ,Stock,1999-10-28,,Active
+GAIA,Gaia Inc - Class A,NASDAQ,Stock,1999-10-29,,Active
+PLUG,Plug Power Inc,NASDAQ,Stock,1999-10-29,,Active
+AKAM,Akamai Technologies Inc,NASDAQ,Stock,1999-10-29,,Active
+KTOS,Kratos Defense & Security Solutions Inc,NASDAQ,Stock,1999-11-05,,Active
+UPS,United Parcel Service Inc - Class B,NYSE,Stock,1999-11-10,,Active
+IMMR,Immersion Corp,NASDAQ,Stock,1999-11-12,,Active
+SNN,Smith & Nephew plc,NYSE,Stock,1999-11-16,,Active
+A,Agilent Technologies Inc,NYSE,Stock,1999-11-18,,Active
+IDN,Intellicheck Inc,NASDAQ,Stock,1999-11-19,,Active
+TDY,Teledyne Technologies Inc,NYSE,Stock,1999-11-23,,Active
+CCZ,Comcast Corp,NYSE,Stock,1999-11-24,,Active
+ATI,ATI Inc,NYSE,Stock,1999-11-29,,Active
+NKSH,National Bankshares Inc,NASDAQ,Stock,1999-12-01,,Active
+DMRC,Digimarc Corporation,NASDAQ,Stock,1999-12-02,,Active
+BGC,BGC Group Inc - Class A,NASDAQ,Stock,1999-12-10,,Active
+BMRC,Bank of Marin Bancorp,NASDAQ,Stock,1999-12-23,,Active
+JHX,James Hardie Industries plc,NYSE,Stock,2000-01-03,,Active
+RDIB,Reading International Inc - Class B,NASDAQ,Stock,2000-01-05,,Active
+PKG,Packaging Corp Of America,NYSE,Stock,2000-01-28,,Active
+AGEN,Agenus Inc,NASDAQ,Stock,2000-02-08,,Active
+BBGI,Beasley Broadcast Group Inc - Class A,NASDAQ,Stock,2000-02-11,,Active
+ATLO,Ames National Corp,NASDAQ,Stock,2000-02-15,,Active
+GIGM,Gigamedia,NASDAQ,Stock,2000-02-18,,Active
+DHC,Diversified Healthcare Trust,NASDAQ,Stock,2000-02-23,,Active
+UAMY,United States Antimony Corp,NYSE,Stock,2000-02-24,,Active
+UTSI,UTStarcom Holdings Corp,NASDAQ,Stock,2000-03-03,,Active
+SLF,Sun Life Financial Inc,NYSE,Stock,2000-03-23,,Active
+SLAB,Silicon Laboratories Inc,NASDAQ,Stock,2000-03-24,,Active
+EPC,Edgewell Personal Care Company,NYSE,Stock,2000-03-27,,Active
+ENR,Energizer Holdings Inc,NYSE,Stock,2000-03-27,,Active
+EW,Edwards Lifesciences Corp,NYSE,Stock,2000-03-27,,Active
+IBN,ICICI Bank Ltd,NYSE,Stock,2000-03-28,,Active
+MET,Metlife Inc,NYSE,Stock,2000-04-05,,Active
+EBMT,Eagle Bancorp Montana Inc,NASDAQ,Stock,2000-04-06,,Active
+LMNX,Luminex Corp,NASDAQ,Stock,2000-04-06,,Active
+LXRX,Lexicon Pharmaceuticals Inc,NASDAQ,Stock,2000-04-07,,Active
+LPSN,Liveperson Inc,NASDAQ,Stock,2000-04-07,,Active
+NVMI,Nova Ltd,NASDAQ,Stock,2000-04-11,,Active
+HSTM,Healthstream Inc,NASDAQ,Stock,2000-04-11,,Active
+EXEL,Exelixis Inc,NASDAQ,Stock,2000-04-17,,Active
+ON,ON Semiconductor Corp,NASDAQ,Stock,2000-05-02,,Active
+ANIP,ANI Pharmaceuticals Inc,NASDAQ,Stock,2000-05-05,,Active
+PXLW,Pixelworks Inc,NASDAQ,Stock,2000-05-19,,Active
+INSM,Insmed Inc,NASDAQ,Stock,2000-06-01,,Active
+UONEK,Urban One Inc - Class D,NASDAQ,Stock,2000-06-07,,Active
+CYH,Community Health Systems Inc,NYSE,Stock,2000-06-09,,Active
+ISRG,Intuitive Surgical Inc,NASDAQ,Stock,2000-06-16,,Active
+CRL,Charles River Laboratories International Inc,NYSE,Stock,2000-06-23,,Active
+BBT,Beacon Financial Corp,NYSE,Stock,2000-06-28,,Active
+PUK,Prudential plc,NYSE,Stock,2000-06-29,,Active
+MRVL,Marvell Technology Inc,NASDAQ,Stock,2000-06-30,,Active
+NTES,NetEase Inc,NASDAQ,Stock,2000-06-30,,Active
+ACLS,Axcelis Technologies Inc,NASDAQ,Stock,2000-07-11,,Active
+TKC,Turkcell Iletisim Hizmetleri A.S.,NYSE,Stock,2000-07-11,,Active
+ENTG,Entegris Inc,NASDAQ,Stock,2000-07-11,,Active
+SOHU,Sohu.com Ltd,NASDAQ,Stock,2000-07-12,,Active
+FLNA,Filana Therapeutics Inc,NASDAQ,Stock,2000-07-14,,Active
+PRPO,Precipio Inc,NASDAQ,Stock,2000-07-18,,Active
+EMBJ,Embraer S.A.,NYSE,Stock,2000-07-21,,Active
+EPAC,Enerpac Tool Group Corp - Class A,NYSE,Stock,2000-07-24,,Active
+GGAL,Grupo Financiero Galicia,NASDAQ,Stock,2000-07-25,,Active
+CAMT,Camtek Ltd,NASDAQ,Stock,2000-07-28,,Active
+ILMN,Illumina Inc,NASDAQ,Stock,2000-07-28,,Active
+CNQ,Canadian Natural Resources Ltd,NYSE,Stock,2000-07-31,,Active
+CRIS,Curis Inc,NASDAQ,Stock,2000-08-01,,Active
+EVC,Entravision Communications Corp - Class A,NYSE,Stock,2000-08-02,,Active
+BRKR,Bruker Corp,NASDAQ,Stock,2000-08-04,,Active
+LTRX,Lantronix Inc,NASDAQ,Stock,2000-08-04,,Active
+CRNT,Ceragon Networks Ltd,NASDAQ,Stock,2000-08-04,,Active
+MNDO,Mind C.T.I Ltd,NASDAQ,Stock,2000-08-08,,Active
+PBR,Petroleo Brasileiro S.A. Petrobras,NYSE,Stock,2000-08-10,,Active
+BOTJ,Bank of James Financial Group Inc,NASDAQ,Stock,2000-08-10,,Active
+CGEN,Compugen Ltd,NASDAQ,Stock,2000-08-11,,Active
+EQIX,Equinix Inc,NASDAQ,Stock,2000-08-11,,Active
+UMC,United Micro Electronics,NYSE,Stock,2000-09-19,,Active
+TTMI,TTM Technologies Inc,NASDAQ,Stock,2000-09-25,,Active
+NEWT,NewtekOne Inc,NASDAQ,Stock,2000-09-27,,Active
+ASR,Grupo Aeroportuario Del Sureste S.A.,NYSE,Stock,2000-09-28,,Active
+ITGR,Integer Holdings Corp,NYSE,Stock,2000-09-29,,Active
+ASX,ASE Technology Holding Co.Ltd,NYSE,Stock,2000-10-02,,Active
+AIRI,Air Industries Group,AMEX,Stock,2000-10-05,,Active
+TPR,Tapestry Inc,NYSE,Stock,2000-10-06,,Active
+WIT,Wipro Ltd,NYSE,Stock,2000-10-19,,Active
+LTBR,Lightbridge Corp,NASDAQ,Stock,2000-11-13,,Active
+CNSY,Cerenome Inc,NASDAQ,Stock,2000-11-16,,Active
+INSG,Inseego Corp,NASDAQ,Stock,2000-11-21,,Active
+RIGL,Rigel Pharmaceuticals,NASDAQ,Stock,2000-11-29,,Active
+FLR,Fluor Corporation,NYSE,Stock,2000-12-01,,Active
+GRMN,Garmin Ltd,NYSE,Stock,2000-12-08,,Active
+RGP,Resources Connection Inc,NASDAQ,Stock,2000-12-15,,Active
+IBCP,Independent Bank Corporation (Ionia MI),NASDAQ,Stock,2001-01-02,,Active
+HWC,Hancock Whitney Corp,NASDAQ,Stock,2001-01-02,,Active
+LIVE,Live Ventures Inc,NASDAQ,Stock,2001-01-02,,Active
+CIIT,Tianci International Inc,NASDAQ,Stock,2001-01-02,,Active
+USIO,Usio Inc,NASDAQ,Stock,2001-01-02,,Active
+CZFS,Citizens Financial Services Inc,NASDAQ,Stock,2001-01-02,,Active
+FDBC,Fidelity D&D Bancorp Inc,NASDAQ,Stock,2001-01-02,,Active
+ALRS,Alerus Financial Corp,NASDAQ,Stock,2001-01-02,,Active
+WELL,Welltower Inc,NYSE,Stock,2001-01-02,,Active
+FGBI,First Guaranty Bancshares Inc,NASDAQ,Stock,2001-01-02,,Active
+LFMD,LifeMD Inc,NASDAQ,Stock,2001-01-02,,Active
+ANIX,Anixa Biosciences Inc,NASDAQ,Stock,2001-01-02,,Active
+CCU,Compania Cervecerias Unidas S.A.,NYSE,Stock,2001-01-02,,Active
+TLK,Telkom Indonesia (Persero) Tbk PT,NYSE,Stock,2001-01-02,,Active
+CMTV,Community Bancorp Inc Vermont,NASDAQ,Stock,2001-01-02,,Active
+FRAF,Franklin Financial Services Corp,NASDAQ,Stock,2001-01-02,,Active
+ID,L1 IDENTITY SOLUTIONS INC.,NYSE MKT,Stock,2001-01-02,,Active
+FNRN,First Northern Community Bancorp,NASDAQ,Stock,2001-01-02,,Active
+NGG,National Grid Plc,NYSE,Stock,2001-01-02,,Active
+DINE,REWARDS NETWORK INC,NASDAQ,Stock,2001-01-02,,Active
+FXNC,First National Corp (Strasburg VA),NASDAQ,Stock,2001-01-02,,Active
+SNFCA,Security National Financial Corp - Class A,NASDAQ,Stock,2001-01-02,,Active
+SITC,SITE Centers Corp,NYSE,Stock,2001-01-02,,Active
+OZK,Bank OZK,NASDAQ,Stock,2001-01-02,,Active
+SRL,Scully Royalty Ltd,NYSE,Stock,2001-01-02,,Active
+OSPN,OneSpan Inc,NASDAQ,Stock,2001-01-02,,Active
+AEMD,Aethlon Medical Inc,NASDAQ,Stock,2001-01-02,,Active
+TRAW,Traws Pharma Inc,NASDAQ,Stock,2001-01-02,,Active
+CIVB,Civista Bancshares Inc,NASDAQ,Stock,2001-01-02,,Active
+HOFT,Hooker Furnishings Corporation,NASDAQ,Stock,2001-01-02,,Active
+SMBK,SmartFinancial Inc,NYSE,Stock,2001-01-02,,Active
+SPGI,S&P Global Inc,NYSE,Stock,2001-01-02,,Active
+BHC,Bausch Health Companies Inc,NYSE,Stock,2001-01-02,,Active
+GPN,Global Payments Inc,NYSE,Stock,2001-01-16,,Active
+ALGN,Align Technology Inc,NASDAQ,Stock,2001-01-30,,Active
+AMX,America Movil S.A.B.DE C.V.,NYSE,Stock,2001-02-08,,Active
+OIS,Oil States International Inc,NYSE,Stock,2001-02-09,,Active
+KTH,Structures Products Cp 8 CorTS Issued by Peco Energy Cap Tr II Preferred Stock,NYSE,Stock,2001-02-12,,Active
+BHRB,Burke & Herbert Financial Services Corp,NASDAQ,Stock,2001-03-15,,Active
+HBIO,Harvard Bioscience Inc,NASDAQ,Stock,2001-03-19,,Active
+SHBI,Shore Bancshares Inc,NASDAQ,Stock,2001-03-22,,Active
+MUFG,Mitsubishi UFJ Financial Group Inc,NYSE,Stock,2001-04-02,,Active
+RDY,Dr. Reddy`s Laboratories Ltd,NYSE,Stock,2001-04-11,,Active
+DGICA,Donegal Group Inc - Class A,NASDAQ,Stock,2001-04-24,,Active
+RVP,Retractable Technologies Inc,AMEX,Stock,2001-05-04,,Active
+IDT,IDT Corp - Class B,NYSE,Stock,2001-05-16,,Active
+VABK,Virginia National Bankshares Corp,NASDAQ,Stock,2001-06-04,,Active
+CBFV,CB Financial Services Inc,NASDAQ,Stock,2001-06-06,,Active
+AXON,Axon Enterprise Inc,NASDAQ,Stock,2001-06-07,,Active
+MDLZ,Mondelez International Inc - Class A,NASDAQ,Stock,2001-06-13,,Active
+FTI,TechnipFMC plc,NYSE,Stock,2001-06-14,,Active
+XELB,Xcel Brands Inc,NASDAQ,Stock,2001-06-14,,Active
+BFH,Bread Financial Holdings Inc,NYSE,Stock,2001-06-15,,Active
+IMOS,Chipmos Technologies Inc,NASDAQ,Stock,2001-06-19,,Active
+FIS,Fidelity National Information Services Inc,NYSE,Stock,2001-06-20,,Active
+PRSO,Peraso Inc,NASDAQ,Stock,2001-06-28,,Active
+ACN,Accenture plc - Class A,NYSE,Stock,2001-07-19,,Active
+HDB,HDFC Bank Ltd,NYSE,Stock,2001-07-20,,Active
+ZBH,Zimmer Biomet Holdings Inc,NYSE,Stock,2001-07-25,,Active
+PDFS,PDF Solutions Inc,NASDAQ,Stock,2001-07-31,,Active
+TAC,Transalta Corp,NYSE,Stock,2001-07-31,,Active
+BG,Bunge Global SA,NYSE,Stock,2001-08-02,,Active
+FRO,Frontline Plc,NYSE,Stock,2001-08-06,,Active
+OMCL,Omnicell Inc,NASDAQ,Stock,2001-08-09,,Active
+PKBK,Parke Bancorp Inc,NASDAQ,Stock,2001-09-05,,Active
+PFG,Principal Financial Group Inc,NASDAQ,Stock,2001-10-23,,Active
+ELV,Elevance Health Inc,NYSE,Stock,2001-10-30,,Active
+LMNR,Limoneira Company,NASDAQ,Stock,2001-11-08,,Active
+KB,KB Financial Group Inc,NYSE,Stock,2001-11-12,,Active
+AMN,AMN Healthcare Services Inc,NYSE,Stock,2001-11-13,,Active
+WW,WW International Inc,NASDAQ,Stock,2001-11-15,,Active
+BBD,Banco Bradesco S.A.,NYSE,Stock,2001-11-23,,Active
+LYG,Lloyds Banking Group plc,NYSE,Stock,2001-11-27,,Active
+AAP,Advance Auto Parts Inc,NYSE,Stock,2001-11-29,,Active
+AYI,Acuity Brands Inc,NYSE,Stock,2001-12-03,,Active
+PRU,Prudential Financial Inc,NYSE,Stock,2001-12-13,,Active
+CNC,Centene Corp,NYSE,Stock,2001-12-13,,Active
+HBNC,Horizon Bancorp Inc (IN),NASDAQ,Stock,2001-12-17,,Active
+COFS,Choiceone Financial Services Inc,NASDAQ,Stock,2001-12-31,,Active
+BCH,Banco de Chile,NYSE,Stock,2002-01-08,,Active
+AGIG,Houston American Energy Corp,AMEX,Stock,2002-01-22,,Active
+BFC,Bank First Corp,NASDAQ,Stock,2002-01-29,,Active
+SYNA,Synaptics Inc,NASDAQ,Stock,2002-01-29,,Active
+CCOI,Cogent Communications Holdings Inc,NASDAQ,Stock,2002-02-05,,Active
+GME,Gamestop Corporation - Class A,NYSE,Stock,2002-02-13,,Active
+MGLD,Marygold Companies Inc (The),AMEX,Stock,2002-02-21,,Active
+ITUB,Itau Unibanco Holding S.A.,NYSE,Stock,2002-02-25,,Active
+TEN,Tsakos Energy Navigation Ltd,NYSE,Stock,2002-03-05,,Active
+UCB,United Community Banks Inc,NYSE,Stock,2002-03-18,,Active
+ABG,Asbury Automotive Group Inc,NYSE,Stock,2002-03-21,,Active
+VALE,Vale S.A.,NYSE,Stock,2002-03-21,,Active
+SBRA,Sabra Healthcare REIT Inc,NASDAQ,Stock,2002-04-02,,Active
+OVV,Ovintiv Inc,NYSE,Stock,2002-04-08,,Active
+JBLU,Jetblue Airways Corp,NASDAQ,Stock,2002-04-12,,Active
+CPHI,China Pharma Holdings Inc,AMEX,Stock,2002-04-17,,Active
+PLG,Platinum Group Metals Ltd,AMEX,Stock,2002-04-26,,Active
+DCTH,Delcath Systems Inc,NASDAQ,Stock,2002-05-02,,Active
+WNEB,Western New England Bancorp Inc,NASDAQ,Stock,2002-05-02,,Active
+SBS,Companhia de Saneamento Basico do Estado de Sao Paulo.,NYSE,Stock,2002-05-10,,Active
+NFLX,Netflix Inc,NASDAQ,Stock,2002-05-23,,Active
+NPO,EnPro Industries Inc,NYSE,Stock,2002-05-24,,Active
+PFIS,Peoples Financial Services Corp,NASDAQ,Stock,2002-06-05,,Active
+HQI,HireQuest Inc,NASDAQ,Stock,2002-06-06,,Active
+TRI,Thomson-Reuters Corp,NASDAQ,Stock,2002-06-12,,Active
+WHG,Westwood Holdings Group Inc,NYSE,Stock,2002-06-13,,Active
+PLBC,Plumas Bancorp.,NASDAQ,Stock,2002-06-26,,Active
+CTA-P-A,EIDP Inc,NYSE,Stock,2002-07-01,,Active
+NDAQ,Nasdaq Inc - 144A,NASDAQ,Stock,2002-07-01,,Active
+SLG-P-I,SL Green Realty Corp,NYSE,Stock,2002-07-01,,Active
+SNY,Sanofi,NASDAQ,Stock,2002-07-01,,Active
+SPG-P-J,Simon Property Group Inc,NYSE,Stock,2002-07-01,,Active
+RUSHA,Rush Enterprises Inc - Class A,NASDAQ,Stock,2002-07-10,,Active
+STZ-B,Constellation Brands Inc - Class B,NYSE,Stock,2002-07-17,,Active
+TECK,Teck Resources Ltd - Class B - Class B (Sub Voting),NYSE,Stock,2002-07-18,,Active
+RRGB,Red Robin Gourmet Burgers Inc,NASDAQ,Stock,2002-07-19,,Active
+GLAD,Gladstone Capital Corp,NASDAQ,Stock,2002-08-02,,Active
+FKWL,Franklin Wireless Corp,NASDAQ,Stock,2002-08-27,,Active
+TZOO,Travelzoo,NASDAQ,Stock,2002-08-28,,Active
+GTN,Gray Television Inc,NYSE,Stock,2002-08-30,,Active
+ATHE,Alterity Therapeutics Ltd,NASDAQ,Stock,2002-09-05,,Active
+GALT,Galectin Therapeutics Inc,NASDAQ,Stock,2002-09-09,,Active
+SAIA,Saia Inc,NASDAQ,Stock,2002-09-12,,Active
+BANC,Banc of California Inc,NYSE,Stock,2002-10-01,,Active
+NRP,Natural Resource Partners LP,NYSE,Stock,2002-10-11,,Active
+HNNA,Hennessy Advisors Inc,NASDAQ,Stock,2002-10-15,,Active
+DKS,Dicks Sporting Goods Inc,NYSE,Stock,2002-10-16,,Active
+NGS,Natural Gas Services Group Inc,NYSE,Stock,2002-10-22,,Active
+WYNN,Wynn Resorts Ltd,NASDAQ,Stock,2002-10-25,,Active
+MMLP,Martin Midstream Partners LP,NASDAQ,Stock,2002-11-01,,Active
+CEVA,Ceva Inc,NASDAQ,Stock,2002-11-01,,Active
+PRAA,PRA Group Inc,NASDAQ,Stock,2002-11-08,,Active
+SAFT,Safety Insurance Group Inc,NASDAQ,Stock,2002-11-22,,Active
+CME,CME Group Inc - Class A,NASDAQ,Stock,2002-12-06,,Active
+FLUX,Flux Power Holdings Inc,NASDAQ,Stock,2002-12-09,,Active
+STX,Seagate Technology Holdings Plc,NASDAQ,Stock,2002-12-11,,Active
+TS,Tenaris S.A.,NYSE,Stock,2002-12-16,,Active
+ACTG,Acacia Research Corp,NASDAQ,Stock,2002-12-16,,Active
+PFS,Provident Financial Services Inc,NYSE,Stock,2003-01-16,,Active
+EGO,Eldorado Gold Corp,NYSE,Stock,2003-01-23,,Active
+RIOT,Riot Platforms Inc,NASDAQ,Stock,2003-01-24,,Active
+DMLP,Dorchester Minerals LP,NASDAQ,Stock,2003-02-03,,Active
+AGI,Alamos Gold Inc - Class A,NYSE,Stock,2003-03-17,,Active
+STRR,Hudson Global Inc,NASDAQ,Stock,2003-03-18,,Active
+LODE,Comstock Inc,AMEX,Stock,2003-03-18,,Active
+CHSCP,CHS Inc,NASDAQ,Stock,2003-03-24,,Active
+IHG,Intercontinental Hotels Group,NYSE,Stock,2003-04-10,,Active
+LEN-B,Lennar Corp - Class B,NYSE,Stock,2003-04-23,,Active
+NYCB-P-U,New York Community Bancorp Inc Capital Tr V BONUSES,NYSE,Stock,2003-05-02,,Active
+PED,PEDEVCO Corp,AMEX,Stock,2003-05-02,,Active
+YHGJ,Yunhong Green CTI Ltd,NASDAQ,Stock,2003-05-29,,Active
+UVE,Universal Insurance Holdings Inc,NYSE,Stock,2003-06-06,,Active
+FORM,FormFactor Inc,NASDAQ,Stock,2003-06-12,,Active
+OPHC,Optimumbank Holdings Inc,AMEX,Stock,2003-06-23,,Active
+PLUR,Pluri Inc,NASDAQ,Stock,2003-06-30,,Active
+CVCO,Cavco Industries Inc,NASDAQ,Stock,2003-07-01,,Active
+AXS,Axis Capital Holdings Ltd,NYSE,Stock,2003-07-01,,Active
+MOH,Molina Healthcare Inc,NYSE,Stock,2003-07-02,,Active
+APWC,Asia Pacific Wire & Cable,NASDAQ,Stock,2003-07-15,,Active
+GENC,Gencor Industries Inc,AMEX,Stock,2003-07-15,,Active
+GLNG,Golar Lng,NASDAQ,Stock,2003-07-15,,Active
+IAG,Iamgold Corp,NYSE,Stock,2003-07-15,,Active
+EFSC,Enterprise Financial Services Corp,NASDAQ,Stock,2003-07-15,,Active
+WKSP,Worksport Ltd,NASDAQ,Stock,2003-07-15,,Active
+LAB,Standard BioTools Inc,NASDAQ,Stock,2003-07-29,,Active
+NTGR,Netgear Inc,NASDAQ,Stock,2003-07-31,,Active
+TCBI,Texas Capital Bancshares Inc,NASDAQ,Stock,2003-08-14,,Active
+GOOD,Gladstone Commercial Corp,NASDAQ,Stock,2003-08-14,,Active
+AHT,Ashford Hospitality Trust Inc,NYSE,Stock,2003-08-26,,Active
+CNO,CNO Financial Group Inc,NYSE,Stock,2003-09-10,,Active
+SHG,Shinhan Financial Group Co. Ltd,NYSE,Stock,2003-09-16,,Active
+WF,Woori Financial Group Inc,NYSE,Stock,2003-10-01,,Active
+LKQ,LKQ Corp,NASDAQ,Stock,2003-10-03,,Active
+GAM-P-B,General American Investors Co. Inc,NYSE,Stock,2003-10-06,,Active
+GEF-B,Greif Inc - Class B,NYSE,Stock,2003-10-07,,Active
+MKC-V,McCormick & Co. Inc,NYSE,Stock,2003-10-07,,Active
+PBR-A,Petroleo Brasileiro S.A. Petrobras,NYSE,Stock,2003-10-07,,Active
+CAAS,China Automotive Systems Inc,NASDAQ,Stock,2003-10-07,,Active
+XPO,XPO Inc,NYSE,Stock,2003-10-07,,Active
+CRWS,Crown Crafts Inc,NASDAQ,Stock,2003-10-07,,Active
+NAK,Northern Dynasty Minerals Ltd,AMEX,Stock,2003-10-09,,Active
+CHT,Chunghwa Telecom,NYSE,Stock,2003-10-09,,Active
+OVLY,Oak Valley Bancorp,NASDAQ,Stock,2003-10-15,,Active
+BCBP,BCB Bancorp Inc (NJ),NASDAQ,Stock,2003-10-15,,Active
+CODA,Coda Octopus Group Inc,NASDAQ,Stock,2003-10-17,,Active
+CRI,Carters Inc,NYSE,Stock,2003-10-24,,Active
+SVA,Sinovac Biotech Ltd,NASDAQ,Stock,2003-11-03,,Active
+CNVS,Cineverse Corp - Class A,NASDAQ,Stock,2003-11-10,,Active
+MRLN,Marlin Business Services Corp,NASDAQ,Stock,2003-11-12,,Active
+ADEA,Adeia Inc,NASDAQ,Stock,2003-11-20,,Active
+NXST,Nexstar Media Group Inc,NASDAQ,Stock,2003-11-25,,Active
+SNX,TD Synnex Corp,NYSE,Stock,2003-11-25,,Active
+NRG,NRG Energy Inc,NYSE,Stock,2003-12-02,,Active
+KTN,Structured Products Corp 8205 CorTS 8205 Corporate Backed Trust Securities CorTS,NYSE,Stock,2003-12-04,,Active
+NG,Novagold Resources Inc,AMEX,Stock,2003-12-04,,Active
+KRO,Kronos Worldwide Inc,NYSE,Stock,2003-12-09,,Active
+TCOM,Trip.com Group Ltd,NASDAQ,Stock,2003-12-09,,Active
+TXMD,TherapeuticsMD Inc,NASDAQ,Stock,2003-12-11,,Active
+NNI,Nelnet Inc - Class A,NYSE,Stock,2003-12-12,,Active
+CMP,Compass Minerals International Inc,NYSE,Stock,2003-12-12,,Active
+GBLI,Global Indemnity Group LLC - Class A,NASDAQ,Stock,2003-12-16,,Active
+LITS,Lite Strategy Inc,NASDAQ,Stock,2003-12-18,,Active
+UTI,Universal Technical Institute Inc,NYSE,Stock,2003-12-18,,Active
+SGI,Tempur Sealy International Inc,NYSE,Stock,2003-12-18,,Active
+JSM,Navient Corp,NASDAQ,Stock,2003-12-30,,Active
+PIPR,Piper Sandler Co`s,NYSE,Stock,2004-01-02,,Active
+IPB,Merrill Lynch Depositor Inc,NYSE,Stock,2004-01-20,,Active
+ARQ,Arq Inc,NASDAQ,Stock,2004-01-23,,Active
+ONCT,Oncternal Therapeutics Inc,NASDAQ,Stock,2004-02-03,,Active
+TBBK,Bancorp Inc (The),NASDAQ,Stock,2004-02-03,,Active
+AIZ,Assurant Inc,NYSE,Stock,2004-02-05,,Active
+HTH,Hilltop Holdings Inc,NYSE,Stock,2004-02-19,,Active
+OGEN,Oragenics Inc,AMEX,Stock,2004-02-25,,Active
+NEO,Neogenomics Inc,NASDAQ,Stock,2004-03-16,,Active
+BANFP,BancFirst Corporation 72 Cumulative Trust Preferred Securities,NASDAQ,Stock,2004-03-16,,Active
+HALO,Halozyme Therapeutics Inc,NASDAQ,Stock,2004-03-16,,Active
+UCTT,Ultra Clean Hldgs Inc,NASDAQ,Stock,2004-03-25,,Active
+BWEN,Broadwind Inc,NASDAQ,Stock,2004-03-29,,Active
+CZWI,Citizens Community Bancorp Inc MD,NASDAQ,Stock,2004-03-30,,Active
+MCHX,Marchex Inc - Class B,NASDAQ,Stock,2004-03-31,,Active
+JBK,Lehman ABS Corp,NYSE,Stock,2004-04-05,,Active
+ABR,Arbor Realty Trust Inc,NYSE,Stock,2004-04-07,,Active
+CORT,Corcept Therapeutics Inc,NASDAQ,Stock,2004-04-14,,Active
+SA,Seabridge Gold Inc,NYSE,Stock,2004-04-20,,Active
+AGO,Assured Guaranty Ltd,NYSE,Stock,2004-04-23,,Active
+CYTK,Cytokinetics Inc,NASDAQ,Stock,2004-04-29,,Active
+SVRA,Savara Inc,NASDAQ,Stock,2004-04-29,,Active
+MFIC,MidCap Financial Investment Corporation,NASDAQ,Stock,2004-05-05,,Active
+SEED,Origin Agritech Ltd,NASDAQ,Stock,2004-05-05,,Active
+BGMS,Bio Green Med Solution Inc,NASDAQ,Stock,2004-05-05,,Active
+GJH,Synthetic FixedIncome Securities Inc 6375 STRATS Cl A1,NYSE,Stock,2004-05-05,,Active
+COHN,Cohen & Company Inc,AMEX,Stock,2004-05-06,,Active
+GNW,Genworth Financial Inc - Class A,NYSE,Stock,2004-05-25,,Active
+ACAD,Acadia Pharmaceuticals Inc,NASDAQ,Stock,2004-05-27,,Active
+ANGO,Angiodynamic Inc,NASDAQ,Stock,2004-06-01,,Active
+ALNY,Alnylam Pharmaceuticals Inc,NASDAQ,Stock,2004-06-01,,Active
+LBTYA,Liberty Global plc - Class A,NASDAQ,Stock,2004-06-03,,Active
+LBTYB,Liberty Global plc - Class B,NASDAQ,Stock,2004-06-09,,Active
+CBRE,CBRE Group Inc - Class A,NYSE,Stock,2004-06-10,,Active
+SFL,SFL Corporation Ltd,NYSE,Stock,2004-06-17,,Active
+CRM,Salesforce Inc,NYSE,Stock,2004-06-23,,Active
+MGI,Moneygram International Inc,NASDAQ,Stock,2004-07-01,,Active
+DPZ,Dominos Pizza Inc,NASDAQ,Stock,2004-07-13,,Active
+LPL,LG Display Co Ltd,NYSE,Stock,2004-07-22,,Active
+ADAM,Adamas Trust Inc,NASDAQ,Stock,2004-07-26,,Active
+BLKB,Blackbaud Inc,NASDAQ,Stock,2004-07-26,,Active
+CRDF,Cardiff Oncology Inc,NASDAQ,Stock,2004-07-27,,Active
+PYT,PPLUS Trust Series GSC-2,NYSE,Stock,2004-07-27,,Active
+PSEC,Prospect Capital Corp,NASDAQ,Stock,2004-07-27,,Active
+MNKD,Mannkind Corp,NASDAQ,Stock,2004-07-28,,Active
+TOPS,Top Ships Inc,AMEX,Stock,2004-08-02,,Active
+ENS,Enersys,NYSE,Stock,2004-08-02,,Active
+BCML,BayCom Corp,NASDAQ,Stock,2004-08-09,,Active
+CVGI,Commercial Vehicle Group Inc,NASDAQ,Stock,2004-08-09,,Active
+WLK,Westlake Corporation,NYSE,Stock,2004-08-11,,Active
+KRG,Kite Realty Group Trust,NYSE,Stock,2004-08-11,,Active
+PRSU,Pursuit Attractions and Hospitality Inc,NYSE,Stock,2004-08-12,,Active
+STXS,Stereotaxis Inc,AMEX,Stock,2004-08-12,,Active
+EXR,Extra Space Storage Inc,NYSE,Stock,2004-08-16,,Active
+CNS,Cohen & Steers Inc,NYSE,Stock,2004-08-16,,Active
+GOOGL,Alphabet Inc - Class A,NASDAQ,Stock,2004-08-19,,Active
+LFVN,Lifevantage Corporation,NASDAQ,Stock,2004-10-05,,Active
+INVA,Innoviva Inc,NASDAQ,Stock,2004-10-05,,Active
+ARCC,Ares Capital Corp,NASDAQ,Stock,2004-10-05,,Active
+TXRH,Texas Roadhouse Inc,NASDAQ,Stock,2004-10-05,,Active
+HURN,Huron Consulting Group Inc,NASDAQ,Stock,2004-10-13,,Active
+SHO,Sunstone Hotel Investors Inc,NYSE,Stock,2004-10-21,,Active
+CUBE,CubeSmart,NYSE,Stock,2004-10-22,,Active
+BBW,Build A Bear Workshop Inc,NYSE,Stock,2004-10-28,,Active
+DLR,Digital Realty Trust Inc,NYSE,Stock,2004-10-29,,Active
+MKTX,MarketAxess Holdings Inc,NASDAQ,Stock,2004-11-05,,Active
+ORA,Ormat Technologies Inc,NYSE,Stock,2004-11-11,,Active
+SPOK,Spok Holdings Inc,NASDAQ,Stock,2004-11-17,,Active
+MPWR,Monolithic Power System Inc,NASDAQ,Stock,2004-11-19,,Active
+SPRO,Spero Therapeutics Inc,NASDAQ,Stock,2004-11-22,,Active
+FMAO,Farmers & Merchants Bancorp Inc,NASDAQ,Stock,2004-11-23,,Active
+BXC,Bluelinx Hldgs Inc,NYSE,Stock,2004-12-14,,Active
+CHCI,Comstock Holding Co. Inc - Class A,NASDAQ,Stock,2004-12-14,,Active
+NCTY,The9 Ltd,NASDAQ,Stock,2004-12-15,,Active
+LVS,Las Vegas Sands Corp,NYSE,Stock,2004-12-15,,Active
+MIC,Macquarie Infrastructure Holdings LLC,NYSE,Stock,2004-12-16,,Active
+HLF,Herbalife Ltd,NYSE,Stock,2004-12-16,,Active
+INBK,First Internet Bancorp,NASDAQ,Stock,2004-12-28,,Active
+BMRA,Biomerica Inc,NASDAQ,Stock,2005-01-03,,Active
+CE,Celanese Corp - Series A,NYSE,Stock,2005-01-21,,Active
+EYPT,EyePoint Pharmaceuticals Inc,NASDAQ,Stock,2005-01-27,,Active
+WTI,W & T Offshore Inc,NYSE,Stock,2005-01-28,,Active
+GRVY,Gravity Co Ltd,NASDAQ,Stock,2005-02-08,,Active
+DNN,Denison Mines Corp,AMEX,Stock,2005-02-09,,Active
+PBH,Prestige Consumer Healthcare Inc,NYSE,Stock,2005-02-10,,Active
+HUN,Huntsman Corp,NYSE,Stock,2005-02-14,,Active
+ACCS,ACCESS Newswire Inc,AMEX,Stock,2005-02-14,,Active
+EBTC,Enterprise Bancorp Inc,NASDAQ,Stock,2005-02-14,,Active
+WEX,WEX Inc,NYSE,Stock,2005-02-16,,Active
+SPCB,SuperCom Ltd,NASDAQ,Stock,2005-02-17,,Active
+DLB,Dolby Laboratories Inc - Class A,NYSE,Stock,2005-02-17,,Active
+KRNY,Kearny Financial Corp,NASDAQ,Stock,2005-02-24,,Active
+KFFB,Kentucky First Federal Bancorp,NASDAQ,Stock,2005-03-03,,Active
+FTFT,Future FinTech Group Inc,NASDAQ,Stock,2005-03-15,,Active
+DSX,Diana Shipping Inc,NYSE,Stock,2005-03-23,,Active
+TRIL,Trillium Therapeutics Inc,NASDAQ,Stock,2005-03-23,,Active
+ALTO,Alto Ingredients Inc,NASDAQ,Stock,2005-03-24,,Active
+RAIL,FreightCar America Inc,NASDAQ,Stock,2005-04-06,,Active
+DXCM,Dexcom Inc,NASDAQ,Stock,2005-04-14,,Active
+GS-P-A,Goldman Sachs Group Inc,NYSE,Stock,2005-04-25,,Active
+SVM,Silvercorp Metals Inc,AMEX,Stock,2005-05-02,,Active
+JVA,Coffee Holding Co Inc,NASDAQ,Stock,2005-05-03,,Active
+MORN,Morningstar Inc,NASDAQ,Stock,2005-05-03,,Active
+LAZ,Lazard Ltd - Class A,NYSE,Stock,2005-05-05,,Active
+ZUMZ,Zumiez Inc,NASDAQ,Stock,2005-05-06,,Active
+TRX,TRX Gold Corp,AMEX,Stock,2005-05-12,,Active
+CTRN,Citi Trends Inc,NASDAQ,Stock,2005-05-18,,Active
+IRD,Ocuphire Pharma Inc,NASDAQ,Stock,2005-05-23,,Active
+DRH,Diamondrock Hospitality Company,NASDAQ,Stock,2005-05-26,,Active
+FSP,Franklin Street Properties Corp,AMEX,Stock,2005-06-02,,Active
+HTGC,Hercules Capital Inc,NYSE,Stock,2005-06-09,,Active
+GAIN,Gladstone Investment Corporation,NASDAQ,Stock,2005-06-23,,Active
+LINC,Lincoln Educational Services Corp,NASDAQ,Stock,2005-06-23,,Active
+BFIN,Bankfinancial Corp,NASDAQ,Stock,2005-06-28,,Active
+BLDR,Builders Firstsource Inc,NYSE,Stock,2005-06-28,,Active
+DBI,Designer Brands Inc - Class A,NYSE,Stock,2005-06-29,,Active
+SIMO,Silicon Motion Technology Corp,NASDAQ,Stock,2005-06-30,,Active
+WAL,Western Alliance Bancorp,NYSE,Stock,2005-07-01,,Active
+WBD,Warner Bros. Discovery Inc - Class A,NASDAQ,Stock,2005-07-08,,Active
+MPT,Medical Properties Trust Inc,NYSE,Stock,2005-07-08,,Active
+SLMBP,SLM Corp,NASDAQ,Stock,2005-07-11,,Active
+EXPE,Expedia Group Inc,NASDAQ,Stock,2005-07-21,,Active
+OPBK,OP Bancorp,NASDAQ,Stock,2005-07-22,,Active
+FTK,Flotek Industries Inc,NYSE,Stock,2005-07-27,,Active
+PCAP,Patriot Capital Funding Inc,NASDAQ,Stock,2005-07-28,,Active
+OFLX,Omega Flex Inc,NASDAQ,Stock,2005-08-01,,Active
+STN,Stantec Inc,NYSE,Stock,2005-08-05,,Active
+ATRC,Atricure Inc,NASDAQ,Stock,2005-08-05,,Active
+BIDU,Baidu Inc,NASDAQ,Stock,2005-08-05,,Active
+RBC,RBC Bearings Inc,NYSE,Stock,2005-08-10,,Active
+CF,CF Industries Holdings Inc,NYSE,Stock,2005-08-11,,Active
+ACCO,Acco Brands Corporation,NYSE,Stock,2005-08-17,,Active
+TCRT,Alaunos Therapeutics Inc,NASDAQ,Stock,2005-08-24,,Active
+XTLB,X.T.L. Biopharmaceuticals Ltd,NASDAQ,Stock,2005-09-01,,Active
+LBTYK,Liberty Global plc - Class C,NASDAQ,Stock,2005-09-08,,Active
+AMP,Ameriprise Financial Inc,NYSE,Stock,2005-09-15,,Active
+SURG,Surgepays Inc,NASDAQ,Stock,2005-09-22,,Active
+ISG,ING Group NV Perpetual Dent Secs 6125,NYSE,Stock,2005-09-23,,Active
+AAL,American Airlines Group Inc,NASDAQ,Stock,2005-09-27,,Active
+ITRN,Ituran Location And Control Ltd,NASDAQ,Stock,2005-09-28,,Active
+GLP,Global Partners LP,NYSE,Stock,2005-09-29,,Active
+CMPR,Cimpress plc,NASDAQ,Stock,2005-09-30,,Active
+WSBF,Waterstone Financial Inc,NASDAQ,Stock,2005-10-05,,Active
+ALT,Altimmune Inc,NASDAQ,Stock,2005-10-06,,Active
+GASS,StealthGas Inc,NASDAQ,Stock,2005-10-06,,Active
+FBIZ,First Business Financial Services Inc,NASDAQ,Stock,2005-10-07,,Active
+DHT,DHT Holdings Inc,NYSE,Stock,2005-10-13,,Active
+FNF,Fidelity National Financial Inc,NYSE,Stock,2005-10-14,,Active
+NNVC,NanoViricides Inc,AMEX,Stock,2005-10-26,,Active
+CLRB,Cellectar Biosciences Inc,NASDAQ,Stock,2005-11-10,,Active
+CATX,Perspective Therapeutics Inc,AMEX,Stock,2005-11-10,,Active
+CCO,Clear Channel Outdoor Holdings Inc,NYSE,Stock,2005-11-14,,Active
+BEP,Brookfield Renewable Partners LP,NYSE,Stock,2005-11-15,,Active
+ICE,Intercontinental Exchange Inc,NYSE,Stock,2005-11-16,,Active
+AMSF,Amerisafe Inc,NASDAQ,Stock,2005-11-18,,Active
+UAA,Under Armour Inc - Class A,NYSE,Stock,2005-11-18,,Active
+GJO,Synthetic FixedIncome Securities Inc Synthetic FixedIncome Securities Inc on behalf of STRATSSM Trust for WalMart Stores Inc Securities Series 2004,NYSE,Stock,2005-11-21,,Active
+ASM,Avino Silver & Gold Mines Ltd,AMEX,Stock,2005-11-21,,Active
+BKD,Brookdale Senior Living Inc,NYSE,Stock,2005-11-22,,Active
+ACTS,Actions Semiconductor Company. Ltd. ADR,NYSE,Stock,2005-11-30,,Active
+HOVNP,Hovnanian Enterprises Inc,NASDAQ,Stock,2005-11-30,,Active
+TRAK,DealerTrack Technologies Inc,NYSE,Stock,2005-12-13,,Active
+CPA,Copa Holdings S.A. - Class A,NYSE,Stock,2005-12-15,,Active
+GTE,Gran Tierra Energy Inc,AMEX,Stock,2005-12-21,,Active
+LYV,Live Nation Entertainment Inc,NYSE,Stock,2005-12-21,,Active
+MGYR,Magyar Bancorp Inc,NASDAQ,Stock,2006-01-24,,Active
+CMG,Chipotle Mexican Grill,NYSE,Stock,2006-01-26,,Active
+SMFG,Sumitomo Mitsui Financial Group Inc,NYSE,Stock,2006-01-27,,Active
+PERI,Perion Network Ltd,NASDAQ,Stock,2006-01-31,,Active
+TX,Ternium S.A.,NYSE,Stock,2006-02-01,,Active
+KOP,Koppers Holdings Inc,NYSE,Stock,2006-02-01,,Active
+ET,Energy Transfer LP,NYSE,Stock,2006-02-03,,Active
+UAL,United Airlines Holdings Inc,NASDAQ,Stock,2006-02-06,,Active
+ACR,ACRES Commercial Realty Corp,NYSE,Stock,2006-02-07,,Active
+CROX,Crocs Inc,NASDAQ,Stock,2006-02-08,,Active
+PAC,Grupo Aeroportuario Del Pacifico SAB de CV,NYSE,Stock,2006-02-27,,Active
+SBLK,Star Bulk Carriers Corp,NASDAQ,Stock,2006-02-27,,Active
+LQDT,Liquidity Services Inc,NASDAQ,Stock,2006-02-27,,Active
+TAP-A,Molson Coors Beverage Company - Class A,NYSE,Stock,2006-02-27,,Active
+TDG,Transdigm Group Incorporated,NYSE,Stock,2006-03-15,,Active
+GPRE,Green Plains Inc,NASDAQ,Stock,2006-03-15,,Active
+BMA,Banco Macro S.A.,NYSE,Stock,2006-03-27,,Active
+HIMX,Himax Technologies,NASDAQ,Stock,2006-03-31,,Active
+POR,Portland General Electric Company,NYSE,Stock,2006-03-31,,Active
+BTE,Baytex Energy Corp,NYSE,Stock,2006-04-03,,Active
+GYRE,Gyre Therapeutics Inc,NASDAQ,Stock,2006-04-12,,Active
+VNDA,Vanda Pharmaceuticals Inc,NASDAQ,Stock,2006-04-12,,Active
+IGC,IGC Pharma Inc,AMEX,Stock,2006-04-13,,Active
+USBC,USBC Inc,AMEX,Stock,2006-04-18,,Active
+ORMP,Oramed Pharmaceuticals Inc,NASDAQ,Stock,2006-04-21,,Active
+EXK,Endeavour Silver Corp,NYSE,Stock,2006-04-26,,Active
+GJS,Synthetic Fixed-Income Securities Inc,NYSE,Stock,2006-04-28,,Active
+DK,Delek US Holdings Inc,NYSE,Stock,2006-05-04,,Active
+ESEA,Euroseas Ltd,NASDAQ,Stock,2006-05-05,,Active
+PZG,Paramount Gold Nevada Corp,AMEX,Stock,2006-05-08,,Active
+CODI,Compass Diversified Holdings,NYSE,Stock,2006-05-18,,Active
+WRN,Western Copper & Gold Corp,AMEX,Stock,2006-05-19,,Active
+MA,Mastercard Incorporated - Class A,NYSE,Stock,2006-05-25,,Active
+MWA,Mueller Water Products Inc - Series A,NYSE,Stock,2006-05-26,,Active
+CLUB,BILLIONAIRES CLUB ETF ,NYSE,Stock,2006-06-02,,Active
+ATEC,Alphatec Holdings Inc,NASDAQ,Stock,2006-06-02,,Active
+HOMB,Home Bancshares Inc,NYSE,Stock,2006-06-23,,Active
+SCWO,374Water Inc,NASDAQ,Stock,2006-06-30,,Active
+APPS,Digital Turbine Inc,NASDAQ,Stock,2006-06-30,,Active
+NECB,NorthEast Community Bancorp Inc,NASDAQ,Stock,2006-07-06,,Active
+KALU,Kaiser Aluminum Corp,NASDAQ,Stock,2006-07-07,,Active
+ZXZZT,NASDAQ TEST STOCK,NASDAQ,Stock,2006-07-10,,Active
+SSBI,Summit State Bank,NASDAQ,Stock,2006-07-14,,Active
+TNL,Travel+Leisure Company,NYSE,Stock,2006-07-19,,Active
+ASTI,Ascent Solar Technologies Inc,NASDAQ,Stock,2006-07-25,,Active
+WNS,WNS Holdings Ltd,NYSE,Stock,2006-07-26,,Active
+AVXL,Anavex Life Sciences Corporation,NASDAQ,Stock,2006-08-02,,Active
+EVR,Evercore Inc - Class A,NYSE,Stock,2006-08-14,,Active
+GURE,Gulf Resources Inc,NASDAQ,Stock,2006-08-14,,Active
+XPL,Solitario Resources Corp,AMEX,Stock,2006-09-06,,Active
+EDU,New Oriental Education & Technology Group Inc,NYSE,Stock,2006-09-07,,Active
+TAOP,Taoping Inc,NASDAQ,Stock,2006-09-12,,Active
+CVLT,Commvault Systems Inc,NASDAQ,Stock,2006-09-22,,Active
+ICFI,ICF International Inc,NASDAQ,Stock,2006-09-28,,Active
+WU,Western Union Company,NYSE,Stock,2006-10-02,,Active
+LDOS,Leidos Holdings Inc,NYSE,Stock,2006-10-13,,Active
+DAC,Danaos Corporation,NYSE,Stock,2006-10-16,,Active
+AWI,Armstrong World Industries Inc,NYSE,Stock,2006-10-18,,Active
+LMAT,Lemaitre Vascular Inc,NASDAQ,Stock,2006-10-19,,Active
+EXLS,ExlService Holdings Inc,NASDAQ,Stock,2006-10-20,,Active
+EHTH,eHealth Inc,NASDAQ,Stock,2006-10-20,,Active
+DEI,Douglas Emmett Inc,NYSE,Stock,2006-10-25,,Active
+FRST,Primis Financial Corp,NASDAQ,Stock,2006-11-01,,Active
+RLGT,Radiant Logistics Inc,AMEX,Stock,2006-11-01,,Active
+OC,Owens Corning,NYSE,Stock,2006-11-01,,Active
+GSAT,Globalstar Inc,NASDAQ,Stock,2006-11-02,,Active
+MFG,Mizuho Financial Group Inc,NYSE,Stock,2006-11-08,,Active
+CSIQ,Canadian Solar Inc,NASDAQ,Stock,2006-11-09,,Active
+EBS,Emergent Biosolutions Inc,NYSE,Stock,2006-11-15,,Active
+ALLT,Allot Ltd,NASDAQ,Stock,2006-11-16,,Active
+KBR,KBR Inc,NYSE,Stock,2006-11-16,,Active
+HRI,Herc Holdings Inc,NYSE,Stock,2006-11-16,,Active
+FSLR,First Solar Inc,NASDAQ,Stock,2006-11-17,,Active
+SBH,Sally Beauty Holdings Inc,NYSE,Stock,2006-11-17,,Active
+AER,Aercap Holdings N.V.,NYSE,Stock,2006-11-21,,Active
+WLDN,Willdan Group Inc,NASDAQ,Stock,2006-11-21,,Active
+NOA,North American Construction Group Ltd,NYSE,Stock,2006-11-22,,Active
+UUUU,Energy Fuels Inc,AMEX,Stock,2006-11-24,,Active
+STKE,Sol Strategies Inc,NASDAQ,Stock,2006-11-28,,Active
+AG,First Majestic Silver Corporation,NYSE,Stock,2006-11-28,,Active
+OMAB,Grupo Aeroportuario del Centro Norte S.A.B de C.V.,NASDAQ,Stock,2006-11-29,,Active
+MNOV,Medicinova Inc,NASDAQ,Stock,2006-12-08,,Active
+ALGT,Allegiant Travel,NASDAQ,Stock,2006-12-08,,Active
+BCIC,Portman Ridge Finance Corp,NASDAQ,Stock,2006-12-12,,Active
+IPGP,IPG Photonics Corp,NASDAQ,Stock,2006-12-13,,Active
+TOVX,Theriva Biologics Inc,NYSE MKT,Stock,2006-12-18,,Active
+BTQ,BTQ Technologies Corp,NASDAQ,Stock,2006-12-18,,Active
+MLCO,Melco Resorts & Entertainment Ltd,NASDAQ,Stock,2006-12-19,,Active
+PALI,Palisade Bio Inc,NASDAQ,Stock,2006-12-20,,Active
+BAC-P-E,Bank Of America Corp,NYSE,Stock,2006-12-28,,Active
+AHG,Akso Health Group,NASDAQ,Stock,2006-12-28,,Active
+SLNG,Stabilis Solutions Inc,NASDAQ,Stock,2006-12-28,,Active
+FSM,Fortuna Silver Mines Inc,NYSE,Stock,2007-01-08,,Active
+NVGS,Navigator Holdings Ltd,NYSE,Stock,2007-01-09,,Active
+AVAV,AeroVironment Inc,NASDAQ,Stock,2007-01-23,,Active
+SNOA,Sonoma Pharmaceuticals Inc,NASDAQ,Stock,2007-01-25,,Active
+MODD,Modular Medical Inc,NASDAQ,Stock,2007-01-25,,Active
+EIG,Employers Holdings Inc,NYSE,Stock,2007-01-31,,Active
+CSBR,Champions Oncology Inc,NASDAQ,Stock,2007-02-02,,Active
+CENTA,Central Garden & Pet Co. - Class A,NASDAQ,Stock,2007-02-06,,Active
+MDGL,Madrigal Pharmaceuticals Inc,NASDAQ,Stock,2007-02-06,,Active
+NCMI,National Cinemedia Inc,NASDAQ,Stock,2007-02-08,,Active
+ARAY,Accuray Inc,NASDAQ,Stock,2007-02-08,,Active
+PRTS,CarParts.com Inc,NASDAQ,Stock,2007-02-09,,Active
+STT-P-G,State Street Corp,NYSE,Stock,2007-02-12,,Active
+III,Information Services Group Inc,NASDAQ,Stock,2007-02-12,,Active
+CAPR,Capricor Therapeutics Inc,NASDAQ,Stock,2007-02-13,,Active
+CQP,Cheniere Energy Partners LP,NYSE,Stock,2007-03-21,,Active
+SAR,Saratoga Investment Corp,NYSE,Stock,2007-03-27,,Active
+FRBA,First Bank (NJ),NASDAQ,Stock,2007-03-28,,Active
+GSIT,GSI Technology Inc,NASDAQ,Stock,2007-03-29,,Active
+SMCI,Super Micro Computer Inc,NASDAQ,Stock,2007-03-29,,Active
+CPLP,Capital Product Partners L P,NASDAQ,Stock,2007-03-30,,Active
+BR,Broadridge Financial Solutions Inc,NYSE,Stock,2007-04-02,,Active
+UEC,Uranium Energy Corp,AMEX,Stock,2007-04-05,,Active
+REI,Ring Energy Inc,AMEX,Stock,2007-04-10,,Active
+NOG,Northern Oil and Gas Inc,NYSE,Stock,2007-04-13,,Active
+TMUS,T-Mobile US Inc,NASDAQ,Stock,2007-04-19,,Active
+PCS,PGIM CORPORATE BOND 0-5 YEAR ETF ,BATS,Stock,2007-04-19,,Active
+PNNT,PennantPark Investment Corporation,NYSE,Stock,2007-04-19,,Active
+TFSL,TFS Financial Corporation,NASDAQ,Stock,2007-04-23,,Active
+CNK,Cinemark Holdings Inc,NYSE,Stock,2007-04-24,,Active
+OPTT,Ocean Power Technologies - Reg S,AMEX,Stock,2007-04-25,,Active
+EDN,Empresa Distribuidora y Comercial Norte S.A.,NYSE,Stock,2007-04-26,,Active
+REED,Reeds Inc,AMEX,Stock,2007-05-01,,Active
+THM,International Tower Hill Mines Ltd,AMEX,Stock,2007-05-01,,Active
+DAL,Delta Air Lines Inc,NYSE,Stock,2007-05-03,,Active
+IBKR,Interactive Brokers Group Inc - Class A,NASDAQ,Stock,2007-05-04,,Active
+ANV,Allied Nevada Gold Corp,NASDAQ,Stock,2007-05-10,,Active
+ACM,AECOM,NYSE,Stock,2007-05-10,,Active
+PODD,Insulet Corporation,NASDAQ,Stock,2007-05-15,,Active
+DGLY,Kustom Entertainment Inc (New),NASDAQ,Stock,2007-05-16,,Active
+TRS,Trimas Corporation,NASDAQ,Stock,2007-05-18,,Active
+BGS,B&G Foods Inc,NYSE,Stock,2007-05-23,,Active
+GLRE,Greenlight Capital Re Ltd - Class A,NASDAQ,Stock,2007-05-24,,Active
+CLNE,Clean Energy Fuels Corp,NASDAQ,Stock,2007-05-25,,Active
+JAZZ,Jazz Pharmaceuticals plc,NASDAQ,Stock,2007-06-01,,Active
+TEL,TE Connectivity plc,NYSE,Stock,2007-06-14,,Active
+GRBK,Green Brick Partners Inc,NYSE,Stock,2007-06-14,,Active
+HFBL,Home Federal Bancorp Inc (Louisiana),NASDAQ,Stock,2007-06-20,,Active
+BX,Blackstone Inc,NYSE,Stock,2007-06-22,,Active
+SCOR,Comscore Inc,NASDAQ,Stock,2007-06-27,,Active
+BLIN,Bridgeline Digital Inc,NASDAQ,Stock,2007-06-29,,Active
+WFG,West Fraser Timber Co. Ltd,NYSE,Stock,2007-07-13,,Active
+AREN,Paradium.AI Inc,NYSE MKT,Stock,2007-07-13,,Active
+OPRX,OptimizeRx Corp,NASDAQ,Stock,2007-07-13,,Active
+LWLG,Lightwave Logic Inc,NASDAQ,Stock,2007-07-13,,Active
+OLB,OLB Group Inc,NASDAQ,Stock,2007-07-13,,Active
+LGO,Largo Inc,NASDAQ,Stock,2007-07-13,,Active
+WDS,Woodside Energy Group Ltd,NYSE,Stock,2007-07-13,,Active
+RTO,Rentokil Initial,NYSE,Stock,2007-07-13,,Active
+ISBA,Isabella Bank Corp,NASDAQ,Stock,2007-07-13,,Active
+TTE,TotalEnergies SE,NYSE,Stock,2007-07-13,,Active
+PMN,ProMIS Neurosciences Inc,NASDAQ,Stock,2007-07-17,,Active
+XPEL,XPEL Inc - Reg S,NASDAQ,Stock,2007-07-18,,Active
+DHX,DHI Group Inc,NYSE,Stock,2007-07-26,,Active
+LULU,Lululemon Athletica Inc,NASDAQ,Stock,2007-07-27,,Active
+GJT,Synthetic FixedIncome Securities Inc Synthetic FixedIncome Securities Inc Floating Rate Structured Repackaged AssetBacked Trust Securities Certificates,NYSE,Stock,2007-08-01,,Active
+G,Genpact Ltd,NYSE,Stock,2007-08-02,,Active
+ARGO,Argo Group International Holdings Ltd,NYSE,Stock,2007-08-07,,Active
+MASI,Masimo Corp,NASDAQ,Stock,2007-08-08,,Active
+BRBS,Blue Ridge Bankshares Inc (VA),AMEX,Stock,2007-08-10,,Active
+ARIS,Aris Mining Corp,NYSE,Stock,2007-08-10,,Active
+MELI,MercadoLibre Inc,NASDAQ,Stock,2007-08-10,,Active
+VMW,Vmware Inc - Class A,NYSE,Stock,2007-08-15,,Active
+WX,WuXi PharmaTech Cayman Inc. ADR,NYSE,Stock,2007-08-15,,Active
+SUZ,Suzano S.A.,NYSE,Stock,2007-08-16,,Active
+MDXG,Mimedx Group Inc,NASDAQ,Stock,2007-08-22,,Active
+KNDI,Kandi Technologies Group Inc,NASDAQ,Stock,2007-09-04,,Active
+HROW,Harrow Inc,NASDAQ,Stock,2007-09-28,,Active
+TDC,Teradata Corp,NYSE,Stock,2007-10-01,,Active
+ITP,IT Tech Packaging Inc,AMEX,Stock,2007-10-01,,Active
+OBT,Orange County Bancorp Inc,NASDAQ,Stock,2007-10-04,,Active
+MAIN,Main Street Capital Corporation,NYSE,Stock,2007-10-09,,Active
+PAYS,PaySign Inc,NASDAQ,Stock,2007-10-10,,Active
+FFNW,First Financial Northwest Inc,NASDAQ,Stock,2007-10-10,,Active
+NWG,NatWest Group Plc,NYSE,Stock,2007-10-18,,Active
+CVI,CVR Energy Inc,NYSE,Stock,2007-10-23,,Active
+ULTA,Ulta Beauty Inc,NASDAQ,Stock,2007-10-25,,Active
+SHIP,Seanergy Maritime Holdings Corp,NASDAQ,Stock,2007-10-26,,Active
+SDEV,Stablecoin Development Corporation,AMEX,Stock,2007-10-26,,Active
+FTLF,FitLife Brands Inc,NASDAQ,Stock,2007-11-02,,Active
+ACIC,American Coastal Insurance Corp,NASDAQ,Stock,2007-11-07,,Active
+ANTE,AirNet Technology Inc,NASDAQ,Stock,2007-11-07,,Active
+APEI,American Public Education Inc,NASDAQ,Stock,2007-11-09,,Active
+ENSG,Ensign Group Inc,NASDAQ,Stock,2007-11-09,,Active
+NMM,Navios Maritime Partners L.P.,NYSE,Stock,2007-11-13,,Active
+SCU,Sculptor Capital Management Inc - Class A,NYSE,Stock,2007-11-14,,Active
+MSCI,MSCI Inc,NYSE,Stock,2007-11-15,,Active
+CIM,Chimera Investment Corp,NYSE,Stock,2007-11-16,,Active
+ARR,ARMOUR Residential REIT Inc,NYSE,Stock,2007-12-03,,Active
+FNV,Franco-Nevada Corporation,NYSE,Stock,2007-12-07,,Active
+TITN,Titan Machinery Inc,NASDAQ,Stock,2007-12-13,,Active
+LRN,Stride Inc,NYSE,Stock,2007-12-13,,Active
+TNK,Teekay Tankers Ltd - Class A,NYSE,Stock,2007-12-13,,Active
+FOR,Forestar Group Inc New,NYSE,Stock,2007-12-13,,Active
+AEHL,Antelope Enterprise Holdings Ltd - Class A,NASDAQ,Stock,2007-12-17,,Active
+OESX,Orion Energy Systems Inc,NASDAQ,Stock,2007-12-19,,Active
+ORN,Orion Group Holdings Inc,NYSE,Stock,2007-12-20,,Active
+INFU,InfuSystem Holdings Inc,AMEX,Stock,2007-12-27,,Active
+GJP,Synthetic FixedIncome Securities Inc Synthetic FixedIncome Securities Inc on behalf of STRATS SM Trust for Dominion Resources Inc Securities Series 2,NYSE,Stock,2007-12-27,,Active
+FLNT,Fluent Inc,NASDAQ,Stock,2007-12-27,,Active
+GJR,Synthetic FixedIncome Securities Inc STRATS Trust for ProcterGamble Securities Series 20061,NYSE,Stock,2007-12-27,,Active
+NWE,NorthWestern Energy Group Inc,NASDAQ,Stock,2007-12-28,,Active
+GAU,Galiano Gold Inc,AMEX,Stock,2008-01-02,,Active
+DAN,Dana Inc,NYSE,Stock,2008-01-02,,Active
+ECHO,EchoStar Corp - Class A,NASDAQ,Stock,2008-01-02,,Active
+DMAC,DiaMedica Therapeutics Inc,NASDAQ,Stock,2008-01-04,,Active
+SFBC,Sound Financial Bancorp Inc,NASDAQ,Stock,2008-01-09,,Active
+BIP,Brookfield Infrastructure Partners L.P,NYSE,Stock,2008-01-10,,Active
+AACG,ATA Creativity Global,NASDAQ,Stock,2008-01-29,,Active
+HMR,Sports Properties Acquisition Corp,NASDAQ,Stock,2008-02-05,,Active
+DALN,DallasNews Corporation - Class A,NASDAQ,Stock,2008-02-11,,Active
+EVGN,Evogene Ltd,NASDAQ,Stock,2008-03-05,,Active
+GLBS,Globus Maritime Ltd,NASDAQ,Stock,2008-03-11,,Active
+BCDA,BioCardia Inc,NASDAQ,Stock,2008-03-14,,Active
+PM,Philip Morris International Inc,NYSE,Stock,2008-03-17,,Active
+V,Visa Inc - Class A,NYSE,Stock,2008-03-19,,Active
+IRDM,Iridium Communications Inc,NASDAQ,Stock,2008-03-20,,Active
+TROO,TROOPS Inc,NASDAQ,Stock,2008-04-09,,Active
+IPI,Intrepid Potash Inc,NYSE,Stock,2008-04-22,,Active
+AWK,American Water Works Co. Inc,NYSE,Stock,2008-04-23,,Active
+KDP,Keurig Dr Pepper Inc,NASDAQ,Stock,2008-04-28,,Active
+PLAG,Planet Green Holdings Corp,AMEX,Stock,2008-04-29,,Active
+ENOV,Enovis Corp,NYSE,Stock,2008-05-08,,Active
+AGNC,AGNC Investment Corp,NASDAQ,Stock,2008-05-15,,Active
+RDGT,Ridgetech Inc,NASDAQ,Stock,2008-05-16,,Active
+TFII,TFI International Inc,NYSE,Stock,2008-05-20,,Active
+SGLY,Singularity Future Technology Ltd,NASDAQ,Stock,2008-05-21,,Active
+SB,Safe Bulkers Inc,NYSE,Stock,2008-05-30,,Active
+OCSL,Oaktree Specialty Lending Corp,NASDAQ,Stock,2008-06-12,,Active
+ANY,Sphere 3D Corp,NASDAQ,Stock,2008-06-24,,Active
+BTG,B2gold Corp,AMEX,Stock,2008-06-24,,Active
+SELF,Global Self Storage Inc,NASDAQ,Stock,2008-06-24,,Active
+ERII,Energy Recovery Inc,NASDAQ,Stock,2008-07-02,,Active
+NAGE,Niagen Bioscience Inc,NASDAQ,Stock,2008-07-15,,Active
+JBTM,JBT Marel Corp,NYSE,Stock,2008-07-22,,Active
+URG,Ur-Energy Inc,AMEX,Stock,2008-07-25,,Active
+PRIM,Primoris Services Corp,NYSE,Stock,2008-08-06,,Active
+TREE,LendingTree Inc,NASDAQ,Stock,2008-08-12,,Active
+MYRG,MYR Group Inc,NASDAQ,Stock,2008-08-13,,Active
+WPRT,Westport Fuel Systems Inc,NASDAQ,Stock,2008-08-15,,Active
+GSL,Global Ship Lease Inc - Class A,NYSE,Stock,2008-08-15,,Active
+IBIO,iBio Inc,NASDAQ,Stock,2008-08-19,,Active
+MVBF,MVB Financial Corp,NASDAQ,Stock,2008-08-22,,Active
+CPHC,Canterbury Park Holding Corp,NASDAQ,Stock,2008-09-08,,Active
+ZNB,Zeta Network Group - Class A,NASDAQ,Stock,2008-09-11,,Active
+RGA,Reinsurance Group Of America Inc,NYSE,Stock,2008-09-12,,Active
+HCI,HCI Group Inc,NYSE,Stock,2008-09-15,,Active
+EC,Ecopetrol SA,NYSE,Stock,2008-09-18,,Active
+MHH,Mastech Digital Inc,AMEX,Stock,2008-09-19,,Active
+HBCP,Home Bancorp Inc,NASDAQ,Stock,2008-10-08,,Active
+APLD,Applied Digital Corporation,NASDAQ,Stock,2008-10-22,,Active
+KGEI,Kolibri Global Energy Inc,NASDAQ,Stock,2008-10-27,,Active
+TAK,Takeda Pharmaceutical Company,NYSE,Stock,2008-10-27,,Active
+BPOPM,Popular Capital Trust II,NASDAQ,Stock,2008-11-19,,Active
+LOPE,Grand Canyon Education Inc,NASDAQ,Stock,2008-11-20,,Active
+NIXX,Nixxy Inc,NASDAQ,Stock,2008-11-20,,Active
+CLW,Clearwater Paper Corp,NYSE,Stock,2008-12-05,,Active
+VRTS,Virtus Investment Partners Inc,NYSE,Stock,2009-01-02,,Active
+CYRX,CryoPort Inc,NASDAQ,Stock,2009-01-02,,Active
+AMRX,Amneal Pharmaceuticals Inc - Class A,NASDAQ,Stock,2009-01-15,,Active
+GOAI,Eva Live Inc,NASDAQ,Stock,2009-01-22,,Active
+NEPH,Nephros Inc,NASDAQ,Stock,2009-01-22,,Active
+HBM,Hudbay Minerals Inc,NYSE,Stock,2009-02-13,,Active
+SLNH,Soluna Holdings Inc,NASDAQ,Stock,2009-04-28,,Active
+OPXS,Optex Systems Holdings Inc,NASDAQ,Stock,2009-05-04,,Active
+VRME,VerifyMe Inc,NASDAQ,Stock,2009-05-07,,Active
+ABI,VICTORYSHARES PIONEER ASSET-BASED INCOME ETF ,NASDAQ,Stock,2009-05-11,,Active
+GMAB,Genmab,NASDAQ,Stock,2009-06-01,,Active
+NATR,Nature`s Sunshine Products Inc,NASDAQ,Stock,2009-06-25,,Active
+BUD,Anheuser-Busch InBev SA/NV,NYSE,Stock,2009-07-01,,Active
+IVR,Invesco Mortgage Capital Inc,NYSE,Stock,2009-07-01,,Active
+VATE,Innovate Corp,NYSE,Stock,2009-07-13,,Active
+GSM,Ferroglobe Plc,NASDAQ,Stock,2009-07-30,,Active
+RCON,Recon Technology Ltd - Class A,NASDAQ,Stock,2009-07-30,,Active
+PMT,Pennymac Mortgage Investment Trust,NYSE,Stock,2009-07-30,,Active
+ASPS,Altisource Portfolio Solutions S.A.,NASDAQ,Stock,2009-08-06,,Active
+AVGO,Broadcom Inc,NASDAQ,Stock,2009-08-06,,Active
+CPIX,Cumberland Pharmaceuticals Inc,NASDAQ,Stock,2009-08-11,,Active
+STWD,Starwood Property Trust Inc,NYSE,Stock,2009-08-12,,Active
+CNET,ZW Data Action Technologies Inc,NASDAQ,Stock,2009-08-14,,Active
+SPB,Spectrum Brands Holdings Inc,NYSE,Stock,2009-09-02,,Active
+ARI,Apollo Commercial Real Estate Finance Inc,NYSE,Stock,2009-09-24,,Active
+VRSK,Verisk Analytics Inc,NASDAQ,Stock,2009-10-07,,Active
+BSBR,Banco Santander (Brasil) S.A.,NYSE,Stock,2009-10-07,,Active
+MG,Mistras Group Inc,NYSE,Stock,2009-10-08,,Active
+OMER,Omeros Corporation,NASDAQ,Stock,2009-10-08,,Active
+ADUS,Addus HomeCare Corporation,NASDAQ,Stock,2009-10-28,,Active
+SBFM,Sunshine Biopharma Inc,NASDAQ,Stock,2009-10-30,,Active
+MRDN,Golden Matrix Group Inc,NASDAQ,Stock,2009-10-30,,Active
+H,Hyatt Hotels Corporation - Class A,NYSE,Stock,2009-11-05,,Active
+LEA,Lear Corp,NYSE,Stock,2009-11-09,,Active
+AQN,Algonquin Power & Utilities Corp,NYSE,Stock,2009-11-10,,Active
+DG,Dollar General Corp,NYSE,Stock,2009-11-13,,Active
+CVE,Cenovus Energy Inc,NYSE,Stock,2009-11-17,,Active
+FTNT,Fortinet Inc,NASDAQ,Stock,2009-11-18,,Active
+EVO,Evotec SE,NASDAQ,Stock,2009-12-04,,Active
+PEB,Pebblebrook Hotel Trust,NYSE,Stock,2009-12-09,,Active
+CCM,Concord Medical Services,NYSE,Stock,2009-12-11,,Active
+OPLN,Openlane Inc,NYSE,Stock,2009-12-11,,Active
+QRHC,Quest Resource Holding Corp,NASDAQ,Stock,2010-01-05,,Active
+FERG,Ferguson Plc.,NYSE,Stock,2010-01-05,,Active
+CHTR,Charter Communications Inc - Class A,NASDAQ,Stock,2010-01-05,,Active
+CEGX,TRADR 2X LONG CEG DAILY ETF ,BATS,Stock,2010-01-15,,Active
+RTB,RTB Digital Inc,NASDAQ,Stock,2010-01-20,,Active
+IRWD,Ironwood Pharmaceuticals Inc - Class A,NASDAQ,Stock,2010-02-03,,Active
+SLRC,SLR Investment Corp,NASDAQ,Stock,2010-02-09,,Active
+PDM,Piedmont Office Realty Trust Inc - Class A,NYSE,Stock,2010-02-10,,Active
+TRNO,Terreno Realty Corp,NYSE,Stock,2010-02-10,,Active
+QNST,QuinStreet Inc,NASDAQ,Stock,2010-02-11,,Active
+GNRC,Generac Holdings Inc,NYSE,Stock,2010-02-11,,Active
+MINE,Minerco Inc,AMEX,Stock,2010-03-03,,Active
+ST,Sensata Technologies Holding Plc,NYSE,Stock,2010-03-11,,Active
+CALX,Calix Inc,NYSE,Stock,2010-03-24,,Active
+FIBK,First Interstate BancSystem Inc,NASDAQ,Stock,2010-03-24,,Active
+MXL,MaxLinear Inc,NASDAQ,Stock,2010-03-24,,Active
+VFF,Village Farms International Inc,NASDAQ,Stock,2010-03-25,,Active
+HTHT,H World Group Ltd,NASDAQ,Stock,2010-03-26,,Active
+SSNC,SS&C Technologies Holdings Inc,NASDAQ,Stock,2010-03-31,,Active
+STNG,Scorpio Tankers Inc,NYSE,Stock,2010-03-31,,Active
+PRI,Primerica Inc,NYSE,Stock,2010-04-01,,Active
+TSSI,TSS Inc,NASDAQ,Stock,2010-04-01,,Active
+BWFG,Bankwell Financial Group Inc,NASDAQ,Stock,2010-04-05,,Active
+VUZI,Vuzix Corporation,NASDAQ,Stock,2010-04-05,,Active
+LIXT,Nomad Power Solutions Inc,NASDAQ,Stock,2010-04-08,,Active
+GBDC,Golub Capital BDC Inc,NASDAQ,Stock,2010-04-15,,Active
+CLDT,Chatham Lodging Trust,NYSE,Stock,2010-04-16,,Active
+NEGG,Newegg Commerce Inc,NASDAQ,Stock,2010-04-22,,Active
+SPSC,SPS Commerce Inc,NASDAQ,Stock,2010-04-22,,Active
+CDXS,Codexis Inc,NASDAQ,Stock,2010-04-22,,Active
+SCNX,Scienture Holdings Inc,NASDAQ,Stock,2010-04-27,,Active
+LYB,LyondellBasell Industries NV - Class A,NYSE,Stock,2010-04-28,,Active
+AOSL,Alpha & Omega Semiconductor Ltd,NASDAQ,Stock,2010-04-29,,Active
+BEEM,Beam Global,NASDAQ,Stock,2010-04-30,,Active
+TGTX,TG Therapeutics Inc,NASDAQ,Stock,2010-05-03,,Active
+PLOW,Douglas Dynamics Inc,NYSE,Stock,2010-05-05,,Active
+SIX,Six Flags Entertainment Corp,NYSE,Stock,2010-05-11,,Active
+CRMD,CorMedix Inc,NASDAQ,Stock,2010-05-13,,Active
+JKS,JinkoSolar Holding Co. Ltd,NYSE,Stock,2010-05-14,,Active
+CPS,Cooper-Standard Holdings Inc,NYSE,Stock,2010-05-27,,Active
+FAF,First American Financial Corp,NYSE,Stock,2010-05-28,,Active
+STLA,Stellantis N.V,NYSE,Stock,2010-06-09,,Active
+CBOE,Cboe Global Markets Inc,BATS,Stock,2010-06-15,,Active
+VPG,Vishay Precision Group Inc,NYSE,Stock,2010-06-23,,Active
+HPP,Hudson Pacific Properties Inc,NYSE,Stock,2010-06-24,,Active
+FN,Fabrinet,NYSE,Stock,2010-06-25,,Active
+TSLA,Tesla Inc,NASDAQ,Stock,2010-06-29,,Active
+KKR,KKR & Co. Inc,NYSE,Stock,2010-07-15,,Active
+AMRC,Ameresco Inc - Class A,NYSE,Stock,2010-07-22,,Active
+GDOT,Green Dot Corp - Class A,NYSE,Stock,2010-07-22,,Active
+BWXT,BWX Technologies Inc,NYSE,Stock,2010-08-02,,Active
+NXPI,NXP Semiconductors NV,NASDAQ,Stock,2010-08-06,,Active
+MMYT,MakeMyTrip Ltd,NASDAQ,Stock,2010-08-12,,Active
+ELMD,Electromed Inc,AMEX,Stock,2010-08-13,,Active
+VET,Vermilion Energy Inc,NYSE,Stock,2010-09-14,,Active
+PMCB,PharmaCyte Biotech Inc,NASDAQ,Stock,2010-09-17,,Active
+SASI,Sigma Additive Solutions Inc,NASDAQ,Stock,2010-09-20,,Active
+DTST,Data Storage Corp,NASDAQ,Stock,2010-09-20,,Active
+C-P-N,Citigroup Capital VIII 7875 Fixed rate Floating Rate trust Preferred Securities TruPS,NYSE,Stock,2010-10-04,,Active
+VC,Visteon Corp,NASDAQ,Stock,2010-10-05,,Active
+TBCH,Turtle Beach Corp,NASDAQ,Stock,2010-10-05,,Active
+PBA,Pembina Pipeline Corporation,NYSE,Stock,2010-10-06,,Active
+DQ,Daqo New Energy Corp,NYSE,Stock,2010-10-07,,Active
+EFC,Ellington Financial Inc,NYSE,Stock,2010-10-08,,Active
+TIPT,Tiptree Inc,NASDAQ,Stock,2010-10-15,,Active
+GPRK,Geopark Ltd,NYSE,Stock,2010-10-15,,Active
+IOVA,Iovance Biotherapeutics Inc,NASDAQ,Stock,2010-10-15,,Active
+TAL,TAL Education Group,NYSE,Stock,2010-10-20,,Active
+VRA,Vera Bradley Inc,NASDAQ,Stock,2010-10-21,,Active
+PACB,Pacific Biosciences of California Inc,NASDAQ,Stock,2010-10-27,,Active
+BCTX,BriaCell Therapeutics Corp - New,NASDAQ,Stock,2010-10-28,,Active
+HRZN,Horizon Technology Finance Corp,NASDAQ,Stock,2010-10-29,,Active
+CMRE,Costamare Inc,NYSE,Stock,2010-11-04,,Active
+HHH,Howard Hughes Corporation,NYSE,Stock,2010-11-05,,Active
+NOAH,Noah Holdings Ltd,NYSE,Stock,2010-11-10,,Active
+BAH,Booz Allen Hamilton Holding Corp - Class A,NYSE,Stock,2010-11-18,,Active
+GM,General Motors Company,NYSE,Stock,2010-11-18,,Active
+LPLA,LPL Financial Holdings Inc,NASDAQ,Stock,2010-11-18,,Active
+TROX,Tronox Holdings plc - Class A,NYSE,Stock,2010-12-01,,Active
+TRGP,Targa Resources Corp,NYSE,Stock,2010-12-07,,Active
+LEDS,Semileds Corp,NASDAQ,Stock,2010-12-09,,Active
+WD,Walker & Dunlop Inc,NYSE,Stock,2010-12-15,,Active
+CPAY,Fleetcor Technologies Inc,NYSE,Stock,2010-12-15,,Active
+ASMB,Assembly Biosciences Inc,NASDAQ,Stock,2010-12-17,,Active
+PSHG,Performance Shipping Inc,NASDAQ,Stock,2011-01-03,,Active
+CTGO,Contango Ore Inc,AMEX,Stock,2011-01-10,,Active
+AAT,American Assets Trust Inc,NYSE,Stock,2011-01-13,,Active
+XXII,22nd Century Group Inc,NASDAQ,Stock,2011-01-26,,Active
+BKU,BankUnited Inc,NYSE,Stock,2011-01-28,,Active
+AGRO,Adecoagro S.A.,NYSE,Stock,2011-01-28,,Active
+PCRX,Pacira BioSciences Inc,NASDAQ,Stock,2011-02-03,,Active
+GEVO,Gevo Inc,NASDAQ,Stock,2011-02-09,,Active
+INN,Summit Hotel Properties Inc,NYSE,Stock,2011-02-09,,Active
+TLPH,Talphera Inc,NASDAQ,Stock,2011-02-11,,Active
+KMI,Kinder Morgan Inc - Class P,NYSE,Stock,2011-02-11,,Active
+BESS,Bimergen Energy Corp,AMEX,Stock,2011-02-22,,Active
+SMTI,Sanara MedTech Inc,NASDAQ,Stock,2011-02-22,,Active
+WFCF,Where Food Comes From Inc,NASDAQ,Stock,2011-02-23,,Active
+ASTH,Apollo Medical Holdings Inc,NASDAQ,Stock,2011-02-23,,Active
+BYRN,Byrna Technologies Inc,NASDAQ,Stock,2011-02-23,,Active
+CCEL,Cryo-Cell International Inc,AMEX,Stock,2011-02-23,,Active
+EP,Empire Petroleum Corporation,AMEX,Stock,2011-02-23,,Active
+IDR,Idaho Strategic Resources Inc,AMEX,Stock,2011-02-23,,Active
+AIFF,WaveDancer Inc,NASDAQ,Stock,2011-02-23,,Active
+SUNS,SLR Senior Investment Corp,NASDAQ,Stock,2011-02-25,,Active
+KG,KING PHARMACEUTICALS INC,NASDAQ,Stock,2011-02-28,,Active
+CCOM,CCOM Group Inc,NYSE,Stock,2011-02-28,,Active
+ARMP,Armata Pharmaceuticals Inc,AMEX,Stock,2011-03-09,,Active
+HCA,HCA Healthcare Inc,NYSE,Stock,2011-03-10,,Active
+MX,MagnaChip Semiconductor Corp,NYSE,Stock,2011-03-11,,Active
+FURY,Fury Gold Mines Ltd,AMEX,Stock,2011-03-11,,Active
+HII,Huntington Ingalls Industries Inc,NYSE,Stock,2011-03-22,,Active
+FF,Futurefuel Corp,NYSE,Stock,2011-03-23,,Active
+APO,Apollo Global Management Inc,NYSE,Stock,2011-03-30,,Active
+ABVC,ABVC BioPharma Inc,NASDAQ,Stock,2011-04-05,,Active
+GNMX,Medgenics Inc,NASDAQ,Stock,2011-04-08,,Active
+PFLT,PennantPark Floating Rate Capital Ltd,NYSE,Stock,2011-04-08,,Active
+UAN,CVR Partners LP,NYSE,Stock,2011-04-08,,Active
+NSPR,InspireMD Inc,NASDAQ,Stock,2011-04-12,,Active
+ARCO,Arcos Dorados Holdings Inc - Class A,NYSE,Stock,2011-04-14,,Active
+STAG,STAG Industrial Inc,NYSE,Stock,2011-04-15,,Active
+SQNS,Sequans Communications S.A,NYSE,Stock,2011-04-19,,Active
+VNET,VNET Group Inc,NASDAQ,Stock,2011-04-21,,Active
+VOC,VOC Energy Trust,NYSE,Stock,2011-05-06,,Active
+ACST,Acasti Pharma Inc - Class A,NASDAQ,Stock,2011-05-06,,Active
+CBX,NYSE LISTED TEST,NYSE,Stock,2011-05-09,,Active
+KOS,Kosmos Energy Ltd,NYSE,Stock,2011-05-11,,Active
+RLJ,RLJ Lodging Trust,NYSE,Stock,2011-05-11,,Active
+FENG,Phoenix New Media Ltd,NYSE,Stock,2011-05-16,,Active
+NGL,NGL Energy Partners LP,NYSE,Stock,2011-05-16,,Active
+COCP,Cocrystal Pharma Inc,NASDAQ,Stock,2011-05-19,,Active
+NMFC,New Mountain Finance Corp,NASDAQ,Stock,2011-05-20,,Active
+NBIS,Nebius Group N.V. - Class A,NASDAQ,Stock,2011-05-24,,Active
+TIGO,Millicom International Cellular S.A.,NASDAQ,Stock,2011-05-31,,Active
+GRFS,Grifols SA,NASDAQ,Stock,2011-06-02,,Active
+GIFT,RDE Inc,NASDAQ,Stock,2011-06-08,,Active
+EFXT,Enerflex Ltd,NYSE,Stock,2011-06-13,,Active
+AMCX,AMC Networks Inc - Class A,NASDAQ,Stock,2011-06-16,,Active
+FDUS,Fidus Investment Corp,NASDAQ,Stock,2011-06-21,,Active
+MPC,Marathon Petroleum Corp,NYSE,Stock,2011-06-23,,Active
+MITT,AG Mortgage Investment Trust Inc,NYSE,Stock,2011-06-30,,Active
+GLDG,GoldMining Inc,AMEX,Stock,2011-07-05,,Active
+INPX,XTI Aerospace Inc,NASDAQ,Stock,2011-07-14,,Active
+ZG,Zillow Group Inc - Class A,NASDAQ,Stock,2011-07-20,,Active
+CAPS,Capstone Holding Corp,NASDAQ,Stock,2011-07-21,,Active
+SXC,SunCoke Energy Inc,NYSE,Stock,2011-07-21,,Active
+BLRX,Bioline Rx Ltd,NASDAQ,Stock,2011-07-27,,Active
+CHEF,Chefs` Warehouse Inc,NASDAQ,Stock,2011-07-28,,Active
+IZEA,IZEA Worldwide Inc,NASDAQ,Stock,2011-08-29,,Active
+LIQT,LiqTech International Inc,NASDAQ,Stock,2011-08-31,,Active

@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Bulk source data (940MB / 746MB, regenerate with extract_earnings_call_transcript_data.py)
+earnings_call_transcript_segments.csv
+earnings_call_transcripts.csv
+
+# LLM scoring artifacts (31GB of per-call JSON responses)
+artifacts/
+
+# Large inspection dumps (68MB each)
+*.inspect.ndjson
+
+# Matplotlib / fontconfig caches
+work/fontconfig_cache/
+work/matplotlib_config/

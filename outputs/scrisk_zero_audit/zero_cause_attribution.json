@@ -1,0 +1,38 @@
+{
+  "1_transcript_content_absent": {
+    "calls": 14,
+    "percent_of_zeros": 0.14
+  },
+  "2a_vocabulary_coverage_gap": {
+    "calls": 2019,
+    "percent_of_zeros": 20.71
+  },
+  "2b_vocabulary_gap_shortage_self_pair": {
+    "calls": 338,
+    "percent_of_zeros": 3.47
+  },
+  "3_window_near_miss_11_to_25_tokens": {
+    "calls": 1997,
+    "percent_of_zeros": 20.48
+  },
+  "4_window_miss_26_to_50_tokens": {
+    "calls": 1517,
+    "percent_of_zeros": 15.56
+  },
+  "5_no_colocated_language_at_any_plausible_window": {
+    "calls": 3865,
+    "percent_of_zeros": 39.64
+  },
+  "_total": {
+    "calls": 9750,
+    "percent_of_zeros": 100.0
+  },
+  "_recoverable_by_vocabulary_fix_alone": {
+    "calls": 2358,
+    "percent_of_zeros": 24.18
+  },
+  "_recoverable_by_vocabulary_or_window_25": {
+    "calls": 4356,
+    "percent_of_zeros": 44.68
+  }
+}

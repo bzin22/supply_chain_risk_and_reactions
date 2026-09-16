@@ -1,0 +1,51 @@
+key,company,sector,year,tokens,bucket,current_nearest_distance,seeded_nearest_distance,verdict
+ACLS|2013Q3,"Axcelis Technologies, Inc.",Semiconductors,2013,4098,both_present_never_within_window,219,155,near_miss
+ACU|2017Q2,Acme United Corporation,Consumer Goods,2017,2764,both_present_never_within_window,114,69,near_miss
+ADI|2022Q1,"Analog Devices, Inc.",Semiconductors,2022,5546,both_present_never_within_window,14,14,near_miss
+ALKS|2018Q3,Alkermes plc,Healthcare,2018,6225,both_present_never_within_window,1228,244,near_miss
+ASML|2016Q4,ASML Holding N.V.,Semiconductors,2016,8509,both_present_never_within_window,12,5,false_zero_dropped_seed_vocabulary
+ATRO|2015Q3,Astronics Corporation,Industrials,2015,6792,both_present_never_within_window,414,383,near_miss
+BOH|2013Q1,Bank of Hawaii Corporation,Financial Services,2013,5461,both_present_never_within_window,75,75,true_zero_no_colocated_language
+BOH|2018Q3,Bank of Hawaii Corporation,Financial Services,2018,3057,both_present_never_within_window,191,17,near_miss
+BXMT|2023Q2,"Blackstone Mortgage Trust, Inc.",Real Estate,2023,4928,both_present_never_within_window,85,85,true_zero_no_colocated_language
+CAH|2015Q1,"Cardinal Health, Inc.",Healthcare,2015,7453,both_present_never_within_window,28,28,true_zero_no_colocated_language
+CASY|2015Q1,"Casey's General Stores, Inc.",Retail,2015,5947,both_present_never_within_window,299,299,true_zero_no_colocated_language
+CBRL|2016Q2,"Cracker Barrel Old Country Store, Inc.",Retail,2016,7029,both_present_never_within_window,176,119,near_miss
+CDNS|2015Q1,"Cadence Design Systems, Inc.",Technology,2015,6575,both_present_never_within_window,106,35,near_miss
+CGNX|2012Q1,Cognex Corporation,Technology,2012,4656,both_present_never_within_window,158,21,near_miss
+CLX|2010Q2,The Clorox Company,Consumer Goods,2010,9142,both_present_never_within_window,15,15,near_miss
+CNMD|2012Q1,CONMED Corporation,Healthcare,2012,7090,both_present_never_within_window,75,75,true_zero_no_colocated_language
+CNMD|2013Q1,CONMED Corporation,Healthcare,2013,6087,both_present_never_within_window,93,93,true_zero_no_colocated_language
+COO|2018Q4,"The Cooper Companies, Inc.",Healthcare,2018,9642,both_present_never_within_window,49,12,near_miss
+CPT|2013Q1,Camden Property Trust,Real Estate,2013,6355,both_present_never_within_window,53,1,false_zero_dropped_seed_vocabulary
+CRK|2011Q4,"Comstock Resources, Inc.",Energy,2011,8947,both_present_never_within_window,21,21,near_miss
+CRUS|2022Q2,"Cirrus Logic, Inc.",Semiconductors,2022,7621,both_present_never_within_window,15,0,false_zero_dropped_seed_vocabulary
+EGY|2022Q1,"VAALCO Energy, Inc.",Energy,2022,7029,both_present_never_within_window,32,22,near_miss
+ENTG|2019Q2,"Entegris, Inc.",Semiconductors,2019,5581,both_present_never_within_window,11,10,false_zero_dropped_seed_vocabulary
+EOG|2019Q4,"EOG Resources, Inc.",Energy,2019,8585,both_present_never_within_window,49,45,near_miss
+ERIC|2015Q1,Telefonaktiebolaget LM Ericsson (publ),Technology,2015,9293,both_present_never_within_window,63,63,true_zero_no_colocated_language
+HAL|2024Q1,Halliburton Company,Energy,2024,5454,both_present_never_within_window,73,2,false_zero_dropped_seed_vocabulary
+HCSG|2015Q3,"Healthcare Services Group, Inc.",Healthcare,2015,4298,both_present_never_within_window,32,32,true_zero_no_colocated_language
+IDCC|2024Q1,"InterDigital, Inc.",Technology,2024,3312,both_present_never_within_window,33,33,true_zero_no_colocated_language
+JJSF|2013Q2,J&J Snack Foods Corp.,Consumer Goods,2013,5575,both_present_never_within_window,254,177,near_miss
+JKHY|2019Q1,"Jack Henry & Associates, Inc.",Technology,2019,4888,both_present_never_within_window,227,227,true_zero_no_colocated_language
+KBH|2015Q2,KB Home,Retail,2015,8691,both_present_never_within_window,41,41,true_zero_no_colocated_language
+KIM|2010Q1,Kimco Realty Corporation,Real Estate,2010,6511,both_present_never_within_window,21,10,false_zero_dropped_seed_vocabulary
+KMB|2019Q3,Kimberly-Clark Corporation,Consumer Goods,2019,8459,both_present_never_within_window,21,21,near_miss
+LTC|2019Q2,"LTC Properties, Inc.",Real Estate,2019,5569,both_present_never_within_window,109,109,true_zero_no_colocated_language
+LTC|2023Q2,"LTC Properties, Inc.",Real Estate,2023,5156,both_present_never_within_window,205,205,true_zero_no_colocated_language
+LTC|2024Q4,"LTC Properties, Inc.",Real Estate,2024,4418,both_present_never_within_window,29,29,true_zero_no_colocated_language
+L|2011Q4,Loews Corporation,Financial Services,2011,4323,both_present_never_within_window,23,23,near_miss
+ORCL|2016Q2,Oracle Corporation,Technology,2016,5328,both_present_never_within_window,91,91,true_zero_no_colocated_language
+PHG|2014Q3,Koninklijke Philips N.V.,Healthcare,2014,5473,both_present_never_within_window,102,102,true_zero_no_colocated_language
+QCOM|2016Q4,QUALCOMM Incorporated,Semiconductors,2016,7973,both_present_never_within_window,110,110,true_zero_no_colocated_language
+RES|2010Q3,"RPC, Inc.",Energy,2010,6229,both_present_never_within_window,383,383,true_zero_no_colocated_language
+RMBS|2010Q1,Rambus Inc.,Semiconductors,2010,6564,both_present_never_within_window,377,377,true_zero_no_colocated_language
+SKT|2013Q4,Tanger Inc.,Real Estate,2013,7862,both_present_never_within_window,76,10,false_zero_dropped_seed_vocabulary
+SLB|2021Q3,SLB N.V.,Energy,2021,5886,both_present_never_within_window,11,1,false_zero_dropped_seed_vocabulary
+TMO|2022Q2,Thermo Fisher Scientific Inc.,Healthcare,2022,8936,both_present_never_within_window,25,5,false_zero_dropped_seed_vocabulary
+UIS|2015Q3,Unisys Corporation,Technology,2015,8212,both_present_never_within_window,30,30,true_zero_no_colocated_language
+UL|2024Q3,Unilever PLC,Consumer Goods,2024,6634,both_present_never_within_window,157,157,true_zero_no_colocated_language
+UMH|2021Q3,"UMH Properties, Inc.",Real Estate,2021,5483,both_present_never_within_window,12,4,false_zero_dropped_seed_vocabulary
+VSH|2015Q3,"Vishay Intertechnology, Inc.",Semiconductors,2015,7061,both_present_never_within_window,115,11,near_miss
+WHR|2010Q4,Whirlpool Corporation,Retail,2010,7565,both_present_never_within_window,11,11,near_miss

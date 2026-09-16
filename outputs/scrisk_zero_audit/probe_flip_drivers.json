@@ -1,0 +1,828 @@
+{
+  "seeds": {
+    "calls_flipped": 1815,
+    "top_supply_chain_terms": [
+      [
+        "customers",
+        641
+      ],
+      [
+        "supply",
+        432
+      ],
+      [
+        "inventory",
+        231
+      ],
+      [
+        "supply chain",
+        169
+      ],
+      [
+        "manufacturing",
+        120
+      ],
+      [
+        "distribution",
+        88
+      ],
+      [
+        "transportation",
+        39
+      ],
+      [
+        "logistics",
+        26
+      ],
+      [
+        "purchasing",
+        24
+      ],
+      [
+        "suppliers",
+        17
+      ],
+      [
+        "sourcing",
+        15
+      ],
+      [
+        "procurement",
+        7
+      ],
+      [
+        "channel partners",
+        3
+      ],
+      [
+        "fulfillment",
+        2
+      ],
+      [
+        "warehousing",
+        1
+      ]
+    ],
+    "top_risk_terms": [
+      [
+        "risk",
+        275
+      ],
+      [
+        "disruptions",
+        192
+      ],
+      [
+        "concerns",
+        136
+      ],
+      [
+        "exposure",
+        130
+      ],
+      [
+        "uncertainty",
+        103
+      ],
+      [
+        "volatility",
+        102
+      ],
+      [
+        "concern",
+        99
+      ],
+      [
+        "risks",
+        90
+      ],
+      [
+        "lead times",
+        88
+      ],
+      [
+        "disruption",
+        66
+      ],
+      [
+        "uncertain",
+        62
+      ],
+      [
+        "shortage",
+        55
+      ],
+      [
+        "supply chain disruption",
+        45
+      ],
+      [
+        "tariffs",
+        42
+      ],
+      [
+        "supply disruption",
+        35
+      ]
+    ],
+    "top_pairs": [
+      [
+        "customers + risk",
+        118
+      ],
+      [
+        "supply chain + disruptions",
+        100
+      ],
+      [
+        "customers + concerns",
+        60
+      ],
+      [
+        "customers + exposure",
+        58
+      ],
+      [
+        "inventory + risk",
+        54
+      ],
+      [
+        "supply + disruptions",
+        54
+      ],
+      [
+        "customers + concern",
+        47
+      ],
+      [
+        "customers + uncertainty",
+        46
+      ],
+      [
+        "supply + supply chain disruption",
+        45
+      ],
+      [
+        "customers + volatility",
+        44
+      ],
+      [
+        "customers + uncertain",
+        42
+      ],
+      [
+        "supply + concerns",
+        38
+      ],
+      [
+        "supply + shortage",
+        35
+      ],
+      [
+        "supply + supply disruption",
+        35
+      ],
+      [
+        "supply + risk",
+        33
+      ]
+    ]
+  },
+  "hyphen": {
+    "calls_flipped": 216,
+    "top_supply_chain_terms": [
+      [
+        "customer",
+        16
+      ],
+      [
+        "retail",
+        16
+      ],
+      [
+        "pipeline",
+        16
+      ],
+      [
+        "deliver",
+        16
+      ],
+      [
+        "production",
+        15
+      ],
+      [
+        "delivering",
+        14
+      ],
+      [
+        "source",
+        13
+      ],
+      [
+        "client",
+        9
+      ],
+      [
+        "clients",
+        9
+      ],
+      [
+        "shipments",
+        7
+      ],
+      [
+        "supplier",
+        6
+      ],
+      [
+        "backlog",
+        5
+      ],
+      [
+        "network",
+        5
+      ],
+      [
+        "finished",
+        5
+      ],
+      [
+        "component",
+        4
+      ]
+    ],
+    "top_risk_terms": [
+      [
+        "risk",
+        141
+      ],
+      [
+        "volatile",
+        17
+      ],
+      [
+        "lead time",
+        14
+      ],
+      [
+        "single source",
+        11
+      ],
+      [
+        "exposure",
+        10
+      ],
+      [
+        "volatility",
+        3
+      ],
+      [
+        "concern",
+        3
+      ],
+      [
+        "lead times",
+        2
+      ],
+      [
+        "concerns",
+        2
+      ],
+      [
+        "uncertainties",
+        2
+      ],
+      [
+        "disruptions",
+        2
+      ],
+      [
+        "vulnerabilities",
+        1
+      ],
+      [
+        "uncertain",
+        1
+      ],
+      [
+        "risky",
+        1
+      ],
+      [
+        "downside",
+        1
+      ]
+    ],
+    "top_pairs": [
+      [
+        "deliver + risk",
+        16
+      ],
+      [
+        "pipeline + risk",
+        13
+      ],
+      [
+        "delivering + risk",
+        12
+      ],
+      [
+        "source + single source",
+        11
+      ],
+      [
+        "production + risk",
+        11
+      ],
+      [
+        "retail + risk",
+        10
+      ],
+      [
+        "customer + risk",
+        9
+      ],
+      [
+        "clients + risk",
+        9
+      ],
+      [
+        "shipments + volatile",
+        7
+      ],
+      [
+        "client + risk",
+        6
+      ],
+      [
+        "finished + risk",
+        5
+      ],
+      [
+        "buying + risk",
+        4
+      ],
+      [
+        "production + volatile",
+        3
+      ],
+      [
+        "supplier + risk",
+        3
+      ],
+      [
+        "backlog + risk",
+        3
+      ]
+    ]
+  },
+  "stem": {
+    "calls_flipped": 3127,
+    "top_supply_chain_terms": [
+      [
+        "customer",
+        638
+      ],
+      [
+        "supply",
+        542
+      ],
+      [
+        "shortage",
+        357
+      ],
+      [
+        "inventory",
+        219
+      ],
+      [
+        "forecast",
+        214
+      ],
+      [
+        "material",
+        157
+      ],
+      [
+        "stock",
+        135
+      ],
+      [
+        "order",
+        133
+      ],
+      [
+        "manufactur",
+        113
+      ],
+      [
+        "channel",
+        70
+      ],
+      [
+        "track",
+        69
+      ],
+      [
+        "deliver",
+        66
+      ],
+      [
+        "buy",
+        56
+      ],
+      [
+        "plann",
+        35
+      ],
+      [
+        "purchase",
+        34
+      ]
+    ],
+    "top_risk_terms": [
+      [
+        "concern",
+        674
+      ],
+      [
+        "risk",
+        561
+      ],
+      [
+        "shortage",
+        338
+      ],
+      [
+        "exposure",
+        203
+      ],
+      [
+        "volatility",
+        191
+      ],
+      [
+        "uncertainty",
+        182
+      ],
+      [
+        "disruption",
+        174
+      ],
+      [
+        "supply chain disruption",
+        123
+      ],
+      [
+        "lead time",
+        120
+      ],
+      [
+        "volatile",
+        77
+      ],
+      [
+        "uncertain",
+        75
+      ],
+      [
+        "supply disruption",
+        70
+      ],
+      [
+        "tariff",
+        60
+      ],
+      [
+        "threat",
+        48
+      ],
+      [
+        "downside",
+        30
+      ]
+    ],
+    "top_pairs": [
+      [
+        "shortage + shortage",
+        338
+      ],
+      [
+        "customer + concern",
+        180
+      ],
+      [
+        "customer + risk",
+        132
+      ],
+      [
+        "supply + supply chain disruption",
+        123
+      ],
+      [
+        "supply + concern",
+        99
+      ],
+      [
+        "forecast + risk",
+        92
+      ],
+      [
+        "supply + supply disruption",
+        70
+      ],
+      [
+        "inventory + concern",
+        62
+      ],
+      [
+        "material + risk",
+        58
+      ],
+      [
+        "customer + exposure",
+        57
+      ],
+      [
+        "customer + uncertainty",
+        52
+      ],
+      [
+        "supply + disruption",
+        50
+      ],
+      [
+        "supply + risk",
+        48
+      ],
+      [
+        "inventory + risk",
+        48
+      ],
+      [
+        "stock + volatility",
+        44
+      ]
+    ]
+  },
+  "window25": {
+    "calls_flipped": 3181,
+    "top_supply_chain_terms": [
+      [
+        "customer",
+        310
+      ],
+      [
+        "production",
+        278
+      ],
+      [
+        "pipeline",
+        198
+      ],
+      [
+        "retail",
+        154
+      ],
+      [
+        "deliver",
+        150
+      ],
+      [
+        "planning",
+        108
+      ],
+      [
+        "materials",
+        106
+      ],
+      [
+        "clients",
+        92
+      ],
+      [
+        "orders",
+        88
+      ],
+      [
+        "backlog",
+        77
+      ],
+      [
+        "buying",
+        69
+      ],
+      [
+        "delivering",
+        60
+      ],
+      [
+        "shipments",
+        59
+      ],
+      [
+        "delivery",
+        58
+      ],
+      [
+        "retailers",
+        56
+      ]
+    ],
+    "top_risk_terms": [
+      [
+        "risk",
+        693
+      ],
+      [
+        "exposure",
+        310
+      ],
+      [
+        "volatility",
+        284
+      ],
+      [
+        "uncertainty",
+        255
+      ],
+      [
+        "concerns",
+        196
+      ],
+      [
+        "concern",
+        178
+      ],
+      [
+        "risks",
+        146
+      ],
+      [
+        "uncertain",
+        133
+      ],
+      [
+        "disruption",
+        117
+      ],
+      [
+        "volatile",
+        112
+      ],
+      [
+        "lead times",
+        96
+      ],
+      [
+        "disruptions",
+        91
+      ],
+      [
+        "uncertainties",
+        76
+      ],
+      [
+        "shortage",
+        67
+      ],
+      [
+        "tariffs",
+        51
+      ]
+    ],
+    "top_pairs": [
+      [
+        "customer + risk",
+        68
+      ],
+      [
+        "pipeline + risk",
+        66
+      ],
+      [
+        "production + risk",
+        64
+      ],
+      [
+        "deliver + risk",
+        33
+      ],
+      [
+        "customer + exposure",
+        32
+      ],
+      [
+        "production + exposure",
+        32
+      ],
+      [
+        "materials + risk",
+        30
+      ],
+      [
+        "production + volatility",
+        28
+      ],
+      [
+        "planning + risk",
+        27
+      ],
+      [
+        "retail + risk",
+        27
+      ],
+      [
+        "customer + concerns",
+        25
+      ],
+      [
+        "customer + uncertainty",
+        25
+      ],
+      [
+        "clients + risk",
+        25
+      ],
+      [
+        "customer + volatility",
+        24
+      ],
+      [
+        "retail + volatility",
+        23
+      ]
+    ]
+  },
+  "stemmer_broadened_library_terms": {
+    "buying": "buy",
+    "manufacturers": "manufacturer",
+    "warehouses": "warehouse",
+    "inventories": "inventory",
+    "supplied": "suppli",
+    "vendors": "vendor",
+    "manufactured": "manufactur",
+    "clients": "client",
+    "supplying": "supply",
+    "outsourced": "outsourc",
+    "ordering": "order",
+    "factories": "factory",
+    "transporting": "transport",
+    "supplies": "supply",
+    "planning": "plann",
+    "buyers": "buyer",
+    "sourced": "sourc",
+    "trucking": "truck",
+    "sources": "source",
+    "distributors": "distributor",
+    "forecasting": "forecast",
+    "purchases": "purchase",
+    "transported": "transport",
+    "shippers": "shipper",
+    "transports": "transport",
+    "tracking": "track",
+    "distributing": "distribut",
+    "stocking": "stock",
+    "channels": "channel",
+    "resellers": "reseller",
+    "distributed": "distribut",
+    "delivering": "deliver",
+    "finished": "finish",
+    "deliveries": "delivery",
+    "procured": "procur",
+    "pipelines": "pipeline",
+    "merchandising": "merchandi",
+    "overseas": "oversea",
+    "shipping": "shipp",
+    "materials": "material",
+    "packaging": "packag",
+    "retailers": "retailer",
+    "distributes": "distribute",
+    "oems": "oem",
+    "manufactures": "manufacture",
+    "components": "component",
+    "subcontractors": "subcontractor",
+    "shipments": "shipment",
+    "shipped": "shipp",
+    "purchased": "purcha",
+    "shortages": "shortage",
+    "fulfilling": "fulfill",
+    "assembled": "assembl",
+    "orders": "order",
+    "ships": "ship",
+    "assembling": "assembl",
+    "plants": "plant",
+    "assembles": "assemble",
+    "wholesalers": "wholesaler",
+    "trucks": "truck",
+    "networks": "network",
+    "contractors": "contractor",
+    "fabricated": "fabricat",
+    "assemblies": "assembly",
+    "routes": "route"
+  },
+  "nonascii_letter_calls": 1221,
+  "nonascii_letter_total": 2616,
+  "calls_containing_digits": 9749
+}

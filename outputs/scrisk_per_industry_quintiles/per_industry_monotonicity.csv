@@ -1,0 +1,79 @@
+industry,spearman_quintile_vs_mean_car,spearman_p,monotone_increasing,monotone_decreasing
+Aerospace & Defense,-0.7,0.1881,False,False
+Airlines,0.6,0.2848,False,False
+Apparel Manufacturing,-0.1,0.8729,False,False
+Apparel Retail,-0.3,0.6238,False,False
+Asset Management,0.3,0.6238,False,False
+Auto Manufacturers,-0.1,0.8729,False,False
+Auto Parts,-0.1,0.8729,False,False
+Banks - Diversified,1.0,0.0,True,False
+Banks - Regional,0.9,0.0374,False,False
+Beverages - Non-Alcoholic,-0.3,0.6238,False,False
+Building Products & Equipment,-0.5,0.391,False,False
+Business Equipment & Supplies,-0.3,0.6238,False,False
+Capital Markets,0.1,0.8729,False,False
+Communication Equipment,-0.1,0.8729,False,False
+Computer Hardware,0.3,0.6238,False,False
+Confectioners,0.7,0.1881,False,False
+Conglomerates,0.0,1.0,False,False
+Consumer Electronics,0.2,0.7471,False,False
+Credit Services,0.5,0.391,False,False
+Diagnostics & Research,-0.1,0.8729,False,False
+Discount Stores,0.0,1.0,False,False
+Drug Manufacturers - General,0.5,0.391,False,False
+Drug Manufacturers - Specialty & Generic,-0.9,0.0374,False,False
+Electronic Components,-1.0,0.0,False,True
+Electronics & Computer Distribution,-0.7,0.1881,False,False
+Farm & Heavy Construction Machinery,-0.7,0.1881,False,False
+Farm Products,0.5,0.391,False,False
+Food Distribution,-1.0,0.0,False,True
+Footwear & Accessories,-0.5,0.391,False,False
+"Furnishings, Fixtures & Appliances",-0.5,0.391,False,False
+Grocery Stores,0.2,0.7471,False,False
+Healthcare Plans,-0.9,0.0374,False,False
+Home Improvement Retail,-0.1,0.8729,False,False
+Household & Personal Products,-0.1,0.8729,False,False
+Industrial Distribution,0.8,0.1041,False,False
+Information Technology Services,-0.8,0.1041,False,False
+Insurance - Diversified,0.5,0.391,False,False
+Insurance - Life,-0.3,0.6238,False,False
+Insurance - Property & Casualty,0.5,0.391,False,False
+Insurance Brokers,-0.4,0.5046,False,False
+Integrated Freight & Logistics,0.7,0.1881,False,False
+Leisure,0.3,0.6238,False,False
+Marine Shipping,0.1,0.8729,False,False
+Medical Care Facilities,-0.3,0.6238,False,False
+Medical Devices,-0.4,0.5046,False,False
+Medical Distribution,0.1,0.8729,False,False
+Medical Instruments & Supplies,-0.3,0.6238,False,False
+Oil & Gas Drilling,-0.7,0.1881,False,False
+Oil & Gas E&P,0.6,0.2848,False,False
+Oil & Gas Equipment & Services,0.1,0.8729,False,False
+Oil & Gas Integrated,0.6,0.2848,False,False
+Oil & Gas Midstream,0.3,0.6238,False,False
+Oil & Gas Refining & Marketing,-0.7,0.1881,False,False
+Packaged Foods,0.5,0.391,False,False
+Packaging & Containers,0.0,1.0,False,False
+Personal Services,0.0,1.0,False,False
+REIT - Healthcare Facilities,0.5,0.391,False,False
+REIT - Industrial,0.1,0.8729,False,False
+REIT - Mortgage,-0.5,0.391,False,False
+REIT - Office,-0.7,0.1881,False,False
+REIT - Residential,-0.5,0.391,False,False
+REIT - Retail,0.3,0.6238,False,False
+REIT - Specialty,0.0,1.0,False,False
+Railroads,0.5,0.391,False,False
+Recreational Vehicles,0.1,0.8729,False,False
+Rental & Leasing Services,0.1,0.8729,False,False
+Residential Construction,0.0,1.0,False,False
+Restaurants,-0.1,0.8729,False,False
+Scientific & Technical Instruments,-0.2,0.7471,False,False
+Semiconductor Equipment & Materials,-0.4,0.5046,False,False
+Semiconductors,0.3,0.6238,False,False
+Software - Application,-0.3,0.6238,False,False
+Software - Infrastructure,-0.6,0.2848,False,False
+Specialty Business Services,-0.1,0.8729,False,False
+Specialty Industrial Machinery,0.0,1.0,False,False
+Specialty Retail,1.0,0.0,True,False
+Textile Manufacturing,0.5,0.391,False,False
+Tobacco,0.4,0.5046,False,False

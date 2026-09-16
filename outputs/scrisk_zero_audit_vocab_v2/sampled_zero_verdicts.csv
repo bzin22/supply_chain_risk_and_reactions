@@ -1,0 +1,51 @@
+key,company,sector,year,tokens,bucket,current_nearest_distance,seeded_nearest_distance,verdict
+ABT|2024Q4,Abbott Laboratories,Healthcare,2024,7666,both_present_never_within_window,72.0,72.0,true_zero_no_colocated_language
+ACLS|2014Q4,"Axcelis Technologies, Inc.",Semiconductors,2014,5727,both_present_never_within_window,147.0,147.0,true_zero_no_colocated_language
+AFG|2018Q1,"American Financial Group, Inc.",Financial Services,2018,5005,both_present_never_within_window,43.0,43.0,true_zero_no_colocated_language
+ALKS|2013Q1,Alkermes plc,Healthcare,2013,7369,both_present_never_within_window,144.0,144.0,true_zero_no_colocated_language
+ATRO|2012Q3,Astronics Corporation,Industrials,2012,3631,both_present_never_within_window,127.0,49.0,near_miss
+ATRO|2014Q4,Astronics Corporation,Industrials,2014,6767,both_present_never_within_window,71.0,39.0,near_miss
+AXGN|2024Q2,"Axogen, Inc.",Healthcare,2024,5439,both_present_never_within_window,1406.0,1406.0,true_zero_no_colocated_language
+AXTI|2015Q4,"AXT, Inc.",Semiconductors,2015,4363,both_present_never_within_window,12.0,12.0,near_miss
+BAX|2010Q3,Baxter International Inc.,Healthcare,2010,8923,both_present_never_within_window,34.0,34.0,true_zero_no_colocated_language
+BDN|2013Q3,Brandywine Realty Trust,Real Estate,2013,9688,both_present_never_within_window,17.0,17.0,near_miss
+BDX|2013Q1,"Becton, Dickinson and Company",Healthcare,2013,7282,both_present_never_within_window,83.0,38.0,near_miss
+BMY|2024Q1,Bristol-Myers Squibb Company,Healthcare,2024,2368,supply_chain_but_no_risk_vocab,,,true_zero_no_colocated_language
+BOH|2017Q2,Bank of Hawaii Corporation,Financial Services,2017,4675,both_present_never_within_window,25.0,25.0,near_miss
+BRT|2023Q1,BRT Apartments Corp.,Real Estate,2023,4195,both_present_never_within_window,139.0,139.0,true_zero_no_colocated_language
+CBU|2024Q2,"Community Financial System, Inc.",Financial Services,2024,5332,both_present_never_within_window,35.0,35.0,true_zero_no_colocated_language
+CDP|2015Q3,COPT Defense Properties,Real Estate,2015,7110,both_present_never_within_window,41.0,41.0,true_zero_no_colocated_language
+CGNX|2014Q1,Cognex Corporation,Technology,2014,4271,both_present_never_within_window,51.0,51.0,true_zero_no_colocated_language
+CRK|2021Q4,"Comstock Resources, Inc.",Energy,2021,2107,supply_chain_but_no_risk_vocab,,,true_zero_no_colocated_language
+CRUS|2015Q2,"Cirrus Logic, Inc.",Semiconductors,2015,3936,both_present_never_within_window,128.0,128.0,true_zero_no_colocated_language
+DGII|2015Q3,Digi International Inc.,Technology,2015,4338,both_present_never_within_window,151.0,151.0,true_zero_no_colocated_language
+DWSN|2020Q3,Dawson Geophysical Company,Energy,2020,3152,both_present_never_within_window,87.0,87.0,true_zero_no_colocated_language
+EGP|2014Q2,"EastGroup Properties, Inc.",Real Estate,2014,7081,both_present_never_within_window,184.0,184.0,true_zero_no_colocated_language
+ELME|2022Q3,Elme Communities,Real Estate,2022,6377,both_present_never_within_window,31.0,31.0,true_zero_no_colocated_language
+ENB|2011Q4,Enbridge Inc.,Energy,2011,7019,both_present_never_within_window,123.0,123.0,true_zero_no_colocated_language
+ENTG|2021Q4,"Entegris, Inc.",Semiconductors,2021,6501,both_present_never_within_window,26.0,26.0,true_zero_no_colocated_language
+FLO|2024Q3,"Flowers Foods, Inc.",Consumer Goods,2024,4361,both_present_never_within_window,43.0,35.0,near_miss
+HR|2016Q3,Healthcare Realty Trust Incorporated,Real Estate,2016,4786,both_present_never_within_window,157.0,157.0,true_zero_no_colocated_language
+HUM|2022Q2,Humana Inc.,Healthcare,2022,11005,both_present_never_within_window,15.0,15.0,near_miss
+IP|2013Q1,International Paper Company,Retail,2013,7200,both_present_never_within_window,130.0,130.0,true_zero_no_colocated_language
+JJSF|2014Q3,J&J Snack Foods Corp.,Consumer Goods,2014,5596,both_present_never_within_window,26.0,26.0,true_zero_no_colocated_language
+LH|2024Q3,Labcorp Holdings Inc.,Healthcare,2024,8597,both_present_never_within_window,305.0,305.0,true_zero_no_colocated_language
+L|2019Q4,Loews Corporation,Financial Services,2019,3225,both_present_never_within_window,65.0,65.0,true_zero_no_colocated_language
+MRK|2012Q3,"Merck & Co., Inc.",Healthcare,2012,8246,both_present_never_within_window,286.0,125.0,near_miss
+MRK|2021Q2,"Merck & Co., Inc.",Healthcare,2021,9144,both_present_never_within_window,33.0,15.0,near_miss
+NBN|2016Q4,Northeast Bank,Financial Services,2016,3624,both_present_never_within_window,121.0,121.0,true_zero_no_colocated_language
+PEP|2010Q4,"PepsiCo, Inc.",Consumer Goods,2010,8143,both_present_never_within_window,57.0,52.0,near_miss
+PGR|2012Q3,The Progressive Corporation,Financial Services,2012,6447,both_present_never_within_window,70.0,13.0,near_miss
+PHG|2017Q2,Koninklijke Philips N.V.,Healthcare,2017,9241,both_present_never_within_window,17.0,11.0,near_miss
+RGEN|2013Q4,Repligen Corporation,Healthcare,2013,2922,both_present_never_within_window,97.0,97.0,true_zero_no_colocated_language
+RMBS|2015Q2,Rambus Inc.,Semiconductors,2015,5288,both_present_never_within_window,18.0,18.0,near_miss
+ROK|2010Q1,"Rockwell Automation, Inc.",Industrials,2010,6774,both_present_never_within_window,44.0,44.0,true_zero_no_colocated_language
+ROK|2018Q2,"Rockwell Automation, Inc.",Industrials,2018,7773,both_present_never_within_window,19.0,19.0,near_miss
+RTX|2010Q2,RTX Corporation,Industrials,2010,8064,both_present_never_within_window,55.0,35.0,near_miss
+RTX|2024Q4,RTX Corporation,Industrials,2024,8986,both_present_never_within_window,21.0,11.0,near_miss
+SPG|2021Q4,"Simon Property Group, Inc.",Real Estate,2021,4371,both_present_never_within_window,12.0,12.0,near_miss
+STT|2015Q2,State Street Corporation,Financial Services,2015,9876,both_present_never_within_window,20.0,20.0,near_miss
+TFX|2012Q3,Teleflex Incorporated,Healthcare,2012,7965,both_present_never_within_window,321.0,321.0,true_zero_no_colocated_language
+UDR|2015Q3,"UDR, Inc.",Real Estate,2015,7591,both_present_never_within_window,26.0,26.0,true_zero_no_colocated_language
+UMH|2014Q4,"UMH Properties, Inc.",Real Estate,2014,5679,both_present_never_within_window,170.0,170.0,true_zero_no_colocated_language
+WFC|2015Q3,Wells Fargo & Company,Financial Services,2015,9097,both_present_never_within_window,11.0,11.0,near_miss

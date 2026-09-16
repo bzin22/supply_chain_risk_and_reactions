@@ -1,0 +1,23 @@
+{
+  "lib_inflected": {
+    "calls_flipped": 0,
+    "percent_of_zeros": 0.0,
+    "top_supply_chain_terms": [],
+    "top_risk_terms": [],
+    "top_pairs": []
+  },
+  "lib_seeds_inflected": {
+    "calls_flipped": 0,
+    "percent_of_zeros": 0.0,
+    "top_supply_chain_terms": [],
+    "top_risk_terms": [],
+    "top_pairs": []
+  },
+  "lib_seeds_and_risk_inflected": {
+    "calls_flipped": 0,
+    "percent_of_zeros": 0.0,
+    "top_supply_chain_terms": [],
+    "top_risk_terms": [],
+    "top_pairs": []
+  }
+}

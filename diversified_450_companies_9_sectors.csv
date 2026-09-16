@@ -1,0 +1,451 @@
+symbol,name,sector,industry
+TXN,Texas Instruments Incorporated,Semiconductors,Semiconductors
+INTC,Intel Corporation,Semiconductors,Semiconductors
+AMD,"Advanced Micro Devices, Inc.",Semiconductors,Semiconductors
+ADI,"Analog Devices, Inc.",Semiconductors,Semiconductors
+AMAT,"Applied Materials, Inc.",Semiconductors,Semiconductor Equipment & Materials
+ASYS,"Amtech Systems, Inc.",Semiconductors,Semiconductor Equipment & Materials
+SWKS,"Skyworks Solutions, Inc.",Semiconductors,Semiconductors
+COHU,"Cohu, Inc.",Semiconductors,Semiconductor Equipment & Materials
+TER,"Teradyne, Inc.",Semiconductors,Semiconductor Equipment & Materials
+VSH,"Vishay Intertechnology, Inc.",Semiconductors,Semiconductors
+MU,"Micron Technology, Inc.",Semiconductors,Semiconductors
+CRUS,"Cirrus Logic, Inc.",Semiconductors,Semiconductors
+LSCC,Lattice Semiconductor Corporation,Semiconductors,Semiconductors
+LRCX,Lam Research Corporation,Semiconductors,Semiconductor Equipment & Materials
+KLAC,KLA Corporation,Semiconductors,Semiconductor Equipment & Materials
+KLIC,"Kulicke and Soffa Industries, Inc.",Semiconductors,Semiconductor Equipment & Materials
+PLAB,"Photronics, Inc.",Semiconductors,Semiconductor Equipment & Materials
+QCOM,QUALCOMM Incorporated,Semiconductors,Semiconductors
+ONTO,Onto Innovation Inc.,Semiconductors,Semiconductor Equipment & Materials
+SMTC,Semtech Corporation,Semiconductors,Semiconductors
+DIOD,Diodes Incorporated,Semiconductors,Semiconductors
+MCHP,Microchip Technology Incorporated,Semiconductors,Semiconductors
+TSEM,Tower Semiconductor Ltd.,Semiconductors,Semiconductors
+VECO,Veeco Instruments Inc.,Semiconductors,Semiconductor Equipment & Materials
+STM,STMicroelectronics N.V.,Semiconductors,Semiconductors
+ASML,ASML Holding N.V.,Semiconductors,Semiconductor Equipment & Materials
+TRT,Trio-Tech International,Semiconductors,Semiconductor Equipment & Materials
+NVEC,NVE Corporation,Semiconductors,Semiconductors
+RMBS,Rambus Inc.,Semiconductors,Semiconductors
+INTT,InTest Corporation,Semiconductors,Semiconductor Equipment & Materials
+AEHR,"Aehr Test Systems, Inc.",Semiconductors,Semiconductor Equipment & Materials
+TSM,Taiwan Semiconductor Manufacturing Company Limited,Semiconductors,Semiconductors
+POWI,"Power Integrations, Inc.",Semiconductors,Semiconductors
+AMKR,"Amkor Technology, Inc.",Semiconductors,Semiconductor Equipment & Materials
+AXTI,"AXT, Inc.",Semiconductors,Semiconductor Equipment & Materials
+NVDA,NVIDIA Corporation,Semiconductors,Semiconductors
+QUIK,QuickLogic Corporation,Semiconductors,Semiconductors
+SLAB,Silicon Laboratories Inc.,Semiconductors,Semiconductors
+NVMI,Nova Ltd.,Semiconductors,Semiconductor Equipment & Materials
+ON,ON Semiconductor Corporation,Semiconductors,Semiconductors
+PXLW,"Pixelworks, Inc.",Semiconductors,Semiconductors
+MRVL,"Marvell Technology, Inc.",Semiconductors,Semiconductors
+ACLS,"Axcelis Technologies, Inc.",Semiconductors,Semiconductor Equipment & Materials
+ENTG,"Entegris, Inc.",Semiconductors,Semiconductor Equipment & Materials
+CAMT,Camtek Ltd.,Semiconductors,Semiconductor Equipment & Materials
+UMC,United Microelectronics Corporation,Semiconductors,Semiconductors
+ASX,"ASE Technology Holding Co., Ltd.",Semiconductors,Semiconductors
+IMOS,ChipMOS TECHNOLOGIES INC.,Semiconductors,Semiconductors
+PRSO,Peraso Inc.,Semiconductors,Semiconductors
+SYNA,Synaptics Incorporated,Semiconductors,Semiconductors
+HPQ,HP Inc.,Technology,Computer Hardware
+IBM,International Business Machines Corporation,Technology,Information Technology Services
+UIS,Unisys Corporation,Technology,Information Technology Services
+AVT,"Avnet, Inc.",Technology,Electronics & Computer Distribution
+SONY,Sony Group Corporation,Technology,Consumer Electronics
+MSI,"Motorola Solutions, Inc.",Technology,Communication Equipment
+ROG,Rogers Corporation,Technology,Electronic Components
+ABEO,Abeona Therapeutics Inc.,Technology,Biotechnology
+AAPL,Apple Inc.,Technology,Consumer Electronics
+GLW,Corning Incorporated,Technology,Electronic Components
+ADP,"Automatic Data Processing, Inc.",Technology,Software - Application
+FEIM,"Frequency Electronics, Inc.",Technology,Communication Equipment
+ARW,"Arrow Electronics, Inc.",Technology,Electronics & Computer Distribution
+BELFA,Bel Fuse Inc.,Technology,Electronic Components
+BMI,"Badger Meter, Inc.",Technology,Scientific & Technical Instruments
+CACI,CACI International Inc,Technology,Information Technology Services
+ALOT,AstroNova Inc,Technology,Computer Hardware
+ADSK,"Autodesk, Inc.",Technology,Software - Application
+ORCL,Oracle Corporation,Technology,Software - Infrastructure
+RNTX,Rein Therapeutics Inc.,Technology,Biotechnology
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure
+CLFD,"Clearfield, Inc.",Technology,Communication Equipment
+ADBE,Adobe Inc.,Technology,Software - Application
+WDC,Western Digital Corporation,Technology,Computer Hardware
+HRTX,"Heron Therapeutics, Inc.",Technology,Biotechnology
+CTS,CTS Corporation,Technology,Electronic Components
+TYL,"Tyler Technologies, Inc.",Technology,Software - Application
+PAR,PAR Technology Corporation,Technology,Software - Application
+ERIC,Telefonaktiebolaget LM Ericsson (publ),Technology,Communication Equipment
+CGNX,Cognex Corporation,Technology,Scientific & Technical Instruments
+MEI,"Methode Electronics, Inc.",Technology,Electronic Components
+CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment
+GEN,Gen Digital Inc.,Technology,Software - Infrastructure
+SUNE,SUNation Energy Inc.,Technology,Solar
+PTC,PTC Inc.,Technology,Software - Application
+AGYS,"Agilysys, Inc.",Technology,Software - Application
+DAIO,Data I/O Corporation,Technology,Electronic Components
+DGII,Digi International Inc.,Technology,Communication Equipment
+COHR,Coherent Corp.,Technology,Scientific & Technical Instruments
+RELL,"Richardson Electronics, Ltd.",Technology,Electronic Components
+PAYX,"Paychex, Inc.",Technology,Software - Application
+CDNS,"Cadence Design Systems, Inc.",Technology,Software - Application
+KTCC,Key Tronic Corporation,Technology,Computer Hardware
+LYTS,LSI Industries Inc.,Technology,Electronic Components
+JKHY,"Jack Henry & Associates, Inc.",Technology,Information Technology Services
+IDCC,"InterDigital, Inc.",Technology,Software - Application
+PLXS,Plexus Corp.,Technology,Electronic Components
+CLDX,"Celldex Therapeutics, Inc.",Technology,Biotechnology
+CSPI,CSP Inc.,Technology,Information Technology Services
+BKTI,BK Technologies Corporation,Technology,Communication Equipment
+AXP,American Express Company,Financial Services,Credit Services
+WFC,Wells Fargo & Company,Financial Services,Banks - Diversified
+BNY,The Bank of New York Mellon Corporation,Financial Services,Banks - Diversified
+C,Citigroup Inc.,Financial Services,Banks - Diversified
+BRK-A,Berkshire Hathaway Inc.,Financial Services,Insurance - Diversified
+SIEB,Siebert Financial Corp.,Financial Services,Capital Markets
+AFG,"American Financial Group, Inc.",Financial Services,Insurance - Property & Casualty
+SF,Stifel Financial Corp.,Financial Services,Capital Markets
+BN,Brookfield Corporation,Financial Services,Asset Management
+JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified
+AFL,Aflac Incorporated,Financial Services,Insurance - Life
+WRB,W. R. Berkley Corporation,Financial Services,Insurance - Property & Casualty
+BOH,Bank of Hawaii Corporation,Financial Services,Banks - Regional
+DOMH,Dominari Holdings Inc.,Financial Services,Capital Markets
+AJG,Arthur J. Gallagher & Co.,Financial Services,Insurance Brokers
+AIG,"American International Group, Inc.",Financial Services,Insurance - Diversified
+BEN,Franklin Templeton Inc.,Financial Services,Asset Management
+AAME,Atlantic American Corporation,Financial Services,Insurance - Life
+AON,Aon plc,Financial Services,Insurance Brokers
+CBSH,"Commerce Bancshares, Inc.",Financial Services,Banks - Regional
+CB,Chubb Limited,Financial Services,Insurance - Property & Casualty
+AROW,Arrow Financial Corporation,Financial Services,Banks - Regional
+ASB,Associated Banc-Corp,Financial Services,Banks - Regional
+LNC,Lincoln National Corporation,Financial Services,Insurance - Life
+AEG,Aegon Ltd.,Financial Services,Insurance - Diversified
+CNA,CNA Financial Corporation,Financial Services,Insurance - Property & Casualty
+CBU,"Community Financial System, Inc.",Financial Services,Banks - Regional
+GHI,Greystone Housing Impact Investors LP,Financial Services,Mortgage Finance
+WTM,"White Mountains Insurance Group, Ltd.",Financial Services,Insurance - Property & Casualty
+BAC,Bank of America Corporation,Financial Services,Banks - Diversified
+STT,State Street Corporation,Financial Services,Asset Management
+PGR,The Progressive Corporation,Financial Services,Insurance - Property & Casualty
+TRV,"The Travelers Companies, Inc.",Financial Services,Insurance - Property & Casualty
+BCS,Barclays PLC,Financial Services,Banks - Diversified
+UNM,Unum Group,Financial Services,Insurance - Life
+MBI,MBIA Inc.,Financial Services,Insurance - Specialty
+L,Loews Corporation,Financial Services,Insurance - Property & Casualty
+NBN,Northeast Bank,Financial Services,Banks - Regional
+KEY,KeyCorp,Financial Services,Banks - Regional
+USB,U.S. Bancorp,Financial Services,Banks - Regional
+JEF,Jefferies Financial Group Inc.,Financial Services,Capital Markets
+MRSH,"Marsh & McLennan Companies, Inc.",Financial Services,Insurance Brokers
+RLI,RLI Corp.,Financial Services,Insurance - Property & Casualty
+RJF,"Raymond James Financial, Inc.",Financial Services,Asset Management
+GL,Globe Life Inc.,Financial Services,Insurance - Life
+SAN,"Banco Santander, S.A.",Financial Services,Banks - Diversified
+SLM,SLM Corporation,Financial Services,Credit Services
+AB,AllianceBernstein Holding L.P.,Financial Services,Asset Management
+PNC,"The PNC Financial Services Group, Inc.",Financial Services,Banks - Regional
+CIA,"Citizens, Inc.",Financial Services,Insurance - Life
+GTY,Getty Realty Corp.,Real Estate,REIT - Retail
+AXR,AMREP Corporation,Real Estate,Real Estate - Development
+BRT,BRT Apartments Corp.,Real Estate,REIT - Residential
+FRT,Federal Realty Investment Trust,Real Estate,REIT - Retail
+WY,Weyerhaeuser Company,Real Estate,REIT - Specialty
+PW,Power REIT,Real Estate,REIT - Specialty
+PSA,Public Storage,Real Estate,REIT - Industrial
+HST,"Host Hotels & Resorts, Inc.",Real Estate,REIT - Hotel & Motel
+ALX,"Alexander's, Inc.",Real Estate,REIT - Retail
+ARL,"American Realty Investors, Inc.",Real Estate,Real Estate Services
+BDN,Brandywine Realty Trust,Real Estate,REIT - Office
+BXMT,"Blackstone Mortgage Trust, Inc.",Real Estate,REIT - Mortgage
+DOC,"Healthpeak Properties, Inc.",Real Estate,REIT - Healthcare Facilities
+TCI,"Transcontinental Realty Investors, Inc.",Real Estate,Real Estate Services
+UHT,Universal Health Realty Income Trust,Real Estate,REIT - Healthcare Facilities
+IHT,InnSuites Hospitality Trust,Real Estate,REIT - Hotel & Motel
+VNO,Vornado Realty Trust,Real Estate,REIT - Office
+DX,"Dynex Capital, Inc.",Real Estate,REIT - Mortgage
+NHP,"National Healthcare Properties, Inc.",Real Estate,REIT - Healthcare Facilities
+UDR,"UDR, Inc.",Real Estate,REIT - Residential
+FRPH,"FRP Holdings, Inc.",Real Estate,Real Estate Services
+CUZ,Cousins Properties Incorporated,Real Estate,REIT - Office
+NNN,"NNN REIT, Inc.",Real Estate,REIT - Retail
+NHI,"National Health Investors, Inc.",Real Estate,REIT - Healthcare Facilities
+RHP,"Ryman Hospitality Properties, Inc.",Real Estate,REIT - Hotel & Motel
+KIM,Kimco Realty Corporation,Real Estate,REIT - Retail
+CDP,COPT Defense Properties,Real Estate,REIT - Office
+MAYS,"J.W. Mays, Inc.",Real Estate,Real Estate Services
+JOE,The St. Joe Company,Real Estate,Real Estate - Diversified
+ELME,Elme Communities,Real Estate,REIT - Residential
+OLP,"One Liberty Properties, Inc.",Real Estate,REIT - Diversified
+EGP,"EastGroup Properties, Inc.",Real Estate,REIT - Industrial
+OHI,"Omega Healthcare Investors, Inc.",Real Estate,REIT - Healthcare Facilities
+LTC,"LTC Properties, Inc.",Real Estate,REIT - Healthcare Facilities
+CTO,"CTO Realty Growth, Inc.",Real Estate,REIT - Diversified
+ELS,"Equity LifeStyle Properties, Inc.",Real Estate,REIT - Residential
+GBR,"New Concept Energy, Inc.",Real Estate,Real Estate Services
+HR,Healthcare Realty Trust Incorporated,Real Estate,REIT - Healthcare Facilities
+AKR,Acadia Realty Trust,Real Estate,REIT - Retail
+SKT,Tanger Inc.,Real Estate,REIT - Retail
+CPT,Camden Property Trust,Real Estate,REIT - Residential
+VMRK,Vivmark Residential,Real Estate,REIT - Residential
+BFS,"Saul Centers, Inc.",Real Estate,REIT - Retail
+LXP,LXP Industrial Trust,Real Estate,REIT - Industrial
+REG,Regency Centers Corporation,Real Estate,REIT - Retail
+UMH,"UMH Properties, Inc.",Real Estate,REIT - Residential
+SUI,"Sun Communities, Inc.",Real Estate,REIT - Residential
+SPG,"Simon Property Group, Inc.",Real Estate,REIT - Retail
+MAA,"Mid-America Apartment Communities, Inc.",Real Estate,REIT - Residential
+RYN,Rayonier Inc.,Real Estate,REIT - Specialty
+BA,The Boeing Company,Industrials,Aerospace & Defense
+CAT,Caterpillar Inc.,Industrials,Farm & Heavy Construction Machinery
+GE,GE Aerospace,Industrials,Aerospace & Defense
+HWM,Howmet Aerospace Inc.,Industrials,Aerospace & Defense
+HON,Honeywell International Inc.,Industrials,Conglomerates
+MMM,3M Company,Industrials,Conglomerates
+RTX,RTX Corporation,Industrials,Aerospace & Defense
+DE,Deere & Company,Industrials,Farm & Heavy Construction Machinery
+ETN,Eaton Corporation plc,Industrials,Specialty Industrial Machinery
+EMR,Emerson Electric Co.,Industrials,Specialty Industrial Machinery
+PBI,Pitney Bowes Inc.,Industrials,Integrated Freight & Logistics
+DCO,Ducommun Incorporated,Industrials,Aerospace & Defense
+APOG,"Apogee Enterprises, Inc.",Industrials,Building Products & Equipment
+MATX,"Matson, Inc.",Industrials,Marine Shipping
+PNR,Pentair plc,Industrials,Specialty Industrial Machinery
+TPC,Tutor Perini Corporation,Industrials,Engineering & Construction
+GFF,Griffon Corporation,Industrials,Building Products & Equipment
+XRX,Xerox Holdings Corporation,Industrials,Business Equipment & Supplies
+GD,General Dynamics Corporation,Industrials,Aerospace & Defense
+LMT,Lockheed Martin Corporation,Industrials,Aerospace & Defense
+FDX,FedEx Corporation,Industrials,Integrated Freight & Logistics
+R,"Ryder System, Inc.",Industrials,Rental & Leasing Services
+UNP,Union Pacific Corporation,Industrials,Railroads
+LUV,Southwest Airlines Co.,Industrials,Airlines
+SIF,"SIFCO Industries, Inc.",Industrials,Aerospace & Defense
+SEB,Seaboard Corporation,Industrials,Conglomerates
+CSX,CSX Corporation,Industrials,Railroads
+NOC,Northrop Grumman Corporation,Industrials,Aerospace & Defense
+ROK,"Rockwell Automation, Inc.",Industrials,Specialty Industrial Machinery
+LHX,"L3Harris Technologies, Inc.",Industrials,Aerospace & Defense
+LPX,Louisiana-Pacific Corporation,Industrials,Building Products & Equipment
+FSS,Federal Signal Corporation,Industrials,Farm & Heavy Construction Machinery
+NSC,Norfolk Southern Corporation,Industrials,Railroads
+ALK,"Alaska Air Group, Inc.",Industrials,Airlines
+NL,"NLI Holdings, Inc.",Industrials,Security & Protection Services
+MAS,Masco Corporation,Industrials,Building Products & Equipment
+RRX,Regal Rexnord Corporation,Industrials,Specialty Industrial Machinery
+CP,Canadian Pacific Kansas City Limited,Industrials,Railroads
+AIRT,"Air T, Inc.",Industrials,Conglomerates
+WSO,"Watsco, Inc.",Industrials,Industrial Distribution
+ABM,ABM Industries Incorporated,Industrials,Specialty Business Services
+AP,Ampco-Pittsburgh Corporation,Industrials,Metal Fabrication
+AME,"AMETEK, Inc.",Industrials,Specialty Industrial Machinery
+AIR,AAR Corp.,Industrials,Aerospace & Defense
+ATRO,Astronics Corporation,Industrials,Aerospace & Defense
+AZZ,AZZ Inc.,Industrials,Specialty Business Services
+AIT,"Applied Industrial Technologies, Inc.",Industrials,Industrial Distribution
+BRC,Brady Corporation,Industrials,Security & Protection Services
+AOS,A. O. Smith Corporation,Industrials,Specialty Industrial Machinery
+PRG,"PROG Holdings, Inc.",Industrials,Rental & Leasing Services
+GT,The Goodyear Tire & Rubber Company,Retail,Auto Parts
+IP,International Paper Company,Retail,Packaging & Containers
+MCD,McDonald's Corporation,Retail,Restaurants
+F,Ford Motor Company,Retail,Auto Manufacturers
+TM,Toyota Motor Corporation,Retail,Auto Manufacturers
+HMC,"Honda Motor Co., Ltd.",Retail,Auto Manufacturers
+NKE,"NIKE, Inc.",Retail,Footwear & Accessories
+HD,"The Home Depot, Inc.",Retail,Home Improvement Retail
+BC,Brunswick Corporation,Retail,Recreational Vehicles
+SKY,"Champion Homes, Inc.",Retail,Residential Construction
+MAT,"Mattel, Inc.",Retail,Leisure
+GPC,Genuine Parts Company,Retail,Auto Parts
+WHR,Whirlpool Corporation,Retail,"Furnishings, Fixtures & Appliances"
+CASY,"Casey's General Stores, Inc.",Retail,Specialty Retail
+AVY,Avery Dennison Corporation,Retail,Packaging & Containers
+BDL,"Flanigan's Enterprises, Inc.",Retail,Restaurants
+BALL,Ball Corporation,Retail,Packaging & Containers
+CBRL,"Cracker Barrel Old Country Store, Inc.",Retail,Restaurants
+CAL,"Caleres, Inc.",Retail,Apparel Retail
+BSET,"Bassett Furniture Industries, Incorporated",Retail,"Furnishings, Fixtures & Appliances"
+WGO,"Winnebago Industries, Inc.",Retail,Recreational Vehicles
+WWW,"Wolverine World Wide, Inc.",Retail,Footwear & Accessories
+CCK,"Crown Holdings, Inc.",Retail,Packaging & Containers
+HAS,"Hasbro, Inc.",Retail,Leisure
+BBY,"Best Buy Co., Inc.",Retail,Specialty Retail
+SON,Sonoco Products Company,Retail,Packaging & Containers
+VFC,V.F. Corporation,Retail,Apparel Manufacturing
+BBWI,"Bath & Body Works, Inc.",Retail,Specialty Retail
+PHM,"PulteGroup, Inc.",Retail,Residential Construction
+GCO,Genesco Inc.,Retail,Apparel Retail
+LOW,"Lowe's Companies, Inc.",Retail,Home Improvement Retail
+NVR,"NVR, Inc.",Retail,Residential Construction
+ARKR,Ark Restaurants Corp.,Retail,Restaurants
+ROST,"Ross Stores, Inc.",Retail,Apparel Retail
+HRB,"H&R Block, Inc.",Retail,Personal Services
+CATO,The Cato Corporation,Retail,Apparel Retail
+FUN,Six Flags Entertainment Corporation,Retail,Leisure
+PVH,PVH Corp.,Retail,Apparel Manufacturing
+SCI,Service Corporation International,Retail,Personal Services
+GAP,"The Gap, Inc.",Retail,Apparel Retail
+MYE,"Myers Industries, Inc.",Retail,Packaging & Containers
+PII,Polaris Inc.,Retail,Recreational Vehicles
+AIN,Albany International Corp.,Retail,Textile Manufacturing
+KBH,KB Home,Retail,Residential Construction
+HOG,"Harley-Davidson, Inc.",Retail,Recreational Vehicles
+LEN,Lennar Corporation,Retail,Residential Construction
+TOL,"Toll Brothers, Inc.",Retail,Residential Construction
+OXM,"Oxford Industries, Inc.",Retail,Apparel Manufacturing
+ROL,"Rollins, Inc.",Retail,Personal Services
+SMP,"Standard Motor Products, Inc.",Retail,Auto Parts
+KO,The Coca-Cola Company,Consumer Goods,Beverages - Non-Alcoholic
+PG,The Procter & Gamble Company,Consumer Goods,Household & Personal Products
+MO,"Altria Group, Inc.",Consumer Goods,Tobacco
+PEP,"PepsiCo, Inc.",Consumer Goods,Beverages - Non-Alcoholic
+WMT,Walmart Inc.,Consumer Goods,Discount Stores
+BF-A,Brown-Forman Corporation,Consumer Goods,Beverages - Wineries & Distilleries
+ALCO,"Alico, Inc.",Consumer Goods,Farm Products
+SYY,Sysco Corporation,Consumer Goods,Food Distribution
+KR,The Kroger Co.,Consumer Goods,Grocery Stores
+CL,Colgate-Palmolive Company,Consumer Goods,Household & Personal Products
+BTI,British American Tobacco p.l.c.,Consumer Goods,Tobacco
+CLX,The Clorox Company,Consumer Goods,Household & Personal Products
+ADM,Archer-Daniels-Midland Company,Consumer Goods,Farm Products
+TGT,Target Corporation,Consumer Goods,Discount Stores
+GIS,"General Mills, Inc.",Consumer Goods,Packaged Foods
+MAGN,Magnera Corporation,Consumer Goods,Household & Personal Products
+NWL,Newell Brands Inc.,Consumer Goods,Household & Personal Products
+BF-B,Brown-Forman Corporation,Consumer Goods,Beverages - Wineries & Distilleries
+ACU,Acme United Corporation,Consumer Goods,Household & Personal Products
+CAG,"Conagra Brands, Inc.",Consumer Goods,Packaged Foods
+BRID,Bridgford Foods Corporation,Consumer Goods,Packaged Foods
+TAP,Molson Coors Beverage Company,Consumer Goods,Beverages - Brewers
+KMB,Kimberly-Clark Corporation,Consumer Goods,Household & Personal Products
+CPB,The Campbell's Company,Consumer Goods,Packaged Foods
+HSY,The Hershey Company,Consumer Goods,Confectioners
+CHD,"Church & Dwight Co., Inc.",Consumer Goods,Household & Personal Products
+COST,Costco Wholesale Corporation,Consumer Goods,Discount Stores
+TSN,"Tyson Foods, Inc.",Consumer Goods,Farm Products
+CCEP,Coca-Cola Europacific Partners PLC,Consumer Goods,Beverages - Non-Alcoholic
+FLO,"Flowers Foods, Inc.",Consumer Goods,Packaged Foods
+TR,"Tootsie Roll Industries, Inc.",Consumer Goods,Confectioners
+PPC,Pilgrim's Pride Corporation,Consumer Goods,Packaged Foods
+UL,Unilever PLC,Consumer Goods,Household & Personal Products
+WMK,"Weis Markets, Inc.",Consumer Goods,Grocery Stores
+UVV,Universal Corporation,Consumer Goods,Tobacco
+HRL,Hormel Foods Corporation,Consumer Goods,Packaged Foods
+COKE,"Coca-Cola Consolidated, Inc.",Consumer Goods,Beverages - Non-Alcoholic
+MZTI,The Marzetti Company,Consumer Goods,Packaged Foods
+SENEB,Seneca Foods Corporation,Consumer Goods,Packaged Foods
+HELE,Helen of Troy Limited,Consumer Goods,Household & Personal Products
+JJSF,J&J Snack Foods Corp.,Consumer Goods,Packaged Foods
+MGPI,"MGP Ingredients, Inc.",Consumer Goods,Beverages - Wineries & Distilleries
+MKC,"McCormick & Company, Incorporated",Consumer Goods,Packaged Foods
+IMKTA,"Ingles Markets, Incorporated",Consumer Goods,Grocery Stores
+VLGEA,"Village Super Market, Inc.",Consumer Goods,Grocery Stores
+CVSA,Covista Inc.,Consumer Goods,Education & Training Services
+IPAR,"Interparfums, Inc.",Consumer Goods,Household & Personal Products
+FIZZ,National Beverage Corp.,Consumer Goods,Beverages - Non-Alcoholic
+JBSS,"John B. Sanfilippo & Son, Inc.",Consumer Goods,Packaged Foods
+UG,"United-Guardian, Inc.",Consumer Goods,Household & Personal Products
+JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General
+MRK,"Merck & Co., Inc.",Healthcare,Drug Manufacturers - General
+LLY,Eli Lilly and Company,Healthcare,Drug Manufacturers - General
+BMY,Bristol-Myers Squibb Company,Healthcare,Drug Manufacturers - General
+PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General
+CHE,Chemed Corporation,Healthcare,Medical Care Facilities
+BIO,"Bio-Rad Laboratories, Inc.",Healthcare,Medical Devices
+BAX,Baxter International Inc.,Healthcare,Medical Instruments & Supplies
+HUM,Humana Inc.,Healthcare,Healthcare Plans
+MDT,Medtronic plc,Healthcare,Medical Devices
+NVO,Novo Nordisk A/S,Healthcare,Drug Manufacturers - General
+THC,Tenet Healthcare Corporation,Healthcare,Medical Care Facilities
+CI,The Cigna Group,Healthcare,Healthcare Plans
+BDX,"Becton, Dickinson and Company",Healthcare,Medical Instruments & Supplies
+ABT,Abbott Laboratories,Healthcare,Medical Devices
+RVTY,"Revvity, Inc.",Healthcare,Diagnostics & Research
+COO,"The Cooper Companies, Inc.",Healthcare,Medical Instruments & Supplies
+AMS,American Shared Hospital Services,Healthcare,Medical Care Facilities
+AMGN,Amgen Inc.,Healthcare,Drug Manufacturers - General
+CVS,CVS Health Corporation,Healthcare,Healthcare Plans
+GSK,GSK plc,Healthcare,Drug Manufacturers - General
+NHC,National HealthCare Corporation,Healthcare,Medical Care Facilities
+TMO,Thermo Fisher Scientific Inc.,Healthcare,Diagnostics & Research
+DHR,Danaher Corporation,Healthcare,Diagnostics & Research
+PHG,Koninklijke Philips N.V.,Healthcare,Medical Devices
+CAH,"Cardinal Health, Inc.",Healthcare,Medical Distribution
+WST,"West Pharmaceutical Services, Inc.",Healthcare,Medical Instruments & Supplies
+SYK,Stryker Corporation,Healthcare,Medical Devices
+TFX,Teleflex Incorporated,Healthcare,Medical Instruments & Supplies
+ACH,"Accendra Health, Inc.",Healthcare,Medical Distribution
+HCSG,"Healthcare Services Group, Inc.",Healthcare,Medical Care Facilities
+RGEN,Repligen Corporation,Healthcare,Medical Instruments & Supplies
+UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans
+UHS,"Universal Health Services, Inc.",Healthcare,Medical Care Facilities
+CNMD,CONMED Corporation,Healthcare,Medical Devices
+TEVA,Teva Pharmaceutical Industries Limited,Healthcare,Drug Manufacturers - Specialty & Generic
+AXGN,"Axogen, Inc.",Healthcare,Medical Devices
+LH,Labcorp Holdings Inc.,Healthcare,Diagnostics & Research
+XRAY,DENTSPLY SIRONA Inc.,Healthcare,Medical Instruments & Supplies
+HAE,Haemonetics Corporation,Healthcare,Medical Devices
+IDXX,"IDEXX Laboratories, Inc.",Healthcare,Diagnostics & Research
+ALKS,Alkermes plc,Healthcare,Drug Manufacturers - Specialty & Generic
+BIIB,Biogen Inc.,Healthcare,Drug Manufacturers - General
+PRGO,Perrigo Company plc,Healthcare,Drug Manufacturers - Specialty & Generic
+GILD,"Gilead Sciences, Inc.",Healthcare,Drug Manufacturers - General
+MMSI,"Merit Medical Systems, Inc.",Healthcare,Medical Instruments & Supplies
+STAA,STAAR Surgical Company,Healthcare,Medical Instruments & Supplies
+QDEL,QuidelOrtho Corporation,Healthcare,Medical Devices
+DXR,Daxor Corporation,Healthcare,Medical Instruments & Supplies
+OSUR,"OraSure Technologies, Inc.",Healthcare,Medical Instruments & Supplies
+CVX,Chevron Corporation,Energy,Oil & Gas Integrated
+XOM,ExxonMobil Holdings Corporation,Energy,Oil & Gas Integrated
+HAL,Halliburton Company,Energy,Oil & Gas Equipment & Services
+BP,BP p.l.c.,Energy,Oil & Gas Integrated
+NC,"NACCO Industries, Inc.",Energy,Thermal Coal
+APA,APA Corporation,Energy,Oil & Gas E&P
+HP,"Helmerich & Payne, Inc.",Energy,Oil & Gas Drilling
+COP,ConocoPhillips,Energy,Oil & Gas E&P
+SLB,SLB N.V.,Energy,Oil & Gas Equipment & Services
+OXY,Occidental Petroleum Corporation,Energy,Oil & Gas E&P
+WMB,"The Williams Companies, Inc.",Energy,Oil & Gas Midstream
+VLO,Valero Energy Corporation,Energy,Oil & Gas Refining & Marketing
+MUR,Murphy Oil Corporation,Energy,Oil & Gas E&P
+BRN,"Barnwell Industries, Inc.",Energy,Oil & Gas E&P
+OKE,"ONEOK, Inc.",Energy,Oil & Gas Midstream
+IMO,Imperial Oil Limited,Energy,Oil & Gas Integrated
+IEP,Icahn Enterprises L.P.,Energy,Oil & Gas Refining & Marketing
+NFG,National Fuel Gas Company,Energy,Oil & Gas Integrated
+SJT,San Juan Basin Royalty Trust,Energy,Oil & Gas E&P
+EQT,EQT Corporation,Energy,Oil & Gas E&P
+PBT,Permian Basin Royalty Trust,Energy,Oil & Gas Midstream
+NRT,North European Oil Royalty Trust,Energy,Oil & Gas E&P
+RES,"RPC, Inc.",Energy,Oil & Gas Equipment & Services
+TRP,TC Energy Corporation,Energy,Oil & Gas Midstream
+TDW,Tidewater Inc.,Energy,Oil & Gas Equipment & Services
+MTR,Mesa Royalty Trust,Energy,Oil & Gas E&P
+SHEL,Shell plc,Energy,Oil & Gas Integrated
+SBR,Sabine Royalty Trust,Energy,Oil & Gas Midstream
+TPL,Texas Pacific Land Corporation,Energy,Oil & Gas E&P
+EOG,"EOG Resources, Inc.",Energy,Oil & Gas E&P
+CRK,"Comstock Resources, Inc.",Energy,Oil & Gas E&P
+DWSN,Dawson Geophysical Company,Energy,Oil & Gas Equipment & Services
+OII,"Oceaneering International, Inc.",Energy,Oil & Gas Equipment & Services
+BSIN,Big Sky Industrial Inc.,Energy,Oil & Gas E&P
+ENB,Enbridge Inc.,Energy,Oil & Gas Midstream
+TTI,"TETRA Technologies, Inc.",Energy,Oil & Gas Equipment & Services
+WKC,World Kinect Corporation,Energy,Oil & Gas Refining & Marketing
+NBR,Nabors Industries Ltd.,Energy,Oil & Gas Drilling
+CRT,Cross Timbers Royalty Trust,Energy,Oil & Gas E&P
+VAL,Valaris Limited,Energy,Oil & Gas Drilling
+DVN,Devon Energy Corporation,Energy,Oil & Gas E&P
+DINO,HF Sinclair Corporation,Energy,Oil & Gas Refining & Marketing
+SM,SM Energy Company,Energy,Oil & Gas E&P
+RRC,Range Resources Corporation,Energy,Oil & Gas E&P
+EGY,"VAALCO Energy, Inc.",Energy,Oil & Gas E&P
+RIG,Transocean Ltd.,Energy,Oil & Gas Drilling
+YPF,YPF Sociedad Anónima,Energy,Oil & Gas Integrated
+PTEN,"Patterson-UTI Energy, Inc.",Energy,Oil & Gas Drilling
+AEC,Anfield Energy Inc.,Energy,Uranium
+SU,Suncor Energy Inc.,Energy,Oil & Gas Integrated

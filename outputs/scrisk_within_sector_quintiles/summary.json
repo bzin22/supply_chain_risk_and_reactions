@@ -1,0 +1,46 @@
+{
+  "input": "/Users/bzin/stock_market_reactions_recreation_study/artifacts/earnings_call_supply_chain/ppmi_svd_full_20260910_vocab_v2/sensitivity/no_self_pairs/event_returns.csv",
+  "group_column": "sector",
+  "analysable_calls": 17833,
+  "zero_scores": 7678,
+  "positive_scores": 10155,
+  "positives_only": {
+    "mode": "positives_only",
+    "min_rankable_per_industry": 25,
+    "industries_total": 9,
+    "industries_ranked": 9,
+    "industries_excluded": 0,
+    "excluded_industry_names": [],
+    "calls_in_excluded_industries": 0,
+    "observations_ranked": 10155
+  },
+  "all_observations": {
+    "mode": "all_observations",
+    "min_rankable_per_industry": 25,
+    "industries_total": 9,
+    "industries_ranked": 9,
+    "industries_excluded": 0,
+    "excluded_industry_names": [],
+    "calls_in_excluded_industries": 0,
+    "observations_ranked": 17833,
+    "zero_share_of_quintile_percent": {
+      "1": 100.0,
+      "2": 89.73,
+      "3": 25.46,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  "largest_group_share_of_a_quintile_percent": {
+    "within_sector": 16.13,
+    "pooled": 25.8
+  },
+  "group_share_spread_across_quintiles_percent": {
+    "within_group_max": 0.05,
+    "within_group_median": 0.032,
+    "pooled_max": 19.645,
+    "pooled_median": 9.207,
+    "worst_balanced_group_within": "Energy",
+    "worst_balanced_group_pooled": "Semiconductors"
+  }
+}

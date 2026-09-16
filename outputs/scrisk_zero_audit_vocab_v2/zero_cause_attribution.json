@@ -1,0 +1,26 @@
+{
+  "3_window_near_miss_11_to_25_tokens": {
+    "calls": 2668,
+    "percent_of_zeros": 36.16
+  },
+  "4_window_miss_26_to_50_tokens": {
+    "calls": 1551,
+    "percent_of_zeros": 21.02
+  },
+  "5_no_colocated_language_at_any_plausible_window": {
+    "calls": 3160,
+    "percent_of_zeros": 42.82
+  },
+  "_total": {
+    "calls": 7379,
+    "percent_of_zeros": 100.0
+  },
+  "_recoverable_by_vocabulary_fix_alone": {
+    "calls": 0,
+    "percent_of_zeros": 0.0
+  },
+  "_recoverable_by_vocabulary_or_window_25": {
+    "calls": 2668,
+    "percent_of_zeros": 36.16
+  }
+}

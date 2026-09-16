@@ -1,0 +1,35 @@
+{
+  "zero": {
+    "calls": 9750,
+    "degenerate_repetition": 1,
+    "very_short_under_1000_tokens": 13,
+    "redacted_spoken_content": 1,
+    "provider_copyright_boilerplate": 1,
+    "transcript_unavailable": 0,
+    "any_flag": 14
+  },
+  "positive": {
+    "calls": 8098,
+    "degenerate_repetition": 0,
+    "very_short_under_1000_tokens": 1,
+    "redacted_spoken_content": 0,
+    "provider_copyright_boilerplate": 0,
+    "transcript_unavailable": 0,
+    "any_flag": 1
+  },
+  "not_analysable": {
+    "calls": 9152,
+    "degenerate_repetition": 0,
+    "very_short_under_1000_tokens": 0,
+    "redacted_spoken_content": 0,
+    "provider_copyright_boilerplate": 0,
+    "transcript_unavailable": 0,
+    "any_flag": 0
+  },
+  "total_rows": 27000,
+  "markers": {
+    "redacted_spoken_content": "(full spoken content)",
+    "provider_copyright_boilerplate": "copyright policy: all transcripts on this site",
+    "transcript_unavailable": "transcript is not available"
+  }
+}

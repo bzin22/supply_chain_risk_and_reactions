@@ -1,0 +1,400 @@
+ticker,company_name,sector,calls,zero_calls,median_word_count,median_supply_chain_occurrences,median_risk_occurrences,zero_rate_percent
+IMKTA,"Ingles Markets, Incorporated",Consumer Goods,15,15,2657.0,13.0,2.0,100.0
+CIA,"Citizens, Inc.",Financial Services,6,6,3431.5,6.5,5.5,100.0
+TEVA,Teva Pharmaceutical Industries Limited,Healthcare,4,4,3988.0,14.0,2.0,100.0
+AIRT,"Air T, Inc.",Industrials,1,1,1854.0,36.0,6.0,100.0
+AMS,American Shared Hospital Services,Healthcare,40,36,3098.5,10.5,1.0,90.0
+BMY,Bristol-Myers Squibb Company,Healthcare,55,48,7615.0,23.0,4.0,87.27
+NBN,Northeast Bank,Financial Services,35,30,3624.0,31.0,3.0,85.71
+SM,SM Energy Company,Energy,48,41,4374.5,28.5,4.5,85.42
+ABEO,Abeona Therapeutics Inc.,Technology,27,23,4320.0,20.0,3.0,85.19
+IDCC,"InterDigital, Inc.",Technology,52,43,4793.0,23.0,6.0,82.69
+ORCL,Oracle Corporation,Technology,51,42,5301.0,51.0,4.0,82.35
+BRT,BRT Apartments Corp.,Real Estate,17,14,2688.0,7.0,5.0,82.35
+ARKR,Ark Restaurants Corp.,Retail,39,32,2838.0,6.0,2.0,82.05
+ADBE,Adobe Inc.,Technology,50,40,8218.0,75.0,5.0,80.0
+SCI,Service Corporation International,Retail,50,40,6313.5,41.0,6.0,80.0
+JOE,The St. Joe Company,Real Estate,10,8,3440.5,11.5,4.5,80.0
+GILD,"Gilead Sciences, Inc.",Healthcare,54,43,8359.5,26.5,8.0,79.63
+ALKS,Alkermes plc,Healthcare,46,36,6884.0,27.5,4.0,78.26
+HST,"Host Hotels & Resorts, Inc.",Real Estate,50,39,7436.0,19.0,10.0,78.0
+MRK,"Merck & Co., Inc.",Healthcare,50,39,8699.5,34.5,9.0,78.0
+NHI,"National Health Investors, Inc.",Real Estate,44,34,5366.5,15.0,7.0,77.27
+HRTX,"Heron Therapeutics, Inc.",Technology,13,10,4356.0,22.0,5.0,76.92
+LTC,"LTC Properties, Inc.",Real Estate,43,33,5536.0,15.0,8.0,76.74
+BIO,"Bio-Rad Laboratories, Inc.",Healthcare,47,36,4413.0,22.0,4.0,76.6
+FUN,Six Flags Entertainment Corporation,Retail,55,42,7431.0,26.0,6.0,76.36
+CHE,Chemed Corporation,Healthcare,46,35,4456.5,8.0,4.0,76.09
+UL,Unilever PLC,Consumer Goods,4,3,9247.0,54.0,3.0,75.0
+RVTY,"Revvity, Inc.",Healthcare,51,38,7751.0,42.0,5.0,74.51
+GL,Globe Life Inc.,Financial Services,47,35,5955.0,11.0,4.0,74.47
+FRPH,"FRP Holdings, Inc.",Real Estate,31,23,3119.0,29.0,5.0,74.19
+HR,Healthcare Realty Trust Incorporated,Real Estate,46,34,6873.5,20.0,8.0,73.91
+ALOT,AstroNova Inc,Technology,41,30,3918.0,48.0,4.0,73.17
+AMGN,Amgen Inc.,Healthcare,55,40,7852.0,32.0,6.0,72.73
+THC,Tenet Healthcare Corporation,Healthcare,54,39,7784.0,27.0,5.0,72.22
+CSPI,CSP Inc.,Technology,50,36,3283.5,39.0,2.0,72.0
+SUI,"Sun Communities, Inc.",Real Estate,46,33,5161.5,30.0,2.0,71.74
+CLDX,"Celldex Therapeutics, Inc.",Technology,14,10,5151.5,14.5,5.5,71.43
+CRK,"Comstock Resources, Inc.",Energy,52,37,6842.5,58.0,3.0,71.15
+CBU,"Community Financial System, Inc.",Financial Services,45,32,5654.0,18.0,7.0,71.11
+AXGN,"Axogen, Inc.",Healthcare,38,27,5286.0,17.0,3.0,71.05
+BN,Brookfield Corporation,Financial Services,38,27,5295.5,26.0,7.0,71.05
+CTO,"CTO Realty Growth, Inc.",Real Estate,31,22,3932.0,17.0,3.0,70.97
+GTY,Getty Realty Corp.,Real Estate,48,34,3891.5,18.0,3.0,70.83
+PRSO,Peraso Inc.,Semiconductors,27,19,5228.0,89.0,6.0,70.37
+LLY,Eli Lilly and Company,Healthcare,50,35,8230.5,33.0,6.0,70.0
+FEIM,"Frequency Electronics, Inc.",Technology,20,14,3395.5,30.0,2.0,70.0
+ROL,"Rollins, Inc.",Retail,43,30,5450.0,39.0,7.0,69.77
+STAA,STAAR Surgical Company,Healthcare,46,32,5473.5,32.0,5.0,69.57
+SLM,SLM Corporation,Financial Services,52,36,6338.5,20.5,7.5,69.23
+PSA,Public Storage,Real Estate,55,38,5600.0,45.0,5.0,69.09
+IDXX,"IDEXX Laboratories, Inc.",Healthcare,45,31,8174.0,69.0,6.0,68.89
+OHI,"Omega Healthcare Investors, Inc.",Real Estate,45,31,5130.0,14.0,6.0,68.89
+LH,Labcorp Holdings Inc.,Healthcare,51,35,8254.0,36.0,4.0,68.63
+RHP,"Ryman Hospitality Properties, Inc.",Real Estate,47,32,6695.0,28.0,4.0,68.09
+ABT,Abbott Laboratories,Healthcare,50,34,7219.5,33.5,8.0,68.0
+DOC,"Healthpeak Properties, Inc.",Real Estate,43,29,6976.0,24.0,7.0,67.44
+BBWI,"Bath & Body Works, Inc.",Retail,49,33,7087.0,87.0,2.0,67.35
+WRB,W. R. Berkley Corporation,Financial Services,49,33,6557.0,10.0,12.0,67.35
+BOH,Bank of Hawaii Corporation,Financial Services,45,30,4528.0,15.0,5.0,66.67
+IEP,Icahn Enterprises L.P.,Energy,42,28,3044.5,26.5,8.0,66.67
+ALCO,"Alico, Inc.",Consumer Goods,15,10,2964.0,20.0,4.0,66.67
+DXR,Daxor Corporation,Healthcare,3,2,6400.0,30.0,5.0,66.67
+MO,"Altria Group, Inc.",Consumer Goods,53,35,6617.0,53.0,5.0,66.04
+CNA,CNA Financial Corporation,Financial Services,52,34,4899.0,7.0,12.0,65.38
+HUM,Humana Inc.,Healthcare,45,29,8753.0,35.0,15.0,64.44
+IPAR,"Interparfums, Inc.",Consumer Goods,42,27,4651.5,41.0,6.0,64.29
+PAYX,"Paychex, Inc.",Technology,36,23,8494.5,89.5,5.5,63.89
+JJSF,J&J Snack Foods Corp.,Consumer Goods,47,30,5444.0,49.0,4.0,63.83
+LXP,LXP Industrial Trust,Real Estate,47,30,4426.0,24.0,5.0,63.83
+GIS,"General Mills, Inc.",Consumer Goods,46,29,7644.0,68.0,3.0,63.04
+TYL,"Tyler Technologies, Inc.",Technology,46,29,7424.0,50.0,5.0,63.04
+JNJ,Johnson & Johnson,Healthcare,48,30,8550.5,38.5,5.0,62.5
+BXMT,"Blackstone Mortgage Trust, Inc.",Real Estate,50,31,4964.0,15.0,13.0,62.0
+JKHY,"Jack Henry & Associates, Inc.",Technology,42,26,5610.0,48.0,6.0,61.9
+L,Loews Corporation,Financial Services,55,34,4127.0,26.0,5.0,61.82
+HRB,"H&R Block, Inc.",Retail,50,30,6738.0,62.5,6.0,60.0
+QDEL,QuidelOrtho Corporation,Healthcare,50,30,6182.0,56.0,3.0,60.0
+TPC,Tutor Perini Corporation,Industrials,50,30,5353.0,43.0,5.0,60.0
+TDW,Tidewater Inc.,Energy,45,27,6025.0,48.0,6.0,60.0
+BTI,British American Tobacco p.l.c.,Consumer Goods,10,6,8470.5,44.0,6.0,60.0
+MCD,McDonald's Corporation,Retail,52,31,8566.0,71.0,4.0,59.62
+PAR,PAR Technology Corporation,Technology,47,28,5794.0,61.0,4.0,59.57
+MBI,MBIA Inc.,Financial Services,54,32,4454.5,7.0,14.5,59.26
+CASY,"Casey's General Stores, Inc.",Retail,49,29,7435.0,62.0,6.0,59.18
+CNMD,CONMED Corporation,Healthcare,44,26,6051.0,39.5,8.0,59.09
+MYE,"Myers Industries, Inc.",Retail,44,26,5272.0,61.5,6.0,59.09
+AIR,AAR Corp.,Industrials,22,13,4059.5,50.5,3.5,59.09
+BRC,Brady Corporation,Industrials,34,20,7116.5,70.5,6.0,58.82
+COO,"The Cooper Companies, Inc.",Healthcare,48,28,7567.0,45.0,6.0,58.33
+RRC,Range Resources Corporation,Energy,50,29,8306.5,78.0,5.0,58.0
+CBRL,"Cracker Barrel Old Country Store, Inc.",Retail,45,26,6029.0,41.0,9.0,57.78
+DGII,Digi International Inc.,Technology,45,26,4338.0,63.0,4.0,57.78
+EQT,EQT Corporation,Energy,45,26,6787.0,49.0,5.0,57.78
+NNN,"NNN REIT, Inc.",Real Estate,47,27,4922.0,23.0,6.0,57.45
+PRGO,Perrigo Company plc,Healthcare,47,27,7997.0,67.0,4.0,57.45
+UIS,Unisys Corporation,Technology,54,31,7438.0,59.0,4.0,57.41
+EOG,"EOG Resources, Inc.",Energy,51,29,7935.0,61.0,4.0,56.86
+KMB,Kimberly-Clark Corporation,Consumer Goods,51,29,7808.0,51.0,5.0,56.86
+UNM,Unum Group,Financial Services,51,29,9039.0,20.0,18.0,56.86
+TTI,"TETRA Technologies, Inc.",Energy,44,25,5982.0,61.0,4.0,56.82
+ADP,"Automatic Data Processing, Inc.",Technology,48,27,8723.5,72.0,5.0,56.25
+MMSI,"Merit Medical Systems, Inc.",Healthcare,48,27,7261.0,42.0,7.0,56.25
+IMOS,ChipMOS TECHNOLOGIES INC.,Semiconductors,34,19,2833.0,30.0,4.0,55.88
+PXLW,"Pixelworks, Inc.",Semiconductors,52,29,4504.5,59.5,3.0,55.77
+ELS,"Equity LifeStyle Properties, Inc.",Real Estate,45,25,5217.0,35.0,5.0,55.56
+ENTG,"Entegris, Inc.",Semiconductors,58,32,5628.0,65.0,5.5,55.17
+UNH,UnitedHealth Group Incorporated,Healthcare,40,22,8572.0,46.5,11.0,55.0
+AFG,"American Financial Group, Inc.",Financial Services,51,28,5340.0,17.0,10.0,54.9
+CCEP,Coca-Cola Europacific Partners PLC,Consumer Goods,42,23,7167.0,58.0,4.0,54.76
+CDP,COPT Defense Properties,Real Estate,42,23,6104.5,41.0,7.0,54.76
+JBSS,"John B. Sanfilippo & Son, Inc.",Consumer Goods,44,24,4036.5,105.5,6.0,54.55
+CHD,"Church & Dwight Co., Inc.",Consumer Goods,46,25,7815.0,53.0,5.0,54.35
+ACLS,"Axcelis Technologies, Inc.",Semiconductors,50,27,5000.0,89.5,3.5,54.0
+CPB,The Campbell's Company,Consumer Goods,50,27,7996.5,74.0,4.0,54.0
+SPG,"Simon Property Group, Inc.",Real Estate,52,28,6584.0,43.5,8.0,53.85
+RMBS,Rambus Inc.,Semiconductors,54,29,4778.5,44.5,4.0,53.7
+FRT,Federal Realty Investment Trust,Real Estate,45,24,7708.0,49.0,7.0,53.33
+USB,U.S. Bancorp,Financial Services,49,26,7233.0,38.0,10.0,53.06
+ALK,"Alaska Air Group, Inc.",Industrials,48,25,8566.0,58.0,6.0,52.08
+TFX,Teleflex Incorporated,Healthcare,48,25,7856.0,47.5,8.5,52.08
+SYK,Stryker Corporation,Healthcare,52,27,8447.0,43.5,7.0,51.92
+BIIB,Biogen Inc.,Healthcare,56,29,8202.0,32.5,11.0,51.79
+VNO,Vornado Realty Trust,Real Estate,41,21,8026.0,43.0,7.0,51.22
+FLO,"Flowers Foods, Inc.",Consumer Goods,49,25,6086.0,63.0,4.0,51.02
+TAP,Molson Coors Beverage Company,Consumer Goods,49,25,8178.0,50.0,4.0,51.02
+MDT,Medtronic plc,Healthcare,53,27,9618.0,48.0,8.0,50.94
+OII,"Oceaneering International, Inc.",Energy,53,27,5934.0,50.0,3.0,50.94
+PTC,PTC Inc.,Technology,53,27,8269.0,74.0,5.0,50.94
+BDX,"Becton, Dickinson and Company",Healthcare,54,27,8749.5,54.5,6.0,50.0
+REG,Regency Centers Corporation,Real Estate,52,26,6402.0,42.0,9.0,50.0
+AFL,Aflac Incorporated,Financial Services,50,25,7543.5,37.0,12.0,50.0
+AGYS,"Agilysys, Inc.",Technology,50,25,5558.5,54.0,3.0,50.0
+ALX,"Alexander's, Inc.",Real Estate,20,10,7995.0,40.5,8.5,50.0
+TPL,Texas Pacific Land Corporation,Energy,12,6,3502.5,35.0,5.0,50.0
+HAS,"Hasbro, Inc.",Retail,51,25,8479.0,86.0,2.0,49.02
+ACH,"Accendra Health, Inc.",Healthcare,49,24,5812.0,83.0,6.0,48.98
+CAL,"Caleres, Inc.",Retail,47,23,5735.0,69.0,6.0,48.94
+EGY,"VAALCO Energy, Inc.",Energy,47,23,6067.0,45.0,5.0,48.94
+NC,"NACCO Industries, Inc.",Energy,43,21,3601.0,29.0,7.0,48.84
+AEG,Aegon Ltd.,Financial Services,29,14,8064.0,30.0,16.0,48.28
+AXP,American Express Company,Financial Services,54,26,8466.5,43.5,8.0,48.15
+HSY,The Hershey Company,Consumer Goods,54,26,7792.0,80.0,7.0,48.15
+PFE,Pfizer Inc.,Healthcare,54,26,8800.0,35.0,9.0,48.15
+TMO,Thermo Fisher Scientific Inc.,Healthcare,54,26,8201.0,70.0,5.5,48.15
+QCOM,QUALCOMM Incorporated,Semiconductors,52,25,7397.0,67.0,4.0,48.08
+MUR,Murphy Oil Corporation,Energy,50,24,7058.5,54.5,6.0,48.0
+CRUS,"Cirrus Logic, Inc.",Semiconductors,48,23,5215.5,61.0,5.0,47.92
+CAMT,Camtek Ltd.,Semiconductors,46,22,4063.0,57.5,5.0,47.83
+RYN,Rayonier Inc.,Real Estate,44,21,7095.5,45.0,5.0,47.73
+SMP,"Standard Motor Products, Inc.",Retail,44,21,4111.0,62.0,4.5,47.73
+BDN,Brandywine Realty Trust,Real Estate,53,25,7658.0,43.0,6.0,47.17
+XOM,ExxonMobil Holdings Corporation,Energy,51,24,8393.0,71.0,5.0,47.06
+CI,The Cigna Group,Healthcare,49,23,9197.0,98.0,15.0,46.94
+KIM,Kimco Realty Corporation,Real Estate,49,23,7698.0,53.0,8.0,46.94
+LOW,"Lowe's Companies, Inc.",Retail,47,22,7904.0,116.0,7.0,46.81
+GSK,GSK plc,Healthcare,45,21,8430.0,52.0,7.0,46.67
+WSO,"Watsco, Inc.",Industrials,45,21,4885.0,59.0,4.0,46.67
+PBI,Pitney Bowes Inc.,Industrials,56,26,6829.0,72.5,7.5,46.43
+ABM,ABM Industries Incorporated,Industrials,41,19,6929.0,47.0,6.0,46.34
+UVV,Universal Corporation,Consumer Goods,41,19,2662.0,37.0,2.0,46.34
+CL,Colgate-Palmolive Company,Consumer Goods,54,25,7919.5,51.5,5.0,46.3
+LUV,Southwest Airlines Co.,Industrials,54,25,7959.5,55.5,5.0,46.3
+XRX,Xerox Holdings Corporation,Industrials,52,24,7666.0,72.0,5.5,46.15
+NVO,Novo Nordisk A/S,Healthcare,39,18,7712.0,24.0,11.0,46.15
+AME,"AMETEK, Inc.",Industrials,48,22,6651.0,69.0,11.0,45.83
+CAG,"Conagra Brands, Inc.",Consumer Goods,48,22,8564.0,76.5,5.0,45.83
+KO,The Coca-Cola Company,Consumer Goods,48,22,7893.5,52.0,7.5,45.83
+ROG,Rogers Corporation,Technology,48,22,5954.0,56.5,5.0,45.83
+UDR,"UDR, Inc.",Real Estate,48,22,8436.5,43.0,9.5,45.83
+XRAY,DENTSPLY SIRONA Inc.,Healthcare,48,22,8135.0,56.0,8.0,45.83
+SON,Sonoco Products Company,Retail,46,21,8281.0,73.0,6.0,45.65
+NVDA,NVIDIA Corporation,Semiconductors,55,25,7095.0,62.0,5.0,45.45
+GAP,"The Gap, Inc.",Retail,53,24,8284.0,96.0,4.0,45.28
+SAN,"Banco Santander, S.A.",Financial Services,38,17,7191.5,38.0,20.0,44.74
+ADSK,"Autodesk, Inc.",Technology,47,21,8538.0,91.0,6.0,44.68
+DCO,Ducommun Incorporated,Industrials,45,20,5220.0,60.0,7.0,44.44
+LNC,Lincoln National Corporation,Financial Services,52,23,7374.0,34.0,17.0,44.23
+SYY,Sysco Corporation,Consumer Goods,52,23,8637.5,91.5,5.0,44.23
+RGEN,Repligen Corporation,Healthcare,43,19,6086.0,64.0,5.0,44.19
+MSFT,Microsoft Corporation,Technology,48,21,7886.0,69.5,6.5,43.75
+OSUR,"OraSure Technologies, Inc.",Healthcare,46,20,5801.0,69.0,3.0,43.48
+PEP,"PepsiCo, Inc.",Consumer Goods,53,23,6183.0,43.0,6.0,43.4
+ACU,Acme United Corporation,Consumer Goods,44,19,3064.5,51.5,6.5,43.18
+ELME,Elme Communities,Real Estate,51,22,5891.0,31.0,10.0,43.14
+CCK,"Crown Holdings, Inc.",Retail,49,21,7577.0,77.0,5.0,42.86
+CLX,The Clorox Company,Consumer Goods,54,23,8450.5,80.5,4.5,42.59
+AIT,"Applied Industrial Technologies, Inc.",Industrials,45,19,5276.0,66.0,5.0,42.22
+KR,The Kroger Co.,Consumer Goods,45,19,8053.0,100.0,6.0,42.22
+MSI,"Motorola Solutions, Inc.",Technology,48,20,6556.0,80.5,6.0,41.67
+PTEN,"Patterson-UTI Energy, Inc.",Energy,48,20,7280.5,55.5,7.0,41.67
+CSX,CSX Corporation,Industrials,53,22,8112.0,135.0,6.0,41.51
+DHR,Danaher Corporation,Healthcare,53,22,7536.0,55.0,8.0,41.51
+KEY,KeyCorp,Financial Services,53,22,8073.0,44.0,9.0,41.51
+SF,Stifel Financial Corp.,Financial Services,46,19,6656.0,28.0,10.5,41.3
+SKT,Tanger Inc.,Real Estate,49,20,5522.0,36.0,6.0,40.82
+LSCC,Lattice Semiconductor Corporation,Semiconductors,52,21,5659.0,65.0,6.0,40.38
+PNC,"The PNC Financial Services Group, Inc.",Financial Services,52,21,7024.5,36.5,8.5,40.38
+AKR,Acadia Realty Trust,Real Estate,45,18,6840.0,59.0,10.0,40.0
+PHG,Koninklijke Philips N.V.,Healthcare,45,18,8210.0,77.0,10.0,40.0
+TSEM,Tower Semiconductor Ltd.,Semiconductors,5,2,5506.0,72.0,6.0,40.0
+GLW,Corning Incorporated,Technology,53,21,8020.0,107.0,8.0,39.62
+OKE,"ONEOK, Inc.",Energy,53,21,7010.0,79.0,5.0,39.62
+AXTI,"AXT, Inc.",Semiconductors,48,19,5291.0,103.5,11.0,39.58
+CDNS,"Cadence Design Systems, Inc.",Technology,48,19,6266.0,74.0,4.0,39.58
+GHI,Greystone Housing Impact Investors LP,Financial Services,33,13,4069.0,18.0,9.0,39.39
+CVS,CVS Health Corporation,Healthcare,56,22,8668.0,87.5,10.0,39.29
+UHS,"Universal Health Services, Inc.",Healthcare,51,20,6757.0,10.0,9.0,39.22
+DX,"Dynex Capital, Inc.",Real Estate,46,18,5613.5,10.5,32.0,39.13
+INTC,Intel Corporation,Semiconductors,54,21,7880.5,99.5,7.5,38.89
+AOS,A. O. Smith Corporation,Industrials,49,19,6460.0,56.0,7.0,38.78
+MZTI,The Marzetti Company,Consumer Goods,49,19,4259.0,60.0,6.0,38.78
+HCSG,"Healthcare Services Group, Inc.",Healthcare,44,17,5289.5,39.0,8.0,38.64
+RLI,RLI Corp.,Financial Services,44,17,4534.5,21.0,12.0,38.64
+GPC,Genuine Parts Company,Retail,52,20,8046.5,77.0,4.5,38.46
+APA,APA Corporation,Energy,47,18,7765.0,64.0,5.0,38.3
+OXM,"Oxford Industries, Inc.",Retail,42,16,5259.0,69.5,4.5,38.1
+BEN,Franklin Templeton Inc.,Financial Services,50,19,5612.5,34.0,12.0,38.0
+RELL,"Richardson Electronics, Ltd.",Technology,45,17,6188.0,90.0,6.0,37.78
+ONTO,Onto Innovation Inc.,Semiconductors,53,20,5188.0,69.0,5.0,37.74
+BBY,"Best Buy Co., Inc.",Retail,51,19,8613.0,108.0,7.0,37.25
+FDX,FedEx Corporation,Industrials,51,19,8330.0,144.0,8.0,37.25
+HD,"The Home Depot, Inc.",Retail,51,19,7701.0,110.0,10.0,37.25
+DWSN,Dawson Geophysical Company,Energy,35,13,4084.0,32.0,8.0,37.14
+PRG,"PROG Holdings, Inc.",Industrials,19,7,6363.0,81.0,5.0,36.84
+ATRO,Astronics Corporation,Industrials,49,18,5137.0,56.0,7.0,36.73
+LHX,"L3Harris Technologies, Inc.",Industrials,49,18,7259.0,82.0,8.0,36.73
+AAPL,Apple Inc.,Technology,52,19,7343.0,84.5,6.0,36.54
+GE,GE Aerospace,Industrials,52,19,8295.0,122.0,5.0,36.54
+PGR,The Progressive Corporation,Financial Services,44,16,7462.5,46.5,17.0,36.36
+QUIK,QuickLogic Corporation,Semiconductors,44,16,6122.0,89.5,8.0,36.36
+KBH,KB Home,Retail,33,12,8472.0,96.0,5.0,36.36
+F,Ford Motor Company,Retail,50,18,7627.0,79.0,7.0,36.0
+HAE,Haemonetics Corporation,Healthcare,45,16,6796.0,68.0,4.0,35.56
+MGPI,"MGP Ingredients, Inc.",Consumer Goods,31,11,5250.0,67.0,6.0,35.48
+NWL,Newell Brands Inc.,Consumer Goods,48,17,8975.0,94.0,9.0,35.42
+RES,"RPC, Inc.",Energy,48,17,6106.0,60.5,7.0,35.42
+ADM,Archer-Daniels-Midland Company,Consumer Goods,51,18,7455.0,68.0,9.0,35.29
+MAA,"Mid-America Apartment Communities, Inc.",Real Estate,46,16,7949.5,44.5,10.0,34.78
+IBM,International Business Machines Corporation,Technology,49,17,8402.0,80.0,5.0,34.69
+RJF,"Raymond James Financial, Inc.",Financial Services,49,17,7352.0,47.0,9.0,34.69
+NFG,National Fuel Gas Company,Energy,44,15,5064.0,65.0,5.0,34.09
+SYNA,Synaptics Incorporated,Semiconductors,47,16,6471.0,82.0,6.0,34.04
+COHU,"Cohu, Inc.",Semiconductors,50,17,4059.0,83.0,6.0,34.0
+COP,ConocoPhillips,Energy,50,17,7158.0,62.5,6.0,34.0
+SWKS,"Skyworks Solutions, Inc.",Semiconductors,53,18,6681.0,81.0,4.0,33.96
+VLO,Valero Energy Corporation,Energy,53,18,7685.0,57.0,7.0,33.96
+RTX,RTX Corporation,Industrials,56,19,7814.0,59.0,9.0,33.93
+EMR,Emerson Electric Co.,Industrials,54,18,6914.0,69.0,6.0,33.33
+SLB,SLB N.V.,Energy,51,17,7849.0,60.0,7.0,33.33
+HELE,Helen of Troy Limited,Consumer Goods,45,15,8422.0,111.0,11.0,33.33
+BSET,"Bassett Furniture Industries, Incorporated",Retail,3,1,4734.0,107.0,5.0,33.33
+ASB,Associated Banc-Corp,Financial Services,52,17,5654.5,33.5,9.0,32.69
+ASX,"ASE Technology Holding Co., Ltd.",Semiconductors,46,15,5820.5,75.5,6.0,32.61
+BMI,"Badger Meter, Inc.",Technology,46,15,5754.5,59.0,7.0,32.61
+CUZ,Cousins Properties Incorporated,Real Estate,43,14,6891.0,46.0,9.0,32.56
+GFF,Griffon Corporation,Industrials,43,14,4157.0,37.0,7.0,32.56
+CACI,CACI International Inc,Technology,40,13,7303.5,69.5,7.5,32.5
+MMM,3M Company,Industrials,56,18,8364.0,90.5,10.0,32.14
+MAT,"Mattel, Inc.",Retail,53,17,8240.0,93.0,9.0,32.08
+AIN,Albany International Corp.,Retail,50,16,4655.5,49.5,5.0,32.0
+CVX,Chevron Corporation,Energy,50,16,7861.0,56.5,8.0,32.0
+PNR,Pentair plc,Industrials,50,16,8007.5,92.5,9.0,32.0
+DINO,HF Sinclair Corporation,Energy,47,15,6443.0,51.0,5.0,31.91
+IMO,Imperial Oil Limited,Energy,22,7,7101.0,76.5,8.5,31.82
+COST,Costco Wholesale Corporation,Consumer Goods,35,11,7767.0,70.0,9.0,31.43
+SU,Suncor Energy Inc.,Energy,48,15,6541.5,61.0,6.5,31.25
+VECO,Veeco Instruments Inc.,Semiconductors,48,15,5558.0,121.5,5.5,31.25
+GCO,Genesco Inc.,Retail,42,13,8178.5,91.0,6.0,30.95
+CAH,"Cardinal Health, Inc.",Healthcare,52,16,8667.0,107.5,9.5,30.77
+RIG,Transocean Ltd.,Energy,52,16,7564.5,74.0,10.0,30.77
+WMB,"The Williams Companies, Inc.",Energy,52,16,7863.0,60.5,7.0,30.77
+MAS,Masco Corporation,Industrials,49,15,7664.0,73.0,10.0,30.61
+HP,"Helmerich & Payne, Inc.",Energy,46,14,7528.5,67.0,7.0,30.43
+OXY,Occidental Petroleum Corporation,Energy,56,17,7846.5,73.5,7.0,30.36
+ERIC,Telefonaktiebolaget LM Ericsson (publ),Technology,43,13,6773.0,81.0,6.0,30.23
+TOL,"Toll Brothers, Inc.",Retail,43,13,7543.0,70.0,4.0,30.23
+KLIC,"Kulicke and Soffa Industries, Inc.",Semiconductors,50,15,4600.5,62.0,4.5,30.0
+NBR,Nabors Industries Ltd.,Energy,50,15,7452.5,48.0,8.0,30.0
+STT,State Street Corporation,Financial Services,50,15,8525.5,53.0,12.0,30.0
+TGT,Target Corporation,Consumer Goods,50,15,9488.5,108.0,9.5,30.0
+TM,Toyota Motor Corporation,Retail,10,3,4144.5,42.5,6.0,30.0
+AMAT,"Applied Materials, Inc.",Semiconductors,54,16,7779.0,115.0,9.0,29.63
+IP,International Paper Company,Retail,54,16,7704.0,100.0,9.0,29.63
+MKC,"McCormick & Company, Incorporated",Consumer Goods,27,8,8462.0,84.0,7.0,29.63
+VFC,V.F. Corporation,Retail,44,13,9224.0,107.5,7.5,29.55
+BALL,Ball Corporation,Retail,51,15,7785.0,78.0,7.0,29.41
+DIOD,Diodes Incorporated,Semiconductors,51,15,5557.0,71.0,7.0,29.41
+POWI,"Power Integrations, Inc.",Semiconductors,51,15,4880.0,62.0,8.0,29.41
+TRP,TC Energy Corporation,Energy,41,12,8231.0,92.0,15.0,29.27
+GEN,Gen Digital Inc.,Technology,48,14,7289.5,75.0,11.0,29.17
+STM,STMicroelectronics N.V.,Semiconductors,48,14,7229.0,93.0,7.0,29.17
+DVN,Devon Energy Corporation,Energy,55,16,8205.0,61.0,10.0,29.09
+CTS,CTS Corporation,Technology,45,13,4164.0,63.0,8.0,28.89
+AMKR,"Amkor Technology, Inc.",Semiconductors,56,16,4234.5,73.5,6.5,28.57
+ROK,"Rockwell Automation, Inc.",Industrials,49,14,7507.0,71.0,9.0,28.57
+GD,General Dynamics Corporation,Industrials,53,15,6509.0,88.0,9.0,28.3
+SLAB,Silicon Laboratories Inc.,Semiconductors,57,16,6578.0,75.0,6.0,28.07
+COHR,Coherent Corp.,Technology,43,12,6897.0,102.0,6.0,27.91
+AEHR,"Aehr Test Systems, Inc.",Semiconductors,18,5,6965.0,164.5,6.5,27.78
+EGP,"EastGroup Properties, Inc.",Real Estate,47,13,7454.0,38.0,10.0,27.66
+PG,The Procter & Gamble Company,Consumer Goods,51,14,9050.0,82.0,11.0,27.45
+WDC,Western Digital Corporation,Technology,51,14,6564.0,100.0,7.0,27.45
+VAL,Valaris Limited,Energy,11,3,6766.0,78.0,10.0,27.27
+HON,Honeywell International Inc.,Industrials,52,14,8784.5,106.5,9.5,26.92
+APOG,"Apogee Enterprises, Inc.",Industrials,26,7,6178.0,68.0,7.0,26.92
+WMT,Walmart Inc.,Consumer Goods,41,11,9335.0,140.0,8.0,26.83
+SMTC,Semtech Corporation,Semiconductors,45,12,6899.0,73.0,10.0,26.67
+MRVL,"Marvell Technology, Inc.",Semiconductors,43,11,7725.0,110.0,10.0,25.58
+CGNX,Cognex Corporation,Technology,47,12,7050.0,125.0,7.0,25.53
+TSN,"Tyson Foods, Inc.",Consumer Goods,52,13,8101.0,101.0,9.0,25.0
+BAC,Bank of America Corporation,Financial Services,48,12,9363.0,58.5,15.5,25.0
+HMC,"Honda Motor Co., Ltd.",Retail,16,4,3699.5,27.5,6.5,25.0
+BC,Brunswick Corporation,Retail,53,13,7785.0,114.0,6.0,24.53
+RRX,Regal Rexnord Corporation,Industrials,49,12,6977.0,95.0,9.0,24.49
+WGO,"Winnebago Industries, Inc.",Retail,21,5,9103.0,158.0,10.0,23.81
+BCS,Barclays PLC,Financial Services,38,9,8622.0,41.0,17.5,23.68
+UMH,"UMH Properties, Inc.",Real Estate,38,9,5458.0,41.5,6.0,23.68
+JPM,JPMorgan Chase & Co.,Financial Services,51,12,8373.0,46.0,18.0,23.53
+AIG,"American International Group, Inc.",Financial Services,47,11,8257.0,29.0,31.0,23.4
+MATX,"Matson, Inc.",Industrials,43,10,6366.0,96.0,10.0,23.26
+ENB,Enbridge Inc.,Energy,56,13,8324.5,68.5,11.0,23.21
+BAX,Baxter International Inc.,Healthcare,52,12,8370.0,53.5,8.0,23.08
+PHM,"PulteGroup, Inc.",Retail,52,12,8721.5,86.5,10.0,23.08
+WST,"West Pharmaceutical Services, Inc.",Healthcare,48,11,5414.0,93.0,6.0,22.92
+NVEC,NVE Corporation,Semiconductors,54,12,3834.0,41.5,10.0,22.22
+AMD,"Advanced Micro Devices, Inc.",Semiconductors,50,11,7160.0,81.5,6.0,22.0
+LPX,Louisiana-Pacific Corporation,Industrials,50,11,7255.0,73.5,5.0,22.0
+PLAB,"Photronics, Inc.",Semiconductors,46,10,4702.5,50.5,6.5,21.74
+CSCO,"Cisco Systems, Inc.",Technology,51,11,8090.0,97.0,13.0,21.57
+VSH,"Vishay Intertechnology, Inc.",Semiconductors,51,11,5590.0,95.0,8.0,21.57
+SONY,Sony Group Corporation,Technology,38,8,4951.5,45.0,13.0,21.05
+AB,AllianceBernstein Holding L.P.,Financial Services,48,10,6458.0,74.0,13.0,20.83
+WHR,Whirlpool Corporation,Retail,53,11,6798.0,81.0,8.0,20.75
+TSM,Taiwan Semiconductor Manufacturing Company Limited,Semiconductors,44,9,6540.5,84.5,7.0,20.45
+DE,Deere & Company,Industrials,50,10,8233.0,107.5,10.0,20.0
+ETN,Eaton Corporation plc,Industrials,50,10,7628.5,80.5,9.0,20.0
+HOG,"Harley-Davidson, Inc.",Retail,50,10,8012.0,161.5,8.0,20.0
+NSC,Norfolk Southern Corporation,Industrials,50,10,8627.0,154.0,10.5,20.0
+AVY,Avery Dennison Corporation,Retail,45,9,6486.0,95.0,6.0,20.0
+GT,The Goodyear Tire & Rubber Company,Retail,51,10,7943.0,155.0,11.0,19.61
+UMC,United Microelectronics Corporation,Semiconductors,51,10,4812.0,52.0,8.0,19.61
+MU,"Micron Technology, Inc.",Semiconductors,41,8,7616.0,130.0,8.0,19.51
+LRCX,Lam Research Corporation,Semiconductors,57,11,8128.0,119.0,9.0,19.3
+C,Citigroup Inc.,Financial Services,47,9,8923.0,48.0,15.0,19.15
+TRV,"The Travelers Companies, Inc.",Financial Services,53,10,8790.0,27.0,20.0,18.87
+ADI,"Analog Devices, Inc.",Semiconductors,54,10,6463.5,101.5,10.0,18.52
+WFC,Wells Fargo & Company,Financial Services,54,10,9796.0,70.0,21.5,18.52
+AP,Ampco-Pittsburgh Corporation,Industrials,27,5,3975.0,61.0,7.0,18.52
+CLFD,"Clearfield, Inc.",Technology,27,5,3968.0,58.0,10.0,18.52
+KLAC,KLA Corporation,Semiconductors,50,9,7026.5,103.0,11.0,18.0
+PVH,PVH Corp.,Retail,29,5,7597.0,105.0,12.0,17.24
+NVMI,Nova Ltd.,Semiconductors,53,9,4877.0,77.0,4.0,16.98
+LMT,Lockheed Martin Corporation,Industrials,54,9,8352.0,89.0,10.0,16.67
+BP,BP p.l.c.,Energy,6,1,8236.0,66.0,13.0,16.67
+CB,Chubb Limited,Financial Services,56,9,6927.5,26.0,27.5,16.07
+WY,Weyerhaeuser Company,Real Estate,50,8,8164.0,77.5,8.0,16.0
+HAL,Halliburton Company,Energy,51,8,7688.0,76.0,9.0,15.69
+CAT,Caterpillar Inc.,Industrials,52,8,8566.0,138.5,12.0,15.38
+R,"Ryder System, Inc.",Industrials,52,8,7652.0,156.0,8.0,15.38
+LYTS,LSI Industries Inc.,Technology,26,4,4351.0,59.5,6.0,15.38
+HPQ,HP Inc.,Technology,54,8,6686.0,63.0,9.0,14.81
+HRL,Hormel Foods Corporation,Consumer Goods,54,8,6723.5,81.0,8.0,14.81
+TER,"Teradyne, Inc.",Semiconductors,54,8,8030.0,96.0,9.0,14.81
+ROST,"Ross Stores, Inc.",Retail,48,7,5642.5,90.0,9.5,14.58
+INTT,InTest Corporation,Semiconductors,49,7,4373.0,76.0,7.0,14.29
+MRSH,"Marsh & McLennan Companies, Inc.",Financial Services,50,7,7248.5,37.5,22.5,14.0
+NOC,Northrop Grumman Corporation,Industrials,51,7,8155.0,56.0,15.0,13.73
+UNP,Union Pacific Corporation,Industrials,51,7,8661.0,138.0,8.0,13.73
+WKC,World Kinect Corporation,Energy,44,6,5905.5,50.5,15.0,13.64
+FSS,Federal Signal Corporation,Industrials,47,6,5878.0,106.0,8.0,12.77
+AVT,"Avnet, Inc.",Technology,48,6,7254.0,104.0,11.0,12.5
+NKE,"NIKE, Inc.",Retail,48,6,8528.0,108.0,12.0,12.5
+CPT,Camden Property Trust,Real Estate,50,6,7555.0,43.0,11.0,12.0
+PLXS,Plexus Corp.,Technology,48,5,7337.0,112.5,10.5,10.42
+SKY,"Champion Homes, Inc.",Retail,20,2,5374.0,140.5,10.5,10.0
+TXN,Texas Instruments Incorporated,Semiconductors,55,5,5986.0,79.0,8.0,9.09
+AJG,Arthur J. Gallagher & Co.,Financial Services,50,4,6887.0,49.5,19.0,8.0
+BA,The Boeing Company,Industrials,52,4,8341.5,189.0,12.5,7.69
+ON,ON Semiconductor Corporation,Semiconductors,56,4,7241.5,109.0,12.5,7.14
+PII,Polaris Inc.,Retail,43,3,8959.0,161.0,15.0,6.98
+ASYS,"Amtech Systems, Inc.",Semiconductors,47,3,3407.0,60.0,7.0,6.38
+WWW,"Wolverine World Wide, Inc.",Retail,47,3,8658.0,122.0,6.0,6.38
+LEN,Lennar Corporation,Retail,34,2,8517.0,102.5,16.0,5.88
+HWM,Howmet Aerospace Inc.,Industrials,17,1,6482.0,98.0,10.0,5.88
+AZZ,AZZ Inc.,Industrials,35,2,5271.0,53.0,10.0,5.71
+MEI,"Methode Electronics, Inc.",Technology,46,2,4428.5,54.0,8.0,4.35
+PPC,Pilgrim's Pride Corporation,Consumer Goods,46,2,6936.5,108.0,17.0,4.35
+MCHP,Microchip Technology Incorporated,Semiconductors,54,2,8156.0,131.0,18.0,3.7
+ARW,"Arrow Electronics, Inc.",Technology,54,1,6195.0,102.5,11.0,1.85
+ASML,ASML Holding N.V.,Semiconductors,56,0,7785.0,139.0,13.5,0.0
+AON,Aon plc,Financial Services,50,0,7817.0,73.5,38.0,0.0
+BELFA,Bel Fuse Inc.,Technology,45,0,4050.0,54.0,14.0,0.0
+DAIO,Data I/O Corporation,Technology,39,0,4215.0,60.0,8.0,0.0
+KTCC,Key Tronic Corporation,Technology,39,0,5018.0,114.0,8.0,0.0
+BKTI,BK Technologies Corporation,Technology,11,0,3301.0,62.0,5.0,0.0
+BF-B,Brown-Forman Corporation,Consumer Goods,4,0,7313.5,139.0,24.5,0.0
+CP,Canadian Pacific Kansas City Limited,Industrials,4,0,5348.5,91.5,8.0,0.0
+SHEL,Shell plc,Energy,3,0,9422.0,65.0,13.0,0.0
+YPF,YPF Sociedad Anónima,Energy,3,0,7806.0,78.0,7.0,0.0

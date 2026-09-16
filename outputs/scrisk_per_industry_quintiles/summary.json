@@ -1,0 +1,56 @@
+{
+  "industries": 78,
+  "positive_q5_minus_q1": 37,
+  "negative_q5_minus_q1": 41,
+  "expected_positive_under_no_relationship": 39.0,
+  "binomial_p": 0.7343,
+  "mean_spread_bp": -9.51,
+  "median_spread_bp": -23.02,
+  "sd_of_spreads_bp": 241.81,
+  "one_sample_t_on_the_group_spreads": {
+    "t": -0.3472,
+    "p": 0.7294
+  },
+  "wilcoxon_signed_rank_p": 0.8168,
+  "standard_error_of_mean_spread_bp": 27.38,
+  "mean_spread_ci_low_bp": -63.17,
+  "mean_spread_ci_high_bp": 44.16,
+  "smallest_detectable_spread_bp": 53.66,
+  "industries_with_welch_p_below_0_05": 3,
+  "expected_false_positives_at_0_05": 3.9,
+  "significant_groups": [
+    {
+      "industry": "Tobacco",
+      "q5_minus_q1_mean_bp": 613.55,
+      "welch_p": 0.0367,
+      "q1_events": 9,
+      "q5_events": 8
+    },
+    {
+      "industry": "REIT - Healthcare Facilities",
+      "q5_minus_q1_mean_bp": 304.56,
+      "welch_p": 0.0422,
+      "q1_events": 9,
+      "q5_events": 8
+    },
+    {
+      "industry": "REIT - Office",
+      "q5_minus_q1_mean_bp": -190.43,
+      "welch_p": 0.0376,
+      "q1_events": 18,
+      "q5_events": 17
+    }
+  ],
+  "input": "/Users/bzin/stock_market_reactions_recreation_study/artifacts/earnings_call_supply_chain/ppmi_svd_full_20260910_vocab_v2/sensitivity/no_self_pairs/event_returns.csv",
+  "group_column": "industry",
+  "positive_calls_ranked": 9944,
+  "industries_excluded": 13,
+  "calls_in_excluded_industries": 548,
+  "monotone_increasing_groups": 2,
+  "monotone_decreasing_groups": 2,
+  "expected_monotone_either_way_under_no_relationship": 1.3,
+  "monotone_either_way_binomial_p": 0.0417,
+  "monotone_increasing_binomial_p": 0.1381,
+  "smallest_quintile_cell": 5,
+  "median_quintile_cell": 18.0
+}

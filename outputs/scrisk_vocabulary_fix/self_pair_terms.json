@@ -1,0 +1,16 @@
+{
+  "analysable_calls": 17833,
+  "v1_library_only": {
+    "identical_span_pairs": 3305,
+    "terms": [
+      "shortages"
+    ]
+  },
+  "v2_seeds_inflections": {
+    "identical_span_pairs": 5353,
+    "terms": [
+      "shortage",
+      "shortages"
+    ]
+  }
+}

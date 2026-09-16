@@ -1,0 +1,45 @@
+{
+  "input": "/Users/bzin/stock_market_reactions_recreation_study/artifacts/earnings_call_supply_chain/ppmi_svd_full_20260910_vocab_v2/sensitivity/no_self_pairs/event_returns.csv",
+  "group_column": "sector",
+  "groups": 9,
+  "groups_excluded": 0,
+  "excluded_group_names": [],
+  "positive_calls_ranked": 10155,
+  "zero_calls": 7678,
+  "shared_y_axis": true,
+  "figures": [
+    "01_semiconductors_mean_car_by_scrisk_quintile.png",
+    "02_healthcare_mean_car_by_scrisk_quintile.png",
+    "03_industrials_mean_car_by_scrisk_quintile.png",
+    "04_technology_mean_car_by_scrisk_quintile.png",
+    "05_retail_mean_car_by_scrisk_quintile.png",
+    "06_financial_services_mean_car_by_scrisk_quintile.png",
+    "07_energy_mean_car_by_scrisk_quintile.png",
+    "08_real_estate_mean_car_by_scrisk_quintile.png",
+    "09_consumer_goods_mean_car_by_scrisk_quintile.png",
+    "01_semiconductors_median_car_by_scrisk_quintile.png",
+    "02_healthcare_median_car_by_scrisk_quintile.png",
+    "03_industrials_median_car_by_scrisk_quintile.png",
+    "04_technology_median_car_by_scrisk_quintile.png",
+    "05_retail_median_car_by_scrisk_quintile.png",
+    "06_financial_services_median_car_by_scrisk_quintile.png",
+    "07_energy_median_car_by_scrisk_quintile.png",
+    "08_real_estate_median_car_by_scrisk_quintile.png",
+    "09_consumer_goods_median_car_by_scrisk_quintile.png"
+  ],
+  "quintile_cell_range": [
+    142,
+    328
+  ],
+  "q5_minus_q1_mean_bp": {
+    "Semiconductors": -1.21,
+    "Healthcare": -146.21,
+    "Industrials": -72.43,
+    "Technology": 65.56,
+    "Retail": 0.49,
+    "Financial Services": 31.85,
+    "Energy": 25.82,
+    "Real Estate": -47.37,
+    "Consumer Goods": 91.88
+  }
+}
