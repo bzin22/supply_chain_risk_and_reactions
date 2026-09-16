@@ -25,6 +25,24 @@ The diagnostic scripts under `analysis/provisional_diagnostics/` write here.
 Each takes an explicit run directory and output directory; see
 `analysis/provisional_diagnostics/README.md`.
 
+## `resolution_validation/`
+
+`dictionaries/theile_reconstruction_v1/resolution/run_validation.py` writes its
+corpus diagnostic here: zero rates and matched-term counts for the resolution
+dictionary over real transcripts.
+
+It is an archived local diagnostic, not PR validation, and it is here rather
+than beside the dictionary for exactly the reason above. It depends on
+`earnings_call_transcripts.csv` and `artifacts/sec_10k_supply_chain/terms.jsonl`,
+both gitignored local artifacts that other work in this repository regenerates,
+and on a provisional supply-chain library and firm universe. Each run records
+the SHA-256 of every input it used, so a later run can tell whether the numbers
+are comparable. They have already moved once: the corpus was regenerated
+mid-development and the integrity-passing call count went from 18,162 to 11,598.
+
+The reproducible checks on that dictionary, which are tracked, live in
+`dictionaries/theile_reconstruction_v1/resolution/validation_report.md`.
+
 ## When results can be committed
 
 Only after the paper-alignment checks in the root `README.md` pass. At that

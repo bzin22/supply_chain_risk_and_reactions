@@ -32,7 +32,7 @@ place. All of them take explicit paths.
 | --- | --- | --- |
 | 1 | `build_supply_chain_library.py` | Builds a supply-chain term library from SEC 10-K filings. Writes `terms.jsonl`. |
 | 2 | `extract_earnings_call_transcript_data.py` | Fetches Alpha Vantage earnings call transcripts and speaker metadata for an explicit firm universe. `--input` is required. |
-| 3 | `calculate_supply_chain_transcript_scores.py` | Scores each call for SCRisk and Resolution using the high-confidence 161-term risk reconstruction by default. |
+| 3 | `calculate_supply_chain_transcript_scores.py` | Scores each call for SCRisk and Resolution using the 161-term risk reconstruction and the 55-term resolution reconstruction by default. |
 | 4 | `collect_earnings_event_inputs.py` | Collects event dates, adjusted closes, and Fama-French / momentum factors, with raw provider payloads and a provenance manifest. |
 | 5 | `join_earnings_event_dates.py` | Attaches the collected event date to each call. |
 | 6 | `join_supply_chain_scores_to_segments.py` | Attaches call-level scores to every transcript segment of that call. |
@@ -56,7 +56,7 @@ be described as a replication result.
 | Gap | Current state | Paper-equivalent target |
 | --- | --- | --- |
 | Risk dictionary | High-confidence 161-term reconstruction: 144 Table 3 terms plus 17 reconstructed non-occurring terms | The unpublished author-original dictionary |
-| Resolution dictionary | Provisional starter list defined in `calculate_supply_chain_transcript_scores.py` | The paper's resolution dictionary |
+| Resolution dictionary | 55-term reconstruction: the 28 distinct Table 4 keywords plus Oxford-printed forms | The unpublished author-original dictionary |
 | Supply chain vocabulary | Generated from 10-K text by `build_supply_chain_library.py`, a different vocabulary | The paper's supply chain word list |
 | Event dates | Proxy dates from the Alpha Vantage `EARNINGS` `reportedDate` | The paper's call dates |
 | Firm universe | Provisional 450-company convenience sample, 9 sectors (`data/provisional/`) | The paper's historical US-company universe |
@@ -100,6 +100,18 @@ file, SHA-256, term counts, and primary/override status in every scoring manifes
 `--risk-words` remains available only as an explicit non-primary development
 override. The 144-term observed file is retained as provenance and is not used
 by the primary scoring path.
+
+The primary resolution dictionary is
+`dictionaries/theile_reconstruction_v1/resolution/resolution_terms_conservative_baseline.txt`.
+It is a source-based reconstruction of the paper's resolution library, not the
+unpublished author-original file. The scorer requires exactly 55 unique
+lowercase terms, emits one Resolution measure from that one file, and records
+the selected file, SHA-256, term counts, and primary/override status in every
+scoring manifest. `--resolution-words` is an explicit non-primary development
+override. The anchor, expanded and overlap-adjusted files beside it are
+predeclared sensitivity artifacts and are never a default. The overlap between
+the resolution dictionary and the supply-chain vocabulary is deliberately left
+open until the reconstructed supply-chain vocabulary exists.
 
 ## The rule about charts and findings
 

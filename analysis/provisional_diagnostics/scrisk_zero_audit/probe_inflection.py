@@ -48,7 +48,7 @@ def init():
     A.init_worker()
     weights = S.load_supply_chain_library(A.LIBRARY)
     seeds = [" ".join(S.normalize_term(s)) for s in S.SUPPLY_CHAIN_SEEDS]
-    risk = [" ".join(S.normalize_term(t)) for t in S.STARTER_RISK_WORDS]
+    risk = S.build_risk_vocabulary(S.load_primary_risk_dictionary())
     _C["sc_lib_inflected"] = S.build_phrase_index(expand(weights))
     _C["sc_lib_seeds_inflected"] = S.build_phrase_index(expand(list(weights) + seeds))
     _C["risk"] = A._CTX["risk"]

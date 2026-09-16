@@ -1,0 +1,211 @@
+{
+  "artifact": "dictionaries/theile_reconstruction_v1/resolution",
+  "source_date": "2026-09-16",
+  "purpose": "Reconstruct the resolution library (the paper's 'M library') of Theile et al. (2026) without author-provided files.",
+  "primary_specification": {
+    "file": "resolution_terms_conservative_baseline.txt",
+    "terms": 55,
+    "role": "The single primary Resolution specification. The scoring script loads it by default and emits exactly one Resolution measure from it. Overrides are marked non-primary in the run manifest.",
+    "sensitivity_artifacts": [
+      "resolution_terms_paper_anchor.txt",
+      "resolution_terms_expanded_sensitivity.txt",
+      "resolution_terms_overlap_sensitivity.txt"
+    ]
+  },
+  "primary_risk_library": {
+    "file": "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt",
+    "terms": 161,
+    "role": "Used as the risk library in validation and scoring. The 144-term Table 3 list in table_3_risk_terms_reference.csv is a record of the published table, not a specification."
+  },
+  "validation_scope": {
+    "tracked_source_validation": [
+      "validation_report.md",
+      "validation_run.json",
+      "overlap_report.csv"
+    ],
+    "tracked_source_validation_note": "Reproducible on a clean checkout. Inputs are the paper's published tables, the committed dictionaries, and the committed synthetic supply-chain fixture.",
+    "archived_local_diagnostic": "outputs/resolution_validation/ (gitignored)",
+    "archived_local_diagnostic_note": "Zero rates and matched-term counts over real transcripts. Not PR validation and not reproducible from this repository: it depends on earnings_call_transcripts.csv and artifacts/sec_10k_supply_chain/terms.jsonl, both gitignored local artifacts that other work here regenerates, and on a provisional supply-chain library and firm universe. No number in it is evidence that this dictionary is correct."
+  },
+  "supply_chain_overlap": "Deferred. The final reconstructed supply-chain vocabulary does not exist yet, so the overlap between this dictionary and the supply-chain library cannot be settled. 'solution' and 'solutions' stay in the primary dictionary; resolution_terms_overlap_sensitivity.txt holds the variant that drops them, as a predeclared sensitivity run.",
+  "outcome_blind": "No CAR, return, or regression output was consulted at any point. Term selection used Table 4, Oxford dictionary entries, and the paper's prose only.",
+  "primary_source": {
+    "citation": "Theile, O., et al. (2026). Supply Chain Risk and Resolution: An Empirical Study of Stock Market Reactions. Production and Operations Management, 35(8), 2981-3001.",
+    "local_path": "source_research_paper/theile-et-al-2026-supply-chain-risk-and-resolution-an-empirical-study-of-stock-market-reactions.pdf",
+    "sha256": null,
+    "pages_used": {
+      "Table 1 (supply chain seed terms)": "journal p. 2985, PDF p. 5",
+      "Table 2 (top 30 supply chain keywords)": "journal p. 2986, PDF p. 6",
+      "Table 3 (risk keywords)": "journal p. 2987, PDF p. 7",
+      "Table 4 (top 30 resolution keywords)": "journal p. 2988, PDF p. 8",
+      "Table 10 Col (5) (expanded keywords)": "journal p. 2995, PDF p. 15"
+    },
+    "definition_of_M_library": "'The M library consists of the terms mitigate and resolve as well as their synonyms from the Oxford dictionary.' (journal p. 2986)",
+    "extraction_method": "pdftotext -layout for the text layer, then pdftoppm -r 200/250 -png to render page 8 and read Table 4 off the rendered page. Both agree character for character, including the duplicated slots."
+  },
+  "oxford_sources": {
+    "retrieved": [
+      {
+        "product": "Oxford Advanced Learner's Dictionary, 10th edition",
+        "publisher": "Oxford University Press",
+        "access": "free web edition",
+        "base_url": "https://www.oxfordlearnersdictionaries.com/definition/english/",
+        "retrieval_date": "2026-09-16",
+        "entries_retrieved": [
+          "absorb",
+          "alleviate",
+          "counter (verb)",
+          "dilute",
+          "dissolve",
+          "ease (verb)",
+          "easy",
+          "enhance",
+          "fix",
+          "help",
+          "improve",
+          "improvement",
+          "mitigate",
+          "mitigation",
+          "overcome",
+          "recover",
+          "recovery",
+          "reduce",
+          "relax",
+          "relieve",
+          "remedy (noun)",
+          "remedy (verb)",
+          "resolution",
+          "resolve",
+          "settle",
+          "settlement",
+          "solution",
+          "solve"
+        ],
+        "fields_extracted": [
+          "definitions",
+          "synonym cross-references printed in the entry ('synonym X')",
+          "inflected forms printed in the Verb Forms table or inflection bracket"
+        ],
+        "limitations": [
+          "OALD is a learner's dictionary. It prints at most one or two synonym cross-references per sense, not a thesaurus run.",
+          "It does not print regular noun plurals, so absence of a plural here is not evidence the plural is wrong.",
+          "It has no Word Family box on these entries."
+        ],
+        "local_extract": "oxford_evidence.json"
+      }
+    ],
+    "attempted_and_unavailable": [
+      {
+        "product": "Oxford Thesaurus of English / Oxford Dictionary of English synonym data (Oxford Dictionaries Premium)",
+        "url": "https://premium.oxforddictionaries.com/thesaurus/english/mitigate",
+        "retrieval_date": "2026-09-16",
+        "result": "HTTP 302 to an OAuth login. Subscription required.",
+        "why_it_matters": "This is the product whose synonym runs most plausibly generated the paper's library. Without it the tail of the M library cannot be recovered."
+      },
+      {
+        "product": "Oxford English Dictionary (oed.com) and its Historical Thesaurus",
+        "url": "https://www.oed.com/dictionary/mitigate_v",
+        "retrieval_date": "2026-09-16",
+        "result": "HTTP 200 but redirected to the unauthenticated home page. Subscription required."
+      },
+      {
+        "product": "Lexico / en.oxforddictionaries.com thesaurus pages, the surface Hassan et al. (2019) most likely used",
+        "url": "https://www.lexico.com/synonym/mitigate",
+        "retrieval_date": "2026-09-16",
+        "result": "Site shut down in 2022. DNS/connection failure. Internet Archive was returning 'Temporarily Offline' on the same day, so no archived capture could be read either."
+      },
+      {
+        "product": "Oxford Reference (Concise Oxford Thesaurus etc.)",
+        "url": "https://www.oxfordreference.com/search?q=mitigate",
+        "retrieval_date": "2026-09-16",
+        "result": "HTTP 302, subscription required."
+      },
+      {
+        "product": "Apple New Oxford American Dictionary / Oxford American Writer's Thesaurus bundled with macOS",
+        "result": "Not installed on this machine; no .dictionary bundle found."
+      }
+    ],
+    "edition_uncertainty": "The paper says 'the Oxford dictionary' and names no product, edition, or retrieval date. Hassan et al. (2019), whose approach the paper follows for the risk library, say only 'the Oxford dictionary' as well. The reconstruction therefore cannot be edition-exact and does not claim to be."
+  },
+  "corroborating_source": {
+    "citation": "Hassan, T.A., Hollander, S., van Lent, L., Tahoun, A. (2019). Firm-Level Political Risk: Measurement and Effects. Quarterly Journal of Economics, 134(4), 2135-2202. NBER WP 24029 rev1.",
+    "url": "https://www.nber.org/system/files/working_papers/w24029/revisions/w24029.rev1.pdf",
+    "retrieval_date": "2026-09-16",
+    "why_used": "Theile et al. build their risk library from Hassan et al.'s Oxford synonym list. Hassan's Appendix Table 3 is therefore a worked example of what 'Oxford dictionary synonyms' produced in practice. It is used here only to calibrate the authors' inflection policy, never to add a resolution term.",
+    "what_it_shows": [
+      "Oxford-derived libraries carry several inflections of a headword (risk/risks/risky/riskier/riskiest/risked/risking/riskiness) but not blanket regular inflection: 'threat' appears without 'threats', 'hazard' without 'hazards', 'peril' without 'perils'.",
+      "Hassan et al. dropped 'question', 'questions', 'unknown', 'venture' and 'prospect' from the Oxford list because they mean something else on an earnings call. That is the precedent for holding 'settlement' out of the baseline here."
+    ]
+  },
+  "tools": {
+    "pdftotext": "pdftotext version 26.09.0",
+    "pdftoppm": "pdftoppm version 26.09.0"
+  },
+  "table_4_findings": {
+    "printed_slots": 30,
+    "distinct_keywords": 28,
+    "duplicated_slots": {
+      "24": "repeats slot 22, 'enhance' 591",
+      "25": "repeats slot 23, 'recover' 566"
+    },
+    "duplication_is_in_the_typeset_page": "Confirmed by rendering PDF page 8 at 250 dpi with pdftoppm and reading the third column off the image. The text layer and the rendered page agree. No OCR correction was applied because none was needed.",
+    "unrecoverable_entries": "Slots 24 and 25 should have carried the 24th and 25th most frequent keywords. The column is printed in descending order, so their frequencies lie between 566 (slot 23) and 553 (slot 26): both are in the range 554 to 566. The words themselves cannot be recovered from the published paper.",
+    "frequency_semantics": "Table 2's note says frequency is 'the count of occurrences relevant to the construction of the SCRisk measure', that is, occurrences that satisfied the proximity conditions. Table 4 frequencies are therefore window-filtered counts, not raw corpus counts."
+  },
+  "variants": {
+    "resolution_terms_paper_anchor.txt": "28 terms. Distinct Table 4 keywords only.",
+    "resolution_terms_conservative_baseline.txt": "55 terms. Anchor plus Oxford-printed inflected forms of each anchor root, plus 'alleviate' and 'settle' with their Oxford-printed verb forms. PRIMARY: the only dictionary the production pipeline loads.",
+    "resolution_terms_expanded_sensitivity.txt": "42 sensitivity-only terms, 97 when combined with the baseline. Predeclared robustness specification.",
+    "resolution_terms_overlap_sensitivity.txt": "53 terms. The primary minus 'solution' and 'solutions'. Predeclared robustness specification held ready for when the reconstructed supply-chain vocabulary makes the overlap question answerable."
+  },
+  "outputs": {
+    "resolution_terms_paper_anchor.txt": {
+      "sha256": "d28cadd63975026d78a979380859cb47a6489cd1bf7e75de756f393bf3fcccdd",
+      "bytes": 231
+    },
+    "resolution_terms_conservative_baseline.txt": {
+      "sha256": "070b8cdc168a0db96db7f68fef5b0f3e08bde10ec5d7b4161ed882453a57d464",
+      "bytes": 484
+    },
+    "resolution_terms_expanded_sensitivity.txt": {
+      "sha256": "c3739478bda22114e62090b5c78eb12f23b939e1bf63a0f4cc849ae5e2ca7f5e",
+      "bytes": 374
+    },
+    "resolution_terms.csv": {
+      "sha256": "4689ee0d60f8ef8c696e943bced461992537340857986a47c30793141ce7d70a",
+      "bytes": 24086
+    },
+    "table_4_extraction.csv": {
+      "sha256": "0f461c2313dc97aae8ad89396c8235aefd8562fe722d2db2a5908dffad609c64",
+      "bytes": 2900
+    },
+    "table_3_risk_terms_reference.csv": {
+      "sha256": "d42efbd19eda28abd89d4112a1d8b9a6e22987077f72fd8c25db6f6201787dd5",
+      "bytes": 2396
+    },
+    "resolution_terms_overlap_sensitivity.txt": {
+      "sha256": "1517d8575318c06fb64d7d9b3d79a5c8363cc822b5dbd3341d3980fcfc0b8599",
+      "bytes": 465
+    },
+    "oxford_evidence.json": {
+      "sha256": "2e86339f453ddc65afbd720af95fb4dddd81887685a1b121b3d5c337c7671703",
+      "bytes": 12461
+    },
+    "validation_report.md": {
+      "sha256": "2fa9738c15067a1d0fac189678e60ef0238b048c737f808004b35db99dc2b17e",
+      "bytes": 12726
+    },
+    "validation_run.json": {
+      "sha256": "b23df4bf52641b2343a0073363dc5f3957ee1453289b64157416490c3bccf636",
+      "bytes": 2198
+    },
+    "overlap_report.csv": {
+      "sha256": "0836b62894d30c6616b7619d6a69cef0dd55d4163d5b61fd45c4ff03589ad535",
+      "bytes": 1275
+    },
+    "fixtures/synthetic_supply_chain_library.jsonl": {
+      "sha256": "002e210cc1c28cbc84c2b570eb6ac920f0cf57786c8bb7df5c8653bd9c8dbc92",
+      "bytes": 1287
+    }
+  }
+}

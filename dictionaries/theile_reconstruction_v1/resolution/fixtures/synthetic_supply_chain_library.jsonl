@@ -1,0 +1,15 @@
+{"term": "supply", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "suppliers", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "supplier", "max_cosine": 0.75, "best_seed": "supply chain", "count": 1000}
+{"term": "inventory", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "inventories", "max_cosine": 0.83, "best_seed": "supply chain", "count": 1000}
+{"term": "logistics", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "manufacturing", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "distribution", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "procurement", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "sourcing", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "transportation", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "warehouse", "max_cosine": 0.79, "best_seed": "supply chain", "count": 1000}
+{"term": "customers", "max_cosine": 1.0, "best_seed": "supply chain", "count": 1000}
+{"term": "customer", "max_cosine": 0.76, "best_seed": "supply chain", "count": 1000}
+{"term": "vendors", "max_cosine": 0.8, "best_seed": "supply chain", "count": 1000}

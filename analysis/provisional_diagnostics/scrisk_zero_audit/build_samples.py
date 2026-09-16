@@ -22,7 +22,7 @@ weights = S.load_supply_chain_library(A.LIBRARY)
 sc_index = S.build_phrase_index(weights)
 seeds = [" ".join(S.normalize_term(s)) for s in S.SUPPLY_CHAIN_SEEDS]
 sc_seeded_index = S.build_phrase_index(list(weights) + seeds)
-risk_index = S.build_phrase_index([" ".join(S.normalize_term(t)) for t in S.STARTER_RISK_WORDS])
+risk_index = S.build_phrase_index(S.build_risk_vocabulary(S.load_primary_risk_dictionary()))
 
 
 def excerpt(text, spans, lo, hi):
