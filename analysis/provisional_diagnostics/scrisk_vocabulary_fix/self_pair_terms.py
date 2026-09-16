@@ -35,7 +35,7 @@ def init_worker(library_path: str) -> None:
     library = S.load_supply_chain_library(Path(library_path))
     for version in VERSIONS:
         supply = S.build_supply_chain_vocabulary(library, version)
-        risk = S.build_risk_vocabulary(S.STARTER_RISK_WORDS, version)
+        risk = S.build_risk_vocabulary(S.load_primary_risk_dictionary())
         _CONTEXT[version] = (S.build_phrase_index(supply), S.build_phrase_index(risk))
 
 

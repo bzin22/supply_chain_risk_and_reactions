@@ -1,0 +1,431 @@
+{
+  "retrieved": "2026-09-16",
+  "product": "Oxford Advanced Learner's Dictionary, 10th edition",
+  "publisher": "Oxford University Press",
+  "site": "oxfordlearnersdictionaries.com",
+  "entries": {
+    "mitigate": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mitigate",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to make something less harmful, serious, etc."
+      ],
+      "synonym_cross_references": [
+        "alleviate"
+      ],
+      "printed_inflected_forms": [
+        "mitigate",
+        "mitigates",
+        "mitigated",
+        "mitigating"
+      ]
+    },
+    "resolve": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/resolve",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to find an acceptable solution to a problem or difficulty",
+        "to make a definite decision to do something",
+        "(of a committee, meeting, etc.) to reach a decision by means of a formal vote"
+      ],
+      "synonym_cross_references": [
+        "settle"
+      ],
+      "printed_inflected_forms": [
+        "resolve",
+        "resolves",
+        "resolved",
+        "resolving"
+      ]
+    },
+    "alleviate": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/alleviate",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to make something less severe"
+      ],
+      "synonym_cross_references": [
+        "ease"
+      ],
+      "printed_inflected_forms": [
+        "alleviate",
+        "alleviates",
+        "alleviated",
+        "alleviating"
+      ]
+    },
+    "settle": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/settle",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to put an end to an argument or a disagreement",
+        "to decide or arrange something finally"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "settle",
+        "settles",
+        "settled",
+        "settling"
+      ]
+    },
+    "ease (verb)": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ease_2",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to become less unpleasant, painful or severe; to make something less unpleasant, etc.",
+        "to make something easier"
+      ],
+      "synonym_cross_references": [
+        "alleviate",
+        "relax",
+        "reduce"
+      ],
+      "printed_inflected_forms": [
+        "ease",
+        "eases",
+        "eased",
+        "easing"
+      ]
+    },
+    "resolution": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/resolution",
+      "part_of_speech": "noun",
+      "definitions": [
+        "a definite decision to do or not to do something",
+        "the act of solving or settling a problem, argument, etc."
+      ],
+      "synonym_cross_references": [
+        "resolve",
+        "settlement"
+      ],
+      "printed_inflected_forms": [
+        "resolution"
+      ]
+    },
+    "mitigation": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mitigation",
+      "part_of_speech": "noun",
+      "definitions": [
+        "a reduction in how unpleasant, serious, etc. something is"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "mitigation"
+      ]
+    },
+    "help": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/help",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to make it easier or possible for somebody to do something by doing something for them or by giving them something that they need",
+        "to improve a situation; to make it easier for something to happen"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "help",
+        "helps",
+        "helped",
+        "helping"
+      ]
+    },
+    "solve": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/solve",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to find a way of dealing with a problem or difficult situation",
+        "to find the correct answer or explanation for something"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "solve",
+        "solves",
+        "solved",
+        "solving"
+      ]
+    },
+    "solution": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/solution",
+      "part_of_speech": "noun",
+      "definitions": [
+        "a way of solving a problem or dealing with a difficult situation"
+      ],
+      "synonym_cross_references": [
+        "answer"
+      ],
+      "printed_inflected_forms": [
+        "solution"
+      ]
+    },
+    "improve": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/improve",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to become better than before; to make something/somebody better than before"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "improve",
+        "improves",
+        "improved",
+        "improving"
+      ]
+    },
+    "improvement": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/improvement",
+      "part_of_speech": "noun",
+      "definitions": [
+        "the act of making something better; the process of something becoming better"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "improvement"
+      ]
+    },
+    "fix": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fix",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to repair or correct something",
+        "to decide on a date, a time, an amount, etc. for something"
+      ],
+      "synonym_cross_references": [
+        "set"
+      ],
+      "printed_inflected_forms": [
+        "fix",
+        "fixes",
+        "fixed",
+        "fixing"
+      ]
+    },
+    "recover": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/recover",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to get well again after being ill, hurt, etc.",
+        "to return to a normal state after an unpleasant or unusual experience or a period of difficulty"
+      ],
+      "synonym_cross_references": [
+        "recoup",
+        "regain"
+      ],
+      "printed_inflected_forms": [
+        "recover",
+        "recovers",
+        "recovered",
+        "recovering"
+      ]
+    },
+    "recovery": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/recovery",
+      "part_of_speech": "noun",
+      "definitions": [
+        "the process of becoming well again after an illness or injury",
+        "the process of improving or becoming stronger again"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "recovery",
+        "recoveries"
+      ]
+    },
+    "enhance": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/enhance",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to increase or further improve the good quality, value or status of somebody/something"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "enhance",
+        "enhances",
+        "enhanced",
+        "enhancing"
+      ]
+    },
+    "overcome": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overcome",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to succeed in dealing with or controlling a problem that has been preventing you from achieving something"
+      ],
+      "synonym_cross_references": [
+        "overwhelm"
+      ],
+      "printed_inflected_forms": [
+        "overcome",
+        "overcomes",
+        "overcame",
+        "overcoming"
+      ]
+    },
+    "easy": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/easy_1",
+      "part_of_speech": "adjective",
+      "definitions": [
+        "not difficult; done or obtained without a lot of effort or problems"
+      ],
+      "synonym_cross_references": [
+        "easy-going"
+      ],
+      "printed_inflected_forms": [
+        "easy",
+        "easier",
+        "easiest"
+      ]
+    },
+    "relieve": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/relieve",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to remove or reduce an unpleasant feeling or pain"
+      ],
+      "synonym_cross_references": [
+        "alleviate"
+      ],
+      "printed_inflected_forms": [
+        "relieve",
+        "relieves",
+        "relieved",
+        "relieving"
+      ]
+    },
+    "reduce": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/reduce",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to make something less or smaller in size, quantity, price, etc."
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "reduce",
+        "reduces",
+        "reduced",
+        "reducing"
+      ]
+    },
+    "relax": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/relax",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to rest while you are doing something enjoyable",
+        "to make rules, restrictions, etc. less severe"
+      ],
+      "synonym_cross_references": [
+        "unwind"
+      ],
+      "printed_inflected_forms": [
+        "relax",
+        "relaxes",
+        "relaxed",
+        "relaxing"
+      ]
+    },
+    "remedy (noun)": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/remedy",
+      "part_of_speech": "noun",
+      "definitions": [
+        "a way of dealing with or improving an unpleasant or difficult situation"
+      ],
+      "synonym_cross_references": [
+        "redress",
+        "solution"
+      ],
+      "printed_inflected_forms": [
+        "remedy",
+        "remedies"
+      ]
+    },
+    "remedy (verb)": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/remedy_2",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to correct or improve something"
+      ],
+      "synonym_cross_references": [
+        "right"
+      ],
+      "printed_inflected_forms": [
+        "remedy",
+        "remedies",
+        "remedied",
+        "remedying"
+      ]
+    },
+    "counter (verb)": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/counter_2",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to do something to reduce or prevent the bad effects of something"
+      ],
+      "synonym_cross_references": [
+        "counteract"
+      ],
+      "printed_inflected_forms": [
+        "counter",
+        "counters",
+        "countered",
+        "countering"
+      ]
+    },
+    "absorb": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/absorb",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to take in a liquid, gas or other substance from the surface or space around"
+      ],
+      "synonym_cross_references": [
+        "engross",
+        "take in"
+      ],
+      "printed_inflected_forms": [
+        "absorb",
+        "absorbs",
+        "absorbed",
+        "absorbing"
+      ]
+    },
+    "dissolve": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/dissolve",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to mix with a liquid and become part of it"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "dissolve",
+        "dissolves",
+        "dissolved",
+        "dissolving"
+      ]
+    },
+    "dilute": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/dilute",
+      "part_of_speech": "verb",
+      "definitions": [
+        "to make a liquid weaker by adding water or another liquid to it"
+      ],
+      "synonym_cross_references": [
+        "water down"
+      ],
+      "printed_inflected_forms": [
+        "dilute",
+        "dilutes",
+        "diluted",
+        "diluting"
+      ]
+    },
+    "settlement": {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/settlement",
+      "part_of_speech": "noun",
+      "definitions": [
+        "an official agreement that ends an argument"
+      ],
+      "synonym_cross_references": [],
+      "printed_inflected_forms": [
+        "settlement"
+      ]
+    }
+  }
+}

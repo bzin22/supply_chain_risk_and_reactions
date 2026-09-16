@@ -54,7 +54,7 @@ def weights() -> dict[str, float]:
 
 @pytest.fixture(scope="module")
 def risk_words() -> list[str]:
-    return [" ".join(S.normalize_term(t)) for t in S.STARTER_RISK_WORDS]
+    return S.build_risk_vocabulary(S.load_primary_risk_dictionary())
 
 
 # --------------------------------------------------------------------------

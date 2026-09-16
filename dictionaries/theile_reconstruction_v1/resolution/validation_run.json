@@ -1,0 +1,45 @@
+{
+  "scope": "source_validation_only",
+  "reproducible_on_a_clean_checkout": true,
+  "build_date": "2026-09-16",
+  "git_commit_at_validation": "16b2309bbae1f39d3546440ef5057c1c4ea2fdf8-dirty",
+  "window": 10,
+  "primary_dictionaries": {
+    "resolution": {
+      "path": "dictionaries/theile_reconstruction_v1/resolution/resolution_terms_conservative_baseline.txt",
+      "terms": 55,
+      "sha256": "070b8cdc168a0db96db7f68fef5b0f3e08bde10ec5d7b4161ed882453a57d464"
+    },
+    "risk": {
+      "path": "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt",
+      "terms": 161,
+      "sha256": "c5f9fecb77f52802047aa7094e3999e428c3a53f8c936424d7ab50b9884136b8"
+    }
+  },
+  "sensitivity_dictionaries": {
+    "paper_anchor": {
+      "path": "dictionaries/theile_reconstruction_v1/resolution/resolution_terms_paper_anchor.txt",
+      "terms": 28,
+      "sha256": "d28cadd63975026d78a979380859cb47a6489cd1bf7e75de756f393bf3fcccdd"
+    },
+    "expanded_sensitivity_extra_terms": {
+      "path": "dictionaries/theile_reconstruction_v1/resolution/resolution_terms_expanded_sensitivity.txt",
+      "terms": 42,
+      "sha256": "c3739478bda22114e62090b5c78eb12f23b939e1bf63a0f4cc849ae5e2ca7f5e"
+    },
+    "overlap_sensitivity": {
+      "path": "dictionaries/theile_reconstruction_v1/resolution/resolution_terms_overlap_sensitivity.txt",
+      "terms": 53,
+      "sha256": "1517d8575318c06fb64d7d9b3d79a5c8363cc822b5dbd3341d3980fcfc0b8599"
+    }
+  },
+  "test_fixture": {
+    "path": "dictionaries/theile_reconstruction_v1/resolution/fixtures/synthetic_supply_chain_library.jsonl",
+    "terms": 15,
+    "sha256": "002e210cc1c28cbc84c2b570eb6ac920f0cf57786c8bb7df5c8653bd9c8dbc92"
+  },
+  "corpus_diagnostic": "Not part of source validation. Archived separately under outputs/resolution_validation/, which is gitignored, because it depends on local artifacts this repository does not track and other work here regenerates.",
+  "notes": {
+    "git_commit_at_validation": "HEAD when the run executed, with '-dirty' when this directory had uncommitted edits. The commit that carries this file is normally its child: check out the recorded commit, apply this directory, and rerun."
+  }
+}

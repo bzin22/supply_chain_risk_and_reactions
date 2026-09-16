@@ -102,14 +102,14 @@ def base_vocabularies() -> tuple[dict[str, float], list[str]]:
     """Return the supply-chain and risk vocabularies the audited run scored with."""
     library = S.load_supply_chain_library(LIBRARY)
     weights = S.build_supply_chain_vocabulary(library, VOCABULARY_VERSION)
-    risk = S.build_risk_vocabulary(S.STARTER_RISK_WORDS, VOCABULARY_VERSION)
+    risk = S.build_risk_vocabulary(S.load_primary_risk_dictionary())
     return weights, risk
 
 
 def init_worker() -> None:
     weights, risk = base_vocabularies()
     seed_terms = [" ".join(S.normalize_term(s)) for s in S.SUPPLY_CHAIN_SEEDS]
-    res = [" ".join(S.normalize_term(t)) for t in S.STARTER_RESOLUTION_WORDS]
+    res = [" ".join(S.normalize_term(t)) for t in S.load_primary_resolution_dictionary()]
     _CTX.update(
         sc=S.build_phrase_index(weights),
         sc_seeded=S.build_phrase_index(list(weights) + seed_terms),

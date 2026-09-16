@@ -47,7 +47,7 @@ def init_worker(library_path: str) -> None:
     library = S.load_supply_chain_library(Path(library_path))
     for version in VERSIONS:
         weights = S.build_supply_chain_vocabulary(library, version)
-        risk = S.build_risk_vocabulary(S.STARTER_RISK_WORDS, version)
+        risk = S.build_risk_vocabulary(S.load_primary_risk_dictionary())
         _CTX[version] = {
             "weights": weights,
             "sc_index": S.build_phrase_index(weights),

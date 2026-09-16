@@ -23,23 +23,32 @@ Scoring definition
    reconstruction. Risk terms are never stemmed, lemmatized, or expanded with
    generated inflections. ``--risk-words`` can explicitly override the file
    for development, and such runs are marked non-primary in their manifests.
-3. Every supply-chain/risk occurrence pair whose token spans are no more than
+3. A *resolution occurrence* is an exact term from the 55-term Theile
+   resolution-library reconstruction, the conservative baseline in
+   ``dictionaries/theile_reconstruction_v1/resolution/``. Resolution terms are
+   never stemmed, lemmatized, or expanded with generated inflections. The run
+   produces exactly one Resolution measure from that one dictionary; the
+   anchor, expanded and overlap-adjusted files beside it are documented
+   sensitivity artifacts, not default outputs. ``--resolution-words`` can
+   explicitly override the file for development, and such runs are marked
+   non-primary in their manifests.
+4. Every supply-chain/risk occurrence pair whose token spans are no more than
    ``WINDOW`` tokens apart contributes the supply-chain cosine weight to the
    raw SCRisk score.  Thus, one supply-chain occurrence can contribute more
    than once if it is close to multiple risk occurrences.
-4. The weighted match sum is divided by the transcript's total tokenized word
+5. The weighted match sum is divided by the transcript's total tokenized word
    count.  This length-adjusted value is the raw score used for dataset-wide
    standardization.
-5. A Resolution contribution uses the same supply-chain/risk pair, but is
+6. A Resolution contribution uses the same supply-chain/risk pair, but is
    counted only when at least one resolution occurrence is also within
    ``WINDOW`` tokens of the supply-chain occurrence.  This keeps Resolution a
    measure of resolution language in supply-chain-risk contexts, rather than
    a general count of words such as "mitigate" anywhere in a call.
-6. Each raw score is divided by the *population* standard deviation of that
+7. Each raw score is divided by the *population* standard deviation of that
    raw score across the complete input dataset.  The mean is deliberately not
    subtracted.  If a dataset's standard deviation is zero, its normalized
    score is written as 0.0 because division would otherwise be undefined.
-7. A transcript that holds no spoken content is excluded from the
+8. A transcript that holds no spoken content is excluded from the
    standardization population and its standardized score is written blank.
    See ``assess_transcript_integrity``.  ``--no-transcript-integrity-filter``
    restores the original behaviour of standardizing every row.
@@ -94,13 +103,13 @@ Reproduce the original ppmi_svd_full_20260910 scores exactly::
         --no-transcript-integrity-filter \
         --output earnings_call_transcripts_scored_v1.csv
 
-Use a development-only risk override or a reviewed resolution dictionary::
+Use development-only dictionary overrides (both marked non-primary)::
 
     python calculate_supply_chain_transcript_scores.py \
         --input earnings_call_transcripts.csv \
         --library artifacts/sec_10k_supply_chain_pilot_concurrent/terms.jsonl \
         --risk-words development_risk_words.txt \
-        --resolution-words resolution_words.txt \
+        --resolution-words development_resolution_words.txt \
         --output earnings_call_transcripts_scored.csv
 
 The input CSV must contain a ``transcript_text`` column.  A dictionary file
@@ -134,6 +143,20 @@ PRIMARY_RISK_TERM_COUNT = 161
 PRIMARY_RISK_TABLE_3_TERM_COUNT = 144
 PRIMARY_RISK_RECONSTRUCTED_TERM_COUNT = 17
 
+PRIMARY_RESOLUTION_DICTIONARY_IDENTIFIER = (
+    "theile_reconstruction_v1_resolution_conservative_baseline"
+)
+PRIMARY_RESOLUTION_DICTIONARY_RELATIVE_PATH = Path(
+    "dictionaries/theile_reconstruction_v1/resolution/"
+    "resolution_terms_conservative_baseline.txt"
+)
+PRIMARY_RESOLUTION_DICTIONARY_PATH = (
+    REPOSITORY_ROOT / PRIMARY_RESOLUTION_DICTIONARY_RELATIVE_PATH
+)
+PRIMARY_RESOLUTION_TERM_COUNT = 55
+PRIMARY_RESOLUTION_TABLE_4_TERM_COUNT = 28
+PRIMARY_RESOLUTION_OXFORD_ADDED_TERM_COUNT = 27
+
 # These are the 16 seed phrases used by build_supply_chain_library.py.  They
 # are the intended semantic center of the generated library, so under
 # vocabulary version ``v2_seeds_inflections`` they are scored directly at
@@ -156,23 +179,6 @@ SUPPLY_CHAIN_SEEDS = (
     "supply chain",
     "transportation",
     "warehousing",
-)
-
-# The starter Resolution dictionary is deliberately narrower than a generic
-# positive-language dictionary.  It focuses on actions that can describe
-# addressing a risk: mitigation, containment, recovery, and resolution.
-STARTER_RESOLUTION_WORDS = (
-    "mitigate", "mitigates", "mitigated", "mitigating", "mitigation",
-    "mitigations", "resolve", "resolves", "resolved", "resolving",
-    "resolution", "resolutions", "address", "addresses", "addressed",
-    "addressing", "remediate", "remediates", "remediated", "remediation",
-    "reduce", "reduces", "reduced", "reducing", "contain", "contains",
-    "contained", "containing", "prevent", "prevents", "prevented",
-    "preventing", "avoid", "avoids", "avoided", "avoiding", "recover",
-    "recovers", "recovered", "recovering", "recovery", "diversify",
-    "diversifies", "diversified", "diversifying", "substitute", "substitutes",
-    "substituted", "substituting", "alternative source", "backup supplier",
-    "dual source", "dual sourcing", "buffer stock", "safety stock",
 )
 
 WORD_RE = re.compile(r"[A-Za-z]+(?:['’.-][A-Za-z]+)*")
@@ -260,6 +266,18 @@ class ScoreResult:
 @dataclass(frozen=True)
 class RiskDictionarySelection:
     """Terms and provenance for the risk dictionary selected for one run."""
+
+    terms: list[str]
+    path: Path
+    repository_relative_path: str
+    sha256: str
+    usage: str
+    is_primary: bool
+
+
+@dataclass(frozen=True)
+class ResolutionDictionarySelection:
+    """Terms and provenance for the resolution dictionary selected for one run."""
 
     terms: list[str]
     path: Path
@@ -478,6 +496,90 @@ def select_risk_dictionary(risk_path: Path | None) -> RiskDictionarySelection:
         usage = "override_non_primary"
         is_primary = False
     return RiskDictionarySelection(
+        terms=terms,
+        path=path,
+        repository_relative_path=repository_relative_path(path),
+        sha256=sha256_file(path),
+        usage=usage,
+        is_primary=is_primary,
+    )
+
+
+def load_primary_resolution_dictionary(
+    path: Path = PRIMARY_RESOLUTION_DICTIONARY_PATH,
+) -> list[str]:
+    """Load and strictly validate the 55-term primary resolution reconstruction.
+
+    The file is the conservative baseline of
+    ``dictionaries/theile_reconstruction_v1/resolution/``: the 28 distinct
+    keywords printed in Theile et al. Table 4, the inflected forms Oxford
+    itself prints for each of those roots, and ``alleviate`` and ``settle``,
+    the synonym cross-references Oxford prints on the two seed headwords the
+    paper names. It is the single primary Resolution specification. The
+    anchor, expanded and overlap-adjusted files in the same directory are
+    documented sensitivity artifacts and are never loaded by default.
+    """
+
+    try:
+        raw_lines = path.read_text(encoding="utf-8").splitlines()
+    except FileNotFoundError as exc:
+        raise ValueError(f"Primary resolution dictionary is missing: {path}") from exc
+    except (OSError, UnicodeError) as exc:
+        raise ValueError(
+            f"Primary resolution dictionary cannot be read as UTF-8: {path}"
+        ) from exc
+
+    if not raw_lines or any(not line.strip() for line in raw_lines):
+        raise ValueError(
+            f"Primary resolution dictionary must contain exactly "
+            f"{PRIMARY_RESOLUTION_TERM_COUNT} non-empty lines: {path}"
+        )
+
+    terms = [line.strip() for line in raw_lines]
+    malformed = [
+        term
+        for raw, term in zip(raw_lines, terms)
+        if raw != term or term != term.lower() or " ".join(normalize_term(term)) != term
+    ]
+    if malformed:
+        raise ValueError(
+            "Primary resolution dictionary contains malformed terms; expected exact "
+            f"lowercase single word forms without surrounding whitespace: {malformed[:3]}"
+        )
+
+    duplicates = sorted({term for term in terms if terms.count(term) > 1})
+    if duplicates:
+        raise ValueError(
+            f"Primary resolution dictionary contains duplicate terms: {duplicates}"
+        )
+    if len(terms) != PRIMARY_RESOLUTION_TERM_COUNT:
+        raise ValueError(
+            f"Primary resolution dictionary must contain exactly "
+            f"{PRIMARY_RESOLUTION_TERM_COUNT} unique terms; found {len(terms)} in {path}"
+        )
+    return terms
+
+
+def select_resolution_dictionary(
+    resolution_path: Path | None,
+) -> ResolutionDictionarySelection:
+    """Select the strict primary dictionary or an explicit non-primary override."""
+
+    primary_terms = load_primary_resolution_dictionary(PRIMARY_RESOLUTION_DICTIONARY_PATH)
+    if resolution_path is None:
+        path = PRIMARY_RESOLUTION_DICTIONARY_PATH
+        terms = primary_terms
+        usage = "primary"
+        is_primary = True
+    else:
+        path = resolution_path
+        try:
+            terms = load_dictionary(path)
+        except FileNotFoundError as exc:
+            raise ValueError(f"Resolution dictionary override is missing: {path}") from exc
+        usage = "override_non_primary"
+        is_primary = False
+    return ResolutionDictionarySelection(
         terms=terms,
         path=path,
         repository_relative_path=repository_relative_path(path),
@@ -717,8 +819,7 @@ def normalize_raw_scores(
     ], standard_deviation
 
 
-def _resolution_dictionary(path: Path | None, fallback: Sequence[str]) -> list[str]:
-    return list(fallback) if path is None else load_dictionary(path)
+
 
 
 SCORE_OUTPUT_FIELDS = [
@@ -761,7 +862,8 @@ def score_csv(
 
     library_weights = load_supply_chain_library(library_path)
     risk_selection = select_risk_dictionary(risk_path)
-    resolution_words = _resolution_dictionary(resolution_path, STARTER_RESOLUTION_WORDS)
+    resolution_selection = select_resolution_dictionary(resolution_path)
+    resolution_words = resolution_selection.terms
     supply_chain_weights = build_supply_chain_vocabulary(
         library_weights, vocabulary_version, seed_weight, excluded_supply_chain_terms
     )
@@ -875,6 +977,21 @@ def score_csv(
         "risk_dictionary_selected_path": risk_selection.repository_relative_path,
         "risk_dictionary_selected_sha256": risk_selection.sha256,
         "risk_dictionary_selected_total_terms": len(risk_words),
+        "resolution_dictionary_identifier": PRIMARY_RESOLUTION_DICTIONARY_IDENTIFIER,
+        "resolution_dictionary_path": PRIMARY_RESOLUTION_DICTIONARY_RELATIVE_PATH.as_posix(),
+        "resolution_dictionary_sha256": sha256_file(PRIMARY_RESOLUTION_DICTIONARY_PATH),
+        "resolution_dictionary_total_terms": PRIMARY_RESOLUTION_TERM_COUNT,
+        "resolution_dictionary_table_4_terms": PRIMARY_RESOLUTION_TABLE_4_TERM_COUNT,
+        "resolution_dictionary_oxford_added_terms": (
+            PRIMARY_RESOLUTION_OXFORD_ADDED_TERM_COUNT
+        ),
+        "resolution_dictionary_usage": resolution_selection.usage,
+        "resolution_dictionary_is_primary": resolution_selection.is_primary,
+        "resolution_dictionary_selected_path": (
+            resolution_selection.repository_relative_path
+        ),
+        "resolution_dictionary_selected_sha256": resolution_selection.sha256,
+        "resolution_dictionary_selected_total_terms": len(resolution_selection.terms),
         "resolution_term_count": len(set(" ".join(normalize_term(t)) for t in resolution_words)),
         "excluded_supply_chain_terms": [
             " ".join(normalize_term(term)) for term in excluded_supply_chain_terms
@@ -927,7 +1044,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--resolution-words",
         type=Path,
-        help="reviewed resolution dictionary; defaults to starter terms",
+        help=(
+            "development-only resolution dictionary override; defaults to the "
+            "55-term primary reconstruction. Overrides are marked non-primary "
+            "in the run manifest."
+        ),
     )
     parser.add_argument("--text-column", default="transcript_text")
     parser.add_argument("--window", type=int, default=WINDOW, help="maximum token distance; default: 10")

@@ -12,13 +12,13 @@ VERSION = os.environ.get('SCRISK_AUDIT_VOCABULARY', 'v1_library_only')
 
 lib = S.load_supply_chain_library(LIB)
 seeds = [" ".join(S.normalize_term(s)) for s in S.SUPPLY_CHAIN_SEEDS]
-res = sorted({" ".join(S.normalize_term(t)) for t in S.STARTER_RESOLUTION_WORDS})
+res = sorted({" ".join(S.normalize_term(t)) for t in S.load_primary_resolution_dictionary()})
 
 
 def describe(version: str) -> dict:
     """Report one vocabulary version against the same library and dictionaries."""
     sc = S.build_supply_chain_vocabulary(lib, version)
-    risk = sorted(S.build_risk_vocabulary(S.STARTER_RISK_WORDS, version))
+    risk = sorted(S.build_risk_vocabulary(S.load_primary_risk_dictionary()))
     weights = sorted(sc.values())
     overlap = sorted(set(sc) & set(risk))
     return {

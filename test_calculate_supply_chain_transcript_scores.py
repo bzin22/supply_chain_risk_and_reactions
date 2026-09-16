@@ -79,7 +79,7 @@ def score(text: str, vocabulary: dict[str, float], **kwargs) -> S.ScoreResult:
         text,
         vocabulary,
         S.build_risk_vocabulary(S.load_primary_risk_dictionary()),
-        S.STARTER_RESOLUTION_WORDS,
+        S.load_primary_resolution_dictionary(),
         **kwargs,
     )
 
@@ -266,10 +266,25 @@ def test_forbidding_identical_span_pairs_removes_the_self_pair(v2):
     assert result.identical_span_pairs == 0
 
 
-def test_excluding_the_customer_family_removes_the_customer_flip(library):
-    # TMO 2022Q2, quoted in the audit: "customers" and "concerns" five tokens
-    # apart, on biotech funding rather than supply chain.
+def test_the_reconstructed_risk_library_drops_concerns(library):
+    """TMO 2022Q2, quoted in the audit, no longer flips at all.
+
+    The audit example was "funding concerns pressuring those mid-cap biotech
+    customers": "customers" and "concerns" five tokens apart, on biotech
+    funding rather than supply chain. "concerns" was in the old hand-curated
+    starter risk vocabulary. It is not in Theile Table 3 and so not in the
+    161-term reconstruction, so this sentence now scores zero on its own.
+    """
+    assert "concerns" not in set(S.load_primary_risk_dictionary())
     text = "funding concerns pressuring those mid-cap biotech customers"
+    kept = S.build_supply_chain_vocabulary(library, "v2_seeds_inflections")
+    assert score(text, kept).scrisk_raw == 0.0
+
+
+def test_excluding_the_customer_family_removes_the_customer_flip(library):
+    # Same shape as the audit example, with "issues", the most frequent term in
+    # the reconstructed risk library, standing in for the dropped "concerns".
+    text = "funding issues pressuring those mid-cap biotech customers"
     kept = S.build_supply_chain_vocabulary(library, "v2_seeds_inflections")
     dropped = S.build_supply_chain_vocabulary(
         library, "v2_seeds_inflections", excluded_terms=("customers", "customer")
