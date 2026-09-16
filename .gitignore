@@ -9,7 +9,7 @@ __pycache__/
 venv/
 
 # Node
-node_modules/
+node_modules
 
 # Bulk source data (940MB / 746MB, regenerate with extract_earnings_call_transcript_data.py)
 earnings_call_transcript_segments.csv
