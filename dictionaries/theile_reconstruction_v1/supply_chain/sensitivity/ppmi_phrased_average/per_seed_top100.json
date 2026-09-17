@@ -1,0 +1,8034 @@
+{
+  "channel partners": [
+    {
+      "term": "channels",
+      "cosine": 0.631726,
+      "rank": 1
+    },
+    {
+      "term": "retail_partners",
+      "cosine": 0.622704,
+      "rank": 2
+    },
+    {
+      "term": "distribution_partners",
+      "cosine": 0.611448,
+      "rank": 3
+    },
+    {
+      "term": "sales_channel",
+      "cosine": 0.609325,
+      "rank": 4
+    },
+    {
+      "term": "partner",
+      "cosine": 0.600389,
+      "rank": 5
+    },
+    {
+      "term": "alliance_partners",
+      "cosine": 0.595584,
+      "rank": 6
+    },
+    {
+      "term": "indirect_channel",
+      "cosine": 0.58125,
+      "rank": 7
+    },
+    {
+      "term": "reseller_partners",
+      "cosine": 0.579046,
+      "rank": 8
+    },
+    {
+      "term": "strategic_partners",
+      "cosine": 0.579,
+      "rank": 9
+    },
+    {
+      "term": "channels_including",
+      "cosine": 0.575838,
+      "rank": 10
+    },
+    {
+      "term": "distribution_channel",
+      "cosine": 0.567137,
+      "rank": 11
+    },
+    {
+      "term": "referral_partners",
+      "cosine": 0.567012,
+      "rank": 12
+    },
+    {
+      "term": "distributors",
+      "cosine": 0.55707,
+      "rank": 13
+    },
+    {
+      "term": "reseller_channel",
+      "cosine": 0.546465,
+      "rank": 14
+    },
+    {
+      "term": "distributors_resellers",
+      "cosine": 0.545891,
+      "rank": 15
+    },
+    {
+      "term": "resellers_distributors",
+      "cosine": 0.544577,
+      "rank": 16
+    },
+    {
+      "term": "valueadded_resellers",
+      "cosine": 0.542479,
+      "rank": 17
+    },
+    {
+      "term": "indirect_sales",
+      "cosine": 0.541007,
+      "rank": 18
+    },
+    {
+      "term": "indirect_distribution",
+      "cosine": 0.537542,
+      "rank": 19
+    },
+    {
+      "term": "channel_partner",
+      "cosine": 0.535691,
+      "rank": 20
+    },
+    {
+      "term": "vars",
+      "cosine": 0.532138,
+      "rank": 21
+    },
+    {
+      "term": "thirdparty_resellers",
+      "cosine": 0.531092,
+      "rank": 22
+    },
+    {
+      "term": "distribution_arrangements",
+      "cosine": 0.529868,
+      "rank": 23
+    },
+    {
+      "term": "thirdparty_distributors",
+      "cosine": 0.527925,
+      "rank": 24
+    },
+    {
+      "term": "resellers",
+      "cosine": 0.524867,
+      "rank": 25
+    },
+    {
+      "term": "thirdparty_distributor",
+      "cosine": 0.51957,
+      "rank": 26
+    },
+    {
+      "term": "aggregator",
+      "cosine": 0.519085,
+      "rank": 27
+    },
+    {
+      "term": "content_provider",
+      "cosine": 0.516613,
+      "rank": 28
+    },
+    {
+      "term": "system_integrator",
+      "cosine": 0.516234,
+      "rank": 29
+    },
+    {
+      "term": "reseller",
+      "cosine": 0.515437,
+      "rank": 30
+    },
+    {
+      "term": "content_providers",
+      "cosine": 0.51433,
+      "rank": 31
+    },
+    {
+      "term": "distributors_retailers",
+      "cosine": 0.511914,
+      "rank": 32
+    },
+    {
+      "term": "international_distributors",
+      "cosine": 0.510725,
+      "rank": 33
+    },
+    {
+      "term": "multiple_channels",
+      "cosine": 0.509855,
+      "rank": 34
+    },
+    {
+      "term": "key_distributors",
+      "cosine": 0.50623,
+      "rank": 35
+    },
+    {
+      "term": "home_shopping",
+      "cosine": 0.502915,
+      "rank": 36
+    },
+    {
+      "term": "network",
+      "cosine": 0.500208,
+      "rank": 37
+    },
+    {
+      "term": "solution_providers",
+      "cosine": 0.500192,
+      "rank": 38
+    },
+    {
+      "term": "global_distribution",
+      "cosine": 0.499759,
+      "rank": 39
+    },
+    {
+      "term": "independent_distributor",
+      "cosine": 0.499085,
+      "rank": 40
+    },
+    {
+      "term": "strategic_partner",
+      "cosine": 0.498484,
+      "rank": 41
+    },
+    {
+      "term": "alliance_partner",
+      "cosine": 0.498149,
+      "rank": 42
+    },
+    {
+      "term": "resellers_vars",
+      "cosine": 0.49687,
+      "rank": 43
+    },
+    {
+      "term": "sales_agents",
+      "cosine": 0.496274,
+      "rank": 44
+    },
+    {
+      "term": "syndicators",
+      "cosine": 0.494597,
+      "rank": 45
+    },
+    {
+      "term": "sales_channels",
+      "cosine": 0.494467,
+      "rank": 46
+    },
+    {
+      "term": "direct_channels",
+      "cosine": 0.494226,
+      "rank": 47
+    },
+    {
+      "term": "indirect_channels",
+      "cosine": 0.490187,
+      "rank": 48
+    },
+    {
+      "term": "oem_partners",
+      "cosine": 0.489379,
+      "rank": 49
+    },
+    {
+      "term": "alliance_program",
+      "cosine": 0.487083,
+      "rank": 50
+    },
+    {
+      "term": "retail_distribution",
+      "cosine": 0.486525,
+      "rank": 51
+    },
+    {
+      "term": "isv",
+      "cosine": 0.485631,
+      "rank": 52
+    },
+    {
+      "term": "relationships",
+      "cosine": 0.48505,
+      "rank": 53
+    },
+    {
+      "term": "television_network",
+      "cosine": 0.484414,
+      "rank": 54
+    },
+    {
+      "term": "system_integrators",
+      "cosine": 0.484262,
+      "rank": 55
+    },
+    {
+      "term": "marketing_alliances",
+      "cosine": 0.48355,
+      "rank": 56
+    },
+    {
+      "term": "oem_relationships",
+      "cosine": 0.48235,
+      "rank": 57
+    },
+    {
+      "term": "distributors_worldwide",
+      "cosine": 0.481008,
+      "rank": 58
+    },
+    {
+      "term": "pay_tv",
+      "cosine": 0.479994,
+      "rank": 59
+    },
+    {
+      "term": "integrators",
+      "cosine": 0.47967,
+      "rank": 60
+    },
+    {
+      "term": "systems_integrators",
+      "cosine": 0.479634,
+      "rank": 61
+    },
+    {
+      "term": "isvs",
+      "cosine": 0.479154,
+      "rank": 62
+    },
+    {
+      "term": "major_distributors",
+      "cosine": 0.477655,
+      "rank": 63
+    },
+    {
+      "term": "infomercial",
+      "cosine": 0.476919,
+      "rank": 64
+    },
+    {
+      "term": "teaming",
+      "cosine": 0.474347,
+      "rank": 65
+    },
+    {
+      "term": "distributors_dealers",
+      "cosine": 0.472689,
+      "rank": 66
+    },
+    {
+      "term": "worldwide_network",
+      "cosine": 0.471132,
+      "rank": 67
+    },
+    {
+      "term": "sales_teams",
+      "cosine": 0.469285,
+      "rank": 68
+    },
+    {
+      "term": "comarketing",
+      "cosine": 0.469189,
+      "rank": 69
+    },
+    {
+      "term": "valueadded_reseller",
+      "cosine": 0.469167,
+      "rank": 70
+    },
+    {
+      "term": "distributed_via",
+      "cosine": 0.467018,
+      "rank": 71
+    },
+    {
+      "term": "sales_forces",
+      "cosine": 0.466617,
+      "rank": 72
+    },
+    {
+      "term": "direct_sales",
+      "cosine": 0.466271,
+      "rank": 73
+    },
+    {
+      "term": "distribution_channels",
+      "cosine": 0.465118,
+      "rank": 74
+    },
+    {
+      "term": "developing_relationships",
+      "cosine": 0.464836,
+      "rank": 75
+    },
+    {
+      "term": "marketing_organizations",
+      "cosine": 0.464659,
+      "rank": 76
+    },
+    {
+      "term": "independent_distributors",
+      "cosine": 0.463985,
+      "rank": 77
+    },
+    {
+      "term": "retail_channel",
+      "cosine": 0.463597,
+      "rank": 78
+    },
+    {
+      "term": "worldwide_distribution",
+      "cosine": 0.461428,
+      "rank": 79
+    },
+    {
+      "term": "thirdparty_intermediaries",
+      "cosine": 0.460871,
+      "rank": 80
+    },
+    {
+      "term": "suppliers_manufacturers",
+      "cosine": 0.460238,
+      "rank": 81
+    },
+    {
+      "term": "infomercials",
+      "cosine": 0.459812,
+      "rank": 82
+    },
+    {
+      "term": "white_label",
+      "cosine": 0.459416,
+      "rank": 83
+    },
+    {
+      "term": "wireless_carrier",
+      "cosine": 0.459312,
+      "rank": 84
+    },
+    {
+      "term": "advertising_agencies",
+      "cosine": 0.45895,
+      "rank": 85
+    },
+    {
+      "term": "multichannel",
+      "cosine": 0.458869,
+      "rank": 86
+    },
+    {
+      "term": "hsn",
+      "cosine": 0.458593,
+      "rank": 87
+    },
+    {
+      "term": "directtoconsumer",
+      "cosine": 0.458088,
+      "rank": 88
+    },
+    {
+      "term": "digital_channels",
+      "cosine": 0.45773,
+      "rank": 89
+    },
+    {
+      "term": "subdistributors",
+      "cosine": 0.456441,
+      "rank": 90
+    },
+    {
+      "term": "products_globally",
+      "cosine": 0.455765,
+      "rank": 91
+    },
+    {
+      "term": "establishing_relationships",
+      "cosine": 0.45576,
+      "rank": 92
+    },
+    {
+      "term": "enduser_customers",
+      "cosine": 0.454221,
+      "rank": 93
+    },
+    {
+      "term": "via_direct",
+      "cosine": 0.452381,
+      "rank": 94
+    },
+    {
+      "term": "regional_distributors",
+      "cosine": 0.452228,
+      "rank": 95
+    },
+    {
+      "term": "record_labels",
+      "cosine": 0.45204,
+      "rank": 96
+    },
+    {
+      "term": "retail_distributors",
+      "cosine": 0.450722,
+      "rank": 97
+    },
+    {
+      "term": "television_channels",
+      "cosine": 0.450623,
+      "rank": 98
+    },
+    {
+      "term": "sales_efforts",
+      "cosine": 0.449747,
+      "rank": 99
+    },
+    {
+      "term": "sells_directly",
+      "cosine": 0.448491,
+      "rank": 100
+    }
+  ],
+  "customers": [
+    {
+      "term": "reseller_customers",
+      "cosine": 0.726975,
+      "rank": 1
+    },
+    {
+      "term": "enduser_customers",
+      "cosine": 0.725792,
+      "rank": 2
+    },
+    {
+      "term": "endcustomers",
+      "cosine": 0.708158,
+      "rank": 3
+    },
+    {
+      "term": "endusers",
+      "cosine": 0.704847,
+      "rank": 4
+    },
+    {
+      "term": "individual_customers",
+      "cosine": 0.698816,
+      "rank": 5
+    },
+    {
+      "term": "large_customers",
+      "cosine": 0.698634,
+      "rank": 6
+    },
+    {
+      "term": "end_users",
+      "cosine": 0.689878,
+      "rank": 7
+    },
+    {
+      "term": "clients",
+      "cosine": 0.672794,
+      "rank": 8
+    },
+    {
+      "term": "larger_customers",
+      "cosine": 0.668978,
+      "rank": 9
+    },
+    {
+      "term": "enterprise_customers",
+      "cosine": 0.65226,
+      "rank": 10
+    },
+    {
+      "term": "wholesale_customers",
+      "cosine": 0.635417,
+      "rank": 11
+    },
+    {
+      "term": "large_oem",
+      "cosine": 0.631308,
+      "rank": 12
+    },
+    {
+      "term": "potential_customers",
+      "cosine": 0.622833,
+      "rank": 13
+    },
+    {
+      "term": "retail_consumers",
+      "cosine": 0.618759,
+      "rank": 14
+    },
+    {
+      "term": "carrier_customers",
+      "cosine": 0.618471,
+      "rank": 15
+    },
+    {
+      "term": "commercial_customers",
+      "cosine": 0.617254,
+      "rank": 16
+    },
+    {
+      "term": "channel_partners",
+      "cosine": 0.612217,
+      "rank": 17
+    },
+    {
+      "term": "oem_customers",
+      "cosine": 0.608675,
+      "rank": 18
+    },
+    {
+      "term": "largevolume",
+      "cosine": 0.60458,
+      "rank": 19
+    },
+    {
+      "term": "prospective_customers",
+      "cosine": 0.601628,
+      "rank": 20
+    },
+    {
+      "term": "enterprise_clients",
+      "cosine": 0.599589,
+      "rank": 21
+    },
+    {
+      "term": "customers_typically",
+      "cosine": 0.599352,
+      "rank": 22
+    },
+    {
+      "term": "end_user",
+      "cosine": 0.593218,
+      "rank": 23
+    },
+    {
+      "term": "diverse_base",
+      "cosine": 0.588792,
+      "rank": 24
+    },
+    {
+      "term": "merchandise_vendors",
+      "cosine": 0.588782,
+      "rank": 25
+    },
+    {
+      "term": "place_orders",
+      "cosine": 0.57973,
+      "rank": 26
+    },
+    {
+      "term": "key_customers",
+      "cosine": 0.57931,
+      "rank": 27
+    },
+    {
+      "term": "individual_consumers",
+      "cosine": 0.577145,
+      "rank": 28
+    },
+    {
+      "term": "oem_suppliers",
+      "cosine": 0.576667,
+      "rank": 29
+    },
+    {
+      "term": "enduse_customers",
+      "cosine": 0.571004,
+      "rank": 30
+    },
+    {
+      "term": "customers_worldwide",
+      "cosine": 0.57012,
+      "rank": 31
+    },
+    {
+      "term": "resellers",
+      "cosine": 0.569908,
+      "rank": 32
+    },
+    {
+      "term": "vendors",
+      "cosine": 0.558133,
+      "rank": 33
+    },
+    {
+      "term": "brand_owners",
+      "cosine": 0.552965,
+      "rank": 34
+    },
+    {
+      "term": "larger_clients",
+      "cosine": 0.551601,
+      "rank": 35
+    },
+    {
+      "term": "cease_purchasing",
+      "cosine": 0.550674,
+      "rank": 36
+    },
+    {
+      "term": "retail_customers",
+      "cosine": 0.54901,
+      "rank": 37
+    },
+    {
+      "term": "potential_clients",
+      "cosine": 0.548535,
+      "rank": 38
+    },
+    {
+      "term": "oem_partners",
+      "cosine": 0.547757,
+      "rank": 39
+    },
+    {
+      "term": "odms",
+      "cosine": 0.547644,
+      "rank": 40
+    },
+    {
+      "term": "distribution_partners",
+      "cosine": 0.547021,
+      "rank": 41
+    },
+    {
+      "term": "consumers",
+      "cosine": 0.546717,
+      "rank": 42
+    },
+    {
+      "term": "retail_distributors",
+      "cosine": 0.542604,
+      "rank": 43
+    },
+    {
+      "term": "customers_often",
+      "cosine": 0.542603,
+      "rank": 44
+    },
+    {
+      "term": "distributors_retailers",
+      "cosine": 0.542313,
+      "rank": 45
+    },
+    {
+      "term": "key_distributors",
+      "cosine": 0.540951,
+      "rank": 46
+    },
+    {
+      "term": "thirdparty_resellers",
+      "cosine": 0.538823,
+      "rank": 47
+    },
+    {
+      "term": "billers",
+      "cosine": 0.538808,
+      "rank": 48
+    },
+    {
+      "term": "potential_subscribers",
+      "cosine": 0.538214,
+      "rank": 49
+    },
+    {
+      "term": "deteriorate_resulting",
+      "cosine": 0.537246,
+      "rank": 50
+    },
+    {
+      "term": "prospective_clients",
+      "cosine": 0.536437,
+      "rank": 51
+    },
+    {
+      "term": "employer_clients",
+      "cosine": 0.535927,
+      "rank": 52
+    },
+    {
+      "term": "account_holders",
+      "cosine": 0.533623,
+      "rank": 53
+    },
+    {
+      "term": "enduser_customer",
+      "cosine": 0.532909,
+      "rank": 54
+    },
+    {
+      "term": "large_orders",
+      "cosine": 0.53041,
+      "rank": 55
+    },
+    {
+      "term": "distributors_typically",
+      "cosine": 0.530369,
+      "rank": 56
+    },
+    {
+      "term": "customers_around",
+      "cosine": 0.530142,
+      "rank": 57
+    },
+    {
+      "term": "major_oem",
+      "cosine": 0.52857,
+      "rank": 58
+    },
+    {
+      "term": "government_clients",
+      "cosine": 0.526119,
+      "rank": 59
+    },
+    {
+      "term": "utility_customers",
+      "cosine": 0.525835,
+      "rank": 60
+    },
+    {
+      "term": "specialized_needs",
+      "cosine": 0.525527,
+      "rank": 61
+    },
+    {
+      "term": "ship_products",
+      "cosine": 0.523311,
+      "rank": 62
+    },
+    {
+      "term": "suppliers",
+      "cosine": 0.523047,
+      "rank": 63
+    },
+    {
+      "term": "target_customers",
+      "cosine": 0.522765,
+      "rank": 64
+    },
+    {
+      "term": "vars",
+      "cosine": 0.522005,
+      "rank": 65
+    },
+    {
+      "term": "reps",
+      "cosine": 0.520944,
+      "rank": 66
+    },
+    {
+      "term": "products_directly",
+      "cosine": 0.520758,
+      "rank": 67
+    },
+    {
+      "term": "reseller_partners",
+      "cosine": 0.519445,
+      "rank": 68
+    },
+    {
+      "term": "wireless_carrier",
+      "cosine": 0.517687,
+      "rank": 69
+    },
+    {
+      "term": "diversified_base",
+      "cosine": 0.517047,
+      "rank": 70
+    },
+    {
+      "term": "customers_cancel",
+      "cosine": 0.516247,
+      "rank": 71
+    },
+    {
+      "term": "dropship",
+      "cosine": 0.515381,
+      "rank": 72
+    },
+    {
+      "term": "orders_placed",
+      "cosine": 0.51493,
+      "rank": 73
+    },
+    {
+      "term": "offer_discounts",
+      "cosine": 0.514405,
+      "rank": 74
+    },
+    {
+      "term": "growing_base",
+      "cosine": 0.513977,
+      "rank": 75
+    },
+    {
+      "term": "enduser",
+      "cosine": 0.513548,
+      "rank": 76
+    },
+    {
+      "term": "large_volume",
+      "cosine": 0.512608,
+      "rank": 77
+    },
+    {
+      "term": "existing_customers",
+      "cosine": 0.511994,
+      "rank": 78
+    },
+    {
+      "term": "largest_customers",
+      "cosine": 0.511067,
+      "rank": 79
+    },
+    {
+      "term": "offer_rebates",
+      "cosine": 0.510298,
+      "rank": 80
+    },
+    {
+      "term": "purchasing_decisions",
+      "cosine": 0.509286,
+      "rank": 81
+    },
+    {
+      "term": "distributors",
+      "cosine": 0.508505,
+      "rank": 82
+    },
+    {
+      "term": "industrial_customers",
+      "cosine": 0.508275,
+      "rank": 83
+    },
+    {
+      "term": "domestic_distributors",
+      "cosine": 0.508176,
+      "rank": 84
+    },
+    {
+      "term": "major_distributors",
+      "cosine": 0.507718,
+      "rank": 85
+    },
+    {
+      "term": "mediumsized_business",
+      "cosine": 0.507669,
+      "rank": 86
+    },
+    {
+      "term": "mobile_operators",
+      "cosine": 0.507225,
+      "rank": 87
+    },
+    {
+      "term": "resellers_distributors",
+      "cosine": 0.506726,
+      "rank": 88
+    },
+    {
+      "term": "retail_partners",
+      "cosine": 0.50657,
+      "rank": 89
+    },
+    {
+      "term": "stocking_distributors",
+      "cosine": 0.505005,
+      "rank": 90
+    },
+    {
+      "term": "shipping_needs",
+      "cosine": 0.504668,
+      "rank": 91
+    },
+    {
+      "term": "residential_customers",
+      "cosine": 0.504578,
+      "rank": 92
+    },
+    {
+      "term": "telecom_operators",
+      "cosine": 0.504246,
+      "rank": 93
+    },
+    {
+      "term": "placing_orders",
+      "cosine": 0.503978,
+      "rank": 94
+    },
+    {
+      "term": "merchants",
+      "cosine": 0.503956,
+      "rank": 95
+    },
+    {
+      "term": "multinational_customers",
+      "cosine": 0.503547,
+      "rank": 96
+    },
+    {
+      "term": "service_providers",
+      "cosine": 0.503415,
+      "rank": 97
+    },
+    {
+      "term": "cancel_orders",
+      "cosine": 0.503259,
+      "rank": 98
+    },
+    {
+      "term": "travel_suppliers",
+      "cosine": 0.501241,
+      "rank": 99
+    },
+    {
+      "term": "customers_buy",
+      "cosine": 0.501063,
+      "rank": 100
+    }
+  ],
+  "demand management": [
+    {
+      "term": "overall_demand",
+      "cosine": 0.59111,
+      "rank": 1
+    },
+    {
+      "term": "market_demand",
+      "cosine": 0.538519,
+      "rank": 2
+    },
+    {
+      "term": "consumer_demand",
+      "cosine": 0.528753,
+      "rank": 3
+    },
+    {
+      "term": "budgeting",
+      "cosine": 0.511838,
+      "rank": 4
+    },
+    {
+      "term": "supplydemand",
+      "cosine": 0.510682,
+      "rank": 5
+    },
+    {
+      "term": "worldwide_demand",
+      "cosine": 0.506225,
+      "rank": 6
+    },
+    {
+      "term": "global_demand",
+      "cosine": 0.504238,
+      "rank": 7
+    },
+    {
+      "term": "customer_demand",
+      "cosine": 0.502924,
+      "rank": 8
+    },
+    {
+      "term": "customer_spending",
+      "cosine": 0.501625,
+      "rank": 9
+    },
+    {
+      "term": "audit_functions",
+      "cosine": 0.483228,
+      "rank": 10
+    },
+    {
+      "term": "worldwide_supply",
+      "cosine": 0.483084,
+      "rank": 11
+    },
+    {
+      "term": "product_demand",
+      "cosine": 0.480703,
+      "rank": 12
+    },
+    {
+      "term": "forecasting",
+      "cosine": 0.479826,
+      "rank": 13
+    },
+    {
+      "term": "reduced_demand",
+      "cosine": 0.474937,
+      "rank": 14
+    },
+    {
+      "term": "demand_dynamics",
+      "cosine": 0.473328,
+      "rank": 15
+    },
+    {
+      "term": "oversupply",
+      "cosine": 0.472407,
+      "rank": 16
+    },
+    {
+      "term": "internal_auditing",
+      "cosine": 0.471599,
+      "rank": 17
+    },
+    {
+      "term": "cyclicality",
+      "cosine": 0.46881,
+      "rank": 18
+    },
+    {
+      "term": "administrative_operational",
+      "cosine": 0.468293,
+      "rank": 19
+    },
+    {
+      "term": "overall_level",
+      "cosine": 0.465873,
+      "rank": 20
+    },
+    {
+      "term": "pricing_trends",
+      "cosine": 0.464714,
+      "rank": 21
+    },
+    {
+      "term": "daytoday_operations",
+      "cosine": 0.461411,
+      "rank": 22
+    },
+    {
+      "term": "cyclical_fluctuations",
+      "cosine": 0.459419,
+      "rank": 23
+    },
+    {
+      "term": "seasonal_demand",
+      "cosine": 0.458549,
+      "rank": 24
+    },
+    {
+      "term": "decreasing_demand",
+      "cosine": 0.458383,
+      "rank": 25
+    },
+    {
+      "term": "changing_demand",
+      "cosine": 0.457927,
+      "rank": 26
+    },
+    {
+      "term": "daytoday",
+      "cosine": 0.457802,
+      "rank": 27
+    },
+    {
+      "term": "volatile_nature",
+      "cosine": 0.454807,
+      "rank": 28
+    },
+    {
+      "term": "energy_prices",
+      "cosine": 0.454748,
+      "rank": 29
+    },
+    {
+      "term": "conditions_impacting",
+      "cosine": 0.454176,
+      "rank": 30
+    },
+    {
+      "term": "demand_fundamentals",
+      "cosine": 0.451527,
+      "rank": 31
+    },
+    {
+      "term": "cyclical",
+      "cosine": 0.451427,
+      "rank": 32
+    },
+    {
+      "term": "pricing_environment",
+      "cosine": 0.451189,
+      "rank": 33
+    },
+    {
+      "term": "swings",
+      "cosine": 0.450208,
+      "rank": 34
+    },
+    {
+      "term": "fluctuating",
+      "cosine": 0.450142,
+      "rank": 35
+    },
+    {
+      "term": "global_supply",
+      "cosine": 0.448394,
+      "rank": 36
+    },
+    {
+      "term": "decreased_demand",
+      "cosine": 0.44731,
+      "rank": 37
+    },
+    {
+      "term": "affect_demand",
+      "cosine": 0.444104,
+      "rank": 38
+    },
+    {
+      "term": "overall_economic",
+      "cosine": 0.443318,
+      "rank": 39
+    },
+    {
+      "term": "cyclical_nature",
+      "cosine": 0.44239,
+      "rank": 40
+    },
+    {
+      "term": "accounting_functions",
+      "cosine": 0.442147,
+      "rank": 41
+    },
+    {
+      "term": "electricity_demand",
+      "cosine": 0.441736,
+      "rank": 42
+    },
+    {
+      "term": "rising_energy",
+      "cosine": 0.441416,
+      "rank": 43
+    },
+    {
+      "term": "consumer_purchasing",
+      "cosine": 0.440855,
+      "rank": 44
+    },
+    {
+      "term": "gasoline_prices",
+      "cosine": 0.440805,
+      "rank": 45
+    },
+    {
+      "term": "seasonal_trends",
+      "cosine": 0.440699,
+      "rank": 46
+    },
+    {
+      "term": "inventory_levels",
+      "cosine": 0.439149,
+      "rank": 47
+    },
+    {
+      "term": "internal_audit",
+      "cosine": 0.438575,
+      "rank": 48
+    },
+    {
+      "term": "directly_influence",
+      "cosine": 0.438023,
+      "rank": 49
+    },
+    {
+      "term": "consumer_spending",
+      "cosine": 0.436644,
+      "rank": 50
+    },
+    {
+      "term": "gasoline_demand",
+      "cosine": 0.436381,
+      "rank": 51
+    },
+    {
+      "term": "spending_levels",
+      "cosine": 0.43616,
+      "rank": 52
+    },
+    {
+      "term": "client_demand",
+      "cosine": 0.435907,
+      "rank": 53
+    },
+    {
+      "term": "high_demand",
+      "cosine": 0.435657,
+      "rank": 54
+    },
+    {
+      "term": "projected_demand",
+      "cosine": 0.434819,
+      "rank": 55
+    },
+    {
+      "term": "declining_demand",
+      "cosine": 0.433125,
+      "rank": 56
+    },
+    {
+      "term": "factors_influencing",
+      "cosine": 0.43285,
+      "rank": 57
+    },
+    {
+      "term": "budgeting_process",
+      "cosine": 0.432821,
+      "rank": 58
+    },
+    {
+      "term": "enduser_demand",
+      "cosine": 0.432053,
+      "rank": 59
+    },
+    {
+      "term": "daily_operations",
+      "cosine": 0.431524,
+      "rank": 60
+    },
+    {
+      "term": "customer_conservation",
+      "cosine": 0.430142,
+      "rank": 61
+    },
+    {
+      "term": "consumption_patterns",
+      "cosine": 0.430013,
+      "rank": 62
+    },
+    {
+      "term": "seasonal_variations",
+      "cosine": 0.428945,
+      "rank": 63
+    },
+    {
+      "term": "seasonal_nature",
+      "cosine": 0.428873,
+      "rank": 64
+    },
+    {
+      "term": "fluctuating_demand",
+      "cosine": 0.428433,
+      "rank": 65
+    },
+    {
+      "term": "management_functions",
+      "cosine": 0.428355,
+      "rank": 66
+    },
+    {
+      "term": "overcapacity",
+      "cosine": 0.425785,
+      "rank": 67
+    },
+    {
+      "term": "longrange_planning",
+      "cosine": 0.424726,
+      "rank": 68
+    },
+    {
+      "term": "seasonality",
+      "cosine": 0.423875,
+      "rank": 69
+    },
+    {
+      "term": "sustained_decline",
+      "cosine": 0.422429,
+      "rank": 70
+    },
+    {
+      "term": "cyclical_trends",
+      "cosine": 0.422375,
+      "rank": 71
+    },
+    {
+      "term": "deposit_levels",
+      "cosine": 0.421468,
+      "rank": 72
+    },
+    {
+      "term": "significant_declines",
+      "cosine": 0.421239,
+      "rank": 73
+    },
+    {
+      "term": "technology_spending",
+      "cosine": 0.420077,
+      "rank": 74
+    },
+    {
+      "term": "daytoday_operation",
+      "cosine": 0.419915,
+      "rank": 75
+    },
+    {
+      "term": "regional_supply",
+      "cosine": 0.419194,
+      "rank": 76
+    },
+    {
+      "term": "freight_demand",
+      "cosine": 0.418068,
+      "rank": 77
+    },
+    {
+      "term": "seasonal_fluctuations",
+      "cosine": 0.417938,
+      "rank": 78
+    },
+    {
+      "term": "staffing_needs",
+      "cosine": 0.417342,
+      "rank": 79
+    },
+    {
+      "term": "strongly_influenced",
+      "cosine": 0.417007,
+      "rank": 80
+    },
+    {
+      "term": "put_pressure",
+      "cosine": 0.416276,
+      "rank": 81
+    },
+    {
+      "term": "remain_volatile",
+      "cosine": 0.415727,
+      "rank": 82
+    },
+    {
+      "term": "responsibility",
+      "cosine": 0.415526,
+      "rank": 83
+    },
+    {
+      "term": "consumption",
+      "cosine": 0.4149,
+      "rank": 84
+    },
+    {
+      "term": "volatile_oil",
+      "cosine": 0.413746,
+      "rank": 85
+    },
+    {
+      "term": "budgets",
+      "cosine": 0.413603,
+      "rank": 86
+    },
+    {
+      "term": "sustained_periods",
+      "cosine": 0.413597,
+      "rank": 87
+    },
+    {
+      "term": "weak",
+      "cosine": 0.413406,
+      "rank": 88
+    },
+    {
+      "term": "activity_levels",
+      "cosine": 0.413287,
+      "rank": 89
+    },
+    {
+      "term": "overseeing",
+      "cosine": 0.413145,
+      "rank": 90
+    },
+    {
+      "term": "low_oil",
+      "cosine": 0.412542,
+      "rank": 91
+    },
+    {
+      "term": "daytoday_management",
+      "cosine": 0.41252,
+      "rank": 92
+    },
+    {
+      "term": "surpluses",
+      "cosine": 0.412109,
+      "rank": 93
+    },
+    {
+      "term": "reducing_demand",
+      "cosine": 0.411425,
+      "rank": 94
+    },
+    {
+      "term": "depressed_market",
+      "cosine": 0.409982,
+      "rank": 95
+    },
+    {
+      "term": "charter_rates",
+      "cosine": 0.409955,
+      "rank": 96
+    },
+    {
+      "term": "slow_growth",
+      "cosine": 0.409764,
+      "rank": 97
+    },
+    {
+      "term": "macroeconomic_conditions",
+      "cosine": 0.409429,
+      "rank": 98
+    },
+    {
+      "term": "weak_u",
+      "cosine": 0.409421,
+      "rank": 99
+    },
+    {
+      "term": "changing_conditions",
+      "cosine": 0.409228,
+      "rank": 100
+    }
+  ],
+  "distribution": [
+    {
+      "term": "warehousing_distribution",
+      "cosine": 0.591467,
+      "rank": 1
+    },
+    {
+      "term": "promotion_marketing",
+      "cosine": 0.57548,
+      "rank": 2
+    },
+    {
+      "term": "manufacturing_packaging",
+      "cosine": 0.573319,
+      "rank": 3
+    },
+    {
+      "term": "processing_packaging",
+      "cosine": 0.572602,
+      "rank": 4
+    },
+    {
+      "term": "manufacturing_distribution",
+      "cosine": 0.572443,
+      "rank": 5
+    },
+    {
+      "term": "warehousing",
+      "cosine": 0.56086,
+      "rank": 6
+    },
+    {
+      "term": "recordkeeping_labeling",
+      "cosine": 0.559404,
+      "rank": 7
+    },
+    {
+      "term": "marketing_promotion",
+      "cosine": 0.550075,
+      "rank": 8
+    },
+    {
+      "term": "advertising_promotion",
+      "cosine": 0.54273,
+      "rank": 9
+    },
+    {
+      "term": "distribution_functions",
+      "cosine": 0.54057,
+      "rank": 10
+    },
+    {
+      "term": "marketing",
+      "cosine": 0.535102,
+      "rank": 11
+    },
+    {
+      "term": "repackaging",
+      "cosine": 0.530996,
+      "rank": 12
+    },
+    {
+      "term": "packaging_storage",
+      "cosine": 0.529275,
+      "rank": 13
+    },
+    {
+      "term": "safety_labeling",
+      "cosine": 0.524625,
+      "rank": 14
+    },
+    {
+      "term": "formulation_manufacturing",
+      "cosine": 0.522638,
+      "rank": 15
+    },
+    {
+      "term": "packaging_labeling",
+      "cosine": 0.522042,
+      "rank": 16
+    },
+    {
+      "term": "distributing",
+      "cosine": 0.517299,
+      "rank": 17
+    },
+    {
+      "term": "labeling_storage",
+      "cosine": 0.515668,
+      "rank": 18
+    },
+    {
+      "term": "promotion_distribution",
+      "cosine": 0.515074,
+      "rank": 19
+    },
+    {
+      "term": "final_liquidating",
+      "cosine": 0.513482,
+      "rank": 20
+    },
+    {
+      "term": "fulfillment",
+      "cosine": 0.510923,
+      "rank": 21
+    },
+    {
+      "term": "storage_record",
+      "cosine": 0.503948,
+      "rank": 22
+    },
+    {
+      "term": "retail_distribution",
+      "cosine": 0.498443,
+      "rank": 23
+    },
+    {
+      "term": "labeling_advertising",
+      "cosine": 0.495432,
+      "rank": 24
+    },
+    {
+      "term": "assets_legally",
+      "cosine": 0.494432,
+      "rank": 25
+    },
+    {
+      "term": "approval_labeling",
+      "cosine": 0.493399,
+      "rank": 26
+    },
+    {
+      "term": "manufacturing",
+      "cosine": 0.493297,
+      "rank": 27
+    },
+    {
+      "term": "distribution_logistics",
+      "cosine": 0.493112,
+      "rank": 28
+    },
+    {
+      "term": "product_fulfillment",
+      "cosine": 0.49158,
+      "rank": 29
+    },
+    {
+      "term": "wholesaling",
+      "cosine": 0.491516,
+      "rank": 30
+    },
+    {
+      "term": "distribution_infrastructure",
+      "cosine": 0.486154,
+      "rank": 31
+    },
+    {
+      "term": "purchasing_inventory",
+      "cosine": 0.483515,
+      "rank": 32
+    },
+    {
+      "term": "labeling_packaging",
+      "cosine": 0.483423,
+      "rank": 33
+    },
+    {
+      "term": "storage_advertising",
+      "cosine": 0.482942,
+      "rank": 34
+    },
+    {
+      "term": "manufacture_marketing",
+      "cosine": 0.482753,
+      "rank": 35
+    },
+    {
+      "term": "manufacturing_assembly",
+      "cosine": 0.478936,
+      "rank": 36
+    },
+    {
+      "term": "manufacture_packaging",
+      "cosine": 0.477763,
+      "rank": 37
+    },
+    {
+      "term": "labeling_promotion",
+      "cosine": 0.47655,
+      "rank": 38
+    },
+    {
+      "term": "labeling_marketing",
+      "cosine": 0.473943,
+      "rank": 39
+    },
+    {
+      "term": "promotion",
+      "cosine": 0.47233,
+      "rank": 40
+    },
+    {
+      "term": "mqd",
+      "cosine": 0.47189,
+      "rank": 41
+    },
+    {
+      "term": "marketing_advertising",
+      "cosine": 0.469806,
+      "rank": 42
+    },
+    {
+      "term": "design_manufacturing",
+      "cosine": 0.469317,
+      "rank": 43
+    },
+    {
+      "term": "testing_manufacture",
+      "cosine": 0.469277,
+      "rank": 44
+    },
+    {
+      "term": "development_manufacturing",
+      "cosine": 0.467224,
+      "rank": 45
+    },
+    {
+      "term": "inkind",
+      "cosine": 0.465695,
+      "rank": 46
+    },
+    {
+      "term": "import_export",
+      "cosine": 0.463558,
+      "rank": 47
+    },
+    {
+      "term": "logistics",
+      "cosine": 0.463504,
+      "rank": 48
+    },
+    {
+      "term": "manufacture_sale",
+      "cosine": 0.463189,
+      "rank": 49
+    },
+    {
+      "term": "cold_chain",
+      "cosine": 0.462836,
+      "rank": 50
+    },
+    {
+      "term": "storage_recordkeeping",
+      "cosine": 0.457732,
+      "rank": 51
+    },
+    {
+      "term": "manufacturing_marketing",
+      "cosine": 0.456199,
+      "rank": 52
+    },
+    {
+      "term": "minimum_quarterly",
+      "cosine": 0.452759,
+      "rank": 53
+    },
+    {
+      "term": "manufacture_distribution",
+      "cosine": 0.450955,
+      "rank": 54
+    },
+    {
+      "term": "processing_storage",
+      "cosine": 0.448887,
+      "rank": 55
+    },
+    {
+      "term": "quarterly_distribution",
+      "cosine": 0.448188,
+      "rank": 56
+    },
+    {
+      "term": "testing_manufacturing",
+      "cosine": 0.446749,
+      "rank": 57
+    },
+    {
+      "term": "purchasing_receiving",
+      "cosine": 0.444954,
+      "rank": 58
+    },
+    {
+      "term": "manufacturing_labeling",
+      "cosine": 0.444458,
+      "rank": 59
+    },
+    {
+      "term": "processing_transportation",
+      "cosine": 0.442921,
+      "rank": 60
+    },
+    {
+      "term": "derives_revenues",
+      "cosine": 0.439288,
+      "rank": 61
+    },
+    {
+      "term": "manufacture_safety",
+      "cosine": 0.436414,
+      "rank": 62
+    },
+    {
+      "term": "manufacture_labeling",
+      "cosine": 0.436271,
+      "rank": 63
+    },
+    {
+      "term": "depositary_unit",
+      "cosine": 0.435688,
+      "rank": 64
+    },
+    {
+      "term": "costs_shipping",
+      "cosine": 0.43535,
+      "rank": 65
+    },
+    {
+      "term": "transportation_storage",
+      "cosine": 0.43519,
+      "rank": 66
+    },
+    {
+      "term": "operating_surplus",
+      "cosine": 0.435059,
+      "rank": 67
+    },
+    {
+      "term": "distribution_postapproval",
+      "cosine": 0.434714,
+      "rank": 68
+    },
+    {
+      "term": "special_distribution",
+      "cosine": 0.433843,
+      "rank": 69
+    },
+    {
+      "term": "labelling",
+      "cosine": 0.433516,
+      "rank": 70
+    },
+    {
+      "term": "wholesale_supply",
+      "cosine": 0.432655,
+      "rank": 71
+    },
+    {
+      "term": "distributions_exceed",
+      "cosine": 0.432355,
+      "rank": 72
+    },
+    {
+      "term": "arrearages",
+      "cosine": 0.431302,
+      "rank": 73
+    },
+    {
+      "term": "safety_effectiveness",
+      "cosine": 0.427783,
+      "rank": 74
+    },
+    {
+      "term": "distributions_made",
+      "cosine": 0.427488,
+      "rank": 75
+    },
+    {
+      "term": "selling",
+      "cosine": 0.426914,
+      "rank": 76
+    },
+    {
+      "term": "kitting",
+      "cosine": 0.425657,
+      "rank": 77
+    },
+    {
+      "term": "regular_distributions",
+      "cosine": 0.425275,
+      "rank": 78
+    },
+    {
+      "term": "worldwide_distribution",
+      "cosine": 0.424351,
+      "rank": 79
+    },
+    {
+      "term": "engineering_manufacturing",
+      "cosine": 0.424123,
+      "rank": 80
+    },
+    {
+      "term": "fulfillment_services",
+      "cosine": 0.423626,
+      "rank": 81
+    },
+    {
+      "term": "reverse_logistics",
+      "cosine": 0.423282,
+      "rank": 82
+    },
+    {
+      "term": "cash_distributions",
+      "cosine": 0.423,
+      "rank": 83
+    },
+    {
+      "term": "quarterly_distributions",
+      "cosine": 0.422887,
+      "rank": 84
+    },
+    {
+      "term": "sales_marketing",
+      "cosine": 0.422232,
+      "rank": 85
+    },
+    {
+      "term": "manufacturing_engineering",
+      "cosine": 0.420393,
+      "rank": 86
+    },
+    {
+      "term": "transportation",
+      "cosine": 0.4184,
+      "rank": 87
+    },
+    {
+      "term": "development_manufacture",
+      "cosine": 0.418361,
+      "rank": 88
+    },
+    {
+      "term": "distributions",
+      "cosine": 0.418256,
+      "rank": 89
+    },
+    {
+      "term": "marketing_support",
+      "cosine": 0.418162,
+      "rank": 90
+    },
+    {
+      "term": "refinancing_proceeds",
+      "cosine": 0.418158,
+      "rank": 91
+    },
+    {
+      "term": "automatically_reinvested",
+      "cosine": 0.417392,
+      "rank": 92
+    },
+    {
+      "term": "redistribution",
+      "cosine": 0.416516,
+      "rank": 93
+    },
+    {
+      "term": "distributions_reinvested",
+      "cosine": 0.413598,
+      "rank": 94
+    },
+    {
+      "term": "nontaxable_return",
+      "cosine": 0.413571,
+      "rank": 95
+    },
+    {
+      "term": "shipping",
+      "cosine": 0.413342,
+      "rank": 96
+    },
+    {
+      "term": "target_distribution",
+      "cosine": 0.413282,
+      "rank": 97
+    },
+    {
+      "term": "incentive_distributions",
+      "cosine": 0.413056,
+      "rank": 98
+    },
+    {
+      "term": "liquidation_proceeds",
+      "cosine": 0.412738,
+      "rank": 99
+    },
+    {
+      "term": "wholesale_distribution",
+      "cosine": 0.41261,
+      "rank": 100
+    }
+  ],
+  "fulfillment": [
+    {
+      "term": "product_fulfillment",
+      "cosine": 0.831816,
+      "rank": 1
+    },
+    {
+      "term": "order_fulfillment",
+      "cosine": 0.830347,
+      "rank": 2
+    },
+    {
+      "term": "order_processing",
+      "cosine": 0.818041,
+      "rank": 3
+    },
+    {
+      "term": "fulfillment_services",
+      "cosine": 0.797934,
+      "rank": 4
+    },
+    {
+      "term": "warehousing_distribution",
+      "cosine": 0.742928,
+      "rank": 5
+    },
+    {
+      "term": "inventory_management",
+      "cosine": 0.732203,
+      "rank": 6
+    },
+    {
+      "term": "order_entry",
+      "cosine": 0.717317,
+      "rank": 7
+    },
+    {
+      "term": "warehousing",
+      "cosine": 0.712508,
+      "rank": 8
+    },
+    {
+      "term": "kitting",
+      "cosine": 0.707124,
+      "rank": 9
+    },
+    {
+      "term": "purchasing_inventory",
+      "cosine": 0.677892,
+      "rank": 10
+    },
+    {
+      "term": "distribution_functions",
+      "cosine": 0.66429,
+      "rank": 11
+    },
+    {
+      "term": "invoicing",
+      "cosine": 0.650439,
+      "rank": 12
+    },
+    {
+      "term": "inventory_replenishment",
+      "cosine": 0.64873,
+      "rank": 13
+    },
+    {
+      "term": "shipping",
+      "cosine": 0.642974,
+      "rank": 14
+    },
+    {
+      "term": "logistics",
+      "cosine": 0.642893,
+      "rank": 15
+    },
+    {
+      "term": "distribution_logistics",
+      "cosine": 0.641669,
+      "rank": 16
+    },
+    {
+      "term": "procurement",
+      "cosine": 0.637531,
+      "rank": 17
+    },
+    {
+      "term": "call_center",
+      "cosine": 0.629014,
+      "rank": 18
+    },
+    {
+      "term": "mailing",
+      "cosine": 0.62594,
+      "rank": 19
+    },
+    {
+      "term": "inventory_tracking",
+      "cosine": 0.618645,
+      "rank": 20
+    },
+    {
+      "term": "justintime",
+      "cosine": 0.614983,
+      "rank": 21
+    },
+    {
+      "term": "picking",
+      "cosine": 0.614612,
+      "rank": 22
+    },
+    {
+      "term": "replenishment",
+      "cosine": 0.611944,
+      "rank": 23
+    },
+    {
+      "term": "reverse_logistics",
+      "cosine": 0.611933,
+      "rank": 24
+    },
+    {
+      "term": "customer_care",
+      "cosine": 0.609452,
+      "rank": 25
+    },
+    {
+      "term": "ordering",
+      "cosine": 0.608263,
+      "rank": 26
+    },
+    {
+      "term": "purchasing_receiving",
+      "cosine": 0.605628,
+      "rank": 27
+    },
+    {
+      "term": "interchange_edi",
+      "cosine": 0.596161,
+      "rank": 28
+    },
+    {
+      "term": "paperless",
+      "cosine": 0.594977,
+      "rank": 29
+    },
+    {
+      "term": "back_office",
+      "cosine": 0.590565,
+      "rank": 30
+    },
+    {
+      "term": "purchasing",
+      "cosine": 0.590322,
+      "rank": 31
+    },
+    {
+      "term": "product_configuration",
+      "cosine": 0.589593,
+      "rank": 32
+    },
+    {
+      "term": "supply_chain",
+      "cosine": 0.584799,
+      "rank": 33
+    },
+    {
+      "term": "delivery",
+      "cosine": 0.584035,
+      "rank": 34
+    },
+    {
+      "term": "inbound",
+      "cosine": 0.579515,
+      "rank": 35
+    },
+    {
+      "term": "fulfillment_costs",
+      "cosine": 0.578268,
+      "rank": 36
+    },
+    {
+      "term": "logistic",
+      "cosine": 0.577213,
+      "rank": 37
+    },
+    {
+      "term": "production_scheduling",
+      "cosine": 0.575087,
+      "rank": 38
+    },
+    {
+      "term": "centralized",
+      "cosine": 0.574992,
+      "rank": 39
+    },
+    {
+      "term": "customer_contact",
+      "cosine": 0.573965,
+      "rank": 40
+    },
+    {
+      "term": "pointofsale",
+      "cosine": 0.573954,
+      "rank": 41
+    },
+    {
+      "term": "product_delivery",
+      "cosine": 0.573566,
+      "rank": 42
+    },
+    {
+      "term": "catalog_production",
+      "cosine": 0.565575,
+      "rank": 43
+    },
+    {
+      "term": "billing",
+      "cosine": 0.565364,
+      "rank": 44
+    },
+    {
+      "term": "home_delivery",
+      "cosine": 0.563147,
+      "rank": 45
+    },
+    {
+      "term": "sorting",
+      "cosine": 0.562293,
+      "rank": 46
+    },
+    {
+      "term": "merchandising",
+      "cosine": 0.562047,
+      "rank": 47
+    },
+    {
+      "term": "manufacturing_assembly",
+      "cosine": 0.55873,
+      "rank": 48
+    },
+    {
+      "term": "outsourced",
+      "cosine": 0.55846,
+      "rank": 49
+    },
+    {
+      "term": "customer_billing",
+      "cosine": 0.55804,
+      "rank": 50
+    },
+    {
+      "term": "justintime_delivery",
+      "cosine": 0.55303,
+      "rank": 51
+    },
+    {
+      "term": "outbound_shipping",
+      "cosine": 0.551474,
+      "rank": 52
+    },
+    {
+      "term": "billing_services",
+      "cosine": 0.551361,
+      "rank": 53
+    },
+    {
+      "term": "costs_shipping",
+      "cosine": 0.549954,
+      "rank": 54
+    },
+    {
+      "term": "customs_clearance",
+      "cosine": 0.548841,
+      "rank": 55
+    },
+    {
+      "term": "transaction_processing",
+      "cosine": 0.548253,
+      "rank": 56
+    },
+    {
+      "term": "backoffice_support",
+      "cosine": 0.547992,
+      "rank": 57
+    },
+    {
+      "term": "edi",
+      "cosine": 0.545431,
+      "rank": 58
+    },
+    {
+      "term": "product_assembly",
+      "cosine": 0.54529,
+      "rank": 59
+    },
+    {
+      "term": "customer_service",
+      "cosine": 0.543062,
+      "rank": 60
+    },
+    {
+      "term": "scheduling",
+      "cosine": 0.540987,
+      "rank": 61
+    },
+    {
+      "term": "marketing_support",
+      "cosine": 0.538173,
+      "rank": 62
+    },
+    {
+      "term": "functions_including",
+      "cosine": 0.537389,
+      "rank": 63
+    },
+    {
+      "term": "stocking",
+      "cosine": 0.537277,
+      "rank": 64
+    },
+    {
+      "term": "backoffice_functions",
+      "cosine": 0.536187,
+      "rank": 65
+    },
+    {
+      "term": "remittance_processing",
+      "cosine": 0.535673,
+      "rank": 66
+    },
+    {
+      "term": "cold_chain",
+      "cosine": 0.535493,
+      "rank": 67
+    },
+    {
+      "term": "electronic_billing",
+      "cosine": 0.532981,
+      "rank": 68
+    },
+    {
+      "term": "product_packaging",
+      "cosine": 0.532231,
+      "rank": 69
+    },
+    {
+      "term": "buying",
+      "cosine": 0.531984,
+      "rank": 70
+    },
+    {
+      "term": "fulfillment_center",
+      "cosine": 0.53137,
+      "rank": 71
+    },
+    {
+      "term": "merchandise_planning",
+      "cosine": 0.530997,
+      "rank": 72
+    },
+    {
+      "term": "claims_processing",
+      "cosine": 0.53071,
+      "rank": 73
+    },
+    {
+      "term": "instore",
+      "cosine": 0.530052,
+      "rank": 74
+    },
+    {
+      "term": "merchandising_marketing",
+      "cosine": 0.529295,
+      "rank": 75
+    },
+    {
+      "term": "businesstobusiness",
+      "cosine": 0.527343,
+      "rank": 76
+    },
+    {
+      "term": "supplychain",
+      "cosine": 0.521841,
+      "rank": 77
+    },
+    {
+      "term": "repackaging",
+      "cosine": 0.521584,
+      "rank": 78
+    },
+    {
+      "term": "payroll_processing",
+      "cosine": 0.521026,
+      "rank": 79
+    },
+    {
+      "term": "catalog",
+      "cosine": 0.519296,
+      "rank": 80
+    },
+    {
+      "term": "expediting",
+      "cosine": 0.518987,
+      "rank": 81
+    },
+    {
+      "term": "outsourcing",
+      "cosine": 0.517492,
+      "rank": 82
+    },
+    {
+      "term": "data_entry",
+      "cosine": 0.516595,
+      "rank": 83
+    },
+    {
+      "term": "ecommerce",
+      "cosine": 0.51616,
+      "rank": 84
+    },
+    {
+      "term": "mail",
+      "cosine": 0.515837,
+      "rank": 85
+    },
+    {
+      "term": "call_centers",
+      "cosine": 0.515719,
+      "rank": 86
+    },
+    {
+      "term": "vendor_managed",
+      "cosine": 0.514553,
+      "rank": 87
+    },
+    {
+      "term": "material_procurement",
+      "cosine": 0.513946,
+      "rank": 88
+    },
+    {
+      "term": "product_sourcing",
+      "cosine": 0.513888,
+      "rank": 89
+    },
+    {
+      "term": "restocking",
+      "cosine": 0.511333,
+      "rank": 90
+    },
+    {
+      "term": "marketing_promotion",
+      "cosine": 0.511247,
+      "rank": 91
+    },
+    {
+      "term": "distribution",
+      "cosine": 0.510923,
+      "rank": 92
+    },
+    {
+      "term": "customer_fulfillment",
+      "cosine": 0.510414,
+      "rank": 93
+    },
+    {
+      "term": "fulfillment_centers",
+      "cosine": 0.510351,
+      "rank": 94
+    },
+    {
+      "term": "printing",
+      "cosine": 0.509751,
+      "rank": 95
+    },
+    {
+      "term": "automated",
+      "cosine": 0.509583,
+      "rank": 96
+    },
+    {
+      "term": "outbound",
+      "cosine": 0.509475,
+      "rank": 97
+    },
+    {
+      "term": "outbound_freight",
+      "cosine": 0.508527,
+      "rank": 98
+    },
+    {
+      "term": "backoffice",
+      "cosine": 0.508443,
+      "rank": 99
+    },
+    {
+      "term": "payment_processing",
+      "cosine": 0.507775,
+      "rank": 100
+    }
+  ],
+  "inventory": [
+    {
+      "term": "inventories",
+      "cosine": 0.88924,
+      "rank": 1
+    },
+    {
+      "term": "merchandise_inventory",
+      "cosine": 0.87201,
+      "rank": 2
+    },
+    {
+      "term": "lifo_reserve",
+      "cosine": 0.811361,
+      "rank": 3
+    },
+    {
+      "term": "slow_moving",
+      "cosine": 0.809301,
+      "rank": 4
+    },
+    {
+      "term": "workinprocess",
+      "cosine": 0.806464,
+      "rank": 5
+    },
+    {
+      "term": "finished_goods",
+      "cosine": 0.805571,
+      "rank": 6
+    },
+    {
+      "term": "obsolescence_reserves",
+      "cosine": 0.804422,
+      "rank": 7
+    },
+    {
+      "term": "supplies_inventory",
+      "cosine": 0.802924,
+      "rank": 8
+    },
+    {
+      "term": "goods_inventory",
+      "cosine": 0.80127,
+      "rank": 9
+    },
+    {
+      "term": "onhand",
+      "cosine": 0.800911,
+      "rank": 10
+    },
+    {
+      "term": "obsolescence_reserve",
+      "cosine": 0.798407,
+      "rank": 11
+    },
+    {
+      "term": "inventory_items",
+      "cosine": 0.797459,
+      "rank": 12
+    },
+    {
+      "term": "slowmoving_inventory",
+      "cosine": 0.796555,
+      "rank": 13
+    },
+    {
+      "term": "inventories_consist",
+      "cosine": 0.789096,
+      "rank": 14
+    },
+    {
+      "term": "workinprogress",
+      "cosine": 0.785395,
+      "rank": 15
+    },
+    {
+      "term": "fifo_basis",
+      "cosine": 0.784475,
+      "rank": 16
+    },
+    {
+      "term": "inventories_inventory",
+      "cosine": 0.782799,
+      "rank": 17
+    },
+    {
+      "term": "slowmoving",
+      "cosine": 0.780987,
+      "rank": 18
+    },
+    {
+      "term": "obsolete_inventory",
+      "cosine": 0.780176,
+      "rank": 19
+    },
+    {
+      "term": "parts_inventory",
+      "cosine": 0.774029,
+      "rank": 20
+    },
+    {
+      "term": "obsolete_items",
+      "cosine": 0.772955,
+      "rank": 21
+    },
+    {
+      "term": "reviews_inventory",
+      "cosine": 0.767532,
+      "rank": 22
+    },
+    {
+      "term": "supplies_inventories",
+      "cosine": 0.767208,
+      "rank": 23
+    },
+    {
+      "term": "firstout_method",
+      "cosine": 0.765963,
+      "rank": 24
+    },
+    {
+      "term": "onhand_inventory",
+      "cosine": 0.765313,
+      "rank": 25
+    },
+    {
+      "term": "potentially_obsolete",
+      "cosine": 0.764316,
+      "rank": 26
+    },
+    {
+      "term": "cost_firstin",
+      "cosine": 0.763052,
+      "rank": 27
+    },
+    {
+      "term": "fifo_cost",
+      "cosine": 0.760169,
+      "rank": 28
+    },
+    {
+      "term": "inventory_consists",
+      "cosine": 0.75964,
+      "rank": 29
+    },
+    {
+      "term": "excess_quantities",
+      "cosine": 0.756671,
+      "rank": 30
+    },
+    {
+      "term": "workinprocess_inventory",
+      "cosine": 0.755918,
+      "rank": 31
+    },
+    {
+      "term": "inventory_consisted",
+      "cosine": 0.752999,
+      "rank": 32
+    },
+    {
+      "term": "slowmoving_inventories",
+      "cosine": 0.752282,
+      "rank": 33
+    },
+    {
+      "term": "consigned_inventory",
+      "cosine": 0.751876,
+      "rank": 34
+    },
+    {
+      "term": "obsolete_inventories",
+      "cosine": 0.750274,
+      "rank": 35
+    },
+    {
+      "term": "excess_inventory",
+      "cosine": 0.750071,
+      "rank": 36
+    },
+    {
+      "term": "materials_finished",
+      "cosine": 0.746923,
+      "rank": 37
+    },
+    {
+      "term": "fifo_method",
+      "cosine": 0.745723,
+      "rank": 38
+    },
+    {
+      "term": "workinprocess_inventories",
+      "cosine": 0.745015,
+      "rank": 39
+    },
+    {
+      "term": "process_finished",
+      "cosine": 0.741996,
+      "rank": 40
+    },
+    {
+      "term": "firstout_basis",
+      "cosine": 0.741927,
+      "rank": 41
+    },
+    {
+      "term": "inventories_finished",
+      "cosine": 0.740953,
+      "rank": 42
+    },
+    {
+      "term": "merchandise_inventories",
+      "cosine": 0.740859,
+      "rank": 43
+    },
+    {
+      "term": "consignment_inventory",
+      "cosine": 0.737993,
+      "rank": 44
+    },
+    {
+      "term": "inventory_inventory",
+      "cosine": 0.737415,
+      "rank": 45
+    },
+    {
+      "term": "inventory_quantities",
+      "cosine": 0.737228,
+      "rank": 46
+    },
+    {
+      "term": "lifo_cost",
+      "cosine": 0.736879,
+      "rank": 47
+    },
+    {
+      "term": "progress_finished",
+      "cosine": 0.736075,
+      "rank": 48
+    },
+    {
+      "term": "net_realizable",
+      "cosine": 0.734853,
+      "rank": 49
+    },
+    {
+      "term": "estimated_obsolescence",
+      "cosine": 0.734802,
+      "rank": 50
+    },
+    {
+      "term": "goods_inventories",
+      "cosine": 0.728052,
+      "rank": 51
+    },
+    {
+      "term": "returned_goods",
+      "cosine": 0.725352,
+      "rank": 52
+    },
+    {
+      "term": "excess_obsolete",
+      "cosine": 0.72405,
+      "rank": 53
+    },
+    {
+      "term": "estimated_realizable",
+      "cosine": 0.723708,
+      "rank": 54
+    },
+    {
+      "term": "obsolescence",
+      "cosine": 0.722422,
+      "rank": 55
+    },
+    {
+      "term": "process_raw",
+      "cosine": 0.718663,
+      "rank": 56
+    },
+    {
+      "term": "firstout",
+      "cosine": 0.718038,
+      "rank": 57
+    },
+    {
+      "term": "inventory_balances",
+      "cosine": 0.717423,
+      "rank": 58
+    },
+    {
+      "term": "respectively_inventories",
+      "cosine": 0.716152,
+      "rank": 59
+    },
+    {
+      "term": "workinprogress_finished",
+      "cosine": 0.712905,
+      "rank": 60
+    },
+    {
+      "term": "inventories_net",
+      "cosine": 0.71019,
+      "rank": 61
+    },
+    {
+      "term": "inventoried_costs",
+      "cosine": 0.707827,
+      "rank": 62
+    },
+    {
+      "term": "finished_good",
+      "cosine": 0.70762,
+      "rank": 63
+    },
+    {
+      "term": "workinprocess_finished",
+      "cosine": 0.707118,
+      "rank": 64
+    },
+    {
+      "term": "intransit",
+      "cosine": 0.703189,
+      "rank": 65
+    },
+    {
+      "term": "unsaleable",
+      "cosine": 0.701858,
+      "rank": 66
+    },
+    {
+      "term": "inventory_valuation",
+      "cosine": 0.701804,
+      "rank": 67
+    },
+    {
+      "term": "lifo_inventories",
+      "cosine": 0.700183,
+      "rank": 68
+    },
+    {
+      "term": "inventory_obsolescence",
+      "cosine": 0.699664,
+      "rank": 69
+    },
+    {
+      "term": "materials_workinprocess",
+      "cosine": 0.699484,
+      "rank": 70
+    },
+    {
+      "term": "lifo_basis",
+      "cosine": 0.698642,
+      "rank": 71
+    },
+    {
+      "term": "firstin_firstout",
+      "cosine": 0.698341,
+      "rank": 72
+    },
+    {
+      "term": "less_allowances",
+      "cosine": 0.697788,
+      "rank": 73
+    },
+    {
+      "term": "fuel_inventory",
+      "cosine": 0.697674,
+      "rank": 74
+    },
+    {
+      "term": "unmarketable_inventory",
+      "cosine": 0.697642,
+      "rank": 75
+    },
+    {
+      "term": "rental_merchandise",
+      "cosine": 0.696654,
+      "rank": 76
+    },
+    {
+      "term": "inventories_raw",
+      "cosine": 0.696481,
+      "rank": 77
+    },
+    {
+      "term": "inventory_allowances",
+      "cosine": 0.695753,
+      "rank": 78
+    },
+    {
+      "term": "unsalable",
+      "cosine": 0.695719,
+      "rank": 79
+    },
+    {
+      "term": "inventory_reserves",
+      "cosine": 0.695657,
+      "rank": 80
+    },
+    {
+      "term": "workinprocess_raw",
+      "cosine": 0.689691,
+      "rank": 81
+    },
+    {
+      "term": "lowerofcostormarket",
+      "cosine": 0.689526,
+      "rank": 82
+    },
+    {
+      "term": "fifo",
+      "cosine": 0.689298,
+      "rank": 83
+    },
+    {
+      "term": "inventories_valued",
+      "cosine": 0.68572,
+      "rank": 84
+    },
+    {
+      "term": "materials_work",
+      "cosine": 0.685126,
+      "rank": 85
+    },
+    {
+      "term": "supplies_work",
+      "cosine": 0.68316,
+      "rank": 86
+    },
+    {
+      "term": "shrinkage",
+      "cosine": 0.682819,
+      "rank": 87
+    },
+    {
+      "term": "fifo_inventory",
+      "cosine": 0.681581,
+      "rank": 88
+    },
+    {
+      "term": "fuel_inventories",
+      "cosine": 0.680678,
+      "rank": 89
+    },
+    {
+      "term": "lifo_inventory",
+      "cosine": 0.679311,
+      "rank": 90
+    },
+    {
+      "term": "ending_inventory",
+      "cosine": 0.672979,
+      "rank": 91
+    },
+    {
+      "term": "purchased_parts",
+      "cosine": 0.672933,
+      "rank": 92
+    },
+    {
+      "term": "inventories_consisted",
+      "cosine": 0.672409,
+      "rank": 93
+    },
+    {
+      "term": "lifo",
+      "cosine": 0.672078,
+      "rank": 94
+    },
+    {
+      "term": "scrapped",
+      "cosine": 0.671498,
+      "rank": 95
+    },
+    {
+      "term": "doubtful_debts",
+      "cosine": 0.66899,
+      "rank": 96
+    },
+    {
+      "term": "wip",
+      "cosine": 0.66789,
+      "rank": 97
+    },
+    {
+      "term": "retail_inventory",
+      "cosine": 0.666936,
+      "rank": 98
+    },
+    {
+      "term": "inventory_reserve",
+      "cosine": 0.665848,
+      "rank": 99
+    },
+    {
+      "term": "material_labor",
+      "cosine": 0.664984,
+      "rank": 100
+    }
+  ],
+  "logistics": [
+    {
+      "term": "logistic",
+      "cosine": 0.810199,
+      "rank": 1
+    },
+    {
+      "term": "transportation_logistics",
+      "cosine": 0.775312,
+      "rank": 2
+    },
+    {
+      "term": "logistics_services",
+      "cosine": 0.748949,
+      "rank": 3
+    },
+    {
+      "term": "distribution_logistics",
+      "cosine": 0.743137,
+      "rank": 4
+    },
+    {
+      "term": "reverse_logistics",
+      "cosine": 0.718345,
+      "rank": 5
+    },
+    {
+      "term": "supply_chain",
+      "cosine": 0.710469,
+      "rank": 6
+    },
+    {
+      "term": "integrated_logistics",
+      "cosine": 0.70772,
+      "rank": 7
+    },
+    {
+      "term": "warehousing_distribution",
+      "cosine": 0.706674,
+      "rank": 8
+    },
+    {
+      "term": "warehousing",
+      "cosine": 0.703149,
+      "rank": 9
+    },
+    {
+      "term": "procurement",
+      "cosine": 0.691707,
+      "rank": 10
+    },
+    {
+      "term": "logistical_support",
+      "cosine": 0.687076,
+      "rank": 11
+    },
+    {
+      "term": "global_logistics",
+      "cosine": 0.677167,
+      "rank": 12
+    },
+    {
+      "term": "transportation",
+      "cosine": 0.664333,
+      "rank": 13
+    },
+    {
+      "term": "customs_brokerage",
+      "cosine": 0.66051,
+      "rank": 14
+    },
+    {
+      "term": "freight_forwarding",
+      "cosine": 0.657831,
+      "rank": 15
+    },
+    {
+      "term": "cold_chain",
+      "cosine": 0.649541,
+      "rank": 16
+    },
+    {
+      "term": "order_fulfillment",
+      "cosine": 0.647786,
+      "rank": 17
+    },
+    {
+      "term": "freight",
+      "cosine": 0.644593,
+      "rank": 18
+    },
+    {
+      "term": "inventory_management",
+      "cosine": 0.643985,
+      "rank": 19
+    },
+    {
+      "term": "fulfillment",
+      "cosine": 0.642893,
+      "rank": 20
+    },
+    {
+      "term": "logistical_services",
+      "cosine": 0.641765,
+      "rank": 21
+    },
+    {
+      "term": "kitting",
+      "cosine": 0.640652,
+      "rank": 22
+    },
+    {
+      "term": "customs_clearance",
+      "cosine": 0.634695,
+      "rank": 23
+    },
+    {
+      "term": "logistical",
+      "cosine": 0.634272,
+      "rank": 24
+    },
+    {
+      "term": "fleet_management",
+      "cosine": 0.629777,
+      "rank": 25
+    },
+    {
+      "term": "product_fulfillment",
+      "cosine": 0.623664,
+      "rank": 26
+    },
+    {
+      "term": "shipping",
+      "cosine": 0.61981,
+      "rank": 27
+    },
+    {
+      "term": "logistic_services",
+      "cosine": 0.613892,
+      "rank": 28
+    },
+    {
+      "term": "international_freight",
+      "cosine": 0.604718,
+      "rank": 29
+    },
+    {
+      "term": "freight_brokerage",
+      "cosine": 0.600902,
+      "rank": 30
+    },
+    {
+      "term": "transportation_network",
+      "cosine": 0.600445,
+      "rank": 31
+    },
+    {
+      "term": "trucking",
+      "cosine": 0.598646,
+      "rank": 32
+    },
+    {
+      "term": "distribution_functions",
+      "cosine": 0.598584,
+      "rank": 33
+    },
+    {
+      "term": "contract_logistics",
+      "cosine": 0.593967,
+      "rank": 34
+    },
+    {
+      "term": "thirdparty_logistics",
+      "cosine": 0.587236,
+      "rank": 35
+    },
+    {
+      "term": "purchasing_inventory",
+      "cosine": 0.586744,
+      "rank": 36
+    },
+    {
+      "term": "logistics_support",
+      "cosine": 0.58478,
+      "rank": 37
+    },
+    {
+      "term": "logistics_solutions",
+      "cosine": 0.584374,
+      "rank": 38
+    },
+    {
+      "term": "intermodal",
+      "cosine": 0.577042,
+      "rank": 39
+    },
+    {
+      "term": "order_processing",
+      "cosine": 0.575189,
+      "rank": 40
+    },
+    {
+      "term": "supplychain",
+      "cosine": 0.570661,
+      "rank": 41
+    },
+    {
+      "term": "lessthantruckload",
+      "cosine": 0.568047,
+      "rank": 42
+    },
+    {
+      "term": "small_package",
+      "cosine": 0.564403,
+      "rank": 43
+    },
+    {
+      "term": "manufacturing_distribution",
+      "cosine": 0.564331,
+      "rank": 44
+    },
+    {
+      "term": "truckload",
+      "cosine": 0.563754,
+      "rank": 45
+    },
+    {
+      "term": "freight_transportation",
+      "cosine": 0.562842,
+      "rank": 46
+    },
+    {
+      "term": "outsourcing",
+      "cosine": 0.561356,
+      "rank": 47
+    },
+    {
+      "term": "materials_handling",
+      "cosine": 0.561344,
+      "rank": 48
+    },
+    {
+      "term": "production_scheduling",
+      "cosine": 0.558697,
+      "rank": 49
+    },
+    {
+      "term": "design_manufacturing",
+      "cosine": 0.557101,
+      "rank": 50
+    },
+    {
+      "term": "logistics_capabilities",
+      "cosine": 0.555405,
+      "rank": 51
+    },
+    {
+      "term": "chain_management",
+      "cosine": 0.554761,
+      "rank": 52
+    },
+    {
+      "term": "operational_support",
+      "cosine": 0.554456,
+      "rank": 53
+    },
+    {
+      "term": "ocean_freight",
+      "cosine": 0.553966,
+      "rank": 54
+    },
+    {
+      "term": "planning",
+      "cosine": 0.551568,
+      "rank": 55
+    },
+    {
+      "term": "purchasing_receiving",
+      "cosine": 0.550649,
+      "rank": 56
+    },
+    {
+      "term": "technical_services",
+      "cosine": 0.549653,
+      "rank": 57
+    },
+    {
+      "term": "material_procurement",
+      "cosine": 0.546529,
+      "rank": 58
+    },
+    {
+      "term": "sourcing",
+      "cosine": 0.542199,
+      "rank": 59
+    },
+    {
+      "term": "linehaul",
+      "cosine": 0.538232,
+      "rank": 60
+    },
+    {
+      "term": "manufacturing",
+      "cosine": 0.537961,
+      "rank": 61
+    },
+    {
+      "term": "fulfillment_services",
+      "cosine": 0.535868,
+      "rank": 62
+    },
+    {
+      "term": "fedex_services",
+      "cosine": 0.534468,
+      "rank": 63
+    },
+    {
+      "term": "inbound",
+      "cosine": 0.533742,
+      "rank": 64
+    },
+    {
+      "term": "transportation_services",
+      "cosine": 0.53267,
+      "rank": 65
+    },
+    {
+      "term": "engineering_construction",
+      "cosine": 0.532279,
+      "rank": 66
+    },
+    {
+      "term": "integrated_supply",
+      "cosine": 0.532206,
+      "rank": 67
+    },
+    {
+      "term": "resource_management",
+      "cosine": 0.532106,
+      "rank": 68
+    },
+    {
+      "term": "coordination",
+      "cosine": 0.527393,
+      "rank": 69
+    },
+    {
+      "term": "package_delivery",
+      "cosine": 0.52556,
+      "rank": 70
+    },
+    {
+      "term": "field_service",
+      "cosine": 0.524094,
+      "rank": 71
+    },
+    {
+      "term": "air_freight",
+      "cosine": 0.523877,
+      "rank": 72
+    },
+    {
+      "term": "scheduling",
+      "cosine": 0.523195,
+      "rank": 73
+    },
+    {
+      "term": "logistics_network",
+      "cosine": 0.522201,
+      "rank": 74
+    },
+    {
+      "term": "manufacturing_assembly",
+      "cosine": 0.521594,
+      "rank": 75
+    },
+    {
+      "term": "transloading",
+      "cosine": 0.521393,
+      "rank": 76
+    },
+    {
+      "term": "multimodal",
+      "cosine": 0.52028,
+      "rank": 77
+    },
+    {
+      "term": "design_engineering",
+      "cosine": 0.519713,
+      "rank": 78
+    },
+    {
+      "term": "automation",
+      "cosine": 0.518795,
+      "rank": 79
+    },
+    {
+      "term": "manufacturing_engineering",
+      "cosine": 0.517083,
+      "rank": 80
+    },
+    {
+      "term": "expedited_freight",
+      "cosine": 0.516867,
+      "rank": 81
+    },
+    {
+      "term": "purchasing",
+      "cosine": 0.51641,
+      "rank": 82
+    },
+    {
+      "term": "project_management",
+      "cosine": 0.51605,
+      "rank": 83
+    },
+    {
+      "term": "trucking_services",
+      "cosine": 0.515123,
+      "rank": 84
+    },
+    {
+      "term": "product_sourcing",
+      "cosine": 0.515072,
+      "rank": 85
+    },
+    {
+      "term": "backoffice_support",
+      "cosine": 0.513789,
+      "rank": 86
+    },
+    {
+      "term": "global_sourcing",
+      "cosine": 0.51328,
+      "rank": 87
+    },
+    {
+      "term": "fleet_maintenance",
+      "cosine": 0.511217,
+      "rank": 88
+    },
+    {
+      "term": "rail_transportation",
+      "cosine": 0.510835,
+      "rank": 89
+    },
+    {
+      "term": "justintime",
+      "cosine": 0.510663,
+      "rank": 90
+    },
+    {
+      "term": "forwarding",
+      "cosine": 0.510643,
+      "rank": 91
+    },
+    {
+      "term": "engineering_manufacturing",
+      "cosine": 0.510338,
+      "rank": 92
+    },
+    {
+      "term": "truck_brokerage",
+      "cosine": 0.509823,
+      "rank": 93
+    },
+    {
+      "term": "unloading",
+      "cosine": 0.509247,
+      "rank": 94
+    },
+    {
+      "term": "order_entry",
+      "cosine": 0.508815,
+      "rank": 95
+    },
+    {
+      "term": "intermodal_transportation",
+      "cosine": 0.507681,
+      "rank": 96
+    },
+    {
+      "term": "warehouse",
+      "cosine": 0.506728,
+      "rank": 97
+    },
+    {
+      "term": "merchandise_planning",
+      "cosine": 0.504953,
+      "rank": 98
+    },
+    {
+      "term": "transportationrelated",
+      "cosine": 0.504885,
+      "rank": 99
+    },
+    {
+      "term": "nonasset_based",
+      "cosine": 0.504607,
+      "rank": 100
+    }
+  ],
+  "manufacturing": [
+    {
+      "term": "manufacturing_assembly",
+      "cosine": 0.740607,
+      "rank": 1
+    },
+    {
+      "term": "product_assembly",
+      "cosine": 0.738936,
+      "rank": 2
+    },
+    {
+      "term": "manufacturing_distribution",
+      "cosine": 0.723555,
+      "rank": 3
+    },
+    {
+      "term": "development_manufacturing",
+      "cosine": 0.714282,
+      "rank": 4
+    },
+    {
+      "term": "product_testing",
+      "cosine": 0.70033,
+      "rank": 5
+    },
+    {
+      "term": "manufacturing_packaging",
+      "cosine": 0.696293,
+      "rank": 6
+    },
+    {
+      "term": "currently_outsource",
+      "cosine": 0.68128,
+      "rank": 7
+    },
+    {
+      "term": "design_manufacturing",
+      "cosine": 0.680271,
+      "rank": 8
+    },
+    {
+      "term": "manufacturing_engineering",
+      "cosine": 0.677096,
+      "rank": 9
+    },
+    {
+      "term": "warehousing",
+      "cosine": 0.676144,
+      "rank": 10
+    },
+    {
+      "term": "assembly",
+      "cosine": 0.663441,
+      "rank": 11
+    },
+    {
+      "term": "warehousing_distribution",
+      "cosine": 0.660307,
+      "rank": 12
+    },
+    {
+      "term": "pharmaceutical_manufacturing",
+      "cosine": 0.648093,
+      "rank": 13
+    },
+    {
+      "term": "assembly_operations",
+      "cosine": 0.64701,
+      "rank": 14
+    },
+    {
+      "term": "manufacturing_operations",
+      "cosine": 0.645956,
+      "rank": 15
+    },
+    {
+      "term": "contract_manufacturing",
+      "cosine": 0.641397,
+      "rank": 16
+    },
+    {
+      "term": "engineering_manufacturing",
+      "cosine": 0.631416,
+      "rank": 17
+    },
+    {
+      "term": "design_testing",
+      "cosine": 0.631198,
+      "rank": 18
+    },
+    {
+      "term": "manufacturing_process",
+      "cosine": 0.622436,
+      "rank": 19
+    },
+    {
+      "term": "analytical_testing",
+      "cosine": 0.61603,
+      "rank": 20
+    },
+    {
+      "term": "material_procurement",
+      "cosine": 0.61498,
+      "rank": 21
+    },
+    {
+      "term": "manufacturing_warehousing",
+      "cosine": 0.613623,
+      "rank": 22
+    },
+    {
+      "term": "subassembly",
+      "cosine": 0.612473,
+      "rank": 23
+    },
+    {
+      "term": "final_assembly",
+      "cosine": 0.610937,
+      "rank": 24
+    },
+    {
+      "term": "thirdparty_manufacturing",
+      "cosine": 0.609801,
+      "rank": 25
+    },
+    {
+      "term": "manufacture",
+      "cosine": 0.609093,
+      "rank": 26
+    },
+    {
+      "term": "stability_testing",
+      "cosine": 0.607292,
+      "rank": 27
+    },
+    {
+      "term": "advanced_manufacturing",
+      "cosine": 0.605242,
+      "rank": 28
+    },
+    {
+      "term": "scaleup",
+      "cosine": 0.605109,
+      "rank": 29
+    },
+    {
+      "term": "research_development",
+      "cosine": 0.603736,
+      "rank": 30
+    },
+    {
+      "term": "outsourced_manufacturing",
+      "cosine": 0.59878,
+      "rank": 31
+    },
+    {
+      "term": "outsource_manufacturing",
+      "cosine": 0.59843,
+      "rank": 32
+    },
+    {
+      "term": "company_outsources",
+      "cosine": 0.59838,
+      "rank": 33
+    },
+    {
+      "term": "quality_control",
+      "cosine": 0.597723,
+      "rank": 34
+    },
+    {
+      "term": "packaging",
+      "cosine": 0.596306,
+      "rank": 35
+    },
+    {
+      "term": "design_development",
+      "cosine": 0.595424,
+      "rank": 36
+    },
+    {
+      "term": "packaging_storage",
+      "cosine": 0.591639,
+      "rank": 37
+    },
+    {
+      "term": "sourcing",
+      "cosine": 0.591475,
+      "rank": 38
+    },
+    {
+      "term": "manufacturing_processes",
+      "cosine": 0.591101,
+      "rank": 39
+    },
+    {
+      "term": "system_assembly",
+      "cosine": 0.590131,
+      "rank": 40
+    },
+    {
+      "term": "gmp_manufacturing",
+      "cosine": 0.589237,
+      "rank": 41
+    },
+    {
+      "term": "manufacturing_marketing",
+      "cosine": 0.585432,
+      "rank": 42
+    },
+    {
+      "term": "process_validation",
+      "cosine": 0.585048,
+      "rank": 43
+    },
+    {
+      "term": "outsource",
+      "cosine": 0.581759,
+      "rank": 44
+    },
+    {
+      "term": "assembly_test",
+      "cosine": 0.581422,
+      "rank": 45
+    },
+    {
+      "term": "board_assembly",
+      "cosine": 0.581198,
+      "rank": 46
+    },
+    {
+      "term": "fillfinish",
+      "cosine": 0.574404,
+      "rank": 47
+    },
+    {
+      "term": "wafer_fabrication",
+      "cosine": 0.574246,
+      "rank": 48
+    },
+    {
+      "term": "inhouse_manufacturing",
+      "cosine": 0.574152,
+      "rank": 49
+    },
+    {
+      "term": "packaging_labeling",
+      "cosine": 0.573972,
+      "rank": 50
+    },
+    {
+      "term": "design_engineering",
+      "cosine": 0.573814,
+      "rank": 51
+    },
+    {
+      "term": "thirdparty_contract",
+      "cosine": 0.57328,
+      "rank": 52
+    },
+    {
+      "term": "product_design",
+      "cosine": 0.569993,
+      "rank": 53
+    },
+    {
+      "term": "formulation_manufacturing",
+      "cosine": 0.569939,
+      "rank": 54
+    },
+    {
+      "term": "quality_assurance",
+      "cosine": 0.569856,
+      "rank": 55
+    },
+    {
+      "term": "production_processes",
+      "cosine": 0.561996,
+      "rank": 56
+    },
+    {
+      "term": "development_testing",
+      "cosine": 0.560326,
+      "rank": 57
+    },
+    {
+      "term": "processing_packaging",
+      "cosine": 0.560068,
+      "rank": 58
+    },
+    {
+      "term": "assembling",
+      "cosine": 0.559957,
+      "rank": 59
+    },
+    {
+      "term": "procurement",
+      "cosine": 0.557391,
+      "rank": 60
+    },
+    {
+      "term": "specialized_manufacturing",
+      "cosine": 0.557347,
+      "rank": 61
+    },
+    {
+      "term": "repackaging",
+      "cosine": 0.555365,
+      "rank": 62
+    },
+    {
+      "term": "assembly_facilities",
+      "cosine": 0.555019,
+      "rank": 63
+    },
+    {
+      "term": "distribution_functions",
+      "cosine": 0.554802,
+      "rank": 64
+    },
+    {
+      "term": "engineering",
+      "cosine": 0.554417,
+      "rank": 65
+    },
+    {
+      "term": "clean_room",
+      "cosine": 0.553282,
+      "rank": 66
+    },
+    {
+      "term": "prototype_development",
+      "cosine": 0.553057,
+      "rank": 67
+    },
+    {
+      "term": "fabrication",
+      "cosine": 0.55161,
+      "rank": 68
+    },
+    {
+      "term": "manufacturing_capabilities",
+      "cosine": 0.551055,
+      "rank": 69
+    },
+    {
+      "term": "kitting",
+      "cosine": 0.548467,
+      "rank": 70
+    },
+    {
+      "term": "product_formulation",
+      "cosine": 0.546932,
+      "rank": 71
+    },
+    {
+      "term": "device_design",
+      "cosine": 0.546831,
+      "rank": 72
+    },
+    {
+      "term": "outsourced",
+      "cosine": 0.546746,
+      "rank": 73
+    },
+    {
+      "term": "labeling_packaging",
+      "cosine": 0.546208,
+      "rank": 74
+    },
+    {
+      "term": "engineering_design",
+      "cosine": 0.545854,
+      "rank": 75
+    },
+    {
+      "term": "iso_certified",
+      "cosine": 0.545059,
+      "rank": 76
+    },
+    {
+      "term": "pilot_manufacturing",
+      "cosine": 0.544961,
+      "rank": 77
+    },
+    {
+      "term": "assembly_processes",
+      "cosine": 0.544033,
+      "rank": 78
+    },
+    {
+      "term": "manufacturing_organizations",
+      "cosine": 0.543838,
+      "rank": 79
+    },
+    {
+      "term": "suzhou_china",
+      "cosine": 0.543623,
+      "rank": 80
+    },
+    {
+      "term": "final_testing",
+      "cosine": 0.541585,
+      "rank": 81
+    },
+    {
+      "term": "drug_substance",
+      "cosine": 0.538914,
+      "rank": 82
+    },
+    {
+      "term": "testing_processes",
+      "cosine": 0.53861,
+      "rank": 83
+    },
+    {
+      "term": "metal_fabrication",
+      "cosine": 0.538426,
+      "rank": 84
+    },
+    {
+      "term": "logistics",
+      "cosine": 0.537961,
+      "rank": 85
+    },
+    {
+      "term": "prototyping",
+      "cosine": 0.536,
+      "rank": 86
+    },
+    {
+      "term": "overhead_associated",
+      "cosine": 0.534545,
+      "rank": 87
+    },
+    {
+      "term": "machine_shop",
+      "cosine": 0.532517,
+      "rank": 88
+    },
+    {
+      "term": "cgmp_manufacturing",
+      "cosine": 0.530973,
+      "rank": 89
+    },
+    {
+      "term": "manufacturing_scaleup",
+      "cosine": 0.53072,
+      "rank": 90
+    },
+    {
+      "term": "commercial_scale",
+      "cosine": 0.526345,
+      "rank": 91
+    },
+    {
+      "term": "materials_used",
+      "cosine": 0.52298,
+      "rank": 92
+    },
+    {
+      "term": "subcontracting",
+      "cosine": 0.522213,
+      "rank": 93
+    },
+    {
+      "term": "drug_substances",
+      "cosine": 0.520462,
+      "rank": 94
+    },
+    {
+      "term": "light_manufacturing",
+      "cosine": 0.518357,
+      "rank": 95
+    },
+    {
+      "term": "facility_houses",
+      "cosine": 0.518221,
+      "rank": 96
+    },
+    {
+      "term": "preclinical_clinical",
+      "cosine": 0.518193,
+      "rank": 97
+    },
+    {
+      "term": "clinical_supplies",
+      "cosine": 0.518129,
+      "rank": 98
+    },
+    {
+      "term": "storage_record",
+      "cosine": 0.516655,
+      "rank": 99
+    },
+    {
+      "term": "often_encounter",
+      "cosine": 0.516621,
+      "rank": 100
+    }
+  ],
+  "procurement": [
+    {
+      "term": "inventory_management",
+      "cosine": 0.746579,
+      "rank": 1
+    },
+    {
+      "term": "supply_chain",
+      "cosine": 0.735821,
+      "rank": 2
+    },
+    {
+      "term": "planning",
+      "cosine": 0.730293,
+      "rank": 3
+    },
+    {
+      "term": "production_scheduling",
+      "cosine": 0.721424,
+      "rank": 4
+    },
+    {
+      "term": "purchasing",
+      "cosine": 0.702684,
+      "rank": 5
+    },
+    {
+      "term": "sourcing",
+      "cosine": 0.700564,
+      "rank": 6
+    },
+    {
+      "term": "order_fulfillment",
+      "cosine": 0.691942,
+      "rank": 7
+    },
+    {
+      "term": "logistics",
+      "cosine": 0.691707,
+      "rank": 8
+    },
+    {
+      "term": "material_procurement",
+      "cosine": 0.664381,
+      "rank": 9
+    },
+    {
+      "term": "purchasing_inventory",
+      "cosine": 0.662367,
+      "rank": 10
+    },
+    {
+      "term": "coordination",
+      "cosine": 0.659618,
+      "rank": 11
+    },
+    {
+      "term": "resource_planning",
+      "cosine": 0.649147,
+      "rank": 12
+    },
+    {
+      "term": "order_processing",
+      "cosine": 0.641162,
+      "rank": 13
+    },
+    {
+      "term": "product_fulfillment",
+      "cosine": 0.639136,
+      "rank": 14
+    },
+    {
+      "term": "fulfillment",
+      "cosine": 0.637531,
+      "rank": 15
+    },
+    {
+      "term": "warehousing_distribution",
+      "cosine": 0.637128,
+      "rank": 16
+    },
+    {
+      "term": "global_sourcing",
+      "cosine": 0.636962,
+      "rank": 17
+    },
+    {
+      "term": "strategic_sourcing",
+      "cosine": 0.634125,
+      "rank": 18
+    },
+    {
+      "term": "scheduling",
+      "cosine": 0.633915,
+      "rank": 19
+    },
+    {
+      "term": "budgeting",
+      "cosine": 0.633229,
+      "rank": 20
+    },
+    {
+      "term": "kitting",
+      "cosine": 0.629485,
+      "rank": 21
+    },
+    {
+      "term": "merchandise_planning",
+      "cosine": 0.627715,
+      "rank": 22
+    },
+    {
+      "term": "operational_support",
+      "cosine": 0.623106,
+      "rank": 23
+    },
+    {
+      "term": "logistics_support",
+      "cosine": 0.622488,
+      "rank": 24
+    },
+    {
+      "term": "functions_including",
+      "cosine": 0.620115,
+      "rank": 25
+    },
+    {
+      "term": "product_sourcing",
+      "cosine": 0.617592,
+      "rank": 26
+    },
+    {
+      "term": "procurement_process",
+      "cosine": 0.61296,
+      "rank": 27
+    },
+    {
+      "term": "distribution_functions",
+      "cosine": 0.612713,
+      "rank": 28
+    },
+    {
+      "term": "project_management",
+      "cosine": 0.609803,
+      "rank": 29
+    },
+    {
+      "term": "distribution_logistics",
+      "cosine": 0.605542,
+      "rank": 30
+    },
+    {
+      "term": "expediting",
+      "cosine": 0.605185,
+      "rank": 31
+    },
+    {
+      "term": "chain_management",
+      "cosine": 0.60233,
+      "rank": 32
+    },
+    {
+      "term": "reverse_logistics",
+      "cosine": 0.601016,
+      "rank": 33
+    },
+    {
+      "term": "contract_negotiation",
+      "cosine": 0.599715,
+      "rank": 34
+    },
+    {
+      "term": "outsourcing",
+      "cosine": 0.598797,
+      "rank": 35
+    },
+    {
+      "term": "logistical_support",
+      "cosine": 0.598443,
+      "rank": 36
+    },
+    {
+      "term": "supplychain",
+      "cosine": 0.59791,
+      "rank": 37
+    },
+    {
+      "term": "design_engineering",
+      "cosine": 0.596778,
+      "rank": 38
+    },
+    {
+      "term": "centralized_purchasing",
+      "cosine": 0.595327,
+      "rank": 39
+    },
+    {
+      "term": "quality_assurance",
+      "cosine": 0.594248,
+      "rank": 40
+    },
+    {
+      "term": "back_office",
+      "cosine": 0.593117,
+      "rank": 41
+    },
+    {
+      "term": "order_entry",
+      "cosine": 0.592382,
+      "rank": 42
+    },
+    {
+      "term": "project_planning",
+      "cosine": 0.591094,
+      "rank": 43
+    },
+    {
+      "term": "global_procurement",
+      "cosine": 0.588401,
+      "rank": 44
+    },
+    {
+      "term": "functions",
+      "cosine": 0.587346,
+      "rank": 45
+    },
+    {
+      "term": "replenishment",
+      "cosine": 0.585917,
+      "rank": 46
+    },
+    {
+      "term": "coordinating",
+      "cosine": 0.582252,
+      "rank": 47
+    },
+    {
+      "term": "product_lifecycle",
+      "cosine": 0.581798,
+      "rank": 48
+    },
+    {
+      "term": "centralizing",
+      "cosine": 0.578553,
+      "rank": 49
+    },
+    {
+      "term": "warehousing",
+      "cosine": 0.577155,
+      "rank": 50
+    },
+    {
+      "term": "backoffice_support",
+      "cosine": 0.575919,
+      "rank": 51
+    },
+    {
+      "term": "outsourced",
+      "cosine": 0.575658,
+      "rank": 52
+    },
+    {
+      "term": "lifecycle_management",
+      "cosine": 0.574964,
+      "rank": 53
+    },
+    {
+      "term": "logistical",
+      "cosine": 0.574142,
+      "rank": 54
+    },
+    {
+      "term": "logistic",
+      "cosine": 0.572684,
+      "rank": 55
+    },
+    {
+      "term": "purchasing_receiving",
+      "cosine": 0.571414,
+      "rank": 56
+    },
+    {
+      "term": "design_manufacturing",
+      "cosine": 0.570467,
+      "rank": 57
+    },
+    {
+      "term": "centralized",
+      "cosine": 0.570196,
+      "rank": 58
+    },
+    {
+      "term": "optimization",
+      "cosine": 0.569848,
+      "rank": 59
+    },
+    {
+      "term": "justintime",
+      "cosine": 0.569763,
+      "rank": 60
+    },
+    {
+      "term": "procurement_processes",
+      "cosine": 0.569359,
+      "rank": 61
+    },
+    {
+      "term": "management_functions",
+      "cosine": 0.5687,
+      "rank": 62
+    },
+    {
+      "term": "administration_functions",
+      "cosine": 0.56252,
+      "rank": 63
+    },
+    {
+      "term": "backoffice_functions",
+      "cosine": 0.561723,
+      "rank": 64
+    },
+    {
+      "term": "process_improvement",
+      "cosine": 0.561211,
+      "rank": 65
+    },
+    {
+      "term": "human_resource",
+      "cosine": 0.557547,
+      "rank": 66
+    },
+    {
+      "term": "manufacturing",
+      "cosine": 0.557391,
+      "rank": 67
+    },
+    {
+      "term": "resource_management",
+      "cosine": 0.55664,
+      "rank": 68
+    },
+    {
+      "term": "engineering_design",
+      "cosine": 0.554735,
+      "rank": 69
+    },
+    {
+      "term": "justintime_delivery",
+      "cosine": 0.554092,
+      "rank": 70
+    },
+    {
+      "term": "engineering_support",
+      "cosine": 0.552236,
+      "rank": 71
+    },
+    {
+      "term": "administration",
+      "cosine": 0.552131,
+      "rank": 72
+    },
+    {
+      "term": "product_configuration",
+      "cosine": 0.549166,
+      "rank": 73
+    },
+    {
+      "term": "costing",
+      "cosine": 0.546428,
+      "rank": 74
+    },
+    {
+      "term": "manufacturing_assembly",
+      "cosine": 0.546058,
+      "rank": 75
+    },
+    {
+      "term": "global_supply",
+      "cosine": 0.545977,
+      "rank": 76
+    },
+    {
+      "term": "centralization",
+      "cosine": 0.545868,
+      "rank": 77
+    },
+    {
+      "term": "process_reengineering",
+      "cosine": 0.545077,
+      "rank": 78
+    },
+    {
+      "term": "process_optimization",
+      "cosine": 0.54495,
+      "rank": 79
+    },
+    {
+      "term": "manufacturing_engineering",
+      "cosine": 0.544654,
+      "rank": 80
+    },
+    {
+      "term": "backoffice",
+      "cosine": 0.54249,
+      "rank": 81
+    },
+    {
+      "term": "finance_human",
+      "cosine": 0.542036,
+      "rank": 82
+    },
+    {
+      "term": "centralize",
+      "cosine": 0.539382,
+      "rank": 83
+    },
+    {
+      "term": "planning_design",
+      "cosine": 0.538116,
+      "rank": 84
+    },
+    {
+      "term": "facilitation",
+      "cosine": 0.538035,
+      "rank": 85
+    },
+    {
+      "term": "customer_care",
+      "cosine": 0.537749,
+      "rank": 86
+    },
+    {
+      "term": "inventory_tracking",
+      "cosine": 0.537191,
+      "rank": 87
+    },
+    {
+      "term": "product_assembly",
+      "cosine": 0.537027,
+      "rank": 88
+    },
+    {
+      "term": "vendor_managed",
+      "cosine": 0.536724,
+      "rank": 89
+    },
+    {
+      "term": "merchandising",
+      "cosine": 0.536152,
+      "rank": 90
+    },
+    {
+      "term": "reengineering",
+      "cosine": 0.534064,
+      "rank": 91
+    },
+    {
+      "term": "insourcing",
+      "cosine": 0.532951,
+      "rank": 92
+    },
+    {
+      "term": "invoicing",
+      "cosine": 0.531973,
+      "rank": 93
+    },
+    {
+      "term": "justintime_inventory",
+      "cosine": 0.531601,
+      "rank": 94
+    },
+    {
+      "term": "engineering_manufacturing",
+      "cosine": 0.528645,
+      "rank": 95
+    },
+    {
+      "term": "outsource_certain",
+      "cosine": 0.528404,
+      "rank": 96
+    },
+    {
+      "term": "accounting_functions",
+      "cosine": 0.528164,
+      "rank": 97
+    },
+    {
+      "term": "demand_management",
+      "cosine": 0.527819,
+      "rank": 98
+    },
+    {
+      "term": "streamlines",
+      "cosine": 0.527705,
+      "rank": 99
+    },
+    {
+      "term": "operational_functions",
+      "cosine": 0.526787,
+      "rank": 100
+    }
+  ],
+  "purchasing": [
+    {
+      "term": "buying",
+      "cosine": 0.785027,
+      "rank": 1
+    },
+    {
+      "term": "sourcing",
+      "cosine": 0.711069,
+      "rank": 2
+    },
+    {
+      "term": "purchasing_inventory",
+      "cosine": 0.705197,
+      "rank": 3
+    },
+    {
+      "term": "procurement",
+      "cosine": 0.702684,
+      "rank": 4
+    },
+    {
+      "term": "procuring",
+      "cosine": 0.666105,
+      "rank": 5
+    },
+    {
+      "term": "expediting",
+      "cosine": 0.634446,
+      "rank": 6
+    },
+    {
+      "term": "inventory_management",
+      "cosine": 0.630053,
+      "rank": 7
+    },
+    {
+      "term": "selling",
+      "cosine": 0.619027,
+      "rank": 8
+    },
+    {
+      "term": "coordinating",
+      "cosine": 0.618328,
+      "rank": 9
+    },
+    {
+      "term": "centralized_purchasing",
+      "cosine": 0.601865,
+      "rank": 10
+    },
+    {
+      "term": "production_scheduling",
+      "cosine": 0.601298,
+      "rank": 11
+    },
+    {
+      "term": "fulfillment",
+      "cosine": 0.590322,
+      "rank": 12
+    },
+    {
+      "term": "ordering",
+      "cosine": 0.588872,
+      "rank": 13
+    },
+    {
+      "term": "stocking",
+      "cosine": 0.580393,
+      "rank": 14
+    },
+    {
+      "term": "order_fulfillment",
+      "cosine": 0.580345,
+      "rank": 15
+    },
+    {
+      "term": "importing",
+      "cosine": 0.577217,
+      "rank": 16
+    },
+    {
+      "term": "purchasing_receiving",
+      "cosine": 0.574783,
+      "rank": 17
+    },
+    {
+      "term": "product_fulfillment",
+      "cosine": 0.569058,
+      "rank": 18
+    },
+    {
+      "term": "centralizing",
+      "cosine": 0.565272,
+      "rank": 19
+    },
+    {
+      "term": "replenishment",
+      "cosine": 0.564361,
+      "rank": 20
+    },
+    {
+      "term": "arranging",
+      "cosine": 0.562054,
+      "rank": 21
+    },
+    {
+      "term": "order_processing",
+      "cosine": 0.555084,
+      "rank": 22
+    },
+    {
+      "term": "justintime_inventory",
+      "cosine": 0.553555,
+      "rank": 23
+    },
+    {
+      "term": "warehousing_distribution",
+      "cosine": 0.548899,
+      "rank": 24
+    },
+    {
+      "term": "merchandise_planning",
+      "cosine": 0.548139,
+      "rank": 25
+    },
+    {
+      "term": "justintime",
+      "cosine": 0.547412,
+      "rank": 26
+    },
+    {
+      "term": "distribution_functions",
+      "cosine": 0.546991,
+      "rank": 27
+    },
+    {
+      "term": "picking",
+      "cosine": 0.545468,
+      "rank": 28
+    },
+    {
+      "term": "inspecting",
+      "cosine": 0.53987,
+      "rank": 29
+    },
+    {
+      "term": "transferring",
+      "cosine": 0.53893,
+      "rank": 30
+    },
+    {
+      "term": "warehousing",
+      "cosine": 0.529193,
+      "rank": 31
+    },
+    {
+      "term": "product_sourcing",
+      "cosine": 0.527206,
+      "rank": 32
+    },
+    {
+      "term": "storing",
+      "cosine": 0.526708,
+      "rank": 33
+    },
+    {
+      "term": "overhead_associated",
+      "cosine": 0.524949,
+      "rank": 34
+    },
+    {
+      "term": "placing_orders",
+      "cosine": 0.519651,
+      "rank": 35
+    },
+    {
+      "term": "logistics",
+      "cosine": 0.51641,
+      "rank": 36
+    },
+    {
+      "term": "distribution_logistics",
+      "cosine": 0.515579,
+      "rank": 37
+    },
+    {
+      "term": "merchandising",
+      "cosine": 0.514089,
+      "rank": 38
+    },
+    {
+      "term": "restocking",
+      "cosine": 0.512903,
+      "rank": 39
+    },
+    {
+      "term": "assembling",
+      "cosine": 0.512055,
+      "rank": 40
+    },
+    {
+      "term": "distributing",
+      "cosine": 0.511941,
+      "rank": 41
+    },
+    {
+      "term": "reselling",
+      "cosine": 0.509774,
+      "rank": 42
+    },
+    {
+      "term": "redirecting",
+      "cosine": 0.506364,
+      "rank": 43
+    },
+    {
+      "term": "replenishing",
+      "cosine": 0.504683,
+      "rank": 44
+    },
+    {
+      "term": "supply_chain",
+      "cosine": 0.504091,
+      "rank": 45
+    },
+    {
+      "term": "buying_selling",
+      "cosine": 0.503012,
+      "rank": 46
+    },
+    {
+      "term": "standardizing",
+      "cosine": 0.500275,
+      "rank": 47
+    },
+    {
+      "term": "supplying",
+      "cosine": 0.495998,
+      "rank": 48
+    },
+    {
+      "term": "scheduling",
+      "cosine": 0.49469,
+      "rank": 49
+    },
+    {
+      "term": "planning",
+      "cosine": 0.494295,
+      "rank": 50
+    },
+    {
+      "term": "assisting_customers",
+      "cosine": 0.49237,
+      "rank": 51
+    },
+    {
+      "term": "redesigning",
+      "cosine": 0.491225,
+      "rank": 52
+    },
+    {
+      "term": "optimizing",
+      "cosine": 0.490124,
+      "rank": 53
+    },
+    {
+      "term": "inventory_replenishment",
+      "cosine": 0.489866,
+      "rank": 54
+    },
+    {
+      "term": "delivering_products",
+      "cosine": 0.489116,
+      "rank": 55
+    },
+    {
+      "term": "taking_delivery",
+      "cosine": 0.488674,
+      "rank": 56
+    },
+    {
+      "term": "order_entry",
+      "cosine": 0.48721,
+      "rank": 57
+    },
+    {
+      "term": "managing",
+      "cosine": 0.487053,
+      "rank": 58
+    },
+    {
+      "term": "facilitating",
+      "cosine": 0.48705,
+      "rank": 59
+    },
+    {
+      "term": "automating",
+      "cosine": 0.486373,
+      "rank": 60
+    },
+    {
+      "term": "shipping",
+      "cosine": 0.483546,
+      "rank": 61
+    },
+    {
+      "term": "budgeting",
+      "cosine": 0.483477,
+      "rank": 62
+    },
+    {
+      "term": "global_sourcing",
+      "cosine": 0.482538,
+      "rank": 63
+    },
+    {
+      "term": "disposing",
+      "cosine": 0.481031,
+      "rank": 64
+    },
+    {
+      "term": "dispatching",
+      "cosine": 0.479548,
+      "rank": 65
+    },
+    {
+      "term": "contracting",
+      "cosine": 0.479346,
+      "rank": 66
+    },
+    {
+      "term": "inventory_tracking",
+      "cosine": 0.479182,
+      "rank": 67
+    },
+    {
+      "term": "invoicing",
+      "cosine": 0.473983,
+      "rank": 68
+    },
+    {
+      "term": "procurement_process",
+      "cosine": 0.472632,
+      "rank": 69
+    },
+    {
+      "term": "acquiring",
+      "cosine": 0.472527,
+      "rank": 70
+    },
+    {
+      "term": "costing",
+      "cosine": 0.471267,
+      "rank": 71
+    },
+    {
+      "term": "customizing",
+      "cosine": 0.469599,
+      "rank": 72
+    },
+    {
+      "term": "buys",
+      "cosine": 0.469497,
+      "rank": 73
+    },
+    {
+      "term": "strategic_sourcing",
+      "cosine": 0.468445,
+      "rank": 74
+    },
+    {
+      "term": "implementing_new",
+      "cosine": 0.465081,
+      "rank": 75
+    },
+    {
+      "term": "inbound_freight",
+      "cosine": 0.464922,
+      "rank": 76
+    },
+    {
+      "term": "logistic",
+      "cosine": 0.464625,
+      "rank": 77
+    },
+    {
+      "term": "brokering",
+      "cosine": 0.464217,
+      "rank": 78
+    },
+    {
+      "term": "receiving",
+      "cosine": 0.463182,
+      "rank": 79
+    },
+    {
+      "term": "reallocating",
+      "cosine": 0.463101,
+      "rank": 80
+    },
+    {
+      "term": "merchandise",
+      "cosine": 0.461788,
+      "rank": 81
+    },
+    {
+      "term": "rather",
+      "cosine": 0.461605,
+      "rank": 82
+    },
+    {
+      "term": "justintime_delivery",
+      "cosine": 0.458394,
+      "rank": 83
+    },
+    {
+      "term": "streamlining",
+      "cosine": 0.457725,
+      "rank": 84
+    },
+    {
+      "term": "installing",
+      "cosine": 0.456849,
+      "rank": 85
+    },
+    {
+      "term": "functions_including",
+      "cosine": 0.454594,
+      "rank": 86
+    },
+    {
+      "term": "assist_them",
+      "cosine": 0.453516,
+      "rank": 87
+    },
+    {
+      "term": "manufacturing",
+      "cosine": 0.452629,
+      "rank": 88
+    },
+    {
+      "term": "arranges",
+      "cosine": 0.452545,
+      "rank": 89
+    },
+    {
+      "term": "supplychain",
+      "cosine": 0.45171,
+      "rank": 90
+    },
+    {
+      "term": "administration_functions",
+      "cosine": 0.450682,
+      "rank": 91
+    },
+    {
+      "term": "locating",
+      "cosine": 0.450276,
+      "rank": 92
+    },
+    {
+      "term": "kitting",
+      "cosine": 0.449692,
+      "rank": 93
+    },
+    {
+      "term": "organizing",
+      "cosine": 0.449655,
+      "rank": 94
+    },
+    {
+      "term": "executing",
+      "cosine": 0.449255,
+      "rank": 95
+    },
+    {
+      "term": "transporting",
+      "cosine": 0.448985,
+      "rank": 96
+    },
+    {
+      "term": "arranging_financing",
+      "cosine": 0.448785,
+      "rank": 97
+    },
+    {
+      "term": "volume_purchasing",
+      "cosine": 0.448332,
+      "rank": 98
+    },
+    {
+      "term": "merchandise_directly",
+      "cosine": 0.447515,
+      "rank": 99
+    },
+    {
+      "term": "supervising",
+      "cosine": 0.447331,
+      "rank": 100
+    }
+  ],
+  "sourcing": [
+    {
+      "term": "product_sourcing",
+      "cosine": 0.787575,
+      "rank": 1
+    },
+    {
+      "term": "global_sourcing",
+      "cosine": 0.73841,
+      "rank": 2
+    },
+    {
+      "term": "purchasing",
+      "cosine": 0.711069,
+      "rank": 3
+    },
+    {
+      "term": "procurement",
+      "cosine": 0.700564,
+      "rank": 4
+    },
+    {
+      "term": "direct_sourcing",
+      "cosine": 0.67375,
+      "rank": 5
+    },
+    {
+      "term": "supply_chain",
+      "cosine": 0.673626,
+      "rank": 6
+    },
+    {
+      "term": "production_scheduling",
+      "cosine": 0.653152,
+      "rank": 7
+    },
+    {
+      "term": "purchasing_inventory",
+      "cosine": 0.621498,
+      "rank": 8
+    },
+    {
+      "term": "expediting",
+      "cosine": 0.619783,
+      "rank": 9
+    },
+    {
+      "term": "inventory_management",
+      "cosine": 0.615099,
+      "rank": 10
+    },
+    {
+      "term": "supplychain",
+      "cosine": 0.61404,
+      "rank": 11
+    },
+    {
+      "term": "manufacturing",
+      "cosine": 0.591475,
+      "rank": 12
+    },
+    {
+      "term": "sourcing_strategy",
+      "cosine": 0.587072,
+      "rank": 13
+    },
+    {
+      "term": "design_manufacturing",
+      "cosine": 0.586702,
+      "rank": 14
+    },
+    {
+      "term": "global_supply",
+      "cosine": 0.585949,
+      "rank": 15
+    },
+    {
+      "term": "procuring",
+      "cosine": 0.584762,
+      "rank": 16
+    },
+    {
+      "term": "foreign_sourcing",
+      "cosine": 0.583369,
+      "rank": 17
+    },
+    {
+      "term": "outsourced_manufacturing",
+      "cosine": 0.579368,
+      "rank": 18
+    },
+    {
+      "term": "coordinating",
+      "cosine": 0.579156,
+      "rank": 19
+    },
+    {
+      "term": "justintime_inventory",
+      "cosine": 0.577173,
+      "rank": 20
+    },
+    {
+      "term": "order_fulfillment",
+      "cosine": 0.577121,
+      "rank": 21
+    },
+    {
+      "term": "assembling",
+      "cosine": 0.574578,
+      "rank": 22
+    },
+    {
+      "term": "justintime",
+      "cosine": 0.571842,
+      "rank": 23
+    },
+    {
+      "term": "centralized_purchasing",
+      "cosine": 0.570736,
+      "rank": 24
+    },
+    {
+      "term": "strategic_sourcing",
+      "cosine": 0.570469,
+      "rank": 25
+    },
+    {
+      "term": "logistical",
+      "cosine": 0.570436,
+      "rank": 26
+    },
+    {
+      "term": "product_design",
+      "cosine": 0.569034,
+      "rank": 27
+    },
+    {
+      "term": "supplier_base",
+      "cosine": 0.568302,
+      "rank": 28
+    },
+    {
+      "term": "inhouse_manufacturing",
+      "cosine": 0.564097,
+      "rank": 29
+    },
+    {
+      "term": "centralizing",
+      "cosine": 0.5599,
+      "rank": 30
+    },
+    {
+      "term": "material_procurement",
+      "cosine": 0.556551,
+      "rank": 31
+    },
+    {
+      "term": "product_fulfillment",
+      "cosine": 0.55318,
+      "rank": 32
+    },
+    {
+      "term": "distribution_functions",
+      "cosine": 0.551699,
+      "rank": 33
+    },
+    {
+      "term": "manufacturing_assembly",
+      "cosine": 0.549723,
+      "rank": 34
+    },
+    {
+      "term": "supply_chains",
+      "cosine": 0.544202,
+      "rank": 35
+    },
+    {
+      "term": "importing",
+      "cosine": 0.544014,
+      "rank": 36
+    },
+    {
+      "term": "buying_agents",
+      "cosine": 0.542267,
+      "rank": 37
+    },
+    {
+      "term": "logistics",
+      "cosine": 0.542199,
+      "rank": 38
+    },
+    {
+      "term": "certain_raw",
+      "cosine": 0.537827,
+      "rank": 39
+    },
+    {
+      "term": "vertical_integration",
+      "cosine": 0.537715,
+      "rank": 40
+    },
+    {
+      "term": "buying",
+      "cosine": 0.537703,
+      "rank": 41
+    },
+    {
+      "term": "quality_control",
+      "cosine": 0.537325,
+      "rank": 42
+    },
+    {
+      "term": "raw_materials",
+      "cosine": 0.534823,
+      "rank": 43
+    },
+    {
+      "term": "sourced_products",
+      "cosine": 0.533289,
+      "rank": 44
+    },
+    {
+      "term": "raw_material",
+      "cosine": 0.527972,
+      "rank": 45
+    },
+    {
+      "term": "global_procurement",
+      "cosine": 0.526727,
+      "rank": 46
+    },
+    {
+      "term": "quality_assurance",
+      "cosine": 0.526292,
+      "rank": 47
+    },
+    {
+      "term": "international_sourcing",
+      "cosine": 0.525181,
+      "rank": 48
+    },
+    {
+      "term": "warehousing_distribution",
+      "cosine": 0.524919,
+      "rank": 49
+    },
+    {
+      "term": "outsource_manufacturing",
+      "cosine": 0.524228,
+      "rank": 50
+    },
+    {
+      "term": "optimizing",
+      "cosine": 0.523516,
+      "rank": 51
+    },
+    {
+      "term": "justintime_delivery",
+      "cosine": 0.521563,
+      "rank": 52
+    },
+    {
+      "term": "finished_products",
+      "cosine": 0.519653,
+      "rank": 53
+    },
+    {
+      "term": "rationalizing",
+      "cosine": 0.519393,
+      "rank": 54
+    },
+    {
+      "term": "external_suppliers",
+      "cosine": 0.518834,
+      "rank": 55
+    },
+    {
+      "term": "manufacturing_capabilities",
+      "cosine": 0.51768,
+      "rank": 56
+    },
+    {
+      "term": "merchandising",
+      "cosine": 0.516727,
+      "rank": 57
+    },
+    {
+      "term": "thirdparty_suppliers",
+      "cosine": 0.516217,
+      "rank": 58
+    },
+    {
+      "term": "thirdparty_manufacturing",
+      "cosine": 0.515463,
+      "rank": 59
+    },
+    {
+      "term": "components_subassemblies",
+      "cosine": 0.513208,
+      "rank": 60
+    },
+    {
+      "term": "overhead_associated",
+      "cosine": 0.512971,
+      "rank": 61
+    },
+    {
+      "term": "products_sourced",
+      "cosine": 0.51217,
+      "rank": 62
+    },
+    {
+      "term": "supply",
+      "cosine": 0.511781,
+      "rank": 63
+    },
+    {
+      "term": "standardizing",
+      "cosine": 0.51061,
+      "rank": 64
+    },
+    {
+      "term": "final_assembly",
+      "cosine": 0.510148,
+      "rank": 65
+    },
+    {
+      "term": "production_processes",
+      "cosine": 0.509657,
+      "rank": 66
+    },
+    {
+      "term": "coordination",
+      "cosine": 0.507444,
+      "rank": 67
+    },
+    {
+      "term": "distribution_logistics",
+      "cosine": 0.506445,
+      "rank": 68
+    },
+    {
+      "term": "production_process",
+      "cosine": 0.506308,
+      "rank": 69
+    },
+    {
+      "term": "singlesource",
+      "cosine": 0.503226,
+      "rank": 70
+    },
+    {
+      "term": "key_components",
+      "cosine": 0.502858,
+      "rank": 71
+    },
+    {
+      "term": "efficient_manufacturing",
+      "cosine": 0.501738,
+      "rank": 72
+    },
+    {
+      "term": "purchasing_receiving",
+      "cosine": 0.50157,
+      "rank": 73
+    },
+    {
+      "term": "manufacturing_process",
+      "cosine": 0.500628,
+      "rank": 74
+    },
+    {
+      "term": "inbound_freight",
+      "cosine": 0.497372,
+      "rank": 75
+    },
+    {
+      "term": "important_components",
+      "cosine": 0.497352,
+      "rank": 76
+    },
+    {
+      "term": "warehousing",
+      "cosine": 0.497084,
+      "rank": 77
+    },
+    {
+      "term": "product_assembly",
+      "cosine": 0.496925,
+      "rank": 78
+    },
+    {
+      "term": "ensure_continuity",
+      "cosine": 0.496745,
+      "rank": 79
+    },
+    {
+      "term": "customs_clearance",
+      "cosine": 0.496669,
+      "rank": 80
+    },
+    {
+      "term": "streamlining",
+      "cosine": 0.496101,
+      "rank": 81
+    },
+    {
+      "term": "suppliers",
+      "cosine": 0.495787,
+      "rank": 82
+    },
+    {
+      "term": "contract_manufacturers",
+      "cosine": 0.494899,
+      "rank": 83
+    },
+    {
+      "term": "lean_manufacturing",
+      "cosine": 0.494721,
+      "rank": 84
+    },
+    {
+      "term": "sourced",
+      "cosine": 0.494672,
+      "rank": 85
+    },
+    {
+      "term": "leaf_tobacco",
+      "cosine": 0.490593,
+      "rank": 86
+    },
+    {
+      "term": "multiple_suppliers",
+      "cosine": 0.48998,
+      "rank": 87
+    },
+    {
+      "term": "company_outsources",
+      "cosine": 0.489439,
+      "rank": 88
+    },
+    {
+      "term": "materials_components",
+      "cosine": 0.489356,
+      "rank": 89
+    },
+    {
+      "term": "outsourcing",
+      "cosine": 0.488299,
+      "rank": 90
+    },
+    {
+      "term": "planning",
+      "cosine": 0.488143,
+      "rank": 91
+    },
+    {
+      "term": "key_suppliers",
+      "cosine": 0.487728,
+      "rank": 92
+    },
+    {
+      "term": "thirdparty_contract",
+      "cosine": 0.487601,
+      "rank": 93
+    },
+    {
+      "term": "replenishment",
+      "cosine": 0.487518,
+      "rank": 94
+    },
+    {
+      "term": "finished_good",
+      "cosine": 0.487358,
+      "rank": 95
+    },
+    {
+      "term": "supplier_selection",
+      "cosine": 0.487242,
+      "rank": 96
+    },
+    {
+      "term": "logistics_providers",
+      "cosine": 0.487048,
+      "rank": 97
+    },
+    {
+      "term": "logistic",
+      "cosine": 0.486452,
+      "rank": 98
+    },
+    {
+      "term": "timely_delivery",
+      "cosine": 0.484511,
+      "rank": 99
+    },
+    {
+      "term": "key_raw",
+      "cosine": 0.484176,
+      "rank": 100
+    }
+  ],
+  "suppliers": [
+    {
+      "term": "thirdparty_suppliers",
+      "cosine": 0.887191,
+      "rank": 1
+    },
+    {
+      "term": "key_suppliers",
+      "cosine": 0.876896,
+      "rank": 2
+    },
+    {
+      "term": "component_suppliers",
+      "cosine": 0.854001,
+      "rank": 3
+    },
+    {
+      "term": "contract_manufacturers",
+      "cosine": 0.844826,
+      "rank": 4
+    },
+    {
+      "term": "singlesource_suppliers",
+      "cosine": 0.840416,
+      "rank": 5
+    },
+    {
+      "term": "sole_source",
+      "cosine": 0.839992,
+      "rank": 6
+    },
+    {
+      "term": "solesource_suppliers",
+      "cosine": 0.839319,
+      "rank": 7
+    },
+    {
+      "term": "qualified_suppliers",
+      "cosine": 0.839035,
+      "rank": 8
+    },
+    {
+      "term": "source_suppliers",
+      "cosine": 0.83069,
+      "rank": 9
+    },
+    {
+      "term": "vendors",
+      "cosine": 0.821088,
+      "rank": 10
+    },
+    {
+      "term": "solesource",
+      "cosine": 0.813807,
+      "rank": 11
+    },
+    {
+      "term": "external_suppliers",
+      "cosine": 0.80881,
+      "rank": 12
+    },
+    {
+      "term": "sole_suppliers",
+      "cosine": 0.802093,
+      "rank": 13
+    },
+    {
+      "term": "key_vendors",
+      "cosine": 0.799214,
+      "rank": 14
+    },
+    {
+      "term": "outside_suppliers",
+      "cosine": 0.796858,
+      "rank": 15
+    },
+    {
+      "term": "major_suppliers",
+      "cosine": 0.786718,
+      "rank": 16
+    },
+    {
+      "term": "solesourced",
+      "cosine": 0.772304,
+      "rank": 17
+    },
+    {
+      "term": "critical_raw",
+      "cosine": 0.76695,
+      "rank": 18
+    },
+    {
+      "term": "singlesourced",
+      "cosine": 0.765562,
+      "rank": 19
+    },
+    {
+      "term": "suppliers_particularly",
+      "cosine": 0.765175,
+      "rank": 20
+    },
+    {
+      "term": "outsourcing_partners",
+      "cosine": 0.758911,
+      "rank": 21
+    },
+    {
+      "term": "single_source",
+      "cosine": 0.756093,
+      "rank": 22
+    },
+    {
+      "term": "single_supplier",
+      "cosine": 0.748228,
+      "rank": 23
+    },
+    {
+      "term": "one_supplier",
+      "cosine": 0.745316,
+      "rank": 24
+    },
+    {
+      "term": "alternative_suppliers",
+      "cosine": 0.742592,
+      "rank": 25
+    },
+    {
+      "term": "thirdparty_manufacturers",
+      "cosine": 0.741532,
+      "rank": 26
+    },
+    {
+      "term": "various_suppliers",
+      "cosine": 0.741299,
+      "rank": 27
+    },
+    {
+      "term": "supplying_us",
+      "cosine": 0.740867,
+      "rank": 28
+    },
+    {
+      "term": "multiple_suppliers",
+      "cosine": 0.740777,
+      "rank": 29
+    },
+    {
+      "term": "supplier",
+      "cosine": 0.736418,
+      "rank": 30
+    },
+    {
+      "term": "domestic_suppliers",
+      "cosine": 0.735745,
+      "rank": 31
+    },
+    {
+      "term": "alternate_suppliers",
+      "cosine": 0.73203,
+      "rank": 32
+    },
+    {
+      "term": "supply_arrangements",
+      "cosine": 0.731041,
+      "rank": 33
+    },
+    {
+      "term": "single_sources",
+      "cosine": 0.730775,
+      "rank": 34
+    },
+    {
+      "term": "numerous_suppliers",
+      "cosine": 0.730054,
+      "rank": 35
+    },
+    {
+      "term": "foundries",
+      "cosine": 0.729205,
+      "rank": 36
+    },
+    {
+      "term": "subcontract_manufacturers",
+      "cosine": 0.729091,
+      "rank": 37
+    },
+    {
+      "term": "key_components",
+      "cosine": 0.728838,
+      "rank": 38
+    },
+    {
+      "term": "several_suppliers",
+      "cosine": 0.728449,
+      "rank": 39
+    },
+    {
+      "term": "components_subassemblies",
+      "cosine": 0.727326,
+      "rank": 40
+    },
+    {
+      "term": "thirdparty_subcontractors",
+      "cosine": 0.727092,
+      "rank": 41
+    },
+    {
+      "term": "thirdparty_contract",
+      "cosine": 0.724895,
+      "rank": 42
+    },
+    {
+      "term": "critical_components",
+      "cosine": 0.724212,
+      "rank": 43
+    },
+    {
+      "term": "subcontractors",
+      "cosine": 0.72306,
+      "rank": 44
+    },
+    {
+      "term": "necessary_raw",
+      "cosine": 0.718606,
+      "rank": 45
+    },
+    {
+      "term": "wafer_foundries",
+      "cosine": 0.715713,
+      "rank": 46
+    },
+    {
+      "term": "manufacturers",
+      "cosine": 0.707826,
+      "rank": 47
+    },
+    {
+      "term": "foreign_suppliers",
+      "cosine": 0.707742,
+      "rank": 48
+    },
+    {
+      "term": "copackers",
+      "cosine": 0.707505,
+      "rank": 49
+    },
+    {
+      "term": "critical_suppliers",
+      "cosine": 0.705972,
+      "rank": 50
+    },
+    {
+      "term": "different_suppliers",
+      "cosine": 0.704345,
+      "rank": 51
+    },
+    {
+      "term": "key_supplier",
+      "cosine": 0.703701,
+      "rank": 52
+    },
+    {
+      "term": "obtain_raw",
+      "cosine": 0.703583,
+      "rank": 53
+    },
+    {
+      "term": "singlesource_supplier",
+      "cosine": 0.702503,
+      "rank": 54
+    },
+    {
+      "term": "limited_number",
+      "cosine": 0.701687,
+      "rank": 55
+    },
+    {
+      "term": "experience_shortages",
+      "cosine": 0.700692,
+      "rank": 56
+    },
+    {
+      "term": "materials_components",
+      "cosine": 0.700374,
+      "rank": 57
+    },
+    {
+      "term": "contract_manufacturer",
+      "cosine": 0.699896,
+      "rank": 58
+    },
+    {
+      "term": "source_components",
+      "cosine": 0.699092,
+      "rank": 59
+    },
+    {
+      "term": "parts_components",
+      "cosine": 0.697228,
+      "rank": 60
+    },
+    {
+      "term": "component_manufacturers",
+      "cosine": 0.695594,
+      "rank": 61
+    },
+    {
+      "term": "thirdparty_supplier",
+      "cosine": 0.693788,
+      "rank": 62
+    },
+    {
+      "term": "single_vendor",
+      "cosine": 0.692003,
+      "rank": 63
+    },
+    {
+      "term": "key_raw",
+      "cosine": 0.691177,
+      "rank": 64
+    },
+    {
+      "term": "sourced_products",
+      "cosine": 0.684847,
+      "rank": 65
+    },
+    {
+      "term": "products_supplied",
+      "cosine": 0.68375,
+      "rank": 66
+    },
+    {
+      "term": "certain_raw",
+      "cosine": 0.683414,
+      "rank": 67
+    },
+    {
+      "term": "singlesource",
+      "cosine": 0.682,
+      "rank": 68
+    },
+    {
+      "term": "one_vendor",
+      "cosine": 0.681184,
+      "rank": 69
+    },
+    {
+      "term": "supply",
+      "cosine": 0.677965,
+      "rank": 70
+    },
+    {
+      "term": "logistics_providers",
+      "cosine": 0.677192,
+      "rank": 71
+    },
+    {
+      "term": "packagers",
+      "cosine": 0.676739,
+      "rank": 72
+    },
+    {
+      "term": "thirdparty_manufacturing",
+      "cosine": 0.673706,
+      "rank": 73
+    },
+    {
+      "term": "sole_supplier",
+      "cosine": 0.668487,
+      "rank": 74
+    },
+    {
+      "term": "thirdparty_foundries",
+      "cosine": 0.668426,
+      "rank": 75
+    },
+    {
+      "term": "independent_foundries",
+      "cosine": 0.667846,
+      "rank": 76
+    },
+    {
+      "term": "raw_materials",
+      "cosine": 0.66754,
+      "rank": 77
+    },
+    {
+      "term": "components_used",
+      "cosine": 0.665497,
+      "rank": 78
+    },
+    {
+      "term": "thirdparty_vendors",
+      "cosine": 0.664976,
+      "rank": 79
+    },
+    {
+      "term": "another_supplier",
+      "cosine": 0.663578,
+      "rank": 80
+    },
+    {
+      "term": "materials_parts",
+      "cosine": 0.660766,
+      "rank": 81
+    },
+    {
+      "term": "component_parts",
+      "cosine": 0.660525,
+      "rank": 82
+    },
+    {
+      "term": "alternate_sources",
+      "cosine": 0.657526,
+      "rank": 83
+    },
+    {
+      "term": "suppliers_fail",
+      "cosine": 0.655768,
+      "rank": 84
+    },
+    {
+      "term": "procure",
+      "cosine": 0.654338,
+      "rank": 85
+    },
+    {
+      "term": "supply_sources",
+      "cosine": 0.652241,
+      "rank": 86
+    },
+    {
+      "term": "assemblers",
+      "cosine": 0.651947,
+      "rank": 87
+    },
+    {
+      "term": "suppliers_manufacturers",
+      "cosine": 0.650777,
+      "rank": 88
+    },
+    {
+      "term": "adequate_supplies",
+      "cosine": 0.649397,
+      "rank": 89
+    },
+    {
+      "term": "supply_interruption",
+      "cosine": 0.644813,
+      "rank": 90
+    },
+    {
+      "term": "alternative_supplier",
+      "cosine": 0.642085,
+      "rank": 91
+    },
+    {
+      "term": "outside_vendors",
+      "cosine": 0.639735,
+      "rank": 92
+    },
+    {
+      "term": "oem_suppliers",
+      "cosine": 0.639542,
+      "rank": 93
+    },
+    {
+      "term": "independent_manufacturers",
+      "cosine": 0.639143,
+      "rank": 94
+    },
+    {
+      "term": "purchases_raw",
+      "cosine": 0.63895,
+      "rank": 95
+    },
+    {
+      "term": "timely_deliveries",
+      "cosine": 0.636678,
+      "rank": 96
+    },
+    {
+      "term": "obtaining_raw",
+      "cosine": 0.634323,
+      "rank": 97
+    },
+    {
+      "term": "materials_needed",
+      "cosine": 0.632685,
+      "rank": 98
+    },
+    {
+      "term": "buying_agents",
+      "cosine": 0.629944,
+      "rank": 99
+    },
+    {
+      "term": "subassemblies",
+      "cosine": 0.628072,
+      "rank": 100
+    }
+  ],
+  "supply": [
+    {
+      "term": "adequate_supplies",
+      "cosine": 0.755735,
+      "rank": 1
+    },
+    {
+      "term": "adequate_supply",
+      "cosine": 0.746292,
+      "rank": 2
+    },
+    {
+      "term": "certain_raw",
+      "cosine": 0.73349,
+      "rank": 3
+    },
+    {
+      "term": "critical_raw",
+      "cosine": 0.730015,
+      "rank": 4
+    },
+    {
+      "term": "raw_materials",
+      "cosine": 0.722677,
+      "rank": 5
+    },
+    {
+      "term": "key_raw",
+      "cosine": 0.71661,
+      "rank": 6
+    },
+    {
+      "term": "uninterrupted_supply",
+      "cosine": 0.709792,
+      "rank": 7
+    },
+    {
+      "term": "raw_material",
+      "cosine": 0.705192,
+      "rank": 8
+    },
+    {
+      "term": "necessary_raw",
+      "cosine": 0.704131,
+      "rank": 9
+    },
+    {
+      "term": "procure",
+      "cosine": 0.699376,
+      "rank": 10
+    },
+    {
+      "term": "various_suppliers",
+      "cosine": 0.693491,
+      "rank": 11
+    },
+    {
+      "term": "supplies",
+      "cosine": 0.68357,
+      "rank": 12
+    },
+    {
+      "term": "suppliers",
+      "cosine": 0.677965,
+      "rank": 13
+    },
+    {
+      "term": "obtain_raw",
+      "cosine": 0.67516,
+      "rank": 14
+    },
+    {
+      "term": "sufficient_supplies",
+      "cosine": 0.674364,
+      "rank": 15
+    },
+    {
+      "term": "materials_needed",
+      "cosine": 0.670147,
+      "rank": 16
+    },
+    {
+      "term": "reliable_supply",
+      "cosine": 0.66811,
+      "rank": 17
+    },
+    {
+      "term": "experience_shortages",
+      "cosine": 0.6678,
+      "rank": 18
+    },
+    {
+      "term": "adequate_quantities",
+      "cosine": 0.665238,
+      "rank": 19
+    },
+    {
+      "term": "sufficient_supply",
+      "cosine": 0.664718,
+      "rank": 20
+    },
+    {
+      "term": "sufficient_quantities",
+      "cosine": 0.657549,
+      "rank": 21
+    },
+    {
+      "term": "continuous_supply",
+      "cosine": 0.657155,
+      "rank": 22
+    },
+    {
+      "term": "thirdparty_suppliers",
+      "cosine": 0.653874,
+      "rank": 23
+    },
+    {
+      "term": "supply_arrangements",
+      "cosine": 0.652235,
+      "rank": 24
+    },
+    {
+      "term": "supply_sources",
+      "cosine": 0.64421,
+      "rank": 25
+    },
+    {
+      "term": "supplying",
+      "cosine": 0.641697,
+      "rank": 26
+    },
+    {
+      "term": "supplied",
+      "cosine": 0.640868,
+      "rank": 27
+    },
+    {
+      "term": "single_supplier",
+      "cosine": 0.639464,
+      "rank": 28
+    },
+    {
+      "term": "supplier",
+      "cosine": 0.638751,
+      "rank": 29
+    },
+    {
+      "term": "shortages",
+      "cosine": 0.637543,
+      "rank": 30
+    },
+    {
+      "term": "supply_needs",
+      "cosine": 0.632675,
+      "rank": 31
+    },
+    {
+      "term": "sole_source",
+      "cosine": 0.626787,
+      "rank": 32
+    },
+    {
+      "term": "materials_components",
+      "cosine": 0.62623,
+      "rank": 33
+    },
+    {
+      "term": "principal_raw",
+      "cosine": 0.626104,
+      "rank": 34
+    },
+    {
+      "term": "alternate_sources",
+      "cosine": 0.62604,
+      "rank": 35
+    },
+    {
+      "term": "feedstock",
+      "cosine": 0.625231,
+      "rank": 36
+    },
+    {
+      "term": "purchases_raw",
+      "cosine": 0.622175,
+      "rank": 37
+    },
+    {
+      "term": "major_raw",
+      "cosine": 0.621705,
+      "rank": 38
+    },
+    {
+      "term": "components_subassemblies",
+      "cosine": 0.620326,
+      "rank": 39
+    },
+    {
+      "term": "deliver_sufficient",
+      "cosine": 0.61636,
+      "rank": 40
+    },
+    {
+      "term": "materials_parts",
+      "cosine": 0.614406,
+      "rank": 41
+    },
+    {
+      "term": "supply_interruption",
+      "cosine": 0.612178,
+      "rank": 42
+    },
+    {
+      "term": "another_supplier",
+      "cosine": 0.612016,
+      "rank": 43
+    },
+    {
+      "term": "important_raw",
+      "cosine": 0.610896,
+      "rank": 44
+    },
+    {
+      "term": "timely_deliveries",
+      "cosine": 0.607155,
+      "rank": 45
+    },
+    {
+      "term": "several_suppliers",
+      "cosine": 0.60608,
+      "rank": 46
+    },
+    {
+      "term": "singlesourced",
+      "cosine": 0.605177,
+      "rank": 47
+    },
+    {
+      "term": "quantities_sufficient",
+      "cosine": 0.604572,
+      "rank": 48
+    },
+    {
+      "term": "multiple_suppliers",
+      "cosine": 0.603673,
+      "rank": 49
+    },
+    {
+      "term": "availability",
+      "cosine": 0.602954,
+      "rank": 50
+    },
+    {
+      "term": "supply_shortages",
+      "cosine": 0.601477,
+      "rank": 51
+    },
+    {
+      "term": "fuel_supplies",
+      "cosine": 0.601309,
+      "rank": 52
+    },
+    {
+      "term": "procured",
+      "cosine": 0.600915,
+      "rank": 53
+    },
+    {
+      "term": "materials_necessary",
+      "cosine": 0.600856,
+      "rank": 54
+    },
+    {
+      "term": "finished_product",
+      "cosine": 0.600585,
+      "rank": 55
+    },
+    {
+      "term": "obtaining_raw",
+      "cosine": 0.597423,
+      "rank": 56
+    },
+    {
+      "term": "assure_adequate",
+      "cosine": 0.596383,
+      "rank": 57
+    },
+    {
+      "term": "key_suppliers",
+      "cosine": 0.596333,
+      "rank": 58
+    },
+    {
+      "term": "finished_products",
+      "cosine": 0.592586,
+      "rank": 59
+    },
+    {
+      "term": "worldwide_supply",
+      "cosine": 0.592542,
+      "rank": 60
+    },
+    {
+      "term": "meet_demand",
+      "cosine": 0.592291,
+      "rank": 61
+    },
+    {
+      "term": "alternative_suppliers",
+      "cosine": 0.592183,
+      "rank": 62
+    },
+    {
+      "term": "commodities_used",
+      "cosine": 0.590751,
+      "rank": 63
+    },
+    {
+      "term": "minimum_quantities",
+      "cosine": 0.590502,
+      "rank": 64
+    },
+    {
+      "term": "key_components",
+      "cosine": 0.589346,
+      "rank": 65
+    },
+    {
+      "term": "component_parts",
+      "cosine": 0.588899,
+      "rank": 66
+    },
+    {
+      "term": "single_source",
+      "cosine": 0.588538,
+      "rank": 67
+    },
+    {
+      "term": "procuring",
+      "cosine": 0.587746,
+      "rank": 68
+    },
+    {
+      "term": "parts_components",
+      "cosine": 0.586831,
+      "rank": 69
+    },
+    {
+      "term": "alternate_source",
+      "cosine": 0.586611,
+      "rank": 70
+    },
+    {
+      "term": "primary_raw",
+      "cosine": 0.586301,
+      "rank": 71
+    },
+    {
+      "term": "experienced_shortages",
+      "cosine": 0.586277,
+      "rank": 72
+    },
+    {
+      "term": "extended_interruption",
+      "cosine": 0.585404,
+      "rank": 73
+    },
+    {
+      "term": "alternative_sources",
+      "cosine": 0.585149,
+      "rank": 74
+    },
+    {
+      "term": "electricity_natural",
+      "cosine": 0.584411,
+      "rank": 75
+    },
+    {
+      "term": "obtaining_sufficient",
+      "cosine": 0.583344,
+      "rank": 76
+    },
+    {
+      "term": "thirdparty_supplier",
+      "cosine": 0.580626,
+      "rank": 77
+    },
+    {
+      "term": "shortage",
+      "cosine": 0.58045,
+      "rank": 78
+    },
+    {
+      "term": "procures",
+      "cosine": 0.580427,
+      "rank": 79
+    },
+    {
+      "term": "one_supplier",
+      "cosine": 0.579557,
+      "rank": 80
+    },
+    {
+      "term": "reliable_sources",
+      "cosine": 0.579072,
+      "rank": 81
+    },
+    {
+      "term": "materials_purchased",
+      "cosine": 0.577454,
+      "rank": 82
+    },
+    {
+      "term": "critical_components",
+      "cosine": 0.576653,
+      "rank": 83
+    },
+    {
+      "term": "solesourced",
+      "cosine": 0.574581,
+      "rank": 84
+    },
+    {
+      "term": "electricity_water",
+      "cosine": 0.573924,
+      "rank": 85
+    },
+    {
+      "term": "wood_fiber",
+      "cosine": 0.572968,
+      "rank": 86
+    },
+    {
+      "term": "supplying_us",
+      "cosine": 0.572855,
+      "rank": 87
+    },
+    {
+      "term": "manufacture_sufficient",
+      "cosine": 0.572444,
+      "rank": 88
+    },
+    {
+      "term": "acceptable_quality",
+      "cosine": 0.572226,
+      "rank": 89
+    },
+    {
+      "term": "external_suppliers",
+      "cosine": 0.571695,
+      "rank": 90
+    },
+    {
+      "term": "key_supplier",
+      "cosine": 0.571399,
+      "rank": 91
+    },
+    {
+      "term": "single_sources",
+      "cosine": 0.570666,
+      "rank": 92
+    },
+    {
+      "term": "supply_constraints",
+      "cosine": 0.570619,
+      "rank": 93
+    },
+    {
+      "term": "find_alternate",
+      "cosine": 0.569543,
+      "rank": 94
+    },
+    {
+      "term": "domestically_produced",
+      "cosine": 0.567818,
+      "rank": 95
+    },
+    {
+      "term": "locate_alternative",
+      "cosine": 0.567484,
+      "rank": 96
+    },
+    {
+      "term": "singlesource_suppliers",
+      "cosine": 0.567025,
+      "rank": 97
+    },
+    {
+      "term": "ensure_adequate",
+      "cosine": 0.566391,
+      "rank": 98
+    },
+    {
+      "term": "supply_disruptions",
+      "cosine": 0.565805,
+      "rank": 99
+    },
+    {
+      "term": "shipping_schedules",
+      "cosine": 0.56548,
+      "rank": 100
+    }
+  ],
+  "supply chain": [
+    {
+      "term": "supplying",
+      "cosine": 0.602558,
+      "rank": 1
+    },
+    {
+      "term": "chains",
+      "cosine": 0.584417,
+      "rank": 2
+    },
+    {
+      "term": "supplier",
+      "cosine": 0.579291,
+      "rank": 3
+    },
+    {
+      "term": "auto_parts",
+      "cosine": 0.570557,
+      "rank": 4
+    },
+    {
+      "term": "global_supply",
+      "cosine": 0.568424,
+      "rank": 5
+    },
+    {
+      "term": "automotive_parts",
+      "cosine": 0.55792,
+      "rank": 6
+    },
+    {
+      "term": "fullline",
+      "cosine": 0.550075,
+      "rank": 7
+    },
+    {
+      "term": "key_raw",
+      "cosine": 0.547063,
+      "rank": 8
+    },
+    {
+      "term": "supplies",
+      "cosine": 0.545568,
+      "rank": 9
+    },
+    {
+      "term": "reliable_supply",
+      "cosine": 0.54289,
+      "rank": 10
+    },
+    {
+      "term": "certain_raw",
+      "cosine": 0.536927,
+      "rank": 11
+    },
+    {
+      "term": "largest_wholesale",
+      "cosine": 0.533971,
+      "rank": 12
+    },
+    {
+      "term": "worldwide_supply",
+      "cosine": 0.533412,
+      "rank": 13
+    },
+    {
+      "term": "adequate_supply",
+      "cosine": 0.530465,
+      "rank": 14
+    },
+    {
+      "term": "regional_supply",
+      "cosine": 0.530058,
+      "rank": 15
+    },
+    {
+      "term": "national_chain",
+      "cosine": 0.529272,
+      "rank": 16
+    },
+    {
+      "term": "raw_material",
+      "cosine": 0.527032,
+      "rank": 17
+    },
+    {
+      "term": "raw_materials",
+      "cosine": 0.521425,
+      "rank": 18
+    },
+    {
+      "term": "largest_retail",
+      "cosine": 0.516905,
+      "rank": 19
+    },
+    {
+      "term": "suppliers",
+      "cosine": 0.516367,
+      "rank": 20
+    },
+    {
+      "term": "adequate_supplies",
+      "cosine": 0.515874,
+      "rank": 21
+    },
+    {
+      "term": "various_suppliers",
+      "cosine": 0.512992,
+      "rank": 22
+    },
+    {
+      "term": "critical_raw",
+      "cosine": 0.509816,
+      "rank": 23
+    },
+    {
+      "term": "retail_chain",
+      "cosine": 0.509673,
+      "rank": 24
+    },
+    {
+      "term": "supplied",
+      "cosine": 0.508398,
+      "rank": 25
+    },
+    {
+      "term": "major_retail",
+      "cosine": 0.506023,
+      "rank": 26
+    },
+    {
+      "term": "wholesale_distribution",
+      "cosine": 0.505266,
+      "rank": 27
+    },
+    {
+      "term": "largest_supplier",
+      "cosine": 0.502021,
+      "rank": 28
+    },
+    {
+      "term": "major_supplier",
+      "cosine": 0.501844,
+      "rank": 29
+    },
+    {
+      "term": "uninterrupted_supply",
+      "cosine": 0.500998,
+      "rank": 30
+    },
+    {
+      "term": "sourcing",
+      "cosine": 0.500982,
+      "rank": 31
+    },
+    {
+      "term": "principal_raw",
+      "cosine": 0.498673,
+      "rank": 32
+    },
+    {
+      "term": "procure",
+      "cosine": 0.497242,
+      "rank": 33
+    },
+    {
+      "term": "single_supplier",
+      "cosine": 0.496616,
+      "rank": 34
+    },
+    {
+      "term": "convenience_store",
+      "cosine": 0.492965,
+      "rank": 35
+    },
+    {
+      "term": "outlets",
+      "cosine": 0.491928,
+      "rank": 36
+    },
+    {
+      "term": "wholesalers",
+      "cosine": 0.491744,
+      "rank": 37
+    },
+    {
+      "term": "supply_chains",
+      "cosine": 0.490598,
+      "rank": 38
+    },
+    {
+      "term": "purchases_raw",
+      "cosine": 0.4898,
+      "rank": 39
+    },
+    {
+      "term": "primary_raw",
+      "cosine": 0.48898,
+      "rank": 40
+    },
+    {
+      "term": "necessary_raw",
+      "cosine": 0.488975,
+      "rank": 41
+    },
+    {
+      "term": "supply_sources",
+      "cosine": 0.488209,
+      "rank": 42
+    },
+    {
+      "term": "supply_arrangements",
+      "cosine": 0.487732,
+      "rank": 43
+    },
+    {
+      "term": "independently_owned",
+      "cosine": 0.487076,
+      "rank": 44
+    },
+    {
+      "term": "continuous_supply",
+      "cosine": 0.486378,
+      "rank": 45
+    },
+    {
+      "term": "largest_independent",
+      "cosine": 0.484551,
+      "rank": 46
+    },
+    {
+      "term": "supply_needs",
+      "cosine": 0.484312,
+      "rank": 47
+    },
+    {
+      "term": "grocery",
+      "cosine": 0.483413,
+      "rank": 48
+    },
+    {
+      "term": "wholesale_distributor",
+      "cosine": 0.48317,
+      "rank": 49
+    },
+    {
+      "term": "retailer",
+      "cosine": 0.48296,
+      "rank": 50
+    },
+    {
+      "term": "finished_product",
+      "cosine": 0.480395,
+      "rank": 51
+    },
+    {
+      "term": "drug_stores",
+      "cosine": 0.479833,
+      "rank": 52
+    },
+    {
+      "term": "procures",
+      "cosine": 0.476652,
+      "rank": 53
+    },
+    {
+      "term": "grocery_stores",
+      "cosine": 0.475665,
+      "rank": 54
+    },
+    {
+      "term": "wholesaler",
+      "cosine": 0.474602,
+      "rank": 55
+    },
+    {
+      "term": "specialty_retail",
+      "cosine": 0.473171,
+      "rank": 56
+    },
+    {
+      "term": "obtain_raw",
+      "cosine": 0.472511,
+      "rank": 57
+    },
+    {
+      "term": "hardware_stores",
+      "cosine": 0.470628,
+      "rank": 58
+    },
+    {
+      "term": "chain_stores",
+      "cosine": 0.470348,
+      "rank": 59
+    },
+    {
+      "term": "supplier_base",
+      "cosine": 0.468332,
+      "rank": 60
+    },
+    {
+      "term": "finished_products",
+      "cosine": 0.468004,
+      "rank": 61
+    },
+    {
+      "term": "sufficient_supply",
+      "cosine": 0.467833,
+      "rank": 62
+    },
+    {
+      "term": "mass_merchant",
+      "cosine": 0.467383,
+      "rank": 63
+    },
+    {
+      "term": "major_raw",
+      "cosine": 0.467017,
+      "rank": 64
+    },
+    {
+      "term": "feedstock",
+      "cosine": 0.466377,
+      "rank": 65
+    },
+    {
+      "term": "retail_outlets",
+      "cosine": 0.465346,
+      "rank": 66
+    },
+    {
+      "term": "convenience_stores",
+      "cosine": 0.465234,
+      "rank": 67
+    },
+    {
+      "term": "mass_merchandisers",
+      "cosine": 0.464977,
+      "rank": 68
+    },
+    {
+      "term": "stocking",
+      "cosine": 0.464935,
+      "rank": 69
+    },
+    {
+      "term": "retailers_including",
+      "cosine": 0.463888,
+      "rank": 70
+    },
+    {
+      "term": "producers",
+      "cosine": 0.463519,
+      "rank": 71
+    },
+    {
+      "term": "experience_shortages",
+      "cosine": 0.462064,
+      "rank": 72
+    },
+    {
+      "term": "big_box",
+      "cosine": 0.462004,
+      "rank": 73
+    },
+    {
+      "term": "materials_used",
+      "cosine": 0.461826,
+      "rank": 74
+    },
+    {
+      "term": "discount_stores",
+      "cosine": 0.460658,
+      "rank": 75
+    },
+    {
+      "term": "foodservice_distributors",
+      "cosine": 0.460462,
+      "rank": 76
+    },
+    {
+      "term": "alternative_supply",
+      "cosine": 0.460096,
+      "rank": 77
+    },
+    {
+      "term": "regional_retail",
+      "cosine": 0.459974,
+      "rank": 78
+    },
+    {
+      "term": "retail_distribution",
+      "cosine": 0.45988,
+      "rank": 79
+    },
+    {
+      "term": "thirdparty_suppliers",
+      "cosine": 0.459376,
+      "rank": 80
+    },
+    {
+      "term": "primary_supplier",
+      "cosine": 0.459275,
+      "rank": 81
+    },
+    {
+      "term": "general_merchandise",
+      "cosine": 0.459021,
+      "rank": 82
+    },
+    {
+      "term": "materials_needed",
+      "cosine": 0.458991,
+      "rank": 83
+    },
+    {
+      "term": "grocers",
+      "cosine": 0.458841,
+      "rank": 84
+    },
+    {
+      "term": "independent_retailers",
+      "cosine": 0.458739,
+      "rank": 85
+    },
+    {
+      "term": "shortages",
+      "cosine": 0.458718,
+      "rank": 86
+    },
+    {
+      "term": "component_parts",
+      "cosine": 0.458703,
+      "rank": 87
+    },
+    {
+      "term": "energy",
+      "cosine": 0.458629,
+      "rank": 88
+    },
+    {
+      "term": "lowest_cost",
+      "cosine": 0.458374,
+      "rank": 89
+    },
+    {
+      "term": "distribution_chain",
+      "cosine": 0.458245,
+      "rank": 90
+    },
+    {
+      "term": "procuring",
+      "cosine": 0.458188,
+      "rank": 91
+    },
+    {
+      "term": "adequate_quantities",
+      "cosine": 0.458157,
+      "rank": 92
+    },
+    {
+      "term": "sufficient_quantities",
+      "cosine": 0.458029,
+      "rank": 93
+    },
+    {
+      "term": "procurement",
+      "cosine": 0.457253,
+      "rank": 94
+    },
+    {
+      "term": "jobber",
+      "cosine": 0.457202,
+      "rank": 95
+    },
+    {
+      "term": "jobbers",
+      "cosine": 0.455212,
+      "rank": 96
+    },
+    {
+      "term": "sufficient_supplies",
+      "cosine": 0.454987,
+      "rank": 97
+    },
+    {
+      "term": "outlet",
+      "cosine": 0.45473,
+      "rank": 98
+    },
+    {
+      "term": "wholesale",
+      "cosine": 0.454535,
+      "rank": 99
+    },
+    {
+      "term": "key_supplier",
+      "cosine": 0.453138,
+      "rank": 100
+    }
+  ],
+  "transportation": [
+    {
+      "term": "transportation_services",
+      "cosine": 0.758726,
+      "rank": 1
+    },
+    {
+      "term": "trucking",
+      "cosine": 0.754813,
+      "rank": 2
+    },
+    {
+      "term": "rail_transportation",
+      "cosine": 0.710258,
+      "rank": 3
+    },
+    {
+      "term": "transportation_logistics",
+      "cosine": 0.702228,
+      "rank": 4
+    },
+    {
+      "term": "transportation_storage",
+      "cosine": 0.698654,
+      "rank": 5
+    },
+    {
+      "term": "transportationrelated",
+      "cosine": 0.676371,
+      "rank": 6
+    },
+    {
+      "term": "transport",
+      "cosine": 0.669465,
+      "rank": 7
+    },
+    {
+      "term": "logistics",
+      "cosine": 0.664333,
+      "rank": 8
+    },
+    {
+      "term": "storage",
+      "cosine": 0.65641,
+      "rank": 9
+    },
+    {
+      "term": "processing_transportation",
+      "cosine": 0.65485,
+      "rank": 10
+    },
+    {
+      "term": "providing_transportation",
+      "cosine": 0.652856,
+      "rank": 11
+    },
+    {
+      "term": "transporting",
+      "cosine": 0.651885,
+      "rank": 12
+    },
+    {
+      "term": "transportation_systems",
+      "cosine": 0.63901,
+      "rank": 13
+    },
+    {
+      "term": "pipeline_transportation",
+      "cosine": 0.63399,
+      "rank": 14
+    },
+    {
+      "term": "trucking_services",
+      "cosine": 0.632845,
+      "rank": 15
+    },
+    {
+      "term": "trucking_operations",
+      "cosine": 0.629529,
+      "rank": 16
+    },
+    {
+      "term": "transportation_facilities",
+      "cosine": 0.622338,
+      "rank": 17
+    },
+    {
+      "term": "transloading",
+      "cosine": 0.621429,
+      "rank": 18
+    },
+    {
+      "term": "oil_transportation",
+      "cosine": 0.618065,
+      "rank": 19
+    },
+    {
+      "term": "hauling",
+      "cosine": 0.616081,
+      "rank": 20
+    },
+    {
+      "term": "transportation_infrastructure",
+      "cosine": 0.613575,
+      "rank": 21
+    },
+    {
+      "term": "shippers",
+      "cosine": 0.611257,
+      "rank": 22
+    },
+    {
+      "term": "rail",
+      "cosine": 0.609557,
+      "rank": 23
+    },
+    {
+      "term": "terminalling",
+      "cosine": 0.609242,
+      "rank": 24
+    },
+    {
+      "term": "terminaling",
+      "cosine": 0.606901,
+      "rank": 25
+    },
+    {
+      "term": "transports",
+      "cosine": 0.60383,
+      "rank": 26
+    },
+    {
+      "term": "transportation_processing",
+      "cosine": 0.601129,
+      "rank": 27
+    },
+    {
+      "term": "ngls_crude",
+      "cosine": 0.592847,
+      "rank": 28
+    },
+    {
+      "term": "shorthaul",
+      "cosine": 0.591319,
+      "rank": 29
+    },
+    {
+      "term": "marine_transportation",
+      "cosine": 0.589216,
+      "rank": 30
+    },
+    {
+      "term": "storage_services",
+      "cosine": 0.588788,
+      "rank": 31
+    },
+    {
+      "term": "petrochemical",
+      "cosine": 0.588609,
+      "rank": 32
+    },
+    {
+      "term": "transporters",
+      "cosine": 0.586451,
+      "rank": 33
+    },
+    {
+      "term": "freight",
+      "cosine": 0.585215,
+      "rank": 34
+    },
+    {
+      "term": "transportation_segment",
+      "cosine": 0.579385,
+      "rank": 35
+    },
+    {
+      "term": "redelivery",
+      "cosine": 0.575381,
+      "rank": 36
+    },
+    {
+      "term": "gathering_processing",
+      "cosine": 0.574407,
+      "rank": 37
+    },
+    {
+      "term": "waterborne",
+      "cosine": 0.573418,
+      "rank": 38
+    },
+    {
+      "term": "gathering_transportation",
+      "cosine": 0.572403,
+      "rank": 39
+    },
+    {
+      "term": "transportation_industries",
+      "cosine": 0.57211,
+      "rank": 40
+    },
+    {
+      "term": "truck_transportation",
+      "cosine": 0.572044,
+      "rank": 41
+    },
+    {
+      "term": "hazardous_liquids",
+      "cosine": 0.57163,
+      "rank": 42
+    },
+    {
+      "term": "liquid_petroleum",
+      "cosine": 0.570333,
+      "rank": 43
+    },
+    {
+      "term": "petroleum_products",
+      "cosine": 0.569192,
+      "rank": 44
+    },
+    {
+      "term": "handling",
+      "cosine": 0.569123,
+      "rank": 45
+    },
+    {
+      "term": "unloading",
+      "cosine": 0.568963,
+      "rank": 46
+    },
+    {
+      "term": "petroleum_product",
+      "cosine": 0.567434,
+      "rank": 47
+    },
+    {
+      "term": "intermodal",
+      "cosine": 0.566728,
+      "rank": 48
+    },
+    {
+      "term": "thirdparty_transportation",
+      "cosine": 0.566345,
+      "rank": 49
+    },
+    {
+      "term": "transported",
+      "cosine": 0.565578,
+      "rank": 50
+    },
+    {
+      "term": "railroads",
+      "cosine": 0.561192,
+      "rank": 51
+    },
+    {
+      "term": "interstate_transportation",
+      "cosine": 0.560428,
+      "rank": 52
+    },
+    {
+      "term": "materials_handling",
+      "cosine": 0.560365,
+      "rank": 53
+    },
+    {
+      "term": "bulk_liquid",
+      "cosine": 0.559749,
+      "rank": 54
+    },
+    {
+      "term": "production_handling",
+      "cosine": 0.559543,
+      "rank": 55
+    },
+    {
+      "term": "processing_storage",
+      "cosine": 0.558595,
+      "rank": 56
+    },
+    {
+      "term": "freight_transportation",
+      "cosine": 0.557985,
+      "rank": 57
+    },
+    {
+      "term": "dangerous_goods",
+      "cosine": 0.556787,
+      "rank": 58
+    },
+    {
+      "term": "rail_car",
+      "cosine": 0.554136,
+      "rank": 59
+    },
+    {
+      "term": "truck_rail",
+      "cosine": 0.553017,
+      "rank": 60
+    },
+    {
+      "term": "ngl_transportation",
+      "cosine": 0.549148,
+      "rank": 61
+    },
+    {
+      "term": "logistics_segment",
+      "cosine": 0.549071,
+      "rank": 62
+    },
+    {
+      "term": "terminal_services",
+      "cosine": 0.548868,
+      "rank": 63
+    },
+    {
+      "term": "transportation_network",
+      "cosine": 0.548453,
+      "rank": 64
+    },
+    {
+      "term": "logistics_services",
+      "cosine": 0.544535,
+      "rank": 65
+    },
+    {
+      "term": "storage_transportation",
+      "cosine": 0.544422,
+      "rank": 66
+    },
+    {
+      "term": "rail_freight",
+      "cosine": 0.544378,
+      "rank": 67
+    },
+    {
+      "term": "mass_transit",
+      "cosine": 0.543845,
+      "rank": 68
+    },
+    {
+      "term": "railways",
+      "cosine": 0.543328,
+      "rank": 69
+    },
+    {
+      "term": "household_goods",
+      "cosine": 0.543162,
+      "rank": 70
+    },
+    {
+      "term": "petroleum_refining",
+      "cosine": 0.542407,
+      "rank": 71
+    },
+    {
+      "term": "transporting_storing",
+      "cosine": 0.540114,
+      "rank": 72
+    },
+    {
+      "term": "gathering_compression",
+      "cosine": 0.537881,
+      "rank": 73
+    },
+    {
+      "term": "common_carrier",
+      "cosine": 0.537316,
+      "rank": 74
+    },
+    {
+      "term": "lpg",
+      "cosine": 0.536823,
+      "rank": 75
+    },
+    {
+      "term": "maritime",
+      "cosine": 0.535744,
+      "rank": 76
+    },
+    {
+      "term": "transportation_service",
+      "cosine": 0.535618,
+      "rank": 77
+    },
+    {
+      "term": "pipelines",
+      "cosine": 0.530603,
+      "rank": 78
+    },
+    {
+      "term": "transit",
+      "cosine": 0.528784,
+      "rank": 79
+    },
+    {
+      "term": "transporting_crude",
+      "cosine": 0.528406,
+      "rank": 80
+    },
+    {
+      "term": "logistical_services",
+      "cosine": 0.527773,
+      "rank": 81
+    },
+    {
+      "term": "containerized",
+      "cosine": 0.527703,
+      "rank": 82
+    },
+    {
+      "term": "ground_transportation",
+      "cosine": 0.527409,
+      "rank": 83
+    },
+    {
+      "term": "fueling",
+      "cosine": 0.527251,
+      "rank": 84
+    },
+    {
+      "term": "pipelines_terminals",
+      "cosine": 0.52667,
+      "rank": 85
+    },
+    {
+      "term": "railcar",
+      "cosine": 0.526134,
+      "rank": 86
+    },
+    {
+      "term": "shipping",
+      "cosine": 0.525787,
+      "rank": 87
+    },
+    {
+      "term": "lessthantruckload",
+      "cosine": 0.525167,
+      "rank": 88
+    },
+    {
+      "term": "tolls",
+      "cosine": 0.525142,
+      "rank": 89
+    },
+    {
+      "term": "international_air",
+      "cosine": 0.52345,
+      "rank": 90
+    },
+    {
+      "term": "terminal_facilities",
+      "cosine": 0.523309,
+      "rank": 91
+    },
+    {
+      "term": "logistic",
+      "cosine": 0.522812,
+      "rank": 92
+    },
+    {
+      "term": "surface_transportation",
+      "cosine": 0.522508,
+      "rank": 93
+    },
+    {
+      "term": "transport_crude",
+      "cosine": 0.522475,
+      "rank": 94
+    },
+    {
+      "term": "liquefied_natural",
+      "cosine": 0.522364,
+      "rank": 95
+    },
+    {
+      "term": "storage_facilities",
+      "cosine": 0.520885,
+      "rank": 96
+    },
+    {
+      "term": "motor_carrier",
+      "cosine": 0.520884,
+      "rank": 97
+    },
+    {
+      "term": "transportation_capacity",
+      "cosine": 0.520544,
+      "rank": 98
+    },
+    {
+      "term": "takeaway",
+      "cosine": 0.520498,
+      "rank": 99
+    },
+    {
+      "term": "longhaul",
+      "cosine": 0.520112,
+      "rank": 100
+    }
+  ],
+  "warehousing": [
+    {
+      "term": "warehousing_distribution",
+      "cosine": 0.889228,
+      "rank": 1
+    },
+    {
+      "term": "warehouse",
+      "cosine": 0.805302,
+      "rank": 2
+    },
+    {
+      "term": "manufacturing_assembly",
+      "cosine": 0.751604,
+      "rank": 3
+    },
+    {
+      "term": "manufacturing_distribution",
+      "cosine": 0.751255,
+      "rank": 4
+    },
+    {
+      "term": "manufacturing_warehousing",
+      "cosine": 0.743062,
+      "rank": 5
+    },
+    {
+      "term": "purchasing_receiving",
+      "cosine": 0.732222,
+      "rank": 6
+    },
+    {
+      "term": "distribution_functions",
+      "cosine": 0.732131,
+      "rank": 7
+    },
+    {
+      "term": "fulfillment",
+      "cosine": 0.712508,
+      "rank": 8
+    },
+    {
+      "term": "logistics",
+      "cosine": 0.703149,
+      "rank": 9
+    },
+    {
+      "term": "repackaging",
+      "cosine": 0.676869,
+      "rank": 10
+    },
+    {
+      "term": "manufacturing",
+      "cosine": 0.676144,
+      "rank": 11
+    },
+    {
+      "term": "manufacturing_engineering",
+      "cosine": 0.675,
+      "rank": 12
+    },
+    {
+      "term": "costs_shipping",
+      "cosine": 0.672643,
+      "rank": 13
+    },
+    {
+      "term": "shipping",
+      "cosine": 0.672576,
+      "rank": 14
+    },
+    {
+      "term": "fulfillment_center",
+      "cosine": 0.655545,
+      "rank": 15
+    },
+    {
+      "term": "logistic",
+      "cosine": 0.654864,
+      "rank": 16
+    },
+    {
+      "term": "warehousing_costs",
+      "cosine": 0.654436,
+      "rank": 17
+    },
+    {
+      "term": "product_fulfillment",
+      "cosine": 0.647281,
+      "rank": 18
+    },
+    {
+      "term": "outbound_freight",
+      "cosine": 0.644065,
+      "rank": 19
+    },
+    {
+      "term": "purchasing_inventory",
+      "cosine": 0.644041,
+      "rank": 20
+    },
+    {
+      "term": "warehousing_facilities",
+      "cosine": 0.641655,
+      "rank": 21
+    },
+    {
+      "term": "kitting",
+      "cosine": 0.640322,
+      "rank": 22
+    },
+    {
+      "term": "product_assembly",
+      "cosine": 0.630749,
+      "rank": 23
+    },
+    {
+      "term": "order_fulfillment",
+      "cosine": 0.627898,
+      "rank": 24
+    },
+    {
+      "term": "distribution_warehouse",
+      "cosine": 0.62681,
+      "rank": 25
+    },
+    {
+      "term": "distribution_logistics",
+      "cosine": 0.625352,
+      "rank": 26
+    },
+    {
+      "term": "leased_warehouse",
+      "cosine": 0.616578,
+      "rank": 27
+    },
+    {
+      "term": "inbound_freight",
+      "cosine": 0.615045,
+      "rank": 28
+    },
+    {
+      "term": "crossdock",
+      "cosine": 0.614916,
+      "rank": 29
+    },
+    {
+      "term": "administrative_offices",
+      "cosine": 0.612275,
+      "rank": 30
+    },
+    {
+      "term": "manufacturing_packaging",
+      "cosine": 0.610154,
+      "rank": 31
+    },
+    {
+      "term": "freight",
+      "cosine": 0.605107,
+      "rank": 32
+    },
+    {
+      "term": "manufacturing_warehouse",
+      "cosine": 0.599522,
+      "rank": 33
+    },
+    {
+      "term": "warehousing_facility",
+      "cosine": 0.596965,
+      "rank": 34
+    },
+    {
+      "term": "facility_houses",
+      "cosine": 0.596065,
+      "rank": 35
+    },
+    {
+      "term": "fulfillment_centers",
+      "cosine": 0.590408,
+      "rank": 36
+    },
+    {
+      "term": "warehouse_distribution",
+      "cosine": 0.590124,
+      "rank": 37
+    },
+    {
+      "term": "packing",
+      "cosine": 0.587509,
+      "rank": 38
+    },
+    {
+      "term": "overhead_associated",
+      "cosine": 0.585837,
+      "rank": 39
+    },
+    {
+      "term": "distribution_center",
+      "cosine": 0.584482,
+      "rank": 40
+    },
+    {
+      "term": "customs_clearance",
+      "cosine": 0.584043,
+      "rank": 41
+    },
+    {
+      "term": "processing_packaging",
+      "cosine": 0.582376,
+      "rank": 42
+    },
+    {
+      "term": "cold_chain",
+      "cosine": 0.581371,
+      "rank": 43
+    },
+    {
+      "term": "outbound_shipping",
+      "cosine": 0.581233,
+      "rank": 44
+    },
+    {
+      "term": "procurement",
+      "cosine": 0.577155,
+      "rank": 45
+    },
+    {
+      "term": "order_processing",
+      "cosine": 0.574545,
+      "rank": 46
+    },
+    {
+      "term": "administrative_functions",
+      "cosine": 0.572089,
+      "rank": 47
+    },
+    {
+      "term": "reverse_logistics",
+      "cosine": 0.571168,
+      "rank": 48
+    },
+    {
+      "term": "inventory_management",
+      "cosine": 0.569295,
+      "rank": 49
+    },
+    {
+      "term": "warehouses",
+      "cosine": 0.565305,
+      "rank": 50
+    },
+    {
+      "term": "distribution",
+      "cosine": 0.56086,
+      "rank": 51
+    },
+    {
+      "term": "distribution_centers",
+      "cosine": 0.560396,
+      "rank": 52
+    },
+    {
+      "term": "engineering_manufacturing",
+      "cosine": 0.560363,
+      "rank": 53
+    },
+    {
+      "term": "logistical_services",
+      "cosine": 0.559984,
+      "rank": 54
+    },
+    {
+      "term": "leased_manufacturing",
+      "cosine": 0.559819,
+      "rank": 55
+    },
+    {
+      "term": "support_functions",
+      "cosine": 0.557042,
+      "rank": 56
+    },
+    {
+      "term": "material_procurement",
+      "cosine": 0.556709,
+      "rank": 57
+    },
+    {
+      "term": "handling_costs",
+      "cosine": 0.552736,
+      "rank": 58
+    },
+    {
+      "term": "fulfillment_services",
+      "cosine": 0.550637,
+      "rank": 59
+    },
+    {
+      "term": "thirdparty_logistics",
+      "cosine": 0.550627,
+      "rank": 60
+    },
+    {
+      "term": "roasting",
+      "cosine": 0.550266,
+      "rank": 61
+    },
+    {
+      "term": "ripening",
+      "cosine": 0.549559,
+      "rank": 62
+    },
+    {
+      "term": "design_manufacturing",
+      "cosine": 0.549261,
+      "rank": 63
+    },
+    {
+      "term": "distribution_facilities",
+      "cosine": 0.548714,
+      "rank": 64
+    },
+    {
+      "term": "parts_distribution",
+      "cosine": 0.547793,
+      "rank": 65
+    },
+    {
+      "term": "call_center",
+      "cosine": 0.547501,
+      "rank": 66
+    },
+    {
+      "term": "office_warehouse",
+      "cosine": 0.5414,
+      "rank": 67
+    },
+    {
+      "term": "picking",
+      "cosine": 0.54093,
+      "rank": 68
+    },
+    {
+      "term": "light_manufacturing",
+      "cosine": 0.540911,
+      "rank": 69
+    },
+    {
+      "term": "cold_storage",
+      "cosine": 0.540427,
+      "rank": 70
+    },
+    {
+      "term": "distribution_warehouses",
+      "cosine": 0.540168,
+      "rank": 71
+    },
+    {
+      "term": "logistical_support",
+      "cosine": 0.539108,
+      "rank": 72
+    },
+    {
+      "term": "sorting",
+      "cosine": 0.536548,
+      "rank": 73
+    },
+    {
+      "term": "shipping_costs",
+      "cosine": 0.536135,
+      "rank": 74
+    },
+    {
+      "term": "redistribution",
+      "cosine": 0.533419,
+      "rank": 75
+    },
+    {
+      "term": "logistics_services",
+      "cosine": 0.530941,
+      "rank": 76
+    },
+    {
+      "term": "logistical",
+      "cosine": 0.530753,
+      "rank": 77
+    },
+    {
+      "term": "customs_brokerage",
+      "cosine": 0.530534,
+      "rank": 78
+    },
+    {
+      "term": "administrative_support",
+      "cosine": 0.529616,
+      "rank": 79
+    },
+    {
+      "term": "purchasing",
+      "cosine": 0.529193,
+      "rank": 80
+    },
+    {
+      "term": "nonmanufacturing",
+      "cosine": 0.52847,
+      "rank": 81
+    },
+    {
+      "term": "winnipeg_manitoba",
+      "cosine": 0.526718,
+      "rank": 82
+    },
+    {
+      "term": "warehousing_space",
+      "cosine": 0.525793,
+      "rank": 83
+    },
+    {
+      "term": "warehouse_facility",
+      "cosine": 0.524834,
+      "rank": 84
+    },
+    {
+      "term": "service_center",
+      "cosine": 0.52437,
+      "rank": 85
+    },
+    {
+      "term": "administrative_office",
+      "cosine": 0.524249,
+      "rank": 86
+    },
+    {
+      "term": "warehouse_space",
+      "cosine": 0.522946,
+      "rank": 87
+    },
+    {
+      "term": "company_outsources",
+      "cosine": 0.51851,
+      "rank": 88
+    },
+    {
+      "term": "centralized_distribution",
+      "cosine": 0.516441,
+      "rank": 89
+    },
+    {
+      "term": "assembly",
+      "cosine": 0.514143,
+      "rank": 90
+    },
+    {
+      "term": "production_scheduling",
+      "cosine": 0.513853,
+      "rank": 91
+    },
+    {
+      "term": "staging",
+      "cosine": 0.513108,
+      "rank": 92
+    },
+    {
+      "term": "tijuana_mexico",
+      "cosine": 0.512752,
+      "rank": 93
+    },
+    {
+      "term": "transportation_logistics",
+      "cosine": 0.511682,
+      "rank": 94
+    },
+    {
+      "term": "bottling",
+      "cosine": 0.511509,
+      "rank": 95
+    },
+    {
+      "term": "freight_charges",
+      "cosine": 0.511374,
+      "rank": 96
+    },
+    {
+      "term": "warehouse_facilities",
+      "cosine": 0.509046,
+      "rank": 97
+    },
+    {
+      "term": "administration_functions",
+      "cosine": 0.50896,
+      "rank": 98
+    },
+    {
+      "term": "freight_costs",
+      "cosine": 0.506728,
+      "rank": 99
+    },
+    {
+      "term": "sales_marketing",
+      "cosine": 0.506355,
+      "rank": 100
+    }
+  ]
+}

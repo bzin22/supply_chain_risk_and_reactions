@@ -1,0 +1,7 @@
+method_label,reviewed,relevant,borderline,not_relevant,precision_strict,precision_lenient
+ppmi_svd|average,55,41,4,10,0.7455,0.8182
+ppmi_svd|phrase,55,29,19,7,0.5273,0.8727
+word2vec_cbow|average,55,28,13,14,0.5091,0.7455
+word2vec_cbow|phrase,55,30,11,14,0.5455,0.7455
+word2vec_skipgram|average,55,20,11,24,0.3636,0.5636
+word2vec_skipgram|phrase,55,21,7,27,0.3818,0.5091

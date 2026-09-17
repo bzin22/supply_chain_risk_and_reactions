@@ -1,0 +1,428 @@
+{
+  "seed": 20260916,
+  "seed_scheme": "random.Random(f'{seed}:{year}') per year, sample() over accession-sorted pool",
+  "per_year": 2000,
+  "total_selected": 50000,
+  "cached_pool_years": [
+    2003,
+    2004
+  ],
+  "cached_raw_filings_available": 28499,
+  "by_year": [
+    {
+      "year": 1997,
+      "eligible_population": 9583,
+      "sampling_pool": 9583,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K405": 648,
+        "10-K": 1352
+      },
+      "pool_by_form": {
+        "10-K": 6540,
+        "10-K405": 3043
+      }
+    },
+    {
+      "year": 1998,
+      "eligible_population": 9811,
+      "sampling_pool": 9811,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 1358,
+        "10-K405": 642
+      },
+      "pool_by_form": {
+        "10-K": 6661,
+        "10-K405": 3150
+      }
+    },
+    {
+      "year": 1999,
+      "eligible_population": 9658,
+      "sampling_pool": 9658,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K405": 640,
+        "10-K": 1360
+      },
+      "pool_by_form": {
+        "10-K": 6495,
+        "10-K405": 3163
+      }
+    },
+    {
+      "year": 2000,
+      "eligible_population": 9423,
+      "sampling_pool": 9423,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K405": 632,
+        "10-K": 1368
+      },
+      "pool_by_form": {
+        "10-K": 6388,
+        "10-K405": 3035
+      }
+    },
+    {
+      "year": 2001,
+      "eligible_population": 8853,
+      "sampling_pool": 8853,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 745,
+        "cached": 1255
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K405": 623,
+        "10-K": 1377
+      },
+      "pool_by_form": {
+        "10-K405": 2836,
+        "10-K": 6017
+      }
+    },
+    {
+      "year": 2002,
+      "eligible_population": 8562,
+      "sampling_pool": 8562,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "cached": 1550,
+        "download": 450
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 1550,
+        "10-K405": 450
+      },
+      "pool_by_form": {
+        "10-K": 6523,
+        "10-K405": 2039
+      }
+    },
+    {
+      "year": 2003,
+      "eligible_population": 8121,
+      "sampling_pool": 8099,
+      "pool_source": "cached_only",
+      "selected_by_source": {
+        "cached": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8099
+      }
+    },
+    {
+      "year": 2004,
+      "eligible_population": 8209,
+      "sampling_pool": 8209,
+      "pool_source": "cached_only",
+      "selected_by_source": {
+        "cached": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8209
+      }
+    },
+    {
+      "year": 2005,
+      "eligible_population": 8596,
+      "sampling_pool": 8596,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 1967,
+        "cached": 33
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8596
+      }
+    },
+    {
+      "year": 2006,
+      "eligible_population": 8470,
+      "sampling_pool": 8470,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8470
+      }
+    },
+    {
+      "year": 2007,
+      "eligible_population": 8176,
+      "sampling_pool": 8176,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8176
+      }
+    },
+    {
+      "year": 2008,
+      "eligible_population": 8391,
+      "sampling_pool": 8391,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8391
+      }
+    },
+    {
+      "year": 2009,
+      "eligible_population": 9494,
+      "sampling_pool": 9494,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 9494
+      }
+    },
+    {
+      "year": 2010,
+      "eligible_population": 8890,
+      "sampling_pool": 8890,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8890
+      }
+    },
+    {
+      "year": 2011,
+      "eligible_population": 8561,
+      "sampling_pool": 8561,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8561
+      }
+    },
+    {
+      "year": 2012,
+      "eligible_population": 8154,
+      "sampling_pool": 8154,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 8154
+      }
+    },
+    {
+      "year": 2013,
+      "eligible_population": 7832,
+      "sampling_pool": 7832,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 7832
+      }
+    },
+    {
+      "year": 2014,
+      "eligible_population": 7770,
+      "sampling_pool": 7770,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 7770
+      }
+    },
+    {
+      "year": 2015,
+      "eligible_population": 7659,
+      "sampling_pool": 7659,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 7659
+      }
+    },
+    {
+      "year": 2016,
+      "eligible_population": 7259,
+      "sampling_pool": 7259,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 7259
+      }
+    },
+    {
+      "year": 2017,
+      "eligible_population": 6984,
+      "sampling_pool": 6984,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 6984
+      }
+    },
+    {
+      "year": 2018,
+      "eligible_population": 6827,
+      "sampling_pool": 6827,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 6827
+      }
+    },
+    {
+      "year": 2019,
+      "eligible_population": 6660,
+      "sampling_pool": 6660,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 6660
+      }
+    },
+    {
+      "year": 2020,
+      "eligible_population": 6508,
+      "sampling_pool": 6508,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 6508
+      }
+    },
+    {
+      "year": 2021,
+      "eligible_population": 6933,
+      "sampling_pool": 6933,
+      "pool_source": "full_eligible",
+      "selected_by_source": {
+        "download": 2000
+      },
+      "selected": 2000,
+      "selected_by_form": {
+        "10-K": 2000
+      },
+      "pool_by_form": {
+        "10-K": 6933
+      }
+    }
+  ]
+}

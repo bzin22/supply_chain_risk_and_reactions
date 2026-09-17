@@ -1,0 +1,24 @@
+{
+  "documents_used": 50000,
+  "documents_excluded_duplicate": 182,
+  "exclusion_breakdown": {
+    "duplicate_content_hash": 35,
+    "duplicate_cik_report_period": 147
+  },
+  "total_tokens": 1634226218,
+  "unigram_types_after_pruning": 811090,
+  "bigram_types_after_pruning": 4188209,
+  "prune_floor_unigram": 0,
+  "prune_floor_bigram": 13,
+  "phrases_detected": 136803,
+  "function_word_anchored_bigrams_rejected": true,
+  "phrase_min_count": 100,
+  "phrase_threshold": 12.0,
+  "phrase_score": "gensim original: (count(ab)-min_count)*N/(count(a)*count(b))",
+  "forced_seed_phrases": [
+    "demand management"
+  ],
+  "phrase_joins_applied": 231186355,
+  "corpus_unigram": "artifacts/sec_10k_theile_v1/corpora/corpus_unigram.txt.gz",
+  "corpus_phrased": "artifacts/sec_10k_theile_v1/corpora/corpus_phrased.txt.gz"
+}

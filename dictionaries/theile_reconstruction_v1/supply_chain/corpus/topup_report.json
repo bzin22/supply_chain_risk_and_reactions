@@ -1,0 +1,499 @@
+[
+  {
+    "round": 1,
+    "seed": 20260916,
+    "added_total": 243,
+    "by_year": [
+      {
+        "year": 1997,
+        "usable": 1988,
+        "needed": 12,
+        "added": 12,
+        "pool_remaining": 7571
+      },
+      {
+        "year": 1998,
+        "usable": 1984,
+        "needed": 16,
+        "added": 16,
+        "pool_remaining": 7795
+      },
+      {
+        "year": 1999,
+        "usable": 1990,
+        "needed": 10,
+        "added": 10,
+        "pool_remaining": 7648
+      },
+      {
+        "year": 2000,
+        "usable": 1983,
+        "needed": 17,
+        "added": 17,
+        "pool_remaining": 7406
+      },
+      {
+        "year": 2001,
+        "usable": 1991,
+        "needed": 9,
+        "added": 9,
+        "pool_remaining": 6844
+      },
+      {
+        "year": 2002,
+        "usable": 1986,
+        "needed": 14,
+        "added": 14,
+        "pool_remaining": 6548
+      },
+      {
+        "year": 2003,
+        "usable": 1992,
+        "needed": 8,
+        "added": 8,
+        "pool_remaining": 6091
+      },
+      {
+        "year": 2004,
+        "usable": 1999,
+        "needed": 1,
+        "added": 1,
+        "pool_remaining": 6208
+      },
+      {
+        "year": 2005,
+        "usable": 1997,
+        "needed": 3,
+        "added": 3,
+        "pool_remaining": 6593
+      },
+      {
+        "year": 2006,
+        "usable": 1996,
+        "needed": 4,
+        "added": 4,
+        "pool_remaining": 6466
+      },
+      {
+        "year": 2007,
+        "usable": 1997,
+        "needed": 3,
+        "added": 3,
+        "pool_remaining": 6173
+      },
+      {
+        "year": 2008,
+        "usable": 1996,
+        "needed": 4,
+        "added": 4,
+        "pool_remaining": 6387
+      },
+      {
+        "year": 2009,
+        "usable": 1992,
+        "needed": 8,
+        "added": 8,
+        "pool_remaining": 7486
+      },
+      {
+        "year": 2010,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2011,
+        "usable": 1998,
+        "needed": 2,
+        "added": 2,
+        "pool_remaining": 6559
+      },
+      {
+        "year": 2012,
+        "usable": 1997,
+        "needed": 3,
+        "added": 3,
+        "pool_remaining": 6151
+      },
+      {
+        "year": 2013,
+        "usable": 1986,
+        "needed": 14,
+        "added": 14,
+        "pool_remaining": 5818
+      },
+      {
+        "year": 2014,
+        "usable": 1986,
+        "needed": 14,
+        "added": 14,
+        "pool_remaining": 5756
+      },
+      {
+        "year": 2015,
+        "usable": 1980,
+        "needed": 20,
+        "added": 20,
+        "pool_remaining": 5639
+      },
+      {
+        "year": 2016,
+        "usable": 1981,
+        "needed": 19,
+        "added": 19,
+        "pool_remaining": 5240
+      },
+      {
+        "year": 2017,
+        "usable": 1993,
+        "needed": 7,
+        "added": 7,
+        "pool_remaining": 4977
+      },
+      {
+        "year": 2018,
+        "usable": 1991,
+        "needed": 9,
+        "added": 9,
+        "pool_remaining": 4818
+      },
+      {
+        "year": 2019,
+        "usable": 1987,
+        "needed": 13,
+        "added": 13,
+        "pool_remaining": 4647
+      },
+      {
+        "year": 2020,
+        "usable": 1982,
+        "needed": 18,
+        "added": 18,
+        "pool_remaining": 4490
+      },
+      {
+        "year": 2021,
+        "usable": 1985,
+        "needed": 15,
+        "added": 15,
+        "pool_remaining": 4918
+      }
+    ]
+  },
+  {
+    "round": 2,
+    "seed": 20260916,
+    "added_total": 3,
+    "by_year": [
+      {
+        "year": 1997,
+        "usable": 1998,
+        "needed": 2,
+        "added": 2,
+        "pool_remaining": 7569
+      },
+      {
+        "year": 1998,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 1999,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2000,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2001,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2002,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2003,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2004,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2005,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2006,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2007,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2008,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2009,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2010,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2011,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2012,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2013,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2014,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2015,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2016,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2017,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2018,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2019,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2020,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2021,
+        "usable": 1999,
+        "needed": 1,
+        "added": 1,
+        "pool_remaining": 4917
+      }
+    ]
+  },
+  {
+    "round": 3,
+    "seed": 20260916,
+    "added_total": 0,
+    "by_year": [
+      {
+        "year": 1997,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 1998,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 1999,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2000,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2001,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2002,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2003,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2004,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2005,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2006,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2007,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2008,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2009,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2010,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2011,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2012,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2013,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2014,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2015,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2016,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2017,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2018,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2019,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2020,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      },
+      {
+        "year": 2021,
+        "usable": 2000,
+        "needed": 0,
+        "added": 0
+      }
+    ]
+  }
+]

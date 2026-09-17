@@ -1,0 +1,112 @@
+{
+  "status": "RECONSTRUCTED APPROXIMATION, not the authors' library",
+  "paper": "Theile et al. (2026), Supply Chain Risk and Resolution",
+  "selected_arm": "ppmi_phrased_phrase",
+  "selection_rationale": "Windowed PPMI + truncated SVD on the phrase-augmented corpus, multiword seeds resolved to their joined phrase token. Chosen on outcome-blind criteria only: smallest vocabulary of any arm at 254 against the paper's 208; the most stable vocabulary under both a different random seed (Jaccard 0.864) and a 50% corpus subsample (0.791); the highest lenient blinded precision (0.873); joint-lowest generic-term count; cosine ordering agreement rho=0.655, statistically indistinguishable from the best arm's 0.667. It trails the CBOW arm by exactly one Table 2 term (27/30 vs 28/30) and misses 'customer', which is the paper's second most frequent keyword. That single deficit is outweighed by a vocabulary 100 terms smaller and materially more reproducible.",
+  "selection_was_outcome_blind": true,
+  "outcome_blind_note": "No CAR, transcript score, quintile return, or any downstream result was computed, inspected, or available while this vocabulary was chosen. Selection used only Table 2 recovery, cosine ordering, blinded semantic precision, stability, per-seed coverage, frequency support, generic-language avoidance, and final size.",
+  "model": {
+    "method": "ppmi_svd",
+    "library": "scikit-learn 1.9.0, scipy/numpy",
+    "python": "3.14.7",
+    "env": "dap-env",
+    "corpus": "artifacts/sec_10k_theile_v1/corpora/corpus_phrased.txt.gz",
+    "window": 5,
+    "weighting": "harmonic 1/d",
+    "min_count": 25,
+    "min_df": 10,
+    "dim": 200,
+    "cds": 0.75,
+    "shift_k": 1.0,
+    "eig_weight": 0.5,
+    "max_vocab": 100000,
+    "context_vocab": 15000,
+    "random_seed": 20260916,
+    "bit_reproducible": true,
+    "corpus_tokens": 1403039863,
+    "documents": 50000,
+    "cooccurrence_nnz": 122449546,
+    "ppmi_nnz": 53971532,
+    "singular_value_sum": 82014.91249329702,
+    "train_seconds": 2958.7,
+    "vector_sha256": "c30eb88ef452fd855c6f1d532fb86eae572f0daeb6de298d0bb9b722245bfb6b",
+    "vocab_sha256": "9cec5457ed77349abeadb28d4e858b7fd171bfde837b21900d5052b3fba680ab",
+    "vocab_size": 100000,
+    "dimensions": 200
+  },
+  "extraction": {
+    "method": "ppmi_svd",
+    "multiword_seed_mode": "phrase",
+    "run_dir": "artifacts/sec_10k_theile_v1/models/ppmi_phrased",
+    "seed_vector_resolution": {
+      "channel partners": "phrase_token",
+      "customers": "direct",
+      "demand management": "phrase_token",
+      "distribution": "direct",
+      "fulfillment": "direct",
+      "inventory": "direct",
+      "logistics": "direct",
+      "manufacturing": "direct",
+      "procurement": "direct",
+      "purchasing": "direct",
+      "sourcing": "direct",
+      "suppliers": "direct",
+      "supply": "direct",
+      "supply chain": "phrase_token",
+      "transportation": "direct",
+      "warehousing": "direct"
+    },
+    "seeds_with_empty_candidate_list": [],
+    "candidates_before_dedup": 1600,
+    "unique_candidates": 1054,
+    "multiword_candidates_removed": 801,
+    "single_word_seeds_added": [
+      "customers",
+      "distribution",
+      "fulfillment",
+      "inventory",
+      "logistics",
+      "manufacturing",
+      "procurement",
+      "purchasing",
+      "sourcing",
+      "suppliers",
+      "supply",
+      "transportation",
+      "warehousing"
+    ],
+    "final_size": 254,
+    "paper_final_size": 208,
+    "table_2_recovered": 27,
+    "table_2_total": 30,
+    "table_2_missing": [
+      "customer",
+      "endcustomer",
+      "pims"
+    ]
+  },
+  "random_seeds": {
+    "corpus_sampling": 20260916,
+    "corpus_sampling_scheme": "random.Random(f'{seed}:{year}') per year, sample() over accession-sorted pool",
+    "model_training": 20260916,
+    "blinded_review_sampling": 20260916,
+    "corpus_subsample_stability": 314159,
+    "alternate_training_seed": 777
+  },
+  "corpus": {
+    "documents": 50000,
+    "tokens": 1634226218,
+    "years": "1997-2021, exactly 2,000 filings sampled per year",
+    "forms": [
+      "10-K",
+      "10-K405"
+    ],
+    "eligible_population": 205384,
+    "phrases_detected": 136803,
+    "duplicates_excluded": 182
+  },
+  "environments": {
+    "corpus_ppmi_evaluation": "dap-env (Python 3.14)",
+    "word2vec_only": "dap-w2v (Python 3.13, gensim 4.4.0) because gensim does not build on Python 3.14"
+  }
+}

@@ -1,0 +1,1214 @@
+{
+  "discovery": {
+    "start_year": 1997,
+    "end_year": 2021,
+    "eligible_forms": [
+      "10-K",
+      "10-K405"
+    ],
+    "eligible_total": 205384,
+    "duplicate_accessions_dropped_at_discovery": 8405,
+    "eligible_by_year_form": {
+      "1997": {
+        "10-K": 6540,
+        "10-K405": 3043
+      },
+      "1998": {
+        "10-K": 6661,
+        "10-K405": 3150
+      },
+      "1999": {
+        "10-K": 6495,
+        "10-K405": 3163
+      },
+      "2000": {
+        "10-K": 6388,
+        "10-K405": 3035
+      },
+      "2001": {
+        "10-K": 6017,
+        "10-K405": 2836
+      },
+      "2002": {
+        "10-K": 6523,
+        "10-K405": 2039
+      },
+      "2003": {
+        "10-K": 8121
+      },
+      "2004": {
+        "10-K": 8209
+      },
+      "2005": {
+        "10-K": 8596
+      },
+      "2006": {
+        "10-K": 8470
+      },
+      "2007": {
+        "10-K": 8176
+      },
+      "2008": {
+        "10-K": 8391
+      },
+      "2009": {
+        "10-K": 9494
+      },
+      "2010": {
+        "10-K": 8890
+      },
+      "2011": {
+        "10-K": 8561
+      },
+      "2012": {
+        "10-K": 8154
+      },
+      "2013": {
+        "10-K": 7832
+      },
+      "2014": {
+        "10-K": 7770
+      },
+      "2015": {
+        "10-K": 7659
+      },
+      "2016": {
+        "10-K": 7259
+      },
+      "2017": {
+        "10-K": 6984
+      },
+      "2018": {
+        "10-K": 6827
+      },
+      "2019": {
+        "10-K": 6660
+      },
+      "2020": {
+        "10-K": 6508
+      },
+      "2021": {
+        "10-K": 6933
+      }
+    },
+    "form_census_by_year": {
+      "1997": {
+        "10-K405": 3201,
+        "10-K": 6698,
+        "NT 10-K": 1533,
+        "10-K/A": 2152,
+        "10-K405/A": 538,
+        "10-KT": 18,
+        "10-KT/A": 5
+      },
+      "1998": {
+        "10-K": 6930,
+        "10-K405": 3357,
+        "NT 10-K": 1687,
+        "10-K/A": 1943,
+        "10-K405/A": 589,
+        "10-KT": 14,
+        "10-KT/A": 1
+      },
+      "1999": {
+        "10-K": 6761,
+        "10-K405": 3361,
+        "NT 10-K": 1815,
+        "10-K/A": 1798,
+        "10-K405/A": 610,
+        "10-KT": 9,
+        "10-KT/A": 3
+      },
+      "2000": {
+        "10-K": 6652,
+        "10-K/A": 1530,
+        "10-K405": 3217,
+        "10-K405/A": 483,
+        "NT 10-K": 2285,
+        "10-KT": 12,
+        "10-KT/A": 1
+      },
+      "2001": {
+        "10-K": 6248,
+        "NT 10-K": 2493,
+        "10-K405": 3000,
+        "10-K/A": 1578,
+        "10-K405/A": 494,
+        "10-KT": 18,
+        "10-KT/A": 6
+      },
+      "2002": {
+        "10-K": 6759,
+        "NT 10-K": 2455,
+        "10-K/A": 2010,
+        "10-K405": 2168,
+        "10-K405/A": 123,
+        "10-KT/A": 6,
+        "10-KT": 22,
+        "10-KSB/A": 2,
+        "10-KSB": 1
+      },
+      "2003": {
+        "10-K": 8468,
+        "NT 10-K": 2310,
+        "10-K/A": 2021,
+        "10-KT": 25,
+        "10-KT/A": 6
+      },
+      "2004": {
+        "10-K": 8567,
+        "NT 10-K": 2061,
+        "10-K/A": 2096,
+        "10-KT": 38
+      },
+      "2005": {
+        "10-K": 9017,
+        "NT 10-K": 2540,
+        "10-K/A": 2180,
+        "10-KT": 8,
+        "10-KT/A": 3
+      },
+      "2006": {
+        "10-K": 8852,
+        "10-K/A": 1510,
+        "NT 10-K": 2357,
+        "10-KT": 19,
+        "10-KT/A": 5
+      },
+      "2007": {
+        "10-K": 8574,
+        "NT 10-K": 2278,
+        "10-K/A": 1470,
+        "10-KT": 13,
+        "10-KT/A": 4
+      },
+      "2008": {
+        "10-K": 8746,
+        "NT 10-K": 2308,
+        "10-K/A": 1801,
+        "10-KT/A": 3,
+        "10-KT": 11
+      },
+      "2009": {
+        "10-K/A": 2320,
+        "10-K": 9839,
+        "NT 10-K": 2122,
+        "10-KT": 11,
+        "10-KT/A": 2
+      },
+      "2010": {
+        "10-K": 9165,
+        "NT 10-K": 1817,
+        "10-K/A": 2213,
+        "10-KT": 21,
+        "10-KT/A": 9
+      },
+      "2011": {
+        "10-K": 8840,
+        "NT 10-K": 1704,
+        "10-K/A": 1995,
+        "10-KT": 27,
+        "10-KT/A": 9
+      },
+      "2012": {
+        "10-K": 8393,
+        "NT 10-K": 1574,
+        "10-K/A": 1840,
+        "10-KT": 23,
+        "10-KT/A": 5
+      },
+      "2013": {
+        "10-K": 8105,
+        "10-K/A": 1765,
+        "NT 10-K": 1542,
+        "10-KT": 22,
+        "10-KT/A": 17
+      },
+      "2014": {
+        "10-K": 8084,
+        "NT 10-K": 1423,
+        "10-K/A": 1557,
+        "10-KT": 41,
+        "10-KT/A": 8
+      },
+      "2015": {
+        "10-K": 7985,
+        "NT 10-K": 1332,
+        "10-K/A": 1258,
+        "10-KT": 22,
+        "10-KT/A": 5
+      },
+      "2016": {
+        "10-K": 7589,
+        "NT 10-K": 1211,
+        "10-K/A": 1175,
+        "10-KT": 37,
+        "10-KT/A": 6
+      },
+      "2017": {
+        "10-K": 7248,
+        "10-K/A": 931,
+        "NT 10-K": 1070,
+        "10-KT": 19,
+        "10-KT/A": 3
+      },
+      "2018": {
+        "10-K": 7092,
+        "10-K/A": 1003,
+        "NT 10-K": 968,
+        "10-KT": 28,
+        "10-KT/A": 6
+      },
+      "2019": {
+        "10-K": 6923,
+        "10-K/A": 991,
+        "NT 10-K": 874,
+        "10-KT": 28,
+        "10-KT/A": 2
+      },
+      "2020": {
+        "10-K": 6769,
+        "NT 10-K": 714,
+        "10-K/A": 914,
+        "10-KT": 13,
+        "10-KT/A": 7
+      },
+      "2021": {
+        "10-K": 7181,
+        "NT 10-K": 707,
+        "10-K/A": 1099,
+        "10-KT": 22,
+        "10-KT/A": 2
+      }
+    }
+  },
+  "sampling": {
+    "seed": 20260916,
+    "seed_scheme": "random.Random(f'{seed}:{year}') per year, sample() over accession-sorted pool",
+    "per_year": 2000,
+    "total_selected": 50000,
+    "cached_pool_years": [
+      2003,
+      2004
+    ],
+    "cached_raw_filings_available": 28499,
+    "by_year": [
+      {
+        "year": 1997,
+        "eligible_population": 9583,
+        "sampling_pool": 9583,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K405": 648,
+          "10-K": 1352
+        },
+        "pool_by_form": {
+          "10-K": 6540,
+          "10-K405": 3043
+        }
+      },
+      {
+        "year": 1998,
+        "eligible_population": 9811,
+        "sampling_pool": 9811,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 1358,
+          "10-K405": 642
+        },
+        "pool_by_form": {
+          "10-K": 6661,
+          "10-K405": 3150
+        }
+      },
+      {
+        "year": 1999,
+        "eligible_population": 9658,
+        "sampling_pool": 9658,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K405": 640,
+          "10-K": 1360
+        },
+        "pool_by_form": {
+          "10-K": 6495,
+          "10-K405": 3163
+        }
+      },
+      {
+        "year": 2000,
+        "eligible_population": 9423,
+        "sampling_pool": 9423,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K405": 632,
+          "10-K": 1368
+        },
+        "pool_by_form": {
+          "10-K": 6388,
+          "10-K405": 3035
+        }
+      },
+      {
+        "year": 2001,
+        "eligible_population": 8853,
+        "sampling_pool": 8853,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 745,
+          "cached": 1255
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K405": 623,
+          "10-K": 1377
+        },
+        "pool_by_form": {
+          "10-K405": 2836,
+          "10-K": 6017
+        }
+      },
+      {
+        "year": 2002,
+        "eligible_population": 8562,
+        "sampling_pool": 8562,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "cached": 1550,
+          "download": 450
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 1550,
+          "10-K405": 450
+        },
+        "pool_by_form": {
+          "10-K": 6523,
+          "10-K405": 2039
+        }
+      },
+      {
+        "year": 2003,
+        "eligible_population": 8121,
+        "sampling_pool": 8099,
+        "pool_source": "cached_only",
+        "selected_by_source": {
+          "cached": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8099
+        }
+      },
+      {
+        "year": 2004,
+        "eligible_population": 8209,
+        "sampling_pool": 8209,
+        "pool_source": "cached_only",
+        "selected_by_source": {
+          "cached": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8209
+        }
+      },
+      {
+        "year": 2005,
+        "eligible_population": 8596,
+        "sampling_pool": 8596,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 1967,
+          "cached": 33
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8596
+        }
+      },
+      {
+        "year": 2006,
+        "eligible_population": 8470,
+        "sampling_pool": 8470,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8470
+        }
+      },
+      {
+        "year": 2007,
+        "eligible_population": 8176,
+        "sampling_pool": 8176,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8176
+        }
+      },
+      {
+        "year": 2008,
+        "eligible_population": 8391,
+        "sampling_pool": 8391,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8391
+        }
+      },
+      {
+        "year": 2009,
+        "eligible_population": 9494,
+        "sampling_pool": 9494,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 9494
+        }
+      },
+      {
+        "year": 2010,
+        "eligible_population": 8890,
+        "sampling_pool": 8890,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8890
+        }
+      },
+      {
+        "year": 2011,
+        "eligible_population": 8561,
+        "sampling_pool": 8561,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8561
+        }
+      },
+      {
+        "year": 2012,
+        "eligible_population": 8154,
+        "sampling_pool": 8154,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 8154
+        }
+      },
+      {
+        "year": 2013,
+        "eligible_population": 7832,
+        "sampling_pool": 7832,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 7832
+        }
+      },
+      {
+        "year": 2014,
+        "eligible_population": 7770,
+        "sampling_pool": 7770,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 7770
+        }
+      },
+      {
+        "year": 2015,
+        "eligible_population": 7659,
+        "sampling_pool": 7659,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 7659
+        }
+      },
+      {
+        "year": 2016,
+        "eligible_population": 7259,
+        "sampling_pool": 7259,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 7259
+        }
+      },
+      {
+        "year": 2017,
+        "eligible_population": 6984,
+        "sampling_pool": 6984,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 6984
+        }
+      },
+      {
+        "year": 2018,
+        "eligible_population": 6827,
+        "sampling_pool": 6827,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 6827
+        }
+      },
+      {
+        "year": 2019,
+        "eligible_population": 6660,
+        "sampling_pool": 6660,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 6660
+        }
+      },
+      {
+        "year": 2020,
+        "eligible_population": 6508,
+        "sampling_pool": 6508,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 6508
+        }
+      },
+      {
+        "year": 2021,
+        "eligible_population": 6933,
+        "sampling_pool": 6933,
+        "pool_source": "full_eligible",
+        "selected_by_source": {
+          "download": 2000
+        },
+        "selected": 2000,
+        "selected_by_form": {
+          "10-K": 2000
+        },
+        "pool_by_form": {
+          "10-K": 6933
+        }
+      }
+    ]
+  },
+  "coverage": {
+    "documents_selected": 50246,
+    "documents_retrieved": 50246,
+    "documents_usable": 50182,
+    "total_tokens": 1636524122,
+    "stale_manifest_rows_ignored": 0,
+    "duplicate_accessions_in_sample": 0,
+    "duplicate_cik_report_period_pairs": 61,
+    "duplicate_content_hashes": 27,
+    "parser_status_counts": {
+      "ok": 50182,
+      "too_few_tokens": 54,
+      "no_primary_document": 10
+    },
+    "by_year": [
+      {
+        "year": 1997,
+        "selected": 2014,
+        "retrieved": 2014,
+        "usable": 2006,
+        "shortfall": -6,
+        "download_failed": 0,
+        "no_primary_document": 1,
+        "too_few_tokens": 7,
+        "by_form": {
+          "10-K405": 652,
+          "10-K": 1354
+        },
+        "by_source": {
+          "download": 2006
+        },
+        "tokens_total": 32754273,
+        "tokens_median": 14509,
+        "doc_mb_median": 0.149
+      },
+      {
+        "year": 1998,
+        "selected": 2016,
+        "retrieved": 2016,
+        "usable": 2008,
+        "shortfall": -8,
+        "download_failed": 0,
+        "no_primary_document": 4,
+        "too_few_tokens": 4,
+        "by_form": {
+          "10-K405": 641,
+          "10-K": 1367
+        },
+        "by_source": {
+          "download": 2008
+        },
+        "tokens_total": 34524764,
+        "tokens_median": 15708,
+        "doc_mb_median": 0.16
+      },
+      {
+        "year": 1999,
+        "selected": 2010,
+        "retrieved": 2010,
+        "usable": 2006,
+        "shortfall": -6,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 4,
+        "by_form": {
+          "10-K405": 640,
+          "10-K": 1366
+        },
+        "by_source": {
+          "download": 2006
+        },
+        "tokens_total": 36871012,
+        "tokens_median": 17074,
+        "doc_mb_median": 0.173
+      },
+      {
+        "year": 2000,
+        "selected": 2017,
+        "retrieved": 2017,
+        "usable": 2004,
+        "shortfall": -4,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 13,
+        "by_form": {
+          "10-K": 1367,
+          "10-K405": 637
+        },
+        "by_source": {
+          "download": 2004
+        },
+        "tokens_total": 38356078,
+        "tokens_median": 17820,
+        "doc_mb_median": 0.182
+      },
+      {
+        "year": 2001,
+        "selected": 2009,
+        "retrieved": 2009,
+        "usable": 2002,
+        "shortfall": -2,
+        "download_failed": 0,
+        "no_primary_document": 3,
+        "too_few_tokens": 4,
+        "by_form": {
+          "10-K405": 621,
+          "10-K": 1381
+        },
+        "by_source": {
+          "download": 744,
+          "cached": 1258
+        },
+        "tokens_total": 39945686,
+        "tokens_median": 19216,
+        "doc_mb_median": 0.205
+      },
+      {
+        "year": 2002,
+        "selected": 2014,
+        "retrieved": 2014,
+        "usable": 2003,
+        "shortfall": -3,
+        "download_failed": 0,
+        "no_primary_document": 1,
+        "too_few_tokens": 10,
+        "by_form": {
+          "10-K": 1558,
+          "10-K405": 445
+        },
+        "by_source": {
+          "cached": 1558,
+          "download": 445
+        },
+        "tokens_total": 44157381,
+        "tokens_median": 21679,
+        "doc_mb_median": 0.243
+      },
+      {
+        "year": 2003,
+        "selected": 2008,
+        "retrieved": 2008,
+        "usable": 2005,
+        "shortfall": -5,
+        "download_failed": 0,
+        "no_primary_document": 1,
+        "too_few_tokens": 2,
+        "by_form": {
+          "10-K": 2005
+        },
+        "by_source": {
+          "cached": 2005
+        },
+        "tokens_total": 50538717,
+        "tokens_median": 24332,
+        "doc_mb_median": 0.337
+      },
+      {
+        "year": 2004,
+        "selected": 2001,
+        "retrieved": 2001,
+        "usable": 2000,
+        "shortfall": 0,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 1,
+        "by_form": {
+          "10-K": 2000
+        },
+        "by_source": {
+          "cached": 2000
+        },
+        "tokens_total": 50919575,
+        "tokens_median": 24849,
+        "doc_mb_median": 0.424
+      },
+      {
+        "year": 2005,
+        "selected": 2003,
+        "retrieved": 2003,
+        "usable": 2003,
+        "shortfall": -3,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2003
+        },
+        "by_source": {
+          "download": 1970,
+          "cached": 33
+        },
+        "tokens_total": 54871494,
+        "tokens_median": 27497,
+        "doc_mb_median": 0.646
+      },
+      {
+        "year": 2006,
+        "selected": 2004,
+        "retrieved": 2004,
+        "usable": 2003,
+        "shortfall": -3,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 1,
+        "by_form": {
+          "10-K": 2003
+        },
+        "by_source": {
+          "download": 2003
+        },
+        "tokens_total": 56846855,
+        "tokens_median": 28525,
+        "doc_mb_median": 0.8
+      },
+      {
+        "year": 2007,
+        "selected": 2003,
+        "retrieved": 2003,
+        "usable": 2003,
+        "shortfall": -3,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2003
+        },
+        "by_source": {
+          "download": 2003
+        },
+        "tokens_total": 64587108,
+        "tokens_median": 32538,
+        "doc_mb_median": 1.039
+      },
+      {
+        "year": 2008,
+        "selected": 2004,
+        "retrieved": 2004,
+        "usable": 2004,
+        "shortfall": -4,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2004
+        },
+        "by_source": {
+          "download": 2004
+        },
+        "tokens_total": 64571027,
+        "tokens_median": 32320,
+        "doc_mb_median": 1.029
+      },
+      {
+        "year": 2009,
+        "selected": 2008,
+        "retrieved": 2008,
+        "usable": 2003,
+        "shortfall": -3,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 5,
+        "by_form": {
+          "10-K": 2003
+        },
+        "by_source": {
+          "download": 2003
+        },
+        "tokens_total": 66525781,
+        "tokens_median": 31301,
+        "doc_mb_median": 1.085
+      },
+      {
+        "year": 2010,
+        "selected": 2000,
+        "retrieved": 2000,
+        "usable": 2000,
+        "shortfall": 0,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2000
+        },
+        "by_source": {
+          "download": 2000
+        },
+        "tokens_total": 71600219,
+        "tokens_median": 33374,
+        "doc_mb_median": 1.287
+      },
+      {
+        "year": 2011,
+        "selected": 2002,
+        "retrieved": 2002,
+        "usable": 2002,
+        "shortfall": -2,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2002
+        },
+        "by_source": {
+          "download": 2002
+        },
+        "tokens_total": 73902463,
+        "tokens_median": 34199,
+        "doc_mb_median": 1.307
+      },
+      {
+        "year": 2012,
+        "selected": 2003,
+        "retrieved": 2003,
+        "usable": 2002,
+        "shortfall": -2,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 1,
+        "by_form": {
+          "10-K": 2002
+        },
+        "by_source": {
+          "download": 2002
+        },
+        "tokens_total": 74438678,
+        "tokens_median": 35153,
+        "doc_mb_median": 1.334
+      },
+      {
+        "year": 2013,
+        "selected": 2014,
+        "retrieved": 2014,
+        "usable": 2014,
+        "shortfall": -14,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2014
+        },
+        "by_source": {
+          "download": 2014
+        },
+        "tokens_total": 79783813,
+        "tokens_median": 37253,
+        "doc_mb_median": 1.468
+      },
+      {
+        "year": 2014,
+        "selected": 2014,
+        "retrieved": 2014,
+        "usable": 2014,
+        "shortfall": -14,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2014
+        },
+        "by_source": {
+          "download": 2014
+        },
+        "tokens_total": 79677893,
+        "tokens_median": 37188,
+        "doc_mb_median": 1.462
+      },
+      {
+        "year": 2015,
+        "selected": 2020,
+        "retrieved": 2020,
+        "usable": 2020,
+        "shortfall": -20,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2020
+        },
+        "by_source": {
+          "download": 2020
+        },
+        "tokens_total": 81176121,
+        "tokens_median": 38961,
+        "doc_mb_median": 1.538
+      },
+      {
+        "year": 2016,
+        "selected": 2019,
+        "retrieved": 2019,
+        "usable": 2019,
+        "shortfall": -19,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2019
+        },
+        "by_source": {
+          "download": 2019
+        },
+        "tokens_total": 84920708,
+        "tokens_median": 41019,
+        "doc_mb_median": 1.652
+      },
+      {
+        "year": 2017,
+        "selected": 2007,
+        "retrieved": 2007,
+        "usable": 2007,
+        "shortfall": -7,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2007
+        },
+        "by_source": {
+          "download": 2007
+        },
+        "tokens_total": 88348070,
+        "tokens_median": 42912,
+        "doc_mb_median": 1.974
+      },
+      {
+        "year": 2018,
+        "selected": 2009,
+        "retrieved": 2009,
+        "usable": 2009,
+        "shortfall": -9,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2009
+        },
+        "by_source": {
+          "download": 2009
+        },
+        "tokens_total": 88718509,
+        "tokens_median": 44242,
+        "doc_mb_median": 2.01
+      },
+      {
+        "year": 2019,
+        "selected": 2013,
+        "retrieved": 2013,
+        "usable": 2013,
+        "shortfall": -13,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 0,
+        "by_form": {
+          "10-K": 2013
+        },
+        "by_source": {
+          "download": 2013
+        },
+        "tokens_total": 90382615,
+        "tokens_median": 45276,
+        "doc_mb_median": 2.114
+      },
+      {
+        "year": 2020,
+        "selected": 2018,
+        "retrieved": 2018,
+        "usable": 2017,
+        "shortfall": -17,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 1,
+        "by_form": {
+          "10-K": 2017
+        },
+        "by_source": {
+          "download": 2017
+        },
+        "tokens_total": 92371438,
+        "tokens_median": 46062,
+        "doc_mb_median": 2.518
+      },
+      {
+        "year": 2021,
+        "selected": 2016,
+        "retrieved": 2016,
+        "usable": 2015,
+        "shortfall": -15,
+        "download_failed": 0,
+        "no_primary_document": 0,
+        "too_few_tokens": 1,
+        "by_form": {
+          "10-K": 2015
+        },
+        "by_source": {
+          "download": 2015
+        },
+        "tokens_total": 95733844,
+        "tokens_median": 48201,
+        "doc_mb_median": 2.349
+      }
+    ]
+  }
+}
