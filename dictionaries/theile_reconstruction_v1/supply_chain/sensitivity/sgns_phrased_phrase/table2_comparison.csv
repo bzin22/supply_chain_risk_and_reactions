@@ -1,0 +1,31 @@
+term,is_seed,paper_cosine,paper_transcript_frequency,recovered,our_max_cosine,our_nearest_seed,our_seed_rank,corpus_frequency,corpus_document_frequency,in_model_vocabulary,discrepancy_class,diagnosis
+customers,True,1.0,77945,True,1.0,customers,0,1167298,40722,True,,recovered
+supply,True,1.0,58816,True,1.0,supply,0,189249,30003,True,,recovered
+inventory,True,1.0,29466,True,1.0,inventory,0,267431,28309,True,,recovered
+manufacturing,True,1.0,12084,True,1.0,manufacturing,0,255536,23618,True,,recovered
+distribution,True,1.0,11690,True,1.0,distribution,0,426358,41619,True,,recovered
+suppliers,True,1.0,6519,True,1.0,suppliers,0,168230,25413,True,,recovered
+transportation,True,1.0,5515,True,1.0,transportation,0,102570,16530,True,,recovered
+logistics,True,1.0,5037,True,1.0,logistics,0,27773,7056,True,,recovered
+purchasing,True,1.0,2555,True,1.0,purchasing,0,55622,22472,True,,recovered
+sourcing,True,1.0,2370,True,1.0,sourcing,0,17234,6780,True,,recovered
+procurement,True,1.0,2197,True,1.0,procurement,0,21189,8247,True,,recovered
+fulfillment,True,1.0,854,True,1.0,fulfillment,0,16587,6497,True,,recovered
+warehousing,True,1.0,328,True,1.0,warehousing,0,11005,4740,True,,recovered
+resellers,False,0.86,159,True,0.844123,channel partners,1,18639,3974,True,,recovered
+endcustomers,False,0.84,2,True,0.80968,channel partners,2,2980,418,True,,recovered
+inventories,False,0.83,5415,True,0.850279,inventory,1,95646,19124,True,,recovered
+vars,False,0.83,27,True,0.749889,channel partners,14,2700,726,True,,recovered
+pims,False,0.83,2,False,,,,345,35,True,proprietary_algorithm,"in vocabulary (tf=345) with max seed cosine 0.260, and missed by every method tested, so no single model explains it"
+supplychain,False,0.81,485,True,0.80135,supply chain,1,584,351,True,,recovered
+vendors,False,0.8,2189,True,0.816921,suppliers,2,90764,21772,True,,recovered
+isvs,False,0.8,10,True,0.700698,channel partners,35,776,169,True,,recovered
+warehouse,False,0.79,1318,True,0.760107,warehousing,2,33216,8931,True,,recovered
+workflow,False,0.78,400,False,,,,4820,1803,True,model,"in vocabulary (tf=4,820) but max seed cosine 0.461 is outside every top-100; other arms do recover it"
+integrators,False,0.78,81,True,0.655664,channel partners,60,1970,956,True,,recovered
+workinprocess,False,0.78,31,True,0.655416,inventory,17,2599,1657,True,,recovered
+endcustomer,False,0.78,21,True,0.638626,channel partners,81,1143,417,True,,recovered
+eprocurement,False,0.77,4,True,0.570437,procurement,49,296,120,True,,recovered
+customer,False,0.76,44204,True,0.775855,customers,2,433122,35415,True,,recovered
+slowmoving,False,0.76,89,True,0.661917,inventory,13,1389,808,True,,recovered
+supplier,False,0.75,4854,True,0.755989,suppliers,6,52050,15783,True,,recovered

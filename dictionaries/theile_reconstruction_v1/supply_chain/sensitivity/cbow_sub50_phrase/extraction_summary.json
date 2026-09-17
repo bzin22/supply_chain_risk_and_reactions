@@ -1,0 +1,50 @@
+{
+  "method": "word2vec_cbow",
+  "multiword_seed_mode": "phrase",
+  "run_dir": "artifacts/sec_10k_theile_v1/models/cbow_sub50",
+  "seed_vector_resolution": {
+    "channel partners": "phrase_token",
+    "customers": "direct",
+    "demand management": "phrase_token",
+    "distribution": "direct",
+    "fulfillment": "direct",
+    "inventory": "direct",
+    "logistics": "direct",
+    "manufacturing": "direct",
+    "procurement": "direct",
+    "purchasing": "direct",
+    "sourcing": "direct",
+    "suppliers": "direct",
+    "supply": "direct",
+    "supply chain": "phrase_token",
+    "transportation": "direct",
+    "warehousing": "direct"
+  },
+  "seeds_with_empty_candidate_list": [],
+  "candidates_before_dedup": 1600,
+  "unique_candidates": 1149,
+  "multiword_candidates_removed": 774,
+  "single_word_seeds_added": [
+    "customers",
+    "distribution",
+    "fulfillment",
+    "inventory",
+    "logistics",
+    "manufacturing",
+    "procurement",
+    "purchasing",
+    "sourcing",
+    "suppliers",
+    "supply",
+    "transportation",
+    "warehousing"
+  ],
+  "final_size": 377,
+  "paper_final_size": 208,
+  "table_2_recovered": 28,
+  "table_2_total": 30,
+  "table_2_missing": [
+    "eprocurement",
+    "pims"
+  ]
+}

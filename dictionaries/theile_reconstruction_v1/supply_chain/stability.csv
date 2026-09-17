@@ -1,0 +1,6 @@
+arm,perturbation,size_baseline,size_variant,jaccard,retained_top_50,retained_top_100,retained_top_208,retained_all
+ppmi,random_seed,254,251,0.8635,1.0,0.98,0.9567,0.9213
+ppmi,corpus_50pct,254,269,0.7911,1.0,0.98,0.9471,0.9094
+cbow,random_seed,354,358,0.6993,1.0,0.98,0.9183,0.8277
+cbow,corpus_50pct,354,377,0.5961,1.0,0.95,0.8846,0.7712
+skipgram,random_seed,493,514,0.5959,1.0,0.99,0.875,0.7627
