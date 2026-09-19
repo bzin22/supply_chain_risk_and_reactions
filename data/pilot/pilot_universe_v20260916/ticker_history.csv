@@ -1,0 +1,6 @@
+company_id,cik,ticker,effective_start_quarter,effective_end_quarter,exchange,security_type,source_url,retrieved_date
+CIK0000320193,0000320193,AAPL,2010Q1,2019Q4,NASDAQ,common_stock,https://www.sec.gov/Archives/edgar/data/320193/000032019319000119/a10-k20199282019.htm,2026-09-16
+CIK0000008177,0000008177,AAME,2010Q1,2019Q4,NASDAQ,common_stock,https://www.sec.gov/Archives/edgar/data/8177/000114036120006734/hc10009874x1_10k.htm,2026-09-16
+CIK0000037996,0000037996,F,2010Q1,2019Q4,NYSE,common_stock,https://www.sec.gov/Archives/edgar/data/37996/000003799620000010/f1231201910-k.htm,2026-09-16
+CIK0000945436,0000945436,SUNE,2010Q1,2016Q2,NYSE,common_stock,https://www.sec.gov/Archives/edgar/data/945436/000119312516559806/d185590d8k.htm,2026-09-16
+CIK0000031791,0000031791,PKI,2010Q1,2019Q4,NYSE,common_stock,https://www.sec.gov/Archives/edgar/data/31791/000003179120000003/pki1229201910k.htm,2026-09-16

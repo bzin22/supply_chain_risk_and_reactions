@@ -1,0 +1,3 @@
+response_status,sample_firm_quarters,weighted_population_estimate,terminal_provider_unavailability_count,terminal_provider_unavailability_weighted,valid_count,valid_weighted
+terminal_provider_unavailability,477,89002.7985,477,89002.7985,0,0.0000
+valid,323,59805.2015,0,0.0000,323,59805.2015

@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-09-16T22:23:23.478271+00:00",
+  "study_period": {
+    "start": "2010Q1",
+    "end": "2019Q4"
+  },
+  "verification": "every listed quarter was parsed and verified later than 2019Q4",
+  "counts_before_removal": {
+    "raw_files": 9000,
+    "raw_bytes": 303105482,
+    "call_rows": 120653,
+    "segments": 1111057,
+    "unique_post_2019_calls": 9000,
+    "affected_files": 9943,
+    "affected_file_bytes": 7836081247
+  },
+  "archive": ".archive/post_2019_removed_20260916",
+  "active_pipeline_archive_exclusion": "archive is outside all default scan paths"
+}

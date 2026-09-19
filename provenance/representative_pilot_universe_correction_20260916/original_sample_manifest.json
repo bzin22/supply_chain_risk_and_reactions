@@ -1,0 +1,32 @@
+{
+  "version": "v20260916",
+  "created_at_utc": "2026-09-17T00:23:53.398148+00:00",
+  "study_period": "2010Q1-2019Q4",
+  "sampling_unit": "resolved eligible operating-company firm-quarter",
+  "strata": [
+    "year",
+    "exchange",
+    "sic_division"
+  ],
+  "allocation": "proportional with largest-remainder integer allocation",
+  "seed": 20260916,
+  "population_firm_quarters": 172945,
+  "sample_firm_quarters": 800,
+  "population_unique_companies": 5439,
+  "sample_unique_companies": 744,
+  "universe_path": "data/universe/us_operating_companies_v20260916/eligible_firm_quarters.csv",
+  "universe_sha256": "7eb057d26bebb128641cddf37e6cd634e4e9a7b7e1d4c2f6b5f2abf4f0821d9f",
+  "sample_sha256": "2a6ab40a18ff71ebb693d9cae8ed0ce76188d06f95ad7d6dd25c5be683056c30",
+  "sample_by_year": {
+    "2010": 62,
+    "2011": 65,
+    "2012": 69,
+    "2013": 74,
+    "2014": 76,
+    "2015": 83,
+    "2016": 86,
+    "2017": 91,
+    "2018": 95,
+    "2019": 99
+  }
+}

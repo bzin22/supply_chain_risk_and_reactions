@@ -1,0 +1,10 @@
+current_sector,requested_count,provider_success_count,valid_full_transcript_count,duplicate_count,no_transcript_count,flagged_or_error_count
+Consumer Goods,3000,1710,1706,0,891,403
+Energy,3000,1795,1794,0,802,404
+Financial Services,3000,1920,1918,0,693,389
+Healthcare,3000,2295,2295,0,308,397
+Industrials,3000,2144,2140,0,478,382
+Real Estate,3000,1658,1656,0,925,419
+Retail,3000,2131,2128,0,457,415
+Semiconductors,3000,2422,2420,0,349,231
+Technology,3000,2102,2101,0,498,401

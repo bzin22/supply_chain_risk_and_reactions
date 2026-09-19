@@ -1,0 +1,35 @@
+{
+  "eligible_firm_quarters": 800,
+  "unique_companies": 728,
+  "existing_valid_reused": 41,
+  "new_valid_transcripts": 282,
+  "terminal_state_counts": {
+    "terminal_provider_unavailability": 477,
+    "valid": 323
+  },
+  "weighted_terminal_state_rates": {
+    "terminal_provider_unavailability": 0.5981049306273596,
+    "valid": 0.40189506937264036
+  },
+  "live_requests": 1575,
+  "live_bytes": 12486555,
+  "superseded_sample_attempts_excluded": 461,
+  "attempt_multiplier_on_initially_unresolved": 2.075098814229249,
+  "rate_limit_api_transport_failures": 349,
+  "rate_limit_failures": 0,
+  "provider_or_http_failures": 0,
+  "transport_failures": 349,
+  "identity_manual_review": 41,
+  "identity_or_quarter_mismatches": 0,
+  "exact_duplicate_groups": 0,
+  "duplicate_noncanonical_observations": 0,
+  "high_confidence_call_dates": 63,
+  "raw_hash_failures": [],
+  "post_2019_observations": 0,
+  "full_universe_firm_quarters": 151073,
+  "full_universe_existing_valid_reusable": 10664,
+  "estimated_full_live_requests_excluding_transport_outage": 226800,
+  "estimated_duration_hours_at_30_requests_per_minute": 126.0,
+  "estimated_raw_storage_bytes": 2278980191,
+  "estimated_final_valid_transcripts": 60715
+}

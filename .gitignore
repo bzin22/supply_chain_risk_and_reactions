@@ -10,6 +10,7 @@ venv/
 
 # Node
 node_modules
+.lavish/
 
 # Locally generated analysis outputs. Nothing here is committed: no result in
 # this repository has passed the paper-alignment checks in README.md, so a
@@ -27,6 +28,9 @@ source_research_paper/
 
 # LLM scoring artifacts (31GB of per-call JSON responses)
 artifacts/
+
+# Recoverable material removed from active pipeline scan paths.
+.archive/
 
 # Large inspection dumps (68MB each)
 *.inspect.ndjson

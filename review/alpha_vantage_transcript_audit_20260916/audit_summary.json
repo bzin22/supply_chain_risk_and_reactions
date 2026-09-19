@@ -1,0 +1,25 @@
+{
+  "requested_pair_count": 27000,
+  "raw_file_count": 27000,
+  "missing_requested_pairs": [],
+  "unexpected_pairs": [],
+  "classification_counts": {
+    "valid full transcript": 18158,
+    "no transcript": 5401,
+    "provider information/rate-limit response": 3414,
+    "API error": 8,
+    "placeholder/redacted": 1,
+    "copyright/boilerplate": 1,
+    "probably truncated": 1,
+    "malformed": 0,
+    "duplicate": 0,
+    "uncertain/manual review": 16
+  },
+  "short_under_1000_count": 13,
+  "exact_duplicate_hash_groups": 0,
+  "provider_information_retry_count": 3414,
+  "api_error_retry_count": 8,
+  "unverifiable_no_transcript_retry_count": 5401,
+  "reported_date_policy": "Payload reportedDate/date fields are recorded only as unverified provider metadata, never as verified earnings-call dates.",
+  "paper_period_cache_note": "The paper covers 2008-2019. This cache begins at 2010Q1, so it contains no 2008-2009 requests."
+}

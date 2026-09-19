@@ -1,6 +1,6 @@
 # Supply chain risk and earnings call returns: recreation in progress
 
-This repository is an in-progress attempt to recreate Theile et al. (2026),
+This repository is an in-progress 2010-2019 comparison with Theile et al. (2026),
 "Supply Chain Risk and Resolution: An Empirical Study of Stock Market
 Reactions." It is not a replication yet. Nothing here has been shown to match
 the paper.
@@ -58,10 +58,10 @@ be described as a replication result.
 | Risk dictionary | High-confidence 161-term reconstruction: 144 Table 3 terms plus 17 reconstructed non-occurring terms | The unpublished author-original dictionary |
 | Resolution dictionary | 55-term reconstruction: the 28 distinct Table 4 keywords plus Oxford-printed forms | The unpublished author-original dictionary |
 | Supply chain vocabulary | Generated from 10-K text by `build_supply_chain_library.py`, a different vocabulary | The paper's supply chain word list |
-| Event dates | Proxy dates from the Alpha Vantage `EARNINGS` `reportedDate` | The paper's call dates |
-| Firm universe | Provisional 450-company convenience sample, 9 sectors (`data/provisional/`) | The paper's historical US-company universe |
-| Sample period | 2010Q1 to 2024Q4 as currently configured | The paper's period |
-| Industry grouping | yfinance sector and industry labels | SIC codes |
+| Event dates | Reported earnings dates, led by Alpha Vantage EARNINGS `reportedDate` and mapped to transcript fiscal quarters | The paper's validated actual call dates |
+| Firm universe | Versioned public-source point-in-time universe with 151,073 US-domiciled resolved firm-quarters | A proprietary historical security master matching the paper's rules |
+| Sample period | Hard-bounded to 2010Q1 through 2019Q4 | The paper begins in 2008; this comparison deliberately begins in 2010 |
+| Industry grouping | Current SEC SIC with historical changes unresolved | Point-in-time SIC codes |
 | Quintiles | Zero-score calls in their own group, quintiles cut within positive scores only | Quintiles over the whole analysable sample |
 | Outlier handling | None | 1% / 99% winsorization |
 | Regression | None. Only group means and medians | The paper's fixed-effects specification |
@@ -85,9 +85,12 @@ code that produces study results. Lives in
 `analysis/provisional_diagnostics/`. Each script takes an explicit run
 directory and output directory. See that directory's README.
 
-**Validated results.** None exist. When the gaps above are closed, validated
-results get their own clearly named directory and are committed with the
-checks that passed.
+**Validated transcript corpus.** The immutable local v1 corpus is
+`data/final/earnings_call_transcripts_validated_2010_2019_v1.csv`, with its
+SHA-256 companion and manifest beside it. It contains 58,305 dated calls. The
+file is an input to later scoring and event-study work, not a replication
+result. The 2.2 GB CSV is excluded from Git; the checksum, manifest, build code,
+and validation report are versioned.
 
 Provisional inputs that are not the paper's are quarantined in
 `data/provisional/` with their provenance written down.
@@ -112,6 +115,63 @@ override. The anchor, expanded and overlap-adjusted files beside it are
 predeclared sensitivity artifacts and are never a default. The overlap between
 the resolution dictionary and the supply-chain vocabulary is deliberately left
 open until the reconstructed supply-chain vocabulary exists.
+
+## Hard study-period boundary
+
+The only study period is `2010Q1` through `2019Q4`. The collector exposes no
+runtime start/end-quarter options; changing the period requires a reviewed
+code change to `study_period.py`. Scoring, date joining, event-input
+collection, segment joining, and CAR estimation reject any input observation
+outside that boundary.
+
+Run the active-data gate with:
+
+```
+conda run -n dap-env python verify_active_study_period.py
+```
+
+The 2020-2024 material removed on 2026-09-16 is recoverable under the
+gitignored `.archive/post_2019_removed_20260916/` tree. Its row- and file-level
+checksums and removal report are under `provenance/post_2019_removal_20260916/`.
+
+## Historical universe and bounded coverage work
+
+The versioned public-source universe is built with:
+
+```
+conda run -n dap-env python build_historical_universe.py capture
+conda run -n dap-env python build_historical_universe.py sec-metadata
+conda run -n dap-env python build_historical_universe.py build
+```
+
+Its active tables are under
+`data/universe/us_operating_companies_v20260916/`. Historical membership and
+ticker intervals come from 40 quarter-end Alpha Vantage listing snapshots;
+SEC CIK and issuer metadata provide identity and SIC corroboration. Unresolved
+identities are retained for review but excluded from transcript request inputs.
+The active resolved universe has 151,073 firm-quarters; preferred shares and
+other non-common securities are excluded by both name and ticker-form rules.
+
+The representative coverage sample is deterministic and capped at 800
+firm-quarters:
+
+```
+conda run -n dap-env python sample_representative_coverage_pilot.py
+conda run -n dap-env python collect_transcript_pilot.py \
+  --universe data/pilot/representative_coverage_pilot_v20260916/eligible_firm_quarters.csv \
+  --output-dir artifacts/representative_coverage_pilot_v20260916
+```
+
+This command is a bounded pilot, not authority to collect the complete
+universe. The full transcript collection remains gated on review of the pilot.
+
+The canonical corpus uses the reported earnings date as `earnings_call_date`.
+Alpha Vantage EARNINGS `reportedDate` is preferred; Yahoo Finance and targeted
+earnings-history sources fill gaps. Rows are matched to fiscal periods, not by
+the calendar quarter containing the report date. The corpus excludes 467 calls
+without a mapped reported date and quarantines 208 calls with unresolved ticker
+reuse. Source disagreement remains explicit in the date-status fields. These
+dates are not asserted to be independently verified conference-call dates.
 
 ## The rule about charts and findings
 

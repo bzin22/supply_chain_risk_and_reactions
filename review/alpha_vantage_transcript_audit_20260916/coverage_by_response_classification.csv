@@ -1,0 +1,11 @@
+response_classification,count,share_of_requested
+valid full transcript,18158,0.672519
+no transcript,5401,0.200037
+provider information/rate-limit response,3414,0.126444
+API error,8,0.000296
+placeholder/redacted,1,0.000037
+copyright/boilerplate,1,0.000037
+probably truncated,1,0.000037
+malformed,0,0.000000
+duplicate,0,0.000000
+uncertain/manual review,16,0.000593

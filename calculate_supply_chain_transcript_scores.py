@@ -131,6 +131,8 @@ from pathlib import Path
 from statistics import pstdev
 from typing import Any, Iterable, Sequence
 
+from study_period import validate_csv_in_study_period
+
 
 WINDOW = 10
 REPOSITORY_ROOT = Path(__file__).resolve().parent
@@ -857,6 +859,7 @@ def score_csv(
 
     if input_path.resolve() == output_path.resolve():
         raise ValueError("Refusing to overwrite the input CSV; choose a separate --output path")
+    validate_csv_in_study_period(input_path, context="scoring/standardization input")
     if limit is not None and limit < 1:
         raise ValueError("limit must be positive")
 

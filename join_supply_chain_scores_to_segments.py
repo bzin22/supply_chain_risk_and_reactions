@@ -16,6 +16,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+from study_period import validate_csv_in_study_period
+
 
 SCORE_FIELDS = (
     "SCRisk_weight_sum", "SCRisk_raw", "SCRisk_sd", "SCRisk",
@@ -66,6 +68,8 @@ def load_scores(path: Path) -> dict[tuple[str, str], dict[str, str]]:
 def join_scores(segments: Path, scores_path: Path, output: Path) -> None:
     if output.resolve() in {segments.resolve(), scores_path.resolve()}:
         raise ValueError("Refusing to overwrite an input file; choose a separate --output path")
+    validate_csv_in_study_period(segments, context="segment input")
+    validate_csv_in_study_period(scores_path, context="scoring input")
     scores = load_scores(scores_path)
     output.parent.mkdir(parents=True, exist_ok=True)
     matched = 0

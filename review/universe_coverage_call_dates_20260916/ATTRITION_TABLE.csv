@@ -1,0 +1,10 @@
+scope,stage,count,status,note
+full_corpus,eligible_resolved_firm_quarters,151073,observed,"versioned US-domiciled, US-listed operating-company universe"
+full_corpus,valid_transcripts_current,11880,observed_partial_collection,legacy valid corpus plus active representative-pilot additions
+full_corpus,resolved_transcript_identities,11392,observed_partial_collection,point-in-time CIK resolved
+full_corpus,high_confidence_call_dates,1930,observed_partial_collection,explicit independent SEC evidence
+full_corpus,frozen_scored_sample,0,not_started,dictionary and expanded corpus freeze required first
+full_corpus,final_regression_observations,0,not_started,CAR construction was not authorized
+representative_pilot,eligible_sampled_firm_quarters,800,observed,proportional year-exchange-SIC sample
+representative_pilot,valid_transcripts,323,observed,reused plus newly collected
+representative_pilot,high_confidence_call_dates,63,observed,eligible for a future primary CAR input only after freeze
