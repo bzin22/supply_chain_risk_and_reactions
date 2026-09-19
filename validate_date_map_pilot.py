@@ -12,6 +12,7 @@ import csv
 import hashlib
 import html
 import json
+import os
 import re
 import subprocess
 import time
@@ -79,7 +80,7 @@ PLACEHOLDER_PATTERNS = (
     "this transcript is not available",
 )
 TRUNCATION_PATTERNS = ("[truncated]", "transcript truncated", "content cut off")
-WEB_USER_AGENT = "Mozilla/5.0"
+WEB_USER_AGENT_ENV = "WEB_USER_AGENT"
 MONTHS = {
     name.lower(): number
     for number, name in enumerate(
@@ -109,6 +110,15 @@ def utc_now() -> str:
 
 def sha256_bytes(value: bytes) -> str:
     return hashlib.sha256(value).hexdigest()
+
+
+def web_user_agent() -> str:
+    value = os.environ.get(WEB_USER_AGENT_ENV, "").strip()
+    if not value or "@" not in value:
+        raise RuntimeError(
+            f"{WEB_USER_AGENT_ENV} must name this study and include a contact email"
+        )
+    return value
 
 
 def sha256_file(path: Path) -> str:
@@ -329,6 +339,7 @@ def initial_classification(
     raw_path = ROOT / source["raw_path"]
     raw_exists = raw_path.is_file()
     raw = raw_path.read_bytes() if raw_exists else b""
+    raw_sha256_verified = raw_exists and sha256_bytes(raw) == source["raw_sha256"]
     wrapper, parse_error = (
         load_wrapper(raw_path) if raw_exists else (None, "FileNotFoundError")
     )
@@ -349,9 +360,7 @@ def initial_classification(
     )
     opening = normalized[:20000]
     name_tokens = distinctive_name_tokens(eligible["company_name"])
-    issuer_match = any(
-        token in opening.split() or token in opening for token in name_tokens
-    )
+    issuer_match = any(token in opening for token in name_tokens)
     ticker_conflicts = overlap_ticker_reuse(
         eligible["provider_ticker"],
         eligible["company_id"],
@@ -367,6 +376,8 @@ def initial_classification(
         flags.append("issuer_name_not_explicit_in_opening")
     if ticker_conflicts:
         flags.append("historical_ticker_reuse_overlap")
+    if raw_exists and not raw_sha256_verified:
+        flags.append("raw_sha256_mismatch")
     lowered = plain.lower()
     placeholder = next((item for item in PLACEHOLDER_PATTERNS if item in lowered), "")
     truncation = next((item for item in TRUNCATION_PATTERNS if item in lowered), "")
@@ -377,6 +388,11 @@ def initial_classification(
         classification, reason = (
             "technical_failure",
             f"unreadable or missing payload: {parse_error}",
+        )
+    elif not raw_sha256_verified:
+        classification, reason = (
+            "quarantine",
+            "raw payload sha256 does not match the recorded collection hash",
         )
     elif (
         source["classification"] in {"provider_or_http_failure", "transport_error"}
@@ -433,9 +449,7 @@ def initial_classification(
         "eligible_company_name": eligible["company_name"],
         "eligible_security_id": eligible["security_id"],
         "raw_exists": str(raw_exists).lower(),
-        "raw_sha256_verified": str(
-            raw_exists and sha256_bytes(raw) == source["raw_sha256"]
-        ).lower(),
+        "raw_sha256_verified": str(raw_sha256_verified).lower(),
         "provider_body_sha256": sha256_bytes(
             json.dumps(payload, sort_keys=True, ensure_ascii=False).encode()
         )
@@ -736,7 +750,7 @@ def yahoo_search(
             "--max-time",
             str(max(1, int(timeout))),
             "-A",
-            WEB_USER_AGENT,
+            web_user_agent(),
             url,
         ],
         check=False,
@@ -776,7 +790,7 @@ def page_evidence(
             "--max-time",
             str(max(1, int(timeout))),
             "-A",
-            WEB_USER_AGENT,
+            web_user_agent(),
             url,
         ],
         check=False,

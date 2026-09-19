@@ -42,6 +42,7 @@ from validate_date_map_pilot import (
     normalize_text,
     quarter_index,
     read_csv,
+    web_user_agent,
 )
 
 OUTPUT = ROOT / "data/validated_earnings_calls/v1"
@@ -126,6 +127,13 @@ class AtomicCsvWriter:
         else:
             self.handle.close()
             self.temporary.unlink(missing_ok=True)
+
+
+def repo_relative(path: Path) -> str:
+    try:
+        return str(path.relative_to(ROOT))
+    except ValueError:
+        return str(path)
 
 
 def write_json(path: Path, value: Any) -> None:
@@ -512,6 +520,9 @@ DATE_REQUEST_FIELDS = [
     "historical_ticker", "requested_at_utc", "completed_at_utc", "http_status",
     "status", "retry_history", "error_code", "response_sha256", "mapped_row_count",
     "source_url", "source_title",
+]
+DELETION_MANIFEST_FIELDS = [
+    "raw_path", "raw_sha256", "validation_status", "deleted_at_utc", "deletion_status",
 ]
 DATE_ROW_FIELDS = [
     "historical_ticker", "quarter_label", "fiscal_date_ending", "reported_date",
@@ -918,7 +929,7 @@ def collect_targeted_dates(
         source_rows: list[dict[str, str]] = []
         try:
             response = session.get(
-                endpoint, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"}
+                endpoint, timeout=timeout, headers={"User-Agent": web_user_agent()}
             )
             http_status = str(response.status_code)
             body = response.content
@@ -1085,7 +1096,7 @@ def collect_history_web_dates(
             error_code = ""
             try:
                 response = session.get(
-                    url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"}
+                    url, timeout=timeout, headers={"User-Agent": web_user_agent()}
                 )
                 body = response.content
                 http_status = str(response.status_code)
@@ -1211,7 +1222,9 @@ FINAL_DATE_FIELDS = [
 ]
 
 
-def load_date_map(output: Path) -> dict[tuple[str, str], dict[str, str]]:
+def load_date_evidence(
+    output: Path,
+) -> tuple[dict[tuple[str, str], dict[str, str]], dict[tuple[str, str], list[str]]]:
     by_key: defaultdict[tuple[str, str], list[tuple[str, dict[str, str]]]] = defaultdict(list)
     for source_name, path in (
         ("alpha_vantage", output / "reported_date_rows.csv"),
@@ -1222,7 +1235,8 @@ def load_date_map(output: Path) -> dict[tuple[str, str], dict[str, str]]:
         if path.exists():
             for row in read_csv(path):
                 by_key[(row["historical_ticker"], row["quarter_label"])].append((source_name, row))
-    result = {}
+    result: dict[tuple[str, str], dict[str, str]] = {}
+    conflicting_dates: dict[tuple[str, str], list[str]] = {}
     for key, sourced_rows in by_key.items():
         alpha = [row for source, row in sourced_rows if source == "alpha_vantage"]
         targeted = [row for source, row in sourced_rows if source == "targeted_web"]
@@ -1250,17 +1264,20 @@ def load_date_map(output: Path) -> dict[tuple[str, str], dict[str, str]]:
             else:
                 selected["source_agreement"] = "conflict"
             result[key] = selected
-    return result
+        else:
+            conflicting_dates[key] = sorted(
+                {reported_date for reported_date, _ in by_pair}
+            )
+    return result, conflicting_dates
 
 
-def count_csv_rows(path: Path) -> int:
-    with path.open("rb") as handle:
-        return max(0, sum(chunk.count(b"\n") for chunk in iter(lambda: handle.read(1024 * 1024), b"")) - 1)
+def load_date_map(output: Path) -> dict[tuple[str, str], dict[str, str]]:
+    return load_date_evidence(output)[0]
 
 
 def finalize(output: Path, final_dir: Path, report_dir: Path) -> dict[str, Any]:
     started = time.monotonic()
-    date_map = load_date_map(output)
+    date_map, preferred_source_conflicts = load_date_evidence(output)
     working_path = output / "validated_calls_working.csv"
     final_path = final_dir / "earnings_call_transcripts_validated_2010_2019_v1.csv"
     sha_path = final_path.with_suffix(final_path.suffix + ".sha256")
@@ -1270,6 +1287,18 @@ def finalize(output: Path, final_dir: Path, report_dir: Path) -> dict[str, Any]:
             raise RuntimeError(
                 f"refusing to overwrite immutable v1 artifact: {immutable_path}"
             )
+    validation_summary = json.loads((output / "validation_summary.json").read_text())
+    source_manifests = {
+        path.name: sha256_file(path) if path.exists() else "absent"
+        for path in (
+            output / "request_manifest.csv",
+            output / "payload_deletion_manifest.csv",
+            output / "reported_date_request_manifest.csv",
+            output / "yfinance_date_request_manifest.csv",
+            output / "targeted_date_request_manifest.csv",
+            output / "history_web_date_request_manifest.csv",
+        )
+    }
     final_fields = WORKING_FIELDS + FINAL_DATE_FIELDS
     date_counts: Counter[str] = Counter()
     selected_sources: Counter[str] = Counter()
@@ -1283,8 +1312,23 @@ def finalize(output: Path, final_dir: Path, report_dir: Path) -> dict[str, Any]:
             if row["call_id"] in seen_calls:
                 raise RuntimeError(f"duplicate valid call_id: {row['call_id']}")
             seen_calls.add(row["call_id"])
-            evidence = date_map.get((row["historical_ticker"], row["quarter_label"]))
+            date_key = (row["historical_ticker"], row["quarter_label"])
+            evidence = date_map.get(date_key)
             if not evidence:
+                conflicting_dates = preferred_source_conflicts.get(date_key)
+                if conflicting_dates:
+                    date_status = "preferred_source_reported_date_conflict"
+                    exclusion_reason = (
+                        "preferred date source reported conflicting dates for this "
+                        f"fiscal quarter: {', '.join(conflicting_dates)}"
+                    )
+                    date_counts["excluded_preferred_source_conflict"] += 1
+                else:
+                    date_status = "no_reported_date_found"
+                    exclusion_reason = (
+                        "no exact reported-date row for the historical ticker and fiscal quarter"
+                    )
+                    date_counts["excluded_no_reported_date"] += 1
                 exclusions.append(
                     {
                         "call_id": row["call_id"],
@@ -1294,11 +1338,10 @@ def finalize(output: Path, final_dir: Path, report_dir: Path) -> dict[str, Any]:
                         "historical_ticker": row["historical_ticker"],
                         "quarter_label": row["quarter_label"],
                         "validation_status": row["validation_status"],
-                        "date_status": "no_reported_date_found",
-                        "exclusion_reason": "no exact reported-date row for the historical ticker and fiscal quarter",
+                        "date_status": date_status,
+                        "exclusion_reason": exclusion_reason,
                     }
                 )
-                date_counts["excluded_no_reported_date"] += 1
                 continue
             if row["ticker_reuse_conflicting_ciks"]:
                 exclusions.append(
@@ -1356,23 +1399,10 @@ def finalize(output: Path, final_dir: Path, report_dir: Path) -> dict[str, Any]:
             for row in exclusions:
                 writer.writerow(row)
     digest = sha256_file(final_path)
-    sha_path.write_text(f"{digest}  {final_path.name}\n", encoding="ascii")
-    validation_summary = json.loads((output / "validation_summary.json").read_text())
-    source_manifests = {
-        path.name: sha256_file(path)
-        for path in (
-            output / "request_manifest.csv",
-            output / "payload_deletion_manifest.csv",
-            output / "reported_date_request_manifest.csv",
-            output / "yfinance_date_request_manifest.csv",
-            output / "targeted_date_request_manifest.csv",
-            output / "history_web_date_request_manifest.csv",
-        )
-    }
     summary = {
         "version": "v1",
         "created_at_utc": utc_now(),
-        "immutable_canonical_file": str(final_path.relative_to(ROOT)),
+        "immutable_canonical_file": repo_relative(final_path),
         "sha256": digest,
         "row_count": len(included_calls),
         "input_valid_calls": len(seen_calls),
@@ -1381,14 +1411,13 @@ def finalize(output: Path, final_dir: Path, report_dir: Path) -> dict[str, Any]:
         "date_status_counts": dict(sorted(date_counts.items())),
         "selected_source_title_counts": dict(sorted(selected_sources.items())),
         "excluded_call_count": len(exclusions),
-        "exclusion_report": str(
-            (report_dir / "canonical_exclusions.csv").relative_to(ROOT)
-        ),
+        "exclusion_report": repo_relative(report_dir / "canonical_exclusions.csv"),
         "source_manifest_sha256": source_manifests,
         "validation_summary": validation_summary,
         "elapsed_seconds_finalize": round(time.monotonic() - started, 3),
         "correction_policy": "Do not overwrite v1; corrections create v2.",
     }
+    sha_path.write_text(f"{digest}  {final_path.name}\n", encoding="ascii")
     write_json(manifest_path, summary)
     report_dir.mkdir(parents=True, exist_ok=True)
     report = (
@@ -1396,6 +1425,7 @@ def finalize(output: Path, final_dir: Path, report_dir: Path) -> dict[str, Any]:
         f"- Canonical dated calls: {len(included_calls):,}\n"
         f"- Valid calls before date and ticker-reuse exclusions: {len(seen_calls):,}\n"
         f"- Excluded without a reported date: {date_counts['excluded_no_reported_date']:,}\n"
+        f"- Excluded for conflicting preferred-source reported dates: {date_counts['excluded_preferred_source_conflict']:,}\n"
         f"- Excluded for unresolved ticker reuse: {date_counts['excluded_ticker_reuse_quarantine']:,}\n"
         f"- SHA-256: `{digest}`\n"
         "- `earnings_call_date` is the reported earnings date. Alpha Vantage `reportedDate` is preferred.\n"
@@ -1440,7 +1470,7 @@ def deletion_candidates(output: Path) -> Iterator[dict[str, str]]:
 def delete_nonretained(output: Path) -> dict[str, Any]:
     rows = list(deletion_candidates(output))
     deletion_path = output / "payload_deletion_manifest.csv"
-    with AtomicCsvWriter(deletion_path, list(rows[0])) as writer:
+    with AtomicCsvWriter(deletion_path, DELETION_MANIFEST_FIELDS) as writer:
         for row in rows:
             writer.writerow(row)
     manifest_digest = sha256_file(deletion_path)

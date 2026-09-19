@@ -49,3 +49,92 @@ def test_search_result_prefilter_rejects_wrong_year() -> None:
 def test_parse_date_text_does_not_use_year_only() -> None:
     assert parse_date_text("Q3 2019 earnings call") is None
     assert parse_date_text("July 30, 2019") == date(2019, 7, 30)
+
+
+def _payload_source(raw_path, recorded_sha256: str) -> dict:
+    return {
+        "session_id": "test",
+        "company_id": "C1",
+        "cik": "0000000001",
+        "company_name": "Apple Inc",
+        "provider_ticker": "AAPL",
+        "quarter_label": "2015Q2",
+        "attempt_number": "1",
+        "requested_at_utc": "2026-01-01T00:00:00+00:00",
+        "completed_at_utc": "2026-01-01T00:00:01+00:00",
+        "http_status": "200",
+        "provider_status": "ok",
+        "raw_path": str(raw_path),
+        "raw_size_bytes": "0",
+        "raw_sha256": recorded_sha256,
+        "classification": "valid",
+        "validation_reason": "",
+        "terminal_status": "valid",
+        "retry_status": "",
+        "segment_count": "2",
+        "token_count": "200",
+        "normalized_transcript_sha256": "",
+        "api_message": "",
+    }
+
+
+def _eligible() -> dict:
+    return {
+        "company_id": "C1",
+        "cik": "0000000001",
+        "company_name": "Apple Inc",
+        "security_id": "S1",
+        "provider_ticker": "AAPL",
+        "quarter_label": "2015Q2",
+    }
+
+
+def _write_transcript(tmp_path):
+    import hashlib
+    import json
+
+    body = " ".join(["apple supply chain revenue guidance"] * 60)
+    payload = {
+        "symbol": "AAPL",
+        "quarter": "2015Q2",
+        "transcript": [
+            {"speaker": "Tim Cook", "title": "CEO", "content": body},
+            {"speaker": "Luca Maestri", "title": "CFO", "content": body},
+        ],
+    }
+    raw_path = tmp_path / "raw.json"
+    raw_path.write_text(json.dumps({"payload": payload}), encoding="utf-8")
+    return raw_path, hashlib.sha256(raw_path.read_bytes()).hexdigest()
+
+
+def test_initial_classification_accepts_matching_raw_hash(tmp_path) -> None:
+    from validate_date_map_pilot import initial_classification
+
+    raw_path, digest = _write_transcript(tmp_path)
+    row = initial_classification(_payload_source(raw_path, digest), _eligible(), [])
+    assert row["raw_sha256_verified"] == "true"
+    assert row["validation_status"] == "valid"
+
+
+def test_initial_classification_quarantines_tampered_payload(tmp_path) -> None:
+    from validate_date_map_pilot import initial_classification
+
+    raw_path, _ = _write_transcript(tmp_path)
+    row = initial_classification(
+        _payload_source(raw_path, "0" * 64), _eligible(), []
+    )
+    assert row["raw_sha256_verified"] == "false"
+    assert row["validation_status"] == "quarantine"
+    assert "raw_sha256_mismatch" in row["validation_flags"]
+
+
+def test_web_user_agent_requires_a_contact_email(monkeypatch) -> None:
+    import pytest
+
+    from validate_date_map_pilot import web_user_agent
+
+    monkeypatch.setenv("WEB_USER_AGENT", "Mozilla/5.0")
+    with pytest.raises(RuntimeError):
+        web_user_agent()
+    monkeypatch.setenv("WEB_USER_AGENT", "recreation-study (bryan@usereframe.ai)")
+    assert web_user_agent() == "recreation-study (bryan@usereframe.ai)"

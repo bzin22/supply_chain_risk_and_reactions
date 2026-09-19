@@ -165,6 +165,34 @@ conda run -n dap-env python collect_transcript_pilot.py \
 This command is a bounded pilot, not authority to collect the complete
 universe. The full transcript collection remains gated on review of the pilot.
 
+## Validated corpus build
+
+`build_validated_earnings_calls_v1.py` validates the collected transcripts,
+maps reported earnings dates onto them, and freezes the canonical CSV. The
+subcommands must run in this order:
+
+```
+conda run -n dap-env python build_validated_earnings_calls_v1.py validate
+conda run -n dap-env python build_validated_earnings_calls_v1.py dates
+conda run -n dap-env python build_validated_earnings_calls_v1.py dates-yfinance --only-unresolved
+conda run -n dap-env python build_validated_earnings_calls_v1.py dates-targeted
+conda run -n dap-env python build_validated_earnings_calls_v1.py dates-history-web
+conda run -n dap-env python build_validated_earnings_calls_v1.py delete-nonretained
+conda run -n dap-env python build_validated_earnings_calls_v1.py finalize
+```
+
+`validate` runs first. It writes `validated_calls_working.csv`, which every
+`dates*` command reads. Each date command only fills the gaps left by the ones
+before it, so any of them can be skipped. `delete-nonretained` unlinks the raw
+payloads that are neither valid nor quarantined, so it runs after `validate`
+and before `finalize`. `finalize` writes the immutable CSV, its `.sha256`, and
+its manifest, then refuses to overwrite them. Producing a corrected corpus
+means a new version directory, not a rerun over v1.
+
+`dates` needs `ALPHAVANTAGE_API_KEY`. `dates-targeted` and `dates-history-web`
+read third-party earnings-history pages and need `WEB_USER_AGENT` set to a
+string that names this study and carries a contact email.
+
 The canonical corpus uses the reported earnings date as `earnings_call_date`.
 Alpha Vantage EARNINGS `reportedDate` is preferred; Yahoo Finance and targeted
 earnings-history sources fill gaps. Rows are matched to fiscal periods, not by
