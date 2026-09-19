@@ -1,0 +1,676 @@
+call_id,company_id,cik,company_name,historical_ticker,quarter_label,validation_status,date_status,exclusion_reason
+CIK0000004447|HES|2010Q1,CIK0000004447,0000004447,Hess Corporation,HES,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000004447|HES|2010Q2,CIK0000004447,0000004447,Hess Corporation,HES,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000004447|HES|2010Q3,CIK0000004447,0000004447,Hess Corporation,HES,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000004447|HES|2010Q4,CIK0000004447,0000004447,Hess Corporation,HES,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000004447|HES|2011Q1,CIK0000004447,0000004447,Hess Corporation,HES,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000004447|HES|2011Q2,CIK0000004447,0000004447,Hess Corporation,HES,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000004447|HES|2011Q3,CIK0000004447,0000004447,Hess Corporation,HES,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000004447|HES|2011Q4,CIK0000004447,0000004447,Hess Corporation,HES,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000039899|TGNA|2015Q1,CIK0000039899,0000039899,TEGNA Inc,TGNA,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000039899|TGNA|2015Q2,CIK0000039899,0000039899,TEGNA Inc,TGNA,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000039899|TGNA|2015Q3,CIK0000039899,0000039899,TEGNA Inc,TGNA,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2017Q2,CIK0000042316,0000042316,Goldfield Corp,GV,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2017Q3,CIK0000042316,0000042316,Goldfield Corp,GV,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2017Q4,CIK0000042316,0000042316,Goldfield Corp,GV,2017Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2018Q1,CIK0000042316,0000042316,Goldfield Corp,GV,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2018Q2,CIK0000042316,0000042316,Goldfield Corp,GV,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2018Q3,CIK0000042316,0000042316,Goldfield Corp,GV,2018Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2018Q4,CIK0000042316,0000042316,Goldfield Corp,GV,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2019Q1,CIK0000042316,0000042316,Goldfield Corp,GV,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2019Q2,CIK0000042316,0000042316,Goldfield Corp,GV,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2019Q3,CIK0000042316,0000042316,Goldfield Corp,GV,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000042316|GV|2019Q4,CIK0000042316,0000042316,Goldfield Corp,GV,2019Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000058492|LEG|2010Q1,CIK0000058492,0000058492,Leggett & Platt Inc,LEG,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000058492|LEG|2010Q2,CIK0000058492,0000058492,Leggett & Platt Inc,LEG,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000058492|LEG|2010Q3,CIK0000058492,0000058492,Leggett & Platt Inc,LEG,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000058492|LEG|2010Q4,CIK0000058492,0000058492,Leggett & Platt Inc,LEG,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000058492|LEG|2011Q1,CIK0000058492,0000058492,Leggett & Platt Inc,LEG,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000058492|LEG|2011Q2,CIK0000058492,0000058492,Leggett & Platt Inc,LEG,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000058492|LEG|2011Q3,CIK0000058492,0000058492,Leggett & Platt Inc,LEG,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000058492|LEG|2011Q4,CIK0000058492,0000058492,Leggett & Platt Inc,LEG,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000061478|ADCT|2010Q1,CIK0000061478,0000061478,ADC TELECOMMUNICATIONS INC,ADCT,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000066901|EMP|2018Q1,CIK0000066901,0000066901,Entergy Utility Enterprises Inc,EMP,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000066901|EMP|2018Q2,CIK0000066901,0000066901,Entergy Utility Enterprises Inc,EMP,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000066901|EMP|2018Q3,CIK0000066901,0000066901,Entergy Utility Enterprises Inc,EMP,2018Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000066901|EMP|2018Q4,CIK0000066901,0000066901,Entergy Utility Enterprises Inc,EMP,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000066901|EMP|2019Q1,CIK0000066901,0000066901,Entergy Utility Enterprises Inc,EMP,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000066901|EMP|2019Q2,CIK0000066901,0000066901,Entergy Utility Enterprises Inc,EMP,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000066901|EMP|2019Q3,CIK0000066901,0000066901,Entergy Utility Enterprises Inc,EMP,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000066901|EMP|2019Q4,CIK0000066901,0000066901,Entergy Utility Enterprises Inc,EMP,2019Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000072333|JWN|2010Q1,CIK0000072333,0000072333,Nordstrom Inc,JWN,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000072333|JWN|2010Q2,CIK0000072333,0000072333,Nordstrom Inc,JWN,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000072333|JWN|2010Q3,CIK0000072333,0000072333,Nordstrom Inc,JWN,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000072333|JWN|2010Q4,CIK0000072333,0000072333,Nordstrom Inc,JWN,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000072333|JWN|2011Q1,CIK0000072333,0000072333,Nordstrom Inc,JWN,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000072333|JWN|2011Q2,CIK0000072333,0000072333,Nordstrom Inc,JWN,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000072333|JWN|2011Q3,CIK0000072333,0000072333,Nordstrom Inc,JWN,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000072333|JWN|2011Q4,CIK0000072333,0000072333,Nordstrom Inc,JWN,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000096793|SSY|2012Q2,CIK0000096793,0000096793,Sunlink Health Systems Inc,SSY,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000216539|MEG|2016Q1,CIK0000216539,0000216539,Media General Inc,MEG,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000701374|FUN|2010Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2010Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2010Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2010Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2010Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2010Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2011Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2011Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2011Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2011Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2011Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2011Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2012Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2012Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2012Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2012Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2012Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2012Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2012Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2012Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2013Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2013Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2013Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2013Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2013Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2013Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2013Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2013Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2014Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2014Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2014Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2014Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2014Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2014Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2014Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2014Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2015Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2015Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2015Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2015Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2015Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2015Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2015Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2015Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2016Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2016Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2016Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2016Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2016Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2016Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2016Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2016Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2017Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2017Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2017Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2017Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2017Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2017Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2017Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2017Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2018Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2018Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2018Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2018Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2018Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2018Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2018Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2019Q1,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2019Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2019Q2,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2019Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2019Q3,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2019Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000701374|FUN|2019Q4,CIK0000701374,0000701374,Six Flags Entertainment Corp,FUN,2019Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000749660|ICAD|2011Q4,CIK0000749660,0000749660,Icad Inc,ICAD,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000749660|ICAD|2012Q1,CIK0000749660,0000749660,Icad Inc,ICAD,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000750556|STI|2019Q1,CIK0000750556,0000750556,SunTrust Banks Inc,STI,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000750556|STI|2019Q2,CIK0000750556,0000750556,SunTrust Banks Inc,STI,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000750556|STI|2019Q3,CIK0000750556,0000750556,SunTrust Banks Inc,STI,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2010Q1,CIK0000768251,0000768251,Altera Corp,ALTR,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2010Q2,CIK0000768251,0000768251,Altera Corp,ALTR,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2010Q4,CIK0000768251,0000768251,Altera Corp,ALTR,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2012Q1,CIK0000768251,0000768251,Altera Corp,ALTR,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2012Q2,CIK0000768251,0000768251,Altera Corp,ALTR,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2012Q3,CIK0000768251,0000768251,Altera Corp,ALTR,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2012Q4,CIK0000768251,0000768251,Altera Corp,ALTR,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2013Q1,CIK0000768251,0000768251,Altera Corp,ALTR,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2013Q2,CIK0000768251,0000768251,Altera Corp,ALTR,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2013Q3,CIK0000768251,0000768251,Altera Corp,ALTR,2013Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2013Q4,CIK0000768251,0000768251,Altera Corp,ALTR,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2014Q1,CIK0000768251,0000768251,Altera Corp,ALTR,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2014Q2,CIK0000768251,0000768251,Altera Corp,ALTR,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2014Q3,CIK0000768251,0000768251,Altera Corp,ALTR,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2014Q4,CIK0000768251,0000768251,Altera Corp,ALTR,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000768251|ALTR|2015Q1,CIK0000768251,0000768251,Altera Corp,ALTR,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000789073|BEAM|2010Q1,CIK0000789073,0000789073,BEAM Inc,BEAM,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000789073|BEAM|2010Q2,CIK0000789073,0000789073,BEAM Inc,BEAM,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000789073|BEAM|2010Q3,CIK0000789073,0000789073,BEAM Inc,BEAM,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000789073|BEAM|2010Q4,CIK0000789073,0000789073,BEAM Inc,BEAM,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000789073|BEAM|2011Q2,CIK0000789073,0000789073,BEAM Inc,BEAM,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000789073|BEAM|2011Q3,CIK0000789073,0000789073,BEAM Inc,BEAM,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000789073|BEAM|2011Q4,CIK0000789073,0000789073,BEAM Inc,BEAM,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000794619|AMWD|2010Q1,CIK0000794619,0000794619,American Woodmark Corp,AMWD,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000798081|LAKE|2015Q1,CIK0000798081,0000798081,Lakeland Industries Inc,LAKE,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000801337|WBS|2010Q1,CIK0000801337,0000801337,Webster Financial Corp,WBS,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000801337|WBS|2010Q2,CIK0000801337,0000801337,Webster Financial Corp,WBS,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000801337|WBS|2012Q1,CIK0000801337,0000801337,Webster Financial Corp,WBS,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000820738|TIGR|2014Q2,CIK0000820738,0000820738,TigerLogic Corp,TIGR,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000820738|TIGR|2015Q3,CIK0000820738,0000820738,TigerLogic Corp,TIGR,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2011Q1,CIK0000826083,0000826083,Dell Inc,DELL,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2011Q2,CIK0000826083,0000826083,Dell Inc,DELL,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2011Q3,CIK0000826083,0000826083,Dell Inc,DELL,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2011Q4,CIK0000826083,0000826083,Dell Inc,DELL,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2012Q1,CIK0000826083,0000826083,Dell Inc,DELL,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2013Q2,CIK0000826083,0000826083,Dell Inc,DELL,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2013Q3,CIK0000826083,0000826083,Dell Inc,DELL,2013Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2013Q4,CIK0000826083,0000826083,Dell Inc,DELL,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2014Q1,CIK0000826083,0000826083,Dell Inc,DELL,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2014Q3,CIK0000826083,0000826083,Dell Inc,DELL,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2014Q4,CIK0000826083,0000826083,Dell Inc,DELL,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2015Q1,CIK0000826083,0000826083,Dell Inc,DELL,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2015Q2,CIK0000826083,0000826083,Dell Inc,DELL,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2015Q3,CIK0000826083,0000826083,Dell Inc,DELL,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2015Q4,CIK0000826083,0000826083,Dell Inc,DELL,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000826083|DELL|2016Q1,CIK0000826083,0000826083,Dell Inc,DELL,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2010Q1,CIK0000842183,0000842183,RPT Realty,RPT,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2010Q2,CIK0000842183,0000842183,RPT Realty,RPT,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2010Q3,CIK0000842183,0000842183,RPT Realty,RPT,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2010Q4,CIK0000842183,0000842183,RPT Realty,RPT,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2011Q1,CIK0000842183,0000842183,RPT Realty,RPT,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2011Q2,CIK0000842183,0000842183,RPT Realty,RPT,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2011Q3,CIK0000842183,0000842183,RPT Realty,RPT,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2011Q4,CIK0000842183,0000842183,RPT Realty,RPT,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2012Q1,CIK0000842183,0000842183,RPT Realty,RPT,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2012Q2,CIK0000842183,0000842183,RPT Realty,RPT,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000842183|RPT|2018Q3,CIK0000842183,0000842183,RPT Realty,RPT,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000842183|RPT|2018Q4,CIK0000842183,0000842183,RPT Realty,RPT,2018Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000842183|RPT|2019Q1,CIK0000842183,0000842183,RPT Realty,RPT,2019Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000842183|RPT|2019Q2,CIK0000842183,0000842183,RPT Realty,RPT,2019Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000842183|RPT|2019Q3,CIK0000842183,0000842183,RPT Realty,RPT,2019Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000842183|RPT|2019Q4,CIK0000842183,0000842183,RPT Realty,RPT,2019Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000857737|ICON|2012Q2,CIK0000857737,0000857737,Iconix Brand Group Inc,ICON,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000857737|ICON|2012Q3,CIK0000857737,0000857737,Iconix Brand Group Inc,ICON,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000857737|ICON|2012Q4,CIK0000857737,0000857737,Iconix Brand Group Inc,ICON,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000857737|ICON|2013Q1,CIK0000857737,0000857737,Iconix Brand Group Inc,ICON,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000857737|ICON|2013Q2,CIK0000857737,0000857737,Iconix Brand Group Inc,ICON,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000859737|HOLX|2010Q1,CIK0000859737,0000859737,Hologic Inc,HOLX,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000859737|HOLX|2010Q2,CIK0000859737,0000859737,Hologic Inc,HOLX,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000859737|HOLX|2010Q3,CIK0000859737,0000859737,Hologic Inc,HOLX,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000859737|HOLX|2011Q1,CIK0000859737,0000859737,Hologic Inc,HOLX,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000859737|HOLX|2011Q2,CIK0000859737,0000859737,Hologic Inc,HOLX,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000859737|HOLX|2011Q3,CIK0000859737,0000859737,Hologic Inc,HOLX,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000859737|HOLX|2011Q4,CIK0000859737,0000859737,Hologic Inc,HOLX,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000899749|HR|2015Q3,CIK0000899749,0000899749,Healthcare Realty Trust Inc,HR,2015Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000899749|HR|2019Q2,CIK0000899749,0000899749,Healthcare Realty Trust Inc,HR,2019Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0000918251|MPAA|2012Q2,CIK0000918251,0000918251,Motorcar Parts of America Inc,MPAA,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000937556|MASI|2010Q1,CIK0000937556,0000937556,Masimo Corp,MASI,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000937556|MASI|2010Q2,CIK0000937556,0000937556,Masimo Corp,MASI,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000937556|MASI|2010Q3,CIK0000937556,0000937556,Masimo Corp,MASI,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000937556|MASI|2010Q4,CIK0000937556,0000937556,Masimo Corp,MASI,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000937556|MASI|2011Q1,CIK0000937556,0000937556,Masimo Corp,MASI,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000937556|MASI|2011Q2,CIK0000937556,0000937556,Masimo Corp,MASI,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000937556|MASI|2011Q3,CIK0000937556,0000937556,Masimo Corp,MASI,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0000937556|MASI|2011Q4,CIK0000937556,0000937556,Masimo Corp,MASI,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001005757|CSGS|2010Q1,CIK0001005757,0001005757,CSG Systems International Inc,CSGS,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001005757|CSGS|2010Q2,CIK0001005757,0001005757,CSG Systems International Inc,CSGS,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001005757|CSGS|2010Q3,CIK0001005757,0001005757,CSG Systems International Inc,CSGS,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001005757|CSGS|2011Q4,CIK0001005757,0001005757,CSG Systems International Inc,CSGS,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2010Q3,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2010Q4,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2011Q1,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2011Q2,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2011Q3,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2011Q4,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2012Q1,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2012Q2,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2012Q3,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2012Q4,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2013Q1,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001042134|CHRD|2013Q2,CIK0001042134,0001042134,CHORDIANT SOFTWARE INC,CHRD,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001043961|PRPO|2014Q2,CIK0001043961,0001043961,Precipio Inc,PRPO,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001043961|PRPO|2014Q3,CIK0001043961,0001043961,Precipio Inc,PRPO,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001071255|GDEN|2015Q3,CIK0001071255,0001071255,Golden Entertainment Inc,GDEN,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001071255|GDEN|2015Q4,CIK0001071255,0001071255,Golden Entertainment Inc,GDEN,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001071255|GDEN|2016Q1,CIK0001071255,0001071255,Golden Entertainment Inc,GDEN,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001071255|GDEN|2016Q2,CIK0001071255,0001071255,Golden Entertainment Inc,GDEN,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001084765|RGP|2010Q4,CIK0001084765,0001084765,Resources Connection Inc,RGP,2010Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2012Q3,CIK0001084765,0001084765,Resources Connection Inc,RGP,2012Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2012Q4,CIK0001084765,0001084765,Resources Connection Inc,RGP,2012Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2013Q1,CIK0001084765,0001084765,Resources Connection Inc,RGP,2013Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2013Q2,CIK0001084765,0001084765,Resources Connection Inc,RGP,2013Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2013Q3,CIK0001084765,0001084765,Resources Connection Inc,RGP,2013Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2013Q4,CIK0001084765,0001084765,Resources Connection Inc,RGP,2013Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2014Q1,CIK0001084765,0001084765,Resources Connection Inc,RGP,2014Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2014Q2,CIK0001084765,0001084765,Resources Connection Inc,RGP,2014Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2014Q3,CIK0001084765,0001084765,Resources Connection Inc,RGP,2014Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2014Q4,CIK0001084765,0001084765,Resources Connection Inc,RGP,2014Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001084765|RGP|2015Q1,CIK0001084765,0001084765,Resources Connection Inc,RGP,2015Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001088034|USIO|2016Q1,CIK0001088034,0001088034,Usio Inc,USIO,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001088034|USIO|2016Q2,CIK0001088034,0001088034,Usio Inc,USIO,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001088034|USIO|2016Q3,CIK0001088034,0001088034,Usio Inc,USIO,2016Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001088034|USIO|2016Q4,CIK0001088034,0001088034,Usio Inc,USIO,2016Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001094831|BGC|2010Q1,CIK0001094831,0001094831,BGC Group Inc - Class A,BGC,2010Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001094831|BGC|2010Q2,CIK0001094831,0001094831,BGC Group Inc - Class A,BGC,2010Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001094831|BGC|2010Q3,CIK0001094831,0001094831,BGC Group Inc - Class A,BGC,2010Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001094831|BGC|2012Q2,CIK0001094831,0001094831,BGC Group Inc - Class A,BGC,2012Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001124140|EXAS|2011Q4,CIK0001124140,0001124140,Exact Sciences Corp,EXAS,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001127703|PRA|2010Q1,CIK0001127703,0001127703,Proassurance Corporation,PRA,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001127703|PRA|2010Q2,CIK0001127703,0001127703,Proassurance Corporation,PRA,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001127703|PRA|2010Q3,CIK0001127703,0001127703,Proassurance Corporation,PRA,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001127703|PRA|2011Q4,CIK0001127703,0001127703,Proassurance Corporation,PRA,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001127703|PRA|2012Q1,CIK0001127703,0001127703,Proassurance Corporation,PRA,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001127703|PRA|2012Q2,CIK0001127703,0001127703,Proassurance Corporation,PRA,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001129155|MPX|2011Q4,CIK0001129155,0001129155,Marine Products Corp,MPX,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001129155|MPX|2012Q1,CIK0001129155,0001129155,Marine Products Corp,MPX,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001129155|MPX|2012Q2,CIK0001129155,0001129155,Marine Products Corp,MPX,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2010Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2010Q3,CIK0001166691,0001166691,Comcast Corp,CCZ,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2010Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2011Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2011Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2011Q3,CIK0001166691,0001166691,Comcast Corp,CCZ,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2011Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2012Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2012Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2012Q3,CIK0001166691,0001166691,Comcast Corp,CCZ,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2012Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2013Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2013Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2013Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2014Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2014Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2014Q3,CIK0001166691,0001166691,Comcast Corp,CCZ,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2014Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2015Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2015Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2015Q3,CIK0001166691,0001166691,Comcast Corp,CCZ,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2015Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2016Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2016Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2016Q3,CIK0001166691,0001166691,Comcast Corp,CCZ,2016Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2016Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2016Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2017Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2017Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2017Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2017Q3,CIK0001166691,0001166691,Comcast Corp,CCZ,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2017Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2017Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2018Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2018Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2018Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2019Q1,CIK0001166691,0001166691,Comcast Corp,CCZ,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2019Q2,CIK0001166691,0001166691,Comcast Corp,CCZ,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2019Q3,CIK0001166691,0001166691,Comcast Corp,CCZ,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001166691|CCZ|2019Q4,CIK0001166691,0001166691,Comcast Corp,CCZ,2019Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001173431|AMTD|2019Q3,CIK0001173431,0001173431,TD Ameritrade Holding Corp,AMTD,2019Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001173431|AMTD|2019Q4,CIK0001173431,0001173431,TD Ameritrade Holding Corp,AMTD,2019Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001175535|WSR|2012Q1,CIK0001175535,0001175535,Whitestone REIT,WSR,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001175535|WSR|2012Q2,CIK0001175535,0001175535,Whitestone REIT,WSR,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001175535|WSR|2012Q3,CIK0001175535,0001175535,Whitestone REIT,WSR,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001178879|FOLD|2010Q1,CIK0001178879,0001178879,Amicus Therapeutics Inc,FOLD,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001178879|FOLD|2010Q2,CIK0001178879,0001178879,Amicus Therapeutics Inc,FOLD,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001178879|FOLD|2010Q3,CIK0001178879,0001178879,Amicus Therapeutics Inc,FOLD,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001178879|FOLD|2011Q4,CIK0001178879,0001178879,Amicus Therapeutics Inc,FOLD,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001178879|FOLD|2012Q1,CIK0001178879,0001178879,Amicus Therapeutics Inc,FOLD,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001178879|FOLD|2012Q2,CIK0001178879,0001178879,Amicus Therapeutics Inc,FOLD,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001178879|FOLD|2012Q3,CIK0001178879,0001178879,Amicus Therapeutics Inc,FOLD,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001206264|SGI|2010Q1,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2010Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2010Q3,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2010Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2010Q4,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2010Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2011Q1,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2011Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2011Q2,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2011Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2011Q3,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2011Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2011Q4,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2011Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2012Q1,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2012Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2012Q2,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2012Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2012Q3,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2012Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2012Q4,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2012Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2013Q1,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2013Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2013Q2,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2013Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2013Q3,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2013Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2013Q4,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2013Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2014Q1,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2014Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2014Q2,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2014Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2014Q3,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2014Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2014Q4,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2014Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2015Q1,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2015Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2015Q2,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2015Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2015Q3,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2015Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2015Q4,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2015Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2016Q1,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2016Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2016Q2,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2016Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001206264|SGI|2016Q3,CIK0001206264,0001206264,Tempur Sealy International Inc,SGI,2016Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001230276|P|2016Q4,CIK0001230276,0001230276,Pandora Media Inc,P,2016Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001230276|P|2017Q1,CIK0001230276,0001230276,Pandora Media Inc,P,2017Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001230276|P|2017Q4,CIK0001230276,0001230276,Pandora Media Inc,P,2017Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001230276|P|2018Q1,CIK0001230276,0001230276,Pandora Media Inc,P,2018Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001230276|P|2018Q2,CIK0001230276,0001230276,Pandora Media Inc,P,2018Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001230276|P|2019Q2,CIK0001230276,0001230276,Pandora Media Inc,P,2019Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001230276|P|2019Q4,CIK0001230276,0001230276,Pandora Media Inc,P,2019Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001272830|VG|2010Q1,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2010Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2010Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2010Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2011Q1,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2011Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2011Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2011Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2012Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2012Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2012Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2013Q1,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2013Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2013Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2013Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2013Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2014Q1,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2014Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2014Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2014Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2015Q1,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2015Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2015Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2015Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2017Q1,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2017Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2017Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2017Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2017Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2017Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2018Q1,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2018Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2018Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2018Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2018Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2019Q1,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2019Q2,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2019Q3,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001272830|VG|2019Q4,CIK0001272830,0001272830,Vonage Holdings Corp,VG,2019Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001316517|KNDI|2019Q1,CIK0001316517,0001316517,Kandi Technologies Group Inc,KNDI,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001316517|KNDI|2019Q2,CIK0001316517,0001316517,Kandi Technologies Group Inc,KNDI,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001316517|KNDI|2019Q3,CIK0001316517,0001316517,Kandi Technologies Group Inc,KNDI,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001316517|KNDI|2019Q4,CIK0001316517,0001316517,Kandi Technologies Group Inc,KNDI,2019Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001320414|SEM|2011Q4,CIK0001320414,0001320414,Select Medical Holdings Corporation,SEM,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2014Q1,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2014Q2,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2014Q3,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2014Q4,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2015Q1,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2015Q2,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2015Q3,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2016Q1,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2016Q2,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2016Q4,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2016Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2017Q1,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2017Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2017Q2,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2017Q3,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2017Q4,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2017Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001330421|BV|2018Q1,CIK0001330421,0001330421,Bazaarvoice Inc,BV,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001338613|RGP|2010Q1,CIK0001338613,0001338613,Regency Energy Partners LP,RGP,2010Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001338613|RGP|2011Q1,CIK0001338613,0001338613,Regency Energy Partners LP,RGP,2011Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001338613|RGP|2011Q2,CIK0001338613,0001338613,Regency Energy Partners LP,RGP,2011Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001338613|RGP|2011Q3,CIK0001338613,0001338613,Regency Energy Partners LP,RGP,2011Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001338613|RGP|2011Q4,CIK0001338613,0001338613,Regency Energy Partners LP,RGP,2011Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001348952|ELC|2016Q3,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2016Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2016Q4,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2016Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2017Q1,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2017Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2017Q2,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2017Q3,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2017Q4,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2017Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2018Q1,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2018Q2,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2018Q3,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2018Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2018Q4,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2019Q1,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2019Q2,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2019Q3,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001348952|ELC|2019Q4,CIK0001348952,0001348952,Entergy Louisiana LLC,ELC,2019Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001372414|HIVE|2018Q1,CIK0001372414,0001372414,Aerohive Networks Inc,HIVE,2018Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001372414|HIVE|2018Q2,CIK0001372414,0001372414,Aerohive Networks Inc,HIVE,2018Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001372414|HIVE|2018Q3,CIK0001372414,0001372414,Aerohive Networks Inc,HIVE,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001372414|HIVE|2018Q4,CIK0001372414,0001372414,Aerohive Networks Inc,HIVE,2018Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001372414|HIVE|2019Q1,CIK0001372414,0001372414,Aerohive Networks Inc,HIVE,2019Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001372612|BOX|2015Q1,CIK0001372612,0001372612,Box Inc - Class A,BOX,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001372612|BOX|2015Q2,CIK0001372612,0001372612,Box Inc - Class A,BOX,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001372612|BOX|2015Q3,CIK0001372612,0001372612,Box Inc - Class A,BOX,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2010Q2,CIK0001373835,0001373835,Spectra Energy Corp,SE,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2010Q4,CIK0001373835,0001373835,Spectra Energy Corp,SE,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2011Q1,CIK0001373835,0001373835,Spectra Energy Corp,SE,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2011Q2,CIK0001373835,0001373835,Spectra Energy Corp,SE,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2011Q3,CIK0001373835,0001373835,Spectra Energy Corp,SE,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2011Q4,CIK0001373835,0001373835,Spectra Energy Corp,SE,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2012Q1,CIK0001373835,0001373835,Spectra Energy Corp,SE,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2012Q2,CIK0001373835,0001373835,Spectra Energy Corp,SE,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2012Q3,CIK0001373835,0001373835,Spectra Energy Corp,SE,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2012Q4,CIK0001373835,0001373835,Spectra Energy Corp,SE,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2013Q1,CIK0001373835,0001373835,Spectra Energy Corp,SE,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2013Q2,CIK0001373835,0001373835,Spectra Energy Corp,SE,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2013Q3,CIK0001373835,0001373835,Spectra Energy Corp,SE,2013Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2013Q4,CIK0001373835,0001373835,Spectra Energy Corp,SE,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2014Q1,CIK0001373835,0001373835,Spectra Energy Corp,SE,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2014Q2,CIK0001373835,0001373835,Spectra Energy Corp,SE,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2014Q3,CIK0001373835,0001373835,Spectra Energy Corp,SE,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2014Q4,CIK0001373835,0001373835,Spectra Energy Corp,SE,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2015Q1,CIK0001373835,0001373835,Spectra Energy Corp,SE,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2015Q2,CIK0001373835,0001373835,Spectra Energy Corp,SE,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001373835|SE|2015Q4,CIK0001373835,0001373835,Spectra Energy Corp,SE,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2012Q4,CIK0001379895,0001379895,Dynegy Inc,DYN,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2013Q1,CIK0001379895,0001379895,Dynegy Inc,DYN,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2013Q2,CIK0001379895,0001379895,Dynegy Inc,DYN,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2013Q3,CIK0001379895,0001379895,Dynegy Inc,DYN,2013Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2013Q4,CIK0001379895,0001379895,Dynegy Inc,DYN,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2014Q1,CIK0001379895,0001379895,Dynegy Inc,DYN,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2014Q2,CIK0001379895,0001379895,Dynegy Inc,DYN,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2014Q3,CIK0001379895,0001379895,Dynegy Inc,DYN,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2014Q4,CIK0001379895,0001379895,Dynegy Inc,DYN,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2015Q1,CIK0001379895,0001379895,Dynegy Inc,DYN,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2015Q2,CIK0001379895,0001379895,Dynegy Inc,DYN,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2015Q3,CIK0001379895,0001379895,Dynegy Inc,DYN,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2015Q4,CIK0001379895,0001379895,Dynegy Inc,DYN,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001379895|DYN|2016Q1,CIK0001379895,0001379895,Dynegy Inc,DYN,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001393726|TIPT|2014Q4,CIK0001393726,0001393726,Tiptree Inc,TIPT,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2014Q4,CIK0001396838,0001396838,The Dolan Company,DM,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2015Q1,CIK0001396838,0001396838,The Dolan Company,DM,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2015Q2,CIK0001396838,0001396838,The Dolan Company,DM,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2015Q3,CIK0001396838,0001396838,The Dolan Company,DM,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2015Q4,CIK0001396838,0001396838,The Dolan Company,DM,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2016Q1,CIK0001396838,0001396838,The Dolan Company,DM,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2016Q2,CIK0001396838,0001396838,The Dolan Company,DM,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2016Q3,CIK0001396838,0001396838,The Dolan Company,DM,2016Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2016Q4,CIK0001396838,0001396838,The Dolan Company,DM,2016Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2017Q1,CIK0001396838,0001396838,The Dolan Company,DM,2017Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2017Q2,CIK0001396838,0001396838,The Dolan Company,DM,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2017Q3,CIK0001396838,0001396838,The Dolan Company,DM,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2017Q4,CIK0001396838,0001396838,The Dolan Company,DM,2017Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2018Q1,CIK0001396838,0001396838,The Dolan Company,DM,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2018Q2,CIK0001396838,0001396838,The Dolan Company,DM,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2018Q3,CIK0001396838,0001396838,The Dolan Company,DM,2018Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2018Q4,CIK0001396838,0001396838,The Dolan Company,DM,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001396838|DM|2019Q1,CIK0001396838,0001396838,The Dolan Company,DM,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001408100|KW|2012Q1,CIK0001408100,0001408100,Kennedy-Wilson Holdings Inc,KW,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001410098|CRMD|2013Q4,CIK0001410098,0001410098,CorMedix Inc,CRMD,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001414475|WES|2012Q2,CIK0001414475,0001414475,Western Gas Partners LP,WES,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001414475|WES|2012Q3,CIK0001414475,0001414475,Western Gas Partners LP,WES,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001414475|WES|2012Q4,CIK0001414475,0001414475,Western Gas Partners LP,WES,2012Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2013Q1,CIK0001414475,0001414475,Western Gas Partners LP,WES,2013Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2013Q2,CIK0001414475,0001414475,Western Gas Partners LP,WES,2013Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2013Q3,CIK0001414475,0001414475,Western Gas Partners LP,WES,2013Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2013Q4,CIK0001414475,0001414475,Western Gas Partners LP,WES,2013Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2014Q1,CIK0001414475,0001414475,Western Gas Partners LP,WES,2014Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2014Q2,CIK0001414475,0001414475,Western Gas Partners LP,WES,2014Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2014Q3,CIK0001414475,0001414475,Western Gas Partners LP,WES,2014Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2014Q4,CIK0001414475,0001414475,Western Gas Partners LP,WES,2014Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2015Q1,CIK0001414475,0001414475,Western Gas Partners LP,WES,2015Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2015Q2,CIK0001414475,0001414475,Western Gas Partners LP,WES,2015Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2015Q3,CIK0001414475,0001414475,Western Gas Partners LP,WES,2015Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2015Q4,CIK0001414475,0001414475,Western Gas Partners LP,WES,2015Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2017Q1,CIK0001414475,0001414475,Western Gas Partners LP,WES,2017Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2017Q2,CIK0001414475,0001414475,Western Gas Partners LP,WES,2017Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2017Q3,CIK0001414475,0001414475,Western Gas Partners LP,WES,2017Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2017Q4,CIK0001414475,0001414475,Western Gas Partners LP,WES,2017Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2018Q1,CIK0001414475,0001414475,Western Gas Partners LP,WES,2018Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2018Q2,CIK0001414475,0001414475,Western Gas Partners LP,WES,2018Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2018Q3,CIK0001414475,0001414475,Western Gas Partners LP,WES,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2018Q4,CIK0001414475,0001414475,Western Gas Partners LP,WES,2018Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2019Q2,CIK0001414475,0001414475,Western Gas Partners LP,WES,2019Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2019Q3,CIK0001414475,0001414475,Western Gas Partners LP,WES,2019Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001414475|WES|2019Q4,CIK0001414475,0001414475,Western Gas Partners LP,WES,2019Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001428522|RDUS|2014Q2,CIK0001428522,0001428522,Radius Health Inc,RDUS,2014Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001428522|RDUS|2014Q3,CIK0001428522,0001428522,Radius Health Inc,RDUS,2014Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001428522|RDUS|2015Q4,CIK0001428522,0001428522,Radius Health Inc,RDUS,2015Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001428522|RDUS|2017Q4,CIK0001428522,0001428522,Radius Health Inc,RDUS,2017Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001428522|RDUS|2018Q1,CIK0001428522,0001428522,Radius Health Inc,RDUS,2018Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001428522|RDUS|2018Q2,CIK0001428522,0001428522,Radius Health Inc,RDUS,2018Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001428522|RDUS|2018Q4,CIK0001428522,0001428522,Radius Health Inc,RDUS,2018Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001428522|RDUS|2019Q3,CIK0001428522,0001428522,Radius Health Inc,RDUS,2019Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001465740|TWO|2012Q1,CIK0001465740,0001465740,Two Harbors Investment Corp,TWO,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001465740|TWO|2012Q2,CIK0001465740,0001465740,Two Harbors Investment Corp,TWO,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001465740|TWO|2012Q4,CIK0001465740,0001465740,Two Harbors Investment Corp,TWO,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001465740|TWO|2013Q1,CIK0001465740,0001465740,Two Harbors Investment Corp,TWO,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001465740|TWO|2013Q2,CIK0001465740,0001465740,Two Harbors Investment Corp,TWO,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001474432|P|2017Q3,CIK0001474432,0001474432,Everpure Inc - Class A,P,2017Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001474432|P|2018Q3,CIK0001474432,0001474432,Everpure Inc - Class A,P,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001474432|P|2018Q4,CIK0001474432,0001474432,Everpure Inc - Class A,P,2018Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2012Q3,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2012Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2012Q4,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2012Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2013Q1,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2013Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2013Q2,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2013Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2013Q3,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2013Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2013Q4,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2013Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2014Q1,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2014Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2014Q2,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2014Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2014Q3,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2014Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2014Q4,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2014Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2015Q1,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2015Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2015Q2,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2015Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2015Q3,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2015Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2015Q4,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2015Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2016Q1,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2016Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2016Q2,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2016Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2016Q3,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2016Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2016Q4,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2016Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2017Q1,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2017Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2017Q3,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2017Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2017Q4,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2017Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2018Q1,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2018Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2018Q2,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2018Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2018Q3,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2018Q4,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2018Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2019Q1,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2019Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2019Q2,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2019Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2019Q3,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2019Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001490892|COR|2019Q4,CIK0001490892,0001490892,CoreSite Realty Corporation,COR,2019Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001502749|EVER|2014Q1,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2014Q2,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2014Q3,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2014Q4,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2015Q1,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2015Q2,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2015Q3,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2015Q4,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2016Q1,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001502749|EVER|2018Q2,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2018Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001502749|EVER|2018Q3,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001502749|EVER|2018Q4,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2018Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001502749|EVER|2019Q1,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2019Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001502749|EVER|2019Q2,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2019Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001502749|EVER|2019Q3,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2019Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001502749|EVER|2019Q4,CIK0001502749,0001502749,EverBank Financial Corp,EVER,2019Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001512931|MRCC|2014Q2,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2014Q3,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2014Q4,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2015Q1,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2015Q2,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2015Q3,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2015Q4,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2016Q1,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2016Q2,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2016Q3,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2016Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2016Q4,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2016Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2017Q1,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2017Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2017Q2,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2017Q3,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2017Q4,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2017Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2018Q1,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2018Q2,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2018Q3,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2018Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2018Q4,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2019Q1,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2019Q2,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2019Q3,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001512931|MRCC|2019Q4,CIK0001512931,0001512931,Monroe Capital Corp,MRCC,2019Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001521847|AMPY|2016Q1,CIK0001521847,0001521847,Amplify Energy Corp,AMPY,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001521847|AMPY|2016Q2,CIK0001521847,0001521847,Amplify Energy Corp,AMPY,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001564708|NWS|2013Q2,CIK0001564708,0001564708,News Corp - Class B,NWS,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001564708|NWS|2013Q3,CIK0001564708,0001564708,News Corp - Class B,NWS,2013Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001566610|VERB|2019Q1,CIK0001566610,0001566610,Verb Technology Company Inc,VERB,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001574540|DOC|2014Q4,CIK0001574540,0001574540,Physicians Realty Trust,DOC,2014Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001574540|DOC|2016Q2,CIK0001574540,0001574540,Physicians Realty Trust,DOC,2016Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001574540|DOC|2017Q1,CIK0001574540,0001574540,Physicians Realty Trust,DOC,2017Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001574540|DOC|2017Q4,CIK0001574540,0001574540,Physicians Realty Trust,DOC,2017Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001574774|BEAT|2012Q4,CIK0001574774,0001574774,BioTelemetry Inc,BEAT,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001574774|BEAT|2013Q1,CIK0001574774,0001574774,BioTelemetry Inc,BEAT,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001574774|BEAT|2013Q2,CIK0001574774,0001574774,BioTelemetry Inc,BEAT,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2014Q4,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2015Q1,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2015Q2,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2015Q3,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2015Q4,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2016Q1,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2016Q2,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2016Q3,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2016Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2016Q4,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2016Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2017Q1,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2017Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2017Q2,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001587755|SNOW|2017Q3,CIK0001587755,0001587755,Intrawest Resorts Holdings Inc,SNOW,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001600033|ELF|2016Q3,CIK0001600033,0001600033,e.l.f. Beauty Inc,ELF,2016Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001604028|WMS|2014Q3,CIK0001604028,0001604028,Advanced Drainage Systems Inc,WMS,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001608638|CIVI|2018Q3,CIK0001608638,0001608638,Civitas Solutions Inc,CIVI,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2015Q1,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2015Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2015Q2,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2015Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2015Q3,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2015Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2015Q4,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2015Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2016Q1,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2016Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2016Q2,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2016Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2016Q3,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2016Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2016Q4,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2016Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2017Q1,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2017Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2017Q2,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2017Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2017Q3,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2017Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2017Q4,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2017Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2018Q1,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2018Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001614806|RPT|2018Q2,CIK0001614806,0001614806,Rithm Property Trust Inc,RPT,2018Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001632790|ENR|2011Q3,CIK0001632790,0001632790,Energizer Holdings Inc,ENR,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001632790|ENR|2011Q4,CIK0001632790,0001632790,Energizer Holdings Inc,ENR,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001635718|GCI|2010Q1,CIK0001635718,0001635718,Gannett Company Inc,GCI,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001635718|GCI|2010Q2,CIK0001635718,0001635718,Gannett Company Inc,GCI,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001635718|GCI|2010Q4,CIK0001635718,0001635718,Gannett Company Inc,GCI,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001635718|GCI|2011Q1,CIK0001635718,0001635718,Gannett Company Inc,GCI,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001635718|GCI|2011Q2,CIK0001635718,0001635718,Gannett Company Inc,GCI,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001635718|GCI|2011Q3,CIK0001635718,0001635718,Gannett Company Inc,GCI,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001635718|GCI|2011Q4,CIK0001635718,0001635718,Gannett Company Inc,GCI,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001680966|API|2013Q4,CIK0001680966,0001680966,Agora Inc,API,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001680966|API|2014Q2,CIK0001680966,0001680966,Agora Inc,API,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001680966|API|2014Q3,CIK0001680966,0001680966,Agora Inc,API,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001680966|API|2015Q1,CIK0001680966,0001680966,Agora Inc,API,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001680966|API|2015Q2,CIK0001680966,0001680966,Agora Inc,API,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001680966|API|2015Q3,CIK0001680966,0001680966,Agora Inc,API,2015Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2011Q2,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2011Q3,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2011Q4,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2012Q1,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2012Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2012Q2,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2012Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2012Q3,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2012Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2012Q4,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2013Q1,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2013Q2,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2013Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2013Q3,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2013Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2013Q4,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2014Q1,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2014Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2014Q2,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2014Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2014Q3,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2014Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2014Q4,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2014Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001691303|HCC|2015Q1,CIK0001691303,0001691303,HCC Insurance Holdings Inc,HCC,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001710366|CNR|2016Q1,CIK0001710366,0001710366,Cornerstone Building Brands Inc,CNR,2016Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2016Q2,CIK0001710366,0001710366,Cornerstone Building Brands Inc,CNR,2016Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2016Q3,CIK0001710366,0001710366,Cornerstone Building Brands Inc,CNR,2016Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2016Q4,CIK0001710366,0001710366,Cornerstone Building Brands Inc,CNR,2016Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2017Q1,CIK0001710366,0001710366,Cornerstone Building Brands Inc,CNR,2017Q1,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2017Q2,CIK0001710366,0001710366,Cornerstone Building Brands Inc,CNR,2017Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2017Q3,CIK0001710366,0001710366,Cornerstone Building Brands Inc,CNR,2017Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2017Q4,CIK0001710366,0001710366,Core Natural Resources Inc,CNR,2017Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2018Q3,CIK0001710366,0001710366,Core Natural Resources Inc,CNR,2018Q3,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2019Q2,CIK0001710366,0001710366,Core Natural Resources Inc,CNR,2019Q2,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001710366|CNR|2019Q4,CIK0001710366,0001710366,Core Natural Resources Inc,CNR,2019Q4,quarantine,reported_date_mapped_ticker_reuse_quarantine,historical ticker overlaps another CIK; excluded from canonical regression corpus
+CIK0001731348|TLRY|2019Q2,CIK0001731348,0001731348,Tilray Brands Inc,TLRY,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001751788|DOW|2010Q1,CIK0001751788,0001751788,The Dow Chemical Company,DOW,2010Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001751788|DOW|2010Q2,CIK0001751788,0001751788,The Dow Chemical Company,DOW,2010Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001751788|DOW|2010Q3,CIK0001751788,0001751788,The Dow Chemical Company,DOW,2010Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001751788|DOW|2010Q4,CIK0001751788,0001751788,The Dow Chemical Company,DOW,2010Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001751788|DOW|2011Q1,CIK0001751788,0001751788,The Dow Chemical Company,DOW,2011Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001751788|DOW|2011Q2,CIK0001751788,0001751788,The Dow Chemical Company,DOW,2011Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001751788|DOW|2011Q3,CIK0001751788,0001751788,The Dow Chemical Company,DOW,2011Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0001751788|DOW|2011Q4,CIK0001751788,0001751788,The Dow Chemical Company,DOW,2011Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2013Q4,CIK0002011641,0002011641,Ferguson Plc.,FERG,2013Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2015Q1,CIK0002011641,0002011641,Ferguson Plc.,FERG,2015Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2015Q2,CIK0002011641,0002011641,Ferguson Plc.,FERG,2015Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2015Q4,CIK0002011641,0002011641,Ferguson Plc.,FERG,2015Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2016Q1,CIK0002011641,0002011641,Ferguson Plc.,FERG,2016Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2016Q2,CIK0002011641,0002011641,Ferguson Plc.,FERG,2016Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2016Q4,CIK0002011641,0002011641,Ferguson Plc.,FERG,2016Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2017Q1,CIK0002011641,0002011641,Ferguson Plc.,FERG,2017Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2017Q2,CIK0002011641,0002011641,Ferguson Plc.,FERG,2017Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2017Q3,CIK0002011641,0002011641,Ferguson Plc.,FERG,2017Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2017Q4,CIK0002011641,0002011641,Ferguson Plc.,FERG,2017Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2018Q2,CIK0002011641,0002011641,Ferguson Plc.,FERG,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2018Q3,CIK0002011641,0002011641,Ferguson Plc.,FERG,2018Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2018Q4,CIK0002011641,0002011641,Ferguson Plc.,FERG,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2019Q2,CIK0002011641,0002011641,Ferguson Plc.,FERG,2019Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2019Q3,CIK0002011641,0002011641,Ferguson Plc.,FERG,2019Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002011641|FERG|2019Q4,CIK0002011641,0002011641,Ferguson Plc.,FERG,2019Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002012706|SUNS|2012Q4,CIK0002012706,0002012706,SLR Senior Investment Corp.,SUNS,2012Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002012706|SUNS|2013Q1,CIK0002012706,0002012706,SLR Senior Investment Corp.,SUNS,2013Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002057463|GLIBA|2018Q1,CIK0002057463,0002057463,GCI Liberty Inc - Class A,GLIBA,2018Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002057463|GLIBA|2018Q2,CIK0002057463,0002057463,GCI Liberty Inc - Class A,GLIBA,2018Q2,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002057463|GLIBA|2018Q3,CIK0002057463,0002057463,GCI Liberty Inc - Class A,GLIBA,2018Q3,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002057463|GLIBA|2018Q4,CIK0002057463,0002057463,GCI Liberty Inc - Class A,GLIBA,2018Q4,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter
+CIK0002057463|GLIBA|2019Q1,CIK0002057463,0002057463,GCI Liberty Inc - Class A,GLIBA,2019Q1,valid,no_reported_date_found,no exact reported-date row for the historical ticker and fiscal quarter

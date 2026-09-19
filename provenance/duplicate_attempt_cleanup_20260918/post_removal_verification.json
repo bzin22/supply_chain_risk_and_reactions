@@ -1,0 +1,12 @@
+{
+  "operation": "duplicate attempt canonicalization applied",
+  "active_manifest_rows_before": 139904,
+  "active_manifest_rows_after": 139833,
+  "archived_files": 71,
+  "archived_bytes": 459535,
+  "remaining_duplicate_attempt_keys": 0,
+  "missing_active_raw_files": 0,
+  "active_manifest_sha256_after": "0281a8bc54c3c4100bee83fe335cdfad1ca3122b98fe084a500f010df85f1d8f",
+  "recoverable_backup_manifest": "provenance/duplicate_attempt_cleanup_20260918/request_manifest_before_cleanup.csv",
+  "archive_root": ".archive/duplicate_attempts_20260918"
+}

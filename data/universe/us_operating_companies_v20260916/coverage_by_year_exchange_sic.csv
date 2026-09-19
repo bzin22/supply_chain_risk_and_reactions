@@ -1,0 +1,277 @@
+year,exchange,sic_division,eligible_firm_quarters
+2010,BATS,finance_insurance_real_estate,3
+2010,BATS,services,4
+2010,NASDAQ,construction,52
+2010,NASDAQ,finance_insurance_real_estate,1668
+2010,NASDAQ,manufacturing,2642
+2010,NASDAQ,mining,162
+2010,NASDAQ,retail_trade,316
+2010,NASDAQ,services,1117
+2010,NASDAQ,transportation_communications_utilities,427
+2010,NASDAQ,unknown,82
+2010,NASDAQ,wholesale_trade,164
+2010,NYSE,construction,122
+2010,NYSE,finance_insurance_real_estate,1346
+2010,NYSE,manufacturing,1742
+2010,NYSE,mining,368
+2010,NYSE,retail_trade,300
+2010,NYSE,services,563
+2010,NYSE,transportation_communications_utilities,589
+2010,NYSE,unknown,32
+2010,NYSE,wholesale_trade,124
+2010,NYSE ARCA,manufacturing,4
+2010,NYSE MKT,construction,4
+2010,NYSE MKT,finance_insurance_real_estate,16
+2010,NYSE MKT,manufacturing,24
+2010,NYSE MKT,mining,8
+2010,NYSE MKT,services,8
+2010,NYSE MKT,wholesale_trade,4
+2011,BATS,finance_insurance_real_estate,4
+2011,BATS,services,4
+2011,NASDAQ,construction,52
+2011,NASDAQ,finance_insurance_real_estate,1715
+2011,NASDAQ,manufacturing,2750
+2011,NASDAQ,mining,173
+2011,NASDAQ,retail_trade,336
+2011,NASDAQ,services,1190
+2011,NASDAQ,transportation_communications_utilities,446
+2011,NASDAQ,unknown,94
+2011,NASDAQ,wholesale_trade,168
+2011,NYSE,construction,124
+2011,NYSE,finance_insurance_real_estate,1419
+2011,NYSE,manufacturing,1805
+2011,NYSE,mining,384
+2011,NYSE,retail_trade,305
+2011,NYSE,services,603
+2011,NYSE,transportation_communications_utilities,619
+2011,NYSE,unknown,38
+2011,NYSE,wholesale_trade,130
+2011,NYSE ARCA,manufacturing,4
+2011,NYSE MKT,construction,4
+2011,NYSE MKT,finance_insurance_real_estate,16
+2011,NYSE MKT,manufacturing,24
+2011,NYSE MKT,mining,8
+2011,NYSE MKT,services,8
+2011,NYSE MKT,wholesale_trade,4
+2012,BATS,finance_insurance_real_estate,4
+2012,BATS,services,4
+2012,NASDAQ,construction,53
+2012,NASDAQ,finance_insurance_real_estate,1769
+2012,NASDAQ,manufacturing,2897
+2012,NASDAQ,mining,182
+2012,NASDAQ,retail_trade,362
+2012,NASDAQ,services,1250
+2012,NASDAQ,transportation_communications_utilities,454
+2012,NASDAQ,unknown,96
+2012,NASDAQ,wholesale_trade,173
+2012,NYSE,construction,124
+2012,NYSE,finance_insurance_real_estate,1469
+2012,NYSE,manufacturing,1871
+2012,NYSE,mining,413
+2012,NYSE,retail_trade,318
+2012,NYSE,services,656
+2012,NYSE,transportation_communications_utilities,642
+2012,NYSE,unknown,47
+2012,NYSE,wholesale_trade,140
+2012,NYSE ARCA,manufacturing,4
+2012,NYSE MKT,construction,4
+2012,NYSE MKT,finance_insurance_real_estate,16
+2012,NYSE MKT,manufacturing,24
+2012,NYSE MKT,mining,8
+2012,NYSE MKT,services,10
+2012,NYSE MKT,wholesale_trade,4
+2013,BATS,finance_insurance_real_estate,4
+2013,BATS,services,4
+2013,NASDAQ,construction,57
+2013,NASDAQ,finance_insurance_real_estate,1815
+2013,NASDAQ,manufacturing,3050
+2013,NASDAQ,mining,189
+2013,NASDAQ,retail_trade,383
+2013,NASDAQ,services,1319
+2013,NASDAQ,transportation_communications_utilities,475
+2013,NASDAQ,unknown,112
+2013,NASDAQ,wholesale_trade,181
+2013,NYSE,construction,136
+2013,NYSE,finance_insurance_real_estate,1571
+2013,NYSE,manufacturing,1948
+2013,NYSE,mining,430
+2013,NYSE,retail_trade,335
+2013,NYSE,services,729
+2013,NYSE,transportation_communications_utilities,683
+2013,NYSE,unknown,56
+2013,NYSE,wholesale_trade,151
+2013,NYSE ARCA,manufacturing,4
+2013,NYSE MKT,construction,4
+2013,NYSE MKT,finance_insurance_real_estate,16
+2013,NYSE MKT,manufacturing,24
+2013,NYSE MKT,mining,10
+2013,NYSE MKT,services,12
+2013,NYSE MKT,wholesale_trade,4
+2014,BATS,finance_insurance_real_estate,4
+2014,BATS,services,4
+2014,NASDAQ,construction,60
+2014,NASDAQ,finance_insurance_real_estate,1893
+2014,NASDAQ,manufacturing,3358
+2014,NASDAQ,mining,201
+2014,NASDAQ,retail_trade,421
+2014,NASDAQ,services,1401
+2014,NASDAQ,transportation_communications_utilities,487
+2014,NASDAQ,unknown,131
+2014,NASDAQ,wholesale_trade,187
+2014,NYSE,construction,151
+2014,NYSE,finance_insurance_real_estate,1690
+2014,NYSE,manufacturing,2019
+2014,NYSE,mining,457
+2014,NYSE,retail_trade,347
+2014,NYSE,services,821
+2014,NYSE,transportation_communications_utilities,712
+2014,NYSE,unknown,67
+2014,NYSE,wholesale_trade,164
+2014,NYSE ARCA,manufacturing,4
+2014,NYSE MKT,construction,4
+2014,NYSE MKT,finance_insurance_real_estate,16
+2014,NYSE MKT,manufacturing,29
+2014,NYSE MKT,mining,12
+2014,NYSE MKT,services,13
+2014,NYSE MKT,transportation_communications_utilities,1
+2014,NYSE MKT,wholesale_trade,4
+2015,BATS,finance_insurance_real_estate,4
+2015,BATS,services,4
+2015,NASDAQ,construction,65
+2015,NASDAQ,finance_insurance_real_estate,1972
+2015,NASDAQ,manufacturing,3623
+2015,NASDAQ,mining,206
+2015,NASDAQ,retail_trade,445
+2015,NASDAQ,services,1476
+2015,NASDAQ,transportation_communications_utilities,501
+2015,NASDAQ,unknown,132
+2015,NASDAQ,wholesale_trade,198
+2015,NYSE,construction,154
+2015,NYSE,finance_insurance_real_estate,1793
+2015,NYSE,manufacturing,2089
+2015,NYSE,mining,477
+2015,NYSE,retail_trade,362
+2015,NYSE,services,890
+2015,NYSE,transportation_communications_utilities,743
+2015,NYSE,unknown,73
+2015,NYSE,wholesale_trade,173
+2015,NYSE ARCA,manufacturing,4
+2015,NYSE MKT,construction,4
+2015,NYSE MKT,finance_insurance_real_estate,18
+2015,NYSE MKT,manufacturing,32
+2015,NYSE MKT,mining,12
+2015,NYSE MKT,services,16
+2015,NYSE MKT,transportation_communications_utilities,4
+2015,NYSE MKT,wholesale_trade,4
+2016,BATS,finance_insurance_real_estate,4
+2016,BATS,services,8
+2016,NASDAQ,construction,72
+2016,NASDAQ,finance_insurance_real_estate,2135
+2016,NASDAQ,manufacturing,3946
+2016,NASDAQ,mining,227
+2016,NASDAQ,retail_trade,469
+2016,NASDAQ,services,1629
+2016,NASDAQ,transportation_communications_utilities,533
+2016,NASDAQ,unknown,133
+2016,NASDAQ,wholesale_trade,204
+2016,NYSE,construction,156
+2016,NYSE,finance_insurance_real_estate,1853
+2016,NYSE,manufacturing,2168
+2016,NYSE,mining,496
+2016,NYSE,retail_trade,381
+2016,NYSE,services,958
+2016,NYSE,transportation_communications_utilities,769
+2016,NYSE,unknown,80
+2016,NYSE,wholesale_trade,193
+2016,NYSE ARCA,manufacturing,4
+2016,NYSE MKT,construction,4
+2016,NYSE MKT,finance_insurance_real_estate,19
+2016,NYSE MKT,manufacturing,36
+2016,NYSE MKT,mining,13
+2016,NYSE MKT,services,16
+2016,NYSE MKT,transportation_communications_utilities,4
+2016,NYSE MKT,wholesale_trade,4
+2017,BATS,finance_insurance_real_estate,4
+2017,BATS,services,8
+2017,NASDAQ,construction,74
+2017,NASDAQ,finance_insurance_real_estate,2196
+2017,NASDAQ,manufacturing,4126
+2017,NASDAQ,mining,252
+2017,NASDAQ,retail_trade,476
+2017,NASDAQ,services,1733
+2017,NASDAQ,transportation_communications_utilities,549
+2017,NASDAQ,unknown,142
+2017,NASDAQ,wholesale_trade,213
+2017,NYSE,construction,156
+2017,NYSE,finance_insurance_real_estate,1910
+2017,NYSE,manufacturing,2218
+2017,NYSE,mining,527
+2017,NYSE,retail_trade,396
+2017,NYSE,services,992
+2017,NYSE,transportation_communications_utilities,802
+2017,NYSE,unknown,77
+2017,NYSE,wholesale_trade,200
+2017,NYSE ARCA,manufacturing,4
+2017,NYSE MKT,construction,4
+2017,NYSE MKT,finance_insurance_real_estate,20
+2017,NYSE MKT,manufacturing,38
+2017,NYSE MKT,mining,16
+2017,NYSE MKT,services,18
+2017,NYSE MKT,transportation_communications_utilities,4
+2017,NYSE MKT,wholesale_trade,4
+2018,BATS,finance_insurance_real_estate,4
+2018,BATS,services,8
+2018,NASDAQ,construction,79
+2018,NASDAQ,finance_insurance_real_estate,2291
+2018,NASDAQ,manufacturing,4406
+2018,NASDAQ,mining,266
+2018,NASDAQ,retail_trade,491
+2018,NASDAQ,services,1834
+2018,NASDAQ,transportation_communications_utilities,566
+2018,NASDAQ,unknown,146
+2018,NASDAQ,wholesale_trade,216
+2018,NYSE,construction,156
+2018,NYSE,finance_insurance_real_estate,1963
+2018,NYSE,manufacturing,2260
+2018,NYSE,mining,556
+2018,NYSE,retail_trade,403
+2018,NYSE,services,1027
+2018,NYSE,transportation_communications_utilities,813
+2018,NYSE,unknown,76
+2018,NYSE,wholesale_trade,201
+2018,NYSE ARCA,manufacturing,4
+2018,NYSE MKT,construction,4
+2018,NYSE MKT,finance_insurance_real_estate,20
+2018,NYSE MKT,manufacturing,42
+2018,NYSE MKT,mining,16
+2018,NYSE MKT,services,20
+2018,NYSE MKT,transportation_communications_utilities,4
+2018,NYSE MKT,wholesale_trade,4
+2019,BATS,finance_insurance_real_estate,4
+2019,BATS,services,8
+2019,NASDAQ,construction,80
+2019,NASDAQ,finance_insurance_real_estate,2342
+2019,NASDAQ,manufacturing,4600
+2019,NASDAQ,mining,275
+2019,NASDAQ,retail_trade,504
+2019,NASDAQ,services,1904
+2019,NASDAQ,transportation_communications_utilities,588
+2019,NASDAQ,unknown,153
+2019,NASDAQ,wholesale_trade,223
+2019,NYSE,construction,156
+2019,NYSE,finance_insurance_real_estate,1976
+2019,NYSE,manufacturing,2296
+2019,NYSE,mining,559
+2019,NYSE,retail_trade,410
+2019,NYSE,services,1070
+2019,NYSE,transportation_communications_utilities,818
+2019,NYSE,unknown,86
+2019,NYSE,wholesale_trade,207
+2019,NYSE ARCA,manufacturing,4
+2019,NYSE MKT,construction,4
+2019,NYSE MKT,finance_insurance_real_estate,23
+2019,NYSE MKT,manufacturing,44
+2019,NYSE MKT,mining,16
+2019,NYSE MKT,services,20
+2019,NYSE MKT,transportation_communications_utilities,4
+2019,NYSE MKT,wholesale_trade,4

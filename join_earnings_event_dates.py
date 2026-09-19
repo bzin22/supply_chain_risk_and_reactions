@@ -10,6 +10,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+from study_period import validate_csv_event_dates_in_study_period, validate_csv_in_study_period
+
 
 DATE_COLUMNS = ["event_date", "event_date_source", "event_date_status", "event_date_mapping_method"]
 
@@ -34,6 +36,10 @@ def main() -> None:
     configure_csv_field_size_limit()
     if args.input.resolve() == args.output.resolve():
         raise SystemExit("Refusing to overwrite --input")
+    validate_csv_in_study_period(args.input, context="event-date join input")
+    validate_csv_in_study_period(args.mapping, context="event-date mapping")
+    validate_csv_event_dates_in_study_period(args.input, context="event-date join input")
+    validate_csv_event_dates_in_study_period(args.mapping, context="event-date mapping")
     included = None
     if args.include_tickers:
         included = {ticker.strip().upper() for ticker in args.include_tickers.split(",") if ticker.strip()}

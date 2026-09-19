@@ -15,7 +15,6 @@ import argparse
 import csv
 import json
 import os
-import re
 import tempfile
 import time
 from collections.abc import Iterable
@@ -24,11 +23,11 @@ from pathlib import Path
 from typing import Any
 
 import requests
+from study_period import STUDY_END, STUDY_START, parse_quarter, study_quarters
 
 URL = "https://www.alphavantage.co/query"
 STUDY_DIR = Path(__file__).resolve().parent
 DEFAULT_RAW_DIR = STUDY_DIR / "artifacts" / "earnings_call_responses"
-QUARTER_PATTERN = re.compile(r"^(20\d{2})Q([1-4])$")
 
 TRANSCRIPT_FIELDS = [
     "status", "ticker", "company_name", "sector", "industry", "year", "quarter",
@@ -43,23 +42,6 @@ SEGMENT_FIELDS = [
     "call_date", "segment_number", "speaker", "title", "speaker_role", "turn_type",
     "is_analyst_question", "content", "alphavantage_sentiment", "fetched_at_utc",
 ]
-
-
-def parse_quarter(value: str) -> tuple[int, int]:
-    match = QUARTER_PATTERN.fullmatch(value.upper())
-    if not match:
-        raise argparse.ArgumentTypeError("quarter must use YYYYQn format, e.g. 2024Q4")
-    return int(match.group(1)), int(match.group(2))
-
-
-def quarter_labels(start: str, end: str) -> list[str]:
-    start_year, start_quarter = parse_quarter(start)
-    end_year, end_quarter = parse_quarter(end)
-    start_index = start_year * 4 + start_quarter - 1
-    end_index = end_year * 4 + end_quarter - 1
-    if start_index > end_index:
-        raise ValueError("start quarter must not be later than end quarter")
-    return [f"{index // 4:04d}Q{index % 4 + 1}" for index in range(start_index, end_index + 1)]
 
 
 def load_companies(path: Path) -> dict[str, dict[str, str]]:
@@ -325,8 +307,6 @@ def parse_args() -> argparse.Namespace:
              "the paper's universe.")
     parser.add_argument("--output-dir", type=Path, default=STUDY_DIR)
     parser.add_argument("--raw-dir", type=Path, default=DEFAULT_RAW_DIR)
-    parser.add_argument("--start-quarter", default="2010Q1")
-    parser.add_argument("--end-quarter", default="2024Q4")
     parser.add_argument("--requests-per-minute", type=float, default=60.0)
     parser.add_argument("--timeout", type=float, default=30.0)
     parser.add_argument("--limit", type=int, help="process only the first N pairs")
@@ -343,7 +323,8 @@ def main() -> None:
         raise SystemExit("--requests-per-minute must be positive")
 
     companies = load_companies(args.input)
-    quarters = quarter_labels(args.start_quarter, args.end_quarter)
+    # The period is a study-design invariant, not a runtime option.
+    quarters = study_quarters()
     pairs = [(ticker, quarter) for ticker in companies for quarter in quarters]
     if args.limit is not None:
         if args.limit < 1:
@@ -357,7 +338,8 @@ def main() -> None:
         if args.force or pair not in raw_results or raw_results[pair].get("status") not in completed
     ]
     print(
-        f"Companies: {len(companies)}; quarters: {len(quarters)}; "
+        f"Study period: {STUDY_START}-{STUDY_END}; companies: {len(companies)}; "
+        f"quarters: {len(quarters)}; "
         f"requested: {len(pairs)}; pending: {len(pending)}"
     )
     interval = 60.0 / args.requests_per_minute * 1.02

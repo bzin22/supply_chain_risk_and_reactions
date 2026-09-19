@@ -99,6 +99,8 @@ from typing import Any, Iterable
 
 import numpy as np
 
+from study_period import validate_csv_event_dates_in_study_period, validate_csv_in_study_period
+
 
 ESTIMATION_DAYS = 200
 PRE_EVENT_GAP = 10
@@ -717,6 +719,10 @@ def main() -> None:
     if args.momentum is not None:
         input_paths.append(args.momentum)
 
+    validate_csv_in_study_period(args.segments, context="CAR segment input")
+    validate_csv_in_study_period(args.supply_chain_scores, context="CAR score input")
+    validate_csv_event_dates_in_study_period(args.segments, context="CAR segment input")
+    validate_csv_event_dates_in_study_period(args.supply_chain_scores, context="CAR score input")
     events = load_events_from_segments(args.segments, args.event_date_column)
     if args.limit is not None:
         events = events[: args.limit]

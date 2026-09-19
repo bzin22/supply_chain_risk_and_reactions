@@ -1,0 +1,21 @@
+{
+  "version": "v20260916",
+  "study_period": "2010Q1-2019Q4",
+  "built_at_utc": "2026-09-17T06:15:45.901872+00:00",
+  "listing_observations": 338209,
+  "candidate_common_stock_securities": 9636,
+  "resolved_cik_securities": 7435,
+  "unresolved_identity_securities": 2201,
+  "excluded_listing_observations": 117823,
+  "eligible_resolved_firm_quarters": 151073,
+  "eligible_resolved_security_quarters": 189667,
+  "firm_quarters_with_multiple_security_candidates": 32793,
+  "eligible_unresolved_security_quarters": 0,
+  "eligible_unresolved_firm_quarters": 0,
+  "limitations": [
+    "SIC uses complete current SEC issuer metadata; historical SIC changes are not reconstructed.",
+    "Current SEC ticker data is identity corroboration only, not historical membership evidence.",
+    "SEC state-of-incorporation metadata must confirm US domicile; unverified domicile is excluded.",
+    "Unresolved public identifiers are excluded from transcript request inputs."
+  ]
+}

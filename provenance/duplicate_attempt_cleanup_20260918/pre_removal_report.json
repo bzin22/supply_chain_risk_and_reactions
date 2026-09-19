@@ -1,0 +1,15 @@
+{
+  "operation": "duplicate attempt canonicalization plan",
+  "active_manifest": "artifacts/full_transcript_collection_v20260917/request_manifest.csv",
+  "active_manifest_sha256": "a2d9ed75a5b4c130fe7a2c6773f1603cfc0260c8d1b28ccdaa55de2de11edd4c",
+  "active_manifest_rows_before": 139904,
+  "duplicate_attempt_keys": 71,
+  "redundant_observations_and_files": 71,
+  "redundant_bytes": 459535,
+  "exact_provider_body_duplicates": 71,
+  "conflicting_provider_bodies": 0,
+  "quarters_outside_2010Q1_2019Q4": 0,
+  "canonical_rule": "earliest requested_at_utc, then lexical raw_path",
+  "archive_root": ".archive/duplicate_attempts_20260918",
+  "active_files_changed": false
+}

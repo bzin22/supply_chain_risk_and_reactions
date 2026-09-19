@@ -1,0 +1,57 @@
+{
+  "pilot_companies": 50,
+  "eligible_firm_quarters": 2000,
+  "request_attempts": 2610,
+  "terminal_validation_counts": {
+    "valid": 1490,
+    "no_transcript": 506,
+    "technical_failure": 4
+  },
+  "valid_calls": 1490,
+  "validation_yield": 0.745,
+  "date_status_counts": {
+    "ambiguous": 1389,
+    "no_source_found": 101
+  },
+  "date_confirmation_coverage": 0.0,
+  "source_counts": {
+    "yfinance": 1389,
+    "yahoo_finance_web_search": 119,
+    "targeted_web_backup": 119
+  },
+  "source_quality": {
+    "yfinance|medium_candidate_only|ambiguous": 1371,
+    "yfinance|low_candidate_only|ambiguous": 18,
+    "yahoo_finance_web_search|none|no_source_found": 119,
+    "targeted_web_backup|none|no_source_found": 119
+  },
+  "source_agreement": {
+    "not_comparable": 1490
+  },
+  "unresolved_reasons": {
+    "yfinance_candidate_lacks_explicit_fiscal-period evidence": 1389,
+    "no qualifying yfinance or web source": 101
+  },
+  "issuer_size_tiers": {
+    "mega": 5,
+    "large": 14,
+    "unavailable": 7,
+    "mid": 12,
+    "small": 12
+  },
+  "historical_ticker_change_companies": 5,
+  "runtime_seconds": 2986.214588165283,
+  "projected_full_universe_firm_quarters": 151073,
+  "projected_full_universe_companies": 4671,
+  "projected_remaining_companies": 4621,
+  "projected_valid_calls_at_pilot_yield": 112549,
+  "remaining_universe_not_launched": true,
+  "ticker_queries": "see provenance",
+  "network_retrieved_at_utc": "see provenance",
+  "request_manifest_sha256_before_deletion": "c28ad98b5237d78c8ce320ead7a3f519ea550f14a07377baf8de14632245b5e8",
+  "retained_payloads": 1490,
+  "retained_bytes": 66754237,
+  "deletion_payloads": 1120,
+  "deletion_bytes": 558310,
+  "deletion_applied": true
+}

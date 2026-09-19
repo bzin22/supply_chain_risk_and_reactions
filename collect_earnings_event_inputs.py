@@ -37,6 +37,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from study_period import validate_csv_event_dates_in_study_period, validate_csv_in_study_period
+
 
 API_URL = "https://www.alphavantage.co/query"
 FRENCH_URLS = {
@@ -350,6 +352,8 @@ def main() -> None:
     api_key = os.environ.get("ALPHAVANTAGE_API_KEY")
     if not api_key:
         raise SystemExit("ALPHAVANTAGE_API_KEY is not present in the environment")
+    validate_csv_in_study_period(args.events, context="event-date collection input")
+    validate_csv_event_dates_in_study_period(args.events, context="event-date collection input")
     events, quarters_by_ticker = load_events(args.events)
     all_tickers = sorted(quarters_by_ticker)
     requested_tickers = None

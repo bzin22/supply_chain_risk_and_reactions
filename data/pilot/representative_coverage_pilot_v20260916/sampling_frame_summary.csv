@@ -1,0 +1,277 @@
+sampling_stratum,year,exchange,sic_division,population,sample,selection_probability,design_weight
+2010|BATS|finance_insurance_real_estate,2010,BATS,finance_insurance_real_estate,3,0,0.0000000000,
+2010|BATS|services,2010,BATS,services,4,0,0.0000000000,
+2010|NASDAQ|construction,2010,NASDAQ,construction,52,0,0.0000000000,
+2010|NASDAQ|finance_insurance_real_estate,2010,NASDAQ,finance_insurance_real_estate,1668,9,0.0053956835,185.3333333333
+2010|NASDAQ|manufacturing,2010,NASDAQ,manufacturing,2642,14,0.0052990159,188.7142857143
+2010|NASDAQ|mining,2010,NASDAQ,mining,162,1,0.0061728395,162.0000000000
+2010|NASDAQ|retail_trade,2010,NASDAQ,retail_trade,316,2,0.0063291139,158.0000000000
+2010|NASDAQ|services,2010,NASDAQ,services,1117,6,0.0053715309,186.1666666667
+2010|NASDAQ|transportation_communications_utilities,2010,NASDAQ,transportation_communications_utilities,427,2,0.0046838407,213.5000000000
+2010|NASDAQ|unknown,2010,NASDAQ,unknown,82,0,0.0000000000,
+2010|NASDAQ|wholesale_trade,2010,NASDAQ,wholesale_trade,164,1,0.0060975610,164.0000000000
+2010|NYSE ARCA|manufacturing,2010,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2010|NYSE MKT|construction,2010,NYSE MKT,construction,4,0,0.0000000000,
+2010|NYSE MKT|finance_insurance_real_estate,2010,NYSE MKT,finance_insurance_real_estate,16,0,0.0000000000,
+2010|NYSE MKT|manufacturing,2010,NYSE MKT,manufacturing,24,0,0.0000000000,
+2010|NYSE MKT|mining,2010,NYSE MKT,mining,8,0,0.0000000000,
+2010|NYSE MKT|services,2010,NYSE MKT,services,8,0,0.0000000000,
+2010|NYSE MKT|wholesale_trade,2010,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2010|NYSE|construction,2010,NYSE,construction,122,1,0.0081967213,122.0000000000
+2010|NYSE|finance_insurance_real_estate,2010,NYSE,finance_insurance_real_estate,1346,7,0.0052005944,192.2857142857
+2010|NYSE|manufacturing,2010,NYSE,manufacturing,1742,9,0.0051664753,193.5555555556
+2010|NYSE|mining,2010,NYSE,mining,368,2,0.0054347826,184.0000000000
+2010|NYSE|retail_trade,2010,NYSE,retail_trade,300,2,0.0066666667,150.0000000000
+2010|NYSE|services,2010,NYSE,services,563,3,0.0053285968,187.6666666667
+2010|NYSE|transportation_communications_utilities,2010,NYSE,transportation_communications_utilities,589,3,0.0050933786,196.3333333333
+2010|NYSE|unknown,2010,NYSE,unknown,32,0,0.0000000000,
+2010|NYSE|wholesale_trade,2010,NYSE,wholesale_trade,124,1,0.0080645161,124.0000000000
+2011|BATS|finance_insurance_real_estate,2011,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2011|BATS|services,2011,BATS,services,4,0,0.0000000000,
+2011|NASDAQ|construction,2011,NASDAQ,construction,52,0,0.0000000000,
+2011|NASDAQ|finance_insurance_real_estate,2011,NASDAQ,finance_insurance_real_estate,1715,9,0.0052478134,190.5555555556
+2011|NASDAQ|manufacturing,2011,NASDAQ,manufacturing,2750,15,0.0054545455,183.3333333333
+2011|NASDAQ|mining,2011,NASDAQ,mining,173,1,0.0057803468,173.0000000000
+2011|NASDAQ|retail_trade,2011,NASDAQ,retail_trade,336,2,0.0059523810,168.0000000000
+2011|NASDAQ|services,2011,NASDAQ,services,1190,6,0.0050420168,198.3333333333
+2011|NASDAQ|transportation_communications_utilities,2011,NASDAQ,transportation_communications_utilities,446,2,0.0044843049,223.0000000000
+2011|NASDAQ|unknown,2011,NASDAQ,unknown,94,1,0.0106382979,94.0000000000
+2011|NASDAQ|wholesale_trade,2011,NASDAQ,wholesale_trade,168,1,0.0059523810,168.0000000000
+2011|NYSE ARCA|manufacturing,2011,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2011|NYSE MKT|construction,2011,NYSE MKT,construction,4,0,0.0000000000,
+2011|NYSE MKT|finance_insurance_real_estate,2011,NYSE MKT,finance_insurance_real_estate,16,0,0.0000000000,
+2011|NYSE MKT|manufacturing,2011,NYSE MKT,manufacturing,24,0,0.0000000000,
+2011|NYSE MKT|mining,2011,NYSE MKT,mining,8,0,0.0000000000,
+2011|NYSE MKT|services,2011,NYSE MKT,services,8,0,0.0000000000,
+2011|NYSE MKT|wholesale_trade,2011,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2011|NYSE|construction,2011,NYSE,construction,124,1,0.0080645161,124.0000000000
+2011|NYSE|finance_insurance_real_estate,2011,NYSE,finance_insurance_real_estate,1419,8,0.0056377731,177.3750000000
+2011|NYSE|manufacturing,2011,NYSE,manufacturing,1805,10,0.0055401662,180.5000000000
+2011|NYSE|mining,2011,NYSE,mining,384,2,0.0052083333,192.0000000000
+2011|NYSE|retail_trade,2011,NYSE,retail_trade,305,2,0.0065573770,152.5000000000
+2011|NYSE|services,2011,NYSE,services,603,3,0.0049751244,201.0000000000
+2011|NYSE|transportation_communications_utilities,2011,NYSE,transportation_communications_utilities,619,3,0.0048465267,206.3333333333
+2011|NYSE|unknown,2011,NYSE,unknown,38,0,0.0000000000,
+2011|NYSE|wholesale_trade,2011,NYSE,wholesale_trade,130,1,0.0076923077,130.0000000000
+2012|BATS|finance_insurance_real_estate,2012,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2012|BATS|services,2012,BATS,services,4,0,0.0000000000,
+2012|NASDAQ|construction,2012,NASDAQ,construction,53,0,0.0000000000,
+2012|NASDAQ|finance_insurance_real_estate,2012,NASDAQ,finance_insurance_real_estate,1769,9,0.0050876201,196.5555555556
+2012|NASDAQ|manufacturing,2012,NASDAQ,manufacturing,2897,15,0.0051777701,193.1333333333
+2012|NASDAQ|mining,2012,NASDAQ,mining,182,1,0.0054945055,182.0000000000
+2012|NASDAQ|retail_trade,2012,NASDAQ,retail_trade,362,2,0.0055248619,181.0000000000
+2012|NASDAQ|services,2012,NASDAQ,services,1250,7,0.0056000000,178.5714285714
+2012|NASDAQ|transportation_communications_utilities,2012,NASDAQ,transportation_communications_utilities,454,2,0.0044052863,227.0000000000
+2012|NASDAQ|unknown,2012,NASDAQ,unknown,96,1,0.0104166667,96.0000000000
+2012|NASDAQ|wholesale_trade,2012,NASDAQ,wholesale_trade,173,1,0.0057803468,173.0000000000
+2012|NYSE ARCA|manufacturing,2012,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2012|NYSE MKT|construction,2012,NYSE MKT,construction,4,0,0.0000000000,
+2012|NYSE MKT|finance_insurance_real_estate,2012,NYSE MKT,finance_insurance_real_estate,16,0,0.0000000000,
+2012|NYSE MKT|manufacturing,2012,NYSE MKT,manufacturing,24,0,0.0000000000,
+2012|NYSE MKT|mining,2012,NYSE MKT,mining,8,0,0.0000000000,
+2012|NYSE MKT|services,2012,NYSE MKT,services,10,0,0.0000000000,
+2012|NYSE MKT|wholesale_trade,2012,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2012|NYSE|construction,2012,NYSE,construction,124,1,0.0080645161,124.0000000000
+2012|NYSE|finance_insurance_real_estate,2012,NYSE,finance_insurance_real_estate,1469,8,0.0054458816,183.6250000000
+2012|NYSE|manufacturing,2012,NYSE,manufacturing,1871,10,0.0053447354,187.1000000000
+2012|NYSE|mining,2012,NYSE,mining,413,2,0.0048426150,206.5000000000
+2012|NYSE|retail_trade,2012,NYSE,retail_trade,318,2,0.0062893082,159.0000000000
+2012|NYSE|services,2012,NYSE,services,656,4,0.0060975610,164.0000000000
+2012|NYSE|transportation_communications_utilities,2012,NYSE,transportation_communications_utilities,642,3,0.0046728972,214.0000000000
+2012|NYSE|unknown,2012,NYSE,unknown,47,0,0.0000000000,
+2012|NYSE|wholesale_trade,2012,NYSE,wholesale_trade,140,1,0.0071428571,140.0000000000
+2013|BATS|finance_insurance_real_estate,2013,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2013|BATS|services,2013,BATS,services,4,0,0.0000000000,
+2013|NASDAQ|construction,2013,NASDAQ,construction,57,0,0.0000000000,
+2013|NASDAQ|finance_insurance_real_estate,2013,NASDAQ,finance_insurance_real_estate,1815,10,0.0055096419,181.5000000000
+2013|NASDAQ|manufacturing,2013,NASDAQ,manufacturing,3050,16,0.0052459016,190.6250000000
+2013|NASDAQ|mining,2013,NASDAQ,mining,189,1,0.0052910053,189.0000000000
+2013|NASDAQ|retail_trade,2013,NASDAQ,retail_trade,383,2,0.0052219321,191.5000000000
+2013|NASDAQ|services,2013,NASDAQ,services,1319,7,0.0053070508,188.4285714286
+2013|NASDAQ|transportation_communications_utilities,2013,NASDAQ,transportation_communications_utilities,475,3,0.0063157895,158.3333333333
+2013|NASDAQ|unknown,2013,NASDAQ,unknown,112,1,0.0089285714,112.0000000000
+2013|NASDAQ|wholesale_trade,2013,NASDAQ,wholesale_trade,181,1,0.0055248619,181.0000000000
+2013|NYSE ARCA|manufacturing,2013,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2013|NYSE MKT|construction,2013,NYSE MKT,construction,4,0,0.0000000000,
+2013|NYSE MKT|finance_insurance_real_estate,2013,NYSE MKT,finance_insurance_real_estate,16,0,0.0000000000,
+2013|NYSE MKT|manufacturing,2013,NYSE MKT,manufacturing,24,0,0.0000000000,
+2013|NYSE MKT|mining,2013,NYSE MKT,mining,10,0,0.0000000000,
+2013|NYSE MKT|services,2013,NYSE MKT,services,12,0,0.0000000000,
+2013|NYSE MKT|wholesale_trade,2013,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2013|NYSE|construction,2013,NYSE,construction,136,1,0.0073529412,136.0000000000
+2013|NYSE|finance_insurance_real_estate,2013,NYSE,finance_insurance_real_estate,1571,8,0.0050922979,196.3750000000
+2013|NYSE|manufacturing,2013,NYSE,manufacturing,1948,10,0.0051334702,194.8000000000
+2013|NYSE|mining,2013,NYSE,mining,430,2,0.0046511628,215.0000000000
+2013|NYSE|retail_trade,2013,NYSE,retail_trade,335,2,0.0059701493,167.5000000000
+2013|NYSE|services,2013,NYSE,services,729,4,0.0054869684,182.2500000000
+2013|NYSE|transportation_communications_utilities,2013,NYSE,transportation_communications_utilities,683,4,0.0058565154,170.7500000000
+2013|NYSE|unknown,2013,NYSE,unknown,56,0,0.0000000000,
+2013|NYSE|wholesale_trade,2013,NYSE,wholesale_trade,151,1,0.0066225166,151.0000000000
+2014|BATS|finance_insurance_real_estate,2014,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2014|BATS|services,2014,BATS,services,4,0,0.0000000000,
+2014|NASDAQ|construction,2014,NASDAQ,construction,60,0,0.0000000000,
+2014|NASDAQ|finance_insurance_real_estate,2014,NASDAQ,finance_insurance_real_estate,1893,10,0.0052826202,189.3000000000
+2014|NASDAQ|manufacturing,2014,NASDAQ,manufacturing,3358,18,0.0053603335,186.5555555556
+2014|NASDAQ|mining,2014,NASDAQ,mining,201,1,0.0049751244,201.0000000000
+2014|NASDAQ|retail_trade,2014,NASDAQ,retail_trade,421,2,0.0047505938,210.5000000000
+2014|NASDAQ|services,2014,NASDAQ,services,1401,7,0.0049964311,200.1428571429
+2014|NASDAQ|transportation_communications_utilities,2014,NASDAQ,transportation_communications_utilities,487,3,0.0061601643,162.3333333333
+2014|NASDAQ|unknown,2014,NASDAQ,unknown,131,1,0.0076335878,131.0000000000
+2014|NASDAQ|wholesale_trade,2014,NASDAQ,wholesale_trade,187,1,0.0053475936,187.0000000000
+2014|NYSE ARCA|manufacturing,2014,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2014|NYSE MKT|construction,2014,NYSE MKT,construction,4,0,0.0000000000,
+2014|NYSE MKT|finance_insurance_real_estate,2014,NYSE MKT,finance_insurance_real_estate,16,0,0.0000000000,
+2014|NYSE MKT|manufacturing,2014,NYSE MKT,manufacturing,29,0,0.0000000000,
+2014|NYSE MKT|mining,2014,NYSE MKT,mining,12,0,0.0000000000,
+2014|NYSE MKT|services,2014,NYSE MKT,services,13,0,0.0000000000,
+2014|NYSE MKT|transportation_communications_utilities,2014,NYSE MKT,transportation_communications_utilities,1,0,0.0000000000,
+2014|NYSE MKT|wholesale_trade,2014,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2014|NYSE|construction,2014,NYSE,construction,151,1,0.0066225166,151.0000000000
+2014|NYSE|finance_insurance_real_estate,2014,NYSE,finance_insurance_real_estate,1690,9,0.0053254438,187.7777777778
+2014|NYSE|manufacturing,2014,NYSE,manufacturing,2019,11,0.0054482417,183.5454545455
+2014|NYSE|mining,2014,NYSE,mining,457,2,0.0043763676,228.5000000000
+2014|NYSE|retail_trade,2014,NYSE,retail_trade,347,2,0.0057636888,173.5000000000
+2014|NYSE|services,2014,NYSE,services,821,4,0.0048721072,205.2500000000
+2014|NYSE|transportation_communications_utilities,2014,NYSE,transportation_communications_utilities,712,4,0.0056179775,178.0000000000
+2014|NYSE|unknown,2014,NYSE,unknown,67,0,0.0000000000,
+2014|NYSE|wholesale_trade,2014,NYSE,wholesale_trade,164,1,0.0060975610,164.0000000000
+2015|BATS|finance_insurance_real_estate,2015,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2015|BATS|services,2015,BATS,services,4,0,0.0000000000,
+2015|NASDAQ|construction,2015,NASDAQ,construction,65,0,0.0000000000,
+2015|NASDAQ|finance_insurance_real_estate,2015,NASDAQ,finance_insurance_real_estate,1972,11,0.0055780933,179.2727272727
+2015|NASDAQ|manufacturing,2015,NASDAQ,manufacturing,3623,19,0.0052442727,190.6842105263
+2015|NASDAQ|mining,2015,NASDAQ,mining,206,1,0.0048543689,206.0000000000
+2015|NASDAQ|retail_trade,2015,NASDAQ,retail_trade,445,2,0.0044943820,222.5000000000
+2015|NASDAQ|services,2015,NASDAQ,services,1476,8,0.0054200542,184.5000000000
+2015|NASDAQ|transportation_communications_utilities,2015,NASDAQ,transportation_communications_utilities,501,3,0.0059880240,167.0000000000
+2015|NASDAQ|unknown,2015,NASDAQ,unknown,132,1,0.0075757576,132.0000000000
+2015|NASDAQ|wholesale_trade,2015,NASDAQ,wholesale_trade,198,1,0.0050505051,198.0000000000
+2015|NYSE ARCA|manufacturing,2015,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2015|NYSE MKT|construction,2015,NYSE MKT,construction,4,0,0.0000000000,
+2015|NYSE MKT|finance_insurance_real_estate,2015,NYSE MKT,finance_insurance_real_estate,18,0,0.0000000000,
+2015|NYSE MKT|manufacturing,2015,NYSE MKT,manufacturing,32,0,0.0000000000,
+2015|NYSE MKT|mining,2015,NYSE MKT,mining,12,0,0.0000000000,
+2015|NYSE MKT|services,2015,NYSE MKT,services,16,0,0.0000000000,
+2015|NYSE MKT|transportation_communications_utilities,2015,NYSE MKT,transportation_communications_utilities,4,0,0.0000000000,
+2015|NYSE MKT|wholesale_trade,2015,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2015|NYSE|construction,2015,NYSE,construction,154,1,0.0064935065,154.0000000000
+2015|NYSE|finance_insurance_real_estate,2015,NYSE,finance_insurance_real_estate,1793,10,0.0055772448,179.3000000000
+2015|NYSE|manufacturing,2015,NYSE,manufacturing,2089,11,0.0052656774,189.9090909091
+2015|NYSE|mining,2015,NYSE,mining,477,3,0.0062893082,159.0000000000
+2015|NYSE|retail_trade,2015,NYSE,retail_trade,362,2,0.0055248619,181.0000000000
+2015|NYSE|services,2015,NYSE,services,890,5,0.0056179775,178.0000000000
+2015|NYSE|transportation_communications_utilities,2015,NYSE,transportation_communications_utilities,743,4,0.0053835801,185.7500000000
+2015|NYSE|unknown,2015,NYSE,unknown,73,0,0.0000000000,
+2015|NYSE|wholesale_trade,2015,NYSE,wholesale_trade,173,1,0.0057803468,173.0000000000
+2016|BATS|finance_insurance_real_estate,2016,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2016|BATS|services,2016,BATS,services,8,0,0.0000000000,
+2016|NASDAQ|construction,2016,NASDAQ,construction,72,0,0.0000000000,
+2016|NASDAQ|finance_insurance_real_estate,2016,NASDAQ,finance_insurance_real_estate,2135,11,0.0051522248,194.0909090909
+2016|NASDAQ|manufacturing,2016,NASDAQ,manufacturing,3946,21,0.0053218449,187.9047619048
+2016|NASDAQ|mining,2016,NASDAQ,mining,227,1,0.0044052863,227.0000000000
+2016|NASDAQ|retail_trade,2016,NASDAQ,retail_trade,469,3,0.0063965885,156.3333333333
+2016|NASDAQ|services,2016,NASDAQ,services,1629,9,0.0055248619,181.0000000000
+2016|NASDAQ|transportation_communications_utilities,2016,NASDAQ,transportation_communications_utilities,533,3,0.0056285178,177.6666666667
+2016|NASDAQ|unknown,2016,NASDAQ,unknown,133,1,0.0075187970,133.0000000000
+2016|NASDAQ|wholesale_trade,2016,NASDAQ,wholesale_trade,204,1,0.0049019608,204.0000000000
+2016|NYSE ARCA|manufacturing,2016,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2016|NYSE MKT|construction,2016,NYSE MKT,construction,4,0,0.0000000000,
+2016|NYSE MKT|finance_insurance_real_estate,2016,NYSE MKT,finance_insurance_real_estate,19,0,0.0000000000,
+2016|NYSE MKT|manufacturing,2016,NYSE MKT,manufacturing,36,0,0.0000000000,
+2016|NYSE MKT|mining,2016,NYSE MKT,mining,13,0,0.0000000000,
+2016|NYSE MKT|services,2016,NYSE MKT,services,16,0,0.0000000000,
+2016|NYSE MKT|transportation_communications_utilities,2016,NYSE MKT,transportation_communications_utilities,4,0,0.0000000000,
+2016|NYSE MKT|wholesale_trade,2016,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2016|NYSE|construction,2016,NYSE,construction,156,1,0.0064102564,156.0000000000
+2016|NYSE|finance_insurance_real_estate,2016,NYSE,finance_insurance_real_estate,1853,10,0.0053966541,185.3000000000
+2016|NYSE|manufacturing,2016,NYSE,manufacturing,2168,12,0.0055350554,180.6666666667
+2016|NYSE|mining,2016,NYSE,mining,496,3,0.0060483871,165.3333333333
+2016|NYSE|retail_trade,2016,NYSE,retail_trade,381,2,0.0052493438,190.5000000000
+2016|NYSE|services,2016,NYSE,services,958,5,0.0052192067,191.6000000000
+2016|NYSE|transportation_communications_utilities,2016,NYSE,transportation_communications_utilities,769,4,0.0052015605,192.2500000000
+2016|NYSE|unknown,2016,NYSE,unknown,80,0,0.0000000000,
+2016|NYSE|wholesale_trade,2016,NYSE,wholesale_trade,193,1,0.0051813472,193.0000000000
+2017|BATS|finance_insurance_real_estate,2017,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2017|BATS|services,2017,BATS,services,8,0,0.0000000000,
+2017|NASDAQ|construction,2017,NASDAQ,construction,74,0,0.0000000000,
+2017|NASDAQ|finance_insurance_real_estate,2017,NASDAQ,finance_insurance_real_estate,2196,12,0.0054644809,183.0000000000
+2017|NASDAQ|manufacturing,2017,NASDAQ,manufacturing,4126,22,0.0053320407,187.5454545455
+2017|NASDAQ|mining,2017,NASDAQ,mining,252,1,0.0039682540,252.0000000000
+2017|NASDAQ|retail_trade,2017,NASDAQ,retail_trade,476,3,0.0063025210,158.6666666667
+2017|NASDAQ|services,2017,NASDAQ,services,1733,9,0.0051933064,192.5555555556
+2017|NASDAQ|transportation_communications_utilities,2017,NASDAQ,transportation_communications_utilities,549,3,0.0054644809,183.0000000000
+2017|NASDAQ|unknown,2017,NASDAQ,unknown,142,1,0.0070422535,142.0000000000
+2017|NASDAQ|wholesale_trade,2017,NASDAQ,wholesale_trade,213,1,0.0046948357,213.0000000000
+2017|NYSE ARCA|manufacturing,2017,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2017|NYSE MKT|construction,2017,NYSE MKT,construction,4,0,0.0000000000,
+2017|NYSE MKT|finance_insurance_real_estate,2017,NYSE MKT,finance_insurance_real_estate,20,0,0.0000000000,
+2017|NYSE MKT|manufacturing,2017,NYSE MKT,manufacturing,38,0,0.0000000000,
+2017|NYSE MKT|mining,2017,NYSE MKT,mining,16,0,0.0000000000,
+2017|NYSE MKT|services,2017,NYSE MKT,services,18,0,0.0000000000,
+2017|NYSE MKT|transportation_communications_utilities,2017,NYSE MKT,transportation_communications_utilities,4,0,0.0000000000,
+2017|NYSE MKT|wholesale_trade,2017,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2017|NYSE|construction,2017,NYSE,construction,156,1,0.0064102564,156.0000000000
+2017|NYSE|finance_insurance_real_estate,2017,NYSE,finance_insurance_real_estate,1910,10,0.0052356021,191.0000000000
+2017|NYSE|manufacturing,2017,NYSE,manufacturing,2218,12,0.0054102795,184.8333333333
+2017|NYSE|mining,2017,NYSE,mining,527,3,0.0056925996,175.6666666667
+2017|NYSE|retail_trade,2017,NYSE,retail_trade,396,2,0.0050505051,198.0000000000
+2017|NYSE|services,2017,NYSE,services,992,5,0.0050403226,198.4000000000
+2017|NYSE|transportation_communications_utilities,2017,NYSE,transportation_communications_utilities,802,4,0.0049875312,200.5000000000
+2017|NYSE|unknown,2017,NYSE,unknown,77,0,0.0000000000,
+2017|NYSE|wholesale_trade,2017,NYSE,wholesale_trade,200,1,0.0050000000,200.0000000000
+2018|BATS|finance_insurance_real_estate,2018,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2018|BATS|services,2018,BATS,services,8,0,0.0000000000,
+2018|NASDAQ|construction,2018,NASDAQ,construction,79,0,0.0000000000,
+2018|NASDAQ|finance_insurance_real_estate,2018,NASDAQ,finance_insurance_real_estate,2291,12,0.0052378874,190.9166666667
+2018|NASDAQ|manufacturing,2018,NASDAQ,manufacturing,4406,23,0.0052201543,191.5652173913
+2018|NASDAQ|mining,2018,NASDAQ,mining,266,1,0.0037593985,266.0000000000
+2018|NASDAQ|retail_trade,2018,NASDAQ,retail_trade,491,3,0.0061099796,163.6666666667
+2018|NASDAQ|services,2018,NASDAQ,services,1834,10,0.0054525627,183.4000000000
+2018|NASDAQ|transportation_communications_utilities,2018,NASDAQ,transportation_communications_utilities,566,3,0.0053003534,188.6666666667
+2018|NASDAQ|unknown,2018,NASDAQ,unknown,146,1,0.0068493151,146.0000000000
+2018|NASDAQ|wholesale_trade,2018,NASDAQ,wholesale_trade,216,1,0.0046296296,216.0000000000
+2018|NYSE ARCA|manufacturing,2018,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2018|NYSE MKT|construction,2018,NYSE MKT,construction,4,0,0.0000000000,
+2018|NYSE MKT|finance_insurance_real_estate,2018,NYSE MKT,finance_insurance_real_estate,20,0,0.0000000000,
+2018|NYSE MKT|manufacturing,2018,NYSE MKT,manufacturing,42,0,0.0000000000,
+2018|NYSE MKT|mining,2018,NYSE MKT,mining,16,0,0.0000000000,
+2018|NYSE MKT|services,2018,NYSE MKT,services,20,0,0.0000000000,
+2018|NYSE MKT|transportation_communications_utilities,2018,NYSE MKT,transportation_communications_utilities,4,0,0.0000000000,
+2018|NYSE MKT|wholesale_trade,2018,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2018|NYSE|construction,2018,NYSE,construction,156,1,0.0064102564,156.0000000000
+2018|NYSE|finance_insurance_real_estate,2018,NYSE,finance_insurance_real_estate,1963,10,0.0050942435,196.3000000000
+2018|NYSE|manufacturing,2018,NYSE,manufacturing,2260,12,0.0053097345,188.3333333333
+2018|NYSE|mining,2018,NYSE,mining,556,3,0.0053956835,185.3333333333
+2018|NYSE|retail_trade,2018,NYSE,retail_trade,403,2,0.0049627792,201.5000000000
+2018|NYSE|services,2018,NYSE,services,1027,6,0.0058422590,171.1666666667
+2018|NYSE|transportation_communications_utilities,2018,NYSE,transportation_communications_utilities,813,4,0.0049200492,203.2500000000
+2018|NYSE|unknown,2018,NYSE,unknown,76,0,0.0000000000,
+2018|NYSE|wholesale_trade,2018,NYSE,wholesale_trade,201,1,0.0049751244,201.0000000000
+2019|BATS|finance_insurance_real_estate,2019,BATS,finance_insurance_real_estate,4,0,0.0000000000,
+2019|BATS|services,2019,BATS,services,8,0,0.0000000000,
+2019|NASDAQ|construction,2019,NASDAQ,construction,80,0,0.0000000000,
+2019|NASDAQ|finance_insurance_real_estate,2019,NASDAQ,finance_insurance_real_estate,2342,12,0.0051238258,195.1666666667
+2019|NASDAQ|manufacturing,2019,NASDAQ,manufacturing,4600,24,0.0052173913,191.6666666667
+2019|NASDAQ|mining,2019,NASDAQ,mining,275,2,0.0072727273,137.5000000000
+2019|NASDAQ|retail_trade,2019,NASDAQ,retail_trade,504,3,0.0059523810,168.0000000000
+2019|NASDAQ|services,2019,NASDAQ,services,1904,10,0.0052521008,190.4000000000
+2019|NASDAQ|transportation_communications_utilities,2019,NASDAQ,transportation_communications_utilities,588,3,0.0051020408,196.0000000000
+2019|NASDAQ|unknown,2019,NASDAQ,unknown,153,1,0.0065359477,153.0000000000
+2019|NASDAQ|wholesale_trade,2019,NASDAQ,wholesale_trade,223,1,0.0044843049,223.0000000000
+2019|NYSE ARCA|manufacturing,2019,NYSE ARCA,manufacturing,4,0,0.0000000000,
+2019|NYSE MKT|construction,2019,NYSE MKT,construction,4,0,0.0000000000,
+2019|NYSE MKT|finance_insurance_real_estate,2019,NYSE MKT,finance_insurance_real_estate,23,0,0.0000000000,
+2019|NYSE MKT|manufacturing,2019,NYSE MKT,manufacturing,44,0,0.0000000000,
+2019|NYSE MKT|mining,2019,NYSE MKT,mining,16,0,0.0000000000,
+2019|NYSE MKT|services,2019,NYSE MKT,services,20,0,0.0000000000,
+2019|NYSE MKT|transportation_communications_utilities,2019,NYSE MKT,transportation_communications_utilities,4,0,0.0000000000,
+2019|NYSE MKT|wholesale_trade,2019,NYSE MKT,wholesale_trade,4,0,0.0000000000,
+2019|NYSE|construction,2019,NYSE,construction,156,1,0.0064102564,156.0000000000
+2019|NYSE|finance_insurance_real_estate,2019,NYSE,finance_insurance_real_estate,1976,11,0.0055668016,179.6363636364
+2019|NYSE|manufacturing,2019,NYSE,manufacturing,2296,12,0.0052264808,191.3333333333
+2019|NYSE|mining,2019,NYSE,mining,559,3,0.0053667263,186.3333333333
+2019|NYSE|retail_trade,2019,NYSE,retail_trade,410,2,0.0048780488,205.0000000000
+2019|NYSE|services,2019,NYSE,services,1070,6,0.0056074766,178.3333333333
+2019|NYSE|transportation_communications_utilities,2019,NYSE,transportation_communications_utilities,818,4,0.0048899756,204.5000000000
+2019|NYSE|unknown,2019,NYSE,unknown,86,1,0.0116279070,86.0000000000
+2019|NYSE|wholesale_trade,2019,NYSE,wholesale_trade,207,1,0.0048309179,207.0000000000

@@ -1,0 +1,24 @@
+{
+  "eligible_firm_quarters": 186,
+  "legacy_valid_reused": 64,
+  "new_valid_recovered": 14,
+  "terminal_state_counts": {
+    "valid": 78,
+    "terminal_provider_unavailability": 106,
+    "quarantine": 2
+  },
+  "live_request_count": 175,
+  "live_session_count": 4,
+  "rate_limit_api_transport_failures": 0,
+  "exact_duplicate_groups": 0,
+  "duplicate_noncanonical_observations": 0,
+  "explicit_opening_call_dates": 0,
+  "independently_validated_call_dates": 0,
+  "primary_car_eligible_dates": 0,
+  "raw_hash_failures": [],
+  "session_summaries": [
+    "artifacts/transcript_pilot_20260916/pilot_20260916T225935Z_summary.json",
+    "artifacts/transcript_pilot_20260916/pilot_20260916T230135Z_summary.json",
+    "artifacts/transcript_pilot_20260916/pilot_20260916T230529Z_summary.json"
+  ]
+}

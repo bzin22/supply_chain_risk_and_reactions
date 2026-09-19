@@ -1,0 +1,10 @@
+sic_division,sample_firm_quarters,weighted_population_estimate,terminal_provider_unavailability_count,terminal_provider_unavailability_weighted,valid_count,valid_weighted
+construction,10,1435.0000,4,590.0000,6,845.0000
+finance_insurance_real_estate,196,36786.0000,119,22410.1108,77,14375.8892
+manufacturing,296,55814.0000,177,33364.3624,119,22449.6376
+mining,36,6800.0000,27,5141.8333,9,1658.1667
+retail_trade,44,7760.0000,21,3647.3333,23,4112.6667
+services,124,23162.0000,69,12903.4087,55,10258.5913
+transportation_communications_utilities,64,12216.0000,49,9340.7500,15,2875.2500
+unknown,10,1225.0000,4,388.0000,6,837.0000
+wholesale_trade,20,3610.0000,7,1217.0000,13,2393.0000

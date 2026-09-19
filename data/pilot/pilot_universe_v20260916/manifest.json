@@ -1,0 +1,27 @@
+{
+  "version": "pilot_universe_v20260916",
+  "created_at_utc": "2026-09-16T22:53:04.097983+00:00",
+  "scope": "bounded public-source pilot only; not the complete historical universe",
+  "study_period": "2010Q1-2019Q4",
+  "company_count": 5,
+  "eligible_firm_quarter_count": 186,
+  "files": {
+    "companies.csv": {
+      "sha256": "1e6842126e8c8874907a0fcc450a195d7f89e2606cbf530a1efa4b0f6522dd11",
+      "bytes": 839
+    },
+    "ticker_history.csv": {
+      "sha256": "1af23d7fdbce4d76f2fb544aded4c66f8916a4e71648224fed099b6170892d5b",
+      "bytes": 908
+    },
+    "eligible_firm_quarters.csv": {
+      "sha256": "3d77912b2530c1d1f806d2d989060f4d34b861b06997aa93de7ec9a595cb6145",
+      "bytes": 45752
+    }
+  },
+  "limitations": [
+    "Public SEC evidence is filer-centric rather than a complete historical security master.",
+    "SunEdison 2016Q2 eligibility means listed during part of the quarter; its call may not exist after bankruptcy.",
+    "Pilot categories are deliberately selected and are not population weights."
+  ]
+}

@@ -432,11 +432,11 @@ def run_cli(tmp_path: Path, rows: list[dict[str, str]], *extra: str) -> list[dic
 def test_cli_scores_happy_path_empty_and_junk_rows(tmp_path):
     body = distinct_filler(4000)
     rows = [
-        {"ticker": "AAA", "quarter_label": "2022Q1",
+        {"ticker": "AAA", "quarter_label": "2019Q1",
          "transcript_text": body + " our supply chain faces real uncertainty today"},
-        {"ticker": "BBB", "quarter_label": "2022Q1", "transcript_text": ""},
-        {"ticker": "CCC", "quarter_label": "2022Q1", "transcript_text": "]]] 42 ### ’’"},
-        {"ticker": "DDD", "quarter_label": "2022Q1", "transcript_text": "Operator: (full spoken content)"},
+        {"ticker": "BBB", "quarter_label": "2019Q1", "transcript_text": ""},
+        {"ticker": "CCC", "quarter_label": "2019Q1", "transcript_text": "]]] 42 ### ’’"},
+        {"ticker": "DDD", "quarter_label": "2019Q1", "transcript_text": "Operator: (full spoken content)"},
     ]
     scored, output = run_cli(tmp_path, rows)
     by_ticker = {row["ticker"]: row for row in scored}
@@ -475,9 +475,9 @@ def test_cli_scores_happy_path_empty_and_junk_rows(tmp_path):
 @requires_library
 def test_cli_without_the_integrity_filter_standardizes_every_row(tmp_path):
     rows = [
-        {"ticker": "AAA", "quarter_label": "2022Q1",
+        {"ticker": "AAA", "quarter_label": "2019Q1",
          "transcript_text": distinct_filler(4000) + " supply chain uncertainty"},
-        {"ticker": "DDD", "quarter_label": "2022Q1", "transcript_text": "Operator: (full spoken content)"},
+        {"ticker": "DDD", "quarter_label": "2019Q1", "transcript_text": "Operator: (full spoken content)"},
     ]
     scored, _ = run_cli(tmp_path, rows, "--no-transcript-integrity-filter")
     flagged = next(row for row in scored if row["ticker"] == "DDD")
