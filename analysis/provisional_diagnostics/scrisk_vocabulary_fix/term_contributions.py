@@ -34,7 +34,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]  # repository root
 sys.path.insert(0, str(ROOT))
-import calculate_supply_chain_transcript_scores as S  # noqa: E402
+from scoring import calculate_supply_chain_transcript_scores as S  # noqa: E402
 
 SHORTAGE_FAMILY = {"shortage", "shortages"}
 CUSTOMER_FAMILY = {"customer", "customers"}

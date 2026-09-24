@@ -9,7 +9,7 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from collect_earnings_event_inputs import AlphaVantageClient, payload_message, provider_enforced_rate_limit
+from collection.collect_earnings_event_inputs import AlphaVantageClient, payload_message, provider_enforced_rate_limit
 from .core import ARCHIVE, ROOT, relative, sha256, write_json, write_csv
 from .prepare import CACHE
 from .run import PRICE_CACHE

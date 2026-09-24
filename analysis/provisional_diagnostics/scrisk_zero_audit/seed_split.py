@@ -5,7 +5,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[3]  # repository root
 sys.path.insert(0, str(ROOT))
-import calculate_supply_chain_transcript_scores as S
+from scoring import calculate_supply_chain_transcript_scores as S
 
 OUT = os.environ.get('SCRISK_AUDIT_OUT', str(ROOT / 'outputs/scrisk_zero_audit')) + '/'
 seeds = {" ".join(S.normalize_term(s)) for s in S.SUPPLY_CHAIN_SEEDS}

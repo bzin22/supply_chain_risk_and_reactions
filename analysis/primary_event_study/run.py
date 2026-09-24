@@ -67,7 +67,7 @@ def apply_date_policy(row, policy):
 
 
 def code_hashes():
-    paths = sorted(Path(__file__).parent.glob('*.py')) + [ROOT/'calculate_supply_chain_transcript_scores.py',ROOT/'calculate_carhart_event_returns.py']
+    paths = sorted(Path(__file__).parent.glob('*.py')) + [ROOT/'scoring/calculate_supply_chain_transcript_scores.py',ROOT/'analysis/calculate_carhart_event_returns.py',ROOT/'tests/test_primary.py']
     return {relative(p):sha256(p) for p in paths}
 
 
@@ -188,8 +188,14 @@ def run(output,mode,pilot=None,date_policy='confirmed',reuse_scores=None):
         assert verification['passed']
         assert prior['source']['sha256_after']==SOURCE_HASH
         assert prior['dictionaries']==dict_meta
-        for path in [Path(core.__file__),ROOT/'calculate_supply_chain_transcript_scores.py']:
-            assert prior['code_hashes'][relative(path)]==sha256(path),'Scoring implementation changed since reusable scores'
+        # Historical manifests keep original paths; verify recorded layout edits.
+        from analysis.verify_historical_code import verify_historical_code
+        score_names = {'analysis/primary_event_study/core.py',
+                       'calculate_supply_chain_transcript_scores.py',
+                       'scoring/calculate_supply_chain_transcript_scores.py'}
+        score_hashes = {name: value for name, value in prior['code_hashes'].items() if name in score_names}
+        assert len(score_hashes) == 2, 'Reusable scoring code hashes missing'
+        verify_historical_code(ROOT, score_hashes)
         assert sha256(reuse_scores/'call_level_scored_car.csv')==verification['dataset_sha256']
         assert sha256(reuse_scores/'match_audit.jsonl.gz')==prior['output_sha256']['match_audit.jsonl.gz']
         reuse_meta={'directory':relative(reuse_scores),'manifest_sha256':sha256(reuse_scores/'manifest.json'),

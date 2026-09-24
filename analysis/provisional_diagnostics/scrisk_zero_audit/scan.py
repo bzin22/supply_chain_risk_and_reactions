@@ -22,7 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]  # repository root
 sys.path.insert(0, str(ROOT))
-import calculate_supply_chain_transcript_scores as S  # noqa: E402
+from scoring import calculate_supply_chain_transcript_scores as S  # noqa: E402
 
 # Every path and the vocabulary version come from the environment so the same
 # audit can be pointed at a different scoring run.  The defaults are the

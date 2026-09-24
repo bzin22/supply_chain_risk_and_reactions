@@ -1,0 +1,55 @@
+{
+  "active_links": "passed",
+  "all_tests": {
+    "passed": 120,
+    "skip_reasons": "One absent private smoke dataset; six absent legacy zero-audit CSV tests.",
+    "skipped": 7
+  },
+  "committed_or_pushed": false,
+  "date": "2026-09-24",
+  "duplicate_page_pngs_retained": 0,
+  "fresh_dependency_install": false,
+  "full_raw_run_repeated": false,
+  "git_diff_check": "passed",
+  "git_index_preserved": true,
+  "isolated_source_outputs_byte_identical": 11,
+  "isolated_source_reproduction": true,
+  "isolated_source_tests": {
+    "passed": 72,
+    "skip_reasons": "Optional private legacy library/smoke inputs absent.",
+    "skipped": 16
+  },
+  "new_output_files": 12,
+  "output_sha256": {
+    "01_car_0_1_by_scrisk.csv": "d070cd2762b50b34adc6cc68581eeb682bc5bca2a2bcfc7596410e7ebf634625",
+    "01_car_0_1_by_scrisk.png": "e47ca9a25c0be56530d3cd9b7147220fbc4941050911c41122ff1a8cbaaf3246",
+    "02_car_0_1_by_resolution.csv": "2cf5577b8321adc87b6e50933d3551029acac30b36ad939b044aa2733f21925b",
+    "02_car_0_1_by_resolution.png": "ebeeacd15967ed66826654ca5fd62dd3abb86e838ae3025c44ae791d2c96ace5",
+    "03_car_0_1_heatmap.csv": "b3f5c7fa74afea4b9ee28685d7f9c42babb6cdd90fbecc14a7fff75e71f5e012",
+    "03_car_0_1_heatmap.png": "454afabc2d29ca7a351b6e5f813cbe0852274a1b8d01bcc8b9948f40db2af4e6",
+    "04_car_2_60_by_scrisk.csv": "eac8873eea91f102be73976874a303d673c0304c94c725f80111d5950a58a64d",
+    "04_car_2_60_by_scrisk.png": "d7ce77ea1d09c94a1a935ac763609faf07ea5e650e8f29bafafcadc71082627d",
+    "05_car_2_60_heatmap.csv": "395d11f7a0116040f3abceb9c779f3a9b03367040ec82270ae6faa0aa53d7885",
+    "05_car_2_60_heatmap.png": "272cd5749cc603c37c2def60a6cad3ea835b54e7404c73b653d6e78e8e0e2021",
+    "portfolio_charts_fractional_ties.pdf": "b1aa0b321e08164cf75b2bbf9b0a0e0054e92687c30a681c3a79d969a32b3164",
+    "portfolio_comparisons.csv": "d3e8748845b92ea6d43acf571ecd957458a4173e1d8b394b76c5a7677b98c0a5"
+  },
+  "packaged_export_files_matched": 13,
+  "pip_check": "passed",
+  "pre_layout_renderer_csvs_byte_identical": 6,
+  "pre_layout_renderer_pngs_byte_identical": 5,
+  "published_tables_byte_identical": 5,
+  "raw_input_hashes": {
+    "hash_mismatch": 0,
+    "missing": 0,
+    "ok": 2215
+  },
+  "relocated_csv_and_paper_hashes": "matched",
+  "retained_chart_function_ast_matches": 11,
+  "ruff": "passed (E9,F with recorded primary-package F401 exception)",
+  "working_tree_command": "PYTHON=/Users/bzin/miniconda3/envs/dap-env/bin/python FRACTIONAL_VENV=/private/tmp/fractional-clean-env sh scripts/reproduce_fractional.sh",
+  "working_tree_tests": {
+    "passed": 87,
+    "skipped": 1
+  }
+}

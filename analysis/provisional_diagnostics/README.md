@@ -3,11 +3,10 @@
 Code that explains why the pipeline behaves as it does. None of it produces a
 study result.
 
-Everything here is provisional in the same sense as the pipeline it inspects:
-it measures this repository's own dictionaries, vocabulary, universe, and
-period, none of which match Theile et al. (2026). See "Known methodological
-gaps" in the root README. A number out of these scripts is evidence about the
-code, never a finding about markets.
+These retained methodological diagnostics explain the earlier vocabulary and
+zero-score investigations. They are not inputs to the canonical fractional
+results. The current definitions and final figures are in the root README;
+no diagnostic table should be treated as a replacement study result.
 
 All output goes to `outputs/`, which is gitignored. Every script takes an
 explicit run directory and output directory, or reads them from the
@@ -39,7 +38,7 @@ Four environment variables select the run being audited: `SCRISK_AUDIT_RUN`,
 | `inspect_odd.py` | Prints one named transcript's head and token counts. Takes `TICKER:QUARTER` arguments |
 
 Tests: `conda run -n dap-env python -m pytest
-analysis/provisional_diagnostics/scrisk_zero_audit -q`. Tests that need a
+tests/test_zero_audit.py -q`. Tests that need a
 generated audit CSV or the local term library skip when it is absent.
 
 ## `scrisk_vocabulary_fix/`

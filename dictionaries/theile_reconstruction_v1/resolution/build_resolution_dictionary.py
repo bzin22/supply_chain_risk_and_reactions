@@ -365,7 +365,7 @@ def write_term_file(path: Path, terms: list[str]) -> None:
     """One lowercase term per line, nothing else.
 
     No comment header and no build date. These files are loaded by a strict
-    validator in ``calculate_supply_chain_transcript_scores.py`` and are hashed
+    validator in ``scoring/calculate_supply_chain_transcript_scores.py`` and are hashed
     in ``source_manifest.json``, so their bytes must be a pure function of the
     term list. The documentation lives in README.md and resolution_terms.csv.
     """

@@ -1,0 +1,9 @@
+{
+  "scope": "Workspace excluding .git, node_modules and .venv-fractional; measured after verification and cache cleanup. APFS snapshots/shared blocks can affect physical free space.",
+  "before_files": 257621,
+  "after_files": 257390,
+  "before_bytes": 77158870827,
+  "after_bytes": 77060663789,
+  "net_logical_bytes_reclaimed": 98207038,
+  "net_allocated_bytes_reclaimed": 98689024
+}

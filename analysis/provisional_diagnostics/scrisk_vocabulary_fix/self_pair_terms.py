@@ -9,7 +9,7 @@ which the scoring manifest already records as
 instead of trusting that argument.
 
 Provisional: the risk vocabulary it counts against is the starter dictionary
-in ``calculate_supply_chain_transcript_scores.py``, not the paper's.  The
+in ``scoring/calculate_supply_chain_transcript_scores.py``, not the paper's.  The
 counts describe whichever scoring run is passed in.
 """
 from __future__ import annotations
@@ -24,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]  # repository root
 sys.path.insert(0, str(ROOT))
-import calculate_supply_chain_transcript_scores as S  # noqa: E402
+from scoring import calculate_supply_chain_transcript_scores as S  # noqa: E402
 
 VERSIONS = ("v1_library_only", "v2_seeds_inflections")
 _CONTEXT: dict = {}

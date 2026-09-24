@@ -3,7 +3,7 @@ import argparse
 import json
 from pathlib import Path
 
-from analysis.build_modified_portfolio_chart_pdfs import ROOT, sha256
+from analysis.charts.fractional import ROOT, sha256
 from analysis.fractional_reproduction import PACKAGE
 
 

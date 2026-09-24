@@ -1,0 +1,210 @@
+{
+  "additional_relocations": [
+    {
+      "before_sha256": "991bf593eaa0b1da7f13e72448ac898cc01a69c81d357c1b55d62d19305490a5",
+      "current_sha256": "e5e423eff59ff85cb94536bc7f767134b49c006a6f332440ca69fe22f374b8f4",
+      "new_path": "tests/test_validate_date_map_pilot.py",
+      "old_path": "test_validate_date_map_pilot.py"
+    },
+    {
+      "before_sha256": "37b008a0ad7eae1be5a43b3df9e24080b741ddf107b4901ae907d175371f042e",
+      "current_sha256": "7faddda17feb1aaf3bea66d09f87f9e160778645af79982d6bf64706ce4416fc",
+      "new_path": "collection/build_call_date_mapping.py",
+      "old_path": "build_call_date_mapping.py"
+    },
+    {
+      "before_sha256": "840278de24205eb427195d0858edc4d81c964149369e17a290bc8ccce4bf4e2c",
+      "current_sha256": "7d16b2ea6e54fc50e3e0a26528b092808c8d32c03917c337121c49ad5640cb1d",
+      "new_path": "collection/analyze_representative_pilot.py",
+      "old_path": "analyze_representative_pilot.py"
+    },
+    {
+      "before_sha256": "e594fe0ef4c1e742c8dd05db3bd3d22c58576c3336c137798c27845b20ca292d",
+      "current_sha256": "5f71bbe1943fce5f6787ace6cd9752b8235e3c6d49a9bdcad5c59209697e396e",
+      "new_path": "tests/test_study_period.py",
+      "old_path": "test_study_period.py"
+    },
+    {
+      "before_sha256": "96fba65d5913491cba325f9db727a1416864bbb42d73326dbf4dd1cc563a1f1f",
+      "current_sha256": "7c225f0488a0c101f6ca27df68b8783601f252bbc745e776e011f8ecb31495a0",
+      "new_path": "collection/sample_representative_coverage_pilot.py",
+      "old_path": "sample_representative_coverage_pilot.py"
+    },
+    {
+      "before_sha256": "22c84b862896d84ca0e7909062beee9d7bb6687245d236fae1524af907580be1",
+      "current_sha256": "8ae7bbf4764f00076de30ce91c02760b4942b76087480c8107b18970912689e3",
+      "new_path": "collection/validate_date_map_pilot.py",
+      "old_path": "validate_date_map_pilot.py"
+    },
+    {
+      "before_sha256": "c400417272ac27d45962b04aef9be2d20d4247ea2c7ad395a4368df189049f1c",
+      "current_sha256": "aa697d25d42ff0a0c669f9fdbcec4171cd84094cce51d9514ad7f2727354cc8f",
+      "new_path": "collection/collect_transcript_pilot.py",
+      "old_path": "collect_transcript_pilot.py"
+    },
+    {
+      "before_sha256": "7884f7bbaf5cce39cbeb87ebb166435c1bb3064e3bffebf8b61c359112c647f5",
+      "current_sha256": "14ccf5f9b4c068776fc2207574b8094aab187341e2fc5f911e24df890e85e534",
+      "new_path": "collection/build_historical_universe.py",
+      "old_path": "build_historical_universe.py"
+    },
+    {
+      "before_sha256": "cfceb0f97da9deb9ea2f649aab781f32c7e341d77e2e4ec8ba2d44279d3df7f0",
+      "current_sha256": "403dc7f834f0b178a655bdf8efa1f580e0d57935069235983c0141285f23ed1b",
+      "new_path": "collection/build_pilot_universe.py",
+      "old_path": "build_pilot_universe.py"
+    },
+    {
+      "before_sha256": "6849cbad81c53d4756c394e849b0f3464770036b14de4b4db3d95034b92257a1",
+      "current_sha256": "6849cbad81c53d4756c394e849b0f3464770036b14de4b4db3d95034b92257a1",
+      "new_path": "collection/study_period.py",
+      "old_path": "study_period.py"
+    },
+    {
+      "before_sha256": "e53a5b8b10ee5201624fd960e24529353689fc518138f9fc4ae1ed702b9f23e9",
+      "current_sha256": "bce0897e1187b2d7bf0ea8a0ccf8926cde6050d51e71888be0cffa8c8c2c30f1",
+      "new_path": "tests/test_historical_universe.py",
+      "old_path": "test_historical_universe.py"
+    },
+    {
+      "before_sha256": "7b1c64b4d8480627f5687d0e75560a704d467359107830a76fb5716c5ed91b6e",
+      "current_sha256": "58b3103d0fc422c4e4576a83d70c275d7a8d5987cd3156cae805a118c0f79416",
+      "new_path": "collection/canonicalize_duplicate_attempts.py",
+      "old_path": "canonicalize_duplicate_attempts.py"
+    },
+    {
+      "before_sha256": "c322346be9c17a7e607be970188c1aad2b853f7f46acf1d7136a06ae597c9573",
+      "current_sha256": "50de67669032c0e23ae86ec3a4be7321c79e32e887497fefad905bff88894cb3",
+      "new_path": "tests/test_collect_transcript_pilot.py",
+      "old_path": "test_collect_transcript_pilot.py"
+    },
+    {
+      "before_sha256": "24fe2d655d74ff4f9465de836df77f5dd30beffe3f7d102c547a10ad45984a66",
+      "current_sha256": "fae0513dbed5d81f03517004ea047b41225ae0d2fc768783365d1994ab8f659a",
+      "new_path": "collection/enforce_study_period.py",
+      "old_path": "enforce_study_period.py"
+    },
+    {
+      "before_sha256": "0073ae19e23fea63c1501c3c528ace21422c3cbfb0584cde760e663b460ff80b",
+      "current_sha256": "b88be56cc476693146414bfd0388eb87769816ba8d37c7e3ff80482d16479153",
+      "new_path": "collection/build_validated_earnings_calls_v1.py",
+      "old_path": "build_validated_earnings_calls_v1.py"
+    },
+    {
+      "before_sha256": "d9eb57332adcd82930a1692c6d97e5ace138e50fa5e277c6152030fa0c47923b",
+      "current_sha256": "517c79a49a14e372acb3da464bc08e1c211b2dcc9406fb93d4cff81b9151c82c",
+      "new_path": "tests/test_call_date_mapping.py",
+      "old_path": "test_call_date_mapping.py"
+    },
+    {
+      "before_sha256": "75eb5f46e5b86bf9279199cfa02343cccffcd04141568fb15d59e3d59e321ae0",
+      "current_sha256": "82332f52cf72094c60044044f56fccb326c1cb21575821ae071cfb37742d1471",
+      "new_path": "tests/test_build_validated_earnings_calls_v1.py",
+      "old_path": "test_build_validated_earnings_calls_v1.py"
+    },
+    {
+      "before_sha256": "e807df280d399a065022a0ae493a96281d427f3fe2b94abbd4592ef498585b71",
+      "current_sha256": "11edc9883958feb7e957df627fd70c552fb18810e91f2a58c91e6c22575c4ba4",
+      "new_path": "collection/build_universe_pilot_methodology_report.py",
+      "old_path": "build_universe_pilot_methodology_report.py"
+    },
+    {
+      "before_sha256": "f7c51af3191859e02c95ad4c5e0c8c014a219e940f741736a47bd4ee723b3b0e",
+      "current_sha256": "2ef2353b6c1ea281d8035ec2a5559aaf8401d98e81914cf2b618cf2ad209de16",
+      "new_path": "collection/verify_active_study_period.py",
+      "old_path": "verify_active_study_period.py"
+    },
+    {
+      "before_sha256": "d4220e27b3c7b0b3a0bd6a14434d26763fc14b412fd45d8da04897d056dc5f71",
+      "current_sha256": "bc2310fa36e38e9fe0cfc1b3b38f5159ea5442c0e9ef294dac48eb0a8cd0d216",
+      "new_path": "collection/analyze_transcript_pilot.py",
+      "old_path": "analyze_transcript_pilot.py"
+    },
+    {
+      "before_sha256": "188ac77143cb652359b28d432a57c1ba9c604e834e6d47607590cc7fd0af2f05",
+      "current_sha256": "77db2fbfb8ff4bd98414e9f2d2df2793ea2690c98f0db0070b44b7b94803a7a8",
+      "new_path": "tests/test_resolution_dictionary.py",
+      "old_path": "dictionaries/theile_reconstruction_v1/resolution/test_resolution_dictionary.py"
+    }
+  ],
+  "base_commit": "21fedc3",
+  "code": {
+    "calculate_carhart_event_returns.py": {
+      "before_sha256": "70e936d8a1ffa83b26ac32722b699fcbe02e805c1f9c8c04274bf00eab910e04",
+      "current_path": "analysis/calculate_carhart_event_returns.py",
+      "current_sha256": "1aee051cfb7b7eb35e3aa30329544125d8d939e50d3972df589c2efbad3009d3",
+      "edits": [
+        {
+          "end": 9432,
+          "new": "    # Written by scoring/calculate_supply_chain_transcript_scores.py from the corrected\n",
+          "old": "    # Written by calculate_supply_chain_transcript_scores.py from the corrected\n",
+          "start": 9352
+        },
+        {
+          "end": 4531,
+          "new": "from collection.study_period import validate_csv_event_dates_in_study_period, validate_csv_in_study_period\n",
+          "old": "from study_period import validate_csv_event_dates_in_study_period, validate_csv_in_study_period\n",
+          "start": 4435
+        },
+        {
+          "end": 4212,
+          "new": "",
+          "old": "import io\n",
+          "start": 4202
+        },
+        {
+          "end": 3730,
+          "new": "    conda run -n dap-env python -m analysis.calculate_carhart_event_returns \\\n",
+          "old": "    conda run -n dap-env python calculate_carhart_event_returns.py \\\n",
+          "start": 3661
+        }
+      ],
+      "snapshot_path": "provenance/repository_publication_v1/historical_code/calculate_carhart_event_returns.py.txt"
+    },
+    "calculate_supply_chain_transcript_scores.py": {
+      "before_sha256": "ac543beaf791cdbd4f8ccd2270620bef8882a03401d5f7e04475cd19e46bea61",
+      "current_path": "scoring/calculate_supply_chain_transcript_scores.py",
+      "current_sha256": "ca3b93b69f47beebcad56f7c6e8e73c22ee8084baa1052ce2fb1387d4d08395b",
+      "edits": [
+        {
+          "end": 8004,
+          "new": "# These are the 16 seed phrases used by dictionaries/build_supply_chain_library.py.  They\n",
+          "old": "# These are the 16 seed phrases used by build_supply_chain_library.py.  They\n",
+          "start": 7927
+        },
+        {
+          "end": 7019,
+          "new": "REPOSITORY_ROOT = Path(__file__).resolve().parents[1]\n",
+          "old": "REPOSITORY_ROOT = Path(__file__).resolve().parent\n",
+          "start": 6969
+        },
+        {
+          "end": 6955,
+          "new": "from collection.study_period import validate_csv_in_study_period\n",
+          "old": "from study_period import validate_csv_in_study_period\n",
+          "start": 6901
+        },
+        {
+          "end": 6119,
+          "new": "    python -m scoring.calculate_supply_chain_transcript_scores \\\n",
+          "old": "    python calculate_supply_chain_transcript_scores.py \\\n",
+          "start": 6062
+        },
+        {
+          "end": 5697,
+          "new": "    python -m scoring.calculate_supply_chain_transcript_scores \\\n",
+          "old": "    python calculate_supply_chain_transcript_scores.py \\\n",
+          "start": 5640
+        },
+        {
+          "end": 5393,
+          "new": "    python -m scoring.calculate_supply_chain_transcript_scores \\\n",
+          "old": "    python calculate_supply_chain_transcript_scores.py \\\n",
+          "start": 5336
+        }
+      ],
+      "snapshot_path": "provenance/repository_publication_v1/historical_code/calculate_supply_chain_transcript_scores.py.txt"
+    }
+  },
+  "purpose": "Integrate cleanup with current main; preserve primary dictionary and study-period safeguards. Historical records remain unchanged. These two records supersede local-checkout layout mappings for verification of published source."
+}

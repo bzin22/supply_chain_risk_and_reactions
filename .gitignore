@@ -5,6 +5,7 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+.ruff_cache/
 .venv/
 venv/
 
@@ -25,22 +26,25 @@ data/validated_earnings_calls/
 data/call_dates/
 review/
 .venv-*/
-provenance/duplicate_attempt_cleanup_20260918/request_manifest_before_cleanup.csv
-provenance/post_2019_removal_20260916/post_2019_observations.csv
 
-# Bulk source data (940MB / 746MB, regenerate with extract_earnings_call_transcript_data.py)
-earnings_call_transcript_segments.csv
-earnings_call_transcripts.csv
+# Private provisional exports (collection/extract_earnings_call_transcript_data.py)
+data/provisional/earnings_call_transcript_segments.csv
+data/provisional/earnings_call_transcripts.csv
 
 # The paper being recreated. Local reference copy, not ours to redistribute.
-source_research_paper/
+docs/references/
 
-# LLM scoring artifacts (31GB of per-call JSON responses)
+# Raw responses, corpus/model intermediates and provider evidence
 artifacts/
 
 # Large inspection dumps (68MB each)
 *.inspect.ndjson
 
 # Matplotlib / fontconfig caches
-work/fontconfig_cache/
-work/matplotlib_config/
+**/.matplotlib/
+**/fontconfig_cache/
+**/matplotlib_config/
+
+# Private cleanup inventories retained locally, never published.
+provenance/duplicate_attempt_cleanup_20260918/request_manifest_before_cleanup.csv
+provenance/post_2019_removal_20260916/post_2019_observations.csv

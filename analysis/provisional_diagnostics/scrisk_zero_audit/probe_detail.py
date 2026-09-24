@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]  # repository root
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import calculate_supply_chain_transcript_scores as S
+from scoring import calculate_supply_chain_transcript_scores as S
 import scan as A
 
 OUT = A.OUT

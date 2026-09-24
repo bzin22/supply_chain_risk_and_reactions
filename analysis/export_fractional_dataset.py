@@ -11,7 +11,7 @@ import json
 import shutil
 from pathlib import Path
 
-from analysis.build_modified_portfolio_chart_pdfs import ROOT, SOURCE, sha256
+from analysis.charts.fractional import ROOT, SOURCE, sha256
 from analysis.verify_historical_code import verify_historical_code
 
 SOURCE_SHA256 = "af88e549cc8b275262eeb1e69af4d4aeb3b554b6197577dc91d5b63cdef7e2a6"
