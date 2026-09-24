@@ -1,0 +1,165 @@
+{
+  "code": {
+    "analysis/build_modified_portfolio_chart_pdfs.py": {
+      "current_sha256": "c4a07ce5ce5db65a228e7ca0e0268426b6c96c5d062d296543616c391dbe2aeb",
+      "historical_path": "provenance/fractional_naming_v1/historical_code/analysis/build_modified_portfolio_chart_pdfs.py.txt",
+      "historical_sha256": "c5e2dbdbaa00092b8864f72a21d08b33915ab807c5b3c8ec2b6b8be87204a861",
+      "replacements": [
+        {
+          "new": "",
+          "old": "paper_style_"
+        },
+        {
+          "new": "",
+          "old": "paper-style "
+        },
+        {
+          "new": "",
+          "old": "Paper-style "
+        }
+      ]
+    },
+    "analysis/primary_event_study/portfolios.py": {
+      "current_sha256": "47b973d6a4a3ee9b4a3ca77dc4e4e65775e5ca7da363c3a8751f24ab2bc0b6f0",
+      "historical_path": "provenance/fractional_naming_v1/historical_code/analysis/primary_event_study/portfolios.py.txt",
+      "historical_sha256": "bc39b175ee18ded20d1ac48547e8fe3308e9078f6a375621ef2f1ea9c0d2fff9",
+      "replacements": [
+        {
+          "new": "",
+          "old": "paper_style_"
+        },
+        {
+          "new": "",
+          "old": "paper-style "
+        },
+        {
+          "new": "",
+          "old": "Paper-style "
+        }
+      ]
+    }
+  },
+  "purpose": "Filename and descriptive-label changes only; historical code and records preserved byte for byte.",
+  "relabeled_records": [
+    {
+      "current_sha256": "ed7e0ef062e850469c578497bd7894d457c182e307a0ad44c436c60c8a24e4b9",
+      "historical_path": "provenance/fractional_naming_v1/historical_records/fractional_validation.json",
+      "historical_sha256": "418ebe8e2279b7b793e453b03d5c65e97c3c98191ea82093f0b62b4b6731b0d3",
+      "path": "docs/fractional_validation.json"
+    },
+    {
+      "current_sha256": "bd9edcf09ccfb048fc9279ac014e02e8166e3783639e1a97d9e5ea6b4b77c2e1",
+      "historical_path": "provenance/fractional_naming_v1/historical_records/reproduction_manifest.json",
+      "historical_sha256": "a054473ff7e8034ed0e981e433b967b683bc2c17fecc8f28fe806cdd1051eed5",
+      "path": "outputs/fractional_reproduction_v1/reproduction_manifest.json"
+    },
+    {
+      "current_sha256": "51c455541981cdee06c99a0892fc02dbcb739ea834f8ae70e9d1767451f50af6",
+      "historical_path": "provenance/fractional_naming_v1/historical_records/portfolio_chart_modifications_manifest.json",
+      "historical_sha256": "6663aac4adc4caee505e40152127a984df6c42e4195c9ae8843a242c29fc0368",
+      "path": "outputs/portfolio_chart_modifications_manifest.json"
+    }
+  ],
+  "renamed_files": [
+    {
+      "current_path": "outputs/portfolio_charts_fractional_ties.pdf",
+      "original_path": "outputs/paper_style_portfolio_charts_fractional_ties.pdf",
+      "sha256": "eccca323094764a6e9da01797cb55baf1457c0013c122a3b2772be15a97da7b0"
+    },
+    {
+      "current_path": "outputs/portfolio_charts_nonzero_scrisk.pdf",
+      "original_path": "outputs/paper_style_portfolio_charts_nonzero_scrisk.pdf",
+      "sha256": "a695be4f43bf14bcf7382e7e260f76eaaebd2109e1dee6acdf46ef55d4571f9c"
+    },
+    {
+      "current_path": "outputs/fractional_reproduction_v1/portfolio_charts_fractional_ties.pdf",
+      "original_path": "outputs/fractional_reproduction_v1/paper_style_portfolio_charts_fractional_ties.pdf",
+      "sha256": "1987e295ac36525bfb225ac0b2b258760497512511ba0da60664a72c890b7eb0"
+    },
+    {
+      "current_path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_3.png",
+      "original_path": "outputs/fractional_reproduction_v1/pages/paper_style_portfolio_charts_fractional_ties_page_3.png",
+      "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+    },
+    {
+      "current_path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_2.png",
+      "original_path": "outputs/fractional_reproduction_v1/pages/paper_style_portfolio_charts_fractional_ties_page_2.png",
+      "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+    },
+    {
+      "current_path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_1.png",
+      "original_path": "outputs/fractional_reproduction_v1/pages/paper_style_portfolio_charts_fractional_ties_page_1.png",
+      "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+    },
+    {
+      "current_path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_5.png",
+      "original_path": "outputs/fractional_reproduction_v1/pages/paper_style_portfolio_charts_fractional_ties_page_5.png",
+      "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+    },
+    {
+      "current_path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_4.png",
+      "original_path": "outputs/fractional_reproduction_v1/pages/paper_style_portfolio_charts_fractional_ties_page_4.png",
+      "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_3.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_fractional_ties_page_3.png",
+      "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_2.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_fractional_ties_page_2.png",
+      "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_1.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_fractional_ties_page_1.png",
+      "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_5.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_fractional_ties_page_5.png",
+      "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_4.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_fractional_ties_page_4.png",
+      "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_1.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_nonzero_scrisk_page_1.png",
+      "sha256": "85b4358be668cff1a8fd5bc5c9d40ddc538b6d9197d4c8b3bc27a2fca2674804"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_2.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_nonzero_scrisk_page_2.png",
+      "sha256": "62554ebc0bad6b80707723d20aec8a7a333e34fc6f610eacff34da889b660f81"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_3.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_nonzero_scrisk_page_3.png",
+      "sha256": "ae7f55165c8670ff4b09089f45ec9f08ae778c297ae24565359ef628cf66318e"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_4.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_nonzero_scrisk_page_4.png",
+      "sha256": "6cf3618280ca0068ab1fe5810812f2c967c466a6c23b0f8fa4a8443c13ca6137"
+    },
+    {
+      "current_path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_5.png",
+      "original_path": "tmp/pdfs/modified_chart_sources/paper_style_portfolio_charts_nonzero_scrisk_page_5.png",
+      "sha256": "60f824f5c7333d80a66158b49cfab46225b6ef097977ae4f7eba0f8998487c71"
+    },
+    {
+      "current_path": "docs/fractional_results/portfolio_charts_fractional_ties.pdf",
+      "original_path": "docs/fractional_results/paper_style_portfolio_charts_fractional_ties.pdf",
+      "sha256": "eccca323094764a6e9da01797cb55baf1457c0013c122a3b2772be15a97da7b0"
+    },
+    {
+      "current_path": "outputs/primary_event_study_2010_2019_release_dates_v1/portfolio_charts_original.pdf",
+      "original_path": "outputs/primary_event_study_2010_2019_release_dates_v1/paper_style_portfolio_charts_original.pdf",
+      "sha256": "4a36fef604d7bebf5e4a8c4a917a3e9e0a496a0c770da27a103b95f4dbe84aca"
+    }
+  ]
+}

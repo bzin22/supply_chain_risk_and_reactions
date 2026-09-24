@@ -4,3 +4,6 @@
 *.jsonl text eol=lf
 *.md text eol=lf
 *.py text eol=lf
+
+# Preserve byte-pinned historical CSVs.
+reproduction/fractional_v1/historical/*.csv -text

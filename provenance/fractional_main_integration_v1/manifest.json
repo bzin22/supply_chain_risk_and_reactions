@@ -1,0 +1,15 @@
+{
+  "code": {
+    "calculate_carhart_event_returns.py": {
+      "current_sha256": "70e936d8a1ffa83b26ac32722b699fcbe02e805c1f9c8c04274bf00eab910e04",
+      "historical_path": "provenance/fractional_main_integration_v1/historical_code/calculate_carhart_event_returns.py.txt",
+      "historical_sha256": "841d8e06832d94afb52233da071b9533a73dbe7c31128e537e994c2410d27b7d"
+    },
+    "calculate_supply_chain_transcript_scores.py": {
+      "current_sha256": "ac543beaf791cdbd4f8ccd2270620bef8882a03401d5f7e04475cd19e46bea61",
+      "historical_path": "provenance/fractional_main_integration_v1/historical_code/calculate_supply_chain_transcript_scores.py.txt",
+      "historical_sha256": "c6cdaa5163386141bc06b3664493ebe3a3f533bbf7747e8f24f1cacad8c0f212"
+    }
+  },
+  "purpose": "Preserve the exact historical input code while integrating the already-merged primary dictionary and 2010-2019 study-period updates from origin/main. The compact reproduction uses analysis/primary_event_study/core.py for CAR and begins after transcript scoring."
+}

@@ -356,11 +356,12 @@ def score_with_tiny_library(tmp_path: Path, risk_path: Path | None = None) -> di
     )
     input_path = tmp_path / "input.csv"
     with input_path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["ticker", "transcript_text"])
+        writer = csv.DictWriter(handle, fieldnames=["ticker", "quarter_label", "transcript_text"])
         writer.writeheader()
         writer.writerow(
             {
                 "ticker": "AAA",
+                "quarter_label": "2018Q1",
                 "transcript_text": distinct_filler(1001) + " supply risk",
             }
         )

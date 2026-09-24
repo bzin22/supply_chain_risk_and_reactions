@@ -1,0 +1,5 @@
+variable,lower_percentile,upper_percentile,lower_threshold,upper_threshold,n,clipped_below,clipped_above,quantile_method
+SCRisk,0.01,0.99,0.0,4.610999167736597,52533,0,526,linear
+Resolution,0.01,0.99,0.0,4.674818951281193,52533,0,526,linear
+CAR_0_1,0.01,0.99,-0.22063803445954538,0.22347371081108594,52533,526,526,linear
+CAR_2_60,0.01,0.99,-0.5070058043084112,0.5542362005503405,52533,526,526,linear

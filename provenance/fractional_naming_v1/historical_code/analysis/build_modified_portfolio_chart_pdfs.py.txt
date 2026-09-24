@@ -1,4 +1,4 @@
-"""Build two portfolio chart PDFs under alternate tie policies."""
+"""Build two paper-style portfolio chart PDFs under alternate tie policies."""
 from __future__ import annotations
 
 import csv
@@ -21,8 +21,8 @@ from scipy.stats import t
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "outputs/primary_event_study_2010_2019_release_dates_v1/full/call_level_scored_car.csv"
 ORIGINAL_THRESHOLDS = ROOT / "outputs/primary_event_study_2010_2019_release_dates_v1/full/winsorization_thresholds.csv"
-NONZERO_PDF = ROOT / "outputs/portfolio_charts_nonzero_scrisk.pdf"
-FRACTIONAL_PDF = ROOT / "outputs/portfolio_charts_fractional_ties.pdf"
+NONZERO_PDF = ROOT / "outputs/paper_style_portfolio_charts_nonzero_scrisk.pdf"
+FRACTIONAL_PDF = ROOT / "outputs/paper_style_portfolio_charts_fractional_ties.pdf"
 MANIFEST = ROOT / "outputs/portfolio_chart_modifications_manifest.json"
 PAGE_CACHE = ROOT / "tmp/pdfs/modified_chart_sources"
 VARIABLES = ["SCRisk", "Resolution", "CAR_0_1", "CAR_2_60"]

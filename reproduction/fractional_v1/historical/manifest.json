@@ -1,0 +1,320 @@
+{
+  "auxiliary_input_hashes": {
+    "artifacts/primary_event_study_2010_2019_v1/call_date_evidence_decisions.csv": "96f025226a3753bd825c845fa08564996df04ad8b3acf74a075bcf5b680effdc",
+    "artifacts/primary_event_study_2010_2019_v1/confirmed_dates.csv": "38c6380213a0942e28df5e5bcc17e511f32abcbed320525eb2ed5235a2a37840",
+    "artifacts/primary_event_study_2010_2019_v1/metadata.csv": "d445ea74dbceed0c5787b7f2db9f39153049acf33b66c4aba417c2a3696e397c",
+    "artifacts/primary_event_study_2010_2019_v1/sic_history.csv": "c5f449b198b299a646cd64afe115b48b8f2a86d99e3d56b39a5fe75e20c7a69c",
+    "artifacts/primary_event_study_2010_2019_v1/ticker_history.csv": "801d34d9ebafc0fb184dea7029b97b338b0d6ce30a6ad7264b4a8bcbcba6f8d7",
+    "artifacts/primary_event_study_release_dates_v1/prices/ANY.retry01.json": "536be71f72175bc00ba912320303210dd1e5d4ddb20dc96b2009720bb3d184ee",
+    "artifacts/primary_event_study_release_dates_v1/prices/PLD.retry01.json": "dc0820258592f61b6376165c12f0f93e0bf3c2748042a1eb9cc158a0433acdb8",
+    "data/call_dates/call_dates_v20260916/call_date_mapping.csv": "17e71edbb19f71b308dc6f88d094a63d9b2709f26096e9e75ce463756580d3ef",
+    "data/call_dates/call_dates_v20260916/source_evidence.csv": "128c59959923be747a558bdfa46f6bd6a46a34f67e17d251cd20896bbffb8361"
+  },
+  "car_method": {
+    "car": "sum of daily stock return minus RF and fitted excess return",
+    "day_0": "first Fama-French trading date on/after call_date under documented policy; no after-hours shift",
+    "estimation_offsets": [
+      -209,
+      -10
+    ],
+    "intercept": true,
+    "observations_required": 200,
+    "windows": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        60
+      ]
+    ]
+  },
+  "code_hashes": {
+    "analysis/primary_event_study/__init__.py": "9d6a29bc7c1f1414e3849371396ac52d20f1f6e4b1ed13b46d5baf47c27ed13d",
+    "analysis/primary_event_study/collect_prices.py": "43510a53ef233ae3cdb3aedabff757047bc56e23407a025abfa88e37af5e23c9",
+    "analysis/primary_event_study/core.py": "658a353b9ad82c42f7b117078268399e5787406cc10a3ec5ce1ed4b4b3f930d1",
+    "analysis/primary_event_study/dates.py": "6876d9572ea746c342ccbf68eece906ebaa1a0d8dad38d3d669de0ba612f9004",
+    "analysis/primary_event_study/portfolios.py": "bc39b175ee18ded20d1ac48547e8fe3308e9078f6a375621ef2f1ea9c0d2fff9",
+    "analysis/primary_event_study/prepare.py": "aeeedbd8e019e1667f5d54c5c6b8635201ff355c61afa8609f5ac5f05e9d88bf",
+    "analysis/primary_event_study/run.py": "fa5c213acac76e3db701d01efba75199faa17197f45ebbcb07244626ff7c0a0f",
+    "analysis/primary_event_study/test_primary.py": "b574fbc26307f88a600a62e81cfaf8a9284fe086a15962b9d508f0c5c13105be",
+    "calculate_carhart_event_returns.py": "841d8e06832d94afb52233da071b9533a73dbe7c31128e537e994c2410d27b7d",
+    "calculate_supply_chain_transcript_scores.py": "c6cdaa5163386141bc06b3664493ebe3a3f533bbf7747e8f24f1cacad8c0f212"
+  },
+  "created_at_utc": "2026-09-19T03:03:25.722587+00:00",
+  "date_policy": "v1 earnings_call_date (reported earnings-release date) treated as call date by explicit user instruction; separate confirmed dates retained for audit only",
+  "date_policy_key": "release",
+  "dictionaries": {
+    "resolution": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/resolution/resolution_terms_conservative_baseline.txt",
+      "sha256": "070b8cdc168a0db96db7f68fef5b0f3e08bde10ec5d7b4161ed882453a57d464",
+      "term_count": 55,
+      "version": "theile_reconstruction_v1"
+    },
+    "risk": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt",
+      "sha256": "c5f9fecb77f52802047aa7094e3999e428c3a53f8c936424d7ab50b9884136b8",
+      "term_count": 161,
+      "version": "theile_reconstruction_v1"
+    },
+    "supply_chain": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/supply_chain/supply_chain_terms.jsonl",
+      "sha256": "d53b93936e0228205fbbb183037acc71094d8c390ac77179f044f8404e14d1ea",
+      "term_count": 254,
+      "version": "theile_reconstruction_v1"
+    }
+  },
+  "environment": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.14.7"
+  },
+  "factors": {
+    "calendar": "Fama-French daily dates, without removing missing momentum",
+    "fama_french": {
+      "path": ".archive/post_2019_removed_20260916/artifacts/earnings_call_supply_chain/ppmi_svd_full_20260910/event_study_inputs/fama_french/fama_french_daily.zip",
+      "sha256": "2aea744a2d55a2d8fcccc8815aedef587fb16bdc13875c459f022963ca0a9992"
+    },
+    "missing_momentum": 0,
+    "momentum": {
+      "path": ".archive/post_2019_removed_20260916/artifacts/earnings_call_supply_chain/ppmi_svd_full_20260910/event_study_inputs/fama_french/momentum_daily.zip",
+      "sha256": "f5d7292154d3ab51d8d45544715236a367a45400ad53bc23e40b3efccef19dca"
+    },
+    "units_input": "percent",
+    "units_used": "decimal",
+    "vintage": "retrieved 2026-09-15; CIZ-era French files"
+  },
+  "final_verification": {
+    "checks_passed": 215,
+    "passed": true,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/verification.json",
+    "sha256": "d23382f907f87e6ddcd06ad75a3a0ef746cae2a21bb114414630588ab4b68ccb"
+  },
+  "full_run_local_reference_scoring_crosschecks": 0,
+  "gate_counts": {
+    "car_0_1_eligible": 56231,
+    "car_2_60_eligible": 56216,
+    "car_joint_eligible": 56216,
+    "confirmed_call_dates": 3187,
+    "event_dates_available": 58305,
+    "point_in_time_sic_assigned": 54083,
+    "portfolio_eligible": 52533,
+    "price_cache_available": 57881,
+    "score_integrity_pass": 58305,
+    "source_calls": 58305
+  },
+  "limitations": [
+    "Reconstructed dictionaries, not the authors unpublished library.",
+    "v1 earnings_call_date (reported earnings-release date) treated as call date by explicit user instruction; separate confirmed dates retained for audit only",
+    "Historical SIC source coverage and adjusted-price coverage are incomplete.",
+    "Provider ticker histories are not a CRSP permanent security identifier.",
+    "Intervals are descriptive firm-clustered uncertainty, not controlled regressions."
+  ],
+  "manifest_finalization": "Report builder attaches inspected-pilot and final-verification evidence; calculation artifacts unchanged.",
+  "mode": "full",
+  "output_sha256": {
+    "01_car_0_1_by_scrisk.csv": "09938dc2e31a7e15933cf375e821441ff3b53e48e716aa43d30f5f1b8eb1f22f",
+    "01_car_0_1_by_scrisk.png": "3da4177c0306a13f531812d81f3d57393de007539ac78e7c9edf6064f138a0a2",
+    "01_car_0_1_by_scrisk.svg": "63420739aba57c4fc22f14cc7c861740464f6d6bd9af964c1edc956956386c41",
+    "02_car_0_1_by_resolution.csv": "25ba51b24a58f8a0549c46db47f33c833fe5b6fd7dd5af2fb5fbf81bc541c62b",
+    "02_car_0_1_by_resolution.png": "20407154d452776ffc9006fca1bbcc1b5bd1cc3161228d96761cce70bcb70172",
+    "02_car_0_1_by_resolution.svg": "86e32ce842832ea953d63e4cf2aaaca4ad38a74e117651601959f34f1aaf9952",
+    "03_car_0_1_heatmap.csv": "4767bb81d9700fad73669d722c1d61fcf6766ff4eded8d1dd8b5a0df5978255c",
+    "03_car_0_1_heatmap.png": "af4df6c935c45f544790f3a4fe6ff9fa28d431ab6f0b9701806ce9fcf56f4ba7",
+    "03_car_0_1_heatmap.svg": "5703117b6654834aea75fe7205466fe25366553c022e8a0ab0229bf8715c0afc",
+    "04_car_2_60_by_scrisk.csv": "aab8552797383e5db9d3d1049e0161c866eb59adf9c7e9d4f5ce4e88d39869d2",
+    "04_car_2_60_by_scrisk.png": "c13aa39fd90e20612ad6ee987b5b3c858bb7bb6c230a0fc5b5644329d14cb561",
+    "04_car_2_60_by_scrisk.svg": "6a8a8ceb411bf2c4e12f97c06a6f664bb0a050e39701bbb16e6e1a481445cee8",
+    "05_car_2_60_heatmap.csv": "dd0a6c5ac14d2d5026afd3b3ad526cdf1f39766539473fdad0de3d80c4bd67f2",
+    "05_car_2_60_heatmap.png": "18bde5c38fd710f74377b4f9022aed582218b1045a32720ab58a529ad6920962",
+    "05_car_2_60_heatmap.svg": "3317677d50611adaa7a114d02920742994379fdee62b5dcf4100f507b92ae224",
+    "call_level_scored_car.csv": "af88e549cc8b275262eeb1e69af4d4aeb3b554b6197577dc91d5b63cdef7e2a6",
+    "daily_factors.csv": "eb3f109aa1aa207b1a0c010c2b125d01dc30366621ecc373de83f31d55183bda",
+    "excluded_calls.csv": "883c2d6cc053a681ba837fa7b3770982d8936d1b5e64901610a52591fa791e4a",
+    "gate_counts.csv": "03f596b39d0e92692111f7e6cef030e38b8b823457a09ef15701d2e7a45dd7b5",
+    "market_data_sources.csv": "08f9204c3b082e8333f0daa9acb7d2f71a78e0d6c8dd931d39da5a3cb90530c5",
+    "match_audit.jsonl.gz": "127c29fdf9d16ae0fd0fd8226f7e943af603e42b9d86e3bd315ff1cae6daf873",
+    "quintile_assignments.csv": "05e783e3ee706c40eab3099410344746e2bd54a9058cc2ae36792ef88a539234",
+    "quintile_balance_audit.csv": "b63754d1ce1bee7513c2191b403ce8b55d946352b009f29023fafc1fcb040e7e",
+    "selection.csv": "fd0dfb73090d8957c4fc0dcab4194762c509afc2cea6d02bfb0eaf9f1e48be9b",
+    "sic_division_coverage.csv": "f1a6e7b508f8ea10fac11c3a4f57d8034870a026ef8c8138d73653ac071cc76c",
+    "sic_missing_or_unassigned.csv": "ad69c74f3120411fa7b617d389ff04eb3845b29bd3b42d284a008a5f21f7c186",
+    "sic_point_in_time_map.csv": "6eeafec7083c5f6528ec354561d5718a3c4794bb2834202a657a38f206eb25f6",
+    "winsorization_thresholds.csv": "02d3e070d5cc1263d37d729e268244419095b7385a974020e6d3b7f2f2248081"
+  },
+  "pilot_manifest_sha256": "d10a9bcbd2f6d0a9d6028c1d7a9034d55aef1dc0c63cd3bbbd70eee9226ed721",
+  "pilot_path": "outputs/primary_event_study_2010_2019_release_dates_v1/pilot_05",
+  "pilot_validation": {
+    "full_run_approved_by_inspected_pilot": false,
+    "inspection_path": "outputs/primary_event_study_2010_2019_release_dates_v1/pilot_05/INSPECTED.md",
+    "inspection_sha256": "85330a665afde0a724b6082d2b987229dad565ff17b5e44bc64aa134f3f35aa1",
+    "passed": true,
+    "pilot_manifest_path": "outputs/primary_event_study_2010_2019_release_dates_v1/pilot_05/manifest.json",
+    "reference_scoring_crosschecks": 72
+  },
+  "portfolios": {
+    "companies": 2026,
+    "n": 52533,
+    "population": "joint CAR(0,1) and CAR(2,60) eligible with point-in-time SIC division and valid scores",
+    "quintile_formula": "floor(5 * zero_based_rank / group_size) + 1; counts differ by at most one",
+    "resolution_sort": "within SIC division and SCRisk quintile",
+    "scrisk_sort": "within SIC division; all observations including raw zeros",
+    "small_strata": "all rows retained; empty quintiles possible when group_size < 5",
+    "thresholds": [
+      {
+        "clipped_above": 526,
+        "clipped_below": 0,
+        "lower_percentile": 0.01,
+        "lower_threshold": 0.0,
+        "n": 52533,
+        "quantile_method": "linear",
+        "upper_percentile": 0.99,
+        "upper_threshold": 4.610999167736597,
+        "variable": "SCRisk"
+      },
+      {
+        "clipped_above": 526,
+        "clipped_below": 0,
+        "lower_percentile": 0.01,
+        "lower_threshold": 0.0,
+        "n": 52533,
+        "quantile_method": "linear",
+        "upper_percentile": 0.99,
+        "upper_threshold": 4.674818951281193,
+        "variable": "Resolution"
+      },
+      {
+        "clipped_above": 526,
+        "clipped_below": 526,
+        "lower_percentile": 0.01,
+        "lower_threshold": -0.22063803445954538,
+        "n": 52533,
+        "quantile_method": "linear",
+        "upper_percentile": 0.99,
+        "upper_threshold": 0.22347371081108594,
+        "variable": "CAR_0_1"
+      },
+      {
+        "clipped_above": 526,
+        "clipped_below": 526,
+        "lower_percentile": 0.01,
+        "lower_threshold": -0.5070058043084112,
+        "n": 52533,
+        "quantile_method": "linear",
+        "upper_percentile": 0.99,
+        "upper_threshold": 0.5542362005503405,
+        "variable": "CAR_2_60"
+      }
+    ],
+    "ties": "ascending SHA256(portfolio-ties-v1|call_id), then call_id; independent of outcomes",
+    "uncertainty": "95% t intervals using one-way CIK-clustered SE for equal-call-weight mean; fixed assignments",
+    "uncertainty_limit": "does not account for common-date cross-firm correlation or uncertainty in dictionary reconstruction",
+    "winsorization": "global 1st/99th percentiles within portfolio-eligible sample, linear quantiles; originals retained",
+    "zero_resolution_included": 46123,
+    "zero_scrisk_included": 21027
+  },
+  "score_method": {
+    "distance": "closest inclusive token positions <= 10",
+    "identical_span_pairs": "included and audited",
+    "integrity": "honor v1 validation; legacy heuristic flags diagnostic only; no length-only exclusions",
+    "pair_sum": true,
+    "resolution": "same supply-risk pair with resolution within 10 tokens of supply span",
+    "supply_chain_vocabulary": "canonical library only; no extra seeds or inflections",
+    "token_regex": "[A-Za-z]+(?:['\u2019.-][A-Za-z]+)*",
+    "window": 10
+  },
+  "score_reuse": {
+    "audit_sha256": "127c29fdf9d16ae0fd0fd8226f7e943af603e42b9d86e3bd315ff1cae6daf873",
+    "dataset_sha256": "d84f31b9325e171317cd387f6fca05b0502e3118c9b91c96eacf2437621c9d20",
+    "directory": "outputs/primary_event_study_2010_2019_v1/full",
+    "manifest_sha256": "cdf2a3ba652cd17b1f2c751f852248c3a69b057b20e20159bc8d843486a329a3",
+    "method": "reuse verified raw transcript scores only; recompute SD, all event returns, eligibility and portfolios"
+  },
+  "sequential_gate_counts": [
+    {
+      "excluded_at_gate": 0,
+      "gate": "source",
+      "retained": 58305
+    },
+    {
+      "excluded_at_gate": 0,
+      "gate": "valid_transcript_score",
+      "retained": 58305
+    },
+    {
+      "excluded_at_gate": 0,
+      "gate": "event_date_under_release_policy",
+      "retained": 58305
+    },
+    {
+      "excluded_at_gate": 199,
+      "gate": "price_identity",
+      "retained": 58106
+    },
+    {
+      "excluded_at_gate": 424,
+      "gate": "adjusted_prices",
+      "retained": 57682
+    },
+    {
+      "excluded_at_gate": 1466,
+      "gate": "car_both_windows",
+      "retained": 56216
+    },
+    {
+      "excluded_at_gate": 3683,
+      "gate": "historical_sic_division",
+      "retained": 52533
+    }
+  ],
+  "sic_policy": "latest dated filing SIC known by actual fiscal period end; keyed by CIK+quarter_label",
+  "source": {
+    "path": "data/final/earnings_call_transcripts_validated_2010_2019_v1.csv",
+    "sha256_after": "06d4620290b4b8a66f18a8762d5042968d4b436d4aef7009f6004d9d331eece3",
+    "sha256_before": "06d4620290b4b8a66f18a8762d5042968d4b436d4aef7009f6004d9d331eece3",
+    "unchanged": true
+  },
+  "standardization": {
+    "method": "population SD, no centering",
+    "population": 58305,
+    "sd": {
+      "Resolution": 7.608629559758133e-05,
+      "SCRisk": 0.00035037398355967567
+    }
+  },
+  "status_counts": {
+    "call_date_confirmation_status": {
+      "ambiguous_live_call_schedule_dates": 80,
+      "cached_evidence_does_not_confirm_live_call_for_this_fiscal_event": 1897,
+      "confirmed_explicit_sec_call_date": 3187,
+      "no_explicit_call_date_evidence": 53141
+    },
+    "car_0_1_status": {
+      "model_unavailable": 1977,
+      "ok": 56328
+    },
+    "car_2_60_status": {
+      "missing_event_prices_or_factors": 15,
+      "model_unavailable": 1977,
+      "ok": 56313
+    },
+    "car_model_status": {
+      "missing_estimation_prices_or_factors": 1977,
+      "ok": 56328
+    },
+    "sic_match_status": {
+      "conflicting_historical_sic": 1,
+      "matched_point_in_time": 54083,
+      "missing_fiscal_period_end": 949,
+      "missing_historical_sic": 3272
+    },
+    "transcript_integrity_status": {
+      "content_absent": 51,
+      "ok": 58254
+    }
+  }
+}

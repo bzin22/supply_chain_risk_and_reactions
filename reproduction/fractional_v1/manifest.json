@@ -1,0 +1,106 @@
+{
+  "count_correction": "Historical pooled Resolution contributing_calls counts membership rows; reproduction reports unique call IDs and membership_rows separately. Numerical estimates unchanged.",
+  "date_policy": "release",
+  "dictionaries": {
+    "resolution": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/resolution/resolution_terms_conservative_baseline.txt",
+      "sha256": "070b8cdc168a0db96db7f68fef5b0f3e08bde10ec5d7b4161ed882453a57d464",
+      "term_count": 55,
+      "version": "theile_reconstruction_v1"
+    },
+    "risk": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt",
+      "sha256": "c5f9fecb77f52802047aa7094e3999e428c3a53f8c936424d7ab50b9884136b8",
+      "term_count": 161,
+      "version": "theile_reconstruction_v1"
+    },
+    "supply_chain": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/supply_chain/supply_chain_terms.jsonl",
+      "sha256": "d53b93936e0228205fbbb183037acc71094d8c390ac77179f044f8404e14d1ea",
+      "term_count": 254,
+      "version": "theile_reconstruction_v1"
+    }
+  },
+  "eligible_calls": 52533,
+  "eligible_firms": 2026,
+  "exporter_sha256": "148607209d7966bb48d0fce03ceccda4b327675ab39d4667476fab3b0a5836cc",
+  "files": {
+    "analysis.csv.gz": {
+      "bytes": 5621422,
+      "sha256": "f28ca0f93e32060ad727da5e2ea97e182bd9c62ecfa839d5b886c18331f0b97d"
+    },
+    "historical/01_car_0_1_by_scrisk.csv": {
+      "bytes": 1062,
+      "sha256": "9de1ffe6d2620581e98ed560158a3172f36eeaec625b8dc475b9bb76ad047163"
+    },
+    "historical/02_car_0_1_by_resolution.csv": {
+      "bytes": 1064,
+      "sha256": "eb25305c0f7fcf2a68275fb387fddd9b180081d0e720969a99e0f8caa253b5e4"
+    },
+    "historical/03_car_0_1_heatmap.csv": {
+      "bytes": 4447,
+      "sha256": "08493058d1a00212606f49bfaabaf39d360f7e1e86c15be8d149deab60300d7d"
+    },
+    "historical/04_car_2_60_by_scrisk.csv": {
+      "bytes": 1080,
+      "sha256": "fedd03f713cd58c098cf915aa4eef1a00807ff72367b31a03d6e94da9dd557d8"
+    },
+    "historical/05_car_2_60_heatmap.csv": {
+      "bytes": 4537,
+      "sha256": "9c23a95292e3ffddd1bc9d59a37e915d0fbb78c98a22bccae3ea138d49352019"
+    },
+    "historical/chart_manifest.json": {
+      "bytes": 7645,
+      "sha256": "6663aac4adc4caee505e40152127a984df6c42e4195c9ae8843a242c29fc0368"
+    },
+    "historical/gate_counts.csv": {
+      "bytes": 239,
+      "sha256": "03f596b39d0e92692111f7e6cef030e38b8b823457a09ef15701d2e7a45dd7b5"
+    },
+    "historical/manifest.json": {
+      "bytes": 15425,
+      "sha256": "d330c25964c2be859bc36024f9cdf90cf0c222f1117b79ae9339ea89e768fd72"
+    },
+    "historical/verification.json": {
+      "bytes": 9708,
+      "sha256": "d23382f907f87e6ddcd06ad75a3a0ef746cae2a21bb114414630588ab4b68ccb"
+    },
+    "historical/winsorization_thresholds.csv": {
+      "bytes": 405,
+      "sha256": "02d3e070d5cc1263d37d729e268244419095b7385a974020e6d3b7f2f2248081"
+    },
+    "raw_inputs.json": {
+      "bytes": 467283,
+      "sha256": "8a12fecc97dd62e341409a53b45f33713e6620b0fab9b106c5c002e646dc6199"
+    },
+    "schema.json": {
+      "bytes": 3564,
+      "sha256": "ac2dd3fb0a69b21c4c0668f651fadf32645a034747f6e0f28b35792aa29ee865"
+    }
+  },
+  "historical_code": {
+    "analysis/build_modified_portfolio_chart_pdfs.py": "c5e2dbdbaa00092b8864f72a21d08b33915ab807c5b3c8ec2b6b8be87204a861",
+    "analysis/primary_event_study/__init__.py": "9d6a29bc7c1f1414e3849371396ac52d20f1f6e4b1ed13b46d5baf47c27ed13d",
+    "analysis/primary_event_study/collect_prices.py": "43510a53ef233ae3cdb3aedabff757047bc56e23407a025abfa88e37af5e23c9",
+    "analysis/primary_event_study/core.py": "658a353b9ad82c42f7b117078268399e5787406cc10a3ec5ce1ed4b4b3f930d1",
+    "analysis/primary_event_study/dates.py": "6876d9572ea746c342ccbf68eece906ebaa1a0d8dad38d3d669de0ba612f9004",
+    "analysis/primary_event_study/portfolios.py": "bc39b175ee18ded20d1ac48547e8fe3308e9078f6a375621ef2f1ea9c0d2fff9",
+    "analysis/primary_event_study/prepare.py": "aeeedbd8e019e1667f5d54c5c6b8635201ff355c61afa8609f5ac5f05e9d88bf",
+    "analysis/primary_event_study/run.py": "fa5c213acac76e3db701d01efba75199faa17197f45ebbcb07244626ff7c0a0f",
+    "analysis/primary_event_study/test_primary.py": "b574fbc26307f88a600a62e81cfaf8a9284fe086a15962b9d508f0c5c13105be",
+    "calculate_carhart_event_returns.py": "841d8e06832d94afb52233da071b9533a73dbe7c31128e537e994c2410d27b7d",
+    "calculate_supply_chain_transcript_scores.py": "c6cdaa5163386141bc06b3664493ebe3a3f533bbf7747e8f24f1cacad8c0f212"
+  },
+  "historical_environment": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.14.7"
+  },
+  "source_path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/call_level_scored_car.csv",
+  "source_rows": 58305,
+  "source_sha256": "af88e549cc8b275262eeb1e69af4d4aeb3b554b6197577dc91d5b63cdef7e2a6",
+  "version": "fractional_analysis_v1"
+}

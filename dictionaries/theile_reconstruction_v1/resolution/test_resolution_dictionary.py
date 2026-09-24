@@ -384,10 +384,11 @@ def score_with_fixture(tmp_path: Path, resolution_path: Path | None = None) -> d
     library_path.write_text(dio.SYNTHETIC_SUPPLY_CHAIN_FIXTURE.read_text())
     input_path = tmp_path / "input.csv"
     with input_path.open("w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=["ticker", "transcript_text"])
+        w = csv.DictWriter(fh, fieldnames=["ticker", "quarter_label", "transcript_text"])
         w.writeheader()
         w.writerow({
             "ticker": "TEST",
+            "quarter_label": "2018Q1",
             "transcript_text": ("We had a supplier shortage last quarter and we were "
                                 "able to resolve the shortage by qualifying a second "
                                 "plant. " * 5),
