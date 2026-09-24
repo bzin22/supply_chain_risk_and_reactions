@@ -1,0 +1,236 @@
+{
+  "created_at_utc": "2026-09-20T00:26:48.047328+00:00",
+  "fractional_ties": {
+    "calls": 52533,
+    "firms": 2026,
+    "joint_assignment_rows": 384359,
+    "joint_effective_mass": [
+      2101.3199999999997,
+      2101.3199999999997,
+      2101.3199999999997,
+      2101.32,
+      2101.32,
+      2101.3199999999997,
+      2101.3199999999997,
+      2101.32,
+      2101.3199999999997,
+      2101.3199999999993,
+      2101.3199999999997,
+      2101.3199999999997,
+      2101.3199999999997,
+      2101.3199999999997,
+      2101.3199999999997,
+      2101.32,
+      2101.32,
+      2101.3199999999997,
+      2101.3199999999997,
+      2101.32,
+      2101.32,
+      2101.32,
+      2101.32,
+      2101.3199999999997,
+      2101.32
+    ],
+    "pdf": "outputs/paper_style_portfolio_charts_fractional_ties.pdf",
+    "pdf_sha256": "eccca323094764a6e9da01797cb55baf1457c0013c122a3b2772be15a97da7b0",
+    "risk_assignment_rows": 84408,
+    "risk_effective_mass": [
+      10506.599999999999,
+      10506.600000000002,
+      10506.599999999999,
+      10506.6,
+      10506.6
+    ],
+    "winsorization_thresholds": [
+      {
+        "clipped_above": 526,
+        "clipped_below": 0,
+        "lower_threshold": 0.0,
+        "n": 52533,
+        "quantile_method": "linear",
+        "upper_threshold": 4.610999167736597,
+        "variable": "SCRisk"
+      },
+      {
+        "clipped_above": 526,
+        "clipped_below": 0,
+        "lower_threshold": 0.0,
+        "n": 52533,
+        "quantile_method": "linear",
+        "upper_threshold": 4.674818951281193,
+        "variable": "Resolution"
+      },
+      {
+        "clipped_above": 526,
+        "clipped_below": 526,
+        "lower_threshold": -0.22063803445954533,
+        "n": 52533,
+        "quantile_method": "linear",
+        "upper_threshold": 0.22347371081108586,
+        "variable": "CAR_0_1"
+      },
+      {
+        "clipped_above": 526,
+        "clipped_below": 526,
+        "lower_threshold": -0.5070058043084112,
+        "n": 52533,
+        "quantile_method": "linear",
+        "upper_threshold": 0.5542362005503404,
+        "variable": "CAR_2_60"
+      }
+    ],
+    "zero_scrisk_membership_by_division": [
+      {
+        "Q1_membership_per_zero_call": 0.5125,
+        "Q2_membership_per_zero_call": 0.48750000000000004,
+        "Q3_membership_per_zero_call": 0.0,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Agriculture/forestry/fishing",
+        "zero_calls": 16
+      },
+      {
+        "Q1_membership_per_zero_call": 0.9516587677725119,
+        "Q2_membership_per_zero_call": 0.048341232227488096,
+        "Q3_membership_per_zero_call": 0.0,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Construction",
+        "zero_calls": 211
+      },
+      {
+        "Q1_membership_per_zero_call": 0.39082701336222464,
+        "Q2_membership_per_zero_call": 0.39082701336222464,
+        "Q3_membership_per_zero_call": 0.21834597327555072,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Finance/insurance/real estate",
+        "zero_calls": 5538
+      },
+      {
+        "Q1_membership_per_zero_call": 0.578101802757158,
+        "Q2_membership_per_zero_call": 0.421898197242842,
+        "Q3_membership_per_zero_call": 0.0,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Manufacturing",
+        "zero_calls": 7544
+      },
+      {
+        "Q1_membership_per_zero_call": 0.5359430604982206,
+        "Q2_membership_per_zero_call": 0.4640569395017794,
+        "Q3_membership_per_zero_call": 0.0,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Mining",
+        "zero_calls": 562
+      },
+      {
+        "Q1_membership_per_zero_call": 0.5013858497447119,
+        "Q2_membership_per_zero_call": 0.4986141502552881,
+        "Q3_membership_per_zero_call": 0.0,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Retail",
+        "zero_calls": 1371
+      },
+      {
+        "Q1_membership_per_zero_call": 0.4548054919908467,
+        "Q2_membership_per_zero_call": 0.4548054919908467,
+        "Q3_membership_per_zero_call": 0.09038901601830664,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Services",
+        "zero_calls": 3496
+      },
+      {
+        "Q1_membership_per_zero_call": 0.48745119910764084,
+        "Q2_membership_per_zero_call": 0.48745119910764084,
+        "Q3_membership_per_zero_call": 0.02509760178471835,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Transportation/communications/utilities",
+        "zero_calls": 1793
+      },
+      {
+        "Q1_membership_per_zero_call": 0.6439516129032258,
+        "Q2_membership_per_zero_call": 0.3560483870967742,
+        "Q3_membership_per_zero_call": 0.0,
+        "Q4_membership_per_zero_call": 0.0,
+        "Q5_membership_per_zero_call": 0.0,
+        "sic_division": "Wholesale",
+        "zero_calls": 496
+      }
+    ]
+  },
+  "implementation": {
+    "path": "analysis/build_modified_portfolio_chart_pdfs.py",
+    "sha256": "c5e2dbdbaa00092b8864f72a21d08b33915ab807c5b3c8ec2b6b8be87204a861"
+  },
+  "nonzero_scrisk": {
+    "calls": 31506,
+    "excluded_zero_scrisk_calls": 21027,
+    "firms": 1968,
+    "pdf": "outputs/paper_style_portfolio_charts_nonzero_scrisk.pdf",
+    "pdf_sha256": "a695be4f43bf14bcf7382e7e260f76eaaebd2109e1dee6acdf46ef55d4571f9c",
+    "scrisk_quintile_counts": [
+      6305,
+      6301,
+      6302,
+      6301,
+      6297
+    ],
+    "winsorization_thresholds": [
+      {
+        "clipped_above": 316,
+        "clipped_below": 316,
+        "lower_threshold": 0.14937656663738524,
+        "n": 31506,
+        "quantile_method": "linear",
+        "upper_threshold": 5.54128052239889,
+        "variable": "SCRisk"
+      },
+      {
+        "clipped_above": 316,
+        "clipped_below": 0,
+        "lower_threshold": 0.0,
+        "n": 31506,
+        "quantile_method": "linear",
+        "upper_threshold": 5.665630802254428,
+        "variable": "Resolution"
+      },
+      {
+        "clipped_above": 316,
+        "clipped_below": 316,
+        "lower_threshold": -0.22838410912590656,
+        "n": 31506,
+        "quantile_method": "linear",
+        "upper_threshold": 0.21712984818032166,
+        "variable": "CAR_0_1"
+      },
+      {
+        "clipped_above": 316,
+        "clipped_below": 316,
+        "lower_threshold": -0.4660722387621896,
+        "n": 31506,
+        "quantile_method": "linear",
+        "upper_threshold": 0.4998823845900195,
+        "variable": "CAR_2_60"
+      }
+    ]
+  },
+  "shared_method": {
+    "controlled_regressions": false,
+    "means": "call-weighted for nonzero variant; fractional-membership-weighted for tied-score variant",
+    "resolution_sort": "ascending within SIC division and SCRisk portfolio",
+    "scrisk_sort": "ascending within SIC division; matching quintiles pooled across divisions",
+    "uncertainty": "95% t intervals using one-way CIK-clustered weighted score sums",
+    "winsorization": "linear 1st/99th percentiles within each variant's analysis sample; originals retained in source"
+  },
+  "source": {
+    "eligible_calls": 52533,
+    "eligible_firms": 2026,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/call_level_scored_car.csv",
+    "sha256": "af88e549cc8b275262eeb1e69af4d4aeb3b554b6197577dc91d5b63cdef7e2a6"
+  }
+}

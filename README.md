@@ -1,219 +1,326 @@
-# Supply chain risk and earnings call returns: recreation in progress
+# Supply-chain language and stock-market reactions
 
-This repository is an in-progress 2010-2019 comparison with Theile et al. (2026),
-"Supply Chain Risk and Resolution: An Empirical Study of Stock Market
-Reactions." It is not a replication yet. Nothing here has been shown to match
-the paper.
+This project asks whether the language managers use to describe supply-chain
+risk and its resolution is associated with abnormal stock returns around
+earnings announcements. It reconstructs the text measures and portfolio design
+in Theile et al. (2026) for a deliberately bounded 2010-2019 sample. The goal is
+not to produce an exact replication, but rather to rebuild the pre-liminary monotonic pattern using similar methodology and test our own hypotheses around industry specific questions.
 
-The pipeline runs end to end and produces numbers. Those numbers are not
-comparable to the paper's, for the reasons listed under
-[Known methodological gaps](#known-methodological-gaps). Treat every figure
-and table this code produces as a diagnostic on the code, not as a finding
-about markets.
 
-## What the recreation targets
+The main descriptive result is a negative short-window association. Mean
+Carhart CAR(0,1) declines from **0.52%** in the lowest fractional SCRisk
+portfolio to **-0.41%** in the highest. This gradient is economically
+interesting, but it is not a causal estimate and it is sensitive to how the
+large mass of zero scores is represented.
 
-The paper measures how the stock market reacts when a firm talks about supply
-chain risk, and about resolving it, on an earnings call. The recreation builds
-the same shape of study:
+## Research question and motivation
 
-1. Score each earnings call transcript for supply chain risk (SCRisk) and for
-   resolution language.
-2. Estimate the cumulative abnormal return (CAR) around the call, meaning the
-   stock's return minus what a factor model says it should have returned.
-3. Relate the score to the CAR.
+Supply-chain disruptions are difficult to observe consistently across firms.
+Earnings calls offer a common disclosure setting in which managers discuss
+shortages, suppliers, logistics, and remediation in their own words. That makes
+the calls useful for studying two related questions:
 
-## Core pipeline
+1. Are calls with more supply-chain-risk language followed by different market
+   reactions?
+2. Conditional on measured risk, is language about resolution associated with
+   a different reaction?
 
-Seven scripts, in order. Each writes a new file and never edits its input in
-place. All of them take explicit paths.
+The design combines transparent dictionary-based NLP with a conventional
+Carhart event study. It is intended to make the measurement choices visible,
+especially the treatment of zero and tied scores that dominate the lower
+portfolios.
 
-| Stage | Script | What it does |
-| --- | --- | --- |
-| 1 | `build_supply_chain_library.py` | Builds a supply-chain term library from SEC 10-K filings. Writes `terms.jsonl`. |
-| 2 | `extract_earnings_call_transcript_data.py` | Fetches Alpha Vantage earnings call transcripts and speaker metadata for an explicit firm universe. `--input` is required. |
-| 3 | `calculate_supply_chain_transcript_scores.py` | Scores each call for SCRisk and Resolution using the 161-term risk reconstruction and the 55-term resolution reconstruction by default. |
-| 4 | `collect_earnings_event_inputs.py` | Collects event dates, adjusted closes, and Fama-French / momentum factors, with raw provider payloads and a provenance manifest. |
-| 5 | `join_earnings_event_dates.py` | Attaches the collected event date to each call. |
-| 6 | `join_supply_chain_scores_to_segments.py` | Attaches call-level scores to every transcript segment of that call. |
-| 7 | `calculate_carhart_event_returns.py` | Estimates Carhart four-factor abnormal returns and writes the event-level dataset with `CAR_0_1`. |
+## Data and event-date policy
 
-Run them in `dap-env`:
+The immutable v1 corpus contains **58,305 calls from 2,200 companies**, covering
+`2010Q1` through `2019Q4`. All calls are scored and remain represented in the
+derived call-level dataset. Sequential market-data and SIC gates produce a
+common portfolio sample of **52,533 calls from 2,026 firms** across nine SIC
+divisions.
 
+| Sequential market-data sample | Calls available for analysis |
+| --- | ---: |
+| 1. Source transcripts | 58,305 |
+| 2. Calls with valid transcript scores | 58,305 |
+| 3. Calls using earnings-release dates under the study policy | 58,305 |
+| 4. Calls matched to a price identity | 58,106 |
+| 5. Calls with adjusted-price coverage | 57,682 |
+| 6. Calls with both CAR windows | 56,216 |
+| Final portfolio-analysis sample with historical SIC division | 52,533 |
+
+The event date is the reported **earnings-release date** stored in v1's
+`earnings_call_date` field. Day 0 is the first trading day on or after the selected release date;
+there is no after-hours shift.
+
+The frozen transcript source is
+`data/final/earnings_call_transcripts_validated_2010_2019_v1.csv` (SHA-256
+`06d4620290b4b8a66f18a8762d5042968d4b436d4aef7009f6004d9d331eece3`).
+Producing a corrected corpus requires a new version; v1 is never edited in
+place.
+
+## Reconstructed dictionaries and text measurement
+
+The study uses only the versioned canonical libraries below. They reconstruct
+unpublished author inputs and should not be described as recovered originals.
+
+| Component | Terms | Canonical file | SHA-256 |
+| --- | ---: | --- | --- |
+| Supply-chain vocabulary | 254 | `dictionaries/theile_reconstruction_v1/supply_chain/supply_chain_terms.jsonl` | `d53b93936e0228205fbbb183037acc71094d8c390ac77179f044f8404e14d1ea` |
+| Risk vocabulary | 161 | `dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt` | `c5f9fecb77f52802047aa7094e3999e428c3a53f8c936424d7ab50b9884136b8` |
+| Conservative Resolution vocabulary | 55 | `dictionaries/theile_reconstruction_v1/resolution/resolution_terms_conservative_baseline.txt` | `070b8cdc168a0db96db7f68fef5b0f3e08bde10ec5d7b4161ed882453a57d464` |
+
+The approved tokenizer and longest-first multiword matcher are applied without
+adding seeds, stemming, inferred inflections, or alternate dictionaries. For
+each transcript, every supply-chain/risk occurrence pair at closest-token
+distance at most 10 contributes the supply-chain term's `max_cosine` weight.
+Resolution is a subset of those risk pairs: it contributes when a Resolution
+term is also within 10 tokens of the supply-chain span. Overlapping and
+identical-span matches are retained and audited.
+
+The weighted sums are divided by tokenized transcript length. Each resulting
+raw score is then divided by its population standard deviation across all valid
+v1 calls, without mean centering. The call-level output retains the raw match
+counts, weighted sums, length-adjusted scores, standardized **SCRisk** and
+**Resolution**, zero indicators, dictionary paths and hashes, and the complete
+match audit.
+
+## Carhart abnormal returns
+
+Daily returns use split- and dividend-adjusted closes. Expected excess returns
+come from an OLS Carhart model with an intercept, Fama-French Mkt-RF, SMB, and
+HML, plus momentum. Factors are converted from percent to decimal before
+estimation.
+
+Each model uses exactly **200 trading observations**, from event time -209
+through -10. Missing observations do not shorten the window. Abnormal returns
+are summed over two non-overlapping horizons:
+
+- **CAR(0,1):** event day 0 and day 1, two trading days.
+- **CAR(2,60):** trading days 2 through 60, 59 trading days.
+
+The output preserves ticker mappings, adjusted-price provenance, model
+coefficients, rank, condition number, residual RMSE, R-squared, event-day
+mapping, missing dates, and every exclusion reason.
+
+## Fractional portfolio construction
+
+SCRisk, Resolution, CAR(0,1), and CAR(2,60) are winsorized at the linear 1st and
+99th percentiles of the 52,533-call analysis sample; the original values remain
+available. SCRisk portfolios are formed within SIC division and then pooled
+across divisions. Resolution portfolios are formed within SIC division and
+SCRisk portfolio.
+
+All observations are retained, including **21,027 zero-SCRisk calls** and
+**46,123 zero-Resolution calls**. When a tied score group crosses a quintile
+boundary, every call in that group receives the same proportional membership
+in each portfolio it spans. For example, a zero-score group that supplies 60%
+of Q1 and 40% of Q2 gives every zero-score call weights of 0.6 and 0.4 rather
+than assigning observationally identical calls by an arbitrary ordering. Each
+call's weights sum to one. Within every SIC division, each SCRisk portfolio has
+one-fifth of the division's effective mass; the nested Resolution cells each
+have one twenty-fifth. After pooling, each SCRisk portfolio has effective mass
+**10,506.6**, and every SCRisk x Resolution cell has effective mass **2,101.32**.
+
+Means use fractional membership weights. The reported 95% intervals use
+one-way CIK-clustered weighted score sums and a t critical value. They account
+for repeated calls by a firm, but not common-date cross-firm dependence or
+uncertainty from reconstructing the dictionaries. No controlled regressions
+are included.
+
+## Findings
+
+### SCRisk and the announcement-window return
+
+![Mean CAR(0,1) by fractional SCRisk quintile](docs/fractional_results/01_car_0_1_by_scrisk.png)
+
+*Figure 1. Fractional-allocation portfolio means; bars show 95% intervals
+clustered by firm.*
+
+| Fractional SCRisk portfolio | Mean CAR(0,1) | Firm-clustered 95% interval | Effective mass |
+| --- | ---: | ---: | ---: |
+| Q1, lowest | 0.52% | [0.41%, 0.63%] | 10,506.6 |
+| Q2 | 0.49% | [0.39%, 0.60%] | 10,506.6 |
+| Q3 | 0.29% | [0.16%, 0.42%] | 10,506.6 |
+| Q4 | 0.10% | [-0.04%, 0.24%] | 10,506.6 |
+| Q5, highest | -0.41% | [-0.56%, -0.26%] | 10,506.6 |
+
+The mean CAR returns in the short, 2 trading day window decline as measured SCRisk rises. The lowest three
+portfolio means are positive, Q4's return is small and its 95% interval includes zero, and Q5
+is negative. Q1 is entirely composed of fractional
+weight from zero-SCRisk calls, while zero calls also contribute heavily to Q2
+and modestly to Q3.
+
+
+### Resolution and the announcement-window return
+
+![Mean CAR(0,1) by fractional Resolution quintile](docs/fractional_results/02_car_0_1_by_resolution.png)
+
+*Figure 2. Fractional-allocation Resolution portfolio means; bars show 95%
+intervals clustered by firm.*
+
+Zero Resolution scores dominate the
+sample; Q1-Q3 have the same fractional composition and the same mean CAR(0,1),
+0.18% with a 95% interval of [0.12%, 0.25%]. Q4 averages 0.15% [0.07%, 0.23%]
+and Q5 averages 0.29% [0.18%, 0.41%]. These estimates might indicate that the relationship between the resolution scores and the mean returns might be non-linear, in that the score needs to cross a certain threshold to produce a meaningful difference in average return.
+
+![Mean CAR(0,1) by fractional SCRisk and Resolution quintiles](docs/fractional_results/03_car_0_1_heatmap.png)
+
+*Figure 3. Mean CAR(0,1) for the nested SCRisk x Resolution portfolios.*
+
+In portfolios Q2 to Q4, the highest Resolution cell has a higher mean return than the lowest (e.g., 0.41% vs 0.26% in Q3). This fits the idea that including resolution keywords might soften the market's response to disclosed risk, but the cells are noisy and one cell breaks the pattern. More evidence is needed to validate this hypothesis.
+
+![Mean CAR(2,60) by fractional SCRisk and Resolution quintiles](docs/fractional_results/05_car_2_60_heatmap.png)
+
+*Figure 5. Mean CAR(2,60) for the nested SCRisk x Resolution portfolios.
+
+
+Over days 2–60, the ordering partly reverses: the highest-risk portfolio averages −0.04% against roughly −0.5% for the lowest three. If this holds up, the market's initial response to supply-chain risk language may overshoot.
+### Fractional figures and supporting tables
+
+The complete five-page result is available as the
+[fractional-allocation portfolio PDF](docs/fractional_results/portfolio_charts_fractional_ties.pdf).
+The remaining standalone figure is:
+
+- [Mean CAR(2,60) by SCRisk quintile](docs/fractional_results/04_car_2_60_by_scrisk.png)
+
+Machine-readable supporting tables give `fractional_mass` (sum of membership
+weights, also kept under the old name `effective_n`), `contributing_calls`
+(distinct call IDs with positive weight), `membership_rows` (rows in the
+expanded allocation, which exceed the call count when a call reaches a
+portfolio through several SCRisk parents), `firms` (distinct CIKs), means,
+standard errors, confidence intervals, zero weights, and SIC-division
+coverage:
+
+- [CAR(0,1) by SCRisk](docs/fractional_results/01_car_0_1_by_scrisk.csv)
+- [CAR(0,1) by Resolution](docs/fractional_results/02_car_0_1_by_resolution.csv)
+- [CAR(0,1) heatmap](docs/fractional_results/03_car_0_1_heatmap.csv)
+- [CAR(2,60) by SCRisk](docs/fractional_results/04_car_2_60_by_scrisk.csv)
+- [CAR(2,60) heatmap](docs/fractional_results/05_car_2_60_heatmap.csv)
+
+These are the corrected tables produced by the reproduction command. The
+original run labelled membership rows as `contributing_calls`, so its pooled
+Resolution table reported 77,997 for Q1-Q3, above the 52,533-call sample. The
+corrected counts are 46,123 unique calls in Q1-Q3, 47,408 in Q4 and 39,220 in
+Q5, with the old numbers preserved as `membership_rows`. Unique counts overlap
+across portfolios and must not be summed. Every mean, standard error and
+interval is unchanged and verified against the frozen originals, which stay
+byte-for-byte in
+[`reproduction/fractional_v1/historical/`](reproduction/fractional_v1/historical/).
+
+The [fractional-results manifest](reproduction/fractional_v1/historical/chart_manifest.json)
+records the source and PDF hashes, winsorization thresholds, effective masses,
+and zero-score allocations by SIC division.
+
+## Limitations
+
+- The dictionaries reconstruct unpublished author libraries; measurement error
+  and alternative vocabulary choices are not reflected in the intervals.
+- The approved implementation counts closest-token distances at most 10 and
+  retains identical-span overlaps; the paper displays a strict less-than-10
+  indicator. This predefined difference is not changed for the reported run.
+- Reported earnings-release dates are used as event dates. They can differ from
+  the actual conference-call date, and the design makes no after-hours shift.
+- Historical adjusted-price and point-in-time SIC coverage are incomplete.
+  Provider ticker histories are not CRSP permanent security identifiers.
+- Fractional allocation removes arbitrary ordering within ties, but it does not
+  create information where scores are identical. Heavy zero masses make some
+  adjacent portfolios compositionally indistinguishable.
+- The figures report winsorized portfolio means with firm-clustered uncertainty.
+  They do not control for firm characteristics, time effects, or common shocks,
+  and they should be interpreted as associations rather than causal effects.
+
+## Planned extension: international hardware supply chains
+
+The next extension will focus on hardware companies whose production depends
+on international suppliers, contract manufacturers, logistics networks, and
+geographically concentrated components. This setting provides a sharper test
+bed for the text measures because exposure is economically concrete and often
+cross-border. The extension will retain the same audit discipline while adding
+explicit measures of supplier geography and international production exposure;
+it will be versioned separately rather than altering the frozen 2010-2019
+analysis.
+
+## Reproducibility
+
+The call-level scored-CAR dataset has SHA-256
+`af88e549cc8b275262eeb1e69af4d4aeb3b554b6197577dc91d5b63cdef7e2a6`.
+The fractional PDF has SHA-256
+`eccca323094764a6e9da01797cb55baf1457c0013c122a3b2772be15a97da7b0`.
+Its construction is implemented in
+[`analysis/build_modified_portfolio_chart_pdfs.py`](analysis/build_modified_portfolio_chart_pdfs.py)
+and audited by
+[`analysis/test_modified_portfolio_chart_pdfs.py`](analysis/test_modified_portfolio_chart_pdfs.py).
+
+To regenerate all five fractional figures and tables, install **Python 3.14.7**
+with `venv` and `pip`, then run this command from the repository root:
+
+```sh
+sh scripts/reproduce_fractional.sh
 ```
-conda run -n dap-env python <script>.py --help
+
+If `python3` is a different version, select the interpreter explicitly:
+
+```sh
+PYTHON=/path/to/python3.14 sh scripts/reproduce_fractional.sh
 ```
 
-Stage 7's estimation window is 200 trading days, event day -209 through -10.
-`CAR_0_1` is the sum of the day-0 and day-1 abnormal returns.
+The input is the versioned, transcript-free
+[`reproduction/fractional_v1/analysis.csv.gz`](reproduction/fractional_v1/analysis.csv.gz)
+(5.6 MB). No private transcripts or provider credentials are needed for this
+route. Package installation requires network access or a populated pip cache;
+the analysis itself runs offline.
 
-## Known methodological gaps
+The script creates `.venv-fractional`, installs the pinned dependencies in
+[`requirements-fractional.lock`](requirements-fractional.lock), tests scoring,
+CAR calculations, fractional weight conservation, equal portfolio mass, nested
+Resolution allocation and shared-observation covariance, then checks input/code
+hashes and regenerated results against the frozen references.
 
-Every item below is a known difference from the paper. None is fixed. This
-list is the gate: until each line is closed, no output of this repository can
-be described as a replication result.
+Results are written to `outputs/fractional_reproduction_v1/`:
 
-| Gap | Current state | Paper-equivalent target |
-| --- | --- | --- |
-| Risk dictionary | High-confidence 161-term reconstruction: 144 Table 3 terms plus 17 reconstructed non-occurring terms | The unpublished author-original dictionary |
-| Resolution dictionary | 55-term reconstruction: the 28 distinct Table 4 keywords plus Oxford-printed forms | The unpublished author-original dictionary |
-| Supply chain vocabulary | Generated from 10-K text by `build_supply_chain_library.py`, a different vocabulary | The paper's supply chain word list |
-| Event dates | Reported earnings dates, led by Alpha Vantage EARNINGS `reportedDate` and mapped to transcript fiscal quarters | The paper's validated actual call dates |
-| Firm universe | Versioned public-source point-in-time universe with 151,073 US-domiciled resolved firm-quarters | A proprietary historical security master matching the paper's rules |
-| Sample period | Hard-bounded to 2010Q1 through 2019Q4 | The paper begins in 2008; this comparison deliberately begins in 2010 |
-| Industry grouping | Current SEC SIC with historical changes unresolved | Point-in-time SIC codes |
-| Quintiles | Zero-score calls in their own group, quintiles cut within positive scores only | Quintiles over the whole analysable sample |
-| Outlier handling | None | 1% / 99% winsorization |
-| Regression | None. Only group means and medians | The paper's fixed-effects specification |
+- Five PNG figures and the five-page `portfolio_charts_fractional_ties.pdf`.
+- Five table CSVs containing the data behind the charts: mean returns,
+  confidence intervals, fractional mass, and call/firm counts. They match
+  the published tables in `docs/fractional_results/`.
+- `portfolio_comparisons.csv` with 630 pairwise portfolio comparisons.
+  These account for shared calls and firms when testing
+  return differences; they are supporting statistics, not chart inputs.
 
-## Where things live
+The tables distinguish fractional mass, unique calls, firms and membership
+rows, correcting the old pooled Resolution call count while preserving means
+and intervals. Comparisons between overlapping portfolios use covariance-aware
+uncertainty.
 
-Four kinds of file, kept apart on purpose.
+Existing output directories are never overwritten. For another run, choose a
+new directory:
 
-**Source data.** Provider responses, SEC filings, prices, factor files,
-manifests, hashes, and provenance records. All local and all gitignored:
-`artifacts/`, `earnings_call_transcripts.csv`,
-`earnings_call_transcript_segments.csv`. Never deleted by a cleanup. Large:
-`artifacts/` alone is about 31 GB.
-
-**Local artifacts.** Anything a script generates. Lands in `outputs/`, which
-is gitignored except for its README. Regenerate, do not commit. See
-`outputs/README.md`.
-
-**Diagnostics.** Code that explains why the pipeline behaves as it does, not
-code that produces study results. Lives in
-`analysis/provisional_diagnostics/`. Each script takes an explicit run
-directory and output directory. See that directory's README.
-
-**Validated transcript corpus.** The immutable local v1 corpus is
-`data/final/earnings_call_transcripts_validated_2010_2019_v1.csv`, with its
-SHA-256 companion and manifest beside it. It contains 58,305 dated calls. The
-file is an input to later scoring and event-study work, not a replication
-result. The 2.2 GB CSV is excluded from Git; the checksum, manifest, build code,
-and validation report are versioned.
-
-Provisional inputs that are not the paper's are quarantined in
-`data/provisional/` with their provenance written down.
-
-The primary risk dictionary is
-`dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt`.
-It is a source-based reconstruction, not the unpublished author-original file.
-The scorer requires exactly 161 unique lowercase terms and records the selected
-file, SHA-256, term counts, and primary/override status in every scoring manifest.
-`--risk-words` remains available only as an explicit non-primary development
-override. The 144-term observed file is retained as provenance and is not used
-by the primary scoring path.
-
-The primary resolution dictionary is
-`dictionaries/theile_reconstruction_v1/resolution/resolution_terms_conservative_baseline.txt`.
-It is a source-based reconstruction of the paper's resolution library, not the
-unpublished author-original file. The scorer requires exactly 55 unique
-lowercase terms, emits one Resolution measure from that one file, and records
-the selected file, SHA-256, term counts, and primary/override status in every
-scoring manifest. `--resolution-words` is an explicit non-primary development
-override. The anchor, expanded and overlap-adjusted files beside it are
-predeclared sensitivity artifacts and are never a default. The overlap between
-the resolution dictionary and the supply-chain vocabulary is deliberately left
-open until the reconstructed supply-chain vocabulary exists.
-
-## Hard study-period boundary
-
-The only study period is `2010Q1` through `2019Q4`. The collector exposes no
-runtime start/end-quarter options; changing the period requires a reviewed
-code change to `study_period.py`. Scoring, date joining, event-input
-collection, segment joining, and CAR estimation reject any input observation
-outside that boundary.
-
-Run the active-data gate with:
-
-```
-conda run -n dap-env python verify_active_study_period.py
+```sh
+sh scripts/reproduce_fractional.sh outputs/fractional_reproduction_rerun
 ```
 
-The 2020-2024 material removed on 2026-09-16 is recoverable under the
-gitignored `.archive/post_2019_removed_20260916/` tree. Its row- and file-level
-checksums and removal report are under `provenance/post_2019_removal_20260916/`.
+To regenerate only the outputs using the already installed environment:
 
-## Historical universe and bounded coverage work
-
-The versioned public-source universe is built with:
-
-```
-conda run -n dap-env python build_historical_universe.py capture
-conda run -n dap-env python build_historical_universe.py sec-metadata
-conda run -n dap-env python build_historical_universe.py build
+```sh
+.venv-fractional/bin/python -m analysis.fractional_reproduction --output outputs/fractional_figures_rerun
 ```
 
-Its active tables are under
-`data/universe/us_operating_companies_v20260916/`. Historical membership and
-ticker intervals come from 40 quarter-end Alpha Vantage listing snapshots;
-SEC CIK and issuer metadata provide identity and SIC corroboration. Unresolved
-identities are retained for review but excluded from transcript request inputs.
-The active resolved universe has 151,073 firm-quarters; preferred shares and
-other non-common securities are excluded by both name and ticker-form rules.
+Rebuilding scores and CARs from raw inputs additionally requires the private
+frozen transcripts, adjusted prices, factors and identity/date inputs listed in
+[`reproduction/fractional_v1/raw_inputs.json`](reproduction/fractional_v1/raw_inputs.json).
+After setting up the environment above, check their paths and hashes with:
 
-The representative coverage sample is deterministic and capped at 800
-firm-quarters:
-
-```
-conda run -n dap-env python sample_representative_coverage_pilot.py
-conda run -n dap-env python collect_transcript_pilot.py \
-  --universe data/pilot/representative_coverage_pilot_v20260916/eligible_firm_quarters.csv \
-  --output-dir artifacts/representative_coverage_pilot_v20260916
+```sh
+.venv-fractional/bin/python -m analysis.check_fractional_raw_inputs \
+  --input-root /path/to/private/input/root \
+  --report outputs/raw-input-check.json
 ```
 
-This command is a bounded pilot, not authority to collect the complete
-universe. The full transcript collection remains gated on review of the pilot.
+The input root must preserve the relative paths in the inventory. Follow the
+raw-input commands in the guide below only after this check passes. A public
+checkout supports the analysis-dataset route; it does not contain the private
+inputs required for a full raw rebuild.
 
-## Validated corpus build
-
-`build_validated_earnings_calls_v1.py` validates the collected transcripts,
-maps reported earnings dates onto them, and freezes the canonical CSV. The
-subcommands must run in this order:
-
-```
-conda run -n dap-env python build_validated_earnings_calls_v1.py validate
-conda run -n dap-env python build_validated_earnings_calls_v1.py dates
-conda run -n dap-env python build_validated_earnings_calls_v1.py dates-yfinance --only-unresolved
-conda run -n dap-env python build_validated_earnings_calls_v1.py dates-targeted
-conda run -n dap-env python build_validated_earnings_calls_v1.py dates-history-web
-conda run -n dap-env python build_validated_earnings_calls_v1.py delete-nonretained
-conda run -n dap-env python build_validated_earnings_calls_v1.py finalize
-```
-
-`validate` runs first. It writes `validated_calls_working.csv`, which every
-`dates*` command reads. Each date command only fills the gaps left by the ones
-before it, so any of them can be skipped. `delete-nonretained` unlinks the raw
-payloads that are neither valid nor quarantined, so it runs after `validate`
-and before `finalize`. `finalize` writes the immutable CSV, its `.sha256`, and
-its manifest, then refuses to overwrite them. Producing a corrected corpus
-means a new version directory, not a rerun over v1.
-
-`dates` needs `ALPHAVANTAGE_API_KEY`. `dates-targeted` and `dates-history-web`
-read third-party earnings-history pages and need `WEB_USER_AGENT` set to a
-string that names this study and carries a contact email.
-
-The canonical corpus uses the reported earnings date as `earnings_call_date`.
-Alpha Vantage EARNINGS `reportedDate` is preferred; Yahoo Finance and targeted
-earnings-history sources fill gaps. Rows are matched to fiscal periods, not by
-the calendar quarter containing the report date. The corpus excludes 467 calls
-without a mapped reported date and quarantines 208 calls with unresolved ticker
-reuse. Source disagreement remains explicit in the date-status fields. These
-dates are not asserted to be independently verified conference-call dates.
-
-## The rule about charts and findings
-
-Do not present a chart, table, or empirical claim from this repository as a
-replication result until the paper-alignment gaps above pass. A committed
-chart reads as a result. Label anything produced now as provisional, say which
-gap it is downstream of, and keep it out of version control.
-
-## Tests
-
-```
-conda run -n dap-env python -m pytest -q
-```
-
-Tests that need a local artifact (the term library, a scored sample, a
-generated audit CSV) skip when it is absent rather than fail. That is why a
-clean checkout reports skips.
+See [the reproduction guide](docs/FRACTIONAL_REPRODUCTION.md) for exact inputs,
+code provenance, raw-input commands and uncertainty definitions, and
+[the validation record](docs/FRACTIONAL_VALIDATION.md) for clean-checkout evidence
+and limits. Frozen transcript inputs and large raw files remain outside Git.

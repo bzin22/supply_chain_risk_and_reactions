@@ -1,0 +1,113 @@
+{
+  "checks": [
+    {
+      "corrected_call_counts": 0,
+      "covariance_diagonal_matches_marginal_se": true,
+      "historical_numeric_fields_match": true,
+      "panel": "car_0_1_by_scrisk"
+    },
+    {
+      "corrected_call_counts": 5,
+      "covariance_diagonal_matches_marginal_se": true,
+      "historical_numeric_fields_match": true,
+      "panel": "car_0_1_by_resolution"
+    },
+    {
+      "corrected_call_counts": 0,
+      "covariance_diagonal_matches_marginal_se": true,
+      "historical_numeric_fields_match": true,
+      "panel": "car_0_1_heatmap"
+    },
+    {
+      "corrected_call_counts": 0,
+      "covariance_diagonal_matches_marginal_se": true,
+      "historical_numeric_fields_match": true,
+      "panel": "car_2_60_by_scrisk"
+    },
+    {
+      "corrected_call_counts": 0,
+      "covariance_diagonal_matches_marginal_se": true,
+      "historical_numeric_fields_match": true,
+      "panel": "car_2_60_heatmap"
+    }
+  ],
+  "code_hashes": {
+    "analysis/export_fractional_dataset.py": "148607209d7966bb48d0fce03ceccda4b327675ab39d4667476fab3b0a5836cc",
+    "analysis/fractional_covariance.py": "05283f760130aac23f54a2e51f77314b6a6cc8315f2c9ac73f2ca42277ba1358",
+    "analysis/fractional_reproduction.py": "c588293c1857d2695ca7eb581b3d126cd255d3c3c72eb49cd864cc4b34852adf"
+  },
+  "environment": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.14.7",
+    "scipy": "1.18.1"
+  },
+  "excluded_calls": 5772,
+  "historical_raw_pipeline_rerun": false,
+  "joint_fractional_mass": [
+    2101.320000000376,
+    2101.320000000376,
+    2101.320000000376,
+    2101.320000000376,
+    2101.320000000376,
+    2101.319999999956,
+    2101.319999999956,
+    2101.319999999956,
+    2101.319999999956,
+    2101.3200000003862,
+    2101.3200000001225,
+    2101.3200000001225,
+    2101.3200000001225,
+    2101.3200000001225,
+    2101.319999999926,
+    2101.319999999933,
+    2101.319999999933,
+    2101.319999999933,
+    2101.3200000002203,
+    2101.3200000000384,
+    2101.3200000000634,
+    2101.3200000000634,
+    2101.3200000000634,
+    2101.320000000017,
+    2101.3200000000006
+  ],
+  "outputs": {
+    "01_car_0_1_by_scrisk.csv": "d070cd2762b50b34adc6cc68581eeb682bc5bca2a2bcfc7596410e7ebf634625",
+    "01_car_0_1_by_scrisk.png": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3",
+    "01_car_0_1_by_scrisk_covariance.csv": "3cf86f13d57a7469a3a3991bd7138673ac2d3b2fcd32935b4ad15066fc13c0f5",
+    "02_car_0_1_by_resolution.csv": "2cf5577b8321adc87b6e50933d3551029acac30b36ad939b044aa2733f21925b",
+    "02_car_0_1_by_resolution.png": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6",
+    "02_car_0_1_by_resolution_covariance.csv": "0ece3c598a697d99a8260fafab14ff24ed2e4e2c99de5964359d80147daaf018",
+    "03_car_0_1_heatmap.csv": "b3f5c7fa74afea4b9ee28685d7f9c42babb6cdd90fbecc14a7fff75e71f5e012",
+    "03_car_0_1_heatmap.png": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9",
+    "03_car_0_1_heatmap_covariance.csv": "8f73960bf419b78671c74f67f20621ebe6413cd4e432b38d13d8e39e8b767758",
+    "04_car_2_60_by_scrisk.csv": "eac8873eea91f102be73976874a303d673c0304c94c725f80111d5950a58a64d",
+    "04_car_2_60_by_scrisk.png": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb",
+    "04_car_2_60_by_scrisk_covariance.csv": "f9d7a9f3da0813cd1e9a59ffbac8a1e891d0a77189912b786447aee595fdac8f",
+    "05_car_2_60_heatmap.csv": "395d11f7a0116040f3abceb9c779f3a9b03367040ec82270ae6faa0aa53d7885",
+    "05_car_2_60_heatmap.png": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f",
+    "05_car_2_60_heatmap_covariance.csv": "418d80566a2c72165b9f5dae2129ae5c189a5b0e16e0bec9d02f5a7e6b698ec3",
+    "pages/paper_style_portfolio_charts_fractional_ties_page_1.png": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3",
+    "pages/paper_style_portfolio_charts_fractional_ties_page_2.png": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6",
+    "pages/paper_style_portfolio_charts_fractional_ties_page_3.png": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9",
+    "pages/paper_style_portfolio_charts_fractional_ties_page_4.png": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb",
+    "pages/paper_style_portfolio_charts_fractional_ties_page_5.png": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f",
+    "paper_style_portfolio_charts_fractional_ties.pdf": "1987e295ac36525bfb225ac0b2b258760497512511ba0da60664a72c890b7eb0",
+    "portfolio_comparisons.csv": "2ee7921691267f9e374dc54725bc1e9bf0d775475323525d88db3c26bbb04d81",
+    "winsorization_thresholds.csv": "9966181a5ed24e82c48b061c28dd2f86f2dba23a2ce73b915b9b8495ce8ee449",
+    "zero_allocation_by_division.csv": "ed156c369e1c6b8f14e1fdc9ee14e65fe7c15e49a543ed9460d41405900f55e8"
+  },
+  "package_manifest_sha256": "9e1febd3f86ea5e2470e9a8d76114128d5300cc9a2322a3316f7f8be3e9c31dc",
+  "risk_fractional_mass": [
+    10506.599999999555,
+    10506.599999997141,
+    10506.60000000069,
+    10506.599999999999,
+    10506.600000000002
+  ],
+  "source_rows": 58305,
+  "uncertainty": "CIK cluster influence cross-products; per-portfolio G/(G-1); contrast t df=min(G_left,G_right)-1; fixed allocations; unadjusted pairwise intervals",
+  "unique_eligible_calls": 52533,
+  "unique_eligible_firms": 2026
+}
