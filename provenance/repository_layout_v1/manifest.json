@@ -1,0 +1,285 @@
+{
+  "code": {
+    "analysis/build_modified_portfolio_chart_pdfs.py": {
+      "before_sha256": "c4a07ce5ce5db65a228e7ca0e0268426b6c96c5d062d296543616c391dbe2aeb",
+      "current_path": "analysis/charts/fractional.py",
+      "current_sha256": "d8031d0f8024a979140bde6b309a6eab4b12df3981cb02b9375c53066c2a0ba7",
+      "edits": [
+        {
+          "end": 21113,
+          "new": "",
+          "old": "\n\ndef main() -> None:\n    columns = [\"call_id\", \"cik\", \"sic_division\", \"portfolio_eligible\", \"SCRisk\", \"Resolution\",\n               \"CAR_0_1\", \"CAR_2_60\", \"scrisk_zero\", \"resolution_zero\"]\n    source = pd.read_csv(SOURCE, usecols=columns, dtype={\"cik\": str}, low_memory=False)\n    eligible = source[source.portfolio_eligible].copy().reset_index(drop=True)\n    eligible[\"tie_key\"] = eligible.call_id.map(\n        lambda call_id: hashlib.sha256((\"portfolio-ties-v1|\" + call_id).encode()).hexdigest()\n    )\n    assert len(eligible) == 52533 and eligible.call_id.is_unique\n\n    nonzero, nonzero_thresholds = winsorize(eligible[~eligible.scrisk_zero].copy().reset_index(drop=True))\n    assert len(nonzero) == 31506 and not nonzero.scrisk_zero.any()\n    nonzero[\"SCRisk_quintile\"] = equal_count_quintiles(nonzero, \"SCRisk_winsor\", [\"sic_division\"])\n    nonzero[\"Resolution_quintile\"] = equal_count_quintiles(\n        nonzero, \"Resolution_winsor\", [\"sic_division\", \"SCRisk_quintile\"]\n    )\n    nonzero_tables = deterministic_tables(nonzero)\n    render_pdf(\n        NONZERO_PDF, nonzero_tables,\n        \"Modification 1 - zero SCRisk calls excluded\",\n        f\"Nonzero-SCRisk sample: {len(nonzero):,} calls, {nonzero.cik.nunique():,} firms. Variables winsorized at 1% and 99%.\",\n        \"Equal-count SCRisk quintiles within SIC division; Resolution nested within division and SCRisk quintile.\",\n        False,\n    )\n\n    fractional, fractional_thresholds = winsorize(eligible)\n    original = {row[\"variable\"]: row for row in csv.DictReader(ORIGINAL_THRESHOLDS.open())}\n    for row in fractional_thresholds:\n        assert np.isclose(row[\"lower_threshold\"], float(original[row[\"variable\"]][\"lower_threshold\"]), atol=1e-14)\n        assert np.isclose(row[\"upper_threshold\"], float(original[row[\"variable\"]][\"upper_threshold\"]), atol=1e-14)\n    risk_long, joint_long, zero_audit = fractional_assignments(fractional)\n    fractional_result_tables = fractional_tables(fractional, risk_long, joint_long)\n    render_pdf(\n        FRACTIONAL_PDF, fractional_result_tables,\n        \"Modification 2 - fractional allocation of tied scores\",\n        f\"Full eligible sample: {len(fractional):,} calls, {fractional.cik.nunique():,} firms. Variables winsorized at 1% and 99%.\",\n        \"Tied blocks receive equal proportional membership; masses are equal within each SIC division and nested sort.\",\n        True,\n    )\n\n    manifest = {\n        \"created_at_utc\": datetime.now(timezone.utc).isoformat(),\n        \"source\": {\"path\": str(SOURCE.relative_to(ROOT)), \"sha256\": sha256(SOURCE),\n                   \"eligible_calls\": int(len(eligible)), \"eligible_firms\": int(eligible.cik.nunique())},\n        \"shared_method\": {\n            \"winsorization\": \"linear 1st/99th percentiles within each variant's analysis sample; originals retained in source\",\n            \"scrisk_sort\": \"ascending within SIC division; matching quintiles pooled across divisions\",\n            \"resolution_sort\": \"ascending within SIC division and SCRisk portfolio\",\n            \"means\": \"call-weighted for nonzero variant; fractional-membership-weighted for tied-score variant\",\n            \"uncertainty\": \"95% t intervals using one-way CIK-clustered weighted score sums\",\n            \"controlled_regressions\": False,\n        },\n        \"nonzero_scrisk\": {\n            \"pdf\": str(NONZERO_PDF.relative_to(ROOT)), \"pdf_sha256\": sha256(NONZERO_PDF),\n            \"calls\": int(len(nonzero)), \"firms\": int(nonzero.cik.nunique()),\n            \"excluded_zero_scrisk_calls\": int(eligible.scrisk_zero.sum()),\n            \"winsorization_thresholds\": nonzero_thresholds,\n            \"scrisk_quintile_counts\": [int(row[\"contributing_calls\"]) for row in nonzero_tables[\"car_0_1_by_scrisk\"]],\n        },\n        \"fractional_ties\": {\n            \"pdf\": str(FRACTIONAL_PDF.relative_to(ROOT)), \"pdf_sha256\": sha256(FRACTIONAL_PDF),\n            \"calls\": int(len(fractional)), \"firms\": int(fractional.cik.nunique()),\n            \"winsorization_thresholds\": fractional_thresholds,\n            \"zero_scrisk_membership_by_division\": zero_audit,\n            \"risk_effective_mass\": [float(row[\"effective_n\"]) for row in fractional_result_tables[\"car_0_1_by_scrisk\"]],\n            \"joint_effective_mass\": [float(row[\"effective_n\"]) for row in fractional_result_tables[\"car_0_1_heatmap\"]],\n            \"risk_assignment_rows\": int(len(risk_long)), \"joint_assignment_rows\": int(len(joint_long)),\n        },\n        \"implementation\": {\"path\": str(Path(__file__).relative_to(ROOT)), \"sha256\": sha256(Path(__file__))},\n    }\n    MANIFEST.write_text(json.dumps(manifest, indent=2, sort_keys=True, allow_nan=False) + \"\\n\")\n    print(json.dumps({\n        \"nonzero_pdf\": str(NONZERO_PDF), \"nonzero_calls\": len(nonzero),\n        \"fractional_pdf\": str(FRACTIONAL_PDF), \"fractional_calls\": len(fractional),\n        \"manifest\": str(MANIFEST),\n    }, indent=2))\n\n\nif __name__ == \"__main__\":\n    main()\n",
+          "start": 16209
+        },
+        {
+          "end": 6530,
+          "new": "",
+          "old": "\n\ndef deterministic_tables(frame: pd.DataFrame) -> dict[str, list[dict]]:\n    tables = {}\n    for name, quintile, variable in [\n        (\"car_0_1_by_scrisk\", \"SCRisk_quintile\", \"CAR_0_1_winsor\"),\n        (\"car_0_1_by_resolution\", \"Resolution_quintile\", \"CAR_0_1_winsor\"),\n        (\"car_2_60_by_scrisk\", \"SCRisk_quintile\", \"CAR_2_60_winsor\"),\n    ]:\n        rows = []\n        for q in range(1, 6):\n            ids = frame.index[frame[quintile] == q]\n            rows.append({quintile: q, **weighted_summary(frame, ids, np.ones(len(ids)), variable)})\n        tables[name] = rows\n    for name, variable in [(\"car_0_1_heatmap\", \"CAR_0_1_winsor\"), (\"car_2_60_heatmap\", \"CAR_2_60_winsor\")]:\n        rows = []\n        for risk_q in range(1, 6):\n            for resolution_q in range(1, 6):\n                ids = frame.index[(frame.SCRisk_quintile == risk_q) & (frame.Resolution_quintile == resolution_q)]\n                rows.append({\"SCRisk_quintile\": risk_q, \"Resolution_quintile\": resolution_q,\n                             **weighted_summary(frame, ids, np.ones(len(ids)), variable)})\n        tables[name] = rows\n    return tables\n",
+          "start": 5402
+        },
+        {
+          "end": 2681,
+          "new": "",
+          "old": "\n\ndef equal_count_quintiles(frame: pd.DataFrame, value: str, groups: list[str]) -> pd.Series:\n    result = pd.Series(index=frame.index, dtype=\"int64\")\n    grouper = groups[0] if len(groups) == 1 else groups\n    for _, group in frame.groupby(grouper, sort=True, observed=True):\n        ordered = group.sort_values([value, \"tie_key\", \"call_id\"], kind=\"mergesort\")\n        assignments = np.floor(5 * np.arange(len(ordered)) / len(ordered)).astype(int) + 1\n        result.loc[ordered.index] = assignments\n        counts = pd.Series(assignments).value_counts().reindex(range(1, 6), fill_value=0)\n        assert int(counts.max() - counts.min()) <= 1\n    return result.astype(int)\n",
+          "start": 2007
+        },
+        {
+          "end": 1017,
+          "new": "PAGE_CACHE = ROOT / \"outputs/fractional_pages\"\n",
+          "old": "ORIGINAL_THRESHOLDS = ROOT / \"outputs/primary_event_study_2010_2019_release_dates_v1/full/winsorization_thresholds.csv\"\nNONZERO_PDF = ROOT / \"outputs/portfolio_charts_nonzero_scrisk.pdf\"\nFRACTIONAL_PDF = ROOT / \"outputs/portfolio_charts_fractional_ties.pdf\"\nMANIFEST = ROOT / \"outputs/portfolio_chart_modifications_manifest.json\"\nPAGE_CACHE = ROOT / \"tmp/pdfs/modified_chart_sources\"\n",
+          "start": 633
+        },
+        {
+          "end": 529,
+          "new": "ROOT = Path(__file__).resolve().parents[2]\n",
+          "old": "ROOT = Path(__file__).resolve().parents[1]\n",
+          "start": 486
+        },
+        {
+          "end": 181,
+          "new": "",
+          "old": "import json\nfrom datetime import datetime, timezone\n",
+          "start": 129
+        },
+        {
+          "end": 114,
+          "new": "",
+          "old": "import csv\n",
+          "start": 103
+        },
+        {
+          "end": 67,
+          "new": "\"\"\"Fractional allocation, weighted summaries, and Matplotlib chart rendering.\n\nUse python -m analysis.fractional_reproduction for the supported CLI.\n\"\"\"\n",
+          "old": "\"\"\"Build two portfolio chart PDFs under alternate tie policies.\"\"\"\n",
+          "start": 0
+        }
+      ],
+      "snapshot_path": "provenance/repository_layout_v1/historical_code/analysis/build_modified_portfolio_chart_pdfs.py.txt"
+    },
+    "analysis/primary_event_study/collect_prices.py": {
+      "before_sha256": "43510a53ef233ae3cdb3aedabff757047bc56e23407a025abfa88e37af5e23c9",
+      "current_path": "analysis/primary_event_study/collect_prices.py",
+      "current_sha256": "9baec8f5daa6d2bbd26d6ec95346ab54703dbf020a46eb54d0b66fe00a53c796",
+      "edits": [
+        {
+          "end": 395,
+          "new": "from collection.collect_earnings_event_inputs import AlphaVantageClient, payload_message, provider_enforced_rate_limit\n",
+          "old": "from collect_earnings_event_inputs import AlphaVantageClient, payload_message, provider_enforced_rate_limit\n",
+          "start": 287
+        }
+      ],
+      "snapshot_path": "provenance/repository_layout_v1/historical_code/analysis/primary_event_study/collect_prices.py.txt"
+    },
+    "analysis/primary_event_study/core.py": {
+      "before_sha256": "658a353b9ad82c42f7b117078268399e5787406cc10a3ec5ce1ed4b4b3f930d1",
+      "current_path": "analysis/primary_event_study/core.py",
+      "current_sha256": "fdeb0adf3b441a1608ea9c70f05e047e4b17da065ce76cfbddf5c0cc52b36f25",
+      "edits": [
+        {
+          "end": 436,
+          "new": "from scoring import calculate_supply_chain_transcript_scores as scorer\nfrom analysis.calculate_carhart_event_returns import parse_factor_rows\n",
+          "old": "import calculate_supply_chain_transcript_scores as scorer\nfrom calculate_carhart_event_returns import parse_factor_rows\n",
+          "start": 316
+        }
+      ],
+      "snapshot_path": "provenance/repository_layout_v1/historical_code/analysis/primary_event_study/core.py.txt"
+    },
+    "analysis/primary_event_study/run.py": {
+      "before_sha256": "fa5c213acac76e3db701d01efba75199faa17197f45ebbcb07244626ff7c0a0f",
+      "current_path": "analysis/primary_event_study/run.py",
+      "current_sha256": "e6907e859454ba0d71f1c2b9813e121e4fa8319f1c5f781b1c84dbc41379f44d",
+      "edits": [
+        {
+          "end": 9845,
+          "new": "        # Historical manifests keep original paths; verify recorded layout edits.\n        from analysis.verify_historical_code import verify_historical_code\n        score_names = {'analysis/primary_event_study/core.py',\n                       'calculate_supply_chain_transcript_scores.py',\n                       'scoring/calculate_supply_chain_transcript_scores.py'}\n        score_hashes = {name: value for name, value in prior['code_hashes'].items() if name in score_names}\n        assert len(score_hashes) == 2, 'Reusable scoring code hashes missing'\n        verify_historical_code(ROOT, score_hashes)\n",
+          "old": "        for path in [Path(core.__file__),ROOT/'calculate_supply_chain_transcript_scores.py']:\n            assert prior['code_hashes'][relative(path)]==sha256(path),'Scoring implementation changed since reusable scores'\n",
+          "start": 9626
+        },
+        {
+          "end": 3185,
+          "new": "    paths = sorted(Path(__file__).parent.glob('*.py')) + [ROOT/'scoring/calculate_supply_chain_transcript_scores.py',ROOT/'analysis/calculate_carhart_event_returns.py',ROOT/'tests/test_primary.py']\n",
+          "old": "    paths = sorted(Path(__file__).parent.glob('*.py')) + [ROOT/'calculate_supply_chain_transcript_scores.py',ROOT/'calculate_carhart_event_returns.py']\n",
+          "start": 3033
+        }
+      ],
+      "snapshot_path": "provenance/repository_layout_v1/historical_code/analysis/primary_event_study/run.py.txt"
+    },
+    "analysis/primary_event_study/test_primary.py": {
+      "before_sha256": "b574fbc26307f88a600a62e81cfaf8a9284fe086a15962b9d508f0c5c13105be",
+      "current_path": "tests/test_primary.py",
+      "current_sha256": "feb05bf32015fc899cc74364484785014e15f7a65295bea82f76de511d8b82e9",
+      "edits": [
+        {
+          "end": 1417,
+          "new": "    from analysis.primary_event_study import run\n",
+          "old": "    from . import run\n",
+          "start": 1395
+        },
+        {
+          "end": 217,
+          "new": "from analysis.primary_event_study import core\nfrom analysis.primary_event_study.portfolios import summarize\nfrom analysis.primary_event_study.dates import confirm_live_call\nfrom analysis.primary_event_study.run import apply_date_policy\n",
+          "old": "from . import core\nfrom .portfolios import summarize\nfrom .dates import confirm_live_call\nfrom .run import apply_date_policy\n",
+          "start": 92
+        },
+        {
+          "end": 37,
+          "new": "from datetime import timedelta\n",
+          "old": "from datetime import date, timedelta\n",
+          "start": 0
+        }
+      ],
+      "snapshot_path": "provenance/repository_layout_v1/historical_code/analysis/primary_event_study/test_primary.py.txt"
+    },
+    "calculate_carhart_event_returns.py": {
+      "before_sha256": "841d8e06832d94afb52233da071b9533a73dbe7c31128e537e994c2410d27b7d",
+      "current_path": "analysis/calculate_carhart_event_returns.py",
+      "current_sha256": "ef908e2a8379998463f33ac2f55c912df3c308fa18128c1d9ffc4c56a1045eb9",
+      "edits": [
+        {
+          "end": 9335,
+          "new": "    # Written by scoring/calculate_supply_chain_transcript_scores.py from the corrected\n",
+          "old": "    # Written by calculate_supply_chain_transcript_scores.py from the corrected\n",
+          "start": 9255
+        },
+        {
+          "end": 4212,
+          "new": "",
+          "old": "import io\n",
+          "start": 4202
+        },
+        {
+          "end": 3730,
+          "new": "    conda run -n dap-env python analysis/calculate_carhart_event_returns.py \\\n",
+          "old": "    conda run -n dap-env python calculate_carhart_event_returns.py \\\n",
+          "start": 3661
+        }
+      ],
+      "snapshot_path": "provenance/repository_layout_v1/historical_code/calculate_carhart_event_returns.py.txt"
+    },
+    "calculate_supply_chain_transcript_scores.py": {
+      "before_sha256": "c6cdaa5163386141bc06b3664493ebe3a3f533bbf7747e8f24f1cacad8c0f212",
+      "current_path": "scoring/calculate_supply_chain_transcript_scores.py",
+      "current_sha256": "69c6a3cd3abaeb4844730807c99d97ad004278f3fa96418ccb12c9620689834e",
+      "edits": [
+        {
+          "end": 6349,
+          "new": "# These are the 16 seed phrases used by dictionaries/build_supply_chain_library.py.  They\n",
+          "old": "# These are the 16 seed phrases used by build_supply_chain_library.py.  They\n",
+          "start": 6272
+        },
+        {
+          "end": 5515,
+          "new": "    python scoring/calculate_supply_chain_transcript_scores.py \\\n",
+          "old": "    python calculate_supply_chain_transcript_scores.py \\\n",
+          "start": 5458
+        },
+        {
+          "end": 5099,
+          "new": "    python scoring/calculate_supply_chain_transcript_scores.py \\\n",
+          "old": "    python calculate_supply_chain_transcript_scores.py \\\n",
+          "start": 5042
+        },
+        {
+          "end": 4795,
+          "new": "    python scoring/calculate_supply_chain_transcript_scores.py \\\n",
+          "old": "    python calculate_supply_chain_transcript_scores.py \\\n",
+          "start": 4738
+        }
+      ],
+      "snapshot_path": "provenance/repository_layout_v1/historical_code/calculate_supply_chain_transcript_scores.py.txt"
+    }
+  },
+  "moves": [
+    {
+      "new_path": "collection/extract_earnings_call_transcript_data.py",
+      "old_path": "extract_earnings_call_transcript_data.py",
+      "sha256_before": "10ed4189b808713459aecc3a718d667d284349d543d37815a669574b772a564b"
+    },
+    {
+      "new_path": "collection/collect_earnings_event_inputs.py",
+      "old_path": "collect_earnings_event_inputs.py",
+      "sha256_before": "e00aec7ab7d92abd39c507bf82c7dff10095f64f0f3f9822502ae8bcca782aae"
+    },
+    {
+      "new_path": "collection/join_earnings_event_dates.py",
+      "old_path": "join_earnings_event_dates.py",
+      "sha256_before": "877e086be012aba67ab92b283c531c1e6a876c4eecbcf5bba9b2a2d34bf77033"
+    },
+    {
+      "new_path": "scoring/calculate_supply_chain_transcript_scores.py",
+      "old_path": "calculate_supply_chain_transcript_scores.py",
+      "sha256_before": "c6cdaa5163386141bc06b3664493ebe3a3f533bbf7747e8f24f1cacad8c0f212"
+    },
+    {
+      "new_path": "scoring/join_supply_chain_scores_to_segments.py",
+      "old_path": "join_supply_chain_scores_to_segments.py",
+      "sha256_before": "25aef5119d2eac1cdf053d5409954f6bc6d34bb82e9d32be419956861c78ff69"
+    },
+    {
+      "new_path": "analysis/calculate_carhart_event_returns.py",
+      "old_path": "calculate_carhart_event_returns.py",
+      "sha256_before": "841d8e06832d94afb52233da071b9533a73dbe7c31128e537e994c2410d27b7d"
+    },
+    {
+      "new_path": "dictionaries/build_supply_chain_library.py",
+      "old_path": "build_supply_chain_library.py",
+      "sha256_before": "38f5fc56e55c0bf1c4ff6a387a1c5110aee030c53c35f382944193882bb0b683"
+    },
+    {
+      "new_path": "analysis/charts/fractional.py",
+      "old_path": "analysis/build_modified_portfolio_chart_pdfs.py",
+      "sha256_before": "c4a07ce5ce5db65a228e7ca0e0268426b6c96c5d062d296543616c391dbe2aeb"
+    },
+    {
+      "new_path": "collection/retry_primary_price_responses.py",
+      "old_path": "analysis/retry_primary_price_responses.py",
+      "sha256_before": "326853f660a9a260997a505c9bb1d242dc079b649fc7f2a8fc1eec393ffdf579"
+    },
+    {
+      "new_path": "tests/test_scoring.py",
+      "old_path": "test_calculate_supply_chain_transcript_scores.py",
+      "sha256_before": "29c07516107a14134f59a21c2e27848cb078eec39d80f56c5b637ace1ad7022e"
+    },
+    {
+      "new_path": "tests/test_fractional_reproduction.py",
+      "old_path": "analysis/test_fractional_reproduction.py",
+      "sha256_before": "67db43674717a63714a0e2561bb3d4bb82c50875b77c57512020a7c8bc8a7663"
+    },
+    {
+      "new_path": "tests/test_fractional_charts.py",
+      "old_path": "analysis/test_modified_portfolio_chart_pdfs.py",
+      "sha256_before": "21c5deee03ba3c7a942cf80de9ef2c32464a7cf4d78945a762a6642e4c489540"
+    },
+    {
+      "new_path": "tests/test_primary.py",
+      "old_path": "analysis/primary_event_study/test_primary.py",
+      "sha256_before": "b574fbc26307f88a600a62e81cfaf8a9284fe086a15962b9d508f0c5c13105be"
+    },
+    {
+      "new_path": "tests/test_zero_audit.py",
+      "old_path": "analysis/provisional_diagnostics/scrisk_zero_audit/test_scrisk_zero_audit.py",
+      "sha256_before": "95fb2b119756b8a21ea8df8e39d591935827f125efe4c425cb6111bca4a34f68"
+    },
+    {
+      "new_path": "tests/test_dictionary_reconstruction.py",
+      "old_path": "dictionaries/theile_reconstruction_v1/supply_chain/test_supply_chain_reconstruction.py",
+      "sha256_before": "7ea098c27f44a35b475d48a875e9ad8f280a54d3f36a3c71efd292a5c4b4c5f9"
+    },
+    {
+      "new_path": "data/provisional/earnings_call_transcripts.csv",
+      "old_path": "earnings_call_transcripts.csv",
+      "sha256_before": "6cce49f5d70c1dd8148722a2fa9336c3cd62ca2249ba26e030179b70dcf56f4c"
+    },
+    {
+      "new_path": "data/provisional/earnings_call_transcript_segments.csv",
+      "old_path": "earnings_call_transcript_segments.csv",
+      "sha256_before": "68f0a23ece9774b9d80bca67235d1ea37c1156ee4c3df83ff18629d6819df8b6"
+    },
+    {
+      "new_path": "docs/references/theile-et-al-2026-supply-chain-risk-and-resolution-an-empirical-study-of-stock-market-reactions.pdf",
+      "old_path": "source_research_paper/theile-et-al-2026-supply-chain-risk-and-resolution-an-empirical-study-of-stock-market-reactions.pdf",
+      "sha256_before": "db1d0411addfc32b22c70b062c3b53be67b12441bfb11d936568455f43051390"
+    }
+  ],
+  "purpose": "Repository organization; preserve original manifest paths and verify exact mechanical edits. Removed obsolete chart-only entry points; fractional calculations are unchanged."
+}

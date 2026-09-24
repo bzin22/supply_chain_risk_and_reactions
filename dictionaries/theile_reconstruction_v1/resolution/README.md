@@ -21,7 +21,7 @@ repo and you get the same bytes.
 **Archived local diagnostic, gitignored, and not PR validation.** Zero rates and
 matched-term counts over real transcripts go to `outputs/resolution_validation/`.
 They cannot be reproduced from this repository: they need
-`earnings_call_transcripts.csv` and `artifacts/sec_10k_supply_chain/terms.jsonl`,
+`data/provisional/earnings_call_transcripts.csv` and `artifacts/sec_10k_supply_chain/terms.jsonl`,
 both gitignored, and other work in this repository regenerates both. The
 supply-chain library behind them is provisional and so is the firm universe.
 Nothing in that directory is evidence that this dictionary is correct, and no
@@ -33,7 +33,7 @@ mid-development and the integrity-passing call count went from 18,162 to 11,598.
 
 `resolution_terms_conservative_baseline.txt`, **55 terms**, is the only
 Resolution dictionary the production pipeline loads.
-`calculate_supply_chain_transcript_scores.py` validates it on every run (exactly
+`scoring/calculate_supply_chain_transcript_scores.py` validates it on every run (exactly
 55 unique lowercase whole tokens or it refuses to start) and emits exactly one
 Resolution measure from it. `--resolution-words` overrides it for development
 and marks the run `resolution_dictionary_is_primary: false` in the manifest.
@@ -115,7 +115,7 @@ sensitivity file.
 ## What the old starter dictionary got wrong
 
 `STARTER_RESOLUTION_WORDS` used to live in
-`calculate_supply_chain_transcript_scores.py`. It is gone; the 55-term file
+`scoring/calculate_supply_chain_transcript_scores.py`. It is gone; the 55-term file
 replaces it. It carried 37 tokens with no support in the paper's stated
 procedure: `address*`,
 `avoid*`, `prevent*`, `contain*`, `diversify*`, `substitute*`, `remediate*`, and
@@ -176,11 +176,11 @@ for free.
 python3 build_resolution_dictionary.py     # the four term files, the two CSVs
 python3 build_source_manifest.py           # manifest and Oxford evidence
 python3 run_validation.py --sample 400     # overlap report and validation report
-conda run -n dap-env python -m pytest dictionaries/theile_reconstruction_v1/resolution -q
+conda run -n dap-env python -m pytest tests/test_resolution_dictionary.py -q
 ```
 
 `run_validation.py` always writes the three tracked source-validation files.
-The corpus diagnostic is extra: it needs `earnings_call_transcripts.csv` and
+The corpus diagnostic is extra: it needs `data/provisional/earnings_call_transcripts.csv` and
 `artifacts/sec_10k_supply_chain/terms.jsonl`, and without them the script says
 so and carries on. `--skip-corpus-diagnostic` turns it off explicitly, and
 `--diagnostic-dir` moves the archive. It takes about a minute when it runs.

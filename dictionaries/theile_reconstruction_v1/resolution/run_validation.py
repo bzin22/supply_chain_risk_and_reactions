@@ -54,7 +54,7 @@ sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(REPO))
 
 import resolution_dictionary_io as dio  # noqa: E402
-import calculate_supply_chain_transcript_scores as scoring  # noqa: E402
+from scoring import calculate_supply_chain_transcript_scores as scoring  # noqa: E402
 
 WINDOW = scoring.WINDOW  # 10, the paper's ten-word range
 

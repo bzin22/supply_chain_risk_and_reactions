@@ -1,0 +1,855 @@
+{
+  "before": {
+    ".DS_Store": {
+      "allocated_bytes": 20480,
+      "bytes": 18436,
+      "files": 1
+    },
+    ".archive": {
+      "allocated_bytes": 7931625472,
+      "bytes": 7907370746,
+      "files": 10018
+    },
+    ".gitignore": {
+      "allocated_bytes": 4096,
+      "bytes": 932,
+      "files": 1
+    },
+    ".lavish": {
+      "allocated_bytes": 2699264,
+      "bytes": 2627314,
+      "files": 35
+    },
+    ".pytest_cache": {
+      "allocated_bytes": 53248,
+      "bytes": 33843,
+      "files": 5
+    },
+    ".ruff_cache": {
+      "allocated_bytes": 16384,
+      "bytes": 982,
+      "files": 4
+    },
+    "AGENTS.md": {
+      "allocated_bytes": 4096,
+      "bytes": 299,
+      "files": 1
+    },
+    "README.md": {
+      "allocated_bytes": 20480,
+      "bytes": 17097,
+      "files": 1
+    },
+    "__pycache__": {
+      "allocated_bytes": 1257472,
+      "bytes": 1165777,
+      "files": 39
+    },
+    "analysis": {
+      "allocated_bytes": 847872,
+      "bytes": 708681,
+      "files": 67
+    },
+    "artifacts": {
+      "allocated_bytes": 61847998464,
+      "bytes": 61327994856,
+      "files": 246827
+    },
+    "build_supply_chain_library.py": {
+      "allocated_bytes": 24576,
+      "bytes": 21070,
+      "files": 1
+    },
+    "calculate_carhart_event_returns.py": {
+      "allocated_bytes": 32768,
+      "bytes": 31492,
+      "files": 1
+    },
+    "calculate_supply_chain_transcript_scores.py": {
+      "allocated_bytes": 45056,
+      "bytes": 41211,
+      "files": 1
+    },
+    "collect_earnings_event_inputs.py": {
+      "allocated_bytes": 20480,
+      "bytes": 19327,
+      "files": 1
+    },
+    "data": {
+      "allocated_bytes": 5226352640,
+      "bytes": 5226245757,
+      "files": 46
+    },
+    "dictionaries": {
+      "allocated_bytes": 20082688,
+      "bytes": 19793012,
+      "files": 135
+    },
+    "docs": {
+      "allocated_bytes": 1511424,
+      "bytes": 1487105,
+      "files": 14
+    },
+    "earnings_call_transcript_segments.csv": {
+      "allocated_bytes": 610336768,
+      "bytes": 610333328,
+      "files": 1
+    },
+    "earnings_call_transcripts.csv": {
+      "allocated_bytes": 476827648,
+      "bytes": 476826530,
+      "files": 1
+    },
+    "extract_earnings_call_transcript_data.py": {
+      "allocated_bytes": 16384,
+      "bytes": 16367,
+      "files": 1
+    },
+    "join_earnings_event_dates.py": {
+      "allocated_bytes": 4096,
+      "bytes": 3493,
+      "files": 1
+    },
+    "join_supply_chain_scores_to_segments.py": {
+      "allocated_bytes": 8192,
+      "bytes": 4766,
+      "files": 1
+    },
+    "outputs": {
+      "allocated_bytes": 969363456,
+      "bytes": 968539178,
+      "files": 349
+    },
+    "provenance": {
+      "allocated_bytes": 538914816,
+      "bytes": 538892269,
+      "files": 9
+    },
+    "reproduction": {
+      "allocated_bytes": 6180864,
+      "bytes": 6142931,
+      "files": 14
+    },
+    "requirements-fractional.lock": {
+      "allocated_bytes": 4096,
+      "bytes": 469,
+      "files": 1
+    },
+    "requirements.txt": {
+      "allocated_bytes": 4096,
+      "bytes": 37,
+      "files": 1
+    },
+    "review": {
+      "allocated_bytes": 61956096,
+      "bytes": 61945286,
+      "files": 4
+    },
+    "scripts": {
+      "allocated_bytes": 4096,
+      "bytes": 921,
+      "files": 1
+    },
+    "scrisk_vocabulary_fix": {
+      "allocated_bytes": 77824,
+      "bytes": 74552,
+      "files": 3
+    },
+    "source_research_paper": {
+      "allocated_bytes": 1507328,
+      "bytes": 1504769,
+      "files": 1
+    },
+    "test_calculate_supply_chain_transcript_scores.py": {
+      "allocated_bytes": 20480,
+      "bytes": 17350,
+      "files": 1
+    },
+    "tmp": {
+      "allocated_bytes": 6762496,
+      "bytes": 6693900,
+      "files": 32
+    },
+    "work": {
+      "allocated_bytes": 299008,
+      "bytes": 296744,
+      "files": 2
+    }
+  },
+  "entry_points": {
+    "collection": "collection.collect_earnings_event_inputs supplies provider clients to analysis.primary_event_study.collect_prices and collection.retry_primary_price_responses",
+    "dictionary": "dictionaries/theile_reconstruction_v1/supply_chain/{corpus,models}; canonical libraries and review/provenance remain colocated",
+    "portable": "scripts/reproduce_fractional.sh -> tests -> analysis.fractional_reproduction -> analysis.charts.fractional + analysis.fractional_covariance",
+    "raw": "analysis.primary_event_study.run -> core + prepare + historical portfolios; core -> scoring.calculate_supply_chain_transcript_scores + analysis.calculate_carhart_event_returns"
+  },
+  "protected_inputs": "reproduction/fractional_v1/raw_inputs.json (all 2215 entries retained and verified)",
+  "python_imports": {
+    "analysis/__init__.py": [],
+    "analysis/calculate_carhart_event_returns.py": [
+      "__future__",
+      "argparse",
+      "bisect",
+      "csv",
+      "dataclasses",
+      "datetime",
+      "math",
+      "numpy",
+      "os",
+      "pathlib",
+      "re",
+      "sys",
+      "tempfile",
+      "typing",
+      "zipfile"
+    ],
+    "analysis/charts/__init__.py": [],
+    "analysis/charts/fractional.py": [
+      "__future__",
+      "hashlib",
+      "matplotlib",
+      "matplotlib.backends.backend_pdf",
+      "matplotlib.colors",
+      "matplotlib.pyplot",
+      "matplotlib.ticker",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy.stats"
+    ],
+    "analysis/check_fractional_raw_inputs.py": [
+      "analysis.charts.fractional",
+      "analysis.fractional_reproduction",
+      "argparse",
+      "json",
+      "pathlib"
+    ],
+    "analysis/export_fractional_dataset.py": [
+      "analysis.charts.fractional",
+      "analysis.verify_historical_code",
+      "argparse",
+      "csv",
+      "gzip",
+      "io",
+      "json",
+      "pathlib",
+      "shutil"
+    ],
+    "analysis/fractional_covariance.py": [
+      "itertools",
+      "numpy",
+      "pandas",
+      "scipy.stats"
+    ],
+    "analysis/fractional_reproduction.py": [
+      "analysis.charts",
+      "analysis.export_fractional_dataset",
+      "analysis.fractional_covariance",
+      "analysis.verify_historical_code",
+      "argparse",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "shutil"
+    ],
+    "analysis/inspect_release_date_pilot.py": [
+      "analysis.primary_event_study.core",
+      "argparse",
+      "bisect",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "scipy.linalg"
+    ],
+    "analysis/primary_event_study/__init__.py": [],
+    "analysis/primary_event_study/collect_prices.py": [
+      ".core",
+      ".prepare",
+      ".run",
+      "argparse",
+      "collection.collect_earnings_event_inputs",
+      "collections",
+      "concurrent.futures",
+      "csv",
+      "json",
+      "os",
+      "pathlib",
+      "threading",
+      "time"
+    ],
+    "analysis/primary_event_study/core.py": [
+      "__future__",
+      "analysis.calculate_carhart_event_returns",
+      "bisect",
+      "collections",
+      "csv",
+      "datetime",
+      "hashlib",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "re",
+      "scoring"
+    ],
+    "analysis/primary_event_study/dates.py": [
+      "datetime",
+      "re"
+    ],
+    "analysis/primary_event_study/portfolios.py": [
+      ".core",
+      "__future__",
+      "hashlib",
+      "itertools",
+      "matplotlib",
+      "matplotlib.colors",
+      "matplotlib.pyplot",
+      "matplotlib.ticker",
+      "numpy",
+      "pandas",
+      "scipy.stats"
+    ],
+    "analysis/primary_event_study/prepare.py": [
+      ".core",
+      ".dates",
+      "__future__",
+      "argparse",
+      "collections",
+      "csv",
+      "datetime",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "requests",
+      "subprocess",
+      "time",
+      "zipfile"
+    ],
+    "analysis/primary_event_study/run.py": [
+      ".",
+      ".core",
+      ".portfolios",
+      ".prepare",
+      "__future__",
+      "analysis.verify_historical_code",
+      "argparse",
+      "collections",
+      "csv",
+      "datetime",
+      "gzip",
+      "hashlib",
+      "io",
+      "json",
+      "math",
+      "numpy",
+      "pandas",
+      "pathlib",
+      "platform",
+      "shutil",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_vocabulary_fix/compact_scores.py": [
+      "__future__",
+      "csv",
+      "pathlib",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_vocabulary_fix/compare_before_after.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ],
+    "analysis/provisional_diagnostics/scrisk_vocabulary_fix/self_pair_terms.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "csv",
+      "json",
+      "multiprocessing",
+      "pathlib",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_vocabulary_fix/term_contributions.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "csv",
+      "json",
+      "multiprocessing",
+      "pathlib",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/__init__.py": [],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/aggregate.py": [
+      "collections",
+      "json",
+      "numpy",
+      "os",
+      "pandas",
+      "pathlib"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/attribution.py": [
+      "json",
+      "os",
+      "pandas",
+      "pathlib"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/build_samples.py": [
+      "__future__",
+      "json",
+      "pandas",
+      "pathlib",
+      "re",
+      "scan",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/content_integrity.py": [
+      "csv",
+      "json",
+      "os",
+      "pathlib",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/dictionary_checks.py": [
+      "json",
+      "os",
+      "pathlib",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/inspect_odd.py": [
+      "csv",
+      "os",
+      "pathlib",
+      "re",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/probe_detail.py": [
+      "__future__",
+      "bisect",
+      "collections",
+      "csv",
+      "json",
+      "multiprocessing",
+      "pathlib",
+      "re",
+      "scan",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/probe_inflection.py": [
+      "__future__",
+      "collections",
+      "csv",
+      "json",
+      "multiprocessing",
+      "pathlib",
+      "probe_detail",
+      "scan",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/scan.py": [
+      "__future__",
+      "bisect",
+      "csv",
+      "hashlib",
+      "json",
+      "multiprocessing",
+      "os",
+      "pathlib",
+      "random",
+      "re",
+      "scoring",
+      "sys"
+    ],
+    "analysis/provisional_diagnostics/scrisk_zero_audit/seed_split.py": [
+      "os",
+      "pandas",
+      "pathlib",
+      "scoring",
+      "sys"
+    ],
+    "analysis/verify_historical_code.py": [
+      "hashlib",
+      "json"
+    ],
+    "analysis/verify_primary_event_study.py": [
+      "__future__",
+      "argparse",
+      "gzip",
+      "hashlib",
+      "json",
+      "numpy",
+      "pandas",
+      "pathlib"
+    ],
+    "collection/__init__.py": [],
+    "collection/collect_earnings_event_inputs.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "csv",
+      "datetime",
+      "hashlib",
+      "json",
+      "math",
+      "os",
+      "pathlib",
+      "sys",
+      "tempfile",
+      "time",
+      "typing",
+      "urllib.error",
+      "urllib.parse",
+      "urllib.request"
+    ],
+    "collection/extract_earnings_call_transcript_data.py": [
+      "__future__",
+      "argparse",
+      "collections.abc",
+      "csv",
+      "datetime",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "requests",
+      "tempfile",
+      "time",
+      "typing"
+    ],
+    "collection/join_earnings_event_dates.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "os",
+      "pathlib",
+      "sys",
+      "tempfile"
+    ],
+    "collection/retry_primary_price_responses.py": [
+      "analysis.primary_event_study.run",
+      "collection.collect_earnings_event_inputs",
+      "os"
+    ],
+    "dictionaries/__init__.py": [],
+    "dictionaries/build_supply_chain_library.py": [
+      "__future__",
+      "argparse",
+      "concurrent.futures",
+      "dataclasses",
+      "datetime",
+      "gensim.models",
+      "gzip",
+      "html",
+      "html.parser",
+      "json",
+      "numpy",
+      "os",
+      "pathlib",
+      "re",
+      "sys",
+      "threading",
+      "time",
+      "typing",
+      "urllib.error",
+      "urllib.request"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/build_coverage_report.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "json",
+      "pathlib",
+      "statistics"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/build_training_corpus.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "gzip",
+      "json",
+      "pathlib",
+      "seeds",
+      "sys"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/corpus_stats.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "gzip",
+      "json",
+      "pathlib"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/discover_population.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "datetime",
+      "gzip",
+      "json",
+      "pathlib",
+      "requests",
+      "sys",
+      "time"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/fetch_and_parse.py": [
+      "__future__",
+      "argparse",
+      "concurrent.futures",
+      "filing_text",
+      "json",
+      "pathlib",
+      "re",
+      "requests",
+      "sys",
+      "threading",
+      "time"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/filing_text.py": [
+      "__future__",
+      "gzip",
+      "hashlib",
+      "html",
+      "re"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/seeds.py": [],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/select_sample.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "json",
+      "pathlib",
+      "random"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/subsample_corpus.py": [
+      "__future__",
+      "argparse",
+      "gzip",
+      "json",
+      "pathlib",
+      "random"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/corpus/top_up_sample.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "json",
+      "pathlib",
+      "random",
+      "select_sample"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/apply_review.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "csv",
+      "json",
+      "pathlib"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/build_validation_report.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "csv",
+      "json",
+      "pathlib"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/compare_to_table2.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "csv",
+      "gzip",
+      "json",
+      "numpy",
+      "pathlib",
+      "seeds",
+      "sys",
+      "vector_space"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/evaluate_methods.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "gzip",
+      "json",
+      "numpy",
+      "pathlib",
+      "scipy.stats",
+      "seeds",
+      "sys"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/extract_candidates.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "gzip",
+      "json",
+      "numpy",
+      "pathlib",
+      "seeds",
+      "sys",
+      "vector_space"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/finalize_baseline.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "pathlib",
+      "shutil"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/make_blinded_review.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "json",
+      "pathlib",
+      "random"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/stability_report.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "json",
+      "pathlib"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/train_ppmi_svd.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "gzip",
+      "json",
+      "numpy",
+      "pathlib",
+      "platform",
+      "scipy.sparse",
+      "sklearn",
+      "sklearn.utils.extmath",
+      "sys",
+      "time",
+      "vector_space"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/train_word2vec.py": [
+      "__future__",
+      "argparse",
+      "gensim",
+      "gensim.models",
+      "gensim.models.word2vec",
+      "gzip",
+      "json",
+      "logging",
+      "numpy",
+      "pathlib",
+      "platform",
+      "sys",
+      "time",
+      "vector_space"
+    ],
+    "dictionaries/theile_reconstruction_v1/supply_chain/models/vector_space.py": [
+      "__future__",
+      "hashlib",
+      "json",
+      "numpy",
+      "pathlib"
+    ],
+    "scoring/__init__.py": [],
+    "scoring/calculate_supply_chain_transcript_scores.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "dataclasses",
+      "json",
+      "math",
+      "pathlib",
+      "re",
+      "statistics",
+      "sys",
+      "typing"
+    ],
+    "scoring/join_supply_chain_scores_to_segments.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "os",
+      "pathlib",
+      "sys",
+      "tempfile"
+    ],
+    "tests/__init__.py": [],
+    "tests/test_dictionary_reconstruction.py": [
+      "__future__",
+      "gzip",
+      "json",
+      "numpy",
+      "pathlib",
+      "pytest",
+      "seeds",
+      "subprocess",
+      "sys",
+      "vector_space"
+    ],
+    "tests/test_fractional_charts.py": [
+      "analysis.charts.fractional",
+      "numpy"
+    ],
+    "tests/test_fractional_reproduction.py": [
+      "analysis.charts.fractional",
+      "analysis.fractional_covariance",
+      "analysis.fractional_reproduction",
+      "analysis.verify_historical_code",
+      "json",
+      "numpy",
+      "pandas",
+      "pytest",
+      "shutil"
+    ],
+    "tests/test_primary.py": [
+      "analysis.primary_event_study",
+      "analysis.primary_event_study.dates",
+      "analysis.primary_event_study.portfolios",
+      "analysis.primary_event_study.run",
+      "datetime",
+      "json",
+      "numpy",
+      "pandas",
+      "pytest"
+    ],
+    "tests/test_scoring.py": [
+      "__future__",
+      "csv",
+      "json",
+      "pathlib",
+      "pytest",
+      "scoring",
+      "subprocess",
+      "sys"
+    ],
+    "tests/test_zero_audit.py": [
+      "__future__",
+      "csv",
+      "pathlib",
+      "probe_inflection",
+      "pytest",
+      "random",
+      "scan",
+      "scoring",
+      "sys"
+    ]
+  },
+  "scope": "Filesystem inventory at task start excludes .git, node_modules and .venv-fractional; data content was not copied. Historical paths remain original."
+}

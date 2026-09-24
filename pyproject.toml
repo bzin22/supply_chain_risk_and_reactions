@@ -1,0 +1,13 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+extend-exclude = ["provenance", "artifacts", ".archive", ".lavish"]
+
+[tool.ruff.lint]
+select = ["E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+# Retained historical pipeline imports; avoid unrelated analytical edits.
+"analysis/primary_event_study/*.py" = ["F401"]

@@ -25,13 +25,13 @@ run_variant () {
   local out="$R2/sensitivity/$name"
   mkdir -p "$out"
   echo "=== $name: $* ==="
-  $R calculate_supply_chain_transcript_scores.py \
+  $R -m scoring.calculate_supply_chain_transcript_scores \
     --input earnings_call_transcripts.csv --library "$LIB" \
     --vocabulary-version v2_seeds_inflections \
     --output "$TMP/$name.csv" "$@"
   $R "$VOCAB/compact_scores.py" "$TMP/$name.csv" "$out/transcript_scores.csv"
   cp "$TMP/$name.csv.scoring_manifest.json" "$out/scoring_manifest.json"
-  $R calculate_carhart_event_returns.py \
+  $R -m analysis.calculate_carhart_event_returns \
     --segments "$R1/earnings_call_transcript_segments_scored_with_event_dates.csv" \
     --event-date-column event_date \
     --supply-chain-scores "$TMP/$name.csv" \

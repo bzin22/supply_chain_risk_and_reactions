@@ -24,7 +24,7 @@ Three specific problems:
 Pass it explicitly if you want it:
 
 ```
-conda run -n dap-env python extract_earnings_call_transcript_data.py \
+conda run -n dap-env python collection/extract_earnings_call_transcript_data.py \
   --input data/provisional/convenience_sample_450_companies_9_sectors.csv
 ```
 
@@ -60,3 +60,10 @@ conda run -n dap-env python data/provisional/select_convenience_sample_by_sector
 That writes `convenience_sample_regenerated.csv` next to the script. Expect a
 different sample from the committed one, and do not overwrite the committed
 file with it.
+
+## Historical transcript exports
+
+`earnings_call_transcripts.csv` and `earnings_call_transcript_segments.csv`
+were relocated here from the repository root without changing their bytes.
+They are private provisional exports, not the immutable validated v1 corpus
+in `data/final/`. They remain ignored and are retained as source material.

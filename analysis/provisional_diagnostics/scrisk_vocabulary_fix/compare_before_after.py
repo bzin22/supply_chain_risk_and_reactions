@@ -21,7 +21,7 @@ Provisional
 -----------
 
 This is a diagnostic on two of this repository's own scoring runs.  Neither
-run is comparable to Theile et al. (2026): see "Known methodological gaps" in
+run is comparable to Theile et al. (2026): see the measurement limitations in
 the root README.  Nothing written here is a replication result.
 """
 

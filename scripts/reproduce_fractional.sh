@@ -10,5 +10,5 @@ ENV_DIR="$(CDPATH= cd -- "$ENV_DIR" && pwd)"
 "$ENV_DIR/bin/python" -m pip install --disable-pip-version-check -r requirements-fractional.lock
 export MPLBACKEND=Agg
 export MPLCONFIGDIR="${MPLCONFIGDIR:-$ENV_DIR/matplotlib}"
-"$ENV_DIR/bin/python" -m pytest -q analysis/test_fractional_reproduction.py analysis/test_modified_portfolio_chart_pdfs.py analysis/primary_event_study/test_primary.py test_calculate_supply_chain_transcript_scores.py
+"$ENV_DIR/bin/python" -m pytest -q tests/test_fractional_reproduction.py tests/test_fractional_charts.py tests/test_primary.py tests/test_scoring.py
 "$ENV_DIR/bin/python" -m analysis.fractional_reproduction --output "${1:-outputs/fractional_reproduction_v1}"

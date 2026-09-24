@@ -1,0 +1,1135 @@
+#!/usr/bin/env python3
+"""Calculate supply-chain risk and resolution scores for earnings calls.
+
+This script is intentionally separate from the transcript collector.  It does
+not modify ``earnings_call_transcripts.csv`` or
+``earnings_call_transcript_segments.csv`` in place.  It can be reviewed and
+run against a copy of the transcript-level CSV before the scores are added to
+the study outputs.
+
+Scoring definition
+------------------
+
+1. A *supply-chain occurrence* is a term from the supply-chain vocabulary.
+   ``--vocabulary-version`` chooses that vocabulary.  ``v1_library_only`` uses
+   the generated library exactly as it appears in ``terms.jsonl``, weighting
+   each term by its ``max_cosine``.  ``v2_seeds_inflections``, the default,
+   adds the 16 ``SUPPLY_CHAIN_SEEDS`` at ``SEED_WEIGHT`` and then completes the
+   regular singular/plural inflections of the union, so ``inventory`` reaches
+   the library's ``inventories`` and ``suppliers`` reaches its ``supplier``.
+   A form reachable from more than one term takes the largest weight, which is
+   the rule ``load_supply_chain_library`` already applies to repeated rows.
+2. A *risk occurrence* is an exact term from the 161-term Theile risk-library
+   reconstruction. Risk terms are never stemmed, lemmatized, or expanded with
+   generated inflections. ``--risk-words`` can explicitly override the file
+   for development, and such runs are marked non-primary in their manifests.
+3. A *resolution occurrence* is an exact term from the 55-term Theile
+   resolution-library reconstruction, the conservative baseline in
+   ``dictionaries/theile_reconstruction_v1/resolution/``. Resolution terms are
+   never stemmed, lemmatized, or expanded with generated inflections. The run
+   produces exactly one Resolution measure from that one dictionary; the
+   anchor, expanded and overlap-adjusted files beside it are documented
+   sensitivity artifacts, not default outputs. ``--resolution-words`` can
+   explicitly override the file for development, and such runs are marked
+   non-primary in their manifests.
+4. Every supply-chain/risk occurrence pair whose token spans are no more than
+   ``WINDOW`` tokens apart contributes the supply-chain cosine weight to the
+   raw SCRisk score.  Thus, one supply-chain occurrence can contribute more
+   than once if it is close to multiple risk occurrences.
+5. The weighted match sum is divided by the transcript's total tokenized word
+   count.  This length-adjusted value is the raw score used for dataset-wide
+   standardization.
+6. A Resolution contribution uses the same supply-chain/risk pair, but is
+   counted only when at least one resolution occurrence is also within
+   ``WINDOW`` tokens of the supply-chain occurrence.  This keeps Resolution a
+   measure of resolution language in supply-chain-risk contexts, rather than
+   a general count of words such as "mitigate" anywhere in a call.
+7. Each raw score is divided by the *population* standard deviation of that
+   raw score across the complete input dataset.  The mean is deliberately not
+   subtracted.  If a dataset's standard deviation is zero, its normalized
+   score is written as 0.0 because division would otherwise be undefined.
+8. A transcript that holds no spoken content is excluded from the
+   standardization population and its standardized score is written blank.
+   See ``assess_transcript_integrity``.  ``--no-transcript-integrity-filter``
+   restores the original behaviour of standardizing every row.
+
+Two known vocabulary properties, deliberately left in place
+-----------------------------------------------------------
+
+Both of these change scores and both are arguable.  They are measured rather
+than silently altered, and each has a switch so a sensitivity run can be
+compared against the default.
+
+*Terms in both vocabularies.*  ``shortages`` is a supply-chain library term
+(weight 0.693) and also a risk term.  A span is zero tokens from itself, so
+one occurrence of ``shortages`` forms a valid pair with itself and contributes
+0.693 to the score with no second word anywhere nearby. The primary risk
+dictionary explicitly contains both ``shortage`` and ``shortages``. Under
+``v2_seeds_inflections``, supply-chain inflection completion also puts the
+singular in the supply-chain vocabulary, so the same applies to it. Every such
+pair is counted in ``scrisk_identical_span_pairs`` and
+``scrisk_identical_span_weight_sum`` on each output row, and the full list of
+shared terms is written to the run manifest.  ``--forbid-identical-span-pairs``
+drops them.
+
+*Broad seeds.*  ``customers`` is a seed, so in ``v2_seeds_inflections`` it
+carries the maximum weight of 1.0, and ``customer`` inherits that weight as
+its inflection.  It is the most common noun in the corpus that either
+vocabulary contains, and it is the weakest of the 16 seeds semantically: a
+sentence about customer funding concerns scores as supply-chain risk.
+``--exclude-supply-chain-terms customers,customer`` drops it.
+
+The proximity rule uses token positions and supports multiword dictionary
+entries.  A distance of 10 means the closest tokens in the two spans are at
+most ten positions apart; this is the usual practical interpretation of
+"within 10 words" and is explicit here for reproducibility.
+
+Examples
+--------
+
+Score a transcript-level CSV, preserving all existing columns::
+
+    python -m scoring.calculate_supply_chain_transcript_scores \
+        --input earnings_call_transcripts.csv \
+        --library artifacts/sec_10k_supply_chain_pilot_concurrent/terms.jsonl \
+        --output earnings_call_transcripts_scored.csv
+
+Reproduce the original ppmi_svd_full_20260910 scores exactly::
+
+    python -m scoring.calculate_supply_chain_transcript_scores \
+        --input earnings_call_transcripts.csv \
+        --library artifacts/sec_10k_supply_chain/experiments/ppmi_svd_full_20260910/terms.jsonl \
+        --vocabulary-version v1_library_only \
+        --no-transcript-integrity-filter \
+        --output earnings_call_transcripts_scored_v1.csv
+
+Use development-only dictionary overrides (both marked non-primary)::
+
+    python -m scoring.calculate_supply_chain_transcript_scores \
+        --input earnings_call_transcripts.csv \
+        --library artifacts/sec_10k_supply_chain_pilot_concurrent/terms.jsonl \
+        --risk-words development_risk_words.txt \
+        --resolution-words development_resolution_words.txt \
+        --output earnings_call_transcripts_scored.csv
+
+The input CSV must contain a ``transcript_text`` column.  A dictionary file
+can be either one term per line (blank lines and ``#`` comments are ignored),
+or JSON containing a list of terms, or an object with a ``terms`` list.
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import hashlib
+import json
+import math
+import re
+import sys
+from dataclasses import dataclass
+from pathlib import Path
+from statistics import pstdev
+from typing import Any, Iterable, Sequence
+
+from collection.study_period import validate_csv_in_study_period
+
+
+WINDOW = 10
+REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_RISK_DICTIONARY_IDENTIFIER = "theile_reconstruction_v1_risk_full"
+PRIMARY_RISK_DICTIONARY_RELATIVE_PATH = Path(
+    "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt"
+)
+PRIMARY_RISK_DICTIONARY_PATH = REPOSITORY_ROOT / PRIMARY_RISK_DICTIONARY_RELATIVE_PATH
+PRIMARY_RISK_TERM_COUNT = 161
+PRIMARY_RISK_TABLE_3_TERM_COUNT = 144
+PRIMARY_RISK_RECONSTRUCTED_TERM_COUNT = 17
+
+PRIMARY_RESOLUTION_DICTIONARY_IDENTIFIER = (
+    "theile_reconstruction_v1_resolution_conservative_baseline"
+)
+PRIMARY_RESOLUTION_DICTIONARY_RELATIVE_PATH = Path(
+    "dictionaries/theile_reconstruction_v1/resolution/"
+    "resolution_terms_conservative_baseline.txt"
+)
+PRIMARY_RESOLUTION_DICTIONARY_PATH = (
+    REPOSITORY_ROOT / PRIMARY_RESOLUTION_DICTIONARY_RELATIVE_PATH
+)
+PRIMARY_RESOLUTION_TERM_COUNT = 55
+PRIMARY_RESOLUTION_TABLE_4_TERM_COUNT = 28
+PRIMARY_RESOLUTION_OXFORD_ADDED_TERM_COUNT = 27
+
+# These are the 16 seed phrases used by dictionaries/build_supply_chain_library.py.  They
+# are the intended semantic center of the generated library, so under
+# vocabulary version ``v2_seeds_inflections`` they are scored directly at
+# SEED_WEIGHT.  Under ``v1_library_only`` they are not scored at all, which
+# reproduces the original ppmi_svd_full_20260910 run exactly.
+SUPPLY_CHAIN_SEEDS = (
+    "channel partners",
+    "customers",
+    "demand management",
+    "distribution",
+    "fulfillment",
+    "inventory",
+    "logistics",
+    "manufacturing",
+    "procurement",
+    "purchasing",
+    "sourcing",
+    "suppliers",
+    "supply",
+    "supply chain",
+    "transportation",
+    "warehousing",
+)
+
+WORD_RE = re.compile(r"[A-Za-z]+(?:['’.-][A-Za-z]+)*")
+
+# A seed is by construction the centre of its own neighbourhood, so its
+# similarity to itself is 1.0.  Giving the seeds that weight keeps them
+# strictly above every generated expansion term, whose max_cosine tops out at
+# 0.916 in the study library.
+SEED_WEIGHT = 1.0
+
+# These versions govern only the supply-chain vocabulary. Risk matching always
+# uses the selected risk dictionary exactly as written.
+VOCABULARY_VERSIONS = ("v1_library_only", "v2_seeds_inflections")
+DEFAULT_VOCABULARY_VERSION = "v2_seeds_inflections"
+
+# Transcript-integrity markers.  Every string is matched case-insensitively
+# against the raw transcript text.  These are the three provider artifacts
+# found in the corpus by the SCRisk zero audit, all of which arrive with
+# ``status = success`` and therefore reach scoring.
+TRANSCRIPT_INTEGRITY_MARKERS = {
+    "redacted_spoken_content": "(full spoken content)",
+    "provider_copyright_boilerplate": "copyright policy: all transcripts on this site",
+    "transcript_unavailable": "transcript is not available",
+}
+
+# A real earnings call does not repeat the same 3% of its vocabulary for
+# thousands of tokens.  ETN 2012Q4 has 4,506 tokens and 147 distinct ones,
+# a ratio of 0.033, because the body is the provider's copyright notice
+# repeated.  No genuine call in the corpus falls below 0.10.
+DEGENERATE_DISTINCT_TOKEN_RATIO = 0.10
+
+# The shortest genuine full call in the corpus runs a few thousand tokens.
+# Everything below 1,000 tokens is a truncated stub: an operator greeting, a
+# headline paragraph, or a placeholder.
+MINIMUM_SPOKEN_TOKENS = 1000
+
+INTEGRITY_OK = "ok"
+INTEGRITY_CONTENT_ABSENT = "content_absent"
+INTEGRITY_NO_TEXT = "no_transcript_text"
+
+
+def configure_csv_field_size_limit() -> None:
+    """Accept full earnings-call transcripts that exceed CSV's small default."""
+
+    limit = sys.maxsize
+    while True:
+        try:
+            csv.field_size_limit(limit)
+            return
+        except OverflowError:
+            limit //= 10
+
+
+@dataclass(frozen=True)
+class Occurrence:
+    """A normalized dictionary phrase and its inclusive token span."""
+
+    term: str
+    start: int
+    end: int
+
+
+@dataclass(frozen=True)
+class ScoreResult:
+    """Raw score details for one transcript."""
+
+    word_count: int
+    supply_chain_occurrences: int
+    risk_occurrences: int
+    resolution_occurrences: int
+    risk_pairs: int
+    resolution_pairs: int
+    scrisk_weight_sum: float
+    resolution_weight_sum: float
+    scrisk_raw: float
+    resolution_raw: float
+    # A term that sits in both the supply-chain and the risk vocabulary pairs
+    # with its own occurrence at distance 0.  ``shortages`` is the only such
+    # example in v1. These two fields report exactly how much of the score comes
+    # from that, so it can be measured instead of argued about.
+    identical_span_pairs: int = 0
+    identical_span_weight_sum: float = 0.0
+
+
+@dataclass(frozen=True)
+class RiskDictionarySelection:
+    """Terms and provenance for the risk dictionary selected for one run."""
+
+    terms: list[str]
+    path: Path
+    repository_relative_path: str
+    sha256: str
+    usage: str
+    is_primary: bool
+
+
+@dataclass(frozen=True)
+class ResolutionDictionarySelection:
+    """Terms and provenance for the resolution dictionary selected for one run."""
+
+    terms: list[str]
+    path: Path
+    repository_relative_path: str
+    sha256: str
+    usage: str
+    is_primary: bool
+
+
+def normalize_term(term: str) -> tuple[str, ...]:
+    """Convert a dictionary entry into the same token representation as text."""
+
+    return tuple(match.group(0).lower() for match in WORD_RE.finditer(term))
+
+
+def tokenize(text: str) -> list[str]:
+    """Tokenize prose while retaining ordinary words and hyphenated terms."""
+
+    return [match.group(0).lower() for match in WORD_RE.finditer(text)]
+
+
+def _phrase_occurrences(tokens: Sequence[str], term: str) -> list[Occurrence]:
+    """Return every exact, non-overlapping-start occurrence of one phrase."""
+
+    phrase = normalize_term(term)
+    if not phrase or len(phrase) > len(tokens):
+        return []
+    occurrences: list[Occurrence] = []
+    width = len(phrase)
+    for start in range(len(tokens) - width + 1):
+        if tuple(tokens[start : start + width]) == phrase:
+            occurrences.append(Occurrence(" ".join(phrase), start, start + width - 1))
+    return occurrences
+
+
+PhraseIndex = dict[str, tuple[tuple[tuple[str, ...], str], ...]]
+
+
+def build_phrase_index(terms: Iterable[str]) -> PhraseIndex:
+    """Index normalized phrases by their first token for one-pass matching."""
+
+    indexed: dict[str, list[tuple[tuple[str, ...], str]]] = {}
+    seen: set[tuple[str, ...]] = set()
+    for term in terms:
+        phrase = normalize_term(term)
+        if not phrase or phrase in seen:
+            continue
+        seen.add(phrase)
+        indexed.setdefault(phrase[0], []).append((phrase, " ".join(phrase)))
+    return {first: tuple(candidates) for first, candidates in indexed.items()}
+
+
+def find_indexed_occurrences(tokens: Sequence[str], index: PhraseIndex) -> list[Occurrence]:
+    """Find every indexed phrase in one pass over the transcript tokens."""
+
+    occurrences: list[Occurrence] = []
+    token_count = len(tokens)
+    for start, first_token in enumerate(tokens):
+        for phrase, term in index.get(first_token, ()):
+            width = len(phrase)
+            if start + width <= token_count and tuple(tokens[start : start + width]) == phrase:
+                occurrences.append(Occurrence(term, start, start + width - 1))
+    return occurrences
+
+
+def find_occurrences(tokens: Sequence[str], terms: Iterable[str]) -> list[Occurrence]:
+    """Find all dictionary phrases, including overlapping phrase occurrences."""
+
+    return find_indexed_occurrences(tokens, build_phrase_index(terms))
+
+
+def spans_within(left: Occurrence, right: Occurrence, window: int = WINDOW) -> bool:
+    """Return true when the closest tokens in two spans are <= window apart."""
+
+    if left.end < right.start:
+        distance = right.start - left.end
+    elif right.end < left.start:
+        distance = left.start - right.end
+    else:
+        distance = 0
+    return distance <= window
+
+
+def load_supply_chain_library(path: Path) -> dict[str, float]:
+    """Load ``term`` and ``max_cosine`` from the builder's JSONL output."""
+
+    weights: dict[str, float] = {}
+    with path.open(encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, start=1):
+            if not line.strip():
+                continue
+            try:
+                record = json.loads(line)
+                term = str(record["term"]).strip()
+                weight = float(record["max_cosine"])
+            except (KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+                raise ValueError(f"Invalid supply-chain library row {line_number} in {path}") from exc
+            normalized = " ".join(normalize_term(term))
+            if not normalized:
+                continue
+            if not math.isfinite(weight):
+                raise ValueError(f"Non-finite cosine weight on row {line_number} in {path}")
+            # If a term is repeated, retain the largest supplied weight.  This
+            # is conservative with respect to the builder's max_cosine field.
+            weights[normalized] = max(weight, weights.get(normalized, -math.inf))
+    if not weights:
+        raise ValueError(f"No supply-chain terms found in {path}")
+    return weights
+
+
+def load_dictionary(path: Path) -> list[str]:
+    """Load terms from plain text or simple JSON and normalize duplicates."""
+
+    if path.suffix.lower() == ".json":
+        value: Any = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(value, dict):
+            value = value.get("terms")
+        if not isinstance(value, list):
+            raise ValueError(f"JSON dictionary {path} must be a list or an object with a terms list")
+        raw_terms = value
+    else:
+        raw_terms = [
+            line.split("#", 1)[0].strip()
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if line.split("#", 1)[0].strip()
+        ]
+
+    terms: list[str] = []
+    seen: set[str] = set()
+    for raw_term in raw_terms:
+        normalized = " ".join(normalize_term(str(raw_term)))
+        if normalized and normalized not in seen:
+            seen.add(normalized)
+            terms.append(normalized)
+    if not terms:
+        raise ValueError(f"No terms found in dictionary {path}")
+    return terms
+
+
+def sha256_file(path: Path) -> str:
+    """Return the SHA-256 digest of a file's exact bytes."""
+
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def repository_relative_path(path: Path) -> str:
+    """Render repository files relative to the repository root when possible."""
+
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(REPOSITORY_ROOT.resolve()).as_posix()
+    except ValueError:
+        return str(resolved)
+
+
+def load_primary_risk_dictionary(
+    path: Path = PRIMARY_RISK_DICTIONARY_PATH,
+) -> list[str]:
+    """Load and strictly validate the 161-term primary reconstruction."""
+
+    try:
+        raw_lines = path.read_text(encoding="utf-8").splitlines()
+    except FileNotFoundError as exc:
+        raise ValueError(f"Primary risk dictionary is missing: {path}") from exc
+    except (OSError, UnicodeError) as exc:
+        raise ValueError(f"Primary risk dictionary cannot be read as UTF-8: {path}") from exc
+
+    if not raw_lines or any(not line.strip() for line in raw_lines):
+        raise ValueError(
+            f"Primary risk dictionary must contain exactly {PRIMARY_RISK_TERM_COUNT} "
+            f"non-empty lines: {path}"
+        )
+
+    terms = [line.strip() for line in raw_lines]
+    malformed = [
+        term
+        for raw, term in zip(raw_lines, terms)
+        if raw != term or term != term.lower() or " ".join(normalize_term(term)) != term
+    ]
+    if malformed:
+        raise ValueError(
+            "Primary risk dictionary contains malformed terms; expected exact lowercase "
+            f"word forms without surrounding whitespace: {malformed[:3]}"
+        )
+
+    duplicates = sorted({term for term in terms if terms.count(term) > 1})
+    if duplicates:
+        raise ValueError(f"Primary risk dictionary contains duplicate terms: {duplicates}")
+    if len(terms) != PRIMARY_RISK_TERM_COUNT:
+        raise ValueError(
+            f"Primary risk dictionary must contain exactly {PRIMARY_RISK_TERM_COUNT} unique "
+            f"terms; found {len(terms)} in {path}"
+        )
+    return terms
+
+
+def select_risk_dictionary(risk_path: Path | None) -> RiskDictionarySelection:
+    """Select the strict primary dictionary or an explicit non-primary override."""
+
+    primary_terms = load_primary_risk_dictionary(PRIMARY_RISK_DICTIONARY_PATH)
+    if risk_path is None:
+        path = PRIMARY_RISK_DICTIONARY_PATH
+        terms = primary_terms
+        usage = "primary"
+        is_primary = True
+    else:
+        path = risk_path
+        try:
+            terms = load_dictionary(path)
+        except FileNotFoundError as exc:
+            raise ValueError(f"Risk dictionary override is missing: {path}") from exc
+        usage = "override_non_primary"
+        is_primary = False
+    return RiskDictionarySelection(
+        terms=terms,
+        path=path,
+        repository_relative_path=repository_relative_path(path),
+        sha256=sha256_file(path),
+        usage=usage,
+        is_primary=is_primary,
+    )
+
+
+def load_primary_resolution_dictionary(
+    path: Path = PRIMARY_RESOLUTION_DICTIONARY_PATH,
+) -> list[str]:
+    """Load and strictly validate the 55-term primary resolution reconstruction.
+
+    The file is the conservative baseline of
+    ``dictionaries/theile_reconstruction_v1/resolution/``: the 28 distinct
+    keywords printed in Theile et al. Table 4, the inflected forms Oxford
+    itself prints for each of those roots, and ``alleviate`` and ``settle``,
+    the synonym cross-references Oxford prints on the two seed headwords the
+    paper names. It is the single primary Resolution specification. The
+    anchor, expanded and overlap-adjusted files in the same directory are
+    documented sensitivity artifacts and are never loaded by default.
+    """
+
+    try:
+        raw_lines = path.read_text(encoding="utf-8").splitlines()
+    except FileNotFoundError as exc:
+        raise ValueError(f"Primary resolution dictionary is missing: {path}") from exc
+    except (OSError, UnicodeError) as exc:
+        raise ValueError(
+            f"Primary resolution dictionary cannot be read as UTF-8: {path}"
+        ) from exc
+
+    if not raw_lines or any(not line.strip() for line in raw_lines):
+        raise ValueError(
+            f"Primary resolution dictionary must contain exactly "
+            f"{PRIMARY_RESOLUTION_TERM_COUNT} non-empty lines: {path}"
+        )
+
+    terms = [line.strip() for line in raw_lines]
+    malformed = [
+        term
+        for raw, term in zip(raw_lines, terms)
+        if raw != term or term != term.lower() or " ".join(normalize_term(term)) != term
+    ]
+    if malformed:
+        raise ValueError(
+            "Primary resolution dictionary contains malformed terms; expected exact "
+            f"lowercase single word forms without surrounding whitespace: {malformed[:3]}"
+        )
+
+    duplicates = sorted({term for term in terms if terms.count(term) > 1})
+    if duplicates:
+        raise ValueError(
+            f"Primary resolution dictionary contains duplicate terms: {duplicates}"
+        )
+    if len(terms) != PRIMARY_RESOLUTION_TERM_COUNT:
+        raise ValueError(
+            f"Primary resolution dictionary must contain exactly "
+            f"{PRIMARY_RESOLUTION_TERM_COUNT} unique terms; found {len(terms)} in {path}"
+        )
+    return terms
+
+
+def select_resolution_dictionary(
+    resolution_path: Path | None,
+) -> ResolutionDictionarySelection:
+    """Select the strict primary dictionary or an explicit non-primary override."""
+
+    primary_terms = load_primary_resolution_dictionary(PRIMARY_RESOLUTION_DICTIONARY_PATH)
+    if resolution_path is None:
+        path = PRIMARY_RESOLUTION_DICTIONARY_PATH
+        terms = primary_terms
+        usage = "primary"
+        is_primary = True
+    else:
+        path = resolution_path
+        try:
+            terms = load_dictionary(path)
+        except FileNotFoundError as exc:
+            raise ValueError(f"Resolution dictionary override is missing: {path}") from exc
+        usage = "override_non_primary"
+        is_primary = False
+    return ResolutionDictionarySelection(
+        terms=terms,
+        path=path,
+        repository_relative_path=repository_relative_path(path),
+        sha256=sha256_file(path),
+        usage=usage,
+        is_primary=is_primary,
+    )
+
+
+def regular_inflections(word: str) -> set[str]:
+    """Return a word's regular singular and plural forms, never truncating a stem.
+
+    This is deliberately not a stemmer.  A stemmer turns ``stocking`` into
+    ``stock`` and ``tracking`` into ``track``, which pulls two of the most
+    common words in an earnings call into the supply-chain vocabulary.  This
+    function only adds or removes a regular English plural ending, so
+    ``inventories`` reaches ``inventory`` and ``supplier`` reaches
+    ``suppliers`` while ``finished`` and ``shipping`` are left alone.
+    """
+
+    variants = {word}
+    if word.endswith("ies") and len(word) > 4:
+        variants.add(word[:-3] + "y")
+    elif word.endswith(("ses", "xes", "zes", "ches", "shes")):
+        variants.add(word[:-2])
+    elif word.endswith("s") and not word.endswith("ss"):
+        variants.add(word[:-1])
+    else:
+        variants.add(word + "s")
+        if word.endswith("y") and len(word) > 2 and word[-2] not in "aeiou":
+            variants.add(word[:-1] + "ies")
+        if word.endswith(("s", "x", "z", "ch", "sh")):
+            variants.add(word + "es")
+    return variants
+
+
+def phrase_inflections(term: str) -> set[str]:
+    """Inflect only a phrase's head word, which in English is its last token."""
+
+    words = term.split()
+    if not words:
+        return set()
+    head = words[-1]
+    prefix = words[:-1]
+    return {" ".join(prefix + [variant]) for variant in regular_inflections(head)}
+
+
+def expand_weighted_inflections(weights: dict[str, float]) -> dict[str, float]:
+    """Complete inflections of a weighted vocabulary, keeping the larger weight.
+
+    Taking the maximum matches ``load_supply_chain_library``, which already
+    keeps the largest weight when ``terms.jsonl`` repeats a term.  It means a
+    form reachable from more than one source term is scored at the strongest
+    of them: ``supplier`` is both a 0.897 library term and an inflection of
+    the seed ``suppliers``, so it is scored at the seed weight.
+    """
+
+    expanded: dict[str, float] = {}
+    for term, weight in weights.items():
+        for variant in phrase_inflections(term):
+            expanded[variant] = max(weight, expanded.get(variant, -math.inf))
+    return expanded
+
+
+def build_supply_chain_vocabulary(
+    library_weights: dict[str, float],
+    version: str = DEFAULT_VOCABULARY_VERSION,
+    seed_weight: float = SEED_WEIGHT,
+    excluded_terms: Iterable[str] = (),
+) -> dict[str, float]:
+    """Assemble the weighted supply-chain vocabulary for one version.
+
+    ``v1_library_only`` returns the library exactly as loaded.
+    ``v2_seeds_inflections`` adds the 16 seeds at ``seed_weight`` and then
+    completes the regular inflections of the union.  ``excluded_terms`` is
+    applied last and exists for sensitivity runs; it is empty by default so
+    the version's own definition is never quietly narrowed.
+    """
+
+    if version not in VOCABULARY_VERSIONS:
+        raise ValueError(f"Unknown vocabulary version {version!r}; expected one of {VOCABULARY_VERSIONS}")
+    vocabulary = dict(library_weights)
+    if version == "v2_seeds_inflections":
+        for seed in SUPPLY_CHAIN_SEEDS:
+            normalized = " ".join(normalize_term(seed))
+            if normalized:
+                vocabulary[normalized] = max(seed_weight, vocabulary.get(normalized, -math.inf))
+        vocabulary = expand_weighted_inflections(vocabulary)
+    for term in excluded_terms:
+        vocabulary.pop(" ".join(normalize_term(term)), None)
+    if not vocabulary:
+        raise ValueError("The supply-chain vocabulary is empty after exclusions")
+    return vocabulary
+
+
+def build_risk_vocabulary(
+    risk_words: Iterable[str],
+) -> list[str]:
+    """Use exact risk forms without stemming, lemmatization, or expansion."""
+
+    terms = [" ".join(normalize_term(term)) for term in risk_words]
+    terms = [term for term in terms if term]
+    ordered: list[str] = []
+    seen: set[str] = set()
+    for term in terms:
+        if term not in seen:
+            seen.add(term)
+            ordered.append(term)
+    return ordered
+
+
+def assess_transcript_integrity(text: str) -> tuple[str, list[str]]:
+    """Classify whether a transcript actually contains spoken call content.
+
+    Returns the integrity status and the list of flags that fired.  A row with
+    no text at all is ``no_transcript_text``: it was never a call, it already
+    scores zero, and it never reaches the event study.  A row with text that
+    is a provider placeholder, a repeated copyright notice, or a sub-1,000
+    token stub is ``content_absent``: it is marked ``status = success``,
+    it does reach the event study, and its score is not a measurement of
+    anything that was said.
+    """
+
+    tokens = tokenize(text)
+    if not tokens:
+        return INTEGRITY_NO_TEXT, []
+    lowered = text.lower()
+    flags = [name for name, marker in TRANSCRIPT_INTEGRITY_MARKERS.items() if marker in lowered]
+    distinct_ratio = len(set(tokens)) / len(tokens)
+    if distinct_ratio < DEGENERATE_DISTINCT_TOKEN_RATIO:
+        flags.append("degenerate_repetition")
+    if len(tokens) < MINIMUM_SPOKEN_TOKENS:
+        flags.append(f"under_{MINIMUM_SPOKEN_TOKENS}_tokens")
+    if flags:
+        return INTEGRITY_CONTENT_ABSENT, flags
+    return INTEGRITY_OK, []
+
+
+def calculate_raw_scores(
+    transcript: str,
+    supply_chain_weights: dict[str, float],
+    risk_words: Iterable[str],
+    resolution_words: Iterable[str],
+    window: int = WINDOW,
+    supply_chain_index: PhraseIndex | None = None,
+    risk_index: PhraseIndex | None = None,
+    resolution_index: PhraseIndex | None = None,
+    forbid_identical_span_pairs: bool = False,
+) -> ScoreResult:
+    """Calculate both raw scores for one transcript without dataset scaling."""
+
+    if window < 0:
+        raise ValueError("window must be non-negative")
+    tokens = tokenize(transcript)
+    supply_chain_index = supply_chain_index or build_phrase_index(supply_chain_weights)
+    risk_index = risk_index or build_phrase_index(risk_words)
+    resolution_index = resolution_index or build_phrase_index(resolution_words)
+    supply_occurrences = find_indexed_occurrences(tokens, supply_chain_index)
+    risk_occurrences = find_indexed_occurrences(tokens, risk_index)
+    resolution_occurrences = find_indexed_occurrences(tokens, resolution_index)
+
+    scrisk_weight_sum = 0.0
+    resolution_weight_sum = 0.0
+    risk_pairs = 0
+    resolution_pairs = 0
+    identical_span_pairs = 0
+    identical_span_weight_sum = 0.0
+    for supply in supply_occurrences:
+        nearby_resolution = any(
+            spans_within(supply, resolution, window) for resolution in resolution_occurrences
+        )
+        for risk in risk_occurrences:
+            if not spans_within(supply, risk, window):
+                continue
+            identical_span = supply.start == risk.start and supply.end == risk.end
+            if identical_span and forbid_identical_span_pairs:
+                continue
+            weight = supply_chain_weights[supply.term]
+            if identical_span:
+                identical_span_pairs += 1
+                identical_span_weight_sum += weight
+            scrisk_weight_sum += weight
+            risk_pairs += 1
+            # Resolution is intentionally a subset of SCRisk pairs.
+            if nearby_resolution:
+                resolution_weight_sum += weight
+                resolution_pairs += 1
+
+    word_count = len(tokens)
+    scrisk_raw = scrisk_weight_sum / word_count if word_count else 0.0
+    resolution_raw = resolution_weight_sum / word_count if word_count else 0.0
+
+    return ScoreResult(
+        word_count=word_count,
+        supply_chain_occurrences=len(supply_occurrences),
+        risk_occurrences=len(risk_occurrences),
+        resolution_occurrences=len(resolution_occurrences),
+        risk_pairs=risk_pairs,
+        resolution_pairs=resolution_pairs,
+        scrisk_weight_sum=scrisk_weight_sum,
+        resolution_weight_sum=resolution_weight_sum,
+        scrisk_raw=scrisk_raw,
+        resolution_raw=resolution_raw,
+        identical_span_pairs=identical_span_pairs,
+        identical_span_weight_sum=identical_span_weight_sum,
+    )
+
+
+def normalize_raw_scores(
+    raw_scores: Sequence[float],
+    in_population: Sequence[bool] | None = None,
+) -> tuple[list[float | None], float]:
+    """Divide raw scores by their dataset population SD without centering.
+
+    ``in_population`` marks the rows the SD is calculated over.  A row outside
+    the population gets ``None`` rather than a number: its transcript failed
+    the integrity check, so its score is undefined, not zero.  With
+    ``in_population`` omitted every row is in the population, which is the
+    original behaviour.
+    """
+
+    if not raw_scores:
+        return [], 0.0
+    if in_population is None:
+        in_population = [True] * len(raw_scores)
+    if len(in_population) != len(raw_scores):
+        raise ValueError("in_population must be the same length as raw_scores")
+    population = [score for score, keep in zip(raw_scores, in_population) if keep]
+    if not population:
+        raise ValueError("The standardization population is empty")
+    standard_deviation = pstdev(population) if len(population) > 1 else 0.0
+    if standard_deviation == 0.0:
+        return [0.0 if keep else None for keep in in_population], standard_deviation
+    return [
+        score / standard_deviation if keep else None
+        for score, keep in zip(raw_scores, in_population)
+    ], standard_deviation
+
+
+
+
+
+SCORE_OUTPUT_FIELDS = [
+    "SCRisk_weight_sum", "SCRisk_raw", "SCRisk_sd", "SCRisk",
+    "Resolution_weight_sum", "Resolution_raw", "Resolution_sd",
+    "Resolution", "score_word_count", "supply_chain_occurrences", "risk_occurrences",
+    "resolution_occurrences", "supply_chain_risk_pairs", "supply_chain_resolution_pairs",
+    # Added with the corrected vocabulary.  Every one of these is a diagnostic
+    # about how the score was reached, not a change to the score.
+    "scrisk_identical_span_pairs", "scrisk_identical_span_weight_sum",
+    "vocabulary_version", "transcript_integrity_status", "transcript_integrity_flags",
+    "in_standardization_population",
+]
+
+
+def score_csv(
+    input_path: Path,
+    output_path: Path,
+    library_path: Path,
+    risk_path: Path | None,
+    resolution_path: Path | None,
+    text_column: str,
+    window: int,
+    limit: int | None = None,
+    vocabulary_version: str = DEFAULT_VOCABULARY_VERSION,
+    seed_weight: float = SEED_WEIGHT,
+    excluded_supply_chain_terms: Sequence[str] = (),
+    forbid_identical_span_pairs: bool = False,
+    filter_transcript_integrity: bool = True,
+) -> dict[str, Any]:
+    """Score every input row, then write a new CSV with raw and scaled fields.
+
+    Returns the run manifest, which is also written next to ``output_path``.
+    """
+
+    if input_path.resolve() == output_path.resolve():
+        raise ValueError("Refusing to overwrite the input CSV; choose a separate --output path")
+    validate_csv_in_study_period(input_path, context="scoring/standardization input")
+    if limit is not None and limit < 1:
+        raise ValueError("limit must be positive")
+
+    library_weights = load_supply_chain_library(library_path)
+    risk_selection = select_risk_dictionary(risk_path)
+    resolution_selection = select_resolution_dictionary(resolution_path)
+    resolution_words = resolution_selection.terms
+    supply_chain_weights = build_supply_chain_vocabulary(
+        library_weights, vocabulary_version, seed_weight, excluded_supply_chain_terms
+    )
+    risk_words = build_risk_vocabulary(risk_selection.terms)
+    supply_chain_index = build_phrase_index(supply_chain_weights)
+    risk_index = build_phrase_index(risk_words)
+    resolution_index = build_phrase_index(resolution_words)
+
+    # Pass 1 retains only score objects, not the potentially very large
+    # transcript strings.  This is important for the study's full dataset.
+    with input_path.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        fieldnames = list(reader.fieldnames or [])
+        if text_column not in fieldnames:
+            raise ValueError(f"{input_path} is missing required column {text_column!r}")
+        results: list[ScoreResult] = []
+        integrity: list[tuple[str, list[str]]] = []
+        for row in reader:
+            if limit is not None and len(results) >= limit:
+                break
+            text = row.get(text_column, "") or ""
+            results.append(
+                calculate_raw_scores(
+                    text,
+                    supply_chain_weights,
+                    risk_words,
+                    resolution_words,
+                    window,
+                    supply_chain_index,
+                    risk_index,
+                    resolution_index,
+                    forbid_identical_span_pairs,
+                )
+            )
+            integrity.append(assess_transcript_integrity(text))
+
+    # A transcript that holds no spoken content is excluded from the
+    # standardization population rather than standardized against it.  Its raw
+    # score is a fact about the file and is retained; its standardized score is
+    # undefined and is written blank.
+    in_population = [
+        not (filter_transcript_integrity and status == INTEGRITY_CONTENT_ABSENT)
+        for status, _ in integrity
+    ]
+    scrisk_scaled, scrisk_sd = normalize_raw_scores(
+        [result.scrisk_raw for result in results], in_population
+    )
+    resolution_scaled, resolution_sd = normalize_raw_scores(
+        [result.resolution_raw for result in results], in_population
+    )
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    # Pass 2 rereads the input so existing columns are preserved without
+    # retaining all transcript text in memory while the SD is calculated.
+    with input_path.open(newline="", encoding="utf-8") as source, output_path.open(
+        "w", newline="", encoding="utf-8"
+    ) as handle:
+        reader = csv.DictReader(source)
+        writer = csv.DictWriter(
+            handle, fieldnames=fieldnames + SCORE_OUTPUT_FIELDS, extrasaction="ignore"
+        )
+        writer.writeheader()
+        for row, result, scrisk, resolution, (status, flags), keep in zip(
+            reader, results, scrisk_scaled, resolution_scaled, integrity, in_population
+        ):
+            row.update(
+                {
+                    "SCRisk_weight_sum": f"{result.scrisk_weight_sum:.12g}",
+                    "SCRisk_raw": f"{result.scrisk_raw:.12g}",
+                    "SCRisk_sd": f"{scrisk_sd:.12g}",
+                    "SCRisk": "" if scrisk is None else f"{scrisk:.12g}",
+                    "Resolution_weight_sum": f"{result.resolution_weight_sum:.12g}",
+                    "Resolution_raw": f"{result.resolution_raw:.12g}",
+                    "Resolution_sd": f"{resolution_sd:.12g}",
+                    "Resolution": "" if resolution is None else f"{resolution:.12g}",
+                    "score_word_count": result.word_count,
+                    "supply_chain_occurrences": result.supply_chain_occurrences,
+                    "risk_occurrences": result.risk_occurrences,
+                    "resolution_occurrences": result.resolution_occurrences,
+                    "supply_chain_risk_pairs": result.risk_pairs,
+                    "supply_chain_resolution_pairs": result.resolution_pairs,
+                    "scrisk_identical_span_pairs": result.identical_span_pairs,
+                    "scrisk_identical_span_weight_sum": f"{result.identical_span_weight_sum:.12g}",
+                    "vocabulary_version": vocabulary_version,
+                    "transcript_integrity_status": status,
+                    "transcript_integrity_flags": ";".join(flags),
+                    "in_standardization_population": int(keep),
+                }
+            )
+            writer.writerow(row)
+
+    shared_terms = sorted(set(supply_chain_weights) & set(risk_words))
+    manifest = {
+        "vocabulary_version": vocabulary_version,
+        "window": window,
+        "seed_weight": seed_weight,
+        "library_path": str(library_path),
+        "library_term_count": len(library_weights),
+        "supply_chain_term_count": len(supply_chain_weights),
+        "risk_term_count": len(risk_words),
+        "risk_dictionary_identifier": PRIMARY_RISK_DICTIONARY_IDENTIFIER,
+        "risk_dictionary_path": PRIMARY_RISK_DICTIONARY_RELATIVE_PATH.as_posix(),
+        "risk_dictionary_sha256": sha256_file(PRIMARY_RISK_DICTIONARY_PATH),
+        "risk_dictionary_total_terms": PRIMARY_RISK_TERM_COUNT,
+        "risk_dictionary_direct_table_3_terms": PRIMARY_RISK_TABLE_3_TERM_COUNT,
+        "risk_dictionary_reconstructed_nonoccurring_terms": (
+            PRIMARY_RISK_RECONSTRUCTED_TERM_COUNT
+        ),
+        "risk_dictionary_usage": risk_selection.usage,
+        "risk_dictionary_is_primary": risk_selection.is_primary,
+        "risk_dictionary_selected_path": risk_selection.repository_relative_path,
+        "risk_dictionary_selected_sha256": risk_selection.sha256,
+        "risk_dictionary_selected_total_terms": len(risk_words),
+        "resolution_dictionary_identifier": PRIMARY_RESOLUTION_DICTIONARY_IDENTIFIER,
+        "resolution_dictionary_path": PRIMARY_RESOLUTION_DICTIONARY_RELATIVE_PATH.as_posix(),
+        "resolution_dictionary_sha256": sha256_file(PRIMARY_RESOLUTION_DICTIONARY_PATH),
+        "resolution_dictionary_total_terms": PRIMARY_RESOLUTION_TERM_COUNT,
+        "resolution_dictionary_table_4_terms": PRIMARY_RESOLUTION_TABLE_4_TERM_COUNT,
+        "resolution_dictionary_oxford_added_terms": (
+            PRIMARY_RESOLUTION_OXFORD_ADDED_TERM_COUNT
+        ),
+        "resolution_dictionary_usage": resolution_selection.usage,
+        "resolution_dictionary_is_primary": resolution_selection.is_primary,
+        "resolution_dictionary_selected_path": (
+            resolution_selection.repository_relative_path
+        ),
+        "resolution_dictionary_selected_sha256": resolution_selection.sha256,
+        "resolution_dictionary_selected_total_terms": len(resolution_selection.terms),
+        "resolution_term_count": len(set(" ".join(normalize_term(t)) for t in resolution_words)),
+        "excluded_supply_chain_terms": [
+            " ".join(normalize_term(term)) for term in excluded_supply_chain_terms
+        ],
+        "forbid_identical_span_pairs": forbid_identical_span_pairs,
+        "filter_transcript_integrity": filter_transcript_integrity,
+        "terms_in_both_supply_chain_and_risk": shared_terms,
+        "rows_scored": len(results),
+        "rows_in_standardization_population": sum(in_population),
+        "rows_content_absent": sum(
+            1 for status, _ in integrity if status == INTEGRITY_CONTENT_ABSENT
+        ),
+        "rows_no_transcript_text": sum(1 for status, _ in integrity if status == INTEGRITY_NO_TEXT),
+        "SCRisk_sd": scrisk_sd,
+        "Resolution_sd": resolution_sd,
+        "output_path": str(output_path),
+    }
+    manifest_path = output_path.with_suffix(output_path.suffix + ".scoring_manifest.json")
+    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+
+    print(f"Scored {len(results):,} transcripts with vocabulary {vocabulary_version}")
+    print(
+        f"Supply-chain terms: {len(supply_chain_weights):,} "
+        f"(library {len(library_weights):,}); risk terms: {len(risk_words):,}"
+    )
+    print(f"Terms in both vocabularies: {shared_terms or 'none'}")
+    print(
+        f"Excluded from standardization for transcript integrity: "
+        f"{manifest['rows_content_absent']:,}"
+    )
+    print(f"SCRisk population SD: {scrisk_sd:.12g}; Resolution population SD: {resolution_sd:.12g}")
+    print(f"Wrote {output_path}")
+    print(f"Wrote {manifest_path}")
+    return manifest
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input", type=Path, required=True, help="CSV containing transcript_text")
+    parser.add_argument("--output", type=Path, required=True, help="new CSV to write")
+    parser.add_argument("--library", type=Path, required=True, help="supply-chain terms.jsonl")
+    parser.add_argument(
+        "--risk-words",
+        type=Path,
+        help=(
+            "development-only risk dictionary override; omitted runs use the primary "
+            "161-term Theile reconstruction and overrides are marked non-primary"
+        ),
+    )
+    parser.add_argument(
+        "--resolution-words",
+        type=Path,
+        help=(
+            "development-only resolution dictionary override; defaults to the "
+            "55-term primary reconstruction. Overrides are marked non-primary "
+            "in the run manifest."
+        ),
+    )
+    parser.add_argument("--text-column", default="transcript_text")
+    parser.add_argument("--window", type=int, default=WINDOW, help="maximum token distance; default: 10")
+    parser.add_argument(
+        "--limit",
+        type=int,
+        help="score only the first N rows for a small validation run; omit for the full dataset",
+    )
+    parser.add_argument(
+        "--vocabulary-version",
+        choices=VOCABULARY_VERSIONS,
+        default=DEFAULT_VOCABULARY_VERSION,
+        help=(
+            "v1_library_only reproduces the original run: terms.jsonl alone, no seeds, "
+            "no inflections. v2_seeds_inflections adds the 16 supply-chain seeds at "
+            "--seed-weight and completes regular supply-chain inflections. Risk terms "
+            "always match the selected dictionary exactly. Default: v2_seeds_inflections"
+        ),
+    )
+    parser.add_argument(
+        "--seed-weight",
+        type=float,
+        default=SEED_WEIGHT,
+        help="weight given to the 16 supply-chain seeds in v2; default: 1.0",
+    )
+    parser.add_argument(
+        "--exclude-supply-chain-terms",
+        default="",
+        help=(
+            "comma-separated terms to drop from the supply-chain vocabulary. For "
+            "sensitivity runs only; the default keeps every term the version defines"
+        ),
+    )
+    parser.add_argument(
+        "--forbid-identical-span-pairs",
+        action="store_true",
+        help=(
+            "do not let a term that appears in both the supply-chain and risk "
+            "vocabularies pair with its own occurrence at distance 0. For sensitivity "
+            "runs only; off by default so the version's pairing rule is unchanged"
+        ),
+    )
+    parser.add_argument(
+        "--no-transcript-integrity-filter",
+        dest="filter_transcript_integrity",
+        action="store_false",
+        help=(
+            "standardize and report every row, including transcripts that hold no "
+            "spoken content. Reproduces the original run's standardization population"
+        ),
+    )
+    return parser.parse_args()
+
+
+def main() -> None:
+    configure_csv_field_size_limit()
+    args = parse_args()
+    if args.window < 0:
+        raise SystemExit("--window must be non-negative")
+    try:
+        score_csv(
+            args.input,
+            args.output,
+            args.library,
+            args.risk_words,
+            args.resolution_words,
+            args.text_column,
+            args.window,
+            args.limit,
+            args.vocabulary_version,
+            args.seed_weight,
+            [term.strip() for term in args.exclude_supply_chain_terms.split(",") if term.strip()],
+            args.forbid_identical_span_pairs,
+            args.filter_transcript_integrity,
+        )
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from exc
+
+
+if __name__ == "__main__":
+    main()

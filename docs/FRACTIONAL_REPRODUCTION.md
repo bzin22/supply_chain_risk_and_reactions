@@ -38,30 +38,33 @@ available. Dictionary and source hashes are stored once in the manifest.
 
 | Stage | Actual implementation used by the documented run |
 | --- | --- |
-| Tokenization, exact phrase matching, dictionary loading, SD scaling | `calculate_supply_chain_transcript_scores.py` |
+| Tokenization, exact phrase matching, dictionary loading, SD scaling | `scoring/calculate_supply_chain_transcript_scores.py` |
 | Optimized pair scoring, historical SIC assignment, Carhart OLS and both CAR windows | `analysis/primary_event_study/core.py` |
-| Factor ZIP parsing, reused by `core.py` | `calculate_carhart_event_returns.py` |
+| Factor ZIP parsing, reused by `core.py` | `analysis/calculate_carhart_event_returns.py` |
 | Call preparation, release-date policy, score population, price identity, eligibility | `analysis/primary_event_study/run.py`, `prepare.py`, `dates.py` |
-| Frozen adjusted-price selection, including retries | `run.py`, `collect_prices.py`, `analysis/retry_primary_price_responses.py` |
+| Frozen adjusted-price selection, including retries | `run.py`, `collect_prices.py`, `collection/retry_primary_price_responses.py` |
 | Original deterministic portfolios, pre-fractional thresholds | `analysis/primary_event_study/portfolios.py` |
-| Final fractional and nested allocation, original means/intervals and figure rendering | `analysis/build_modified_portfolio_chart_pdfs.py` |
+| Final fractional and nested allocation, original means/intervals and figure rendering | `analysis/charts/fractional.py` |
 | Portable export and chart reproduction | `analysis/export_fractional_dataset.py`, `analysis/fractional_reproduction.py` |
 | Joint uncertainty for overlapping portfolios | `analysis/fractional_covariance.py` |
 
-The historical implementation is preserved byte for byte. Two chart source
-files have since had descriptive labels and output filenames simplified; their
-original snapshots and exact replacements are recorded under
+Historical source snapshots and all frozen manifests remain byte for byte.
+The earlier naming revision is recorded in
 [`provenance/fractional_naming_v1/`](../provenance/fractional_naming_v1/README.md).
-The current top-level scoring and CAR scripts also differ from the frozen-run
-versions because `main` merged primary dictionary handling and study-period
-validation. Their prior snapshots and both sets of hashes are recorded under
-[`provenance/fractional_main_integration_v1/`](../provenance/fractional_main_integration_v1/README.md).
-The reproduction command verifies these records before calculating. It uses the
-actual `core.py` CAR implementation; the top-level CAR CLI is not the final
-pipeline. Historical manifests and reference tables are
-copied unchanged under `reproduction/fractional_v1/historical/`. These are
-historical evidence, not fresh validation claims. Some paths in them point to
-private files deliberately excluded from Git.
+The [repository layout record](../provenance/repository_layout_v1/README.md)
+maps original paths to current modules and records exact import/path changes
+and removal of obsolete chart entry points. The already-merged primary dictionary and study-period safeguards are
+preserved through the original `provenance/fractional_main_integration_v1/`
+record and the [publication relocation record](../provenance/repository_publication_v1/README.md). The reproduction
+command verifies all applicable revision chains before calculating. Scoring, CAR, fractional allocation,
+means and intervals are unchanged. It uses the actual `core.py` CAR
+implementation; `analysis/calculate_carhart_event_returns.py` also retains the
+older standalone CLI and supplies factor parsing.
+
+Historical manifests and reference tables remain unchanged under
+`reproduction/fractional_v1/historical/`. Their paths describe the original
+run and may refer to private files or superseded visualizations; these are
+historical evidence, not current entry points or fresh validation claims.
 
 The canonical dictionaries are unchanged:
 
@@ -170,7 +173,7 @@ This route starts from the **frozen validated transcript CSV**, not from a new
 provider download. Recollecting transcripts cannot guarantee the same
 responses or reconstruct all past adjudication decisions. The upstream raw
 collection/adjudication workflow is therefore outside the reproducible
-snapshot; `extract_earnings_call_transcript_data.py` alone does not rebuild v1.
+snapshot; `collection/extract_earnings_call_transcript_data.py` alone does not rebuild v1.
 
 Every required local raw input is enumerated with an exact relative path and
 SHA-256 in `reproduction/fractional_v1/raw_inputs.json` (2,215 files). The main

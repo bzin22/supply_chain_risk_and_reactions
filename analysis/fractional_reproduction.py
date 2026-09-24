@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from analysis import build_modified_portfolio_chart_pdfs as legacy
+from analysis.charts import fractional as legacy
 from analysis.export_fractional_dataset import BOOLEAN_COLUMNS, COLUMNS, STRING_COLUMNS
 from analysis.fractional_covariance import pairwise_comparisons
 from analysis.verify_historical_code import verify_historical_code
@@ -118,6 +118,8 @@ def reproduce(package, output):
                       "Tied score groups receive equal proportional membership; masses are equal within each SIC division and nested sort.", True)
     for number, panel in enumerate(PANELS, 1):
         shutil.copyfile(legacy.PAGE_CACHE / f"{pdf.stem}_page_{number}.png", output / f"{number:02d}_{panel}.png")
+    # The named panel PNGs are the deliverables; discard duplicate raster pages.
+    shutil.rmtree(legacy.PAGE_CACHE)
     print(json.dumps({"output": str(output), "historical_panels_verified": 5,
                       "eligible_calls": len(frame), "eligible_firms": int(frame.cik.nunique())}))
 

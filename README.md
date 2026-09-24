@@ -171,7 +171,7 @@ In portfolios Q2 to Q4, the highest Resolution cell has a higher mean return tha
 
 ![Mean CAR(2,60) by fractional SCRisk and Resolution quintiles](docs/fractional_results/05_car_2_60_heatmap.png)
 
-*Figure 5. Mean CAR(2,60) for the nested SCRisk x Resolution portfolios.
+*Figure 5. Mean CAR(2,60) for the nested SCRisk x Resolution portfolios.*
 
 
 Over days 2–60, the ordering partly reverses: the highest-risk portfolio averages −0.04% against roughly −0.5% for the lowest three. If this holds up, the market's initial response to supply-chain risk language may overshoot.
@@ -240,6 +240,26 @@ explicit measures of supplier geography and international production exposure;
 it will be versioned separately rather than altering the frozen 2010-2019
 analysis.
 
+## Directory guide
+
+| Directory | Contents |
+| --- | --- |
+| `collection/` | Universe construction, transcript collection/validation, event inputs, price retries and date joins. |
+| `dictionaries/` | Canonical libraries, reconstruction code, source manifests and outcome-blind reviews; the early library builder is retained for methodological context. |
+| `scoring/` | Shared tokenizer, exact dictionary matcher, score calculation and segment joins. |
+| `analysis/` | Fractional reproduction/export/covariance; `primary_event_study/` prepares scores and CARs; `charts/` renders fractional results; `provisional_diagnostics/` retains measurement audits. |
+| `tests/` | Scoring, CAR/date policy, dictionary, fractional allocation and provenance tests. |
+| `scripts/` | The documented reproduction entry point. |
+| `reproduction/fractional_v1/` | Compact analysis input, schema, hash inventory and frozen reference tables. |
+| `docs/` | Research/reproduction guides and final fractional figures/tables; `references/` holds the ignored local paper. |
+| `data/` | Frozen/private datasets and historical provisional exports; raw inputs remain local. |
+| `provenance/` | Historical records plus the [relocation and deletion record](provenance/repository_layout_v1/README.md). Original recorded paths are preserved. |
+| `outputs/` | Ignored generated runs. Canonical published results are in `docs/fractional_results/`. |
+
+Ignored `artifacts/`, `.archive/`, `review/` and `.lavish/` retain raw responses,
+source vintages, adjudication evidence and existing collection review work.
+They are excluded from the portable reproduction route.
+
 ## Reproducibility
 
 The call-level scored-CAR dataset has SHA-256
@@ -247,9 +267,9 @@ The call-level scored-CAR dataset has SHA-256
 The fractional PDF has SHA-256
 `eccca323094764a6e9da01797cb55baf1457c0013c122a3b2772be15a97da7b0`.
 Its construction is implemented in
-[`analysis/build_modified_portfolio_chart_pdfs.py`](analysis/build_modified_portfolio_chart_pdfs.py)
+[`analysis/charts/fractional.py`](analysis/charts/fractional.py)
 and audited by
-[`analysis/test_modified_portfolio_chart_pdfs.py`](analysis/test_modified_portfolio_chart_pdfs.py).
+[`tests/test_fractional_charts.py`](tests/test_fractional_charts.py).
 
 To regenerate all five fractional figures and tables, install **Python 3.14.7**
 with `venv` and `pip`, then run this command from the repository root:

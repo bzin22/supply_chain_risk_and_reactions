@@ -12,7 +12,7 @@ lossless join to v1. Existing source data and staged changes are preserved.
 Use exactly the 254 canonical supply-chain entries, 161 reconstructed risk
 terms, and 55 conservative Resolution terms. No seeds, inferred inflections,
 stemming, or alternate dictionaries are added. The approved tokenizer and
-multiword matcher come from `calculate_supply_chain_transcript_scores.py`.
+multiword matcher come from `scoring/calculate_supply_chain_transcript_scores.py`.
 Every supply/risk occurrence pair at closest-token distance <=10 contributes
 the supply term's `max_cosine`. Resolution counts that same pair only if a
 Resolution occurrence is within 10 tokens of the supply occurrence. Overlap
@@ -76,78 +76,39 @@ SHA-256 values are retained under `artifacts/primary_event_study_2010_2019_v1`.
 The 2026 retrieval uses reprocessed SEC datasets; the recorded filing date is
 the historical information cutoff, not the retrieval date.
 
-## Market model and portfolios
+## Market model and downstream results
 
-Price data are the archived and newly collected Alpha Vantage split/dividend-adjusted closes. Their
-raw response hash, retrieval time, provider symbol and date coverage are
-retained. Security mapping uses v1's CIK/security ID and the committed ticker
-history at `ae9526a`. Ambiguous ticker reuse is excluded. Provider tickers are
-not CRSP permanent identifiers; legacy symbol continuity remains a limitation.
+Adjusted closes include splits and dividends. The Carhart model fits an
+intercept, market-minus-RF, SMB, HML and momentum over exactly 200 complete
+trading observations at offsets -209 through -10. Factors are converted from
+percent to decimal. Day 0 is the first factor-calendar trading day on or after
+the selected event date, with no after-hours shift. CAR(0,1) sums two days;
+CAR(2,60) sums 59 days. Missing data, coefficients, rank and every exclusion
+remain in the audit outputs.
 
-Daily French Mkt-RF, SMB, HML, RF and momentum are parsed from the September 15,
-2026 archive vintage, percentages converted to decimals. The FF calendar is
-retained even if momentum is missing. Day 0 is the first market trading date
-on or after `call_date` under the run's documented date policy, with no after-hours shift. The model is
-OLS of stock excess return on an intercept and four factors, using exactly
-200 observations at offsets -209 through -10. Missing observations never
-shorten that window. CAR sums daily abnormal returns over 0–1 (2 days) and
-2–60 (59 days). Both windows use the same fitted model. Coefficients, rank,
-condition number, residual RMSE, R-squared, missing dates and statuses survive.
-
-The common portfolio sample requires both CARs, valid scores, verified price
-identity and assigned historical SIC. SCRisk, Resolution and both CARs are
-winsorized globally at the linear 1st and 99th percentiles of this sample;
-original values remain available. SCRisk ranks are within SIC division;
-Resolution ranks are within SIC division × SCRisk quintile. All zero scores
-are included. Ties use SHA256(`portfolio-ties-v1|call_id`) then `call_id`, never
-returns. Quintiles are `floor(5 * zero_based_rank / stratum_size) + 1`.
-Counts differ by at most one. Small strata retain all calls; empty quintiles
-are explicitly reported when fewer than five observations are available.
-
-Portfolio means give every call equal weight. The 95% intervals use a
-one-way CIK-clustered standard error of the mean and t critical value with
-G−1 degrees of freedom, holding portfolio assignments fixed. They do not
-account for common-date dependence across firms or dictionary uncertainty.
-They are descriptive intervals. No controlled outcome regressions are run.
+This package builds the upstream scored-CAR dataset and preserves the original
+deterministic sorting code for historical reproducibility. Its intermediate
+portfolio assignments are not the published fractional allocation. The final
+results are built by `analysis.fractional_reproduction` using
+`analysis/charts/fractional.py`; all scores, both CAR windows and the historical
+SIC assignment must be valid. The reproduction guide specifies winsorization,
+fractional nested portfolios and firm-clustered uncertainty.
 
 ## Reproduce
 
-Use `conda run -n dap-env`. Long commands should be wrapped in `caffeinate -i`.
-Run from the repository root:
+From the repository root:
 
 ```sh
-conda run -n dap-env python -m analysis.primary_event_study.prepare metadata
-conda run -n dap-env python -m analysis.primary_event_study.prepare sic-download --quarters 2009q4 2019q4
-# Inspect the two downloaded source.json files and sub.txt schemas first.
-conda run -n dap-env python -m analysis.primary_event_study.prepare sic-download
-conda run -n dap-env python -m analysis.primary_event_study.prepare sic-history
-conda run -n dap-env python -m analysis.primary_event_study.prepare dates
-conda run -n dap-env python -m pytest analysis/primary_event_study/test_primary.py -q
-caffeinate -i conda run --no-capture-output -n dap-env python -m analysis.primary_event_study.run pilot --output outputs/primary_event_study_new/pilot
-# Inspect score matches, date evidence, SIC cutoffs, and event_day_audit.csv.
-# Write the inspection findings to pilot/INSPECTED.md only after they pass.
-caffeinate -i conda run --no-capture-output -n dap-env python -m analysis.primary_event_study.run full --output outputs/primary_event_study_new/full --pilot outputs/primary_event_study_new/pilot
+sh scripts/reproduce_fractional.sh
 ```
 
-An existing output directory is never overwritten. Full execution checks the
-pilot, code/dictionary/auxiliary input hashes, and inspection record. Output
-CSVs, compressed audit, plots, and source manifests carry reproducibility
-hashes. The manifest rechecks the immutable v1 hash after execution.
-
-For the supplied run, independent final verification and report delivery use:
-
-```sh
-conda run -n dap-env python analysis/verify_primary_event_study.py outputs/primary_event_study_2010_2019_v1/full
-conda run -n dap-env python analysis/build_primary_event_study_report.py
-```
-
-The report builder attaches the inspected pilot and final verification to the
-delivery manifest without changing any calculated data or figures. A separate
-delivery manifest hashes all completed reports, source provenance, and data.
-
-Reference: local Theile et al. (2026), Table 8, pp. 2991–2993;
-[French factor library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html);
-[SEC Financial Statement Data Sets](https://www.sec.gov/data-research/sec-markets-data/financial-statement-data-sets).
+See [the reproduction guide](../../docs/FRACTIONAL_REPRODUCTION.md) for the
+pinned environment, private-input preflight and inspected pilot/full raw
+commands. A full raw rebuild requires private frozen inputs and an actual
+pilot inspection. Existing output directories and frozen inputs are never
+overwritten. Use `python -m analysis.verify_primary_event_study <run-directory>`
+for the historical raw-run audit, whose dependencies include private outputs.
+The obsolete deterministic gallery/PDF builders have been removed.
 
 ### Release-date rebuild
 

@@ -1,0 +1,2389 @@
+[
+  {
+    "allocated_bytes": 20480,
+    "bytes": 18436,
+    "in_head": false,
+    "in_index": false,
+    "path": ".DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "612834d99b0cea5bd7a363b3cda53c5f447086eba07b7da1743c871318ac5fee"
+  },
+  {
+    "allocated_bytes": 331776,
+    "bytes": 329739,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/release_date_gallery_review.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "c51716b619c82e2c167d06851925afc7443b69bf798899336ffa8650f7806456"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 11637,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1.html",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "2f444364b0446f97efac20eb816b75693b1da5b5a00c4e7246bf349206181179"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 11969,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1.html",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "5a43a1dc3327d185220acb7819d8a5bbb315109ced0e65f6d1f0231295d5ae07"
+  },
+  {
+    "allocated_bytes": 90112,
+    "bytes": 88255,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/01_car_0_1_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "f2074e0770c5c5034704f6ffa9e6eca99cb82cec82defe30feae983bce359e63"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 661,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/02_car_0_1_by_resolution.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "34e73abcebdc8e82ce51adebad3d4e1aafdfc15043009c2452fc2cacf78ca2b6"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 62238,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/04_car_2_60_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "ccdb5e27c18728da8fb39fd40f49ebff2b69fdbbfceb7e09d07051a468ee6ee0"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 2807,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/03_car_0_1_heatmap.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "080846f03ba3f70f83a96130fc6f07a5a009e1e24c868c916ef7c0caf78ae705"
+  },
+  {
+    "allocated_bytes": 86016,
+    "bytes": 84364,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/04_car_2_60_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "faa8f027e8b2e2d734103f00d87f5f31a953f95db1fa16ab18c2d088e2b5dfad"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 2782,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/05_car_2_60_heatmap.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "e034cf1ec8a80dbfebcb4d3ba93ee50f6fef3926093bceabfe5e0bdef8ff33bc"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 64637,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/01_car_0_1_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "2d1790af4c40b2a417e5b9506bf2456ae38041e1b034c5eaac063975c53c4f47"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 648,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/04_car_2_60_by_scrisk.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "2c8a6ee972d7c2a6018c9cb745e7531708d9968db2dae4ac77ad3718557e0985"
+  },
+  {
+    "allocated_bytes": 229376,
+    "bytes": 227351,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/03_car_0_1_heatmap.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "adc4d8294ce838445d5e9316822cbbaf4b08db818932dfb1c6b1861eec77ee87"
+  },
+  {
+    "allocated_bytes": 217088,
+    "bytes": 214053,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/05_car_2_60_heatmap.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "a9724f77880bc2e0dda898d15f65943946746625eea7d05e9bd2b9c79c476da8"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 61827,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/02_car_0_1_by_resolution.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "fce04cb79527c58d81c144a0a1a092c0655b59e7f3fa46e052074739977eef61"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 651,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/01_car_0_1_by_scrisk.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "3242ea29b7d8e14228ea96a9c896f03b440f1c29e37f736ec3fde486b6ee518a"
+  },
+  {
+    "allocated_bytes": 86016,
+    "bytes": 84699,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/02_car_0_1_by_resolution.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "e10b61362dfd310662150504ab7fe73fcb87abc2155a500ef211e0d4fea4b7f5"
+  },
+  {
+    "allocated_bytes": 102400,
+    "bytes": 100816,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/05_car_2_60_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "f2a4d3fe1efe2a4ad460321c3aaf4287d6c8b8fd11602d567a3ca7db7dd2df11"
+  },
+  {
+    "allocated_bytes": 106496,
+    "bytes": 104510,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_v1_assets/03_car_0_1_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "ccec460e5873b9adc89b2e8acd8b9fe1096c3f4a3bac3a033adc8aee1a61805e"
+  },
+  {
+    "allocated_bytes": 90112,
+    "bytes": 87301,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/01_car_0_1_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "3da4177c0306a13f531812d81f3d57393de007539ac78e7c9edf6064f138a0a2"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 687,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/02_car_0_1_by_resolution.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "25ba51b24a58f8a0549c46db47f33c833fe5b6fd7dd5af2fb5fbf81bc541c62b"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 63726,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/04_car_2_60_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "6a8a8ceb411bf2c4e12f97c06a6f664bb0a050e39701bbb16e6e1a481445cee8"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 2938,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/03_car_0_1_heatmap.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "4767bb81d9700fad73669d722c1d61fcf6766ff4eded8d1dd8b5a0df5978255c"
+  },
+  {
+    "allocated_bytes": 90112,
+    "bytes": 87641,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/04_car_2_60_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "c13aa39fd90e20612ad6ee987b5b3c858bb7bb6c230a0fc5b5644329d14cb561"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 2945,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/05_car_2_60_heatmap.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "dd0a6c5ac14d2d5026afd3b3ad526cdf1f39766539473fdad0de3d80c4bd67f2"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 64289,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/01_car_0_1_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "63420739aba57c4fc22f14cc7c861740464f6d6bd9af964c1edc956956386c41"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 689,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/04_car_2_60_by_scrisk.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "aab8552797383e5db9d3d1049e0161c866eb59adf9c7e9d4f5ce4e88d39869d2"
+  },
+  {
+    "allocated_bytes": 245760,
+    "bytes": 242352,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/03_car_0_1_heatmap.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "af4df6c935c45f544790f3a4fe6ff9fa28d431ab6f0b9701806ce9fcf56f4ba7"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 240828,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/05_car_2_60_heatmap.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "18bde5c38fd710f74377b4f9022aed582218b1045a32720ab58a529ad6920962"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 62131,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/02_car_0_1_by_resolution.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "86e32ce842832ea953d63e4cf2aaaca4ad38a74e117651601959f34f1aaf9952"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 677,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/01_car_0_1_by_scrisk.csv",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "09938dc2e31a7e15933cf375e821441ff3b53e48e716aa43d30f5f1b8eb1f22f"
+  },
+  {
+    "allocated_bytes": 86016,
+    "bytes": 84230,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/02_car_0_1_by_resolution.png",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "20407154d452776ffc9006fca1bbcc1b5bd1cc3161228d96761cce70bcb70172"
+  },
+  {
+    "allocated_bytes": 106496,
+    "bytes": 105184,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/05_car_2_60_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "3317677d50611adaa7a114d02920742994379fdee62b5dcf4100f507b92ae224"
+  },
+  {
+    "allocated_bytes": 106496,
+    "bytes": 106186,
+    "in_head": false,
+    "in_index": false,
+    "path": ".lavish/primary_event_study_2010_2019_release_dates_v1_assets/03_car_0_1_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio review gallery and copied assets. Existing collection/date-mapping review plans retained.",
+    "sha256": "5703117b6654834aea75fe7205466fe25366553c022e8a0ab0229bf8715c0afc"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 10244,
+    "in_head": false,
+    "in_index": false,
+    "path": "artifacts/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "51e4378972a29d1661813cb5f611c04237940416a15758c7582175117c98a1a5"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6148,
+    "in_head": false,
+    "in_index": false,
+    "path": "artifacts/sec_10k_supply_chain/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "7897ed71906f184fc9b1f7532219ddf865c55f76b89e51ac455e14075dae5860"
+  },
+  {
+    "allocated_bytes": 49152,
+    "bytes": 45254,
+    "in_head": false,
+    "in_index": false,
+    "path": "artifacts/sec_10k_supply_chain/experiments/__pycache__/run_ppmi_svd_benchmark.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "3c9c5f0fe216fe398affebab9337245e95e0908f5d879db10840c0b62925d3df"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6148,
+    "in_head": false,
+    "in_index": false,
+    "path": ".archive/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "5efd477a57a23904eaaf002733046ffb20a807a099e563e86c80db52481a8e9a"
+  },
+  {
+    "allocated_bytes": 70815744,
+    "bytes": 70814272,
+    "in_head": false,
+    "in_index": false,
+    "path": ".archive/post_2019_removed_20260916/outputs/sector_scrisk_rankings_vocab_v2/sector_scrisk_rankings.xlsx.inspect.ndjson",
+    "reason": "Generated spreadsheet inspection dump, not source data or a reproduction input.",
+    "sha256": "f7234e5ba15f3f9f2acf17ada45e69c288e658bb9c83538f3f5a75c4f92c8d15"
+  },
+  {
+    "allocated_bytes": 20480,
+    "bytes": 18921,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/build_primary_event_study_report.py",
+    "reason": "Obsolete deterministic-portfolio PDF/gallery builder; no canonical caller. Fractional rendering and reproduction replace it.",
+    "recoverable_git_blob": "8b9e1be16e77bb694a46b4df40c72d7271684c83",
+    "sha256": "d26392173128cda8551ea44a0a4e10c34291b75e9e310ce42a6665a3b85c543b"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 3442,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/build_portfolio_charts_pdf.py",
+    "reason": "Obsolete deterministic-portfolio PDF/gallery builder; no canonical caller. Fractional rendering and reproduction replace it.",
+    "recoverable_git_blob": "7ee7608e1a94085358521a5dec6b47f76aec7991",
+    "sha256": "d4d76f772dc5045f27d7a0f626107a06d492cea6babe65fcc419c35094085641"
+  },
+  {
+    "allocated_bytes": 24576,
+    "bytes": 24052,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/primary_event_study/__pycache__/core.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "3610026e9b24797510090e62595ff052d8f6275cfa8139f237fc7267117efb46"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 7756,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/primary_event_study/__pycache__/collect_prices.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "a5a3ce9d585bb9f8799f80d11c5626e6c2f86248dae2a916abbe1e8de0063bd3"
+  },
+  {
+    "allocated_bytes": 20480,
+    "bytes": 17311,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/primary_event_study/__pycache__/portfolios.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "272a5dc862b2ab0664e55ff692e1d083d64d57ff4902c1e02891bab03748c05c"
+  },
+  {
+    "allocated_bytes": 49152,
+    "bytes": 48991,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/primary_event_study/__pycache__/test_primary.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "30e378fa918e56b347f38f94aab71443b292274f0392ffcc82f66db856785355"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 3625,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/primary_event_study/__pycache__/dates.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "d90cc36ae055fa496953054c1da7a6631b427d210fe7b4442b53fd4af6bed532"
+  },
+  {
+    "allocated_bytes": 36864,
+    "bytes": 36701,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/primary_event_study/__pycache__/run.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "85f626205591715a154c569de3a698817ec16e509b29a6c85164dc1a1bf119dc"
+  },
+  {
+    "allocated_bytes": 24576,
+    "bytes": 20509,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/primary_event_study/__pycache__/prepare.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "e1f90a059df3c53726dda5d941f969784f2909f77c4e38763d4e074e1410b6f3"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 277,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/primary_event_study/__pycache__/__init__.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "6b322c4e7df28c41cb5c99113c91c461b32fb2802247ee5b74501d4f9f69b81d"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 7260,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/inspect_release_date_pilot.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "6eb7612bf88b0222bd89d87eb0ff4b4dc6e704ba9b2e2b61fd093500add7b961"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 2041,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/verify_historical_code.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "1602f29cbcc630fe827394ed1caa369ab7a2267521554126846c68d2635a690c"
+  },
+  {
+    "allocated_bytes": 16384,
+    "bytes": 12472,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/fractional_reproduction.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "12e47db7444f16d1e05ddd24a643e6e1bf0ae1e926447b8852d30a41ca968b20"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 11415,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/export_fractional_dataset.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "625f9a1839ee6324ca420c0b0c985f284f1be241642e58528694ef5919ec66b8"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 3144,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/check_fractional_raw_inputs.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "c6590cb9d0ffd116bed9788c3bb4aa60c4948668a6b782cb5319ba0a1ce92356"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1925,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/test_modified_portfolio_chart_pdfs.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "e9f5834dbeb766b12b99a0f8c7f452e0dbe515784fb951c9a66ff6a99e1cad3e"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 9262,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/test_modified_portfolio_chart_pdfs.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "bac55169ee16836c6d889bf9a2825046048ed578aabcba0aef24e927a0bcf450"
+  },
+  {
+    "allocated_bytes": 28672,
+    "bytes": 27667,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/build_primary_event_study_report.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "7885a68a49c923c02746e92a05b12e88db727cdfdc896a3f9393dd96d60c69db"
+  },
+  {
+    "allocated_bytes": 36864,
+    "bytes": 34376,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/build_modified_portfolio_chart_pdfs.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "40496edb4c08136e46aea693959c97560823a8ad59ec8b7b86d1d73d67b09525"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 5465,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/fractional_covariance.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "fadb5c5e3da1f73f3ecdf92b76eb81a59af3558cbd959f4894088876300a2c32"
+  },
+  {
+    "allocated_bytes": 36864,
+    "bytes": 35160,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/test_fractional_reproduction.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "5213269a09b6b55ca7e919e8bf33fe4b495cf76d1af50e33e706416e063b40c2"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1412,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/retry_primary_price_responses.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "3eef3859c05c6ac1586f9190db5c3e3c594102f8240bd4e2ff77ee4effd6b828"
+  },
+  {
+    "allocated_bytes": 24576,
+    "bytes": 21179,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/__pycache__/verify_primary_event_study.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "5e8d5b5bd253f7a8cd2f542e5e87ab065e0295ad33d340ea465f058aab8dcbe2"
+  },
+  {
+    "allocated_bytes": 24576,
+    "bytes": 21749,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/provisional_diagnostics/scrisk_zero_audit/__pycache__/scan.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "b67b749048b9974793838992743e4a8f81ca4408fce622e30562c0e9f37630fd"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 12148,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/provisional_diagnostics/scrisk_zero_audit/__pycache__/probe_detail.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "6a2e64c824205a4f3c5f23b023a32b689ab8bd6745323c247fc83de0f9030317"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 9314,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/provisional_diagnostics/scrisk_zero_audit/__pycache__/probe_inflection.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "d64d2d7610a6f594617f45ef56cbff217f9a8a63a964cb3e002820b9ae15387a"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 180,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/provisional_diagnostics/scrisk_zero_audit/__pycache__/__init__.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "6f3c9e2aac8b7ad81874ced84637e786e1c670b8e9c813a8f9123c8b0c8aa862"
+  },
+  {
+    "allocated_bytes": 61440,
+    "bytes": 58389,
+    "in_head": false,
+    "in_index": false,
+    "path": "analysis/provisional_diagnostics/scrisk_zero_audit/__pycache__/test_scrisk_zero_audit.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "5a75a1a27c8c0c0be94f71651e9234e4c8c7cffc42ad6874140be65b141adc5b"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 191,
+    "in_head": false,
+    "in_index": false,
+    "path": ".pytest_cache/CACHEDIR.TAG",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 302,
+    "in_head": false,
+    "in_index": false,
+    "path": ".pytest_cache/README.md",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 37,
+    "in_head": false,
+    "in_index": false,
+    "path": ".pytest_cache/.gitignore",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+  },
+  {
+    "allocated_bytes": 36864,
+    "bytes": 32904,
+    "in_head": false,
+    "in_index": false,
+    "path": ".pytest_cache/v/cache/nodeids",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "cffb9d7095b924bc3a176531da580bc0a2fc3d1a23fa60f9d876a3527fa6b92c"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 409,
+    "in_head": false,
+    "in_index": false,
+    "path": ".pytest_cache/v/cache/lastfailed",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8f12f776bc871fa82453439308daeb06cb24827da6e3c9a4ea1aeb0cd58512e7"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 43,
+    "in_head": false,
+    "in_index": false,
+    "path": ".ruff_cache/CACHEDIR.TAG",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "5953156d7e0c564a427251316eaf26f8870e6483ae2197f916b630e4f93e31ae"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 35,
+    "in_head": false,
+    "in_index": false,
+    "path": ".ruff_cache/.gitignore",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "9e3a60f1e6ec4ae60215c11d54b171392745ec25e9dded433d5bd921363af316"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 500,
+    "in_head": false,
+    "in_index": false,
+    "path": ".ruff_cache/0.16.5/15519252121370481968",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "4347d7993215ced2610ac1766f370b1d3befe6726d08bf483e112ea439975ae7"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 404,
+    "in_head": false,
+    "in_index": false,
+    "path": ".ruff_cache/0.16.5/12330525468553596192",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "f68f5880ac41bb6b1ac69d060503e918178c48ce38077dcddca8b740a813efe8"
+  },
+  {
+    "allocated_bytes": 32768,
+    "bytes": 29077,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/collect_transcript_pilot.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "6bb1f84f36b1477c759bec6f7177990d71c32ff47b74cc75f88f27a06dcd67a6"
+  },
+  {
+    "allocated_bytes": 28672,
+    "bytes": 28414,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_per_industry_quintiles.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "c4099885dd9f059095667094fa1fd4ac7770b1d7d05742390160af723b2b82c7"
+  },
+  {
+    "allocated_bytes": 36864,
+    "bytes": 34332,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_per_group_quintile_charts.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "69faa793fca33ec67812b2dee739c2be38282851e537664cd48893ec821e5a17"
+  },
+  {
+    "allocated_bytes": 45056,
+    "bytes": 42833,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/calculate_carhart_event_returns.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "9a26d8353641fdb022887039dd27b07e63cedcaeeac690234e14de4efdb24299"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 7636,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_study_period.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8fbc50029aebf35647aa4b9c4ef62e0a89fefdecb648d6acbeb69088362c358e"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 7673,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_build_validated_earnings_calls_v1.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "578bf54259234132e7ce4b1065e1cd6ba0c48cd43ccc68c407b7c1e16b98735b"
+  },
+  {
+    "allocated_bytes": 77824,
+    "bytes": 74336,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_scrisk_vocabulary_fix.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "ff0feeeb0197f490ae0011c8cdf13e95603d9c4a3ce74040cdac1fe0f5101762"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 10432,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_validate_date_map_pilot.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "a7e10fc659ffd771f517e2c15c6318e5532ffbcfcc93262769adb23a40134e28"
+  },
+  {
+    "allocated_bytes": 77824,
+    "bytes": 76708,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_calculate_supply_chain_transcript_scores.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8ef3a5aaf81d87914ffcdad1ca82f8d48ded56fff795cdee3628954363688241"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 8785,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/build_universe_pilot_methodology_report.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "5fdf48bbb784dacf79df513cbebbd1dc34ba8b8b8d8d2a1615db42fa1697c3ae"
+  },
+  {
+    "allocated_bytes": 45056,
+    "bytes": 42187,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_within_industry_quintiles.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8913e22bb7bdf50a5e17dda7cf1da85989e63f26e7ed9f4ec0625ecc6667fc49"
+  },
+  {
+    "allocated_bytes": 28672,
+    "bytes": 25064,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/analyze_representative_pilot.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8069b0e020dc42d139c6dadf7d1583c2bce84a99001b89c2bd86016e9befb526"
+  },
+  {
+    "allocated_bytes": 45056,
+    "bytes": 43690,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/calculate_supply_chain_transcript_scores.cpython-313.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "c2d86100fed63ca4e04c64322e190bc5d97d4e1e9afc375af30d850360e3a6cc"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 4237,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_study_period.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "82593f59c12d483af55f163eef2c4f1c6ed81ad61e6c5b3bb18b1330191637a8"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 3417,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_call_date_mapping.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "d3f09c7c8cab1f732201615383617d29b3abe71df26990e448fcca779d8b2cd2"
+  },
+  {
+    "allocated_bytes": 49152,
+    "bytes": 47609,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/calculate_supply_chain_transcript_scores.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8024f07d3336849c51e57e31a1704c61dabfb6ea620645160a3bd0cc4152e749"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 5325,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_historical_universe.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8b6bceb6344f8b7d0e1df7f63c7a5538fc67414ce6e345bd5359e94b93620c00"
+  },
+  {
+    "allocated_bytes": 81920,
+    "bytes": 79521,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/build_validated_earnings_calls_v1.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "c673883ea3d48311993ccc48d1b8b0fc4c3a62a473cecc5ba25321bee8fcc386"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6671,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/join_earnings_event_dates.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "6b806b3bac3305eb8144ebe5ebe80ec43d8a257da3f51750ae5e0b13b6b2fdf4"
+  },
+  {
+    "allocated_bytes": 20480,
+    "bytes": 18118,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_collect_transcript_pilot.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "ea14da202825dc315af6125d6cae10664922e63991908b48c2a049d744f7e7e7"
+  },
+  {
+    "allocated_bytes": 73728,
+    "bytes": 69804,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/build_historical_universe.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "673669663b4e34ebec2398e59a915bdf3efc2900f1f76a353573cf3203fc2a60"
+  },
+  {
+    "allocated_bytes": 69632,
+    "bytes": 66779,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/build_validated_earnings_calls_v1.cpython-313.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "52d5719346cbc5b2ac57b42dc089b8b4196434399a817d88d11db4f6326b1987"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6765,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/build_pilot_universe.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "c1adfc5b43d990a28f093041a3fafabf3320e159d636f134bc882b0eab4c7dbd"
+  },
+  {
+    "allocated_bytes": 28672,
+    "bytes": 25257,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/extract_earnings_call_transcript_data.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "53b4db67440898f1147de602e0b5ab9f4e9dc7148aaf6451c0ba2fcf30dc249f"
+  },
+  {
+    "allocated_bytes": 81920,
+    "bytes": 79702,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/validate_date_map_pilot.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "5896278ef38a0e5e5b12d81760a188d99696ef22d05593c3cdfe6d321537a41e"
+  },
+  {
+    "allocated_bytes": 24576,
+    "bytes": 23816,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_scrisk_vocabulary_fix.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "a228da31deb6e7103d9f4fa46964a72e81614977734619f4f3539d127209c128"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 8376,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/study_period.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "bfd7314ac4af9df9f982f13ccfb2e9a28bd6c4ed7e6adb02296f6abf80e37c75"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 5725,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_collect_transcript_pilot.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "96b5fd62830c4e61050f4434c6f621f09e299f47590fca4ee0de1006d1c30c1e"
+  },
+  {
+    "allocated_bytes": 24576,
+    "bytes": 21945,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/enforce_study_period.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "1faa0e5e4b0460d1a0447f5d1b63caa10621a4cfb464e039413efe92e0fe409f"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 5357,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/verify_active_study_period.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8adb3bf88ea16880d551570b4498bff4348e93945e9b027b93c3b80010efc5e1"
+  },
+  {
+    "allocated_bytes": 16384,
+    "bytes": 13230,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/sample_representative_coverage_pilot.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "a560c171f12357fa424212fc092120144ad2a7e61e5bee879ab7533c39462092"
+  },
+  {
+    "allocated_bytes": 28672,
+    "bytes": 28440,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/build_supply_chain_library.cpython-313.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8e33ba2581fafc0e8d2e58a7f726dfc514eae752b8c14e6e56570eaade301ceb"
+  },
+  {
+    "allocated_bytes": 73728,
+    "bytes": 71394,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/build_call_date_mapping.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "6b40b339658277ddfab38c210cca90c5833de5cf647363800662abd576f6a9d3"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 8595,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/join_supply_chain_scores_to_segments.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "bd27af4c41aab54d006ab61950cb236614a83cdfaccfcd69fcf2fe7ad5dd5158"
+  },
+  {
+    "allocated_bytes": 73728,
+    "bytes": 70397,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/validate_date_map_pilot.cpython-313.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "cef0964ecf843ca8e9849e479e07b304ec7f39c7d20cf521cef7111fb73547de"
+  },
+  {
+    "allocated_bytes": 24576,
+    "bytes": 21486,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/extract_earnings_call_transcript_data.cpython-313.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "f8b5d27f38a727a5600e0bb92703859066e08b084cce177ae910fce308ef831c"
+  },
+  {
+    "allocated_bytes": 32768,
+    "bytes": 29130,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/collect_earnings_event_inputs.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "ee2918e1e4d97d6b7625532a52ee3f77a762b35b009334555026ee8335f84cdd"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6203,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/test_historical_universe.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "4329d3b893339beb3886b4fa05e9ee145b8b9d5284021b37d2326ec9ebcddced"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 7311,
+    "in_head": false,
+    "in_index": false,
+    "path": "__pycache__/study_period.cpython-313.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "e5d5e16fa9dc4aa397202271ecdc6b9042db21a9649b5fc75ac9bc6405a85e0c"
+  },
+  {
+    "allocated_bytes": 16384,
+    "bytes": 16204,
+    "in_head": false,
+    "in_index": false,
+    "path": "scrisk_vocabulary_fix/__pycache__/per_group_quintile_charts.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "cae0c68b664b4bf0aa50d4df5b7243c2316f671fd1b24ffd089fe68d943e0dec"
+  },
+  {
+    "allocated_bytes": 28672,
+    "bytes": 26679,
+    "in_head": false,
+    "in_index": false,
+    "path": "scrisk_vocabulary_fix/__pycache__/per_industry_quintiles.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "81ca7b41760601c432b446d166e512895ef4df24499a8816a74f4ab3b012bac1"
+  },
+  {
+    "allocated_bytes": 32768,
+    "bytes": 31669,
+    "in_head": false,
+    "in_index": false,
+    "path": "scrisk_vocabulary_fix/__pycache__/within_industry_quintiles.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "76acfbdebd23278033d605a25f30c919d40afe78d8ed1d9c66d806c923b9d0ad"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 10244,
+    "in_head": false,
+    "in_index": false,
+    "path": "review/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "b04e3d0c05631868255fbcc9bd4901a13bc309831a3a6356dbb460875d3f0f2f"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 8196,
+    "in_head": false,
+    "in_index": false,
+    "path": "review/alpha_vantage_transcript_audit_20260916/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "48a14aaaf777a3f6b21ddf59c8a56874b042a20b965a1bc43fe18077a27fe5f4"
+  },
+  {
+    "allocated_bytes": 28672,
+    "bytes": 26555,
+    "in_head": false,
+    "in_index": false,
+    "path": "review/alpha_vantage_transcript_audit_20260916/__pycache__/audit_cached_responses.cpython-313.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "c45878be4e596718db481613857d2a0b773f09eab582c91843172a8704876597"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6148,
+    "in_head": false,
+    "in_index": false,
+    "path": "work/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "d7e2617cc44fa4a51324dc587b4735473371f48336f77d93d61af2cdab15f84e"
+  },
+  {
+    "allocated_bytes": 290816,
+    "bytes": 290596,
+    "in_head": false,
+    "in_index": false,
+    "path": "work/matplotlib_config/fontlist-v3.11.0.json",
+    "reason": "Regenerable font cache.",
+    "sha256": "f7e4cb51321fab0b834b2019475808717d3c7e6953152d4bc9ae1af0128c6254"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 8196,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "82e0cb8b70afb73a937f454175bf14a0abe92914d4845c7ad38dadd2c5bb659d"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 191,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/.pytest_cache/CACHEDIR.TAG",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 302,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/.pytest_cache/README.md",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 37,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/.pytest_cache/.gitignore",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1915,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/.pytest_cache/v/cache/nodeids",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "8eafb7bf70d21ca2421ddad2b8b00cc9c6195cb5112ea9ad985f5818a11fe0f8"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 2,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/.pytest_cache/v/cache/lastfailed",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6578,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/corpus/__pycache__/filing_text.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "9a57bf96cb4c32307b6ee946f69df96b188b40762e47784a0d12760b4eac2c5a"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 2128,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/corpus/__pycache__/seeds.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "df0d22df6bcfaa3c72b7d211fedadbd10adcfeb69c8e6f2b78e1eed3507a181d"
+  },
+  {
+    "allocated_bytes": 12288,
+    "bytes": 8279,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/corpus/__pycache__/select_sample.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "3b9b337d845efcad13bd0f46130e3293442221101e13700aaef617b81111e92e"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 2730,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/models/__pycache__/vector_space.cpython-313.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "c7904d53bf279eac77c4b87335b7eb5e143a01442b08230e63e3d3abbb9b437b"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 3119,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/models/__pycache__/vector_space.cpython-314.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "d885634408a6dd9ce9d0ba3451d59da80f743370d4f61d3aa88de033237bfef9"
+  },
+  {
+    "allocated_bytes": 40960,
+    "bytes": 38079,
+    "in_head": false,
+    "in_index": false,
+    "path": "dictionaries/theile_reconstruction_v1/supply_chain/__pycache__/test_supply_chain_reconstruction.cpython-314-pytest-9.1.1.pyc",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "b8dbf5cc05258feedfd566b207e279d38a89035bbbe5037f0697253d1b08feb5"
+  },
+  {
+    "allocated_bytes": 16384,
+    "bytes": 16296,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/README_preview.html",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "ba691dde261303158384ef24191193921c15e3b776af1b5ed32ae41323953356"
+  },
+  {
+    "allocated_bytes": 200704,
+    "bytes": 196885,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/README_preview_results.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "eb419788c9b1db670e9b815c86cc7eae5597dbd6fed1d475f744aaebea7e23c1"
+  },
+  {
+    "allocated_bytes": 286720,
+    "bytes": 285534,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/README_preview.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "411317e977207753b127f6e22ab431e358e2c4a2b6dafb8b7af6b92858cf85fa"
+  },
+  {
+    "allocated_bytes": 290816,
+    "bytes": 289927,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/README_preview_bottom.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "20a0a839e7b0e4d100423370334f3d6e883c25b327e9a951246df7af021f8c04"
+  },
+  {
+    "allocated_bytes": 389120,
+    "bytes": 386982,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/fractional_readme_figures_contact.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "dcee15de548f208470201f198ff3f8d73f2d705677ad3d78a42a3563fbdba556"
+  },
+  {
+    "allocated_bytes": 729088,
+    "bytes": 728696,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_nonzero_contact.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "a5281a90287463a780e296e2e9b29d7c6e65371765d8effa8ee55d7eee341d82"
+  },
+  {
+    "allocated_bytes": 786432,
+    "bytes": 784278,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_fractional_contact.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "ac29553f0bccbec254992c82c7b7f69024abf09072a774b2e9c41d4ba643718e"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 238637,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_3.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 110094,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_2.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 108518,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_1.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+  },
+  {
+    "allocated_bytes": 237568,
+    "bytes": 236393,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_5.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 109826,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_fractional_ties_page_4.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 108837,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_1.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "85b4358be668cff1a8fd5bc5c9d40ddc538b6d9197d4c8b3bc27a2fca2674804"
+  },
+  {
+    "allocated_bytes": 225280,
+    "bytes": 222800,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_3.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "ae7f55165c8670ff4b09089f45ec9f08ae778c297ae24565359ef628cf66318e"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 107792,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_2.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "62554ebc0bad6b80707723d20aec8a7a333e34fc6f610eacff34da889b660f81"
+  },
+  {
+    "allocated_bytes": 225280,
+    "bytes": 223070,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_5.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "60f824f5c7333d80a66158b49cfab46225b6ef097977ae4f7eba0f8998487c71"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 110324,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_chart_sources/portfolio_charts_nonzero_scrisk_page_4.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "6cf3618280ca0068ab1fe5810812f2c967c466a6c23b0f8fa4a8443c13ca6137"
+  },
+  {
+    "allocated_bytes": 135168,
+    "bytes": 134726,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/portfolio_charts/page-1.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "a4afb18a1814e7bb2a2b553d338f8a1f1e99032ff9a076793efe30eeba028a5d"
+  },
+  {
+    "allocated_bytes": 266240,
+    "bytes": 262850,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/portfolio_charts/page-3.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "0714c3201b6a18053d477eca4975e33dd94b69a75d3a3df59d1e6f2d33476449"
+  },
+  {
+    "allocated_bytes": 40960,
+    "bytes": 39567,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/portfolio_charts/page-2.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "9a8135cbfd101934ebaa7afa2a4ef93a5c574faac8d171cc2ac9067df2e658d6"
+  },
+  {
+    "allocated_bytes": 262144,
+    "bytes": 260936,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/portfolio_charts/page-5.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "280f460d4fb165b3893339626c9ae14990599f3c3da16189e0e55c32489d8ee3"
+  },
+  {
+    "allocated_bytes": 135168,
+    "bytes": 135147,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/portfolio_charts/page-4.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "27dffc4867e69586e9d3aba3148b3ee85b1d52136d8c490bfa0ec43abdccc3b1"
+  },
+  {
+    "allocated_bytes": 131072,
+    "bytes": 123053,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_fractional/page-1.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "4e7d6d2495714e845536a42a0cbb66ad85164578c9467d4f2075d6d810595f61"
+  },
+  {
+    "allocated_bytes": 229376,
+    "bytes": 226829,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_fractional/page-3.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "c2e326c70dc45d103766da5a5c482959dd39794aef96680e26bc0440ba93bcb1"
+  },
+  {
+    "allocated_bytes": 131072,
+    "bytes": 127281,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_fractional/page-2.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "152220bdde586edf30f16847639ac14dbefffaf32495b5816ce8775535aae735"
+  },
+  {
+    "allocated_bytes": 229376,
+    "bytes": 226873,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_fractional/page-5.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "48b2e3c06c4b1088e8c38bdf77f56b3f38786b49b2f86e63a6bafa4a90c118bb"
+  },
+  {
+    "allocated_bytes": 131072,
+    "bytes": 123679,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_fractional/page-4.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "5851bd5b1a8887dce92a1ce5b707a9b3db43cc886f6c391547c447e2b13f914b"
+  },
+  {
+    "allocated_bytes": 118784,
+    "bytes": 116185,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_nonzero/page-1.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "0c326f66b2a3c386e3916460a49380ea7f37617d6eeb768f9cca8eedf1ce3574"
+  },
+  {
+    "allocated_bytes": 208896,
+    "bytes": 207762,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_nonzero/page-3.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "64506196a77042d52499fc7dab9e25b66bff922634c86e68b2be275102f84051"
+  },
+  {
+    "allocated_bytes": 122880,
+    "bytes": 119196,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_nonzero/page-2.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "f80ff9689e4a9bf660f20de200e795629b8f177869b887102fc267d77054e49b"
+  },
+  {
+    "allocated_bytes": 208896,
+    "bytes": 206344,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_nonzero/page-5.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "b64e8ad217397d1367f39c90c415a17275be37edb421f19cd0de3f625385866e"
+  },
+  {
+    "allocated_bytes": 118784,
+    "bytes": 118583,
+    "in_head": false,
+    "in_index": false,
+    "path": "tmp/pdfs/modified_nonzero/page-4.png",
+    "reason": "Superseded local figure renders and README preview; final fractional figures retained in docs/fractional_results.",
+    "sha256": "b945f4d58767267ea94836d14d002a03f7bdb5958a36ed7bbf49a02cd410cf61"
+  },
+  {
+    "allocated_bytes": 32768,
+    "bytes": 28676,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "0f99da6e68a9fc24b9e238d6d2ca983a58010ec4c988d1909443afb4cec7e20a"
+  },
+  {
+    "allocated_bytes": 593920,
+    "bytes": 592170,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/portfolio_charts_nonzero_scrisk.pdf",
+    "reason": "Superseded chart variant or duplicate of final fractional PDF; retained canonical PDF and source/hash records.",
+    "sha256": "a695be4f43bf14bcf7382e7e260f76eaaebd2109e1dee6acdf46ef55d4571f9c"
+  },
+  {
+    "allocated_bytes": 634880,
+    "bytes": 633472,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/portfolio_charts_fractional_ties.pdf",
+    "reason": "Superseded chart variant or duplicate of final fractional PDF; retained canonical PDF and source/hash records.",
+    "sha256": "eccca323094764a6e9da01797cb55baf1457c0013c122a3b2772be15a97da7b0"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6148,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/.DS_Store",
+    "reason": "Regenerable OS/Python/test/lint cache; no analytical input.",
+    "sha256": "3872540afe0931045aaa2f40d1330cfac842af0fa175c6f305933ce06648b35e"
+  },
+  {
+    "allocated_bytes": 565248,
+    "bytes": 561439,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/portfolio_charts_original.pdf",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "4a36fef604d7bebf5e4a8c4a917a3e9e0a496a0c770da27a103b95f4dbe84aca"
+  },
+  {
+    "allocated_bytes": 90112,
+    "bytes": 87301,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/01_car_0_1_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "3da4177c0306a13f531812d81f3d57393de007539ac78e7c9edf6064f138a0a2"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 63726,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/04_car_2_60_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "6a8a8ceb411bf2c4e12f97c06a6f664bb0a050e39701bbb16e6e1a481445cee8"
+  },
+  {
+    "allocated_bytes": 90112,
+    "bytes": 87641,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/04_car_2_60_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "c13aa39fd90e20612ad6ee987b5b3c858bb7bb6c230a0fc5b5644329d14cb561"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 64289,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/01_car_0_1_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "63420739aba57c4fc22f14cc7c861740464f6d6bd9af964c1edc956956386c41"
+  },
+  {
+    "allocated_bytes": 245760,
+    "bytes": 242352,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/03_car_0_1_heatmap.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "af4df6c935c45f544790f3a4fe6ff9fa28d431ab6f0b9701806ce9fcf56f4ba7"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 240828,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/05_car_2_60_heatmap.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "18bde5c38fd710f74377b4f9022aed582218b1045a32720ab58a529ad6920962"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 62131,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/02_car_0_1_by_resolution.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "86e32ce842832ea953d63e4cf2aaaca4ad38a74e117651601959f34f1aaf9952"
+  },
+  {
+    "allocated_bytes": 86016,
+    "bytes": 84230,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/02_car_0_1_by_resolution.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "20407154d452776ffc9006fca1bbcc1b5bd1cc3161228d96761cce70bcb70172"
+  },
+  {
+    "allocated_bytes": 106496,
+    "bytes": 105184,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/05_car_2_60_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "3317677d50611adaa7a114d02920742994379fdee62b5dcf4100f507b92ae224"
+  },
+  {
+    "allocated_bytes": 2539520,
+    "bytes": 2536835,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/chart_gallery.html",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "bb3c422bd35e6a9f5665ddcaceb00fc4fee48164c467c46dee828a7796145e9e"
+  },
+  {
+    "allocated_bytes": 106496,
+    "bytes": 106186,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/03_car_0_1_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "5703117b6654834aea75fe7205466fe25366553c022e8a0ab0229bf8715c0afc"
+  },
+  {
+    "allocated_bytes": 90112,
+    "bytes": 88880,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/01_car_0_1_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "b45b2be344d0e107fd61f8130eef663424ac596cdd45319b586807c57e0090ab"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 63844,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/04_car_2_60_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "9934f5a4f6e5107458d3c450c69251085f7ccf80e5279f517a9f52906f3e095f"
+  },
+  {
+    "allocated_bytes": 90112,
+    "bytes": 89315,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/04_car_2_60_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "963cac32f4b1681f860a4a63e9445a8f07da8d5d8036e27f706b0034b05a89e4"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 63635,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/01_car_0_1_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "adf9ac70ac74dd90ef9216f2043a1f8e166b06f5982a879a44c32d4e58041b0d"
+  },
+  {
+    "allocated_bytes": 253952,
+    "bytes": 251968,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/03_car_0_1_heatmap.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "f947c38091ccc3b65cfaec23d235a5c5907c17db94f174e1f793f670000af212"
+  },
+  {
+    "allocated_bytes": 249856,
+    "bytes": 247641,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/05_car_2_60_heatmap.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "e6033e5cc9c8925de7c4d323a6531cb80d701371a5d99f0a4b68c827058d15a0"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 61473,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/02_car_0_1_by_resolution.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "fd5213386f5994edcbd79f14414faf56eae976dd1b165e0240ed6c5857aecb0f"
+  },
+  {
+    "allocated_bytes": 86016,
+    "bytes": 84639,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/02_car_0_1_by_resolution.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "eb194b3cfae1c124c75fcda8f978b33313eda26d3e58ffefa38089aa1a480398"
+  },
+  {
+    "allocated_bytes": 106496,
+    "bytes": 105150,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/05_car_2_60_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "daef25986f3e0f931760af2200e5d767f84af2725202292fe20ac4cdbb9ad28a"
+  },
+  {
+    "allocated_bytes": 106496,
+    "bytes": 106188,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full_before_provider_retry/03_car_0_1_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "11a7a06f260e551d97bb3fe88c933ddbbd2718b24be1eceea8821036a14e02fb"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 108518,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/01_car_0_1_by_scrisk.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1523,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/02_car_0_1_by_resolution.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "2cf5577b8321adc87b6e50933d3551029acac30b36ad939b044aa2733f21925b"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6818,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/03_car_0_1_heatmap.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "b3f5c7fa74afea4b9ee28685d7f9c42babb6cdd90fbecc14a7fff75e71f5e012"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 109826,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/04_car_2_60_by_scrisk.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6891,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/05_car_2_60_heatmap.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "395d11f7a0116040f3abceb9c779f3a9b03367040ec82270ae6faa0aa53d7885"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1525,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/04_car_2_60_by_scrisk.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "eac8873eea91f102be73976874a303d673c0304c94c725f80111d5950a58a64d"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 238637,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/03_car_0_1_heatmap.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+  },
+  {
+    "allocated_bytes": 237568,
+    "bytes": 236393,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/05_car_2_60_heatmap.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+  },
+  {
+    "allocated_bytes": 118784,
+    "bytes": 118086,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/portfolio_comparisons.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "d3e8748845b92ea6d43acf571ecd957458a4173e1d8b394b76c5a7677b98c0a5"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1513,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/01_car_0_1_by_scrisk.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "d070cd2762b50b34adc6cc68581eeb682bc5bca2a2bcfc7596410e7ebf634625"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 110094,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/02_car_0_1_by_resolution.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+  },
+  {
+    "allocated_bytes": 634880,
+    "bytes": 633472,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/portfolio_charts_fractional_ties.pdf",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "c7ad454df524753e8d9fcce3f421897edd0ebb1178a2ebbca48aab9de98a47c9"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 238637,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/pages/portfolio_charts_fractional_ties_page_3.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 110094,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/pages/portfolio_charts_fractional_ties_page_2.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 108518,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/pages/portfolio_charts_fractional_ties_page_1.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+  },
+  {
+    "allocated_bytes": 237568,
+    "bytes": 236393,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/pages/portfolio_charts_fractional_ties_page_5.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 109826,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_figures_v1/pages/portfolio_charts_fractional_ties_page_4.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+  },
+  {
+    "allocated_bytes": 90112,
+    "bytes": 88255,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/01_car_0_1_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "f2074e0770c5c5034704f6ffa9e6eca99cb82cec82defe30feae983bce359e63"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 62238,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/04_car_2_60_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "ccdb5e27c18728da8fb39fd40f49ebff2b69fdbbfceb7e09d07051a468ee6ee0"
+  },
+  {
+    "allocated_bytes": 86016,
+    "bytes": 84364,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/04_car_2_60_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "faa8f027e8b2e2d734103f00d87f5f31a953f95db1fa16ab18c2d088e2b5dfad"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 64637,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/01_car_0_1_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "2d1790af4c40b2a417e5b9506bf2456ae38041e1b034c5eaac063975c53c4f47"
+  },
+  {
+    "allocated_bytes": 229376,
+    "bytes": 227351,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/03_car_0_1_heatmap.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "adc4d8294ce838445d5e9316822cbbaf4b08db818932dfb1c6b1861eec77ee87"
+  },
+  {
+    "allocated_bytes": 217088,
+    "bytes": 214053,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/05_car_2_60_heatmap.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "a9724f77880bc2e0dda898d15f65943946746625eea7d05e9bd2b9c79c476da8"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 61827,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/02_car_0_1_by_resolution.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "fce04cb79527c58d81c144a0a1a092c0655b59e7f3fa46e052074739977eef61"
+  },
+  {
+    "allocated_bytes": 86016,
+    "bytes": 84699,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/02_car_0_1_by_resolution.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "e10b61362dfd310662150504ab7fe73fcb87abc2155a500ef211e0d4fea4b7f5"
+  },
+  {
+    "allocated_bytes": 102400,
+    "bytes": 100816,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/05_car_2_60_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "f2a4d3fe1efe2a4ad460321c3aaf4287d6c8b8fd11602d567a3ca7db7dd2df11"
+  },
+  {
+    "allocated_bytes": 2412544,
+    "bytes": 2409935,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/chart_gallery.html",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "29b2c53bee1cabb1ac680bf37c6c2f5359ac7999a27de83b54293604af98a70a"
+  },
+  {
+    "allocated_bytes": 106496,
+    "bytes": 104510,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/full/03_car_0_1_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "ccec460e5873b9adc89b2e8acd8b9fe1096c3f4a3bac3a033adc8aee1a61805e"
+  },
+  {
+    "allocated_bytes": 81920,
+    "bytes": 81723,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/01_car_0_1_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "08f96cd6be917d735fe5e0d535414908bd699d42a2e884d4bf85bc88cc99e22d"
+  },
+  {
+    "allocated_bytes": 61440,
+    "bytes": 60553,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/04_car_2_60_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "4fe0a4882406e7c26a5a029cd19a3c21a84a709b4ee1c5c691825d2018f1784f"
+  },
+  {
+    "allocated_bytes": 81920,
+    "bytes": 80543,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/04_car_2_60_by_scrisk.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "ce40f2cf8fb7bbf2eeeaff18ff5b5a891d9e28355dca0df63b5bd1a8d9c319b6"
+  },
+  {
+    "allocated_bytes": 65536,
+    "bytes": 62144,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/01_car_0_1_by_scrisk.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "4e3f4b4474db39cd1a0321d1a4a12034f8f68af5b0fc315188466e20918d1e1c"
+  },
+  {
+    "allocated_bytes": 196608,
+    "bytes": 193695,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/03_car_0_1_heatmap.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "a7ab340a3c18b096e8586d93b54d89df8a540b14a7115b4c3a46760b7d094e74"
+  },
+  {
+    "allocated_bytes": 196608,
+    "bytes": 193619,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/05_car_2_60_heatmap.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "26fa552b67f59538de1b92b93446f5f6b7ce67726a1de6535a837863fd208c44"
+  },
+  {
+    "allocated_bytes": 61440,
+    "bytes": 59558,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/02_car_0_1_by_resolution.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "08b0917e10a6de3c25cf239bb40701ee448a8eeba0c84478bfd411045cfd6f18"
+  },
+  {
+    "allocated_bytes": 81920,
+    "bytes": 77990,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/02_car_0_1_by_resolution.png",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "79f7f784d465c06859dcabfc4c6f6b7e63913bd0a307f7b135fed6ced45151d5"
+  },
+  {
+    "allocated_bytes": 102400,
+    "bytes": 98581,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/05_car_2_60_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "527ef77c988896cbc47245f9abefeb35bfcb4a707c91a2fb802c8c328ba24126"
+  },
+  {
+    "allocated_bytes": 98304,
+    "bytes": 98045,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/primary_event_study_2010_2019_v1/pilot_03/chart_preview/03_car_0_1_heatmap.svg",
+    "reason": "Superseded deterministic-portfolio visualization; underlying historical datasets, tables, manifests, audit and methodological records retained.",
+    "sha256": "6d7f1f419b3070ce3740e210431f17e7d1d6da9573ecdb2ed8eab52ea05a8544"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 108518,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/01_car_0_1_by_scrisk.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1523,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/02_car_0_1_by_resolution.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "2cf5577b8321adc87b6e50933d3551029acac30b36ad939b044aa2733f21925b"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6818,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/03_car_0_1_heatmap.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "b3f5c7fa74afea4b9ee28685d7f9c42babb6cdd90fbecc14a7fff75e71f5e012"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 109826,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/04_car_2_60_by_scrisk.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6891,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/05_car_2_60_heatmap.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "395d11f7a0116040f3abceb9c779f3a9b03367040ec82270ae6faa0aa53d7885"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1525,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/04_car_2_60_by_scrisk.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "eac8873eea91f102be73976874a303d673c0304c94c725f80111d5950a58a64d"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 238637,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/03_car_0_1_heatmap.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+  },
+  {
+    "allocated_bytes": 237568,
+    "bytes": 236393,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/05_car_2_60_heatmap.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+  },
+  {
+    "allocated_bytes": 118784,
+    "bytes": 117924,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/portfolio_comparisons.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "2ee7921691267f9e374dc54725bc1e9bf0d775475323525d88db3c26bbb04d81"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1513,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/01_car_0_1_by_scrisk.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "d070cd2762b50b34adc6cc68581eeb682bc5bca2a2bcfc7596410e7ebf634625"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 110094,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/02_car_0_1_by_resolution.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+  },
+  {
+    "allocated_bytes": 634880,
+    "bytes": 633472,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/portfolio_charts_fractional_ties.pdf",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "1987e295ac36525bfb225ac0b2b258760497512511ba0da60664a72c890b7eb0"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 238637,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_3.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 110094,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_2.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 108518,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_1.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+  },
+  {
+    "allocated_bytes": 237568,
+    "bytes": 236393,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_5.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 109826,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_v1/pages/portfolio_charts_fractional_ties_page_4.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 108518,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/01_car_0_1_by_scrisk.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1523,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/02_car_0_1_by_resolution.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "2cf5577b8321adc87b6e50933d3551029acac30b36ad939b044aa2733f21925b"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6818,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/03_car_0_1_heatmap.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "b3f5c7fa74afea4b9ee28685d7f9c42babb6cdd90fbecc14a7fff75e71f5e012"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 109826,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/04_car_2_60_by_scrisk.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+  },
+  {
+    "allocated_bytes": 8192,
+    "bytes": 6891,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/05_car_2_60_heatmap.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "395d11f7a0116040f3abceb9c779f3a9b03367040ec82270ae6faa0aa53d7885"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1525,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/04_car_2_60_by_scrisk.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "eac8873eea91f102be73976874a303d673c0304c94c725f80111d5950a58a64d"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 238637,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/03_car_0_1_heatmap.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+  },
+  {
+    "allocated_bytes": 237568,
+    "bytes": 236393,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/05_car_2_60_heatmap.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+  },
+  {
+    "allocated_bytes": 118784,
+    "bytes": 118086,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/portfolio_comparisons.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "d3e8748845b92ea6d43acf571ecd957458a4173e1d8b394b76c5a7677b98c0a5"
+  },
+  {
+    "allocated_bytes": 4096,
+    "bytes": 1513,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/01_car_0_1_by_scrisk.csv",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "d070cd2762b50b34adc6cc68581eeb682bc5bca2a2bcfc7596410e7ebf634625"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 110094,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/02_car_0_1_by_resolution.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+  },
+  {
+    "allocated_bytes": 634880,
+    "bytes": 633472,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/portfolio_charts_fractional_ties.pdf",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "0962acdf35354024e754fb68e0f015fec2054f73abcaf86bb4d9cc815bb1c2d8"
+  },
+  {
+    "allocated_bytes": 241664,
+    "bytes": 238637,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/pages/portfolio_charts_fractional_ties_page_3.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "8695fdcd536819947d4bf2d75404b3c535bf7fa7fe5bb8c596291244a08d93e9"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 110094,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/pages/portfolio_charts_fractional_ties_page_2.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "017a7d57ec50a4241540a4f313efacda86f31bfbba6a4265b1473b84c4f92dd6"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 108518,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/pages/portfolio_charts_fractional_ties_page_1.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "4e834ed69ca080fbe518444a4792487b6df2b04d5b4f377552dd48d25d656ab3"
+  },
+  {
+    "allocated_bytes": 237568,
+    "bytes": 236393,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/pages/portfolio_charts_fractional_ties_page_5.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "f02579ffc5f65f592b56f17959aae6b68813423d664e1fd26d19f057b0a4072f"
+  },
+  {
+    "allocated_bytes": 110592,
+    "bytes": 109826,
+    "in_head": false,
+    "in_index": false,
+    "path": "outputs/fractional_reproduction_naming_v1/pages/portfolio_charts_fractional_ties_page_4.png",
+    "reason": "Redundant generated fractional outputs; frozen references and final published tables/figures retained; README command regenerates them.",
+    "sha256": "76ac098c0ae460db65e500170738c7105e8913b4243bcb6dfec92fae91165dcb"
+  }
+]

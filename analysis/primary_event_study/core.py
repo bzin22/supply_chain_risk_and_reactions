@@ -14,8 +14,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-import calculate_supply_chain_transcript_scores as scorer
-from calculate_carhart_event_returns import parse_factor_rows
+from scoring import calculate_supply_chain_transcript_scores as scorer
+from analysis.calculate_carhart_event_returns import parse_factor_rows
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'data/final/earnings_call_transcripts_validated_2010_2019_v1.csv'
