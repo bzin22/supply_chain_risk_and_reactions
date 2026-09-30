@@ -1,0 +1,220 @@
+{
+  "allocation": {
+    "annual_sorts": false,
+    "cluster": "historical issuer CIK",
+    "method": "fractional_ties_within_SIC_division_then_nested_Resolution",
+    "nested_parent_weights": true,
+    "pooling": "corresponding portfolios across SIC divisions",
+    "quintiles": 5,
+    "required_call_weight_sum": 1,
+    "retain_zero_scores": true,
+    "uncertainty": "firm-clustered 95% Student-t intervals; joint covariance for shared observations"
+  },
+  "carhart": {
+    "CAR_0_1_days": 2,
+    "CAR_0_1_offsets": [
+      0,
+      1
+    ],
+    "CAR_2_60_days": 59,
+    "CAR_2_60_offsets": [
+      2,
+      60
+    ],
+    "estimation_offsets_inclusive": [
+      -209,
+      -10
+    ],
+    "factor_percent_to_decimal": true,
+    "move_window_for_missing_data": false,
+    "regressors": [
+      "intercept",
+      "Mkt_RF",
+      "SMB",
+      "HML",
+      "Mom"
+    ],
+    "required_complete_observations": 200,
+    "required_rank": 5,
+    "returns": "arithmetic provider split/dividend-adjusted close returns minus RF"
+  },
+  "counts": {
+    "canonical_roster_firms": 379,
+    "screened_universe_firms": 400,
+    "input_calls": 12832,
+    "input_firms": 379,
+    "score_valid_calls": 12713,
+    "eligible_calls": 11950,
+    "eligible_firms": 378,
+    "excluded_calls": 882,
+    "unresolved_mapping_calls": 850
+  },
+  "dictionaries": {
+    "resolution": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/resolution/resolution_terms_conservative_baseline.txt",
+      "sha256": "070b8cdc168a0db96db7f68fef5b0f3e08bde10ec5d7b4161ed882453a57d464",
+      "term_count": 55,
+      "version": "theile_reconstruction_v1"
+    },
+    "risk": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt",
+      "sha256": "c5f9fecb77f52802047aa7094e3999e428c3a53f8c936424d7ab50b9884136b8",
+      "term_count": 161,
+      "version": "theile_reconstruction_v1"
+    },
+    "supply_chain": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/supply_chain/supply_chain_terms.jsonl",
+      "sha256": "d53b93936e0228205fbbb183037acc71094d8c390ac77179f044f8404e14d1ea",
+      "term_count": 254,
+      "version": "theile_reconstruction_v1"
+    }
+  },
+  "event_policy": {
+    "after_hours_shift": false,
+    "confirmed_call_date": "separate independently supported field, not inferred from release",
+    "day_0": "first factor-calendar trading date on/after release",
+    "selected_date": "earnings-release date"
+  },
+  "expected_scaling_sd": {
+    "Resolution": 9.594827658613581e-05,
+    "SCRisk": 0.00046213448135835205
+  },
+  "expected_winsorization_thresholds": [
+    {
+      "variable": "SCRisk",
+      "lower_threshold": "0.0",
+      "upper_threshold": "4.70039101117616",
+      "n": "11950",
+      "clipped_below": "0",
+      "clipped_above": "120",
+      "quantile_method": "linear"
+    },
+    {
+      "variable": "Resolution",
+      "lower_threshold": "0.0",
+      "upper_threshold": "4.617496027155554",
+      "n": "11950",
+      "clipped_below": "0",
+      "clipped_above": "120",
+      "quantile_method": "linear"
+    },
+    {
+      "variable": "CAR_0_1",
+      "lower_threshold": "-0.2019385369322915",
+      "upper_threshold": "0.218121761522388",
+      "n": "11950",
+      "clipped_below": "120",
+      "clipped_above": "120",
+      "quantile_method": "linear"
+    },
+    {
+      "variable": "CAR_2_60",
+      "lower_threshold": "-0.4136841193769919",
+      "upper_threshold": "0.4341840974671133",
+      "n": "11950",
+      "clipped_below": "120",
+      "clipped_above": "120",
+      "quantile_method": "linear"
+    }
+  ],
+  "industry": {
+    "SIC_divisions": [
+      [
+        1,
+        9,
+        "Agriculture/forestry/fishing"
+      ],
+      [
+        10,
+        14,
+        "Mining"
+      ],
+      [
+        15,
+        17,
+        "Construction"
+      ],
+      [
+        20,
+        39,
+        "Manufacturing"
+      ],
+      [
+        40,
+        49,
+        "Transportation/communications/utilities"
+      ],
+      [
+        50,
+        51,
+        "Wholesale"
+      ],
+      [
+        52,
+        59,
+        "Retail"
+      ],
+      [
+        60,
+        67,
+        "Finance/insurance/real estate"
+      ],
+      [
+        70,
+        89,
+        "Services"
+      ],
+      [
+        91,
+        99,
+        "Public administration"
+      ]
+    ],
+    "asof": "latest filing available by observed fiscal-period end",
+    "current_SIC_backfill": false,
+    "source": "historical SEC filing"
+  },
+  "limitations": [
+    "379 is a coverage-defined reporting roster from the frozen 400-company screen, not a new outcome-selected universe",
+    "current public listing and US headquarters introduce survivorship/current-company selection",
+    "offline reproduction starts from derived raw scores and CARs; daily-price and transcript stages require private licensed inputs",
+    "descriptive estimates; reconstructed dictionaries; not causal effects"
+  ],
+  "scaling": {
+    "centered": false,
+    "ddof": 0,
+    "population": "all valid calls before CAR gates"
+  },
+  "scoring": {
+    "Resolution_numerator": "same supply-risk pair if a Resolution occurrence is within 10 tokens of the supply occurrence",
+    "SCRisk_numerator": "sum of weights over every qualifying supply-risk occurrence pair",
+    "denominator": "tokenized transcript length",
+    "matching": "exact canonical terms; approved tokenizer; no inferred inflections",
+    "overlap_and_identical_spans": true,
+    "pair_distance_tokens_max": 10,
+    "supply_weight": "max_cosine"
+  },
+  "study_period": {
+    "first_fiscal_quarter": "2010Q1",
+    "last_fiscal_quarter": "2019Q4"
+  },
+  "version": "hardware_baseline_v1",
+  "winsorization": {
+    "method": "linear",
+    "population": "common eligible sample",
+    "quantiles": [
+      0.01,
+      0.99
+    ]
+  },
+  "date_mapping": {
+    "policy": "one explicit adjudication per call; no annual-calendar proximity or broad-window inference",
+    "ledger": "date_audit.csv.gz",
+    "screened_existing": "existing observed release pair corroborated by historical fiscal-period consistency; not independently reverified release",
+    "unresolved": "blank analysis event and fiscal end; excluded from CAR",
+    "collision": "documented disposition required for every original or final duplicate issuer/event group"
+  }
+}

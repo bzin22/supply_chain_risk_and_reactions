@@ -1,0 +1,138 @@
+{
+  "firms_with_SCRisk_variation": 375,
+  "firms_with_Resolution_variation": 350,
+  "firms_without_SCRisk_variation": 3,
+  "firms_without_Resolution_variation": 28,
+  "pooled_score_sd_ddof0": [
+    0.8810265558896511,
+    0.8303859937093006
+  ],
+  "within_firm_score_rms": [
+    0.7803732723228629,
+    0.7920463799405334
+  ],
+  "two_way_residualized_score_rms": [
+    0.7655344904829203,
+    0.7877008077728901
+  ],
+  "pooled_score_correlation": 0.4291413231980827,
+  "two_way_score_correlation": 0.4023286805362153,
+  "two_way_two_regressor_vif": 1.1931300058891394,
+  "unique_event_dates": 1768,
+  "maximum_calls_same_date": 56,
+  "maximum_firms_same_date": 56,
+  "top_10_dates_call_share": 0.04192468619246862,
+  "calls_on_dates_shared_by_multiple_firms_share": 0.961673640167364,
+  "largest_calendar_quarter_calls": 363,
+  "top_leverage_calls": [
+    {
+      "call_id": "CIK0000103379|VFC|2018Q1",
+      "cik": "0000103379",
+      "event_trading_date": "2018-05-04",
+      "event_calendar_quarter": "2018Q2",
+      "residual_pp": -1.607863713042124e-15,
+      "leverage_full_model": 1.0,
+      "cooks_distance_homoskedastic_diagnostic": null,
+      "cooks_defined": false
+    },
+    {
+      "call_id": "CIK0001196298|NEPH|2018Q2",
+      "cik": "0001196298",
+      "event_trading_date": "2018-08-08",
+      "event_calendar_quarter": "2018Q3",
+      "residual_pp": -1.7288485936270798e-15,
+      "leverage_full_model": 0.9999999999999991,
+      "cooks_distance_homoskedastic_diagnostic": null,
+      "cooks_defined": false
+    },
+    {
+      "call_id": "CIK0000827054|MCHP|2010Q1",
+      "cik": "0000827054",
+      "event_trading_date": "2009-08-06",
+      "event_calendar_quarter": "2009Q3",
+      "residual_pp": -5.177858922050431,
+      "leverage_full_model": 0.5170972738099019,
+      "cooks_distance_homoskedastic_diagnostic": 0.0025983373635121297,
+      "cooks_defined": true
+    },
+    {
+      "call_id": "CIK0001058057|MRVL|2010Q2",
+      "cik": "0001058057",
+      "event_trading_date": "2009-08-27",
+      "event_calendar_quarter": "2009Q3",
+      "residual_pp": 5.177858922050431,
+      "leverage_full_model": 0.5170972738099013,
+      "cooks_distance_homoskedastic_diagnostic": 0.0025983373635121206,
+      "cooks_defined": true
+    },
+    {
+      "call_id": "CIK0000704440|KRMD|2019Q3",
+      "cik": "0000704440",
+      "event_trading_date": "2019-11-05",
+      "event_calendar_quarter": "2019Q4",
+      "residual_pp": 3.4420512900197844,
+      "leverage_full_model": 0.5020753235642397,
+      "cooks_distance_homoskedastic_diagnostic": 0.0010486207087266124,
+      "cooks_defined": true
+    }
+  ],
+  "top_cooks_calls": [
+    {
+      "call_id": "CIK0000763532|LYTS|2019Q2",
+      "cik": "0000763532",
+      "event_trading_date": "2019-01-23",
+      "event_calendar_quarter": "2019Q1",
+      "residual_pp": -21.727584028795963,
+      "leverage_full_model": 0.11389191681643387,
+      "cooks_distance_homoskedastic_diagnostic": 0.002992847307909865,
+      "cooks_defined": true
+    },
+    {
+      "call_id": "CIK0000788920|PDEX|2014Q4",
+      "cik": "0000788920",
+      "event_trading_date": "2014-09-18",
+      "event_calendar_quarter": "2014Q3",
+      "residual_pp": 24.918798571782283,
+      "leverage_full_model": 0.08639333479450789,
+      "cooks_distance_homoskedastic_diagnostic": 0.0028090411201389647,
+      "cooks_defined": true
+    },
+    {
+      "call_id": "CIK0000827054|MCHP|2010Q1",
+      "cik": "0000827054",
+      "event_trading_date": "2009-08-06",
+      "event_calendar_quarter": "2009Q3",
+      "residual_pp": -5.177858922050431,
+      "leverage_full_model": 0.5170972738099019,
+      "cooks_distance_homoskedastic_diagnostic": 0.0025983373635121297,
+      "cooks_defined": true
+    },
+    {
+      "call_id": "CIK0001058057|MRVL|2010Q2",
+      "cik": "0001058057",
+      "event_trading_date": "2009-08-27",
+      "event_calendar_quarter": "2009Q3",
+      "residual_pp": 5.177858922050431,
+      "leverage_full_model": 0.5170972738099013,
+      "cooks_distance_homoskedastic_diagnostic": 0.0025983373635121206,
+      "cooks_defined": true
+    },
+    {
+      "call_id": "CIK0000090896|SKY|2019Q4",
+      "cik": "0000090896",
+      "event_trading_date": "2019-05-21",
+      "event_calendar_quarter": "2019Q2",
+      "residual_pp": 10.946041194659207,
+      "leverage_full_model": 0.25222859658155716,
+      "cooks_distance_homoskedastic_diagnostic": 0.0023621798070718237,
+      "cooks_defined": true
+    }
+  ],
+  "max_abs_firm_first_order_delta_over_se": {
+    "SCRisk_first_order_delta_over_cluster_se": 0.21248135686158817,
+    "Resolution_first_order_delta_over_cluster_se": 0.27795973304578697
+  },
+  "influence_deletions": 0,
+  "cooks_undefined_unit_leverage_calls": 2,
+  "influence_definition": "First-order coefficient change proxy (Xtilde Xtilde)^-1 Xtilde_g u_g, divided by CR1 SE; not exact leave-one-firm-out estimates. Cook distance uses homoskedastic MSE for diagnosis only."
+}

@@ -1,0 +1,13 @@
+{
+  "baseline_input_calls": 12832,
+  "baseline_input_firms": 379,
+  "baseline_eligible_calls": 11950,
+  "baseline_eligible_firms": 378,
+  "baseline_gate_exclusions": 882,
+  "complete_case_exclusions": 0,
+  "common_model_calls": 11950,
+  "retained_fiscal_2019_events_in_2020": 240,
+  "SCRisk_zero_calls_retained": 3326,
+  "Resolution_zero_calls_retained": 9962,
+  "fiscal_2010_excluded_R1": 355
+}

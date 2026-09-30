@@ -1,0 +1,71 @@
+[
+  {
+    "active_module": "scoring/calculate_supply_chain_transcript_scores.py",
+    "active_sha256": "ca3b93b69f47beebcad56f7c6e8e73c22ee8084baa1052ce2fb1387d4d08395b",
+    "excluded_nonprimary_or_cli_definitions": [
+      "_starter_dictionary",
+      "build_risk_vocabulary",
+      "expand_term_inflections",
+      "parse_args",
+      "score_csv"
+    ],
+    "identical_definitions": [
+      "Occurrence",
+      "ScoreResult",
+      "_phrase_occurrences",
+      "assess_transcript_integrity",
+      "build_phrase_index",
+      "build_supply_chain_vocabulary",
+      "calculate_raw_scores",
+      "configure_csv_field_size_limit",
+      "expand_weighted_inflections",
+      "find_indexed_occurrences",
+      "find_occurrences",
+      "load_dictionary",
+      "load_supply_chain_library",
+      "main",
+      "normalize_raw_scores",
+      "normalize_term",
+      "phrase_inflections",
+      "regular_inflections",
+      "spans_within",
+      "tokenize"
+    ],
+    "original_sha256": "69c6a3cd3abaeb4844730807c99d97ad004278f3fa96418ccb12c9620689834e",
+    "original_snapshot": "reproduction/hardware_baseline_v1/method_sources/scorer.py"
+  },
+  {
+    "active_module": "analysis/calculate_carhart_event_returns.py",
+    "active_sha256": "1aee051cfb7b7eb35e3aa30329544125d8d939e50d3972df589c2efbad3009d3",
+    "excluded_nonprimary_or_cli_definitions": [
+      "main"
+    ],
+    "identical_definitions": [
+      "EventResult",
+      "FactorRow",
+      "calculate_event_return",
+      "configure_csv_field_size_limit",
+      "daily_return",
+      "date_text",
+      "event_key",
+      "event_result_dict",
+      "exclude_content_absent_transcripts",
+      "join_scores",
+      "load_events_from_segments",
+      "load_four_factors",
+      "load_prices",
+      "load_supply_chain_scores",
+      "numeric_factor",
+      "numeric_score",
+      "parse_args",
+      "parse_date",
+      "parse_factor_rows",
+      "rank_metrics_by_sector",
+      "read_factor_text",
+      "ticker_value",
+      "write_output"
+    ],
+    "original_sha256": "ef908e2a8379998463f33ac2f55c912df3c308fa18128c1d9ffc4c56a1045eb9",
+    "original_snapshot": "reproduction/hardware_baseline_v1/method_sources/factor_parser.py"
+  }
+]

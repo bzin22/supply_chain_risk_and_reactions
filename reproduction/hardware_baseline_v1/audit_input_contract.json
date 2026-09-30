@@ -1,0 +1,10 @@
+{
+  "private_files": {
+    "artifacts/hardware_fiscal_date_audit_20260930/refit_inputs.csv.gz": "8b3bbc6b79963d5aa8be9d7b63ea6d50d1fb3720244d87e76f469d6d2ba116ec",
+    "artifacts/primary_event_study_2010_2019_v1/sic_history.csv": "c5f449b198b299a646cd64afe115b48b8f2a86d99e3d56b39a5fe75e20c7a69c",
+    "artifacts/hardware_portfolio_us400_2010_2019_v1/supplemental_sic_history.csv": "c48a55c99e31e39134ac07596ff54d2fe35deecb10696a91d5a776886be37962",
+    ".archive/post_2019_removed_20260916/artifacts/earnings_call_supply_chain/ppmi_svd_full_20260910/event_study_inputs/fama_french/fama_french_daily.zip": "2aea744a2d55a2d8fcccc8815aedef587fb16bdc13875c459f022963ca0a9992",
+    ".archive/post_2019_removed_20260916/artifacts/earnings_call_supply_chain/ppmi_svd_full_20260910/event_study_inputs/fama_french/momentum_daily.zip": "f5d7292154d3ab51d8d45544715236a367a45400ad53bc23e40b3efccef19dca"
+  },
+  "input_policy": "Corrected private metadata and scores; valid raw transcript and adjusted-price files stay private. Date decisions are authoritative. Unchanged raw scores may be reused by transcript hash; --rescore verifies them."
+}

@@ -1,0 +1,5 @@
+variable,lower_threshold,upper_threshold,n,clipped_below,clipped_above,quantile_method
+SCRisk,0.0,4.70039101117616,11950,0,120,linear
+Resolution,0.0,4.617496027155554,11950,0,120,linear
+CAR_0_1,-0.2019385369322915,0.218121761522388,11950,120,120,linear
+CAR_2_60,-0.4136841193769919,0.4341840974671133,11950,120,120,linear

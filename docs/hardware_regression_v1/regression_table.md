@@ -1,0 +1,30 @@
+|  | M1 | M2 | M3 (primary) | R1: no FY2010 |
+| --- | --- | --- | --- | --- |
+| SCRisk | -0.6183 | -0.7123 | -0.8227 | -0.8386 |
+| Cluster SE | (0.0830) | (0.0882) | (0.1065) | (0.1098) |
+| 95% t interval | [-0.782, -0.455] | [-0.886, -0.539] | [-1.032, -0.613] | [-1.054, -0.623] |
+| p-value | <0.0001 | <0.0001 | <0.0001 | <0.0001 |
+| Resolution | -- | 0.2326 | 0.2233 | 0.2266 |
+| Cluster SE | -- | (0.1020) | (0.1035) | (0.1066) |
+| 95% t interval | -- | [0.032, 0.433] | [0.020, 0.427] | [0.017, 0.436] |
+| p-value | -- | 0.0232 | 0.0317 | 0.0341 |
+| Intercept | 0.8689 | 0.8628 | Absorbed | Absorbed |
+| Cluster SE | (0.0978) | (0.0978) | -- | -- |
+| 95% t interval | [0.677, 1.061] | [0.671, 1.055] | -- | -- |
+| p-value | <0.0001 | <0.0001 | -- | -- |
+| Calls | 11,950 | 11,950 | 11,950 | 11,595 |
+| Firms / clusters | 378 | 378 | 378 | 378 |
+| Calendar quarters | 43 | 43 | 43 | 40 |
+| Overall R-squared | 0.0054 | 0.0059 | 0.0562 | 0.0563 |
+| Adjusted overall R-sq. | 0.0053 | 0.0057 | 0.0217 | 0.0210 |
+| Two-way partial R-sq. | -- | -- | 0.0064 | 0.0066 |
+| Firm + quarter effects | No | No | Yes | Yes |
+| Inference df (G - 1) | 377 | 377 | 377 | 377 |
+
+Outcome: 100 x winsorized CAR(0,1), in percentage points. Equal call weights; zero scores retained. SCRisk and Resolution retain the baseline uncentered population-SD units and 1%/99% clipping thresholds. R1 excludes adjudicated issuer fiscal year 2010 with the original thresholds.
+
+Firm-clustered CR1 standard errors: G/(G-1) x (N-1)/(N-K), with K counting the full design rank, including fixed effects. Two-sided t inference uses G-1 degrees of freedom. The M3/R1 constant is absorbed in the fixed-effect span. No singleton or influence deletions.
+
+Overall R-squared = 1 - SSE/SST around the outcome mean, including fixed effects. Adjusted overall R-squared uses N-K and N-1 degrees of freedom. Two-way partial R-squared = 1 - SSE/SS of the outcome after removing firm and calendar-quarter effects.
+
+Calendar quarters use event_trading_date; eligible fiscal-2019 events released in 2020 remain. Corrected hardware baseline, common CAR/SIC-eligible sample. Planned analysis following descriptive exploration; not preregistered and not causal.

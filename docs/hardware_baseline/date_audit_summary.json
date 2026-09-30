@@ -1,0 +1,78 @@
+{
+  "CAR_refit": true,
+  "SIC_reassigned": true,
+  "allocation_checks_passed": true,
+  "decision_sha256": "94c49124246d7889189de6b1f221b96b9d1c22912a811e66f32283ccca8aa19a",
+  "dictionaries": {
+    "resolution": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/resolution/resolution_terms_conservative_baseline.txt",
+      "sha256": "070b8cdc168a0db96db7f68fef5b0f3e08bde10ec5d7b4161ed882453a57d464",
+      "term_count": 55,
+      "version": "theile_reconstruction_v1"
+    },
+    "risk": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/risk/risk_terms_reconstructed_full.txt",
+      "sha256": "c5f9fecb77f52802047aa7094e3999e428c3a53f8c936424d7ab50b9884136b8",
+      "term_count": 161,
+      "version": "theile_reconstruction_v1"
+    },
+    "supply_chain": {
+      "matching": "exact library terms; no generated inflections",
+      "path": "dictionaries/theile_reconstruction_v1/supply_chain/supply_chain_terms.jsonl",
+      "sha256": "d53b93936e0228205fbbb183037acc71094d8c390ac77179f044f8404e14d1ea",
+      "term_count": 254,
+      "version": "theile_reconstruction_v1"
+    }
+  },
+  "eligible_calls": 11950,
+  "eligible_firms": 378,
+  "input_calls": 12832,
+  "input_firms": 379,
+  "input_sha256": "8b3bbc6b79963d5aa8be9d7b63ea6d50d1fb3720244d87e76f469d6d2ba116ec",
+  "nested_cell_mass": 478.0,
+  "nested_membership_rows": 65124,
+  "network_requests": 0,
+  "per_call_weight_sum": 1,
+  "quintile_mass": 2390.0,
+  "rescore_verified": false,
+  "risk_membership_rows": 15291,
+  "scaling_sd": {
+    "Resolution": 9.594827658613581e-05,
+    "SCRisk": 0.00046213448135835205
+  },
+  "score_valid_calls": 12713,
+  "prior_commit": "afd1a615123fe8300be082467eee23ea0e44ba2d",
+  "prior_eligible_calls": 12744,
+  "prior_eligible_firms": 379,
+  "audit_status_counts": {
+    "screened_existing": 10693,
+    "verified_existing": 1235,
+    "unresolved": 850,
+    "verified_correction": 54
+  },
+  "unresolved_firms": 234,
+  "corrected_mapping_firms": 8,
+  "corrected_release_dates": 44,
+  "corrected_fiscal_ends": 53,
+  "changed_sic_assignments": 1,
+  "affected_calls": 904,
+  "affected_firms": 235,
+  "removed_from_sample": 795,
+  "added_to_sample": 1,
+  "unchanged_event_CAR_parity": [
+    {
+      "window": "0_1",
+      "unchanged_event_comparisons": 11911,
+      "maximum_absolute_difference": 0.0,
+      "changed_event_refits": 44
+    },
+    {
+      "window": "2_60",
+      "unchanged_event_comparisons": 11910,
+      "maximum_absolute_difference": 0.0,
+      "changed_event_refits": 44
+    }
+  ]
+}

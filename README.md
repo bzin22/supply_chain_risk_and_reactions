@@ -229,6 +229,55 @@ and zero-score allocations by SIC division.
   They do not control for firm characteristics, time effects, or common shocks,
   and they should be interpreted as associations rather than causal effects.
 
+## Hardware portfolio baseline for review
+
+The [hardware baseline](docs/hardware_baseline/README.md) preserves the canonical
+**379-company roster** from the 400-company screen. Following the all-call
+fiscal-date audit, **11,950 calls from 378 firms** enter the common CAR sample.
+There are 12,832 input records and 12,713 valid issuer-period transcripts for
+score scaling. **850 unresolved mappings are excluded**, with a further 28
+CAR-window and 4 historical-SIC exclusions after transcript/date gates.
+
+The audit corrected 54 mappings across 8 firms, including Mercury fiscal 2014
+Q3 (April 29 rather than August 5), documented all 12 original collision groups,
+and refit both CAR windows and historical SIC. It retained the earnings-release
+policy, dictionaries and fractional-allocation method. Among retained calls,
+SCRisk is zero in **27.8326%** and Resolution in **83.3640%**. See
+[coverage by year](docs/hardware_baseline/coverage_by_year.csv),
+[audit and before/after results](docs/hardware_baseline/DATE_AUDIT.md), and the
+[five corrected figures](docs/hardware_baseline/README.md#figures-and-supporting-tables).
+
+```sh
+PYTHON=/path/to/python3.14 ./scripts/reproduce_hardware.sh
+```
+
+The portable command verifies the transcript-free package and reproduces all
+figures/tables. Raw-stage reproduction requires the hashed
+[private inputs](reproduction/hardware_baseline_v1/INPUT_ACCESS.md).
+
+## Hardware regression extension for review
+
+The [planned regression extension](docs/hardware_regression_v1/REPORT.md) uses
+one equal-weighted row per call from the same corrected 11,950-call, 378-firm
+sample. M1 regresses CAR(0,1), in percentage points, on continuous SCRisk; M2
+adds Resolution; primary M3 adds firm and event-calendar quarter fixed effects.
+All models retain baseline score units, zeros and winsorization thresholds,
+with firm-clustered CR1 uncertainty and 95% t intervals.
+
+In M3, SCRisk is **-0.823 percentage points** per baseline score unit
+(SE 0.107; 95% CI [-1.032, -0.613]); Resolution is **+0.223 pp** (SE 0.104).
+The planned fiscal-2010 exclusion gives a SCRisk coefficient of -0.839 pp.
+These are noncausal associations; earnings-news controls are omitted and
+cross-firm residual dependence remains possible. This analysis was planned
+after descriptive exploration, not preregistered.
+
+[Paper-ready table](docs/hardware_regression_v1/regression_table.pdf) ·
+[Full results CSV](docs/hardware_regression_v1/regression_results.csv) ·
+[Code and offline rerun](analysis/hardware_regression_v1/README.md) ·
+[Sample IDs and fingerprints](reproduction/hardware_regression_v1/README.md).
+No new collection, transcript scoring, CAR estimation or baseline chart changes
+are part of this extension.
+
 ## Planned extension: international hardware supply chains
 
 The next extension will focus on hardware companies whose production depends

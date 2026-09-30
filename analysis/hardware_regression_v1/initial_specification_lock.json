@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-09-30T03:25:13.538877+00:00",
+  "plan_sha256": "462d8f887abb2039d9c962704d2d4bd446dd63358d2e8883e02aef4c4c42c45c",
+  "coefficients_inspected": false,
+  "description": "Planned analysis following descriptive exploration; not preregistered",
+  "models": [
+    "M1 intercept + SCRisk",
+    "M2 intercept + SCRisk + Resolution",
+    "M3 primary: SCRisk + Resolution + firm FE + event-calendar quarter FE",
+    "R1: M3 excluding adjudicated fiscal 2010, original thresholds retained"
+  ]
+}

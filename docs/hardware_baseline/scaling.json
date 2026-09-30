@@ -1,0 +1,10 @@
+{
+  "population": 12713,
+  "sd": {
+    "Resolution": 9.594827658613581e-05,
+    "SCRisk": 0.00046213448135835205
+  },
+  "ddof": 0,
+  "centered": false,
+  "before_car_filter": true
+}
