@@ -1,0 +1,20 @@
+[
+  {
+    "Resolution_zero_calls": 10710,
+    "Resolution_zero_share": 0.8346321695760599,
+    "SCRisk_zero_calls": 3553,
+    "SCRisk_zero_share": 0.2768859102244389,
+    "calls": 12832,
+    "firms": 379,
+    "population": "all_valid"
+  },
+  {
+    "Resolution_zero_calls": 10634,
+    "Resolution_zero_share": 0.8344318895166353,
+    "SCRisk_zero_calls": 3525,
+    "SCRisk_zero_share": 0.2766007532956685,
+    "calls": 12744,
+    "firms": 379,
+    "population": "common_eligible"
+  }
+]

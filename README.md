@@ -229,6 +229,34 @@ and zero-score allocations by SIC division.
   They do not control for firm characteristics, time effects, or common shocks,
   and they should be interpreted as associations rather than causal effects.
 
+## Hardware portfolio baseline for review
+
+The [hardware baseline](docs/hardware_baseline/README.md) contains a canonical
+**379-company reporting roster**, drawn from a preserved **400-company screen**.
+There are **12,832 valid calls from 379 firms** for fiscal 2010Q1–2019Q4;
+**12,744 calls from 379 firms** enter the common CAR sample. The 88 excluded
+valid calls fail the sequential release-date (5), CAR (34), or historical-SIC
+(49) gates. The other 21 screened firms have no usable transcripts. Membership
+in the 400-company screen was fixed before returns were analyzed.
+
+Within the retained sample, **27.66% of SCRisk scores and 83.44% of Resolution
+scores are zero**. [Annual coverage](docs/hardware_baseline/coverage_by_year.csv)
+ranges from 676 calls/221 firms in 2010 to 1,480 calls/375 firms in 2019.
+The package includes all five figures, their tables and covariance estimates,
+the combined PDF, and the existing 630 portfolio comparisons.
+
+With Python 3.14.7 installed, reproduce the hardware figures and tables:
+
+```sh
+./scripts/reproduce_hardware.sh
+```
+
+This installs pinned dependencies and verifies a transcript-free derived dataset.
+It recomputes scaling, common eligibility, winsorization, fractional portfolios
+and uncertainty. Recomputing transcript scores and daily-price Carhart fits
+requires the [private inputs](reproduction/hardware_baseline_v1/INPUT_ACCESS.md);
+the actual raw-stage code is included. The baseline is awaiting review.
+
 ## Planned extension: international hardware supply chains
 
 The next extension will focus on hardware companies whose production depends

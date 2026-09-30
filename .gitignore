@@ -48,3 +48,8 @@ artifacts/
 # Private cleanup inventories retained locally, never published.
 provenance/duplicate_attempt_cleanup_20260918/request_manifest_before_cleanup.csv
 provenance/post_2019_removal_20260916/post_2019_observations.csv
+
+# Private hardware screening evidence and credentials
+data/hardware_portfolio/
+.env
+.env.*

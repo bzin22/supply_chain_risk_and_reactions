@@ -1,0 +1,10 @@
+{
+  "before_car_filter": true,
+  "centered": false,
+  "ddof": 0,
+  "population": 12832,
+  "sd": {
+    "Resolution": 9.593026400650779e-05,
+    "SCRisk": 0.0004625081705183261
+  }
+}

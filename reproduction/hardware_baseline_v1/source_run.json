@@ -1,0 +1,26 @@
+{
+  "eligible_calls": 12744,
+  "eligible_firms": 379,
+  "new_valid_transcripts": 21,
+  "roster_firms": 379,
+  "screened_firms": 400,
+  "source_code_hashes": {
+    "analysis/charts/fractional.py": "d8031d0f8024a979140bde6b309a6eab4b12df3981cb02b9375c53066c2a0ba7",
+    "analysis/fractional_covariance.py": "05283f760130aac23f54a2e51f77314b6a6cc8315f2c9ac73f2ca42277ba1358",
+    "analysis/fractional_reproduction.py": "7fecedbdcfa8ff242195e2c776d35b4036455885294d8c4d3338e01d6f211357",
+    "analysis/hardware_us400/__init__.py": "7acdb3c5cc46ea97c94bd00032b63ba17f4041e0e9868ae31d9e8acc35f59684",
+    "analysis/hardware_us400/aliases.py": "b911b6c3a715da74c4b310850788cadce28e757bfbbd78cf381cde9a0ba9e143",
+    "analysis/hardware_us400/data.py": "766e290fd0180efa103678b32a8df3eb1c1ded5c5d5521a4786c99d660c4a6d2",
+    "analysis/hardware_us400/inventory.py": "fbd5478f4ada469c7d9ec0c575c7d9920e5622ecd3f92ee4cd904261b8f886e2",
+    "analysis/hardware_us400/run.py": "95d1a4dc14c2469e3bf7ce520b1150d68ec69b10ba16b2360f5626ab0f2ce173",
+    "analysis/hardware_us400/sic.py": "be2c380bcafa5195de01c3e7884f82ad4f110e9a4fd5b975f336245c159bdda5",
+    "analysis/hardware_us400/support.py": "91221b988e11b17fb8c8dd4b89716a01e368a9597bd8b3932bfb16f8fe79520f",
+    "analysis/primary_event_study/core.py": "fdeb0adf3b441a1608ea9c70f05e047e4b17da065ce76cfbddf5c0cc52b36f25",
+    "scoring/calculate_supply_chain_transcript_scores.py": "69c6a3cd3abaeb4844730807c99d97ad004278f3fa96418ccb12c9620689834e"
+  },
+  "source_date": "2026-09-29",
+  "source_manifest_sha256": "e9c27c1acac8237e38f899af0ffc7c8dd3c2929cb62dc920285998e7480fd01b",
+  "source_rows": 12832,
+  "source_scored_car_sha256": "0c228581a20c18f343c66877c36a5dbbc8cf3ba5c069a222ab678bac53edbb00",
+  "transcript_reuse": 12811
+}
