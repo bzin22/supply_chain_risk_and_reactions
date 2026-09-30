@@ -40,12 +40,14 @@
   },
   "counts": {
     "canonical_roster_firms": 379,
-    "eligible_calls": 12744,
-    "eligible_firms": 379,
-    "excluded_valid_calls": 88,
     "screened_universe_firms": 400,
-    "valid_call_firms": 379,
-    "valid_calls": 12832
+    "input_calls": 12832,
+    "input_firms": 379,
+    "score_valid_calls": 12713,
+    "eligible_calls": 11950,
+    "eligible_firms": 378,
+    "excluded_calls": 882,
+    "unresolved_mapping_calls": 850
   },
   "dictionaries": {
     "resolution": {
@@ -77,45 +79,45 @@
     "selected_date": "earnings-release date"
   },
   "expected_scaling_sd": {
-    "Resolution": 9.593026400650779e-05,
-    "SCRisk": 0.0004625081705183261
+    "Resolution": 9.594827658613581e-05,
+    "SCRisk": 0.00046213448135835205
   },
   "expected_winsorization_thresholds": [
     {
-      "clipped_above": "128",
-      "clipped_below": "0",
+      "variable": "SCRisk",
       "lower_threshold": "0.0",
-      "n": "12744",
-      "quantile_method": "linear",
-      "upper_threshold": "4.77238555927009",
-      "variable": "SCRisk"
-    },
-    {
-      "clipped_above": "128",
+      "upper_threshold": "4.70039101117616",
+      "n": "11950",
       "clipped_below": "0",
+      "clipped_above": "120",
+      "quantile_method": "linear"
+    },
+    {
+      "variable": "Resolution",
       "lower_threshold": "0.0",
-      "n": "12744",
-      "quantile_method": "linear",
-      "upper_threshold": "4.620233059520395",
-      "variable": "Resolution"
+      "upper_threshold": "4.617496027155554",
+      "n": "11950",
+      "clipped_below": "0",
+      "clipped_above": "120",
+      "quantile_method": "linear"
     },
     {
-      "clipped_above": "128",
-      "clipped_below": "128",
-      "lower_threshold": "-0.20555434930990277",
-      "n": "12744",
-      "quantile_method": "linear",
-      "upper_threshold": "0.21975352441539883",
-      "variable": "CAR_0_1"
+      "variable": "CAR_0_1",
+      "lower_threshold": "-0.2019385369322915",
+      "upper_threshold": "0.218121761522388",
+      "n": "11950",
+      "clipped_below": "120",
+      "clipped_above": "120",
+      "quantile_method": "linear"
     },
     {
-      "clipped_above": "128",
-      "clipped_below": "128",
-      "lower_threshold": "-0.41674033686673007",
-      "n": "12744",
-      "quantile_method": "linear",
-      "upper_threshold": "0.4351640838496134",
-      "variable": "CAR_2_60"
+      "variable": "CAR_2_60",
+      "lower_threshold": "-0.4136841193769919",
+      "upper_threshold": "0.4341840974671133",
+      "n": "11950",
+      "clipped_below": "120",
+      "clipped_above": "120",
+      "quantile_method": "linear"
     }
   ],
   "industry": {
@@ -207,5 +209,12 @@
       0.01,
       0.99
     ]
+  },
+  "date_mapping": {
+    "policy": "one explicit adjudication per call; no annual-calendar proximity or broad-window inference",
+    "ledger": "date_audit.csv.gz",
+    "screened_existing": "existing observed release pair corroborated by historical fiscal-period consistency; not independently reverified release",
+    "unresolved": "blank analysis event and fiscal end; excluded from CAR",
+    "collision": "documented disposition required for every original or final duplicate issuer/event group"
   }
 }

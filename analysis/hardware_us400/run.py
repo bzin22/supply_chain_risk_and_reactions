@@ -184,6 +184,14 @@ def run(mode, input_path=None, output=None, pilot_dir=None):
         / ("prepared_pilot_calls.csv" if mode == "pilot" else "prepared_calls.csv")
     )
     rows = read(source)
+    from .release_dates import validate_decisions, apply_decision
+    decision_rows = pd.read_csv(core.ROOT / "reproduction/hardware_baseline_v1/date_audit.csv.gz", dtype=str, keep_default_na=False).to_dict("records")
+    decisions = validate_decisions(rows, decision_rows)
+    rows = [apply_decision(r, decisions[r["call_id"]]) for r in rows]
+    from .rebuild_audited import sic_history
+    history = sic_history(core.ROOT)
+    for r in rows:
+        r.update(core.assign_sic(r, history))
     hashes = code_hashes()
     universe = {r["portfolio_cik"] for r in read(ART / "company_manifest.csv")}
     assert all(
@@ -209,6 +217,7 @@ def run(mode, input_path=None, output=None, pilot_dir=None):
             "CAR_0_1",
             "CAR_2_60",
             "portfolio_eligible",
+            "call_date",
         ],
         float_precision="round_trip",
     ).set_index("call_id")
@@ -263,6 +272,7 @@ def run(mode, input_path=None, output=None, pilot_dir=None):
             r.update(scores)
             r["score_valid"] = (
                 r["validation_status"] == "valid"
+                and r["transcript_identity_period_status"] not in {"invalid_issuer_or_period", "unresolved_period"}
                 and scores["transcript_word_count"] > 0
             )
             r["score_specification"] = (
@@ -379,7 +389,7 @@ def run(mode, input_path=None, output=None, pilot_dir=None):
                         rtol=0,
                         atol=1e-14,
                     )
-                    if r["call_id"] in old.index and pd.notna(
+                    if r["call_id"] in old.index and r["call_date"] == old.loc[r["call_id"], "call_date"] and pd.notna(
                         old.loc[r["call_id"], f"CAR_{w}"]
                     ):
                         delta = r[f"CAR_{w}"] - old.loc[r["call_id"], f"CAR_{w}"]

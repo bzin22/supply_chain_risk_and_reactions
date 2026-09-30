@@ -11,5 +11,5 @@ ENV_DIR="$(CDPATH= cd -- "$ENV_DIR" && pwd)"
 export MPLBACKEND=Agg
 export MPLCONFIGDIR="${MPLCONFIGDIR:-$ENV_DIR/matplotlib}"
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$ENV_DIR/cache}"
-"$ENV_DIR/bin/python" -m pytest -q tests/test_hardware_reproduction.py tests/test_primary.py tests/test_fractional_charts.py tests/test_scoring.py
+"$ENV_DIR/bin/python" -m pytest -q tests/test_hardware_reproduction.py tests/test_hardware_release_dates.py tests/test_primary.py tests/test_fractional_charts.py tests/test_scoring.py
 "$ENV_DIR/bin/python" -m analysis.hardware_reproduction --output "${1:-outputs/hardware_baseline_reproduction_v1}"

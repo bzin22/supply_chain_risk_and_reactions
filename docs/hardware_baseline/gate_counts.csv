@@ -1,7 +1,6 @@
-gate,retained_calls,retained_firms,excluded_at_gate
-valid_transcript,12832,379,0
-release_date,12827,379,5
-price_identity,12827,379,0
-adjusted_prices,12827,379,0
-both_car_windows,12793,379,34
-historical_sic,12744,379,49
+gate,calls_retained,firms_retained,calls_excluded_at_gate
+input,12832,379,0
+valid_issuer_period_transcript,12713,378,119
+resolved_release_mapping,11982,378,731
+both_CAR_windows,11954,378,28
+point_in_time_SIC,11950,378,4

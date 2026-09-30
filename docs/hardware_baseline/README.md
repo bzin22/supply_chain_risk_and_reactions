@@ -1,75 +1,74 @@
 # Hardware portfolio baseline
 
-This is the review baseline for fiscal 2010Q1–2019Q4. The
-[canonical roster](../../reproduction/hardware_baseline_v1/roster_379.csv) has
-379 distinct companies, all represented in the common analysis sample. It is
-the observed-coverage subset of the outcome-blind
-[400-company screen](../../reproduction/hardware_baseline_v1/screened_universe_400.csv),
-not a replacement claim that only 379 companies passed the company screen.
-The 21 other screened companies have no usable calls. Current US headquarters
-and listing requirements introduce survivorship and current-company selection.
-A physical-product business does not by itself establish international supply-chain exposure.
+The canonical roster remains **379 companies**, drawn from the fixed 400-company
+screen. The corrected common CAR sample contains **11,950 calls from 378 firms**.
+The roster was not selected again using returns. Current listing/headquarters
+requirements still introduce survivorship and current-company selection.
 
-## Coverage and exclusions
+The [fiscal-date audit](DATE_AUDIT.md) covers all **12,832 input call records**.
+It corrects 54 mappings across 8 firms and excludes 850 unresolved mappings.
+Of those exclusions, 45 records identify a different issuer/period and another
+74 have unresolved transcript-period conflicts; these 119 also leave the score
+scaling population. The remaining **12,713 valid issuer-period transcripts**
+set the population SD before CAR gates. The 850 unresolved events are not all
+proven erroneous: unsupported or conflicting evidence is held rather than guessed.
 
-Of 16,000 issuer-quarter slots, 12,832 have valid calls: 12,690 reused from the
-frozen corpus, 121 reused from other local caches, and 21 downloaded (Hubbell).
-The remaining slots are 3,149 unavailable, 13 unresolved identity, 3 provider
-technical failures, 2 not applicable, and 1 invalid-content call. See the
-[complete pair ledger](../../reproduction/hardware_baseline_v1/pair_coverage.csv.gz).
-The common sample retains 12,744 calls from 379 firms. Sequential exclusions
-are 5 missing release dates, 34 failures to construct both CAR windows, and
-49 historical-SIC failures. Raw reason flags overlap; use the sequential
-[gate table](gate_counts.csv) when adding exclusions.
+Sequential exclusions are 119 transcript identity/period failures, 731 additional
+release-mapping holds, 28 incomplete CAR windows, and 4 missing historical SIC
+assignments. See [gate counts](gate_counts.csv), [all-call decisions](../../reproduction/hardware_baseline_v1/date_audit.csv.gz),
+and [changed mappings](mapping_changes.csv). AMD has no retained
+calls; it remains in the roster. The 21 additional screened companies were
+already outside that roster.
 
-| Fiscal year | Valid calls | Retained calls | Retained firms | Excluded calls |
+The input provenance remains 12,690 frozen-corpus reuses, 121 other local reuses,
+and 21 previously downloaded Hubbell calls. **This correction used no new Alpha
+Vantage requests and no bulk SEC/IR downloads.** Primary cached filings and
+targeted web evidence support corrections. Source hashes and access instructions
+are in the reproduction package. Raw provider transcripts remain private;
+invalid issuer labels do not justify destroying valid underlying transcript text.
+
+## Coverage
+
+| Issuer fiscal year | Mapped calls | Retained calls | Retained firms | Unresolved by provider year |
 | --- | ---: | ---: | ---: | ---: |
-| 2010 | 714 | 676 | 221 | 38 |
-| 2011 | 761 | 743 | 278 | 18 |
-| 2012 | 1246 | 1240 | 334 | 6 |
-| 2013 | 1353 | 1347 | 346 | 6 |
-| 2014 | 1447 | 1443 | 367 | 4 |
-| 2015 | 1451 | 1444 | 368 | 7 |
-| 2016 | 1430 | 1427 | 361 | 3 |
-| 2017 | 1461 | 1461 | 370 | 0 |
-| 2018 | 1485 | 1483 | 374 | 2 |
-| 2019 | 1484 | 1480 | 375 | 4 |
+| 2010 | 357 | 355 | 123 | 357 |
+| 2011 | 669 | 663 | 257 | 92 |
+| 2012 | 1194 | 1189 | 326 | 54 |
+| 2013 | 1311 | 1308 | 341 | 40 |
+| 2014 | 1401 | 1397 | 361 | 46 |
+| 2015 | 1401 | 1397 | 362 | 50 |
+| 2016 | 1362 | 1360 | 353 | 68 |
+| 2017 | 1411 | 1411 | 363 | 50 |
+| 2018 | 1439 | 1437 | 367 | 46 |
+| 2019 | 1437 | 1433 | 368 | 47 |
 
-Year means fiscal-quarter year, not event-calendar year; fiscal 2019 calls can
-have 2020 release dates. Coverage differs by year, and the first/last observed
-quarter in the roster does not imply complete coverage between those endpoints.
-The [annual CSV](coverage_by_year.csv) also reports valid firms and zero shares.
-Among all valid calls, SCRisk is zero in 3,553 (27.6886%) and Resolution in
-10,710 (83.4632%). Among retained calls, these counts are 3,525 (27.6601%) and
-10,634 (83.4432%). Zeros remain in the fractional sorts.
+Provider labels remain stable source identifiers. `issuer_fiscal_period_label`
+contains the adjudicated period; unresolved labels are blank, and VFC's 2018
+transition is `2018T`. The [annual CSV](coverage_by_year.csv) separates these
+populations. Fiscal 2019 releases can occur in 2020. Endpoints do not imply
+complete intervening coverage. Weak historical-period evidence particularly
+reduces 2010 coverage; this is a material limitation, not evidence of missing calls.
+
+SCRisk is zero for **3,522 / 12,713 valid-score calls (27.7039%)** and
+**3,326 / 11,950 retained calls (27.8326%)**. Resolution is zero for
+**10,604 valid-score calls (83.4107%)** and **9,962 retained calls (83.3640%)**.
+Zeros remain in the fractional sorts.
 
 ## Reproduce
 
-From a checkout with Python 3.14.7 and `venv`/`pip`:
+With Python 3.14.7:
 
 ```sh
-./scripts/reproduce_hardware.sh
-# If Python is not on PATH:
-PYTHON=/path/to/python3.14 ./scripts/reproduce_hardware.sh outputs/hardware_review
+PYTHON=/path/to/python3.14 ./scripts/reproduce_hardware.sh
 ```
 
-Installation uses the package index; analysis itself is offline and needs no API
-key. The script uses an isolated `.venv-hardware`, runs the relevant tests, then
-writes into a new output directory (never overwrites). After installation:
-
-```sh
-.venv-hardware/bin/python -m analysis.hardware_reproduction --output outputs/hardware_review_again
-```
-
-The command verifies SHA-256 hashes, recomputes score scaling from all 12,832
-valid raw scores, reconstructs eligibility, then reruns winsorization,
-fractional allocation, covariance, confidence intervals and all 630 existing
-portfolio comparisons. It numerically checks 13 generated reference tables
-and exports five PNGs and a five-page PDF. `verification.json` records the
-result. It starts from derived raw scores and CARs, so it does **not** tokenize
-private transcripts or refit daily-price regressions in the portable run.
-[Input access and raw-stage commands](../../reproduction/hardware_baseline_v1/INPUT_ACCESS.md)
-document those prerequisites without redistributing them.
+The command installs pinned dependencies, runs relevant tests, verifies hashes
+and all-call date decisions, recomputes scaling/eligibility/winsorization and
+fractional allocation, and checks 13 reference tables. It exports all five PNGs,
+the combined PDF and 630 pairwise comparisons. After installation, analysis is
+offline and requires no credentials. The portable run starts from derived raw
+scores and refitted CARs. [Private-input instructions](../../reproduction/hardware_baseline_v1/INPUT_ACCESS.md)
+provide the local-only raw scoring/CAR/SIC reproduction command.
 
 ## Methods
 

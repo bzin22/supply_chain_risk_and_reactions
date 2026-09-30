@@ -46,10 +46,21 @@ def load_package(package=PACKAGE):
                      keep_default_na=False,float_precision='round_trip',low_memory=False)
     if data.columns.tolist()!=schema['columns'] or not data.call_id.is_unique:
         raise ValueError('Unexpected call schema or duplicate stable identifiers')
-    if len(data)!=config['counts']['valid_calls'] or data.cik.nunique()!=config['counts']['valid_call_firms']:
+    if len(data)!=config['counts']['input_calls'] or data.cik.nunique()!=config['counts']['input_firms']:
         raise ValueError('Call/firm coverage changed')
     if data.duplicated(['portfolio_cik','quarter_label']).any() or not data.quarter_label.str.fullmatch(r'201[0-9]Q[1-4]').all():
         raise ValueError('Duplicate issuer-quarter or quarter outside the study')
+    from analysis.hardware_us400.release_dates import validate_decisions, ACCEPTED
+    audit=pd.read_csv(package/'date_audit.csv.gz',dtype=str,keep_default_na=False)
+    decisions=validate_decisions(data.to_dict('records'),audit.to_dict('records'))
+    for r in data.to_dict('records'):
+        d=decisions[r['call_id']]
+        if r['date_audit_status']!=d['status'] or r['call_date']!=d['release_date'] or r['date_fiscal_date_ending']!=d['fiscal_period_end']:
+            raise ValueError('Canonical data differs from date adjudication')
+        if d['status'] not in ACCEPTED and (r['portfolio_eligible'] or r['call_date']):
+            raise ValueError('Unresolved mapping entered CAR analysis')
+        if d['transcript_status'] in {'invalid_issuer_or_period','unresolved_period'} and r['score_valid']:
+            raise ValueError('Invalid issuer-period included in score population')
     for col in schema['boolean_columns']:
         # Legacy disagreement flags can be absent for new supplemental calls.
         if col in ['reported_date_source_disagreement','release_date_differs_from_confirmed_call']:
@@ -91,7 +102,7 @@ def load_package(package=PACKAGE):
     if len(roster)!=379 or roster.portfolio_cik.nunique()!=379:
         raise ValueError('Canonical reporting roster changed')
     sample=data.loc[eligible].copy().reset_index(drop=True)
-    if len(sample)!=config['counts']['eligible_calls'] or set(sample.portfolio_cik)!=set(roster.portfolio_cik):
+    if len(sample)!=config['counts']['eligible_calls'] or sample.portfolio_cik.nunique()!=config['counts']['eligible_firms'] or not set(sample.portfolio_cik).issubset(set(roster.portfolio_cik)):
         raise ValueError('Analysis representation differs from canonical roster')
     for name in ['SCRisk','Resolution','CAR_0_1','CAR_2_60']:
         sample[name]=pd.to_numeric(sample[name],errors='raise')
@@ -117,7 +128,7 @@ def reproduce(package,output):
     result=render(output,sample)
     expected=list(REFERENCE.glob('[0-9][0-9]_*.csv'))+[REFERENCE/'portfolio_comparisons.csv',REFERENCE/'winsorization_thresholds.csv',REFERENCE/'zero_tie_audit.csv']
     for p in expected:compare_table(output/p.name,p)
-    summary={'valid_calls':len(data),'valid_call_firms':int(data.portfolio_cik.nunique()),
+    summary={'input_calls':len(data),'input_firms':int(data.portfolio_cik.nunique()),'score_valid_calls':int(data.score_valid.sum()),'date_audit_verified':True,
              'canonical_roster_firms':379,'screened_universe_firms':400,**result,
              'reference_tables_verified':len(expected),'five_panels_verified':5,
              'scaling_recomputed':True,'common_eligibility_recomputed':True,

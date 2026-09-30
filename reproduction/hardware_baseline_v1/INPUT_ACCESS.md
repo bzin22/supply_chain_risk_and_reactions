@@ -1,60 +1,41 @@
-# Private inputs and full raw-stage reproduction
+# Private inputs and raw-stage reproduction
 
-The portable command needs no provider credentials or private files. It
-reproduces figures and tables from derived scores/CARs, not the raw-data stages.
-The source code for scoring, issuer-quarter reconciliation, dates, historical
-SIC, price identity and Carhart fitting is included under
-`analysis/hardware_us400/`, `analysis/primary_event_study/` and `scoring/`.
+The portable command uses transcript-free derived raw scores and refitted CARs.
+To independently rescore and refit, obtain the private source vintages from the
+study maintainer through an authorized transfer, subject to provider rights.
+Restore relative paths in `private_inputs.json` beneath a private root. Verify
+SHA-256; the inventory is not redistribution permission. Preserve raw JSON
+transcripts, adjusted-close responses, historical SIC and French factor archives.
+No credential is needed for the cached-data route below.
 
-To repeat raw scoring and regression, an authorized researcher needs the
-original frozen corpus and licensed provider evidence. Obtain the exact source
-vintages from the study maintainer through an authorized private transfer,
-subject to provider access rights. Restore repository-relative paths listed in
-`private_inputs.json`, and verify SHA-256 before using them. This manifest is a
-content inventory, not permission to redistribute. It includes the frozen v1
-transcript CSV, supplemental transcript JSONs, enriched prepared-call manifest,
-company/security manifests, historical SIC and ticker caches, adjusted-price
-responses, release/call-date evidence, factor archives and previous-run parity
-reference. Auxiliary evidence hashes do not imply that public websites retain
-the same historic content today.
-
-Alpha Vantage transcripts, EARNINGS dates and TIME_SERIES_DAILY_ADJUSTED prices
-require an account with the relevant endpoint entitlements. Keep
-`ALPHAVANTAGE_API_KEY` only in the process environment; never write it into Git.
-For fresh collection, reconcile issuer/fiscal-quarter caches and predecessor
-aliases with `python -m analysis.hardware_us400.inventory` before invoking
-`analysis.hardware_us400.data`. Collection is separate from the portable route
-and can incur API usage. Do not replace frozen inputs with newly fetched
-vintages: revisions will change hashes and may change estimates. Factor inputs
-are the daily Fama–French three factors and momentum archives from the
-[Kenneth French Data Library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html);
-retain the exact archived vintages listed in the private manifest.
-
-With the private input tree restored and dependencies installed, rerun the
-bounded pilot using the final enriched input (this performs fresh scoring and
-CAR fitting):
+The corrected private `artifacts/hardware_fiscal_date_audit_20260930/refit_inputs.csv.gz`
+contains stable identity/raw-score references and price hashes, without obsolete
+regressions. `audit_input_contract.json` pins this input, SIC tables and factor
+archives. The public all-call date ledger is authoritative. Frozen/provider
+metadata cannot bypass it. Price payload hashes and transcript content hashes
+are checked during use; `--rescore` recomputes exact dictionary scores and
+compares them with retained raw scores.
 
 ```sh
-python -m analysis.hardware_us400.run pilot \
-  --input data/final/hardware_portfolio_us400_2010_2019_v1/prepared_enriched_calls.csv \
-  --output outputs/hardware_private_review/pilot
+python -m analysis.hardware_us400.rebuild_audited   --private-root /path/to/private-tree   --output /path/to/new-pilot --pilot --rescore
+# Inspect the pilot before the full run.
+python -m analysis.hardware_us400.rebuild_audited   --private-root /path/to/private-tree   --output /path/to/new-full --rescore
 ```
 
-Inspect the pilot's score/CAR parity tables, event-date audits, exclusions and
-figures. Only after inspection, place a short `INSPECTED.md` in that pilot
-output directory; the full driver requires this marker, matching source-code
-hashes and a passed pilot. Then run:
+Omitting `--rescore` reuses the unchanged hash-linked raw scores, but still
+recomputes scaling, all CARs, historical SIC, eligibility and fractional results.
+All outputs must be new directories. There are no network requests. Private
+intermediate outputs include provenance paths and must stay outside Git; only
+the public schema allowlist is exported in `calls.csv.gz`.
+
+For diagnostic screening of any call dataset against the local caches:
 
 ```sh
-python -m analysis.hardware_us400.run full \
-  --input data/final/hardware_portfolio_us400_2010_2019_v1/prepared_enriched_calls.csv \
-  --pilot-dir outputs/hardware_private_review/pilot \
-  --output outputs/hardware_private_review/full
+python -m analysis.hardware_us400.audit   --private-root /path/to/private-tree   --calls reproduction/hardware_baseline_v1/calls.csv.gz   --output /path/to/new-diagnostics.csv
 ```
 
-Outputs must be new directories. The original frozen corpus is hash-checked
-and never overwritten. Raw transcripts, daily prices, factors and caches stay
-in ignored paths. The three `scripts/*hardware_us400*` helpers preserve the
-source-specific history/date enrichment operations; the restored enriched
-manifest already incorporates these decisions. They are not needed by the
-offline route or to rescore/refit from the restored final manifest.
+Diagnostics are flags, not date evidence or automatic adjudications. Fiscal
+ends and release dates need explicit source matching. Historical SEC `fy`
+conventions, comparative dates and forecast mentions require review. The code
+never guesses a release from a quarter label or date window. Fresh collection
+is a separate authorized task; keep any Alpha Vantage key in the environment.

@@ -1,26 +1,25 @@
 # Portable hardware inputs
 
-`calls.csv.gz` contains one row per valid call, including the 88 excluded calls.
-`schema.json` gives ordered columns, types, units and missing-value semantics.
-Read CIKs as strings (leading zeros matter). `call_id` is the stable call key;
-`portfolio_cik` identifies the current roster company, while `cik`,
-`historical_ticker` and `security_id` identify its historical issuer/security.
-`quarter_label` is fiscal year/quarter; event dates can cross calendar years.
+`calls.csv.gz` contains all 12,832 input call records, including exclusions.
+The common sample is 11,950 calls from 378 firms; the canonical roster stays at
+379. `score_valid` is false for 119 issuer/period transcript conflicts.
+CIKs are strings. `call_id` and `provider_quarter_label` are stable source keys;
+`issuer_fiscal_period_label` is the adjudicated fiscal period (including `2018T`
+for VF's transition), blank when unresolved. Do not interpret a provider label
+as independently verified issuer history. `quarter_label` is retained as the
+legacy provider identifier for compatibility. Dates are earnings releases.
 
-`roster_379.csv` is the canonical reporting roster. It records historical CIKs,
-ticker aliases, primary physical products, classification and headquarters
-sources, listing-history evidence, company-screen date, requested study period,
-and first/last valid and eligible quarters and events. Those endpoints describe
-observed coverage, not uninterrupted eligibility. `pair_coverage.csv.gz` records
-every requested issuer-quarter, including holes. `security_history.csv` supplies
-historical ticker/CIK validity intervals and mapping evidence. Provider history
-starts are security-history evidence, never founding dates. Headquarters and
-product classifications are current as of the screen, not year-by-year claims.
-`screened_universe_400.csv` preserves the fixed pre-analysis screen and includes
-the 21 firms with no usable calls. No share classes are counted as extra firms.
+`date_audit.csv.gz` covers every input once, with source/evidence and explicit
+unresolved exclusions. `collision_adjudications.csv` documents all original
+shared events. `schema.json` defines types, units and missing cells.
+`roster_379.csv` and `screened_universe_400.csv` preserve fixed membership and
+classification sources; observed coverage fields reflect the corrected sample.
+`pair_coverage.csv.gz` retains the 16,000 requested slots and collection
+provenance, with new audit and analysis flags. `security_history.csv` documents
+historical ticker/CIK/security mappings. Current physical-product/headquarters
+classification does not establish historical international supply-chain exposure.
 
-`manifest.json` hashes public inputs, code, dictionaries and reference outputs.
-`source_run.json` identifies the private source run; `private_inputs.json` lists
-relative paths and hashes only. It contains no raw payloads. See
-[access instructions](INPUT_ACCESS.md) and the
-[results and methods](../../docs/hardware_baseline/README.md).
+`manifest.json` hashes public files; `audit_input_contract.json` and
+`private_inputs.json` identify private prerequisites without redistributing them.
+See [input access](INPUT_ACCESS.md), [results](../../docs/hardware_baseline/README.md),
+and [audit scope and limitations](../../docs/hardware_baseline/DATE_AUDIT.md).

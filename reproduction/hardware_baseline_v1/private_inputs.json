@@ -69600,9 +69600,154 @@
     "sha256": "d9a03968b78b0f1e55a8821a25ea997bb9b241d8fac9697cac04ccf6ebfebee3"
   },
   {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/refit_inputs.csv.gz",
+    "sha256": "8b3bbc6b79963d5aa8be9d7b63ea6d50d1fb3720244d87e76f469d6d2ba116ec",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/c3.json",
+    "sha256": "737f32d136e7325faa58439a0edaa67a87a513c5e3d0032616f86ec636795e78",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/collisions_1.json",
+    "sha256": "e0758f7b1a09792ad55ab28327b774167879a59b0186a8903d52183d8e03303e",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/collisions_2.json",
+    "sha256": "ea311ffa063943c5e02ad840f532501bec877c7fe4234a9ec584dbe1a10669a8",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/fiscal_1.json",
+    "sha256": "c7d7b2d4afc107352ce5a814369900fe8b273b7494d4b716cef630d53402f1fb",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_2010.json",
+    "sha256": "02572876652a20a755b019b199d36aadd9c527848ab722c0276eb82ae58675c8",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_2010q3.json",
+    "sha256": "3766d7eb582bc2258666fa84419bd313ddd37b23f6d4b0baad1733b6ec1f6b09",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_2012_14.json",
+    "sha256": "4782d601483874a09abf35396c0afd40f708f96f16b7c55284951da2423ee155",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_2015.json",
+    "sha256": "a3814afe688ad593966a944c0fc124d92abc0ded45c44a65f9685585db369c6a",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_2016.json",
+    "sha256": "d06d295eaf2812d8a74556a4e3cdffe1abaae7f3463ae200adc9189819ca04e3",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_2017.json",
+    "sha256": "8e4226a5d341ae2ddaae7014b26c44fa1a41a33450c80f3c9c82374018dccf11",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_2018.json",
+    "sha256": "97f72b533d0943e084537d8e4a6e5c21f9239bbbd8ce759406d8438e88ceefc2",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_2019.json",
+    "sha256": "fb6b99549e30d1f73072051852f171cb748a205bfbe2d0fe121eb80d01bcd2f5",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_early.json",
+    "sha256": "8695ac9e7c94042abfe82485b43b05527652870c42f00e13a400cf0d9b7f529a",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_final.json",
+    "sha256": "c94f3be2fbcddc0566b41fa996532bcaaf8500a93f73b097aa3bfdf4860e6e94",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_missing.json",
+    "sha256": "89e402bce7bac21e1f8a853c3484693b0c57a9e7b480e42142fbce9326124409",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_missing_2.json",
+    "sha256": "d4ad8cc02adec8a9d11e7fd33094cde0084f0f675c9b18899eb6b90f714ff9f5",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_opens_1.json",
+    "sha256": "e1c9872365ac942088f48831aefd5cee99f07b2dd08495904e4e009701145917",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/mrcy_opens_2.json",
+    "sha256": "d920a82c4d84adde6ba80911da55795c64323d07bcd05e2c71efd6eaee24fb41",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/osk_2010_13.json",
+    "sha256": "229acdc3e6e5fe4b1509d1c3fe814c0636022295536afa9f98c372a2b0f0bd83",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/pke_collisions.json",
+    "sha256": "6aa8b2c64bc38e4eb5585f7efbe294211fbb7853bb460a2d00f219d37d4d55f8",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/primary_final.json",
+    "sha256": "64ba77b3ed612ad27956ac0f3be54219c78f6354f77adb56b7eed74575b70100",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/pvh.json",
+    "sha256": "1e9c468b68c969eb900aaa4a82a5b203514682a6749715c411cd250534033aa5",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/pvh2.json",
+    "sha256": "0b939b9a2511ddee0984886e2e3f6ab428636d171c5c170b67f403da79219d56",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_fiscal_date_audit_20260930/web/search.json",
+    "sha256": "efbb069c761b2429e905aa67a7e5d9559d477cec40a34395aab6e3c3ae1a24b5",
+    "redistributed": false
+  },
+  {
     "path": "artifacts/hardware_portfolio_2010_2019_v1/api_requests.jsonl",
     "redistributed": false,
     "sha256": "453593b9b2f2a8dc9adc685ddbc9cbee61c9d81260115ac3d11989779400f128"
+  },
+  {
+    "path": "artifacts/hardware_portfolio_2010_2019_v1/final_company_manifest.csv",
+    "sha256": "b557424771c575c69bd3ea02f49d6200514ecc71a4c08caf2023540ea3388b1f",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_portfolio_2010_2019_v1/final_pair_manifest.csv",
+    "sha256": "c36bf184d6ba719e3ea1395cdae946c760ee79d2ce787097dec3f1e7026b0e26",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_portfolio_2010_2019_v1/pair_manifest.csv",
+    "sha256": "e6cab02c28aeb60ce5209c9a2de4bad22feb4e6f621c1d67939e09afcdfb8d4b",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_portfolio_2010_2019_v1/pair_manifest_reviewed.csv",
+    "sha256": "24086592bf237f0ab2c892c7fd8acdcea3cddf76d5dc8c377b0cd4c47a4a29db",
+    "redistributed": false
   },
   {
     "path": "artifacts/hardware_portfolio_2010_2019_v1/raw/EARNINGS_AAON__20260929T230712.344331+0000.json",
@@ -69915,6 +70060,16 @@
     "sha256": "6b88dcb9608414927b6dc7119b4ca2f464309561acca654ccfc5dbf65d40c38f"
   },
   {
+    "path": "artifacts/hardware_portfolio_us400_2010_2019_v1/final_company_manifest.csv",
+    "sha256": "1f448da4263eaaeb17d5449bf4e5c83cf4cea8d30cab659be2c4269b46aabac5",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_portfolio_us400_2010_2019_v1/final_pair_manifest.csv",
+    "sha256": "dd69127952d75cfa77e65132e7e54685f1d4bc6749ee6dcbcd758e040f377af0",
+    "redistributed": false
+  },
+  {
     "path": "artifacts/hardware_portfolio_us400_2010_2019_v1/ir_dates/01-24-13.html",
     "redistributed": false,
     "sha256": "c37a0e925c0ef707abe90609545a938650a4b2ceb7d6a3f3cde98283a65f0668"
@@ -70023,6 +70178,16 @@
     "path": "artifacts/hardware_portfolio_us400_2010_2019_v1/ir_dates/hubbell_archive.html",
     "redistributed": false,
     "sha256": "8181c217814fbd887b1340f9a48acacf1065db020e27b3df218e29635d5bd5b4"
+  },
+  {
+    "path": "artifacts/hardware_portfolio_us400_2010_2019_v1/pair_manifest.csv",
+    "sha256": "df7d1f468ffa793018b5ad2fb801d148f3c7e2142f1cbcbf4adf93959673108b",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/hardware_portfolio_us400_2010_2019_v1/pair_manifest_reviewed.csv",
+    "sha256": "4b0cf0cf4a371d234ce65e42dbe7b2345e6635b24afa71a69b7acd8004f7441f",
+    "redistributed": false
   },
   {
     "path": "artifacts/hardware_portfolio_us400_2010_2019_v1/raw/EARNINGS_AGCO__20260930T000105.150795+0000.json",
@@ -70285,214 +70450,229 @@
     "sha256": "d445ea74dbceed0c5787b7f2db9f39153049acf33b66c4aba417c2a3696e397c"
   },
   {
+    "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2009q1/sub.txt",
+    "sha256": "b53624102baaa76d94e71977d4cec381020bd9334dbb406e212b760b580491d9",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2009q2/sub.txt",
+    "sha256": "267fdc865ab4a568e1d8329f7311cd6821444edbc4f4582310bf34cc71761175",
+    "redistributed": false
+  },
+  {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2009q3/sub.txt",
-    "redistributed": false,
-    "sha256": "e609dc0783a1e3f805957f2387fb2820dd47bf12eb2073b3c9dadaf1fc556593"
+    "sha256": "e609dc0783a1e3f805957f2387fb2820dd47bf12eb2073b3c9dadaf1fc556593",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2009q4/sub.txt",
-    "redistributed": false,
-    "sha256": "824125aad3f15cf1bbb1b38cebfebb7a892e3ab1e4810f712b4d90399c758e8a"
+    "sha256": "824125aad3f15cf1bbb1b38cebfebb7a892e3ab1e4810f712b4d90399c758e8a",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2010q1/sub.txt",
-    "redistributed": false,
-    "sha256": "6e20a5309277926fc19944c30271860b8ec90680d58b8718ea01f8ec3daf57d5"
+    "sha256": "6e20a5309277926fc19944c30271860b8ec90680d58b8718ea01f8ec3daf57d5",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2010q2/sub.txt",
-    "redistributed": false,
-    "sha256": "fca0ff4bf873b46245ac3ca3524f6be6083852cdc7e97a12f307df636834a3e8"
+    "sha256": "fca0ff4bf873b46245ac3ca3524f6be6083852cdc7e97a12f307df636834a3e8",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2010q3/sub.txt",
-    "redistributed": false,
-    "sha256": "ac3c909d13859a37d6d58a5054d26b26c488398c49d5729a9fccaf3cfaff8aea"
+    "sha256": "ac3c909d13859a37d6d58a5054d26b26c488398c49d5729a9fccaf3cfaff8aea",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2010q4/sub.txt",
-    "redistributed": false,
-    "sha256": "396420e247573ff244800c0a715de51ce278fdf0f867f8584a61414c4b0824dc"
+    "sha256": "396420e247573ff244800c0a715de51ce278fdf0f867f8584a61414c4b0824dc",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2011q1/sub.txt",
-    "redistributed": false,
-    "sha256": "33f0850a4fffb63b03df229a99f5503957c8eb2aad15d47bcbfe7301aef886a4"
+    "sha256": "33f0850a4fffb63b03df229a99f5503957c8eb2aad15d47bcbfe7301aef886a4",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2011q2/sub.txt",
-    "redistributed": false,
-    "sha256": "c05cdbcc9c8c64b0b4241853849853ff37db7d010e0f8a5705138fdd04195757"
+    "sha256": "c05cdbcc9c8c64b0b4241853849853ff37db7d010e0f8a5705138fdd04195757",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2011q3/sub.txt",
-    "redistributed": false,
-    "sha256": "83587bc530b2914d5c57050cd119a8245fc57af2226039e5389c680b8aae3904"
+    "sha256": "83587bc530b2914d5c57050cd119a8245fc57af2226039e5389c680b8aae3904",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2011q4/sub.txt",
-    "redistributed": false,
-    "sha256": "ccc2cee85b387a34bf6c9676e57338b49ceff0989190177afdf04bef99ed1ef4"
+    "sha256": "ccc2cee85b387a34bf6c9676e57338b49ceff0989190177afdf04bef99ed1ef4",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2012q1/sub.txt",
-    "redistributed": false,
-    "sha256": "a3a94933ef43530c79bbbe2ca72cb6a71eabc636cce1e620d7bcab6b583ae80b"
+    "sha256": "a3a94933ef43530c79bbbe2ca72cb6a71eabc636cce1e620d7bcab6b583ae80b",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2012q2/sub.txt",
-    "redistributed": false,
-    "sha256": "29f82317b229dae0ce9baaed5304e77a3deec76a8d45d4475d32275dd639c150"
+    "sha256": "29f82317b229dae0ce9baaed5304e77a3deec76a8d45d4475d32275dd639c150",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2012q3/sub.txt",
-    "redistributed": false,
-    "sha256": "a753d08a4d5b653c5bac547c9f56acc2edd3b6baf46140e867b07262419a66b4"
+    "sha256": "a753d08a4d5b653c5bac547c9f56acc2edd3b6baf46140e867b07262419a66b4",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2012q4/sub.txt",
-    "redistributed": false,
-    "sha256": "567bb775763cf14cf760cb84d00583ea99b8d6d16ab98b42ac249063ad8a030e"
+    "sha256": "567bb775763cf14cf760cb84d00583ea99b8d6d16ab98b42ac249063ad8a030e",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2013q1/sub.txt",
-    "redistributed": false,
-    "sha256": "5a1d9320036891c2876f2fbdc85a0738ec99f4a2b96e8846736cb221932363ee"
+    "sha256": "5a1d9320036891c2876f2fbdc85a0738ec99f4a2b96e8846736cb221932363ee",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2013q2/sub.txt",
-    "redistributed": false,
-    "sha256": "22d2f2eec2ce1f49846551aeee5e89c488a735d97d1ed7086cb979841662b726"
+    "sha256": "22d2f2eec2ce1f49846551aeee5e89c488a735d97d1ed7086cb979841662b726",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2013q3/sub.txt",
-    "redistributed": false,
-    "sha256": "0017acd67096a63688657069976a7475a90833d1fd09fb61122c4d5ac2bfa21d"
+    "sha256": "0017acd67096a63688657069976a7475a90833d1fd09fb61122c4d5ac2bfa21d",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2013q4/sub.txt",
-    "redistributed": false,
-    "sha256": "3dde25c8a18dae9dce47f2b22ccc18bf55a218b8387542e316c00e777b4a8494"
+    "sha256": "3dde25c8a18dae9dce47f2b22ccc18bf55a218b8387542e316c00e777b4a8494",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2014q1/sub.txt",
-    "redistributed": false,
-    "sha256": "063bc8bcb95c8c048996de3a7a0c1d5d847f10c383302d30a12275b5982b2470"
+    "sha256": "063bc8bcb95c8c048996de3a7a0c1d5d847f10c383302d30a12275b5982b2470",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2014q2/sub.txt",
-    "redistributed": false,
-    "sha256": "99a58367caeeb56cd25fdece138a8a35f92fa1c7b93be16839a8fc7ffba25ddf"
+    "sha256": "99a58367caeeb56cd25fdece138a8a35f92fa1c7b93be16839a8fc7ffba25ddf",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2014q3/sub.txt",
-    "redistributed": false,
-    "sha256": "308d821d986d4cce7560f7eaa000d1674d8db81177e7c5b4a9f6558aad7403bf"
+    "sha256": "308d821d986d4cce7560f7eaa000d1674d8db81177e7c5b4a9f6558aad7403bf",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2014q4/sub.txt",
-    "redistributed": false,
-    "sha256": "2c76be9929211c848a4af78f7b42287ca4ceb9a0c677af790af08edb3cf8026b"
+    "sha256": "2c76be9929211c848a4af78f7b42287ca4ceb9a0c677af790af08edb3cf8026b",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2015q1/sub.txt",
-    "redistributed": false,
-    "sha256": "7b8e9135ed3e757a37bf110b70d10f005960fc5e2d216f72b337939fdfd1ecb9"
+    "sha256": "7b8e9135ed3e757a37bf110b70d10f005960fc5e2d216f72b337939fdfd1ecb9",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2015q2/sub.txt",
-    "redistributed": false,
-    "sha256": "9990e273bf8d48445851593c0850faf2558363cfb9208135d411ec847a577f99"
+    "sha256": "9990e273bf8d48445851593c0850faf2558363cfb9208135d411ec847a577f99",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2015q3/sub.txt",
-    "redistributed": false,
-    "sha256": "2ef2b1ec2faa34ffe49dc84b12fee5c4518e71a5c4fec2dd83abac6aeb8bfc30"
+    "sha256": "2ef2b1ec2faa34ffe49dc84b12fee5c4518e71a5c4fec2dd83abac6aeb8bfc30",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2015q4/sub.txt",
-    "redistributed": false,
-    "sha256": "90e4189b40223c2c651baf4b4991b37c6f6b7da0fe8419da464f4ddf01035348"
+    "sha256": "90e4189b40223c2c651baf4b4991b37c6f6b7da0fe8419da464f4ddf01035348",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2016q1/sub.txt",
-    "redistributed": false,
-    "sha256": "1daa8c5589b4b7679ec9610e5e24dba0f582b2d186143186de91118dccbf9d9d"
+    "sha256": "1daa8c5589b4b7679ec9610e5e24dba0f582b2d186143186de91118dccbf9d9d",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2016q2/sub.txt",
-    "redistributed": false,
-    "sha256": "9aaea8777cea2996e6d14f595ba1351407c0cc643441b6956753fe719afab030"
+    "sha256": "9aaea8777cea2996e6d14f595ba1351407c0cc643441b6956753fe719afab030",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2016q3/sub.txt",
-    "redistributed": false,
-    "sha256": "c86c01f45c87ada5ad13cd75c76803600814dc531136eec866104a9f1d3a8230"
+    "sha256": "c86c01f45c87ada5ad13cd75c76803600814dc531136eec866104a9f1d3a8230",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2016q4/sub.txt",
-    "redistributed": false,
-    "sha256": "e55a1274bba3e07cb27a7da02dd932c0743bf12dd2b2eaaf97ca01f97c7f9917"
+    "sha256": "e55a1274bba3e07cb27a7da02dd932c0743bf12dd2b2eaaf97ca01f97c7f9917",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2017q1/sub.txt",
-    "redistributed": false,
-    "sha256": "d1b217900f73851082796fd62a63715cc1d693d03db92cc1611feaf43532aed3"
+    "sha256": "d1b217900f73851082796fd62a63715cc1d693d03db92cc1611feaf43532aed3",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2017q2/sub.txt",
-    "redistributed": false,
-    "sha256": "bf1c8c8f0f125ab32da8deabcbd8a306e57d358e215ec2f2c26f198a7baa6149"
+    "sha256": "bf1c8c8f0f125ab32da8deabcbd8a306e57d358e215ec2f2c26f198a7baa6149",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2017q3/sub.txt",
-    "redistributed": false,
-    "sha256": "4462a6f224dfa9ae0e511144dd6efe001e73ca302ee17558457c2a649a608cd9"
+    "sha256": "4462a6f224dfa9ae0e511144dd6efe001e73ca302ee17558457c2a649a608cd9",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2017q4/sub.txt",
-    "redistributed": false,
-    "sha256": "b8064f8f01634d47728a433bf99d89e90512a083df4453a5b891cd76dddd7ad9"
+    "sha256": "b8064f8f01634d47728a433bf99d89e90512a083df4453a5b891cd76dddd7ad9",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2018q1/sub.txt",
-    "redistributed": false,
-    "sha256": "329d23d92b3494fe264bc69aec420b7cd0c08f89f535d8cbac7295023af81802"
+    "sha256": "329d23d92b3494fe264bc69aec420b7cd0c08f89f535d8cbac7295023af81802",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2018q2/sub.txt",
-    "redistributed": false,
-    "sha256": "4bf1e2d91223545ed9a5943b95b669f25858471bf55811af9452328664c387b8"
+    "sha256": "4bf1e2d91223545ed9a5943b95b669f25858471bf55811af9452328664c387b8",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2018q3/sub.txt",
-    "redistributed": false,
-    "sha256": "b5772c99e120fb0b4434bdbb86e9851dbed16d71571237eb178d61183c1f17c1"
+    "sha256": "b5772c99e120fb0b4434bdbb86e9851dbed16d71571237eb178d61183c1f17c1",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2018q4/sub.txt",
-    "redistributed": false,
-    "sha256": "e8e34077f4b41ac2bdaf46c91e64cd0823c35876e1677ad33a7ba3838e4adf79"
+    "sha256": "e8e34077f4b41ac2bdaf46c91e64cd0823c35876e1677ad33a7ba3838e4adf79",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2019q1/sub.txt",
-    "redistributed": false,
-    "sha256": "e2f0b40fd5332234da2973e491a33256421b381c80d7a2ab7a9c32cf22d2f0b6"
+    "sha256": "e2f0b40fd5332234da2973e491a33256421b381c80d7a2ab7a9c32cf22d2f0b6",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2019q2/sub.txt",
-    "redistributed": false,
-    "sha256": "3fea567e8736663630a36bac19360f18d2ceab4552772415238580940c10d72b"
+    "sha256": "3fea567e8736663630a36bac19360f18d2ceab4552772415238580940c10d72b",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2019q3/sub.txt",
-    "redistributed": false,
-    "sha256": "26df85890173d218cb8b75e54abbb428fcd6943a0111287e49b1296335a78c05"
+    "sha256": "26df85890173d218cb8b75e54abbb428fcd6943a0111287e49b1296335a78c05",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2019q4/sub.txt",
-    "redistributed": false,
-    "sha256": "44ed47fb2a8d3d9a9b1a49282be237290456aaf08859b80c91d9ab3a295f3221"
+    "sha256": "44ed47fb2a8d3d9a9b1a49282be237290456aaf08859b80c91d9ab3a295f3221",
+    "redistributed": false
+  },
+  {
+    "path": "artifacts/primary_event_study_2010_2019_v1/sec_sub/2020q1/sub.txt",
+    "sha256": "5c89b0295c403903909c34b9293d9a050f589b0722585f3ee6d6035b16501950",
+    "redistributed": false
   },
   {
     "path": "artifacts/primary_event_study_2010_2019_v1/sic_history.csv",
@@ -72830,14 +73010,44 @@
     "sha256": "06d4620290b4b8a66f18a8762d5042968d4b436d4aef7009f6004d9d331eece3"
   },
   {
+    "path": "data/final/hardware_portfolio_2010_2019_v1/prepared_calls.csv",
+    "sha256": "e77d6a73c7cf3a473f642cc4fef2eb56fdec9954e0a7326264001671736f4665",
+    "redistributed": false
+  },
+  {
+    "path": "data/final/hardware_portfolio_2010_2019_v1/prepared_pilot_calls.csv",
+    "sha256": "ed2a259da470b3d3d3879c210544aeda28f7e36fa36ee3dff86d72ad45dd50cb",
+    "redistributed": false
+  },
+  {
+    "path": "data/final/hardware_portfolio_2010_2019_v1/transcript_references.csv",
+    "sha256": "e74ae546018ab29fdd99b18d3a81de6b3b8567b19611f1a7263cd50ab5f41777",
+    "redistributed": false
+  },
+  {
+    "path": "data/final/hardware_portfolio_us400_2010_2019_v1/prepared_calls.csv",
+    "sha256": "6144bad649cf826cb1839f217eb47bc391e188f414f7b092175f64b45ee0e0ef",
+    "redistributed": false
+  },
+  {
     "path": "data/final/hardware_portfolio_us400_2010_2019_v1/prepared_enriched_calls.csv",
-    "redistributed": false,
-    "sha256": "956aae61a351c7c23d4d12144c191c04e58eb6b34d2d6906263978b6c9709373"
+    "sha256": "60970c72a1bb635551f6271b5b097b7af07e8fc7ab31b7a2b83d7cd85c36d41a",
+    "redistributed": false
+  },
+  {
+    "path": "data/final/hardware_portfolio_us400_2010_2019_v1/prepared_pilot_calls.csv",
+    "sha256": "a212c56ac25c6b4bdbff3355af6adf59135d70e00a2a8b443cc1454c85076c54",
+    "redistributed": false
+  },
+  {
+    "path": "data/final/hardware_portfolio_us400_2010_2019_v1/transcript_references.csv",
+    "sha256": "6c4e31dc77583459483e2e6bccb765b3cfb0d8b2ad86435533e02034d2f53d96",
+    "redistributed": false
   },
   {
     "path": "data/final/hardware_portfolio_us400_2010_2019_v1/validated_transcript_references.csv",
-    "redistributed": false,
-    "sha256": "9d2346cccad47e5f0cbcb8cc8e664b27b66d4be03c19f17d81b271c269aa7ae8"
+    "sha256": "fbb7002970dd21e58c3a48ea46567fdd8b024c849062601366179fbd1f55829a",
+    "redistributed": false
   },
   {
     "path": "data/hardware_portfolio/us_400_v2/hardware_portfolio_public_2010.csv",
@@ -72868,10 +73078,5 @@
     "path": "data/validated_earnings_calls/v1/yfinance_reported_date_rows.csv",
     "redistributed": false,
     "sha256": "beb61bb6dddb61a9696db799f826ac7dc9af1a476b7054cbf105f3f419ae377d"
-  },
-  {
-    "path": "outputs/primary_event_study_2010_2019_release_dates_v1/full/call_level_scored_car.csv",
-    "redistributed": false,
-    "sha256": "af88e549cc8b275262eeb1e69af4d4aeb3b554b6197577dc91d5b63cdef7e2a6"
   }
 ]

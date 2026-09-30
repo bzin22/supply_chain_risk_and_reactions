@@ -1,20 +1,26 @@
-[
-  {
-    "Resolution_zero_calls": 10710,
-    "Resolution_zero_share": 0.8346321695760599,
-    "SCRisk_zero_calls": 3553,
-    "SCRisk_zero_share": 0.2768859102244389,
-    "calls": 12832,
-    "firms": 379,
-    "population": "all_valid"
+{
+  "score_valid": {
+    "SCRisk": {
+      "zero_calls": 3522,
+      "share": 0.2770392511602297,
+      "population": 12713
+    },
+    "Resolution": {
+      "zero_calls": 10604,
+      "share": 0.8341068197907654,
+      "population": 12713
+    }
   },
-  {
-    "Resolution_zero_calls": 10634,
-    "Resolution_zero_share": 0.8344318895166353,
-    "SCRisk_zero_calls": 3525,
-    "SCRisk_zero_share": 0.2766007532956685,
-    "calls": 12744,
-    "firms": 379,
-    "population": "common_eligible"
+  "retained": {
+    "SCRisk": {
+      "zero_calls": 3326,
+      "share": 0.278326359832636,
+      "population": 11950
+    },
+    "Resolution": {
+      "zero_calls": 9962,
+      "share": 0.8336401673640167,
+      "population": 11950
+    }
   }
-]
+}

@@ -231,31 +231,29 @@ and zero-score allocations by SIC division.
 
 ## Hardware portfolio baseline for review
 
-The [hardware baseline](docs/hardware_baseline/README.md) contains a canonical
-**379-company reporting roster**, drawn from a preserved **400-company screen**.
-There are **12,832 valid calls from 379 firms** for fiscal 2010Q1–2019Q4;
-**12,744 calls from 379 firms** enter the common CAR sample. The 88 excluded
-valid calls fail the sequential release-date (5), CAR (34), or historical-SIC
-(49) gates. The other 21 screened firms have no usable transcripts. Membership
-in the 400-company screen was fixed before returns were analyzed.
+The [hardware baseline](docs/hardware_baseline/README.md) preserves the canonical
+**379-company roster** from the 400-company screen. Following the all-call
+fiscal-date audit, **11,950 calls from 378 firms** enter the common CAR sample.
+There are 12,832 input records and 12,713 valid issuer-period transcripts for
+score scaling. **850 unresolved mappings are excluded**, with a further 28
+CAR-window and 4 historical-SIC exclusions after transcript/date gates.
 
-Within the retained sample, **27.66% of SCRisk scores and 83.44% of Resolution
-scores are zero**. [Annual coverage](docs/hardware_baseline/coverage_by_year.csv)
-ranges from 676 calls/221 firms in 2010 to 1,480 calls/375 firms in 2019.
-The package includes all five figures, their tables and covariance estimates,
-the combined PDF, and the existing 630 portfolio comparisons.
-
-With Python 3.14.7 installed, reproduce the hardware figures and tables:
+The audit corrected 54 mappings across 8 firms, including Mercury fiscal 2014
+Q3 (April 29 rather than August 5), documented all 12 original collision groups,
+and refit both CAR windows and historical SIC. It retained the earnings-release
+policy, dictionaries and fractional-allocation method. Among retained calls,
+SCRisk is zero in **27.8326%** and Resolution in **83.3640%**. See
+[coverage by year](docs/hardware_baseline/coverage_by_year.csv),
+[audit and before/after results](docs/hardware_baseline/DATE_AUDIT.md), and the
+[five corrected figures](docs/hardware_baseline/README.md#figures-and-supporting-tables).
 
 ```sh
-./scripts/reproduce_hardware.sh
+PYTHON=/path/to/python3.14 ./scripts/reproduce_hardware.sh
 ```
 
-This installs pinned dependencies and verifies a transcript-free derived dataset.
-It recomputes scaling, common eligibility, winsorization, fractional portfolios
-and uncertainty. Recomputing transcript scores and daily-price Carhart fits
-requires the [private inputs](reproduction/hardware_baseline_v1/INPUT_ACCESS.md);
-the actual raw-stage code is included. The baseline is awaiting review.
+The portable command verifies the transcript-free package and reproduces all
+figures/tables. Raw-stage reproduction requires the hashed
+[private inputs](reproduction/hardware_baseline_v1/INPUT_ACCESS.md).
 
 ## Planned extension: international hardware supply chains
 

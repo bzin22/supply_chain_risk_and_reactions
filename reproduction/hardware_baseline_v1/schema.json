@@ -102,7 +102,14 @@
     "car_2_60_eligible",
     "car_joint_eligible",
     "portfolio_eligible",
-    "portfolio_exclusion_reasons"
+    "portfolio_exclusion_reasons",
+    "provider_quarter_label",
+    "issuer_fiscal_period_label",
+    "date_audit_status",
+    "date_audit_flags",
+    "date_audit_evidence",
+    "date_audit_source_url",
+    "transcript_identity_period_status"
   ],
   "groups": {
     "dates": [
@@ -208,6 +215,15 @@
       "zero_reason",
       "score_valid",
       "score_specification"
+    ],
+    "audit": [
+      "provider_quarter_label",
+      "issuer_fiscal_period_label",
+      "date_audit_status",
+      "date_audit_flags",
+      "date_audit_evidence",
+      "date_audit_source_url",
+      "transcript_identity_period_status"
     ]
   },
   "missing": "Empty cells remain missing; never fill with zero.",
@@ -263,12 +279,24 @@
     "car_2_60_status",
     "portfolio_exclusion_reasons",
     "zero_reason",
-    "score_specification"
+    "score_specification",
+    "provider_quarter_label",
+    "issuer_fiscal_period_label",
+    "date_audit_status",
+    "date_audit_flags",
+    "date_audit_evidence",
+    "date_audit_source_url",
+    "transcript_identity_period_status"
   ],
   "units": {
     "CAR_0_1": "decimal cumulative abnormal return over 2 trading days",
     "CAR_2_60": "decimal cumulative abnormal return over 59 trading days",
     "Resolution": "raw / population SD, no centering",
     "SCRisk": "raw / population SD, no centering"
+  },
+  "identifier_semantics": {
+    "quarter_label": "legacy provider identifier; not canonical fiscal-period proof",
+    "issuer_fiscal_period_label": "adjudicated issuer period; blank if unresolved; 2018T is VF transition",
+    "input_calls": "all 12832 source records, including excluded issuer/period conflicts"
   }
 }

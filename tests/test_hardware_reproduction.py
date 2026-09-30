@@ -15,11 +15,11 @@ def loaded():
 
 def test_roster_is_distinct_from_screen_and_analysis_representation(loaded):
     data,sample,config=loaded
-    assert len(data)==12832 and len(sample)==12744
+    assert len(data)==config['counts']['input_calls'] and len(sample)==config['counts']['eligible_calls']
     roster=pd.read_csv(hw.PACKAGE/'roster_379.csv',dtype=str,keep_default_na=False)
     screen=pd.read_csv(hw.PACKAGE/'screened_universe_400.csv',dtype=str,keep_default_na=False)
     assert len(roster)==379 and len(screen)==400
-    assert set(roster.portfolio_cik)==set(sample.portfolio_cik)
+    assert set(sample.portfolio_cik).issubset(set(roster.portfolio_cik))
     assert set(roster.portfolio_cik)<set(screen.portfolio_cik)
     for field in ['portfolio_cik','historical_cik','aliases','hardware_classification','physical_products','product_evidence_url','headquarters_source_url','company_screen_asof','study_first_quarter','study_last_quarter']:
         assert roster[field].ne('').all(),field
@@ -47,7 +47,7 @@ def test_score_scaling_and_release_policy(loaded):
     assert data.event_date_policy.eq('release').all()
     for metric in ['SCRisk','Resolution']:
         raw=data[metric+'_raw'].to_numpy(float)
-        sd=np.std(raw,ddof=0)
+        sd=np.std(raw[data.score_valid.to_numpy()],ddof=0)
         np.testing.assert_allclose(data[metric].to_numpy(float),raw/sd,rtol=1e-13,atol=1e-13)
     assert data.scrisk_zero.sum()==3553
     assert data.resolution_zero.sum()==10710
@@ -60,11 +60,11 @@ def test_pair_coverage_and_year_tables_reconcile(loaded):
     assert pair.call_id.isin(data.call_id).sum()==12832
     years=pd.read_csv(hw.REFERENCE/'coverage_by_year.csv',dtype={'fiscal_year':str})
     for row in years.itertuples():
-        valid=data[data.quarter_label.str.startswith(row.fiscal_year)]
-        retained=sample[sample.quarter_label.str.startswith(row.fiscal_year)]
-        assert len(valid)==row.valid_calls and len(retained)==row.retained_calls
+        valid=data[data.issuer_fiscal_period_label.str.startswith(row.fiscal_year)]
+        retained=sample[sample.issuer_fiscal_period_label.str.startswith(row.fiscal_year)]
+        assert len(valid)==row.mapped_calls and len(retained)==row.retained_calls
         assert retained.portfolio_cik.nunique()==row.retained_firms
-    assert (len(data)-len(sample))==88
+    assert (len(data)-len(sample))==len(data.loc[~data.portfolio_eligible])
 
 
 def test_tampered_reference_table_fails(tmp_path):

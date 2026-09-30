@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 import argparse
-import calendar
 import hashlib
 import json
 import os
@@ -174,48 +173,10 @@ def classify(params, payload, http):
     raise ValueError(function)
 
 
-def subtract_months(value, months):
-    ordinal = value.year * 12 + value.month - 1 - months
-    year, month0 = divmod(ordinal, 12)
-    month = month0 + 1
-    return date(year, month, min(value.day, calendar.monthrange(year, month)[1]))
-
-
-def map_fiscal_rows(payload):
-    """Same fiscal mapping as ae9526a build_validated_earnings_calls_v1.py."""
-    annual = sorted(
-        {
-            date.fromisoformat(r["fiscalDateEnding"])
-            for r in payload.get("annualEarnings", [])
-            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(r.get("fiscalDateEnding", "")))
-        }
-    )
-    result = []
-    for row in payload.get("quarterlyEarnings", []):
-        try:
-            end = date.fromisoformat(row["fiscalDateEnding"])
-            reported = date.fromisoformat(row["reportedDate"])
-        except (ValueError, KeyError, TypeError):
-            continue
-        matches = []
-        for a in annual:
-            for q, months in [(4, 0), (3, 3), (2, 6), (1, 9)]:
-                distance = abs((end - subtract_months(a, months)).days)
-                if distance <= 35:
-                    matches.append((distance, a, q))
-        if matches:
-            distance, a, q = min(matches)
-            result.append(
-                {
-                    "quarter_label": f"{a.year}Q{q}",
-                    "fiscal_date_ending": end.isoformat(),
-                    "reported_date": reported.isoformat(),
-                    "report_time": row.get("reportTime", ""),
-                    "fiscal_mapping_distance_days": distance,
-                    "fiscal_year_end": a.isoformat(),
-                }
-            )
-    return result
+def map_fiscal_rows(payload, verified_periods=()):
+    """No quarter inference from annual dates; exact evidenced periods only."""
+    from .release_dates import map_verified_periods
+    return map_verified_periods(payload, verified_periods)
 
 
 def earnings_source(symbol, client=None):
@@ -482,81 +443,15 @@ def prepare(download_support=False, pilot=False):
     from .sic import history as build_history, assign as assign_historical_sic
 
     history = build_history()
-    date_cache = {}
+    from .release_dates import validate_decisions, apply_decision
+    import pandas as pd
+    decision_rows = pd.read_csv(core.ROOT / "reproduction/hardware_baseline_v1/date_audit.csv.gz", dtype=str, keep_default_na=False).to_dict("records")
+    decisions = validate_decisions(rows, decision_rows)
     date_audit = []
-    prior_dates = defaultdict(list)
-    for name in [
-        "reported_date_rows",
-        "targeted_reported_date_rows",
-        "yfinance_reported_date_rows",
-        "history_web_reported_date_rows",
-    ]:
-        path = core.ROOT / f"data/validated_earnings_calls/v1/{name}.csv"
-        for r in read(path):
-            prior_dates[(r["historical_ticker"], r["quarter_label"])].append((path, r))
-    for r in rows:
-        if r["transcript_origin"] != "frozen_v1":
-            c = companies[r["portfolio_cik"]]
-            if r["historical_ticker"] != c["ticker"] and not c.get("study_provider_ticker"):
-                r["alias_identity_evidence"] = c.get("additional_alias_evidence") or c["identity_evidence"]
-                r["price_ticker_override"] = c["ticker"]
-            sym = r.get("price_ticker_override") or r["historical_ticker"]
-            q = r["quarter_label"]
-            c = companies[r["portfolio_cik"]]
-            choices = prior_dates[(sym, q)]
-            if not choices:
-                if sym not in date_cache:
-                    date_cache[sym] = earnings_source(
-                        sym,
-                        client
-                        if not pilot or sym in ["GRMN", "MRVL", "AMD", "FORM", "IIVI", "HUBB", "NANO", "ONTO", "ADTN"]
-                        else None,
-                    )
-                path, p = date_cache[sym]
-                if p:
-                    choices = [
-                        (path, x) for x in map_fiscal_rows(p) if x["quarter_label"] == q
-                    ]
-            r.update(
-                earnings_call_date="",
-                date_fiscal_date_ending="",
-                confirmed_call_date="",
-                call_date_confirmation_status="no_independent_live_call_evidence",
-                date_source_agreement="not_compared",
-            )
-            unique = {(x["fiscal_date_ending"], x["reported_date"]) for _, x in choices}
-            if len(unique) == 1:
-                path, d = choices[0]
-                r.update(
-                    earnings_call_date=d["reported_date"],
-                    date_fiscal_date_ending=d["fiscal_date_ending"],
-                    date_source_url=d.get(
-                        "source_url",
-                        "https://www.alphavantage.co/documentation/#earnings",
-                    ),
-                    date_match_method=d.get(
-                        "match_method",
-                        "alpha_vantage_fiscalDateEnding_plus_annual_fiscal_year_end",
-                    ),
-                    date_response_sha256=d.get("response_sha256", core.sha256(path)),
-                    date_evidence_path=core.relative(path),
-                    date_evidence_sha256=core.sha256(path),
-                    date_report_time=d.get("report_time", ""),
-                    date_status="reported_date_mapped",
-                )
-            else:
-                r["date_status"] = (
-                    "conflicting_release_date_candidates"
-                    if choices
-                    else "missing_release_date"
-                )
-            apply_date_policy(r, "release")
-            # Override frozen-only source assumption in legacy helper for new transcripts.
-            r["call_date_source_path"] = r.get("date_evidence_path", "")
-            r["call_date_source_sha256"] = r.get("date_evidence_sha256", "")
-            r["event_date_assumption"] = (
-                "earnings-release reportedDate; no after-hours shift; independent live-call date remains separate"
-            )
+    for index, r in enumerate(rows):
+        # Cached/frozen rows pass through the same audit as new provider rows.
+        # No copied provider quarter label or broad date window can bypass it.
+        r = rows[index] = apply_decision(r, decisions[r["call_id"]])
         r.update(assign_historical_sic(r, history))
         date_audit.append(
             {
