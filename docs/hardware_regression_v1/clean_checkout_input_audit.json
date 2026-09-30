@@ -1,0 +1,21 @@
+{
+  "manifest_files_verified": 263,
+  "working_tree_source_discrepancies": [],
+  "resolution": "Exact manifest-matching source snapshot; original working tree unchanged",
+  "loader_path": "audited_inputs/analysis/hardware_reproduction.py",
+  "loader_sha256": "7cda122ac1484aecccdc05c6550077589defca2417b8cdb30ecd42c6d12eafc6",
+  "baseline_manifest_sha256": "d68d2fe09f42332f4f909e3006256ccee3ca91ca49615f03ac39fed270386b93",
+  "eligible_calls": 11950,
+  "eligible_firms": 378,
+  "historical_cik_mapping_verified": true,
+  "successor_mappings": [
+    {
+      "portfolio_cik": "0001835632",
+      "cik": "0001058057",
+      "current_ticker": "MRVL"
+    }
+  ],
+  "date_adjudications_verified": true,
+  "unique_call_ids": true,
+  "input_fingerprint": "97cbb5f74e1ecff92b5beaa8f276598a84e4249ca8b90f623b6f3cb3e8b6bd30"
+}

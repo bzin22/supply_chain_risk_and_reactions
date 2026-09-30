@@ -255,6 +255,29 @@ The portable command verifies the transcript-free package and reproduces all
 figures/tables. Raw-stage reproduction requires the hashed
 [private inputs](reproduction/hardware_baseline_v1/INPUT_ACCESS.md).
 
+## Hardware regression extension for review
+
+The [planned regression extension](docs/hardware_regression_v1/REPORT.md) uses
+one equal-weighted row per call from the same corrected 11,950-call, 378-firm
+sample. M1 regresses CAR(0,1), in percentage points, on continuous SCRisk; M2
+adds Resolution; primary M3 adds firm and event-calendar quarter fixed effects.
+All models retain baseline score units, zeros and winsorization thresholds,
+with firm-clustered CR1 uncertainty and 95% t intervals.
+
+In M3, SCRisk is **-0.823 percentage points** per baseline score unit
+(SE 0.107; 95% CI [-1.032, -0.613]); Resolution is **+0.223 pp** (SE 0.104).
+The planned fiscal-2010 exclusion gives a SCRisk coefficient of -0.839 pp.
+These are noncausal associations; earnings-news controls are omitted and
+cross-firm residual dependence remains possible. This analysis was planned
+after descriptive exploration, not preregistered.
+
+[Paper-ready table](docs/hardware_regression_v1/regression_table.pdf) ·
+[Full results CSV](docs/hardware_regression_v1/regression_results.csv) ·
+[Code and offline rerun](analysis/hardware_regression_v1/README.md) ·
+[Sample IDs and fingerprints](reproduction/hardware_regression_v1/README.md).
+No new collection, transcript scoring, CAR estimation or baseline chart changes
+are part of this extension.
+
 ## Planned extension: international hardware supply chains
 
 The next extension will focus on hardware companies whose production depends
